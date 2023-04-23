@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_MiniGame_Type_Accessory",
-    "path": "sprites/spr_MiniGame_Type_Accessory/spr_MiniGame_Type_Accessory.yy",
+    "name": "spr_MiniGame_Type_Attachment",
+    "path": "sprites/spr_MiniGame_Type_Attachment/spr_MiniGame_Type_Attachment.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -12,6 +12,76 @@
  update = false;
    spawn = "";
  
+ #region input cooldown
+ inputCoolDown_Time  = 15;
+ inputCoolDown_Timer = inputCoolDown_Time;
+ inputCoolDown       = false;
+ 
+ #endregion
+ 
+ 
+ 
+ #region 
+ function attachmentsCreate( name_)constructor {
+	  
+	  
+	  Lpointer_Spr  =  spr_Nothing;
+	  Lpointer_X    =  -999;
+	  Lpointer_Y    =  -999;   
+
+	  optics_Spr   =  spr_Nothing;
+	  optics_X     =  -999;
+	  optics_Y     =  -999;  
+
+	  scope_Spr   =  spr_Nothing;
+	  scope_X     =  -999;
+	  scope_Y     =  -999;  
+
+	  stock_Spr   =  spr_Nothing;
+	  stock_X     =  -999;
+	  stock_Y     =  -999;  
+
+  function setAttachement(attachmenType_, spr_, x_, y_){
+	   if(attachmenType_ == "laser"){
+		  Lpointer_Spr  =  spr_MiniGame_Attachment_LaserPointer;
+		  Lpointer_X    =  x_;
+		  Lpointer_Y    =  y_;       
+	   }
+	   
+	   if(attachmenType_ == "optics"){
+		  Lpointer_Spr  =  spr_MiniGame_Attachment_Optics;
+		  Lpointer_X    =  x_;
+		  Lpointer_Y    =  y_;       
+	   }
+	   
+	   if(attachmenType_ == "muzzle"){
+		  Lpointer_Spr  =  spr_MiniGame_Attachment_Muzzle;
+		  Lpointer_X    =  x_;
+		  Lpointer_Y    =  y_;       
+	   }
+	   
+	   if(attachmenType_ == "scope"){
+		  Lpointer_Spr  =  spr_MiniGame_Attachment_Scope;
+		  Lpointer_X    =  x_;
+		  Lpointer_Y    =  y_;       
+	   }
+	   
+	   if(attachmenType_ == "stock"){
+		  Lpointer_Spr  =  spr_MiniGame_Attachment_Stock;
+		  Lpointer_X    =  x_;
+		  Lpointer_Y    =  y_;       
+	   }
+
+  }
+
+ }
+ 
+ arrayAttachments = array_create(0);
+ 
+ arrayAttachments[0] = new attachmentsCreate("pistol 1" );
+ 
+ #endregion
+ 
  
  
  var tabStart = 50;
@@ -69,7 +139,7 @@ button_ResultSelected_Size = 0.2;
     dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame_Bgr", obj_MiniGame_DropSpot );
  
     // drop off area firt weapons "slot"
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame_Bgr", obj_MiniGame_Drop_Weapon );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 
 	
 	

@@ -1,12 +1,9 @@
 /// @description 
 
-if (update == true){
+x = mouse_x;
+y = mouse_y;
 
 
-}
-
-
-// input cooldown
 if (inputCoolDown == true){
 
   inputCoolDown_Timer--; 
@@ -15,3 +12,5 @@ if (inputCoolDown == true){
 	   inputCoolDown = false;
   } 
 }
+
+//collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_)

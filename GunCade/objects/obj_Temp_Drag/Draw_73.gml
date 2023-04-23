@@ -1,21 +1,18 @@
 /// @description 
 
-
-if(state == "blink"){
+var alphaSet = 1;
+if(canPlace == true){
 blink_Pos    += 1/blink_total;
 if(blink_Pos >= 1) { blink_Pos = 0; }
 
 var val = animcurve_channel_evaluate(_channel, blink_Pos);
 
-//draw_self();
+alphaSet = val;
 
-draw_sprite_ext(spr_MiniGame_Pistol_Empty,0, x,y,weapon_XYscale, weapon_XYscale, 0, c_white, val  );
+} 
 
-
-} else {
-//image_alpha = 1;
 draw_self();
-}
+image_alpha = alphaSet;
 
 
 if(obj_Control_All.debug == true){
