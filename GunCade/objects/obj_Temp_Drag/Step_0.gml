@@ -9,25 +9,43 @@ var mbLeft = mouse_check_button_released( mb_left );
 // check for collision
 var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom, obj_MiniGame_DropSpot, 0,0 );
 
-	if(onDropSpot != noone){  canPlace = true; } else { canPlace = false;  }
+	if(onDropSpot != noone){
+		
+		// quick check if can be placed! -> only for attachment
+		canPlace = true;
+		
+	  switch(whatisIt){
+	    case "pistol 1": overrideInst = obj_MiniGame_Drop_Weapon; break;
+	    case "pistol 2": overrideInst = obj_MiniGame_Drop_Weapon; break;
+	    case "pistol 3": overrideInst = obj_MiniGame_Drop_Weapon; break;
+					
+	  }		
+		
+		
+		} else { canPlace = false;  }
 	
 	
-	if(mbLeft == 1 and canPlace == true ){ 
+	if(mbLeft == 1 and canPlace == true and impossibleDrop == false ){ 
       
 	  var overrideInst = obj_MiniGame_Drop_Weapon;
 	  switch(whatisIt){
 	    case "pistol 1": overrideInst = obj_MiniGame_Drop_Weapon; break;
 	    case "pistol 2": overrideInst = obj_MiniGame_Drop_Weapon; break;
 	    case "pistol 3": overrideInst = obj_MiniGame_Drop_Weapon; break;
-		
-			
+					
 	  }
 	  
 	  
 	  if (instance_exists(overrideInst)){
+		  
+		     var resetAttachments = false;
+			   if(overrideInst.sprite_index != sprite_index){ resetAttachments = true;   }
+			 
 		     overrideInst.sprite_index = sprite_index;
-		     overrideInst.state = "";
-			 overrideInst.image_alpha = 1;
+		     overrideInst.state        = "";
+			 overrideInst.image_alpha  = 1;
+			 
+			 if ( resetAttachments == true){ overrideInst.update = true;  }
 	  }
 
 	  

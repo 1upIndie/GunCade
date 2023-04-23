@@ -2,6 +2,8 @@
 
 state = "blink";
 
+update = false; // used to reset attachments!
+
  #region input cooldown
  inputCoolDown_Time  = 15;
  inputCoolDown_Timer = inputCoolDown_Time;

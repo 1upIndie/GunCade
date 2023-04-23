@@ -19,15 +19,24 @@ var setWhatIsIt = whatisIt;
 tempWeapon.whatisIt  = whatisIt;
 obj_MiniGame_Parent.inputCoolDown      = true;
 
-// destroy or reset weapon attachments
+// set to be not placeable!!
+var indexAttach = 0;
+
+var impossible      = false;
+var impossibleColor = c_white;
+
 switch(whatisIt){
-
-
-
+    case "laser pointer":  if( obj_MiniGame_Parent.Attachments_CanPlace_Laser  == false ){ impossible = true; impossibleColor = c_red; } break;
+    case "muzzle":         if( obj_MiniGame_Parent.Attachments_CanPlace_Muzzle  == false ){ impossible = true; impossibleColor = c_red; } break;
+    case "optics":         if( obj_MiniGame_Parent.Attachments_CanPlace_Optics  == false ){ impossible = true; impossibleColor = c_red; } break;
+	
+    case "stock":          if( obj_MiniGame_Parent.Attachments_CanPlace_Stock  == false ){ impossible = true; impossibleColor = c_red; } break;
+    case "scope":          if( obj_MiniGame_Parent.Attachments_CanPlace_Scope  == false ){ impossible = true; impossibleColor = c_red; } break;
 }
 
 
-
+tempWeapon.impossibleDrop = impossible;
+tempWeapon.image_blend    = impossibleColor;
 
 // if reset is true, reset to default status
 if(reset_ == true){

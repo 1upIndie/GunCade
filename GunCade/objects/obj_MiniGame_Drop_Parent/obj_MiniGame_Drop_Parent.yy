@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_MiniGame_Drop_Silencer",
+  "name": "obj_MiniGame_Drop_Parent",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

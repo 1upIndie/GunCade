@@ -3,6 +3,7 @@
 whatisIt = "";
 canPlace = false;
 
+impossibleDrop = false;
 
 blink_Pos   = 0;
 blink_total = 60;

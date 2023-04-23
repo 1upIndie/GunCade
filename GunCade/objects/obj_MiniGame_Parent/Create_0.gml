@@ -20,70 +20,7 @@
  #endregion
  
  
- 
- #region 
- function attachmentsCreate( name_)constructor {
-	  
-	  
-	  Lpointer_Spr  =  spr_Nothing;
-	  Lpointer_X    =  -999;
-	  Lpointer_Y    =  -999;   
-
-	  optics_Spr   =  spr_Nothing;
-	  optics_X     =  -999;
-	  optics_Y     =  -999;  
-
-	  scope_Spr   =  spr_Nothing;
-	  scope_X     =  -999;
-	  scope_Y     =  -999;  
-
-	  stock_Spr   =  spr_Nothing;
-	  stock_X     =  -999;
-	  stock_Y     =  -999;  
-
-  function setAttachement(attachmenType_, spr_, x_, y_){
-	   if(attachmenType_ == "laser"){
-		  Lpointer_Spr  =  spr_MiniGame_Attachment_LaserPointer;
-		  Lpointer_X    =  x_;
-		  Lpointer_Y    =  y_;       
-	   }
-	   
-	   if(attachmenType_ == "optics"){
-		  Lpointer_Spr  =  spr_MiniGame_Attachment_Optics;
-		  Lpointer_X    =  x_;
-		  Lpointer_Y    =  y_;       
-	   }
-	   
-	   if(attachmenType_ == "muzzle"){
-		  Lpointer_Spr  =  spr_MiniGame_Attachment_Muzzle;
-		  Lpointer_X    =  x_;
-		  Lpointer_Y    =  y_;       
-	   }
-	   
-	   if(attachmenType_ == "scope"){
-		  Lpointer_Spr  =  spr_MiniGame_Attachment_Scope;
-		  Lpointer_X    =  x_;
-		  Lpointer_Y    =  y_;       
-	   }
-	   
-	   if(attachmenType_ == "stock"){
-		  Lpointer_Spr  =  spr_MiniGame_Attachment_Stock;
-		  Lpointer_X    =  x_;
-		  Lpointer_Y    =  y_;       
-	   }
-
-  }
-
- }
- 
- arrayAttachments = array_create(0);
- 
- arrayAttachments[0] = new attachmentsCreate("pistol 1" );
- 
- #endregion
- 
- 
- 
+  
  var tabStart = 50;
  var tabXX = 150;
 
@@ -128,6 +65,126 @@ button_ResultSelected_Y[4] = camY + resultY_Start + (resultY_YY * 4);
 button_ResultSelected_Y[5] = camY + resultY_Start + (resultY_YY * 5);
 button_ResultSelected_Y[6] = camY + resultY_Start + (resultY_YY * 6);
 button_ResultSelected_Size = 0.2;
+var sizeAttach = button_ResultSelected_Size;
+
+ #region set attachments
+ 
+ function attachmentsCreate( name_) constructor {
+	  
+	  
+	  Lpointer_Spr   =  spr_MiniGame_Invisible;
+	  Lpointer_X     =  -999;
+	  Lpointer_Y     =  -999; 
+	  Lpointer_Size  = 1;
+
+	  optics_Spr   =  spr_MiniGame_Invisible;
+	  optics_X     =  -999;
+	  optics_Y     =  -999;  
+	  optics_Size  = 1;
+
+	  scope_Spr   =  spr_MiniGame_Invisible;
+	  scope_X     =  -999;
+	  scope_Y     =  -999;  
+	  scope_Size  = 1;
+
+	  stock_Spr   =  spr_MiniGame_Invisible;
+	  stock_X     =  -999;
+	  stock_Y     =  -999;  
+	  stock_Size  = 1;
+
+
+	  muzzle_Spr   =  spr_MiniGame_Invisible;
+	  muzzle_X     =  -999;
+	  muzzle_Y     =  -999;  
+	  muzzle_Size  = 1;
+
+  function setAttachement(attachmenType_, spr_, x_, y_, size_){
+	   if(attachmenType_ == "laser"){
+		  Lpointer_Spr  =  spr_;
+		  Lpointer_X    =  x_;
+		  Lpointer_Y    =  y_;  
+	      Lpointer_Size  = size_;		  
+	   }
+	   
+	   if(attachmenType_ == "optics"){
+		  optics_Spr  =  spr_;
+		  optics_X    =  x_;
+		  optics_Y    =  y_;  
+	      optics_Size  = size_;			  
+	   }
+	   
+	   if(attachmenType_ == "muzzle"){
+		  muzzle_Spr  =  spr_;
+		  muzzle_X    =  x_;
+		  muzzle_Y    =  y_;  
+	      muzzle_Size  = size_;			  
+	   }
+	   
+	   if(attachmenType_ == "scope"){
+		  scope_Spr  =  spr_;
+		  scope_X    =  x_;
+		  scope_Y    =  y_; 
+	      scope_Size  = size_;			  
+	   }
+	   
+	   if(attachmenType_ == "stock"){
+		  stock_Spr  =  spr_;
+		  stock_X    =  x_;
+		  stock_Y    =  y_;   
+	      stock_Size  = size_;			  
+	   }
+  } // end of setter function
+
+ } // end of constructor
+ 
+ arrayAttachments = array_create(0);  
+ 
+ // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotics 60-70
+ var attachment_I = 0;
+  var attack_Default_Laser_X  = 50;
+  var attack_Default_Laser_Y  = 50;
+  var attack_Default_Optics_X = 100;
+  var attack_Default_Optics_Y = 20;  
+  var attack_Default_Muzzle_X = 100;
+  var attack_Default_Muzzle_Y = 20;    
+  var attack_Default_Stock_X = 200;
+  var attack_Default_Stock_Y = 50; 
+  var attack_Default_Scope_X = 200;
+  var attack_Default_Scope_Y = 50; 
+
+
+ attachment_I = 10;
+ arrayAttachments[attachment_I] = new attachmentsCreate("pistol 1");  // 
+   arrayAttachments[attachment_I].setAttachement("laser" , spr_MiniGame_Attachment_LaserPointer,   attack_Default_Laser_X  + 0, attack_Default_Laser_Y  + 0, sizeAttach);
+   arrayAttachments[attachment_I].setAttachement("optics", spr_MiniGame_Attachment_Optics,         attack_Default_Optics_X + 0, attack_Default_Optics_Y + 0, sizeAttach);
+   arrayAttachments[attachment_I].setAttachement("muzzle", spr_MiniGame_Attachment_Muzzle,         attack_Default_Muzzle_X + 0, attack_Default_Muzzle_Y + 0, sizeAttach);
+   arrayAttachments[attachment_I].setAttachement("stock" , spr_MiniGame_Attachment_Stock,          attack_Default_Stock_X  + 0, attack_Default_Stock_Y  + 0, sizeAttach);
+   attachment_I++;
+
+ arrayAttachments[attachment_I] = new attachmentsCreate("pistol 2");  // 
+   arrayAttachments[attachment_I].setAttachement("laser" , spr_MiniGame_Attachment_LaserPointer,   attack_Default_Laser_X  + 0, attack_Default_Laser_Y  + 0, sizeAttach);
+   arrayAttachments[attachment_I].setAttachement("optics", spr_MiniGame_Attachment_Optics,         attack_Default_Optics_X + 0, attack_Default_Optics_Y + 0, sizeAttach);
+   arrayAttachments[attachment_I].setAttachement("muzzle", spr_MiniGame_Attachment_Muzzle,         attack_Default_Muzzle_X + 0, attack_Default_Muzzle_Y + 0, sizeAttach);
+   arrayAttachments[attachment_I].setAttachement("stock" , spr_MiniGame_Attachment_Stock,          attack_Default_Stock_X  + 0, attack_Default_Stock_Y  + 0, sizeAttach);
+   attachment_I++;;
+   
+ arrayAttachments[attachment_I] = new attachmentsCreate("pistol 3");  // 
+  // arrayAttachments[attachment_I]setAttachement("laser" , spr_MiniGame_Attachment_LaserPointer, 100,20);
+   arrayAttachments[attachment_I].setAttachement("optics", spr_MiniGame_Attachment_Optics,         attack_Default_Optics_X + 0, attack_Default_Optics_Y + 0, sizeAttach);
+   //arrayAttachments[attachment_I]setAttachement("muzzle", spr_MiniGame_Attachment_Muzzle, 100,20);   
+   //arrayAttachments[attachment_I]setAttachement("stock" , spr_MiniGame_Attachment_Stock, 100,20);
+
+
+ // flags to set
+ Attachments_CanPlace_Laser  = false;
+ Attachments_CanPlace_Optics = false; 
+ Attachments_CanPlace_Muzzle = false;
+ Attachments_CanPlace_Stock  = false; 
+ Attachments_CanPlace_Scope  = false;
+ 
+ #endregion
+
+
 
 // background
     gbr = instance_create_layer( bgrX, bgrY, "Instances_MiniGame_Bgr", obj_MiniGame_Bgr_Left );
@@ -140,7 +197,12 @@ button_ResultSelected_Size = 0.2;
  
     // drop off area firt weapons "slot"
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
-
+	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Optics );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Scope );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Stock );
 	
 	
 // top tabs
