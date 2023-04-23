@@ -6,6 +6,34 @@ roomToJump = Room_Workspace;
 room_goto(roomToJump);
 
 
+#region text prefix/suffixes
+ textPrefix = "[font_Cutscene][scale, 2]";
+ textSuffix = "[/scale]"; 
+ 
+ textPrefix_Tab = "[font_Cutscene][scale, 1]";
+ textSuffix_Tab = "[/scale]";
+
+
+#endregion
+
+
+#region unlocked
+
+unlocked_WeaponType_Melee       = true;
+unlocked_WeaponType_Pistol      = true;
+unlocked_WeaponType_Rifle       = true;
+
+unlocked_WeaponType_Smg         = true;
+unlocked_WeaponType_Shotgun     = true;
+
+unlocked_WeaponType_ARifle      = true;
+unlocked_WeaponType_Exotic      = true;
+unlocked_WeaponType_Accessory   = true;
+
+
+#endregion
+
+
 #region Cutscenes
 
 currentCutscene = 0;
@@ -14,7 +42,9 @@ function Createcutscene(day_) constructor {
   
  // sprBgr      = bgrSpr_; // default!
   totalBlocks = 0; // added up in each function
-  
+ 
+ #region all vars
+
 	  // blocks!
 	  dialogBlock_SprIdleStatic_1_[0]   = spr_Nothing;	  
 	  dialogBlock_SprIdle_1_[0]         = spr_Nothing;
@@ -2161,7 +2191,7 @@ function Createcutscene(day_) constructor {
 	  dialogBlock_LoadIn[99]	   = noone;	  // used for minigame loading
 
 
-
+ #endregion
 
 
 
@@ -2218,16 +2248,21 @@ var day_I = 0; // day 1
   arrayCutscenes[day_I] = new Createcutscene(day_I );  // first cutscene
   
      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Granny_IdleStatic, spr_Dialog_Granny_Idle,  spr_Dialog_Granny_TalkStatic,   spr_Dialog_Granny_Talk  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "Granny", "[font_Cutscene][scale, 2]Heinrich! You and the black hand have a mission. [/scale]");	  dialog_I++;
+     arrayCutscenes[day_I].setText(dialog_I,  1, "Granny", textPrefix + "Heinrich! You and the black hand have a mission." + textSuffix);	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Granny;	 
+	 dialog_I++;
    
      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Granny_IdleStatic, spr_Dialog_Granny_Idle,  spr_Dialog_Granny_TalkStatic, spr_Dialog_Granny_Talk , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "King", "[font_Cutscene][scale, 2]Heinrich! You and the black hand have a mission. [/scale]");	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "King", textPrefix + "Heinrich! You and the black hand have a mission." + textSuffix);	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Granny;
 	 dialog_I++;
 
 
 
 #endregion
+
+
+
 
 #region particle collection!
 

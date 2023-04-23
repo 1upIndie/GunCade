@@ -104,6 +104,8 @@ array_NpcTalking  = array_create(0);
 array_Name = array_create(0);
 array_Txt  = array_create(0);
 
+array_InstanceLoadIn  = array_create(0);
+
 var repeat_I = 0;
 repeat(oo.arrayCutscenes[oo.currentCutscene].totalBlocks){
   array_Spr_Idle_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdleStatic_1_[repeat_I];
@@ -133,9 +135,12 @@ repeat(oo.arrayCutscenes[oo.currentCutscene].totalBlocks){
 
   array_Name[repeat_I] = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_Name[repeat_I];
   array_Txt[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_Txt[repeat_I];
+  
+  array_InstanceLoadIn[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_LoadIn[repeat_I];
 
 repeat_I++;
 }
+
 
 
 

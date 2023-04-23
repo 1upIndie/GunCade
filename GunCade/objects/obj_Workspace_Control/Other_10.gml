@@ -4,6 +4,8 @@
 	
 	if(dialogIndex < getBlocks-1){
 	
+	// check if there is an instance loaded!
+	
 	
 	typist.reset();
 	typist.in(typePerStep, typeSmoothness);
@@ -19,6 +21,15 @@
 	//	dialogSpr_X2   = -15;
 	//	}
 	
+	
+	// check if there is an instance loaded! -> if yes block input!	 
+	if ( array_InstanceLoadIn[ dialogIndex ] != noone ){ 
+		blockInput = true;
+		typist.skip();
+		
+		// load in instance
+		instance_create_layer(x,y, "Instances", array_InstanceLoadIn[dialogIndex] );
+		}
 	
 	} 
 	

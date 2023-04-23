@@ -13,10 +13,11 @@ var typeWriterPosition = typist.get_state();
 
 // button to skip
 var buttonSkip = 0;
-if(blockInput == false){  buttonSkip = keyboard_check_released(vk_space);  }
+if(blockInput == false){
+	buttonSkip = keyboard_check_released(vk_space);  
 
 
-
+// next ->
 if(buttonSkip == 1 and typeWriterPosition == 1 ){ 
   event_user(0);
 	}
@@ -26,7 +27,7 @@ if(buttonSkip == 1 and typeWriterPosition == 1 ){
 if(buttonSkip == 1 and typeWriterPosition < 1 ){ 
 	typist.skip();
 	}
-
+}
 
 
 // 
