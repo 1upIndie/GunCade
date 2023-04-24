@@ -28,7 +28,23 @@ bgrX = camX + 32;
 bgrY = camY + 20;
  bgrXscale = 650;
  bgrYscale = 420; 
- 
+
+
+
+detailSpr_X    = camX + 150;
+detailSpr_Y    = camY + 130;
+detailSpr_Size = 0.25;
+
+detailTxt_Headline_x    = camX + 250;
+detailTxt_Cost_x        = camX + 250;
+detailTxt_Description_x = camX + 50;
+
+detailTxt_Headline_y       = camY + 100;
+detailTxt_Cost_y           = camY + 130;
+detailTxt_Description_y[0] = camY + 210;
+detailTxt_Description_y[1] = camY + 250;
+
+
 dropOffSpot_X = camX + 680;
 dropOffSpot_Y = camY + 280;
   dropOffSpot_Weapon_X = dropOffSpot_X + 155;

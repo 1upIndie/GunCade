@@ -14,6 +14,15 @@ room_goto(roomToJump);
  textSuffix_Tab = "[/scale]";
 
 
+/// for weapons detail text box
+ textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
+ textDetail_HeadlineSuffix = "[/c][/scale]"; 
+ 
+ textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
+ textDetail_CostSuffix = "[/c][/scale]"; 
+
+ textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
+ textDetail_DescSuffix = "[/scale]";
 #endregion
 
 
@@ -2261,7 +2270,77 @@ var day_I = 0; // day 1
 
 #endregion
 
+#region weapon texts + costs
 
+function weaponCreate(name_, spr_)constructor {
+  
+  nameWeapon        = "";
+  weaponSpr         = spr_;
+  headLineText      = "";
+  descriptionText1  = "";  
+  descriptionText2  = ""; 
+
+  costText          = "";
+  cost              = 1;
+}
+
+array_DetailWeaponText = array_create(0);
+
+
+var txtDetail_I = 0;
+  array_DetailWeaponText[txtDetail_I] = new weaponCreate("melee 1", spr_MiniGame_Pistol_1);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = "";
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = "";
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = "";
+	  array_DetailWeaponText[txtDetail_I].costText         = "";
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;
+	  txtDetail_I++;
+
+  array_DetailWeaponText[txtDetail_I] = new weaponCreate("melee 2", spr_MiniGame_Pistol_1);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = "";
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = "";
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = "";
+	  array_DetailWeaponText[txtDetail_I].costText         = "";	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  
+	  txtDetail_I++;
+	  
+  array_DetailWeaponText[txtDetail_I] = new weaponCreate("melee 3", spr_MiniGame_Pistol_1);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = "";
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = "";
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = "";
+	  array_DetailWeaponText[txtDetail_I].costText         = "";	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  
+	  txtDetail_I++;	  
+
+txtDetail_I = 10;
+  array_DetailWeaponText[txtDetail_I] = new weaponCreate("pistol 1", spr_MiniGame_Pistol_1);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Small pistol"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + "1000$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  
+	  txtDetail_I++;
+
+  array_DetailWeaponText[txtDetail_I] = new weaponCreate("pistol 2", spr_MiniGame_Pistol_2);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Big pistol"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + "2000$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  
+	  txtDetail_I++;
+	  
+  array_DetailWeaponText[txtDetail_I] = new weaponCreate("pistol 3", spr_MiniGame_Pistol_3);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Other pistol"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + "3000$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  
+	  txtDetail_I++;	  
+
+
+
+
+#endregion
 
 
 #region particle collection!

@@ -5,9 +5,7 @@ var count = 0;
 
 
 
-if instance_exists(obj_Temp_Drag){
-count = instance_number(obj_Temp_Drag)
- 
+if instance_exists(obj_Selected_WeaponDetailTxt){
 
 txt = "yes " + string(count);
 }
