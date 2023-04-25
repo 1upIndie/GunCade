@@ -12,6 +12,11 @@
  update = false;
    spawn = "";
  
+ 
+ // costs
+ costsTotal = 0;
+ 
+ 
  #region input cooldown
  inputCoolDown_Time  = 15;
  inputCoolDown_Timer = inputCoolDown_Time;
@@ -29,7 +34,8 @@ bgrY = camY + 20;
  bgrXscale = 650;
  bgrYscale = 420; 
 
-
+costsTotal_X = camX + 700;
+costsTotal_Y = camY + 600;
 
 detailSpr_X    = camX + 150;
 detailSpr_Y    = camY + 130;

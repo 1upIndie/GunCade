@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Sprites/Dialog/MiniGame.yy",
+    "name": "Attachments",
+    "path": "folders/Sprites/Dialog/MiniGame/Attachments.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

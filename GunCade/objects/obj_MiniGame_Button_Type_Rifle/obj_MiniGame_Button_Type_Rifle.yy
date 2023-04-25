@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_MiniGame_Button_Type_Rifle",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {

@@ -7,5 +7,5 @@ if (!instance_exists(obj_Temp_Drag) and obj_MiniGame_Parent.inputCoolDown == fal
    sprite_index = spr_MiniGame_Pistol_Empty;
    whatisIt = "";
    update = true;
-   
+   obj_MiniGame_Parent.costsTotal = 0;
 }
