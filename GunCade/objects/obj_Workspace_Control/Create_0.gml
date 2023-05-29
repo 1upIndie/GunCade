@@ -26,7 +26,7 @@ blackBoxAlpha = 0.95;
 
 
 // typewriter
-typePerStep    = 0.3;
+typePerStep    = 0.5;
 typeSmoothness = 10;
 
 // text

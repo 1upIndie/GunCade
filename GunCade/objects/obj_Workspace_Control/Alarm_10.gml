@@ -1,4 +1,4 @@
-/// @description blink
+/// @description spr 3 index
 
 
 if(dialogSprIndex_3_ < dialogSprIndexMax){
