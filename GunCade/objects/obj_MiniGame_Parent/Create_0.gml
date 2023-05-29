@@ -76,6 +76,30 @@ button_Type_Y[1] = camY + typeStartY + typeYY * 1;
 button_Type_Y[2] = camY + typeStartY + typeYY * 2;
 button_TypeSize = 0.08;
 
+
+ var nameStartX = 45;
+ var nameStartY = 90; 
+ 
+ var nameXX    = 125;
+ var nameYY    = 100; 
+button_Name_x[0] = camX + nameStartX + nameXX * 0;
+button_Name_x[1] = camX + nameStartX + nameXX * 1;
+button_Name_x[2] = camX + nameStartX + nameXX * 2;
+button_Name_x[3] = camX + nameStartX + nameXX * 3;
+button_Name_x[4] = camX + nameStartX + nameXX * 4;
+button_Name_x[5] = camX + nameStartX + nameXX * 5;
+
+
+button_Name_Y[0] = camY + nameStartY + nameYY * 0;
+button_Name_Y[1] = camY + nameStartY + nameYY * 1;
+button_Name_Y[2] = camY + nameStartY + nameYY * 2;
+button_Name_Y[3] = camY + nameStartY + nameYY * 2;
+button_Name_Y[4] = camY + nameStartY + nameYY * 2;
+button_NameSize = 0.3;
+
+
+
+
 var resultY_Start = 70;
 var resultY_YY = 75;
 button_ResultSelected_X    = camX + 500;

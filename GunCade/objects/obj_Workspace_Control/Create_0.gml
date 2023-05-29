@@ -51,7 +51,7 @@ dialogSpr_NpcX_3_    = 650;
   dialogSpr_X2    = -15;
   dialogSpr_X2Add = 1;
 dialogSpr_Y    = -530;
-dialogScale    = 1;
+dialogScale    = 0.5;
 dialogSprAlpha = 1;
   dialogSprAlphaAdd = 0.05;
 

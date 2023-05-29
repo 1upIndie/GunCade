@@ -1,7 +1,7 @@
 /// @description Setup
 
 //gpu_set_texfilter(false); 
-
+alarm[0] = 3;
 zoomEnabled = true; // allow player manual zoom
 
 cameraMode_ = "";
@@ -136,9 +136,6 @@ display_Height =  1080;
 window_set_size(display_Width, display_Height );  
 surface_resize(application_surface, display_Width, display_Height ); 
 
-
-// short delay after that center camera
-alarm[0] = 1;  
 
 
 target = obj_CameraDummy;   // stick to target, can be changed dynamically to jump to other places

@@ -10,6 +10,9 @@ room_goto(roomToJump);
  textPrefix = "[font_Cutscene][scale, 2]";
  textSuffix = "[/scale]"; 
  
+ textPrefixPlayer = "[font_Cutscene][scale, 2][c_orange]";
+ textSuffixPlayer = "[/scale][/c]";  
+ 
  textPrefix_Tab = "[font_Cutscene][scale, 1]";
  textSuffix_Tab = "[/scale]";
 
@@ -27,6 +30,11 @@ room_goto(roomToJump);
  textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
  textDetail_DescSuffix = "[/scale]";
  
+ 
+ // sorting by name
+  textSortNamePrefix = "[font_Cutscene][scale, 2]";
+  textSortNameSuffix = "[/scale]"; 
+
 
 #endregion
 
@@ -2261,14 +2269,16 @@ var day_I = 0; // day 1
  var dialog_I = 0; // zeiger
   arrayCutscenes[day_I] = new Createcutscene(day_I );  // first cutscene
   
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Granny_IdleStatic, spr_Dialog_Granny_Idle,  spr_Dialog_Granny_TalkStatic,   spr_Dialog_Granny_Talk  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "Granny", textPrefix + "Heinrich! You and the black hand have a mission." + textSuffix);	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Granny;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Victor_Idle, spr_Dialog_Victor_Idle,  spr_Dialog_Victor_Idle,   spr_Dialog_Victor_Idle  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "???", textPrefix + "Heyhey, my boy, how are you doing on this glorious day?" + textSuffix);	
 	 dialog_I++;
    
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Granny_IdleStatic, spr_Dialog_Granny_Idle,  spr_Dialog_Granny_TalkStatic, spr_Dialog_Granny_Talk , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "King", textPrefix + "Heinrich! You and the black hand have a mission." + textSuffix);	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Granny;
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Victor_Idle, spr_Dialog_Victor_Idle,  spr_Dialog_Victor_Idle,   spr_Dialog_Victor_Idle  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "PlayerName", textPrefixPlayer + "Hi Viktor, didn't expect to see you so early." + textSuffix);	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Victor_Idle, spr_Dialog_Victor_Idle,  spr_Dialog_Victor_Idle,   spr_Dialog_Victor_Idle  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "???", textPrefix + "My only tenant who can't pay rent starts a side business inside my mall and he doesn’t expect to see me first thing!? Ahhh, I can smell the money already." + textSuffix);	
 	 dialog_I++;
 
 
