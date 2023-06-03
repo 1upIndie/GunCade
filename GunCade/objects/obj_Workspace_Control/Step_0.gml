@@ -97,8 +97,131 @@ if(typeWriterPosition >= 1){
 
 #endregion
 
+
+#region active person resize, extro intro
+
+
+var active   = 1;
+var passive1 = 2;
+var passive2 = 3;
+
+ regularDialog = false;
+
+if(array_Spr_Talk_1_IntroExtro[dialogIndex] == "" and array_Spr_Talk_2_IntroExtro[dialogIndex] == "" and array_Spr_Talk_3_IntroExtro[dialogIndex] == ""){ regularDialog = true;  }
+
+
+// default regular dialog
+if(regularDialog == true){
+if(array_NpcTalking[dialogIndex] == 1){ active   = 1; passive1 = 2; passive2 = 3;  }
+if(array_NpcTalking[dialogIndex] == 2){ active   = 2; passive1 = 1; passive2 = 3;  }
+if(array_NpcTalking[dialogIndex] == 3){ active   = 3; passive1 = 1; passive2 = 2;  } 
+
+  if(dialogScale[active]   < dialogScale_Active ){ dialogScale[active]   += dialogScale_AddSub; dialogSprAlpha[active] = 1;  }
+  if(dialogScale[passive1] > dialogScale_Passive){ dialogScale[passive1] -= dialogScale_AddSub; dialogSprAlpha[passive1] = dialogSprAlphaPassive;  }
+  if(dialogScale[passive2] > dialogScale_Passive){ dialogScale[passive2] -= dialogScale_AddSub; dialogSprAlpha[passive2] = dialogSprAlphaPassive;  }
+  
+
+}  
+
+
+if(regularDialog == false){
+	
+#region enter default!
+
+
+	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "enter default"){
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; introExtroX[1] = intro_XStart;  }
+		
+		// move!
+		if(introExtroX[1] < 0 ){ introExtroX[1] += intro_XAdd;  }
+		introExtroX[1] = clamp(introExtroX[1],intro_XStart, 0);
+		}
+
+	
+	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "enter default"){
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; introExtroX[2] = intro_XStart;  }
+		
+		// move!
+		if(introExtroX[2] < 0 ){ introExtroX[2] += intro_XAdd;  }
+		introExtroX[2] = clamp(introExtroX[2],intro_XStart, 0);
+		}
+	
+	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "enter default"){
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true; introExtroX[3] = intro_XStart;  }
+		
+		// move!
+		if(introExtroX[3] < 0 ){ introExtroX[3] += intro_XAdd;  }
+		introExtroX[3] = clamp(introExtroX[3],intro_XStart, 0);
+		}
+#endregion
+
+#region exit default
+     // exit default
+	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "exit default"){
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; introExtroX[1] = intro_XStart;  }
+		
+		// move!
+		if(introExtroX[1] > intro_XStart ){ introExtroX[1] -= intro_XAdd; }
+		introExtroX[1] = clamp(introExtroX[1],intro_XStart, 0);
+		}	
+
+	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "exit default"){
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; introExtroX[2] = intro_XStart;  }
+		
+		// move!
+		if(introExtroX[2] > intro_XStart ){ introExtroX[2] -= intro_XAdd; }
+		introExtroX[2] = clamp(introExtroX[2],intro_XStart, 0);
+		}	
+
+
+	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "exit default"){
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true; introExtroX[3] = intro_XStart;  }
+		
+		// move!
+		if(introExtroX[3] > intro_XStart ){ introExtroX[3] -= intro_XAdd; }
+		introExtroX[3] = clamp(introExtroX[3],intro_XStart, 0);
+		}	
+#endregion	
+	
+
+#region enter shadow
+
+
+	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "enter shadow"){
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; dialogSprAlpha[1] = 0;  }
+		
+		// move!
+		if(introExtroX[1] < 1 ){ dialogSprAlpha[1] += intro_AlphaAdd;  }
+		dialogSprAlpha[1] = clamp(dialogSprAlpha[2], 0, 1);
+		}
+
+	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "enter shadow"){
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; dialogSprAlpha[2] = 0;  }
+		
+		// move!
+		if(introExtroX[2] < 1 ){ dialogSprAlpha[2] += intro_AlphaAdd;  }
+		dialogSprAlpha[2] = clamp(dialogSprAlpha[2], 0, 1);
+		}
+
+	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "enter shadow"){
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true; dialogSprAlpha[3] = 0;  }
+		
+		// move!
+		if(introExtroX[3] < 1 ){ dialogSprAlpha[3] += intro_AlphaAdd;  }
+		dialogSprAlpha[3] = clamp(dialogSprAlpha[3], 0, 1);
+		}
+
+
+
+#endregion
+	
+	
+} // end of regular dialog false
+
+#endregion
 	
 // spr fade in!
+/*
 if(dialogSprAlpha < 1){
 dialogSprAlpha += dialogSprAlphaAdd;
  if(dialogSprAlpha >= 1){  dialogSprAlpha = 1; }
@@ -109,3 +232,4 @@ if(dialogSpr_X2 < 0){
   if( dialogSpr_X2 >= 0 ){ dialogSpr_X2 = 0; }
 }
 
+*/

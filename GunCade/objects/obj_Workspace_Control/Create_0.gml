@@ -37,7 +37,7 @@ textNeuesZeile = 900;
 
 nameY = -170;
 
-
+regularDialog = false;
 
 // dialog spr
 dialogShow_Spr_1_ = spr_Nothing;
@@ -51,8 +51,19 @@ dialogSpr_NpcX_3_    = 650;
   dialogSpr_X2    = -15;
   dialogSpr_X2Add = 1;
 dialogSpr_Y    = -530;
-dialogScale    = 0.5;
-dialogSprAlpha = 1;
+dialogScale[1]    = 0.5;
+dialogScale[2]    = 0.5;
+dialogScale[3]    = 0.5;
+  dialogScale_Passive = 0.5;
+  dialogScale_Active  = 0.52;  
+  dialogScale_AddSub  = 0.001;
+  
+  
+dialogSprAlpha[1] = 1;
+dialogSprAlpha[2] = 1;
+dialogSprAlpha[3] = 1;
+ dialogSprAlphaPassive = 0.95; // when other npc or player is talking
+
   dialogSprAlphaAdd = 0.05;
 
 
@@ -83,21 +94,24 @@ dialogIndex = 0;
 
 var oo = obj_Control_All;
 
-array_Spr_Idle_Static_1_  = array_create(0);
-array_Spr_Idle_1_         = array_create(0);
-array_Spr_Talk_Static_1_  = array_create(0);
-array_Spr_Talk_1_         = array_create(0);
+array_Spr_Idle_Static_1_     = array_create(0);
+array_Spr_Idle_1_            = array_create(0);
+array_Spr_Talk_Static_1_     = array_create(0);
+array_Spr_Talk_1_            = array_create(0);
+array_Spr_Talk_1_IntroExtro  = array_create(0);
 
-array_Spr_Idle_Static_2_  = array_create(0);
-array_Spr_Idle_2_         = array_create(0);
-array_Spr_Talk_Static_2_  = array_create(0);
-array_Spr_Talk_2_         = array_create(0);
 
-array_Spr_Idle_Static_3_  = array_create(0);
-array_Spr_Idle_3_         = array_create(0);
-array_Spr_Talk_Static_3_  = array_create(0);
-array_Spr_Talk_3_         = array_create(0);
+array_Spr_Idle_Static_2_     = array_create(0);
+array_Spr_Idle_2_            = array_create(0);
+array_Spr_Talk_Static_2_     = array_create(0);
+array_Spr_Talk_2_            = array_create(0);
+array_Spr_Talk_2_IntroExtro  = array_create(0);
 
+array_Spr_Idle_Static_3_     = array_create(0);
+array_Spr_Idle_3_            = array_create(0);
+array_Spr_Talk_Static_3_     = array_create(0);
+array_Spr_Talk_3_            = array_create(0);
+array_Spr_Talk_3_IntroExtro  = array_create(0);
 
 array_NpcTalking  = array_create(0);
 
@@ -107,42 +121,62 @@ array_Txt  = array_create(0);
 array_InstanceLoadIn  = array_create(0);
 
 var repeat_I = 0;
-repeat(oo.arrayCutscenes[oo.currentCutscene].totalBlocks){
-  array_Spr_Idle_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdleStatic_1_[repeat_I];
-  array_Spr_Idle_1_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdle_1_[repeat_I];  
+repeat(600){
+  array_Spr_Idle_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdleStatic_1_[repeat_I];
+  array_Spr_Idle_1_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdle_1_[repeat_I];  
 
-  array_Spr_Talk_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprTalkStatic_1_[repeat_I];
-  array_Spr_Talk_1_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprTalk_1_[repeat_I];  
-
-
-  array_Spr_Idle_Static_2_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdleStatic_2_[repeat_I];
-  array_Spr_Idle_2_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdle_2_[repeat_I];  
-
-  array_Spr_Talk_Static_2_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprTalkStatic_2_[repeat_I];
-  array_Spr_Talk_2_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprTalk_2_[repeat_I];  
+  array_Spr_Talk_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprTalkStatic_1_[repeat_I];
+  array_Spr_Talk_1_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprTalk_1_[repeat_I];  
 
 
-  array_Spr_Idle_Static_3_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdleStatic_3_[repeat_I];
-  array_Spr_Idle_3_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprIdle_3_[repeat_I];  
+  array_Spr_Idle_Static_2_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdleStatic_2_[repeat_I];
+  array_Spr_Idle_2_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdle_2_[repeat_I];  
 
-  array_Spr_Talk_Static_3_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprTalkStatic_3_[repeat_I];
-  array_Spr_Talk_3_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_SprTalk_3_[repeat_I];  
-
-
-
-  array_NpcTalking[repeat_I]          = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_Txt_PersonActive[repeat_I];
+  array_Spr_Talk_Static_2_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprTalkStatic_2_[repeat_I];
+  array_Spr_Talk_2_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprTalk_2_[repeat_I];  
 
 
-  array_Name[repeat_I] = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_Name[repeat_I];
-  array_Txt[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_Txt[repeat_I];
+  array_Spr_Idle_Static_3_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdleStatic_3_[repeat_I];
+  array_Spr_Idle_3_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdle_3_[repeat_I];  
+
+  array_Spr_Talk_Static_3_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprTalkStatic_3_[repeat_I];
+  array_Spr_Talk_3_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprTalk_3_[repeat_I];  
+
+
+
+  array_NpcTalking[repeat_I]          = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_Txt_PersonActive[repeat_I];
+
+
+  array_Name[repeat_I]                = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_Name[repeat_I];
+  array_Txt[repeat_I]                 = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_Txt[repeat_I];
   
-  array_InstanceLoadIn[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene].dialogBlock_LoadIn[repeat_I];
+  array_InstanceLoadIn[repeat_I]      = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_LoadIn[repeat_I];
+
+  
+  // npc intro/extro
+  array_Spr_Talk_1_IntroExtro[repeat_I] = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprSwap_1_[repeat_I];
+  array_Spr_Talk_2_IntroExtro[repeat_I] = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprSwap_2_[repeat_I];
+  array_Spr_Talk_3_IntroExtro[repeat_I] = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprSwap_3_[repeat_I];
+
 
 repeat_I++;
 }
 
 
-
+// set once values -> intro/extro
+setOnce_Enter[1] = false;
+setOnce_Enter[2] = false;
+setOnce_Enter[3] = false;
+ 
+ 
+ // intro extro X
+ introExtroX[1] = 0;
+ introExtroX[2] = 0; 
+ introExtroX[3] = 0; 
+ 
+ intro_XStart   = -500;
+ intro_XAdd     = 10;
+ intro_AlphaAdd = 0.006;
 
 // camera
  camX        = camera_get_view_x( view_camera[0] );

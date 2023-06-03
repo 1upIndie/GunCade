@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_MiniGame_Granny",
+  "name": "obj_MiniGame_Granny_Day1",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Objects/Cutscenes/MiniGame.yy",
+    "name": "Day_1",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/Day_1.yy",
   },
   "parentObjectId": {
     "name": "obj_MiniGame_Parent",

@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Objects/Cutscenes/MiniGame.yy",
+    "name": "Skip_Minigame",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame.yy",
   },
   "parentObjectId": null,
   "persistent": false,

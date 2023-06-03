@@ -12,6 +12,12 @@
 	
 	dialogIndex++;
 	
+	
+	  // override all the time to not have skip conflict
+	 introExtroX[1] = 0;
+	 introExtroX[2] = 0; 
+	 introExtroX[3] = 0; 
+	
 	// check if old spr is the same as new!
 	var popInSpr = true;
 	//if( array_Spr[dialogIndex] == array_Spr[dialogIndex-1] ){  popInSpr = false; }

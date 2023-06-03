@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_MiniGame_Shadow",
-  "eventList": [],
+  "name": "obj_Dialog_SkipIndex_To_Parent",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Objects/Cutscenes/MiniGame.yy",
+    "name": "Skip_Minigame",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame.yy",
   },
-  "parentObjectId": {
-    "name": "obj_MiniGame_Parent",
-    "path": "objects/obj_MiniGame_Parent/obj_MiniGame_Parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

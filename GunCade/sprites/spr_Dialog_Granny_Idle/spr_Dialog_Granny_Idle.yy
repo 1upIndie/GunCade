@@ -14,6 +14,9 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d5e56dd-9a78-4139-900c-59acaa99d067",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c8fb7494-d9b1-4d15-a008-0b4fe236e952",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"57395fcd-5503-470a-a878-e595ba57ee30",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63986783-ece2-421d-aac7-e021384e9c2b",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -23,10 +26,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d41cde4a-0cad-4803-ba92-2acde8f9fd03","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 1,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Sprites/Dialog/Characters.yy",
+    "name": "Granny",
+    "path": "folders/Sprites/Dialog/Characters/Granny.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -43,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,11 +58,14 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8d5e56dd-9a78-4139-900c-59acaa99d067","path":"sprites/spr_Dialog_Granny_Idle/spr_Dialog_Granny_Idle.yy",},},},"Disabled":false,"id":"a17d4201-af74-495d-9ce6-4683a5a994f1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c8fb7494-d9b1-4d15-a008-0b4fe236e952","path":"sprites/spr_Dialog_Granny_Idle/spr_Dialog_Granny_Idle.yy",},},},"Disabled":false,"id":"7805ffd7-6141-4900-bd7d-f1bfb1f07812","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"57395fcd-5503-470a-a878-e595ba57ee30","path":"sprites/spr_Dialog_Granny_Idle/spr_Dialog_Granny_Idle.yy",},},},"Disabled":false,"id":"5de6b151-f065-4b6b-b2fd-bf1b63e9df7c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"63986783-ece2-421d-aac7-e021384e9c2b","path":"sprites/spr_Dialog_Granny_Idle/spr_Dialog_Granny_Idle.yy",},},},"Disabled":false,"id":"8ae9eb06-4a6d-4b0d-ba73-56395de3567a","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": 350,
     "yorigin": 0,
   },
   "swatchColours": null,
