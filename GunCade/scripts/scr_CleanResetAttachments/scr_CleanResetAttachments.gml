@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
 function scr_CleanResetAttachments(){
 // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotics 60-70
-
-var indexAttach = -999;
+/*
+var indexAttach = save_Index_Weapon;
 switch(whatisIt){
     case "melee 1":  indexAttach = 0; break;
     case "melee 2":  indexAttach = 1; break;
@@ -97,5 +97,5 @@ switch(whatisIt){
 	if( obj_MiniGame_Drop_Scope.weaponSpr        != spr_MiniGame_Invisible){ obj_MiniGame_Parent.Attachments_CanPlace_Scope  = true;  }
 
 
-	
+	*/
 }

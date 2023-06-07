@@ -13,8 +13,32 @@
    spawn = "";
  
  
- // costs
- costsTotal = 0;
+ // costs input values to be compared by
+ current_Costs               = 0; // total value
+ current_Type                = ""; 
+ current_Weapon              = ""; 
+ current_Attachment__LaserP  = 0;
+ current_Attachment__Muzzle  = 0; 
+ current_Attachment__Optics  = 0; 
+ current_Attachment__Scope   = 0; 
+ current_Attachment__Stock   = 0; 
+ 
+ 
+ player_Wish_Type   = "";
+ player_Wish_Weapon = ""; 
+ player_Wish_Costs  = 0;
+ 
+ 
+ 
+ array_Positive = array_create(0);
+ 
+ array_Negative = array_create(0); // values that make it a bad sale!
+ 
+ 
+ // jump points
+ result_Index_Sale     = 0;
+ result_Index_Messup   = 0; 
+ result_Index_Refuse   = 0;
  
  
  #region input cooldown
@@ -112,6 +136,15 @@ button_ResultSelected_Y[5] = camY + resultY_Start + (resultY_YY * 5);
 button_ResultSelected_Y[6] = camY + resultY_Start + (resultY_YY * 6);
 button_ResultSelected_Size = 0.2;
 var sizeAttach = button_ResultSelected_Size;
+
+
+
+// right buttons -> refuse/sale
+button_Right_X[0]  = camX + 700;
+button_Right_X[1]  = camX + 880;
+button_Right_Y     = camY + 400;
+
+
 
  #region set attachments
  
@@ -244,11 +277,11 @@ var sizeAttach = button_ResultSelected_Size;
     // drop off area firt weapons "slot"
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 	
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Optics );	
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Scope );	
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Stock );
+   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	
+   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );
+   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Optics );	
+   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Scope );	
+   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Stock );
 	
 	
 // top tabs
@@ -257,6 +290,17 @@ var sizeAttach = button_ResultSelected_Size;
 	
     tab2 = instance_create_layer( button_Tab_x[1], button_Tab_y, layer_, obj_MiniGame_Button_SortBy_Name );
     tab2.text_ = oo.textPrefix_Tab + "Name" + oo.textSuffix_Tab;	
+
+
+// right buttons
+    btnRefuse = instance_create_layer( button_Right_X[0], button_Right_Y, layer_, obj_MiniGame_Button_Refuse );
+    btnRefuse.text_ = oo.textPrefix_Tab + "Refuse" + oo.textSuffix_Tab;
+	
+    btnRefuse = instance_create_layer( button_Right_X[1], button_Right_Y, layer_, obj_MiniGame_Button_Refuse );
+    btnRefuse.text_ = oo.textPrefix_Tab + "Sell" + oo.textSuffix_Tab;
+
+
+
 
 
 

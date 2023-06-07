@@ -5,11 +5,11 @@ var count = 0;
 
 
 
-if instance_exists(obj_Workspace_Control){
+if instance_exists(obj_Temp_Drag){
 
-txt = "Npc Talking " + string(obj_Workspace_Control.array_NpcTalking[obj_Workspace_Control.dialogIndex]);
+txt = "Yes";
 
 
-}
+} else {  txt = "nope"; }
 
 draw_text(x,y, txt)

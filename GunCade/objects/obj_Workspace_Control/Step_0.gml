@@ -126,7 +126,7 @@ if(array_NpcTalking[dialogIndex] == 3){ active   = 3; passive1 = 1; passive2 = 2
 
 if(regularDialog == false){
 	
-#region enter default!
+#region enter default! coming from left side
 
 
 	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "enter default"){
@@ -155,10 +155,11 @@ if(regularDialog == false){
 		}
 #endregion
 
-#region exit default
-     // exit default
+
+#region exit default! going to left side
+
 	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "exit default"){
-		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; introExtroX[1] = intro_XStart;  }
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; introExtroX[1] = 0;  }   
 		
 		// move!
 		if(introExtroX[1] > intro_XStart ){ introExtroX[1] -= intro_XAdd; }
@@ -166,7 +167,7 @@ if(regularDialog == false){
 		}	
 
 	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "exit default"){
-		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; introExtroX[2] = intro_XStart;  }
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; introExtroX[2] = 0;  }  
 		
 		// move!
 		if(introExtroX[2] > intro_XStart ){ introExtroX[2] -= intro_XAdd; }
@@ -175,14 +176,72 @@ if(regularDialog == false){
 
 
 	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "exit default"){
-		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true; introExtroX[3] = intro_XStart;  }
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true;   introExtroX[3] = 0;  }
 		
 		// move!
 		if(introExtroX[3] > intro_XStart ){ introExtroX[3] -= intro_XAdd; }
 		introExtroX[3] = clamp(introExtroX[3],intro_XStart, 0);
 		}	
 #endregion	
+
+
+#region enter from  right side
+   if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "enter right"){
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; introExtroX[1] = intro_XStartRight;  }
+		
+		// move!
+		if(introExtroX[1] > 0 ){ introExtroX[1] -= intro_XAdd;  }
+		introExtroX[1] = clamp(introExtroX[1], 0, intro_XStartRight);
+		}
+
 	
+	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "enter right"){
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; introExtroX[2] = intro_XStartRight;  }
+		
+		// move!
+		if(introExtroX[2] < 0 ){ introExtroX[2] -= intro_XAdd;  }
+		introExtroX[2] = clamp(introExtroX[2],0, intro_XStartRight);
+		}
+	
+	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "enter right"){
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true; introExtroX[3] = intro_XStartRight;  }
+		
+		// move!
+		if(introExtroX[3] < 0 ){ introExtroX[3] -= intro_XAdd;  }
+		introExtroX[3] = clamp(introExtroX[3],0, intro_XStartRight);
+		}
+#endregion
+
+
+#region exit  from  right side
+
+	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "exit right"){
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true; introExtroX[1] = 0;  }
+		
+		// move!
+		if(introExtroX[1] < intro_XStartRight ){ introExtroX[1] += intro_XAdd; }
+		introExtroX[1] = clamp(introExtroX[1],0, intro_XStartRight);
+		}	
+
+	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "exit right"){
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true; introExtroX[2] = 0;  }
+		
+		// move!
+		if(introExtroX[2] < intro_XStartRight ){ introExtroX[2] += intro_XAdd; }
+		introExtroX[2] = clamp(introExtroX[2],0, intro_XStartRight);
+		}	
+
+
+	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "exit right"){
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true; introExtroX[3] = 0;  }
+		
+		// move!
+		if(introExtroX[3] < intro_XStartRight ){ introExtroX[3] += intro_XAdd; }
+		introExtroX[3] = clamp(introExtroX[3],0, intro_XStartRight);
+		}	
+#endregion	
+
+
 
 #region enter shadow
 
@@ -215,7 +274,36 @@ if(regularDialog == false){
 
 #endregion
 	
-	
+#region exit shadow
+
+
+	if( array_Spr_Talk_1_IntroExtro[dialogIndex] == "exit shadow"){
+		if(setOnce_Enter[1] == false){  setOnce_Enter[1] = true;   }
+		
+		// move!
+		if(introExtroX[1] > 0 ){ dialogSprAlpha[1] -= intro_AlphaAdd;  }
+		dialogSprAlpha[1] = clamp(dialogSprAlpha[2], 0, 1);
+		}
+
+	if( array_Spr_Talk_2_IntroExtro[dialogIndex] == "exit shadow"){
+		if(setOnce_Enter[2] == false){  setOnce_Enter[2] = true;   }
+		
+		// move!
+		if(introExtroX[2] > 0 ){ dialogSprAlpha[2] -= intro_AlphaAdd;  }
+		dialogSprAlpha[2] = clamp(dialogSprAlpha[2], 0, 1);
+		}
+
+	if( array_Spr_Talk_3_IntroExtro[dialogIndex] == "exit shadow"){
+		if(setOnce_Enter[3] == false){  setOnce_Enter[3] = true;   }
+		
+		// move!
+		if(introExtroX[3] > 0 ){ dialogSprAlpha[3] -= intro_AlphaAdd;  }
+		dialogSprAlpha[3] = clamp(dialogSprAlpha[3], 0, 1);
+		}
+
+
+
+#endregion	
 } // end of regular dialog false
 
 #endregion
