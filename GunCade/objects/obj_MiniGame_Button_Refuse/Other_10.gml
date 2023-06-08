@@ -5,14 +5,11 @@ if(hasWeapon == true){  image_alpha = 1;
 
   // check what it is !
 
+ var getIndex_Refuse  = obj_MiniGame_Parent.result_Index_Refuse;
 
-// clean up!
-if ( instance_exists( obj_MiniGame_Result_Inst )){ instance_destroy(obj_MiniGame_Result_Inst); }
-if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selected_WeaponDetailTxt);  } 
-
-// delete also temp carried if there!
-if ( instance_exists( obj_Temp_Drag )){ instance_destroy(obj_Temp_Drag); }
-
-
+ scr_CleanUp_Minigameover("refuse");
+ 
+ scr_Unblock_CashIn( obj_MiniGame_Parent.result_Index_Refuse, 0, 0  );
+ 
 // inactive
 } else { image_alpha = inactiveAlpha; }

@@ -1,4 +1,5 @@
 /// @description 
+event_inherited();
 
 state = "blink";
 

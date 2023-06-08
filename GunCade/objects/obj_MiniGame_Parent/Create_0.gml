@@ -30,9 +30,31 @@
  
  
  
- array_Positive = array_create(0);
+ // possible variations!
+ // perfect combo!
+ possible_Weapon_Perfect          = -999;
+ possible_LaserPointer_Perfect    = -999;  // attachments not set on default
+ possible_Muzzle_Perfect          = -999;  
+ possible_Optics_Perfect          = -999; 
+ possible_Scope_Perfect           = -999; 
+ possible_Stock_Perfect           = -999; 
  
- array_Negative = array_create(0); // values that make it a bad sale!
+ 
+ // all other combos -> good sale, no tip
+ array_Positive_Weapons   = array_create(0); 
+ 
+ 
+ // negatives!
+ array_Negative           = array_create(0); // values that make it a bad sale -> fail!
+ negative_LaserPointer    = false;
+ negative_Muzzle          = false;  
+ negative_Optics          = false; 
+ negative_Scope           = false; 
+ negative_Stock           = false;   
+
+ 
+ 
+
  
  
  // jump points
@@ -40,7 +62,7 @@
  result_Index_Messup   = 0; 
  result_Index_Refuse   = 0;
  
- 
+
  #region input cooldown
  inputCoolDown_Time  = 15;
  inputCoolDown_Timer = inputCoolDown_Time;
@@ -296,7 +318,7 @@ button_Right_Y     = camY + 400;
     btnRefuse = instance_create_layer( button_Right_X[0], button_Right_Y, layer_, obj_MiniGame_Button_Refuse );
     btnRefuse.text_ = oo.textPrefix_Tab + "Refuse" + oo.textSuffix_Tab;
 	
-    btnRefuse = instance_create_layer( button_Right_X[1], button_Right_Y, layer_, obj_MiniGame_Button_Refuse );
+    btnRefuse = instance_create_layer( button_Right_X[1], button_Right_Y, layer_, obj_MiniGame_Button_Sale );
     btnRefuse.text_ = oo.textPrefix_Tab + "Sell" + oo.textSuffix_Tab;
 
 

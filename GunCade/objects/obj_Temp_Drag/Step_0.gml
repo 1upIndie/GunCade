@@ -97,6 +97,8 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
 			 overrideInst.image_alpha  = 1;
 			 
 			 
+			 // enable sale
+			 obj_MiniGame_Button_Sale.enableSale = true;
 			 
 	  if ( resetAttachments == true){ overrideInst.update = true;  }
 

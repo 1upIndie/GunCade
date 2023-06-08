@@ -2,6 +2,17 @@
 
 alarm[0] = 35; // start typing
 
+
+
+
+#region daily temp values
+
+dayTemp_Cash     = 0;
+dayTemp_Cash_Tip = 0;
+#endregion
+
+
+
 //instance_create_layer(x,y, "Instances_bgr", obj_Workspace_Bgr );
 // apply camera
 var factor = 65;

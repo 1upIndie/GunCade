@@ -1,4 +1,6 @@
 /// @description 
+event_inherited();
+
 
 state = "blink";
 
@@ -11,7 +13,7 @@ update = false; // used to reset attachments!
  
  #endregion
 
-save_Index_Weapon = -999; // hold index info to flush costs!
+save_Index_Weapon = -999; // hold index info to flush costs! redundant
 
 whatisIt = "";
 weaponSpr = spr_Nothing;
