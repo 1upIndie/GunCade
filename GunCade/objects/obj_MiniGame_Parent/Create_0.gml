@@ -14,8 +14,9 @@
  
  
  // costs input values to be compared by
- current_Costs               = 0; // total value
- current_Type                = ""; 
+
+current_Costs               = 0; // total value
+/* current_Type                = ""; 
  current_Weapon              = ""; 
  current_Attachment__LaserP  = 0;
  current_Attachment__Muzzle  = 0; 
@@ -25,14 +26,12 @@
  
  
  player_Wish_Type   = "";
- player_Wish_Weapon = ""; 
- player_Wish_Costs  = 0;
- 
+*/
  
  
  // possible variations!
  // perfect combo!
- possible_Weapon_Perfect          = -999;
+ possible_Weapon_Perfect          = -999;   // index numbers!
  possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  possible_Muzzle_Perfect          = -999;  
  possible_Optics_Perfect          = -999; 
@@ -52,11 +51,8 @@
  negative_Scope           = false; 
  negative_Stock           = false;   
 
- 
- 
+ negative_Costs           = 9999999;  
 
- 
- 
  // jump points
  result_Index_Sale     = 0;
  result_Index_Messup   = 0; 
@@ -299,11 +295,11 @@ button_Right_Y     = camY + 400;
     // drop off area firt weapons "slot"
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 	
-   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	
-   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );
-   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Optics );	
-   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Scope );	
-   // dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Stock );
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Optics );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Scope );	
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Stock );
 	
 	
 // top tabs

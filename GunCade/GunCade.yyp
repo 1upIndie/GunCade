@@ -168,6 +168,7 @@
     {"id":{"name":"spr_MiniGame_Exotic_1","path":"sprites/spr_MiniGame_Exotic_1/spr_MiniGame_Exotic_1.yy",},},
     {"id":{"name":"__scribble_class_event","path":"scripts/__scribble_class_event/__scribble_class_event.yy",},},
     {"id":{"name":"day_11","path":"sprites/day_11/day_11.yy",},},
+    {"id":{"name":"scr_WeaponMatchCheck","path":"scripts/scr_WeaponMatchCheck/scr_WeaponMatchCheck.yy",},},
     {"id":{"name":"__scribble_gen_10_set_padding_flags","path":"scripts/__scribble_gen_10_set_padding_flags/__scribble_gen_10_set_padding_flags.yy",},},
     {"id":{"name":"spr_MiniGame_Shotgun_3","path":"sprites/spr_MiniGame_Shotgun_3/spr_MiniGame_Shotgun_3.yy",},},
     {"id":{"name":"scribble_refresh_everything","path":"scripts/scribble_refresh_everything/scribble_refresh_everything.yy",},},

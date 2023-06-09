@@ -17,7 +17,10 @@
     "name": "DropOff_parts",
     "path": "folders/Objects/Cutscenes/MiniGame/DropOff_parts.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_MiniGame_Drop_Parent",
+    "path": "objects/obj_MiniGame_Drop_Parent/obj_MiniGame_Drop_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

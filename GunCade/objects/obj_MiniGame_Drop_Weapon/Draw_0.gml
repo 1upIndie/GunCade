@@ -21,4 +21,6 @@ draw_self();
 if(obj_Control_All.debug == true){
 
 draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_purple,c_purple, c_purple, c_purple, 1);
+
+draw_text(x,y-40, save_Index_Weapon );
 }

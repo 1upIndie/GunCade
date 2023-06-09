@@ -10,4 +10,7 @@ textY = 1;
 
 
 // 
+canDraw = false;
+delay = 15;
+alarm[0] = delay;
 

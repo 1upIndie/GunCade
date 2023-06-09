@@ -5,7 +5,7 @@ var count = 0;
 
 
 
-if instance_exists(obj_Temp_Drag){
+if instance_exists(obj_Control_All){
 
 txt = "Yes";
 
