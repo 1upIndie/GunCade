@@ -2,12 +2,11 @@
 function scr_WeaponMatchCheck(){
 
 
- var resultMoney = 0;
- var resultTip   = 0;
+
  // get index to jump to
  var getIndex_Sale  = obj_MiniGame_Parent.result_Index_Sale;
  var getIndex_Fail  = obj_MiniGame_Parent.result_Index_Messup; 
- var indexJumpTo    = 0;
+
 
 var getMoney = obj_MiniGame_Parent.current_Costs;
 
@@ -88,6 +87,6 @@ if(isGood == false){  resultMoney = 0;        resultTip = 0; indexJumpTo = getIn
 
    } // end of perfect false
    
-   var txt33 = "Good: " + string(isGood) + "  perf: " + string(isPerfect)
-   draw_text(x-20,y-20, txt33  );
+  // var txt33 = "Good: " + string(isGood) + "  perf: " + string(isPerfect)
+  // draw_text(x-20,y-20, txt33  );
 }// end of script

@@ -292,7 +292,8 @@ button_Right_Y     = camY + 400;
 // drop of area!
     dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame_Bgr", obj_MiniGame_DropSpot );
  
-    // drop off area firt weapons "slot"
+ 
+    // drop off area firt weapons "slot" -> right bottom side
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 	
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	

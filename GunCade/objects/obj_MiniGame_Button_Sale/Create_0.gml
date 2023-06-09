@@ -14,3 +14,8 @@ canDraw = false;
 delay = 15;
 alarm[0] = delay;
 
+
+// finish
+  resultMoney = 0;
+  resultTip   = 0;
+  indexJumpTo = 0;

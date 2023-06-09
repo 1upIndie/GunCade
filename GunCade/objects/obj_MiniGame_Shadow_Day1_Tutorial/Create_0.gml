@@ -28,6 +28,12 @@ event_inherited();
 
  negative_Costs           = 3000; 
  
+ 
+ // jump to points
+  result_Index_Sale     = 10;
+ result_Index_Messup   = 0; 
+ result_Index_Refuse   = 7;
+ 
  /*
  0,1,2 melee
 11,12,13 pistol
