@@ -4501,8 +4501,7 @@ var day_I = 0; // day 1
 
 	 // jump to 250
 	 dialog_I = 250;
-	 
-
+	  // sale
      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 			 
      arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "Thanks partner." + textSuffixDialogAll, snd_TextScroll_Default );	 	 
@@ -4510,14 +4509,15 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 			 
      arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Yeehaw... BOOM BOOM! " + textSuffixDialogAll, snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_280;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;		 
 	 dialog_I++;
 
 
 
 	 // Refuse! 260
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+	 dialog_I = 260;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "I'm sorry, but I don't think I can help you today..." + textSuffixDialogAll, snd_TextScroll_Default );		
 
 	 dialog_I++;	 
@@ -4527,8 +4527,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "Know what, I think you got your head up your ass, but I like a man who tells me no. Kind of turns me on." + textSuffixDialogAll, snd_TextScroll_Default );	 
 	 dialog_I++;
 	  
-      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
-      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Hey, he turns me on more." + textSuffixDialogAll, snd_TextScroll_Default );		
 	 dialog_I++;
 
@@ -4538,8 +4538,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "Now don't go doin this again. I said he turned me on first." + textSuffixDialogAll, snd_TextScroll_Default );	 
 	 dialog_I++;
 	  
-      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
-      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Ya, well I said he turns me on more!" + textSuffixDialogAll, snd_TextScroll_Default );		
 	 dialog_I++;
 
@@ -4548,15 +4548,36 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Ladies, please..." + textSuffixDialogAll, snd_TextScroll_Default );	
 
 
-      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
-      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  10, text_Name_Twin1, textPrefix + "SHUT UP!!" + textSuffixDialogAll, snd_TextScroll_Default );		// special case, both talk
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_ScreenShake;		 
 	 dialog_I++;
 
 
+	  
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "You wanna take dis outside?" + textSuffixDialogAll, snd_TextScroll_Default );		
+	 dialog_I++;
+	 
 
-	 // Fail! 270
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 		 
+     arrayCutscenes[day_I].setText(dialog_I,  2,  text_Name_Twin2, textPrefix + "I'm gonna stomp the rest of your teeth out..." + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 dialog_I++;	 
+	  
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Let's go then..." + textSuffixDialogAll, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;		 
+	 dialog_I++;	 
+
+
+
+
+	 // Fail! 280
+	 dialog_I = 280;	 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Will this work?" + textSuffixDialogAll, snd_TextScroll_Default );		 
@@ -4569,14 +4590,221 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "C'mon sis, let's go find us a real man-fat-yer." + textSuffixDialogAll, snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_280;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;	 
+	 dialog_I++;
+
+      #endregion
+
+
+#region  kyle 290
+
+     dialog_I = 290;
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Nothing, spr_Nothing,  spr_Nothing, spr_Nothing  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "Hey bossman. I heard all of that. They're crazy huh?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "enter right");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "The craziest." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "Hey bossman. I was wondering if you would sell me something?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "I guess I can, but why do you want to buy a weapon?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "Well, mostly to help out after what happened yesterday, but also my friends said I can join their group if I get armed." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Kyle, what group?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "I'm a proud member of the ARN." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Really Kyle?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "Yep, the Allied Rebellion Alliance." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 	 
+	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Kyle, as much as I want the rebellion to end and for things to return to normal, that sounds really dangerous." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Wait, Allied Rebellion Alliance, which side are you on?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "We actually aren't on either side. We're on both sides. We're trying to bring peace through forceful coercion." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 	 
+	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "That doesn't make any sense.?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "Oh bossman, I'd have to explain a lot of inner mechanisms that I'm not at liberty to speak of. Maybe I can tell you one day." + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "(Good grief.)" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Ok, what are you needing?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "I've saved up some money, so how about an A16 with everything you can put on it?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "That's a lot Kyle!" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 
+	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Kyle, textPrefix + "If it helps keep the arcade open, what's a few bucks?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 dialog_I++; 	 
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "(Well, why not, he's always been harmless when it comes down to it, and this thing will probably fall apart before anything happens.)" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Kyle_Day4;	 
+	 dialog_I++; 
+	 
+
+
+
+
+      dialog_I = 350;
+	  // sale
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_Idle, spr_Dialog_Kyle_Idle  , ""); 			 
+     arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "Thanks bossman." + textSuffixDialogAll, snd_TextScroll_Default );	 	 
+	 
+	 
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 			 
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Yeehaw... BOOM BOOM! " + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;		 
 	 dialog_I++;
 
 
 
+	 // Refuse! 260
+	 dialog_I = 260;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "I'm sorry, but I don't think I can help you today..." + textSuffixDialogAll, snd_TextScroll_Default );		
+
+	 dialog_I++;	 
+	 
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 		 
+     arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "Know what, I think you got your head up your ass, but I like a man who tells me no. Kind of turns me on." + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 dialog_I++;
+	  
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Hey, he turns me on more." + textSuffixDialogAll, snd_TextScroll_Default );		
+	 dialog_I++;
 
 
-      #endregion
- 
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 		 
+     arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "Now don't go doin this again. I said he turned me on first." + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 dialog_I++;
+	  
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Ya, well I said he turns me on more!" + textSuffixDialogAll, snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Ladies, please..." + textSuffixDialogAll, snd_TextScroll_Default );	
+
+
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  10, text_Name_Twin1, textPrefix + "SHUT UP!!" + textSuffixDialogAll, snd_TextScroll_Default );		// special case, both talk
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_ScreenShake;		 
+	 dialog_I++;
+
+
+	  
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "You wanna take dis outside?" + textSuffixDialogAll, snd_TextScroll_Default );		
+	 dialog_I++;
+	 
+
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 		 
+     arrayCutscenes[day_I].setText(dialog_I,  2,  text_Name_Twin2, textPrefix + "I'm gonna stomp the rest of your teeth out..." + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 dialog_I++;	 
+	  
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "Let's go then..." + textSuffixDialogAll, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;		 
+	 dialog_I++;	 
+
+
+
+
+	 // Fail! 280
+	 dialog_I = 280;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Will this work?" + textSuffixDialogAll, snd_TextScroll_Default );		 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , ""); 		 
+     arrayCutscenes[day_I].setText(dialog_I,  2, text_Name_Twin2, textPrefix + "I said anything that goes boom ya idiot!" + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 dialog_I++;	 
+	  
+      arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Dialog_Twin1_IdleStatic, spr_Dialog_Twin1_Idle,  spr_Dialog_Twin1_TalkStatic,   spr_Dialog_Twin1_Talk  , "exit default"); 
+      arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Twin2_IdleStatic, spr_Dialog_Twin2_Idle,  spr_Dialog_Twin2_TalkStatic,   spr_Dialog_Twin2_Talk  , "exit default"); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_Twin1, textPrefix + "C'mon sis, let's go find us a real man-fat-yer." + textSuffixDialogAll, snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;	 
+	 dialog_I++;
+	 
+	 
+
+
+    #endregion
+
+
+
 #endregion // end of day 4
   

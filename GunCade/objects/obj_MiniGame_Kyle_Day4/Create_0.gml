@@ -4,10 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
-// sale 250
-// refuse 260
-// botch 280
+// sale 100
+// refuse 110
+// botch 120
 
-// jumper to 290
+// jumper to 130
 
 // refuse button disappears!, can only botch or sale
