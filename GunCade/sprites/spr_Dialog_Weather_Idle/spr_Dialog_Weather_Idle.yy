@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Sprites/Dialog/Characters.yy",
+    "name": "Weather",
+    "path": "folders/Sprites/Dialog/Characters/Weather.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

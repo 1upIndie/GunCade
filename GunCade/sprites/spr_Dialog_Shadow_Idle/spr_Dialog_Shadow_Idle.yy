@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Sprites/Dialog/Characters.yy",
+    "name": "Shadow",
+    "path": "folders/Sprites/Dialog/Characters/Shadow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
