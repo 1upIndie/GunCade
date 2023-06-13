@@ -385,7 +385,7 @@ function Createcutscene(day_) constructor {
  
  
  var indexSet = 0;
- repeat(600){
+ repeat(1200){
  	  dialogBlock_SprIdleStatic_1_[indexSet]   = spr_Nothing;	  
 	  dialogBlock_SprIdle_1_[indexSet]         = spr_Nothing;
 	  dialogBlock_SprTalkStatic_1_[indexSet]   = spr_Nothing;			  
@@ -1577,7 +1577,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_TalkStatic,   spr_Dialog_Kyle_Talk  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  1,text_Name_Kyle, textPrefix + "Right on boss man. I got this." + textSuffixDialogAll, snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1,text_Name_Kyle, textPrefix + "Right on boss man. I got this." + textSuffixDialogAll, snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;		 
 
 
 
@@ -2653,7 +2654,8 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_TalkStatic,   spr_Dialog_Kyle_Talk  , "enter right");
-     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Kyle, textPrefix + "See ya tomorrow bossman." + textSuffixDialogAll, snd_TextScroll_Default );		 	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Kyle, textPrefix + "See ya tomorrow bossman." + textSuffixDialogAll, snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day5;		 
 	 dialog_I++;
 
 
@@ -3801,6 +3803,7 @@ var day_I = 0; // day 1
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_TalkStatic,   spr_Dialog_Kyle_Talk  , ""); 	 
      arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "I think that's wise Kyle. Please, shut everything down. I'm going to my office to cry, then home to shower and change pants." + textSuffixDialogAll, snd_TextScroll_Default );			 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day3;		 
 	 dialog_I++; 
 
 
@@ -4816,7 +4819,8 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, spr_Dialog_Victor_Idle, spr_Dialog_Victor_Idle,  spr_Dialog_Victor_Idle, spr_Dialog_Victor_Idle , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Damn, ok. We'll be out in a jiffy." + textSuffixDialogAll, snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Damn, ok. We'll be out in a jiffy." + textSuffixDialogAll, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day4;		 
 	 dialog_I++;  
 
      #endregion
@@ -6432,7 +6436,7 @@ var day_I = 0; // day 1
 
      #endregion
 
-    #region random sale 2   781 - 820
+    #region random sale 2   780 - 820
 
 
 	 dialog_I = 780;	   
@@ -6505,3 +6509,52 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	   
 #endregion end of day 5
+
+
+
+#region day 6   6666666666666666666
+
+ day_I    = 5; // day 6
+ dialog_I = 0; // zeiger
+ 
+  arrayCutscenes[day_I] = new Createcutscene(day_I );  // 
+
+ 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Nothing, spr_Nothing,  spr_Nothing,   spr_Nothing  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "(Oh man, that was a long night.)" + textSuffixDialogAll, snd_TextScroll_Default );
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle_Day6;		 
+	 dialog_I++; 
+
+
+
+     dialog_I = 10; // did not pay ransom
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Nothing, spr_Nothing,  spr_Nothing,   spr_Nothing  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "(Crap, Kyle never made it in to open up. I sure hope he's ok today.)" + textSuffixDialogAll, snd_TextScroll_Default );
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_30;		 	 
+	 dialog_I++; 
+
+
+     dialog_I = 20; // did  pay ransom
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Nothing, spr_Nothing,  spr_Nothing,   spr_Nothing  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "(Kyle isn't in either, he must still be resting, but he had a rough night so I can let it slide.)" + textSuffixDialogAll, snd_TextScroll_Default );
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_30;		 
+	 dialog_I++; 
+
+
+     // continue here 30
+     dialog_I = 30; // did  pay ransom
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  spr_Nothing, spr_Nothing,  spr_Nothing,   spr_Nothing  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "(And there's a customer already waiting outside. Oh no, it's Mr. Dog Gun guy... Better get things going and get him out of here.)" + textSuffixDialogAll, snd_TextScroll_Default );
+	 dialog_I++; 		 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_AngryDad_IdleStatic, spr_Dialog_AngryDad_Idle,  spr_Dialog_AngryDad_TalkStatic,   spr_Dialog_AngryDad_Talk , "enter default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer + "Welcome sir. Can I assist you?" + textSuffixDialogAll, snd_TextScroll_Default );
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_AngryDad_IdleStatic, spr_Dialog_AngryDad_Idle,  spr_Dialog_AngryDad_TalkStatic,   spr_Dialog_AngryDad_Talk , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, text_Name_AngryDad, textPrefix + "..." + textSuffixDialogAll, snd_TextScroll_Default );
+	 dialog_I++; 
+
+#endregion  // end of day 6

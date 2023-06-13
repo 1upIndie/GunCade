@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "day_5",
-    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/day_5.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Choises/day_5.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -8,10 +8,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "day_5",
-    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/day_5.yy",
+    "name": "EndOdDay",
+    "path": "folders/Objects/Cutscenes/MiniGame/EndOdDay.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_DayEnd_Day_Parent",
+    "path": "objects/obj_DayEnd_Day_Parent/obj_DayEnd_Day_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

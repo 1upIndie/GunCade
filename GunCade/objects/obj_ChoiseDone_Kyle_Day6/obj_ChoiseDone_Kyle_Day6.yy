@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Choise_Clown_Day5",
+  "name": "obj_ChoiseDone_Kyle_Day6",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "day_5",
-    "path": "folders/Objects/Cutscenes/MiniGame/Choises/day_5.yy",
+    "name": "Day_6",
+    "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_6.yy",
   },
   "parentObjectId": null,
   "persistent": false,

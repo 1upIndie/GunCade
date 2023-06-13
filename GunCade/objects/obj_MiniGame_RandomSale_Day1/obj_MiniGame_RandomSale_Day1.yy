@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Day_1",
-    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/Day_1.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_1.yy",
   },
   "parentObjectId": {
     "name": "obj_MiniGame_Parent",

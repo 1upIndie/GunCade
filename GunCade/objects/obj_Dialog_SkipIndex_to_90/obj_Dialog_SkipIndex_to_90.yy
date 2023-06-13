@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Skip",
-    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/Skip.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip.yy",
   },
   "parentObjectId": {
     "name": "obj_Dialog_SkipIndex_To_Parent",
