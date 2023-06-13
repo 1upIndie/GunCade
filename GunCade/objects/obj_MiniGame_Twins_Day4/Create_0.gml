@@ -10,4 +10,6 @@ event_inherited();
 
 // jumper to 290
 
+//+ set variable
+//soldTwins_Day_4 = true;
 // refuse button disappears!, can only botch or sale

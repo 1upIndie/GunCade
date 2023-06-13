@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_MiniGame_Kyle_Day4",
+  "name": "obj_MiniGame_RandomSale2Start_Day5",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Day_4",
-    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/Day_4.yy",
+    "name": "day_5",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip_Minigame/day_5.yy",
   },
   "parentObjectId": {
     "name": "obj_MiniGame_Parent",
