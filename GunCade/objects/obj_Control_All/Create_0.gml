@@ -5,10 +5,40 @@ debug = true;
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
 
+alarm[0] = 4;
+//room_goto(roomToJump);
 
-room_goto(roomToJump);
+#region text prefix/suffixes
+
+ var textPrefix    = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
+ //textSuffixDialog    = "[/scale][/c]"; 
+
+ 
+ 
+ var textPrefixPlayer = "[font_Cutscene][scale, 0.8][#F9CE7B]";
+ var textSuffixDialogDialog = "[/scale][/c]";  
+ 
+ var textPrefix_Tab = "[font_Cutscene][scale, 1]";
+ var textSuffixDialog_Tab = "[/scale]";
 
 
+ var textCosts_Prefix = "[font_Cutscene][scale, 1.3]";
+ var textCosts_Suffix = "[/scale]";
+
+/// for weapons detail text box
+ var textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
+ var textDetail_HeadlineSuffix = "[/c][/scale]"; 
+ 
+ var textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
+ var textDetail_CostSuffix = "[/c][/scale]"; 
+
+ var textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
+ var textDetail_DescSuffix = "[/scale]";
+ 
+ 
+  
+  
+#endregion
 
 #region weapon texts + costs
 
@@ -297,72 +327,6 @@ garbageCollect_Particles       = array_create(0);
 
 
 
-#region text prefix/suffixes
- textPrefix    = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
- //textSuffixDialog    = "[/scale][/c]"; 
- textSuffixDialogAll = "[/scale][/c]"; 
- 
- 
- textPrefixPlayer = "[font_Cutscene][scale, 0.8][#F9CE7B]";
- textSuffixDialogDialog = "[/scale][/c]";  
- 
- textPrefix_Tab = "[font_Cutscene][scale, 1]";
- textSuffixDialog_Tab = "[/scale]";
-
-
- textCosts_Prefix = "[font_Cutscene][scale, 1.3]";
- textCosts_Suffix = "[/scale]";
-
-/// for weapons detail text box
- textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
- textDetail_HeadlineSuffix = "[/c][/scale]"; 
- 
- textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
- textDetail_CostSuffix = "[/c][/scale]"; 
-
- textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
- textDetail_DescSuffix = "[/scale]";
- 
- 
- // sorting by name
-  textSortNamePrefix = "[font_Cutscene][scale, 2]";
-  textSortNameSuffix = "[/scale]"; 
-
- text_Name_Unknown     = "[font_Cutscene_Name][scale, 0.7][c_white]???[/c][/scale]";
- text_Name_Nobody      = "[font_Cutscene_Name][scale, 0.7][c_white][/c][/scale]";
- 
- text_Name_Player      = "[font_Cutscene_Name][scale, 0.7][#F9CE7B]Player[/c][/scale]";
- 
- text_Name_Jez         = "[font_Cutscene_Name][scale, 0.7][c_purple]Player[/c][/scale]"; 
- text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_purple]Wife[/c][/scale]"; 
- text_Name_Nerd        = "[font_Cutscene_Name][scale, 0.7][c_white]Nerd[/c][/scale]"; 
- text_Name_NerdSteve   = "[font_Cutscene_Name][scale, 0.7][c_white]Steve[/c][/scale]"; 
-
-
- text_Name_Kyle        = "[font_Cutscene_Name][scale, 0.7][c_white]Wife[/c][/scale]";  
- text_Name_Granny      = "[font_Cutscene_Name][scale, 0.7][c_white]Granny[/c][/scale]";   
- 
- text_Name_AngryDad    = "[font_Cutscene_Name][scale, 0.7][c_white]Angry dad[/c][/scale]";   
- text_Name_Weather     = "[font_Cutscene_Name][scale, 0.7][c_white]Weather woman[/c][/scale]";   
-
- text_Name_Cop         = "[font_Cutscene_Name][scale, 0.7][c_white]Cop[/c][/scale]"; 
- text_Name_Clown       = "[font_Cutscene_Name][scale, 0.7][c_white]Bam Bam[/c][/scale]";   
-
- text_Name_Shadow      = "[font_Cutscene_Name][scale, 0.7][c_white]Shadow[/c][/scale]";   
- text_Name_Victor      = "[font_Cutscene_Name][scale, 0.7][c_white]Victor[/c][/scale]";   
- 
- text_Name_Nun         = "[font_Cutscene_Name][scale, 0.7][c_white]Nun[/c][/scale]";  
- text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_white]Wife[/c][/scale]";  
-
-
- text_Name_Twin1       = "[font_Cutscene_Name][scale, 0.7][c_white]Twin 1[/c][/scale]";  
- text_Name_Twin2       = "[font_Cutscene_Name][scale, 0.7][c_white]Twin 2[/c][/scale]";  
- 
- text_Name_Ramdom      = "[font_Cutscene_Name][scale, 0.7][c_white]Random[/c][/scale]";  
-  
-#endregion
-
-
 #region unlocked
 
 unlocked_WeaponType_Melee       = true;
@@ -378,7 +342,6 @@ unlocked_WeaponType_Accessory   = true;
 
 
 #endregion
-
 
 
 currentCutscene_DAY = 0;
@@ -419,14 +382,15 @@ indexSet++;
 
 
 
-	  function setSprite(index_, SlotX,  person_Mood_,  sprSwap){
+	  function setSprite( index_, SlotX,  person_Mood_,  sprSwap ){
 		  var sprIdleStatic   = spr_Nothing;
 		  var sprIdle_        = spr_Nothing; 
 		  var sprTalkStatic_  = spr_Nothing; 		  
 		  var sprTalk_        = spr_Nothing; 		  
 		  
+		  
+		  
 		  // override!
-		  			  // simple system
 			switch(person_Mood_){		  
 					  
 			  case  "Jez default": 			  
@@ -552,24 +516,89 @@ indexSet++;
 			 
 			 dialogBlock_SprSwap_3_[index_]         = sprSwap;
 			 }					 
-	  }
+	  } // end of function
  
  
-	  function setText(index_,  npcTalking_, txt_, sound_ ){ 
-		    var prefixTXT_ = textPrefix;
+ /// set here, the fk is this
+  textPrefix          = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
+  textSuffixDialog    = "[/scale][/c]"; 
+
+ 
+ 
+  textPrefixPlayer = "[font_Cutscene][scale, 0.8][#F9CE7B]";
+  textSuffixDialogDialog = "[/scale][/c]";  
+ 
+  textPrefix_Tab = "[font_Cutscene][scale, 1]";
+  textSuffixDialog_Tab = "[/scale]";
+
+
+  textCosts_Prefix = "[font_Cutscene][scale, 1.3]";
+  textCosts_Suffix = "[/scale]";
+
+/// for weapons detail text box
+  textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
+  textDetail_HeadlineSuffix = "[/c][/scale]"; 
+ 
+  textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
+  textDetail_CostSuffix = "[/c][/scale]"; 
+
+  textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
+  textDetail_DescSuffix = "[/scale]"; 
+ 
+  // sorting by name
+   textSortNamePrefix = "[font_Cutscene][scale, 2]";
+   textSortNameSuffix = "[/scale]"; 
+
+  text_Name_Unknown     = "[font_Cutscene_Name][scale, 0.7][c_white]???[/c][/scale]";
+  text_Name_Nobody      = "[font_Cutscene_Name][scale, 0.7][c_white][/c][/scale]";
+ 
+  text_Name_Player      = "[font_Cutscene_Name][scale, 0.7][#F9CE7B]Player[/c][/scale]";
+ 
+  text_Name_Jez         = "[font_Cutscene_Name][scale, 0.7][c_purple]Player[/c][/scale]"; 
+  text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_purple]Wife[/c][/scale]"; 
+  text_Name_Nerd        = "[font_Cutscene_Name][scale, 0.7][c_white]Nerd[/c][/scale]"; 
+  text_Name_NerdSteve   = "[font_Cutscene_Name][scale, 0.7][c_white]Steve[/c][/scale]"; 
+
+
+  text_Name_Kyle        = "[font_Cutscene_Name][scale, 0.7][c_white]Wife[/c][/scale]";  
+  text_Name_Granny      = "[font_Cutscene_Name][scale, 0.7][c_white]Granny[/c][/scale]";   
+ 
+  text_Name_AngryDad    = "[font_Cutscene_Name][scale, 0.7][c_white]Angry dad[/c][/scale]";   
+  text_Name_Weather     = "[font_Cutscene_Name][scale, 0.7][c_white]Weather woman[/c][/scale]";   
+
+  text_Name_Cop         = "[font_Cutscene_Name][scale, 0.7][c_white]Cop[/c][/scale]"; 
+  text_Name_Clown       = "[font_Cutscene_Name][scale, 0.7][c_white]Bam Bam[/c][/scale]";   
+
+  text_Name_Shadow      = "[font_Cutscene_Name][scale, 0.7][c_white]Shadow[/c][/scale]";   
+  text_Name_Victor      = "[font_Cutscene_Name][scale, 0.7][c_white]Victor[/c][/scale]";   
+ 
+  text_Name_Nun         = "[font_Cutscene_Name][scale, 0.7][c_white]Nun[/c][/scale]";  
+  text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_white]Wife[/c][/scale]";  
+
+
+  text_Name_Twin1       = "[font_Cutscene_Name][scale, 0.7][c_white]Twin 1[/c][/scale]";  
+  text_Name_Twin2       = "[font_Cutscene_Name][scale, 0.7][c_white]Twin 2[/c][/scale]";  
+ 
+  text_Name_Ramdom      = "[font_Cutscene_Name][scale, 0.7][c_white]Random[/c][/scale]";
+ 
+ 
+ 
+
+	  function setText( index_, talkActiveSlot,  npc_,  txt_, sound_ ){ 
+		    var prefixTXT_     = "";
 			var nameNpc_Player = "";
 			
 			
-			switch(npcTalking_){		  
+			switch(npc_){		  
 
 			 
 			 case  "???": 				
 			       nameNpc_Player = text_Name_Unknown;		  
-				   prefixTXT_     = textPrefixPlayer; break;    	
+				   prefixTXT_     = textPrefix; break;    	
 
 			  case  "nobody": 				
 			       nameNpc_Player = text_Name_Nobody;		  
-				   prefixTXT_     = textPrefixPlayer; break;    					  
+				   prefixTXT_     = textPrefix; break;    					  
 					  
 					  
 					  
@@ -652,16 +681,19 @@ indexSet++;
 			       nameNpc_Player = text_Name_Ramdom;			  
 				   prefixTXT_     = textPrefix;	 break; 	
 			  
-			  break;		
+			  		
 			} // end of switch
 		  
 		  
-		 dialogBlock_Txt_PersonActive[index_]  = nameNpc_Player;  
-         dialogBlock_Name[index_]              = name_;	  
-	     dialogBlock_Txt[index_]               = prefixTXT_ + txt_ + textSuffixDialogAll;  	  
+		 dialogBlock_Txt_PersonActive[index_]  = talkActiveSlot;  
+         dialogBlock_Name[index_]              = nameNpc_Player;	  
+	     dialogBlock_Txt[index_]               = prefixTXT_ + txt_ + textSuffixDialog;  	  
 	     dialogBlock_Sound[index_]             = sound_;
-		 totalBlocks++;		  
+		 totalBlocks++;	// increment to see how big it gets	  
 	  }
+
+
+
 
 } // end of constructor
 
@@ -4595,7 +4627,7 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Now dats more like it.", snd_TextScroll_Default );		 
-	  dialog_I+
+	  dialog_I++;
 
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
@@ -4607,7 +4639,7 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Ya, we got roaches big enough ta ride on.", snd_TextScroll_Default );		 
-	  dialog_I+	  
+	  dialog_I++;  
 	  
 	  
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
@@ -4620,14 +4652,14 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Yep, an we need to burn them out big time.", snd_TextScroll_Default );		 
-	  dialog_I+	  
+	  dialog_I++;  
 
 
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "We needs us a flame thrower. Not none of those homemade ones neither. We tried makin one once, burned down our trailer.", snd_TextScroll_Default );		 
-	  dialog_I+
+	  dialog_I++;
 
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
@@ -4640,7 +4672,7 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "WHA? How can you call yourself an arms man-o-fact-errr?", snd_TextScroll_Default );		 
-	  dialog_I+	  
+	  dialog_I++; 
 
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
@@ -4665,7 +4697,7 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Thas the dumbest thang I'ze ever heard.", snd_TextScroll_Default );		 
-	  dialog_I+	
+	  dialog_I++;
 	  
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
@@ -4692,7 +4724,7 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
       arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Ain' none of your business what we gonna do.", snd_TextScroll_Default );		 
-	  dialog_I+	
+	  dialog_I++;
 
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
@@ -5674,7 +5706,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the book, "The Art of War," written by Sun Tzu, mentions the use of a device called a fire lancer, which was essentially a tube filled with gunpowder and a projectile.", snd_TextScroll_Nerd );	 		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the book, The Art of War, written by Sun Tzu, mentions the use of a device called a fire lancer, which was essentially a tube filled with gunpowder and a projectile.", snd_TextScroll_Nerd );	 		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 
@@ -6259,7 +6291,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Player, textPrefixPlayer+ "Of course dear. I definitely kicked her out anyway. Told her to hit the road...", snd_TextScroll_Default );	 	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", textPrefixPlayer+ "Of course dear. I definitely kicked her out anyway. Told her to hit the road...", snd_TextScroll_Default );	 	
 	 dialog_I++;
 
 
@@ -6634,7 +6666,7 @@ var day_I = 0; // day 1
 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing" ,  "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, text_Name_Nobody, textPrefix + "(Click sound)", snd_TextScroll_Default );	 	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "nobody",  "(Click sound)", snd_TextScroll_Default );	 	
 	 dialog_I++;
 
 
@@ -6970,7 +7002,7 @@ var day_I = 0; // day 1
     #region granny
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "grany", "Hello young man.", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "Hello young man.", snd_TextScroll_Default );	 
 	 dialog_I++;
 
 

@@ -1,19 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Control_All",
+  "name": "obj_DayEnd_Day3",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Control Objects",
-    "path": "folders/Objects/Control Objects.yy",
+    "name": "EndOdDay",
+    "path": "folders/Objects/Cutscenes/MiniGame/EndOdDay.yy",
   },
-  "parentObjectId": null,
-  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_DayEnd_Day_Parent",
+    "path": "objects/obj_DayEnd_Day_Parent/obj_DayEnd_Day_Parent.yy",
+  },
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -28,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_Icons_control_All",
-    "path": "sprites/spr_Icons_control_All/spr_Icons_control_All.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
