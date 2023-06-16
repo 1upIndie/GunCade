@@ -7664,51 +7664,159 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Back.", snd_TextScroll_Default );		 
 	 dialog_I++;	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Damn that was fast.", snd_TextScroll_Default );			 	 
 	 dialog_I++;	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "enter shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Now, be careful with these. They are way more powerful than what I've given you before.", snd_TextScroll_Default );		 
 	 dialog_I++;		 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Trusting me more, huh?", snd_TextScroll_Default );			 	 
 	 dialog_I++;		 
 	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "enter shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "No. I want to see some serious profit.", snd_TextScroll_Default );		 
 	 dialog_I++;		
 
 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Now he sounds like his brother.)", snd_TextScroll_Default );			 	 
 	 dialog_I++;		 
 	
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "enter shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "If you can sell these, you can sell anything.", snd_TextScroll_Default );		 
 	 dialog_I++;		
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Uh... Ok, are these the same low quality as the rest?", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "enter shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Of course. Don't count on anyone actually using these successfully.", snd_TextScroll_Default );		 
 	 dialog_I++;	
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Why don't you sell the good stuff?", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Too many questions.", snd_TextScroll_Default );		 
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "S... Sorry. But I do have to ask...", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Damn. That guy is something else.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+ 
+     // shadow exit
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh well, I should get familiar with the new stock soon before...", snd_TextScroll_Default );			 	 
+	 dialog_I++;
 
 
+ 
     #endregion
 
+    #region fixed random sale, bank robber?
+      arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , "enter default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Someone comes in...)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Hey bud, my guy tells me you got something big.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Someone comes in...)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
 
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Something that can put a hole in the side of a bank... I mean tank.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh, ummm, I just got some new stock. Let's see if I have what you need.", snd_TextScroll_Default );			 
+	 dialog_I++;	
+	  
+	  
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(I think Shadow dropped off a potato launcher. I seriously doubt this guy could do much harm with it if I sell it to him.)", snd_TextScroll_Default );			 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomFixed_Day6;
+	 dialog_I++;		
+	 
+	 
+	 /// sale 450	
+	 dialog_I = 450;
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "This work?", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Hell yeah it works. Time to make a withdrawal.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(I don't want to know.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "I'm throwing in a little extra, seeing as how I'm gonna be rich and all soon.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_480;		 
+	 dialog_I++;	
+	
+	
+     // refuse  460
+	 dialog_I = 460;		
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm sorry, I don't think we have anything that powerful.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Damn. My guy was wrong then. Guess I shouldn't be surprised. Thanks anyways pal.", snd_TextScroll_Default );		 
+	 dialog_I++;	
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Good luck.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_480;			 
+	 dialog_I++;	
+	
+	
+	
+     //  fail  470
+	 dialog_I = 470;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I don't think I have anything that big, but would this do?", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Not a chance. My guy was wrong then. Guess I shouldn't be surprised. Thanks anyways pal.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_480;		 
+	 dialog_I++;	
+
+
+
+// continue 480
+
+
+
+	#endregion
+	
+	// extro
+	 dialog_I = 480;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Ok, time to close shop. Can't believe I took that long of a nap earlier.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
 
 
 #endregion  // end of day 6
