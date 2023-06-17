@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Choise_JezOrNerd_Wife_Day5",
+  "name": "obj_ChoiseDone_JezOrNerd_Wife_Day5",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -11,7 +11,10 @@
     "name": "day_5",
     "path": "folders/Objects/Cutscenes/MiniGame/Choises/day_5.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_ChoiceToDo_Parent",
+    "path": "objects/obj_ChoiceToDo_Parent/obj_ChoiceToDo_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

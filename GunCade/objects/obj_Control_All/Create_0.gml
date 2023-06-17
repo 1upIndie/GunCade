@@ -346,6 +346,40 @@ unlocked_WeaponType_Accessory   = true;
 
 currentCutscene_DAY = 0;
 
+
+#region choises and saved values through the game
+
+
+
+
+wifePresentGivenDay2      = false;
+nunChoise_Day3            = false; // if trying to refuse to give money to nun
+nerdChoise_4Topics_Day3   = false; // 1-4
+
+grannyChoise_Day4         = false;    // eat a macaron first try
+grannyChoise2_Day4        = false; // eat a macaron second attempts try
+kyleChoise_Day4           = false;    // sell first weapon to kyle
+wifeGivenPresentD4_day5   = false;    
+soldToTwins_Day4          = false;
+
+
+acceptClownGun_Day_5      = false; // this time clown offers a gun
+copGivePistol_Day_5       = false; // retake gun
+giveJezMoney_Day_5        = false; // give jez for concert
+jezOrNerd_Day_5           = ""; //"jez"  "nerd"
+soldTwins_Day_4           = false;  // sold to twins
+
+payKyleRansome_Day_5      = false;  // paying randsome day 5
+eatMacaronGranny1_Day_6  = false;   //
+eatMacaronGranny2_Day_6  = false;   // 
+
+giveKyle_Gun2_Day_7           = false; // giving kyle weapon (when rescuded before)
+payKyleRansomeThisTime_Day_7  = false; // paying randsome next time (second chance)
+autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is the same
+
+
+#endregion
+
 function Createcutscene(day_) constructor {
   
  // sprBgr      = bgrSpr_; // default!
@@ -6142,7 +6176,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "enter default");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "wife", "I came to the mall today to get that new Brazillian Wax thing done, and here you are talking to other women!", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_JezOrNerd_Wife_Day5;		 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_JezOrNerd_Wife_Day5;		 	 
 	 dialog_I++;
      
 	 // if chosen nerd
@@ -8857,7 +8891,8 @@ var day_I = 0; // day 1
 	 
 	 
 	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "(It didn't feel like I was giving freely, but I'm glad to hear about Kyle.)" , snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "(It didn't feel like I was giving freely, but I'm glad to hear about Kyle.)" , snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_550;	 	 
 	 dialog_I++;	 
 	 	 
 		 
@@ -8878,12 +8913,43 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun angry"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun",  "YOU SHOT MY BEST GAME!." , snd_TextScroll_Default );
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_NunShootsArcade;	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun happy"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun",  "I'm sorry to be so forceful, for my act of anger I must go and repent." , snd_TextScroll_Default );			 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun praying"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun",  "Consider your debt delayed." , snd_TextScroll_Default );			 
+	 dialog_I++;
+
 	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun",  "My child." , snd_TextScroll_Default );
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Resuce_Kyle_ThisTime_Day7;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun",  "Oh, and your worthless bondservant shall be released to you. Be sure to keep him from trouble." , snd_TextScroll_Default );			
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_550;	 	 
+	 dialog_I++;
+
+
+  	 dialog_I = 550;  
+	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun default"  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "I just don't have the funds at the moment." , snd_TextScroll_Default );			 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun default"  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "(No more customers for the moment. I think it's time for a break.)" , snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day7;	 
 	 dialog_I++;
 
 	#endregion
 	
 
-#endregion end of day 7
+#endregion end of day 7"" , snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day7;	 
+	 dialog_I++;
+
+	#endregion
+	
+
+#endregion end of day 7"
