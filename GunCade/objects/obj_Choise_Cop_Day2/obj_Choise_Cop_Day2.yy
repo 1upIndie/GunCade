@@ -2,14 +2,20 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_Choise_Cop_Day2",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Day_2",
     "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_2.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_ChoiceToDo_Parent",
+    "path": "objects/obj_ChoiceToDo_Parent/obj_ChoiceToDo_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

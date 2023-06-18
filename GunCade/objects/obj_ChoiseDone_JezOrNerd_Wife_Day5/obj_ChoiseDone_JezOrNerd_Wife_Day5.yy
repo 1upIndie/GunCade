@@ -11,10 +11,7 @@
     "name": "day_5",
     "path": "folders/Objects/Cutscenes/MiniGame/Choises/day_5.yy",
   },
-  "parentObjectId": {
-    "name": "obj_ChoiceToDo_Parent",
-    "path": "objects/obj_ChoiceToDo_Parent/obj_ChoiceToDo_Parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

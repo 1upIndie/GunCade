@@ -599,6 +599,8 @@ indexSet++;
  
   text_Name_AngryDad    = "[font_Cutscene_Name][scale, 0.7][c_white]Angry dad[/c][/scale]";   
   text_Name_Weather     = "[font_Cutscene_Name][scale, 0.7][c_white]Weather woman[/c][/scale]";   
+  text_Name_Duke        = "[font_Cutscene_Name][scale, 0.7][c_white]Duke[/c][/scale]";   
+
 
   text_Name_Cop         = "[font_Cutscene_Name][scale, 0.7][c_white]Cop[/c][/scale]"; 
   text_Name_Clown       = "[font_Cutscene_Name][scale, 0.7][c_white]Bam Bam[/c][/scale]";   
@@ -751,7 +753,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
    
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_choiceOverlay_Parent; // testing
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");
@@ -1171,23 +1174,23 @@ var day_I = 0; // day 1
 	 
 	 
 	 // kyle interrupts
-     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey boss man, I saw Viktor coming and wanted to let you know he was on his way down here.", snd_TextScroll_Default );	
 	 dialog_I++;	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3,  "player", "Yeah, he was already here, bud. Viktor is a lovely fella...", snd_TextScroll_Default );		
 	 dialog_I++;		 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3,  "player", "Hey, Kyle, I have some business to tend to, do you mind making sure everything is turned on for me?", snd_TextScroll_Default );		
 	 dialog_I++;	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Oh yea, sorry about that. I'll chat with you later bossman.", snd_TextScroll_Default );	
 	 dialog_I++;	 
@@ -2969,7 +2972,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,  spr_Dialog_Kyle_IdleStatic, spr_Dialog_Kyle_Idle,  spr_Dialog_Kyle_TalkStatic,  spr_Dialog_Kyle_Talk  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "kyle default"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "No kidding, someone should really teach those weathermen how to do their job.", snd_TextScroll_Default );		 
 	 dialog_I++; 
  
@@ -3488,7 +3491,7 @@ var day_I = 0; // day 1
 	
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Nerd_4Topics_Day3;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Nerd_Topics_Day3;	 
 	 dialog_I++;	
 	
 	
@@ -7320,7 +7323,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Ves. I'm shooting a movie. Ze budget is very small, unlike me. I am ze produca too, so I have to buy my own veppons.", snd_TextScroll_Duke );	 
 	 dialog_I++;
 
@@ -8731,7 +8734,7 @@ var day_I = 0; // day 1
 
 
 	 arrayCutscenes[day_I].setSprite(dialog_I,1,"nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You're welcome my child. As is written, “give thanks in all circumstances.” , snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You're welcome my child. As is written, give thanks in all circumstances." , snd_TextScroll_Default );			 
 	 dialog_I++;
 
 
