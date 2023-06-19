@@ -8,7 +8,7 @@ var mbLeft = mouse_check_button_released( mb_left );
 
 // check for collision -> a surface for all!
 var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom, obj_MiniGame_DropSpot, 0,0 );
-
+s
 	if(onDropSpot != noone){
 		
 		// quick check if can be placed! -> only for attachment
@@ -110,6 +110,11 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
 	  instance_destroy();	
 	} // end of pressed
 	
+	
+	
+// right mouse button destroy if not on a drop off spot!
+var mbRight = mouse_check_button_released( mb_right );
+if(onDropSpot == noone and mbRight == 1 ){ instance_destroy(); }
 	
 	
 	

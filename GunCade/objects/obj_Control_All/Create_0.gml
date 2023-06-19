@@ -10,30 +10,30 @@ alarm[0] = 4;
 
 #region text prefix/suffixes
 
- var textPrefix    = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
+  textPrefix    = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
  //textSuffixDialog    = "[/scale][/c]"; 
-
+  textSuffix_Tab = "[/c][/scale]"; 
  
  
- var textPrefixPlayer = "[font_Cutscene][scale, 0.8][#F9CE7B]";
- var textSuffixDialogDialog = "[/scale][/c]";  
+  textPrefixPlayer = "[font_Cutscene][scale, 0.8][#F9CE7B]";
+  textSuffixDialogDialog = "[/scale][/c]";  
  
- var textPrefix_Tab = "[font_Cutscene][scale, 1]";
- var textSuffixDialog_Tab = "[/scale]";
+  textPrefix_Tab = "[font_Cutscene][scale, 1]";
+  textSuffixDialog_Tab = "[/scale]";
 
 
- var textCosts_Prefix = "[font_Cutscene][scale, 1.3]";
- var textCosts_Suffix = "[/scale]";
+  textCosts_Prefix = "[font_Cutscene][scale, 1.3]";
+  textCosts_Suffix = "[/scale]";
 
 /// for weapons detail text box
- var textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
- var textDetail_HeadlineSuffix = "[/c][/scale]"; 
+  textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
+  textDetail_HeadlineSuffix = "[/c][/scale]"; 
  
- var textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
- var textDetail_CostSuffix = "[/c][/scale]"; 
+  textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
+  textDetail_CostSuffix = "[/c][/scale]"; 
 
- var textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
- var textDetail_DescSuffix = "[/scale]";
+  textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
+  textDetail_DescSuffix = "[/scale]";
  
  
   
@@ -755,6 +755,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
 	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");

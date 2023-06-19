@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_MiniGame_Type_AR",
-  "bbox_bottom": 1023,
+  "bbox_bottom": 511,
   "bbox_left": 0,
-  "bbox_right": 1535,
+  "bbox_right": 767,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b34bf11c-813b-4b4d-ab4e-0ba4ad7ffd6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1b84471b-98ef-414a-8cec-f77d11b39dd1",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 512,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b75914c4-236d-4859-85ea-e4d2e1fbf48a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7f186883-42a4-4922-baa7-9b04b3278da0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b34bf11c-813b-4b4d-ab4e-0ba4ad7ffd6c","path":"sprites/spr_MiniGame_Type_AR/spr_MiniGame_Type_AR.yy",},},},"Disabled":false,"id":"8f49baec-f4d6-4ff5-9fe3-89c455b103e2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1b84471b-98ef-414a-8cec-f77d11b39dd1","path":"sprites/spr_MiniGame_Type_AR/spr_MiniGame_Type_AR.yy",},},},"Disabled":false,"id":"27b0f051-8122-4623-9ad3-9307326598c4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1536,
+  "width": 768,
 }

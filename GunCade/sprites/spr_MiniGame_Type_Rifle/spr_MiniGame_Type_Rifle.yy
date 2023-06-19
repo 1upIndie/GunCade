@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_MiniGame_Type_Rifle",
-  "bbox_bottom": 1023,
+  "bbox_bottom": 511,
   "bbox_left": 0,
-  "bbox_right": 1535,
+  "bbox_right": 767,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2aca7bf-85f3-4c79-a18a-5dcf9ebd1935",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"51b4800a-0d15-4a85-88a4-24ec743b3798",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 512,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a5678c46-160f-4687-844e-552911e3dc14","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"62a7415c-b1d6-4651-9637-6756f91790dc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2aca7bf-85f3-4c79-a18a-5dcf9ebd1935","path":"sprites/spr_MiniGame_Type_Rifle/spr_MiniGame_Type_Rifle.yy",},},},"Disabled":false,"id":"435daa22-d584-4550-b633-bf9a0ce5edfb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"51b4800a-0d15-4a85-88a4-24ec743b3798","path":"sprites/spr_MiniGame_Type_Rifle/spr_MiniGame_Type_Rifle.yy",},},},"Disabled":false,"id":"2c0c6713-778d-41ad-b44f-8d79d3f2d9f9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1536,
+  "width": 768,
 }

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_MiniGame_Type_Pistol",
-  "bbox_bottom": 1023,
+  "bbox_bottom": 511,
   "bbox_left": 0,
-  "bbox_right": 1535,
+  "bbox_right": 767,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc2824ad-b1e4-41ec-bf20-04b5839c4055",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"07d13eaf-ac93-4804-a8f7-1914061606a9",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 512,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"045b8c62-67ff-42f6-ade0-038a40dd08ce","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"60698f4d-304f-4bab-a716-8989023f26d2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cc2824ad-b1e4-41ec-bf20-04b5839c4055","path":"sprites/spr_MiniGame_Type_Pistol/spr_MiniGame_Type_Pistol.yy",},},},"Disabled":false,"id":"1fcc9c14-7e08-4acc-acb4-16887908d416","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"07d13eaf-ac93-4804-a8f7-1914061606a9","path":"sprites/spr_MiniGame_Type_Pistol/spr_MiniGame_Type_Pistol.yy",},},},"Disabled":false,"id":"29443cd4-951e-4b3a-b1b4-f8d0182b5131","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1536,
+  "width": 768,
 }

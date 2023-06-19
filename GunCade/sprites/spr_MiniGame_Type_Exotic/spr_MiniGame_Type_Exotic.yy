@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_MiniGame_Type_Exotic",
-  "bbox_bottom": 1023,
+  "bbox_bottom": 511,
   "bbox_left": 0,
-  "bbox_right": 1535,
+  "bbox_right": 767,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"59db95c5-70da-4ff0-b505-5caa667c4f0f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6624a0f3-0951-4d8c-8c5f-5ce63fd69827",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 512,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"42bec8c1-9aa9-416b-8f9f-739a512a0879","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c6bbf9a1-7075-4331-8db1-6f609b5a40be","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"59db95c5-70da-4ff0-b505-5caa667c4f0f","path":"sprites/spr_MiniGame_Type_Exotic/spr_MiniGame_Type_Exotic.yy",},},},"Disabled":false,"id":"487d2068-7221-4d9a-91c0-4fd40f8a0a57","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6624a0f3-0951-4d8c-8c5f-5ce63fd69827","path":"sprites/spr_MiniGame_Type_Exotic/spr_MiniGame_Type_Exotic.yy",},},},"Disabled":false,"id":"e5a0f91c-d997-471b-9d83-0afdd3d6cc32","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1536,
+  "width": 768,
 }

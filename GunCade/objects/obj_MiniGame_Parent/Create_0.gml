@@ -116,7 +116,7 @@ button_Type_x[3] = camX + typeStartX + typeXX * 3;
 button_Type_Y[0] = camY + typeStartY + typeYY * 0;
 button_Type_Y[1] = camY + typeStartY + typeYY * 1;
 button_Type_Y[2] = camY + typeStartY + typeYY * 2;
-button_TypeSize = 0.08;
+button_TypeSize = 0.15;
 
 
  var nameStartX = 45;
@@ -152,7 +152,9 @@ button_ResultSelected_Y[3] = camY + resultY_Start + (resultY_YY * 3);
 button_ResultSelected_Y[4] = camY + resultY_Start + (resultY_YY * 4);
 button_ResultSelected_Y[5] = camY + resultY_Start + (resultY_YY * 5);
 button_ResultSelected_Y[6] = camY + resultY_Start + (resultY_YY * 6);
-button_ResultSelected_Size = 0.2;
+button_ResultSelected_Size = 0.15;
+
+
 var sizeAttach = button_ResultSelected_Size;
 
 
