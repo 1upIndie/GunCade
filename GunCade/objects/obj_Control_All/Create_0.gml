@@ -755,7 +755,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
 	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 	 
 	 dialog_I++;
 
