@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_WorkStation_Background",
-  "bbox_bottom": 1023,
+  "bbox_bottom": 767,
   "bbox_left": 0,
-  "bbox_right": 1535,
+  "bbox_right": 767,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"21b6ea55-8e29-4e2e-810e-8516204adcc3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"78378258-4f84-472a-94c9-e6438a4be395","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"03412164-5a8b-410b-bafc-b95075a69707","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"21b6ea55-8e29-4e2e-810e-8516204adcc3","path":"sprites/spr_WorkStation_Background/spr_WorkStation_Background.yy",},},},"Disabled":false,"id":"efc5e681-f973-422b-972b-8afce963b760","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46","path":"sprites/spr_WorkStation_Background/spr_WorkStation_Background.yy",},},},"Disabled":false,"id":"342693bf-12a1-46ef-9804-9b24db88f9b7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1536,
+  "width": 768,
 }

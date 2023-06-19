@@ -754,7 +754,7 @@ var day_I = 0; // day 1
    
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_choiceOverlay_Parent; // testing
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");
@@ -1052,7 +1052,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Yes of course, I even ate the list after so nobody could find it.", snd_TextScroll_Default );		
 	 dialog_I++;
 
@@ -1062,22 +1062,22 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(It was a joke, guess arms dealers don't have a sense of humor)", snd_TextScroll_Default );		
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(On the flipside, is it a good idea to be super friendly with a shadow figure that supplies guns?)", snd_TextScroll_Default );		
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Maybe I should be more serious...) ", snd_TextScroll_Default );		
 	 dialog_I++;
 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(It was a joke, guess arms dealers don't have a sense of humor)", snd_TextScroll_Default );		
 	 dialog_I++;
 
@@ -1097,7 +1097,7 @@ var day_I = 0; // day 1
 	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Right, gotta use my head.", snd_TextScroll_Default );		
 	 dialog_I++;
 	 
@@ -1111,7 +1111,7 @@ var day_I = 0; // day 1
 	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Understood.", snd_TextScroll_Default );		
 	 dialog_I++;	 
 	 
@@ -1150,7 +1150,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(And he says I'm weird? Wait, did he say clown...)", snd_TextScroll_Default );		
 	 dialog_I++;		 
 	 

@@ -47,3 +47,4 @@ if (field_Type == 4){
 blink_Pos    += 1/blink_total;
 if(blink_Pos >= 1) { blink_Pos = 0; }
 alphaBlink = animcurve_channel_evaluate(_channel, blink_Pos);
+ clamp( alphaBlink, 0, alphaBlinkMax);

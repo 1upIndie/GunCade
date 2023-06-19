@@ -27,8 +27,8 @@ spr_Part_X[4] = viewX + 50;
 
 spr_Part_Y = 0;
 
-spr_Part_Width  = 0;
-spr_Part_Height = 0;
+spr_Part_Width  = 1;
+spr_Part_Height = 1;
 
 
 // effect blinking
@@ -40,7 +40,7 @@ blink_total = 180;
 blink_Color   = c_orange;
 blink_NoColor = c_white;
 alphaBlink      = 0;
-
+  alphaBlinkMax = 0.2;
 
 spr_Backgr = spr_Choise2_Bgr;
 spr_Backgr_X[1] = spr_Part_X[1];
@@ -71,5 +71,8 @@ spr_PartText_X[3] = 0;
 spr_PartText_X[4] = 0; 
  
 spr_PartText_Y    = 0; 
-spr_PartText_Size = 0.5;
- 
+
+text[1] = "";
+text[2] = "";
+text[3] = "";
+text[4] = ""; 
