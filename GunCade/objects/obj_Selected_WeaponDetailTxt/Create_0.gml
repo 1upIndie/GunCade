@@ -11,3 +11,7 @@ descriptionText1 = "";
 descriptionText2 = "";
 costText         = "";
 cost             = 1;
+
+
+// index active
+indexActive = -999;

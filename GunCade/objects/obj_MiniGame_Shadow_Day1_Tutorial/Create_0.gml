@@ -1,7 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
- possible_Weapon_Perfect          = 40;   // index numbers!
+
+ possible_Weapon_Perfect          = 10;   // index numbers! pistol 1
  // possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  // possible_Muzzle_Perfect          = -999;  
  // possible_Optics_Perfect          = -999; 
@@ -13,9 +14,9 @@ event_inherited();
  array_Positive_Weapons   = array_create(0); 
  
  var stack_ = 0;
- array_Positive_Weapons[stack_] = 40; stack_++;
- array_Positive_Weapons[stack_] = 41; stack_++; 
- array_Positive_Weapons[stack_] = 42; stack_++; 
+ array_Positive_Weapons[stack_] = 11; stack_++;
+ array_Positive_Weapons[stack_] = 12; stack_++; 
+ array_Positive_Weapons[stack_] = 13; stack_++; 
  
  
  // negatives!
@@ -30,9 +31,9 @@ event_inherited();
  
  
  // jump to points
-  result_Index_Sale     = 10;
- result_Index_Messup   = 0; 
- result_Index_Refuse   = 7;
+  result_Index_Sale      = 10;
+  result_Index_Messup    = 0; 
+  result_Index_Refuse    = 7;
  
  /*
  0,1,2 melee

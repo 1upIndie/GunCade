@@ -27,13 +27,6 @@ if(dialogShow_Spr_3_ != spr_Nothing){
 
 
 
-
-
-// black background for text!
-draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, c_black,  blackBoxAlpha );
-
-
-
 // debug
 //var debugTxt = string(dialogSpr_State_Timer) + "  :" + dialogSpr_State;
 //draw_text(camX+50,camY+50, debugTxt)

@@ -19,3 +19,10 @@ alarm[0] = delay;
   resultMoney = 0;
   resultTip   = 0;
   indexJumpTo = 0;
+
+
+// scale
+var scale = 0.7;
+
+image_xscale = scale;
+image_yscale = scale;

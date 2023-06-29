@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Ui_Button_Tab",
-  "bbox_bottom": 31,
+  "bbox_bottom": 39,
   "bbox_left": 0,
-  "bbox_right": 95,
+  "bbox_right": 145,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c7323581-0b5a-4364-b2fb-6334decf2991",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c7d04e3-0efe-48bd-9259-89f2b1bf4bb3",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a0ffa490-f83a-49e7-ae13-a2b0833c5b7d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ee51f63a-e52a-4776-ba1a-2e09e81412df","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c7323581-0b5a-4364-b2fb-6334decf2991","path":"sprites/spr_Ui_Button_Tab/spr_Ui_Button_Tab.yy",},},},"Disabled":false,"id":"5096fa93-40dd-4190-80f3-84450c09e1d4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5c7d04e3-0efe-48bd-9259-89f2b1bf4bb3","path":"sprites/spr_Ui_Button_Tab/spr_Ui_Button_Tab.yy",},},},"Disabled":false,"id":"1fad6f62-defa-4d73-b06c-6c49694b193e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 96,
+  "width": 146,
 }

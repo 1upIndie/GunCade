@@ -82,6 +82,9 @@ if ( weapon_IndexGEt != -999){
      detailTxt.descriptionText2  = obj_Control_All.array_DetailWeaponText[weapon_IndexGEt].descriptionText2;
      detailTxt.costText          = obj_Control_All.array_DetailWeaponText[weapon_IndexGEt].costText;
      detailTxt.cost              = obj_Control_All.array_DetailWeaponText[weapon_IndexGEt].cost; 
+	 
+	 
+     detailTxt.indexActive = weapon_IndexGEt;
 }
 
 

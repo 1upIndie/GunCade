@@ -5,6 +5,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -32,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Ui_Button_Tab",
-    "path": "sprites/spr_Ui_Button_Tab/spr_Ui_Button_Tab.yy",
+    "name": "spr_Ui_Button_Tab_Type",
+    "path": "sprites/spr_Ui_Button_Tab_Type/spr_Ui_Button_Tab_Type.yy",
   },
   "spriteMaskId": null,
   "visible": true,

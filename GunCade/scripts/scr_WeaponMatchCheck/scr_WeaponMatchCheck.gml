@@ -42,6 +42,9 @@ if(getWeaponIndex       == perfect_Weapon and
 	  indexJumpTo = getIndex_Sale;
       resultMoney = getMoney;
       resultTip   = obj_Control_All.static_Money_Tip;
+	  
+	  // spawn popup
+	  instance_create_layer(0,0, "Instances_Effects", obj_Effect_Txt_PopUpGoUp_PerfectSale);
 	   }
 
 
@@ -50,17 +53,20 @@ if(getWeaponIndex       == perfect_Weapon and
 // #2 is it still a good sale? dont continue if sale is perfect
 if(isPerfect == false){
 
-// loop through all positive weapons
+// loop through all positive weapons -> if any match is good, is still a sale!
 var pos_I = 0;
-  repeat( array_length(obj_Control_All.array_DetailWeaponText) ){
+  repeat( array_length( obj_MiniGame_Parent.array_Positive_Weapons ) ){
     
 	// is the weapon one of those=?
-    if ( getWeaponIndex == obj_Control_All.array_DetailWeaponText[pos_I].weaponIndex){ isGood = true; }
+    if ( getWeaponIndex == obj_MiniGame_Parent.array_Positive_Weapons[pos_I] ){ isGood = true; }
  
    pos_I++;
    }
  
+ 
+ 
  // check for no goes, that cap it to a fail!
+ 
 var neg_I = 0;
   repeat( array_length(obj_MiniGame_Parent.array_Negative) ){
     
@@ -69,6 +75,7 @@ var neg_I = 0;
  
    neg_I++;
    } 
+
 
 // also single check if attachment is excluded!
  if(getAttachment_LaserP == obj_MiniGame_Parent.negative_LaserPointer){ isGood = false; }
@@ -82,11 +89,26 @@ var neg_I = 0;
 
 
 ///////////// result!  /////////////////
-if(isGood == true ){  resultMoney = getMoney; resultTip = 0; indexJumpTo = getIndex_Sale;   }
-if(isGood == false){  resultMoney = 0;        resultTip = 0; indexJumpTo = getIndex_Fail;   }
-
+if( isGood == true ){  
+	resultMoney = getMoney;
+	resultTip = 0; 
+	indexJumpTo = getIndex_Sale;
+	// spawn popup
+	  instance_create_layer(0,0, "Instances_Effects", obj_Effect_Txt_PopUpGoUp_Sale);   }
+	  
+if( isGood == false){ 
+	resultMoney = 0;       
+	resultTip = 0; 
+	indexJumpTo = getIndex_Fail;
+	// spawn popup
+	  instance_create_layer(0,0, "Instances_Effects", obj_Effect_Txt_PopUpGoUp_Fail);   }	
+	
    } // end of perfect false
    
   // var txt33 = "Good: " + string(isGood) + "  perf: " + string(isPerfect)
   // draw_text(x-20,y-20, txt33  );
+
+
+
+/////////////////////////////////
 }// end of script

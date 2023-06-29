@@ -308,6 +308,17 @@ if(regularDialog == false){
 
 #endregion
 	
+#region hover over globally
+
+hoverAlphaTimeSET += (1/hoverAlphaTime);
+if(hoverAlphaTimeSET >= 1){ hoverAlphaTimeSET = 0; }
+var _val = animcurve_channel_evaluate(hoverAlphachannel, hoverAlphaTimeSET);
+hoverAlpha = _val;
+
+
+#endregion
+	
+	
 // spr fade in!
 /*
 if(dialogSprAlpha < 1){

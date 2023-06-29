@@ -22,7 +22,7 @@ alarm[0] = 4;
   textSuffixDialog_Tab = "[/scale]";
 
 
-  textCosts_Prefix = "[font_Cutscene][scale, 1.3]";
+  textCosts_Prefix = "[font_Cutscene][scale, 1.1]";
   textCosts_Suffix = "[/scale]";
 
 /// for weapons detail text box
@@ -64,7 +64,27 @@ function weaponCreate()constructor {
   weaponSpr         = spr___; 
   }  
   
-}
+  
+
+  stat_Power     = 1;  
+  stat_Accuracy  = 1;
+  stat_Range     = 1;  
+  stat_FireRate  = 1;
+  stat_Weight    = 1;
+  
+  function setStats( power_, accurracy, range_, fireRate_, weight_ ){
+
+	  stat_Power      = power_;  
+	  stat_Accuracy   = accurracy;
+	  stat_Range      = range_;  
+	  stat_FireRate   = fireRate_;
+	  stat_Weight     = weight_;	  
+  }
+  
+  // new
+  detail_Spr = spr_Nothing;
+
+} // end of constructor
 
 array_DetailWeaponText = array_create(0);
 
@@ -85,6 +105,7 @@ var txtDetail_I = 0;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Melee_1;	 	  
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("melee 2", spr_MiniGame_Melee_2, txtDetail_I);
@@ -93,6 +114,7 @@ var txtDetail_I = 0;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Melee_2;		  
 	  txtDetail_I++;
 	  
       array_DetailWeaponText[txtDetail_I].fill_In("melee 3", spr_MiniGame_Melee_3, txtDetail_I);
@@ -101,73 +123,81 @@ var txtDetail_I = 0;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Melee_3;		  
 	  txtDetail_I++;  	  
 
 
 
 
-txtDetail_I = 10;
+txtDetail_I = 10;  // pistols
       array_DetailWeaponText[txtDetail_I].fill_In("pistol 1", spr_MiniGame_Pistol_1, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Small pistol"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "[font_Cutscene][scale, 0.8][c_white]Small pistol[/c][/scale]"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 500;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Pistol_1;
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("pistol 2", spr_MiniGame_Pistol_2, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Big pistol"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 2000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 750;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Pistol_2;	  
 	  txtDetail_I++;
 	  
       array_DetailWeaponText[txtDetail_I].fill_In("pistol 3", spr_MiniGame_Pistol_3, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Other pistol"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 3000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 900;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Pistol_3;	  
 	  txtDetail_I++;  
 
 
 
-txtDetail_I = 20;
+txtDetail_I = 20; // rifles
       array_DetailWeaponText[txtDetail_I].fill_In("rifle 1", spr_MiniGame_Rifle_1, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Bolt action"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 700;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Rifle_1;		  
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("rifle 2", spr_MiniGame_Rifle_2, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Sniper rifle"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 600;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Rifle_2;		  
 	  txtDetail_I++;
 	  
       array_DetailWeaponText[txtDetail_I].fill_In("rifle 3", spr_MiniGame_Pistol_3, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Winchester"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 800;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Rifle_3;		  
 	  txtDetail_I++;  
 
 
 
 
-txtDetail_I = 30;
+txtDetail_I = 30;  // smg
       array_DetailWeaponText[txtDetail_I].fill_In("smg 1", spr_MiniGame_Smg_1, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Woozie"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 1800;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Smg_1;		  
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("smg 2", spr_MiniGame_Smg_2, txtDetail_I);
@@ -176,32 +206,36 @@ txtDetail_I = 30;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Smg_2;	  
 	  txtDetail_I++;
 	  
       array_DetailWeaponText[txtDetail_I].fill_In("smg 3", spr_MiniGame_Smg_3, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Tummy gun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 2000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Smg_3;	  
 	  txtDetail_I++;  
 
 
-txtDetail_I = 40;
+txtDetail_I = 40;  // shotguns
       array_DetailWeaponText[txtDetail_I].fill_In("shotgun 1", spr_MiniGame_Shotgun_1, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Sawed off"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 400;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Shotgun_1;	  
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("shotgun 2", spr_MiniGame_Shotgun_2, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Tactical shotgun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 800;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Shotgun_2;		  
 	  txtDetail_I++;
 	  
       array_DetailWeaponText[txtDetail_I].fill_In("shotgun 3", spr_MiniGame_Shotgun_3, txtDetail_I);
@@ -210,17 +244,19 @@ txtDetail_I = 40;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Shotgun_3;		  
 	  txtDetail_I++; 
 
 
 
-txtDetail_I = 50;
+txtDetail_I = 50;   // military rifles
       array_DetailWeaponText[txtDetail_I].fill_In("ar 1", spr_MiniGame_Ar_1, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "M 16"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Ar_1;		  
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("ar 2", spr_MiniGame_Ar_2, txtDetail_I);
@@ -229,6 +265,7 @@ txtDetail_I = 50;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Ar_2;		  
 	  txtDetail_I++;
 	  
       array_DetailWeaponText[txtDetail_I].fill_In("ar 3", spr_MiniGame_Ar_3, txtDetail_I);
@@ -237,43 +274,93 @@ txtDetail_I = 50;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Ar_3;		  
 	  txtDetail_I++;
 
 
 
-txtDetail_I = 60;  // exotics
-      array_DetailWeaponText[txtDetail_I].fill_In("exotic 1", spr_MiniGame_Ar_1, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "M 16"  + textDetail_HeadlineSuffix;
+txtDetail_I = 60;  // exotics -> swapped to heaby
+
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 1", spr_MiniGame_Heavy_2, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "LMG"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 4000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_2;		  
 	  txtDetail_I++;
 
-      array_DetailWeaponText[txtDetail_I].fill_In("exotic 2", spr_MiniGame_Ar_2, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "French ar"  + textDetail_HeadlineSuffix;
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 2", spr_MiniGame_Heavy_3, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Grenade launcher"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 8000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  txtDetail_I++;
-	  
-      array_DetailWeaponText[txtDetail_I].fill_In("exotic 3", spr_MiniGame_Ar_3, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Ak 47"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_3;		  
+	  txtDetail_I++;	  
+
+
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 3", spr_MiniGame_Heavy_1, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Minigun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 10000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_1;		  
+	  txtDetail_I++;
+	    
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 4", spr_MiniGame_Heavy_4, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Bazukem"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 15000;	  	  
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_4;		  
 	  txtDetail_I++;
 
 
-txtDetail_I = 70;
+
+
+txtDetail_I = 70;  // exotics NEW
+
+      array_DetailWeaponText[txtDetail_I].fill_In("exotic 1", spr_MiniGame_Exotic_1, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "..."  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 4000;	  	  
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_1;		  
+	  txtDetail_I++;
+
+      array_DetailWeaponText[txtDetail_I].fill_In("exotic 2", spr_MiniGame_Exotic_2, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "..."  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 8000;	  	  
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_2;		  
+	  txtDetail_I++;	  
+
+
+      array_DetailWeaponText[txtDetail_I].fill_In("exotic 3", spr_MiniGame_Exotic_3, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "..."  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 10000;	  	  
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_3;		  
+	  txtDetail_I++;
+
+
+
+txtDetail_I = 80;  // from 70 to 80, added ammo
       array_DetailWeaponText[txtDetail_I].fill_In("attachment laser", spr_MiniGame_Attachment_LaserPointer, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Laser pointer"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Laser;	  
 	  txtDetail_I++;	  
 
 
@@ -283,6 +370,7 @@ txtDetail_I = 70;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Muzzle;		  
 	  txtDetail_I++;	  
 
 	  
@@ -292,6 +380,7 @@ txtDetail_I = 70;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Optics;		  
 	  txtDetail_I++;	  
 
 
@@ -301,6 +390,7 @@ txtDetail_I = 70;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Scope;	  
 	  txtDetail_I++;	  
 
 
@@ -310,9 +400,18 @@ txtDetail_I = 70;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Stock;	 	  
 	  txtDetail_I++;  
 
-	  
+      // ammo !
+      array_DetailWeaponText[txtDetail_I].fill_In("attachment stock", spr_MiniGame_Attachment_Stock, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Ammo"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 50;	  	  
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Ammo;	 	  
+	  txtDetail_I++;	  
 	  
 	  
 	  
@@ -755,7 +854,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
 	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 	 
 	 dialog_I++;
 

@@ -11,7 +11,15 @@ dayTemp_Cash     = 0;
 dayTemp_Cash_Tip = 0;
 #endregion
 
+#region hover over
 
+hoverAlphachannel = animcurve_get_channel(aniCurve_HoverOver, 0);
+
+hoverAlpha = 1;
+ hoverAlphaTime    = 100;
+ hoverAlphaTimeSET = 0;
+
+#endregion
 
 //instance_create_layer(x,y, "Instances_bgr", obj_Workspace_Bgr );
 // apply camera

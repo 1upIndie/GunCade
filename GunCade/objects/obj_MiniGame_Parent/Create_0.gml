@@ -28,7 +28,8 @@ current_Costs               = 0; // total value
  player_Wish_Type   = "";
 */
  
- 
+ #region sale 2x, fail, refuse
+
  // possible variations!
  // perfect combo!
  possible_Weapon_Perfect          = -999;   // index numbers!
@@ -42,7 +43,7 @@ current_Costs               = 0; // total value
  // all other combos -> good sale, no tip
  array_Positive_Weapons   = array_create(0); 
  
- 
+
  // negatives!
  array_Negative           = array_create(0); // values that make it a bad sale -> fail!
  negative_LaserPointer    = false;
@@ -57,7 +58,10 @@ current_Costs               = 0; // total value
  result_Index_Sale     = 0;
  result_Index_Messup   = 0; 
  result_Index_Refuse   = 0;
- 
+
+ #endregion
+
+
 
  #region input cooldown
  inputCoolDown_Time  = 15;
@@ -68,8 +72,8 @@ current_Costs               = 0; // total value
  
  
   
- var tabStart = 50;
- var tabXX = 150;
+ var tabStart = 46;
+ var tabXX = 158;
 
 bgrX = camX + 32;
 bgrY = camY + 20;
@@ -79,18 +83,34 @@ bgrY = camY + 20;
 costsTotal_X = camX + 700;
 costsTotal_Y = camY + 600;
 
-detailSpr_X    = camX + 150;
-detailSpr_Y    = camY + 130;
-detailSpr_Size = 0.25;
+detailSpr_X    = camX + 45;
+detailSpr_Y    = camY + 90;
+detailSpr_Size = 0.7;
 
-detailTxt_Headline_x    = camX + 250;
-detailTxt_Cost_x        = camX + 250;
+detailTxt_Headline_x    = camX + 230;
+detailTxt_Cost_x        = camX + 230;
 detailTxt_Description_x = camX + 50;
 
-detailTxt_Headline_y       = camY + 100;
-detailTxt_Cost_y           = camY + 130;
+detailTxt_Headline_y       = camY + 75;
+detailTxt_Cost_y           = camY + 120;
 detailTxt_Description_y[0] = camY + 210;
 detailTxt_Description_y[1] = camY + 250;
+
+// stat poiunts
+detail_Stats_Size[0] = 0.10;
+detail_Stats_Size[1] = 0.10;
+
+detail_Stats_X[0]   = camY + 50; // what is it icon
+detail_Stats_X[1]   = detail_Stats_X[0] + 50; // what is it icon
+
+var statsYY = 20; 
+var statsStart = 135;
+
+detail_Stats_Y[0]   =  camY + statsStart + (statsYY * 0);
+detail_Stats_Y[1]   =  camY + statsStart + (statsYY * 1);
+detail_Stats_Y[2]   =  camY + statsStart + (statsYY * 2);
+detail_Stats_Y[3]   =  camY + statsStart + (statsYY * 3);
+detail_Stats_Y[4]   =  camY + statsStart + (statsYY * 4);
 
 
 dropOffSpot_X = camX + 680;
@@ -108,6 +128,7 @@ button_Tab_y    = camY + 30;
  
  var typeXX    = 125;
  var typeYY    = 100; 
+ 
 button_Type_x[0] = camX + typeStartX + typeXX * 0;
 button_Type_x[1] = camX + typeStartX + typeXX * 1;
 button_Type_x[2] = camX + typeStartX + typeXX * 2;
@@ -160,9 +181,9 @@ var sizeAttach = button_ResultSelected_Size;
 
 
 // right buttons -> refuse/sale
-button_Right_X[0]  = camX + 700;
-button_Right_X[1]  = camX + 880;
-button_Right_Y     = camY + 400;
+button_Right_X[0]  = camX + 765;
+button_Right_X[1]  = camX + 920;
+button_Right_Y     = camY + 406;
 
 
 
@@ -289,8 +310,8 @@ button_Right_Y     = camY + 400;
     gbr = instance_create_layer( bgrX, bgrY, "Instances_MiniGame_Bgr", obj_MiniGame_Bgr_Left );
     gbr.image_xscale = bgrXscale;
     gbr.image_yscale = bgrYscale;
-	gbr.image_blend  = #662D91;
-	
+	gbr.image_blend  = #0B0914;
+	//gbr.image_blend  = c_red;	
 // drop of area!
     dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame_Bgr", obj_MiniGame_DropSpot );
  

@@ -5,7 +5,7 @@ var count = 0;
 
 
 
-if instance_exists(obj_Control_All){
+if instance_exists(obj_Selected_WeaponDetailTxt){
 
 txt = "Yes";
 
