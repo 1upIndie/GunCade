@@ -10,3 +10,5 @@ image_alpha = 0.4;
 sprite_index = spr_1px;
 image_xscale = 150;
 image_yscale = 60;
+
+canDraw = true;

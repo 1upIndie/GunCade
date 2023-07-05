@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"125aa17a-3132-47eb-ace3-6cfc9e04622f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c78564f4-ce2c-436b-940a-8445fff509c5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 512,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"438d04b8-6a7b-4e2d-98bf-1b0a41618a9f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e5244ebe-4ba1-43dd-a5a7-50cc818a548b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Sprites/Dialog/MiniGame.yy",
+    "name": "TypeButtons",
+    "path": "folders/Sprites/UI/TypeButtons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"125aa17a-3132-47eb-ace3-6cfc9e04622f","path":"sprites/spr_MiniGame_Type_Shotgun/spr_MiniGame_Type_Shotgun.yy",},},},"Disabled":false,"id":"4b1eede0-a37a-44a6-818c-f98e16cf9717","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c78564f4-ce2c-436b-940a-8445fff509c5","path":"sprites/spr_MiniGame_Type_Shotgun/spr_MiniGame_Type_Shotgun.yy",},},},"Disabled":false,"id":"906133ac-bdd0-4b4e-8b28-3bdeb4d60e6c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

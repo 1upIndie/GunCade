@@ -1,6 +1,8 @@
 /// @description 
 event_inherited();
 
+save_Index_Weapon = 83;
+cost = obj_Control_All.array_DetailWeaponText[save_Index_Weapon].cost;
 
 state = "blink";
 
@@ -20,13 +22,13 @@ reset = false;
 blink_Pos   = 0;
 blink_total = 180;
 
- _channel = animcurve_get_channel(aniCurve_Blink, 1);
 
- var size = obj_MiniGame_Parent.button_ResultSelected_Size;
-weapon_XYscale = size;
 
-image_xscale = size;
-image_yscale = size;
+  sizeX = obj_MiniGame_Parent.button_ResultSelectedAttach_XSize;
+  sizeY = obj_MiniGame_Parent.button_ResultSelectedAttach_YSize; 
+
+image_xscale = sizeX;
+image_yscale = sizeY;
 
 image_speed = 0;
  image_index = 1;

@@ -11,14 +11,17 @@ if (!instance_exists(obj_Temp_Drag) and obj_MiniGame_Parent.inputCoolDown == fal
    
    
    // refund!
-   obj_MiniGame_Parent.current_Costs  -= obj_Control_All.array_DetailWeaponText[save_Index_Weapon].cost;
+   //obj_MiniGame_Parent.current_Costs  -= obj_Control_All.array_DetailWeaponText[save_Index_Weapon].cost;
+   obj_MiniGame_Parent.current_Costs    = 0; // zero it! 
    save_Index_Weapon = -999; // null!
    
+   event_user(1); /// clean up attachments
    
    // check what is assigned, if nothing is there disable sell button
    var isAnythingAssigned = false;
    
    // check all the others
+   /*
    if ( instance_exists(obj_MiniGame_Drop_LaserPointer) ){  
 	    if(obj_MiniGame_Drop_LaserPointer.save_Index_Weapon != -999){ isAnythingAssigned = true; } }
    
@@ -33,7 +36,8 @@ if (!instance_exists(obj_Temp_Drag) and obj_MiniGame_Parent.inputCoolDown == fal
 		   
    if ( instance_exists(obj_MiniGame_Drop_Stock) ){  
 	    if(obj_MiniGame_Drop_Stock.save_Index_Weapon != -999){ isAnythingAssigned = true; } }
-		
+	*/
+	
 	// nothing assigned? -> disable button
     if(isAnythingAssigned == false){ obj_MiniGame_Button_Sale.enableSale = false; }
 

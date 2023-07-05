@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_MiniGame_Invisible",
-    "path": "sprites/spr_MiniGame_Invisible/spr_MiniGame_Invisible.yy",
+    "name": "spr_MiniGame_Attachment_Muzzle",
+    "path": "sprites/spr_MiniGame_Attachment_Muzzle/spr_MiniGame_Attachment_Muzzle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

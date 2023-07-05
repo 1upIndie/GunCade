@@ -1,6 +1,17 @@
 // Skriptelemente wurden für v2.3.0 geändert, weitere Informationen sind unter
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
-function scr_CleanResetAttachments(){
+   function scr_CleanResetAttachments(){
+	
+	
+ obj_MiniGame_Drop_Ammo.isBlocked         = true;         
+ obj_MiniGame_Drop_LaserPointer.isBlocked = true; 
+ obj_MiniGame_Drop_Muzzle.isBlocked       = true;       
+  
+ obj_MiniGame_Drop_Stock.isBlocked        = true;         
+ obj_MiniGame_Drop_Optics.isBlocked       = true;      
+ obj_MiniGame_Drop_Grip.isBlocked         = true;         
+ 
+ 
 // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotics 60-70
 /*
 var indexAttach = save_Index_Weapon;

@@ -4,9 +4,12 @@ if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selec
 // clear!
 
 
-scr_ButtonResult_Create( "attachment laser",  0);
-scr_ButtonResult_Create( "attachment muzzle", 1);
-scr_ButtonResult_Create( "attachment optics", 2);
-scr_ButtonResult_Create( "attachment scope",  3);
-scr_ButtonResult_Create( "attachment stock",  4);
+
+scr_ButtonResult_Create( "attachment ammo",   0);
+scr_ButtonResult_Create( "attachment laser",  1);
+scr_ButtonResult_Create( "attachment muzzle", 2);
+
+scr_ButtonResult_Create( "attachment stock",  3);
+scr_ButtonResult_Create( "attachment optics", 4);
+scr_ButtonResult_Create( "attachment grip",   5);
 

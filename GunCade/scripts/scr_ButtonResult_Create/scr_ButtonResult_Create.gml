@@ -49,12 +49,14 @@ function scr_ButtonResult_Create(inst_, slot_){
 	    case "exotic 3":  indexGet = 62; break;		
 	    case "exotic 4":  indexGet = 63; break;
 	    case "exotic 5":  indexGet = 64; break;		
+
+	    case "attachment ammo" :   indexGet = 80; break;
+	    case "attachment laser":   indexGet = 81; break;
+	    case "attachment muzzle":  indexGet = 82; break;
 		
-	    case "attachment laser":   indexGet = 70; break;
-	    case "attachment muzzle":  indexGet = 71; break;
-	    case "attachment optics":  indexGet = 72; break;			
-	    case "attachment scope":   indexGet = 73; break;
-	    case "attachment stock":   indexGet = 74; break;		
+	    case "attachment stock":   indexGet = 83; break;			
+	    case "attachment optics":  indexGet = 84; break;
+	    case "attachment grip":    indexGet = 85; break;		
 	  }
 	  
 	  

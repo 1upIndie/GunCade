@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0c97238c-d6a5-4cfb-aec9-a92114c5178a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0c5a69c6-9874-47c0-95ba-fdbf51a683cd",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 512,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8b29e484-40e1-4cd0-9e07-0c7e11dc4f6d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"13e2596d-67e1-44c5-943d-97d5c8b132b0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Sprites/Dialog/MiniGame.yy",
+    "name": "TypeButtons",
+    "path": "folders/Sprites/UI/TypeButtons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c97238c-d6a5-4cfb-aec9-a92114c5178a","path":"sprites/spr_MiniGame_Type_Attachment/spr_MiniGame_Type_Attachment.yy",},},},"Disabled":false,"id":"ce391e80-5296-4eab-b183-2844d6add7be","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c5a69c6-9874-47c0-95ba-fdbf51a683cd","path":"sprites/spr_MiniGame_Type_Attachment/spr_MiniGame_Type_Attachment.yy",},},},"Disabled":false,"id":"ab6399f6-77e5-452c-984d-3367b5e36835","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -1,4 +1,5 @@
 /// @description 
+canDraw = false;
 
 weaponSpr  = spr_Nothing;
 weaponSpr_Xscale  = 1;
@@ -9,4 +10,4 @@ whatisIt = "";
 
 
 image_alpha = 0;
-alarm[0] = 3;
+alarm[0] = 2;

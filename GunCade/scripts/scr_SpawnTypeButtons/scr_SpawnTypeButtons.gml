@@ -47,18 +47,22 @@ var type_Smg    = instance_create_layer( bbb.button_Type_x[2], bbb.button_Type_Y
 
 
 
-if(ooo.unlocked_WeaponType_Accessory  == true ){
-var type_Smg    = instance_create_layer( bbb.button_Type_x[0], bbb.button_Type_Y[2],  bbb.layer_ , obj_MiniGame_Button_Type_Accessory     );
-    type_Smg.image_xscale = bbb.button_TypeSize;
-    type_Smg.image_yscale = bbb.button_TypeSize;
-}
-
 
 
 if(ooo.unlocked_WeaponType_Exotic  == true ){
-var type_Smg    = instance_create_layer( bbb.button_Type_x[1], bbb.button_Type_Y[2], bbb.layer_ , obj_MiniGame_Button_Type_Exotic     );
+var type_Smg    = instance_create_layer( bbb.button_Type_x[0], bbb.button_Type_Y[2], bbb.layer_ , obj_MiniGame_Button_Type_Exotic     );
     type_Smg.image_xscale = bbb.button_TypeSize;
     type_Smg.image_yscale = bbb.button_TypeSize;
 }
 
+
+
+if(ooo.unlocked_WeaponType_Accessory  == true ){
+var type_Smg    = instance_create_layer( bbb.button_Type_x[1], bbb.button_Type_Y[2],  bbb.layer_ , obj_MiniGame_Button_Type_Accessory     );
+    type_Smg.image_xscale = bbb.button_TypeSize;
+    type_Smg.image_yscale = bbb.button_TypeSize;
 }
+
+
+
+} // end of script

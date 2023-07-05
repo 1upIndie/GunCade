@@ -22,11 +22,11 @@ blink_total = 180;
 
  _channel = animcurve_get_channel(aniCurve_Blink, 1);
 
- var size = obj_MiniGame_Parent.button_ResultSelected_Size;
-weapon_XYscale = size;
+  sizeX = obj_MiniGame_Parent.button_ResultSelectedAttach_XSize;
+  sizeY = obj_MiniGame_Parent.button_ResultSelectedAttach_YSize; 
 
-image_xscale = size;
-image_yscale = size;
+image_xscale = sizeX;
+image_yscale = sizeY;
 
 image_speed = 0;
  image_index = 1;

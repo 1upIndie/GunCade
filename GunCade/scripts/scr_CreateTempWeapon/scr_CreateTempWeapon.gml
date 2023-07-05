@@ -30,19 +30,68 @@ switch(whatisIt){
     case "melee 1": 	weapon_IndexGEt = 0; break;
     case "melee 2": 	weapon_IndexGEt = 1; break;
     case "melee 3": 	weapon_IndexGEt = 2; break;	
+    case "melee 4": 	weapon_IndexGEt = 3; break;
+    case "melee 5": 	weapon_IndexGEt = 4; break;	
+
 
     case "pistol 1": 	weapon_IndexGEt = 10; break;
     case "pistol 2": 	weapon_IndexGEt = 11; break;
     case "pistol 3": 	weapon_IndexGEt = 12; break;	
+    case "pistol 4": 	weapon_IndexGEt = 13; break;	
+    case "pistol 5": 	weapon_IndexGEt = 14; break;	
+
+    case "smg 1": 	weapon_IndexGEt = 30; break;
+    case "smg 2": 	weapon_IndexGEt = 31; break;
+    case "smg 3": 	weapon_IndexGEt = 32; break;	
+    case "smg 4": 	weapon_IndexGEt = 33; break;	
+    case "smg 5": 	weapon_IndexGEt = 34; break;	
+
+    case "rifle 1": 	weapon_IndexGEt = 20; break;
+    case "rifle 2": 	weapon_IndexGEt = 21; break;
+    case "rifle 3": 	weapon_IndexGEt = 22; break;	
+    case "rifle 4": 	weapon_IndexGEt = 23; break;	
+    case "rifle 5": 	weapon_IndexGEt = 24; break;	
 
 
-
-    case "laser pointer":  if( obj_MiniGame_Parent.Attachments_CanPlace_Laser   == false ){ impossible = true; impossibleColor = c_red; } break;
-    case "muzzle":         if( obj_MiniGame_Parent.Attachments_CanPlace_Muzzle  == false ){ impossible = true; impossibleColor = c_red; } break;
-    case "optics":         if( obj_MiniGame_Parent.Attachments_CanPlace_Optics  == false ){ impossible = true; impossibleColor = c_red; } break;
+    case "shotgun 1": 	weapon_IndexGEt = 40; break;
+    case "shotgun 2": 	weapon_IndexGEt = 41; break;
+    case "shotgun 3": 	weapon_IndexGEt = 42; break;	
+    case "shotgun 4": 	weapon_IndexGEt = 43; break;	
+    case "shotgun 5": 	weapon_IndexGEt = 44; break;	
 	
-    case "stock":          if( obj_MiniGame_Parent.Attachments_CanPlace_Stock   == false ){ impossible = true; impossibleColor = c_red; } break;
-    case "scope":          if( obj_MiniGame_Parent.Attachments_CanPlace_Scope   == false ){ impossible = true; impossibleColor = c_red; } break;
+
+    case "ar 1": 	weapon_IndexGEt = 50; break;
+    case "ar 2": 	weapon_IndexGEt = 51; break;
+    case "ar 3": 	weapon_IndexGEt = 52; break;	
+    case "ar 4": 	weapon_IndexGEt = 53; break;	
+    case "ar 5": 	weapon_IndexGEt = 54; break;	
+
+    case "heavy 1": 	weapon_IndexGEt = 60; break;
+    case "heavy 2": 	weapon_IndexGEt = 61; break;
+    case "heavy 3": 	weapon_IndexGEt = 62; break;	
+    case "heavy 4": 	weapon_IndexGEt = 63; break;	
+    case "heavy 5": 	weapon_IndexGEt = 64; break;	
+
+
+    case "exotic 1": 	weapon_IndexGEt = 70; break;
+    case "exotic 2": 	weapon_IndexGEt = 71; break;
+    case "exotic 3": 	weapon_IndexGEt = 72; break;	
+    case "exotic 4": 	weapon_IndexGEt = 73; break;	
+    case "exotic 5": 	weapon_IndexGEt = 74; break;	
+
+	
+	
+	
+    case "attachment ammo":     weapon_IndexGEt = 80;   break;
+    case "attachment grip":     weapon_IndexGEt = 81;   break;
+    case "attachment laser":    weapon_IndexGEt = 82;   break;
+    
+	case "attachment muzzle":   weapon_IndexGEt = 83;   break;	
+    case "attachment optics":   weapon_IndexGEt = 84;   break;
+    case "attachment stock":    weapon_IndexGEt = 85;   break;
+	
+	
+	
 }
 
 
