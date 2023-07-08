@@ -12,11 +12,20 @@ var getMoney = obj_MiniGame_Parent.current_Costs;
 
 var getWeaponIndex = obj_MiniGame_Drop_Weapon.save_Index_Weapon;
 
-var getAttachment_LaserP = obj_MiniGame_Drop_LaserPointer.save_Index_Weapon;
-var getAttachment_Muzzle = obj_MiniGame_Drop_Muzzle.save_Index_Weapon;  
-var getAttachment_Optics = obj_MiniGame_Drop_Optics.save_Index_Weapon; 
-var getAttachment_Scope  = obj_MiniGame_Drop_Scope.save_Index_Weapon; 
-var getAttachment_Stock  = obj_MiniGame_Drop_Stock.save_Index_Weapon;  
+
+var getAttachment_LaserP = 0;
+var getAttachment_Muzzle = 0;  
+var getAttachment_Optics = 0; 
+var getAttachment_Scope  = 0; 
+var getAttachment_Stock  = 0;  
+
+
+if (instance_exists(obj_MiniGame_Drop_Ammo)        ){ getAttachment_LaserP = obj_MiniGame_Drop_Ammo.save_Index_Weapon; }
+if (instance_exists(obj_MiniGame_Drop_LaserPointer)){ getAttachment_LaserP = obj_MiniGame_Drop_LaserPointer.save_Index_Weapon; }
+if (instance_exists(obj_MiniGame_Drop_Muzzle)      ){ getAttachment_Muzzle = obj_MiniGame_Drop_Muzzle.save_Index_Weapon;  }
+if (instance_exists(obj_MiniGame_Drop_Optics)      ){ getAttachment_Optics = obj_MiniGame_Drop_Optics.save_Index_Weapon; }
+if (instance_exists(obj_MiniGame_Drop_Scope)       ){ getAttachment_Scope  = obj_MiniGame_Drop_Scope.save_Index_Weapon; }
+if (instance_exists(obj_MiniGame_Drop_Stock)       ){ getAttachment_Stock  = obj_MiniGame_Drop_Stock.save_Index_Weapon;  }
 
 
 var isPerfect = false;

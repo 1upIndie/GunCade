@@ -7,6 +7,12 @@ roomToJump = room_Debug;
 
 alarm[0] = 4;
 //room_goto(roomToJump);
+audio_master_gain(0.05);
+
+fontSpriteNum       = font_add_sprite_ext(spr_Sprite_font_Numbers, "0123456789$", true, 0   );
+fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "0123456789$", true, 0   );
+
+//draw_set_font(fontSpriteNum);
 
 #region text prefix/suffixes
 
@@ -22,8 +28,15 @@ alarm[0] = 4;
   textSuffixDialog_Tab = "[/scale]";
 
 
-  textCosts_Prefix = "[font_Cutscene][scale, 1.1]";
+  textCosts_Prefix = "[fontSpriteNum][scale, 1]";  // only used in minigame!
   textCosts_Suffix = "[/scale]";
+
+
+  textCostsMiniGame_Prefix = "[spr_Sprite_font_NumbersSilver][scale, 0.5]";  // only used in minigame!
+  textCostsMiniGame_Suffix = "[/scale]";
+
+  textMoneyTotal_Prefix = "[spr_Sprite_font_NumbersSilver][scale, 0.5]";  // only used in minigame!
+  textMoneyTotal_Suffix = "[/scale]";
 
 /// for weapons detail text box
   textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
@@ -115,7 +128,7 @@ fill_I++;
 }
 
 
-      // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotic 60-70, attachment 70-80	
+      // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, heavy 60-70, exotic 70-80, attachment 80-90	
 var txtDetail_I = 0;
       array_DetailWeaponText[txtDetail_I].fill_In("melee 1", spr_MiniGame_Melee_1, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "melee 1"  + textDetail_HeadlineSuffix;
@@ -192,7 +205,7 @@ txtDetail_I = 20; // rifles
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("rifle 2", spr_MiniGame_Rifle_2, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Lever Action"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Lever action"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 600;	  	  
@@ -201,7 +214,7 @@ txtDetail_I = 20; // rifles
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,0,0,0);	 	  
 	  txtDetail_I++;
 	  
-      array_DetailWeaponText[txtDetail_I].fill_In("rifle 3", spr_MiniGame_Pistol_3, txtDetail_I);
+      array_DetailWeaponText[txtDetail_I].fill_In("rifle 3", spr_MiniGame_Rifle_3, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "250 Caliber"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
@@ -312,36 +325,36 @@ txtDetail_I = 50;   // military rifles
 
 
 
-txtDetail_I = 60;  // exotics -> swapped to heaby
+txtDetail_I = 60;  // exotics -> swapped to heavy
 
-      array_DetailWeaponText[txtDetail_I].fill_In("heavy 1", spr_MiniGame_Heavy_2, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "LMG"  + textDetail_HeadlineSuffix;
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 1", spr_MiniGame_Heavy_1, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "blowdart gun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 4000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_2;		  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_1;		  
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,1,1,0);	  	  
 	  txtDetail_I++;
 
-      array_DetailWeaponText[txtDetail_I].fill_In("heavy 2", spr_MiniGame_Heavy_3, txtDetail_I);
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 2", spr_MiniGame_Heavy_2, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Grenade launcher"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 8000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_3;	
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_2;	
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,0,0,0);	  	  
 	  txtDetail_I++;	  
 
 
-      array_DetailWeaponText[txtDetail_I].fill_In("heavy 3", spr_MiniGame_Heavy_1, txtDetail_I);
+      array_DetailWeaponText[txtDetail_I].fill_In("heavy 3", spr_MiniGame_Heavy_3, txtDetail_I);
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Minigun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 10000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_1;		
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Heavy_3;		
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,0,0,0);	  	  
 	  txtDetail_I++;
 	    
@@ -361,13 +374,13 @@ txtDetail_I = 60;  // exotics -> swapped to heaby
 txtDetail_I = 70;  // exotics NEW
 
       array_DetailWeaponText[txtDetail_I].fill_In("exotic 1", spr_MiniGame_Exotic_1, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "..."  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Blowdart gun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 4000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 120;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_1;	
-	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,0,0,0);		  
+	  array_DetailWeaponText[txtDetail_I].setAttachments(0, 0,0,0,0,0);		  
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("exotic 2", spr_MiniGame_Exotic_2, txtDetail_I);
@@ -377,7 +390,7 @@ txtDetail_I = 70;  // exotics NEW
 	  array_DetailWeaponText[txtDetail_I].cost             = 8000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_2;	
-	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,0,0,0);		  
+	  array_DetailWeaponText[txtDetail_I].setAttachments(0, 0,0,0,0,0);		  
 	  txtDetail_I++;	  
 
 
@@ -388,7 +401,7 @@ txtDetail_I = 70;  // exotics NEW
 	  array_DetailWeaponText[txtDetail_I].cost             = 10000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_3;	
-	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,0,0,0,0);		  
+	  array_DetailWeaponText[txtDetail_I].setAttachments(0, 0,0,0,0,0);		  
 	  txtDetail_I++;
 
 
@@ -470,22 +483,206 @@ garbageCollect_Particles       = array_create(0);
 #endregion
 
 
+#region tv programm
+
+array_programmDay_1  = array_create(0);
+array_programmDay_2  = array_create(0);
+array_programmDay_3  = array_create(0);
+array_programmDay_4  = array_create(0);
+array_programmDay_5  = array_create(0);
+array_programmDay_6  = array_create(0);
+array_programmDay_7  = array_create(0);
+array_programmDay_8  = array_create(0);
+array_programmDay_9  = array_create(0);
+array_programmDay_10 = array_create(0);
+array_programmDay_11 = array_create(0);
+array_programmDay_12 = array_create(0);
+
+
+
+// day 1
+array_programmDay_1[0] = obj_TvProgramm_Dance; // dance
+array_programmDay_1[1] = obj_TvProgramm_News; // news
+array_programmDay_1[2] = obj_TvProgramm_SecurityCam; // security
+array_programmDay_1[3] = obj_TvProgramm_Commercials; // security
+
+
+function createTvProgramm( tv_Index_, tv_spr_, name__ ) constructor {
+
+     
+	 tv_Spr         = tv_spr_;
+	 tv_TotalFrames = sprite_get_number(tv_spr_);
+	 
+     var tvIndex = 0;	var totalFrames_ = 50;
+	 tv_Move      = array_create(totalFrames_, "");
+	 tv_Fade      = array_create(totalFrames_, "");	 
+     tv_FrameTime = array_create(totalFrames_,  10);
+
+	 tv_HasNews      = array_create(totalFrames_, 0);  // display string or not
+     tv_HasNewsTxt   = array_create(totalFrames_, "");
+     tv_HasNewsTxtS  = array_create(totalFrames_, "");
+	 
+    function setTv_Frame( tvIndex_,  tvMove_, tvFade_, tvFrameTime_,  ){
+	 tv_Move[tvIndex_]      = tvMove_;
+	 tv_Fade[tvIndex_]      = tvFade_;   
+     tv_FrameTime[tvIndex_] = tvFrameTime_;
+   } 
+   
+   
+ prefixTvNewsTicker = "[font_TvNews_Ticker][scale, 0.5][c_white]";
+ suffixTvNewsTicker = "[/c][/scale]";
+ prefixTvNewsTickerS = "[font_TvNews_Ticker][scale, 0.2][c_white]";
+ suffixTvNewsTickerS = "[/c][/scale]"; 
+ 
+    function setTv_News( tvIndex_,  tvHasNews_, tvNewsTxt_ ){
+       tv_HasNews[tvIndex_]    = tvHasNews_;  // 0, "normal", "small"
+       tv_HasNewsTxt[tvIndex_]  = prefixTvNewsTicker   + tvNewsTxt_ + suffixTvNewsTicker;
+       tv_HasNewsTxtS[tvIndex_] = prefixTvNewsTickerS  + tvNewsTxt_ + suffixTvNewsTickerS;	   	   
+	}
+   
+   
+}
+
+arrayTv_Programms = array_create(0);
+var tvIndexI = 0;
+var tvDefaultTime             = 240;
+var tvDefaultTimeShort        = 80;
+var tvDefaultTimeNews         = 20;
+var tvDefaultTimeSecurityCam  = 460;
+var tvDefaultTimeCommercial   = 55;
+
+
+// dance
+arrayTv_Programms[tvIndexI] = new createTvProgramm(tvIndexI, spr_Tv_Programm_Dance, "dance dance"  );
+arrayTv_Programms[tvIndexI].setTv_Frame(0, "move left", "",tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(1, "move right", "",tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(2, "zoom", "", tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(3, "zoom", "", tvDefaultTimeShort );
+
+arrayTv_Programms[tvIndexI].setTv_Frame(4, "move left", "",tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(5, "move right", "" ,tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(6, "zoom", "" ,tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(7, "zoom", "", tvDefaultTimeShort );
+
+arrayTv_Programms[tvIndexI].setTv_Frame(8, "move left", "",tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(9, "move right", "" ,tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(10, "zoom", "" ,tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(11, "zoom", "", tvDefaultTimeShort );
+
+arrayTv_Programms[tvIndexI].setTv_Frame(12, "move left", "" ,tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(13, "move right", "" ,tvDefaultTime );
+arrayTv_Programms[tvIndexI].setTv_Frame(14, "zoom", "" ,tvDefaultTime );
+tvIndexI++;
+
+
+var txtTv = "Breaking news, crime increase";
+arrayTv_Programms[tvIndexI] = new createTvProgramm(tvIndexI, spr_Tv_Programm_News, "news"  );
+arrayTv_Programms[tvIndexI].setTv_Frame(0, "", "", tvDefaultTimeNews );
+arrayTv_Programms[tvIndexI].setTv_Frame(1, "", "", tvDefaultTimeNews );
+arrayTv_Programms[tvIndexI].setTv_Frame(2, "", "", tvDefaultTimeNews );
+arrayTv_Programms[tvIndexI].setTv_Frame(3, "", "", tvDefaultTimeNews );
+
+arrayTv_Programms[tvIndexI].setTv_News(0, 1, txtTv);
+arrayTv_Programms[tvIndexI].setTv_News(1, 1, txtTv);
+arrayTv_Programms[tvIndexI].setTv_News(2, 1, txtTv);
+arrayTv_Programms[tvIndexI].setTv_News(3, 1, txtTv);
+tvIndexI++;
+
+// security cam 2
+arrayTv_Programms[tvIndexI] = new createTvProgramm(tvIndexI, spr_Tv_Programm_SecurityCam, "security cam"  );
+arrayTv_Programms[tvIndexI].setTv_Frame(0, "move left", "" , tvDefaultTimeSecurityCam );
+arrayTv_Programms[tvIndexI].setTv_Frame(1, "move left", "" ,tvDefaultTimeSecurityCam );
+arrayTv_Programms[tvIndexI].setTv_Frame(2, "", "" , tvDefaultTimeSecurityCam );
+arrayTv_Programms[tvIndexI].setTv_Frame(3, "", "" ,tvDefaultTimeSecurityCam );
+arrayTv_Programms[tvIndexI].setTv_Frame(4, "", "" ,tvDefaultTimeSecurityCam );
+tvIndexI++;
+
+
+// 3
+arrayTv_Programms[tvIndexI] = new createTvProgramm(tvIndexI, spr_Tv_Programm_Commercial, "commercial channel"  );
+var interTvCommercialI = 0;
+repeat(arrayTv_Programms[tvIndexI].tv_TotalFrames){
+arrayTv_Programms[tvIndexI].setTv_Frame(interTvCommercialI, "", "" , tvDefaultTimeCommercial );
+interTvCommercialI++;
+}
+
+
+
+tvIndexI++;
+
+#endregion
+
 
 #region unlocked
 
-unlocked_WeaponType_Melee       = true;
-unlocked_WeaponType_Pistol      = true;
-unlocked_WeaponType_Rifle       = true;
+unlocked_WeaponType_Melee_       = true;
+unlocked_WeaponType_Pistol_      = true;
+unlocked_WeaponType_Rifle_       = true;
 
-unlocked_WeaponType_Smg         = true;
-unlocked_WeaponType_Shotgun     = true;
+unlocked_WeaponType_Smg_         = true;
+unlocked_WeaponType_Shotgun_     = true;
+unlocked_WeaponType_ARifle_      = true;
 
-unlocked_WeaponType_ARifle      = true;
-unlocked_WeaponType_Exotic      = true;
-unlocked_WeaponType_Accessory   = true;
+unlocked_WeaponType_Heavy_       = true;
+unlocked_WeaponType_Exotic_      = true;
+unlocked_WeaponType_Accessory_   = true;
+
+
+// specfic weapons unlocked
+unlocked_WeaponType_Melee[1] = true;
+unlocked_WeaponType_Melee[2] = true;
+unlocked_WeaponType_Melee[3] = true;
+unlocked_WeaponType_Melee[4] = true;
+
+unlocked_WeaponType_Pistol[1] = true;
+unlocked_WeaponType_Pistol[2] = true;
+unlocked_WeaponType_Pistol[3] = true;
+unlocked_WeaponType_Pistol[4] = true;
+
+unlocked_WeaponType_Rifle[1] = true;
+unlocked_WeaponType_Rifle[2] = true;
+unlocked_WeaponType_Rifle[3] = true;
+unlocked_WeaponType_Rifle[4] = true;
+
+
+unlocked_WeaponType_Smg[1] = true;
+unlocked_WeaponType_Smg[2] = true;
+unlocked_WeaponType_Smg[3] = true;
+unlocked_WeaponType_Smg[4] = true;
+
+unlocked_WeaponType_Shotgun[1] = true;
+unlocked_WeaponType_Shotgun[2] = true;
+unlocked_WeaponType_Shotgun[3] = true;
+unlocked_WeaponType_Shotgun[4] = true;
+
+unlocked_WeaponType_Ar[1] = true;
+unlocked_WeaponType_Ar[2] = true;
+unlocked_WeaponType_Ar[3] = true;
+unlocked_WeaponType_Ar[4] = true;
+
+
+unlocked_WeaponType_Heavy[1] = true;
+unlocked_WeaponType_Heavy[2] = true;
+unlocked_WeaponType_Heavy[3] = true;
+unlocked_WeaponType_Heavy[4] = true;
+unlocked_WeaponType_Heavy[5] = true;
+
+unlocked_WeaponType_Exotic[1] = true;
+unlocked_WeaponType_Exotic[2] = 0;
+unlocked_WeaponType_Exotic[3] = 0;
+unlocked_WeaponType_Exotic[4] = 0;
+
+unlocked_WeaponType_Accessory[1] = true;
+unlocked_WeaponType_Accessory[2] = true;
+unlocked_WeaponType_Accessory[3] = true;
+unlocked_WeaponType_Accessory[4] = true;
+unlocked_WeaponType_Accessory[5] = true;
+unlocked_WeaponType_Accessory[6] = true;
+
 
 
 #endregion
+
 
 
 currentCutscene_DAY = 0;

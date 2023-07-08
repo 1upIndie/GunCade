@@ -65,10 +65,16 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
 	    case "ar 2": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 51; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
 	    case "ar 3": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 52; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
 
-	    case "exotic 1": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 60; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
-	    case "exotic 2": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 61; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
-	    case "exotic 3": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 62; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
-		
+	    case "heavy 1": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 60; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "heavy 2": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 61; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "heavy 3": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 62; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "heavy 4": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 63; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "heavy 5": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 64; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;		
+
+	    case "exotic 1": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 70; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "exotic 2": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 71; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "exotic 3": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 72; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;
+	    case "exotic 4": overrideInst = obj_MiniGame_Drop_Weapon; indexGet = 73; obj_MiniGame_Drop_Weapon.save_Index_Weapon = indexGet; break;		
 		
 	    case "attachment ammo":   indexGet = 80;  break;				
 	    case "attachment grip":   indexGet = 81; break;		

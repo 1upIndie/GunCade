@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Sprites/Dialog/MiniGame.yy",
+    "name": "Melee",
+    "path": "folders/Sprites/Dialog/Weapon_Detail_Solo/Melee.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

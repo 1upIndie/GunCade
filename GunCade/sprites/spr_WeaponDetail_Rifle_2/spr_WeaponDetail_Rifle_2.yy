@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e505780-ad4d-4860-a1e4-fe537b5f377f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"80f23c6f-df24-4cb9-9c12-84d8191aa2ff",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a9cc8c6-a283-4289-85ff-82be096d0927","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a95fbd5-0d6f-4cf5-8cbb-0285fb89e869","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Weapon_Detail",
-    "path": "folders/Sprites/Dialog/Weapon_Detail.yy",
+    "name": "Rifle",
+    "path": "folders/Sprites/Dialog/Weapon_Detail_Solo/Rifle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e505780-ad4d-4860-a1e4-fe537b5f377f","path":"sprites/spr_WeaponDetail_Rifle_2/spr_WeaponDetail_Rifle_2.yy",},},},"Disabled":false,"id":"5646189c-d53e-4656-9358-5315a7bd26d2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"80f23c6f-df24-4cb9-9c12-84d8191aa2ff","path":"sprites/spr_WeaponDetail_Rifle_2/spr_WeaponDetail_Rifle_2.yy",},},},"Disabled":false,"id":"b058fe46-fb01-41f3-9e70-16bd669ced6a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

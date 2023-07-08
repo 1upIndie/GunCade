@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"045720c8-7111-4165-83db-76c781811a13",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d08e4b9-64a4-48d3-b855-bc0e868d71ea",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c0f22638-a523-4414-827b-738b64d259c2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"136df3c7-7f72-4392-a919-6d1b17800877","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Weapon_Detail",
-    "path": "folders/Sprites/Dialog/Weapon_Detail.yy",
+    "name": "Exotic",
+    "path": "folders/Sprites/Dialog/Weapon_Detail_Solo/Exotic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"045720c8-7111-4165-83db-76c781811a13","path":"sprites/spr_WeaponDetail_Exotics_1/spr_WeaponDetail_Exotics_1.yy",},},},"Disabled":false,"id":"3be7a71a-7475-43ac-a2a0-024abe16c7f2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1d08e4b9-64a4-48d3-b855-bc0e868d71ea","path":"sprites/spr_WeaponDetail_Exotics_1/spr_WeaponDetail_Exotics_1.yy",},},},"Disabled":false,"id":"09307f60-7e3f-4c9e-9fc9-40412deff3b9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

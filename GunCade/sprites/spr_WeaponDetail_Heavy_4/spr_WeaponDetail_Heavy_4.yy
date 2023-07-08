@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Weapon_Detail",
-    "path": "folders/Sprites/Dialog/Weapon_Detail.yy",
+    "name": "Heavy",
+    "path": "folders/Sprites/Dialog/Weapon_Detail_Solo/Heavy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

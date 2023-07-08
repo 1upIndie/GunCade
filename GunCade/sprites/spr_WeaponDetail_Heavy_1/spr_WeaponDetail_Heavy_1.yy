@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3dc0adaf-525a-4a10-bafd-37dcceaafd70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2dd99054-a000-45a2-a7a5-870115c1f6a0",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"24dd3f07-8e03-44f4-a995-cdde9b0c4dcb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"63f975a9-303e-428e-9199-6abb1af3bda7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Weapon_Detail",
-    "path": "folders/Sprites/Dialog/Weapon_Detail.yy",
+    "name": "Heavy",
+    "path": "folders/Sprites/Dialog/Weapon_Detail_Solo/Heavy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3dc0adaf-525a-4a10-bafd-37dcceaafd70","path":"sprites/spr_WeaponDetail_Heavy_1/spr_WeaponDetail_Heavy_1.yy",},},},"Disabled":false,"id":"808ccb94-85a2-47ab-8a20-118ddcc0ecb7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2dd99054-a000-45a2-a7a5-870115c1f6a0","path":"sprites/spr_WeaponDetail_Heavy_1/spr_WeaponDetail_Heavy_1.yy",},},},"Disabled":false,"id":"b770aa79-cd3d-447b-ba34-908324014309","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

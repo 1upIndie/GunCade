@@ -343,15 +343,18 @@ button_Right_Y     = camY + 415;
  
  
     // drop off area firt weapons "slot" -> right bottom side
+
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 
-    dropOffSpot_Ammo    = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Ammo );	
-    dropOffSpot_LaserP  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );		
-    dropOffSpot_Muzzle  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );
 
-    dropOffSpot_Stock   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Stock );
-    dropOffSpot_Optics  = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_Optics );	
-    dropOffSpot_Scope   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Grip );	
+	if(oo.unlocked_WeaponType_Accessory[1] == 1){dropOffSpot_Ammo    = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Ammo );	         }
+	if(oo.unlocked_WeaponType_Accessory[2] == 1){dropOffSpot_LaserP  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	 }	
+	if(oo.unlocked_WeaponType_Accessory[3] == 1){dropOffSpot_Muzzle  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );        }
+
+	if(oo.unlocked_WeaponType_Accessory[4] == 1){dropOffSpot_Stock   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Stock );     }
+	if(oo.unlocked_WeaponType_Accessory[5] == 1){dropOffSpot_Optics  = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_Optics );	 }
+	if(oo.unlocked_WeaponType_Accessory[6] == 1){dropOffSpot_Scope   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Grip );	     }
+
 
 
 

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Sprites/Dialog/MiniGame.yy",
+    "name": "Exotic",
+    "path": "folders/Sprites/Dialog/Weapon_Detail_Solo/Exotic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

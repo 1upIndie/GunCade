@@ -106,19 +106,12 @@ if(reset_ == true){
   }
   
   
- // also create preview 
-  if ( instance_exists(obj_MiniGame_Button_Type_Melee) ){ instance_destroy(obj_MiniGame_Button_Type_Melee);  }
-  if ( instance_exists(obj_MiniGame_Button_Type_Pistol) ){ instance_destroy(obj_MiniGame_Button_Type_Pistol);  }  
-  if ( instance_exists(obj_MiniGame_Button_Type_Rifle) ){ instance_destroy(obj_MiniGame_Button_Type_Rifle);  }
-  
-  if ( instance_exists(obj_MiniGame_Button_Type_Shotgun) ){ instance_destroy(obj_MiniGame_Button_Type_Shotgun);  }  
-  if ( instance_exists(obj_MiniGame_Button_Type_Smg) ){ instance_destroy(obj_MiniGame_Button_Type_Smg);  }  
-  if ( instance_exists(obj_MiniGame_Button_Type_ARifle) ){ instance_destroy(obj_MiniGame_Button_Type_ARifle);  }  
-  
-  if ( instance_exists(obj_MiniGame_Button_Type_Exotic) ){ instance_destroy(obj_MiniGame_Button_Type_Exotic);  }  
-  if ( instance_exists(obj_MiniGame_Button_Type_Accessory) ){ instance_destroy(obj_MiniGame_Button_Type_Accessory);  }    
+// destroy left overs
+ scr_Destroy_Type_alphabet();
 
-  if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selected_WeaponDetailTxt);  }   
+
+
+
 
 
 // only spawn if set!
