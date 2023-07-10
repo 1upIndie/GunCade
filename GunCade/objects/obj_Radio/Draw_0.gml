@@ -42,6 +42,10 @@ scribble( songTxt ).draw( songNameX, songNameY );
 // draw misc text
 
 
+// hover over to change volume
+
+
+
 #region dummy timer 
 
 
