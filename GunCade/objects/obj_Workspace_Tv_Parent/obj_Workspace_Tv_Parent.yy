@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Tv",
-    "path": "folders/Objects/Cutscenes/Tv.yy",
+    "name": "Tv_Radio",
+    "path": "folders/Objects/Cutscenes/Tv_Radio.yy",
   },
   "parentObjectId": null,
   "persistent": false,

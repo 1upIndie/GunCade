@@ -9,6 +9,19 @@ alarm[0] = 35; // start typing
 
 dayTemp_Cash     = 0;
 dayTemp_Cash_Tip = 0;
+
+// summ up money from previous days
+
+var sumCash = 0;
+var cashI = 1;
+repeat( obj_Control_All.currentCutscene-1){
+
+  sumCash += obj_Control_All.cashCollectedDay[cashI]; 
+
+}
+
+dayTemp_Cash = sumCash;
+
 #endregion
 
 #region hover over
@@ -51,6 +64,10 @@ typeSmoothness = 10;
 // text
 textX = 50;
 textY = -135;
+
+textCashX = 50;
+textCashY = -135;
+
 
 textNeuesZeile = 900;
 

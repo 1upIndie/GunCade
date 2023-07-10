@@ -42,15 +42,29 @@ fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "012345
   textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
   textDetail_HeadlineSuffix = "[/c][/scale]"; 
  
-  textDetail_CostPrefix = "[font_Cutscene][scale, 2][c_orange]";
+  textDetail_CostPrefix = "[spr_Sprite_font_NumbersSilver][scale, 0.5][c_white]";
   textDetail_CostSuffix = "[/c][/scale]"; 
+
+  textDetail_CashPrefix = "[spr_Sprite_font_Numbers][scale, 0.5][c_white]";
+  textDetail_CashSuffix = "[/c][/scale]"; 
 
   textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
   textDetail_DescSuffix = "[/scale]";
- 
- 
-  
-  
+
+
+  textRadioSong_Prefix = "[fnt_RadioDigitalThin][scale, 0.35][#22E1FB]";
+  textRadioSong_Suffix = "[/c][/scale]";
+
+  textRadioTimer_Prefix = "[fnt_RadioDigital][scale, 0.7][#22E1FB]";
+  textRadioTimer_Suffix = "[/c][/scale]";
+
+  textRadioMisc_Prefix = "[fnt_RadioDigitalThin][scale, 0.2][#22E1FB]";
+  textRadioMisc_Suffix = "[/c][/scale]";
+
+ // positions
+ moneyTxtX     = 720;
+ moneyTxtY[0]  = 375; // money 
+ moneyTxtY[1]  = 190; // minigame costs
 #endregion
 
 #region weapon texts + costs
@@ -691,6 +705,12 @@ currentCutscene_DAY = 0;
 #region choises and saved values through the game
 
 
+// cash saved
+var cashI = 1;
+repeat(12){
+ cashCollectedDay[cashI] = 0;
+cashI++;
+}
 
 
 wifePresentGivenDay2      = false;

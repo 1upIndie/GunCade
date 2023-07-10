@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Programms",
-    "path": "folders/Objects/Cutscenes/Tv/Programms.yy",
+    "path": "folders/Objects/Cutscenes/Tv_Radio/Programms.yy",
   },
   "parentObjectId": null,
   "persistent": false,

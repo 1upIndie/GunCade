@@ -56,13 +56,13 @@ function scr_ButtonResult_Create(inst_, slot_){
 	    case "exotic 4":  indexGet = 73;  if(ooo.unlocked_WeaponType_Exotic[4] ==0){ indexGet = -999; } break;
 	    case "exotic 5":  indexGet = 74;  if(ooo.unlocked_WeaponType_Exotic[5] ==0){ indexGet = -999; } break;
 
-	    case "attachment ammo" :   indexGet = 80;  if(ooo.unlocked_WeaponType_Accessory[1] ==0){ indexGet = -999; } break;
-	    case "attachment laser":   indexGet = 81;  if(ooo.unlocked_WeaponType_Accessory[2] ==0){ indexGet = -999; } break;
-	    case "attachment muzzle":  indexGet = 82;  if(ooo.unlocked_WeaponType_Accessory[3] ==0){ indexGet = -999; } break;
+	    case "attachment ammo" :   indexGet = 80;  if(ooo.unlocked_WeaponType_Accessory[1] == 0){ indexGet = -999; } break;
+	    case "attachment laser":   indexGet = 81;  if(ooo.unlocked_WeaponType_Accessory[2] == 0){ indexGet = -999; } break;
+	    case "attachment muzzle":  indexGet = 82;  if(ooo.unlocked_WeaponType_Accessory[3] == 0){ indexGet = -999; } break;
 		
-	    case "attachment stock":   indexGet = 83;  if(ooo.unlocked_WeaponType_Accessory[1] ==0){ indexGet = -999; } break;
-	    case "attachment optics":  indexGet = 84;  if(ooo.unlocked_WeaponType_Accessory[2] ==0){ indexGet = -999; } break;
-	    case "attachment grip":    indexGet = 85;  if(ooo.unlocked_WeaponType_Accessory[3] ==0){ indexGet = -999; } break;
+	    case "attachment stock":   indexGet = 83;  if(ooo.unlocked_WeaponType_Accessory[4] == 0){ indexGet = -999; } break;
+	    case "attachment optics":  indexGet = 84;  if(ooo.unlocked_WeaponType_Accessory[5] == 0){ indexGet = -999; } break;
+	    case "attachment grip":    indexGet = 85;  if(ooo.unlocked_WeaponType_Accessory[6] == 0){ indexGet = -999; } break;
 	  }
 	  
 	  

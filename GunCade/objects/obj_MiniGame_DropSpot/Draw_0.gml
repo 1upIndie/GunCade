@@ -2,9 +2,7 @@ draw_self();
 
 
 
-var costsText =  obj_Control_All.textCostsMiniGame_Prefix  + string(obj_MiniGame_Parent.current_Costs) + "$" +  obj_Control_All.textCostsMiniGame_Suffix;
 
-scribble(costsText).draw(x+30, y-70);
 
 
 if(obj_Control_All.debug == true){

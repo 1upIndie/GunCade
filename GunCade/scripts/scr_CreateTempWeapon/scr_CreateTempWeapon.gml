@@ -83,13 +83,12 @@ switch(whatisIt){
 	
 	
     case "attachment ammo":     weapon_IndexGEt = 80;   break;
-    case "attachment grip":     weapon_IndexGEt = 81;   break;
-    case "attachment laser":    weapon_IndexGEt = 82;   break;
-    
-	case "attachment muzzle":   weapon_IndexGEt = 83;   break;	
-    case "attachment optics":   weapon_IndexGEt = 84;   break;
-    case "attachment stock":    weapon_IndexGEt = 85;   break;
+    case "attachment laser":    weapon_IndexGEt = 81;   break;
+	case "attachment muzzle":   weapon_IndexGEt = 82;   break;	
 	
+    case "attachment stock":    weapon_IndexGEt = 83;   break;
+    case "attachment optics":   weapon_IndexGEt = 84;   break;	
+    case "attachment grip":     weapon_IndexGEt = 85;   break;
 	
 	
 }

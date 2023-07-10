@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Programms",
-    "path": "folders/Objects/Cutscenes/Tv/Programms.yy",
+    "path": "folders/Objects/Cutscenes/Tv_Radio/Programms.yy",
   },
   "parentObjectId": {
     "name": "obj_TvProgramm_Parent",

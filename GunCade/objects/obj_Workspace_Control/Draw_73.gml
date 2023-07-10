@@ -14,9 +14,22 @@ scribble(array_Name[dialogIndex]).draw(camX+textX, camY+camHeight+nameY );
 scribble(array_Txt[dialogIndex]).wrap(textNeuesZeile, -1,false).draw(camX+textX, camY+camHeight+textY, typist );
 
 
+// draw cash in gold if no minigame is there 
+ if( !instance_exists(obj_MiniGame_Parent)){
+    var prefixCash_ =  obj_Control_All.textDetail_CashPrefix;
+    var suffixCash_ =  obj_Control_All.textDetail_CashSuffix; 
+
+    var cashTxt = prefixCash_ + string(dayTemp_Cash + dayTemp_Cash_Tip) + "$" + suffixCash_; 
+
+var moneyX = obj_Control_All.moneyTxtX;
+var moneyY = obj_Control_All.moneyTxtY[0];
 
 
+    scribble(cashTxt).draw( camX+moneyX, camY+moneyY );
 
+ }
+ 
+ 
 if ( obj_Control_All.debug == true){
 
  camX        = camera_get_view_x( view_camera[0] );
