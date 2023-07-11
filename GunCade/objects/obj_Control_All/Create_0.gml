@@ -1,6 +1,6 @@
 /// @description Hier Beschreibung einfügen
-// Sie können Ihren Code in diesem Editor schreiben
-debug = true;
+
+debug = false;
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
@@ -64,7 +64,7 @@ fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "012345
  // positions
  moneyTxtX     = 720;
  moneyTxtY[0]  = 375; // money 
- moneyTxtY[1]  = 190; // minigame costs
+ moneyTxtY[1]  = 194; // minigame costs
 #endregion
 
 #region weapon texts + costs
@@ -148,7 +148,7 @@ var txtDetail_I = 0;
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "melee 1"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 50;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Melee_1;	
 	  txtDetail_I++;
@@ -157,7 +157,7 @@ var txtDetail_I = 0;
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "melee 1"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;  
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Melee_2;		  
 	  txtDetail_I++;
@@ -166,7 +166,7 @@ var txtDetail_I = 0;
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "melee 3"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 100;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Melee_3;		  
 	  txtDetail_I++;  	  
@@ -246,7 +246,7 @@ txtDetail_I = 30;  // smg
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Tammy Gun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1800;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 1500;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Smg_1;	
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 0,1,0,1,1);			  
@@ -256,7 +256,7 @@ txtDetail_I = 30;  // smg
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Woozie"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 1800;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Smg_2;	
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 1,1,1,1,1);		  
@@ -311,7 +311,7 @@ txtDetail_I = 50;   // military rifles
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "M 16"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 2000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Ar_1;		
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 1,1,1,1,1);			  
@@ -321,7 +321,7 @@ txtDetail_I = 50;   // military rifles
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "French ar"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 2500;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Ar_2;		
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 1,1,1,1,1);	  
@@ -331,7 +331,7 @@ txtDetail_I = 50;   // military rifles
 	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Ak 47"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 1000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 50;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Ar_3;		
 	  array_DetailWeaponText[txtDetail_I].setAttachments(1, 1,1,1,1,1);	  
@@ -398,18 +398,19 @@ txtDetail_I = 70;  // exotics NEW
 	  txtDetail_I++;
 
       array_DetailWeaponText[txtDetail_I].fill_In("exotic 2", spr_MiniGame_Exotic_2, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "..."  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "Canon"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
-	  array_DetailWeaponText[txtDetail_I].cost             = 8000;	  	  
+	  array_DetailWeaponText[txtDetail_I].cost             = 4000;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_2;	
 	  array_DetailWeaponText[txtDetail_I].setAttachments(0, 0,0,0,0,0);		  
 	  txtDetail_I++;	  
-
-
+   
+      
+      // ac
       array_DetailWeaponText[txtDetail_I].fill_In("exotic 3", spr_MiniGame_Exotic_3, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "..."  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "AC gun"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 10000;	  	  
@@ -418,6 +419,16 @@ txtDetail_I = 70;  // exotics NEW
 	  array_DetailWeaponText[txtDetail_I].setAttachments(0, 0,0,0,0,0);		  
 	  txtDetail_I++;
 
+      // dc gun
+      array_DetailWeaponText[txtDetail_I].fill_In("exotic 4", spr_MiniGame_Exotic_4, txtDetail_I);
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "DC gun"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
+	  array_DetailWeaponText[txtDetail_I].cost             = 10000;	  	  
+	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Exotics_4;	
+	  array_DetailWeaponText[txtDetail_I].setAttachments(0, 0,0,0,0,0);		  
+	  txtDetail_I++;
 
 
 txtDetail_I = 80;  // from 70 to 80, added ammo
@@ -681,10 +692,12 @@ unlocked_WeaponType_Heavy[3] = true;
 unlocked_WeaponType_Heavy[4] = true;
 unlocked_WeaponType_Heavy[5] = true;
 
-unlocked_WeaponType_Exotic[1] = true;
-unlocked_WeaponType_Exotic[2] = 0;
-unlocked_WeaponType_Exotic[3] = 0;
-unlocked_WeaponType_Exotic[4] = 0;
+unlocked_WeaponType_Exotic[1] = true; // blowdart
+unlocked_WeaponType_Exotic[2] = 0; // canon
+unlocked_WeaponType_Exotic[3] = 0; // ac
+unlocked_WeaponType_Exotic[4] = 0; // dc
+unlocked_WeaponType_Exotic[5] = 0;
+
 
 unlocked_WeaponType_Accessory[1] = true;
 unlocked_WeaponType_Accessory[2] = true;
@@ -746,13 +759,13 @@ autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is t
 #endregion
 
 function Createcutscene(day_) constructor {
-  
+  var maxBlocks = 1200;
  // sprBgr      = bgrSpr_; // default!
-  totalBlocks = 0; // added up in each function
+  totalBlocks = maxBlocks; // added up in each function
  
  
  var indexSet = 0;
- repeat(1200){
+ repeat(maxBlocks){
  	  dialogBlock_SprIdleStatic_1_[indexSet]   = spr_Nothing;	  
 	  dialogBlock_SprIdle_1_[indexSet]         = spr_Nothing;
 	  dialogBlock_SprTalkStatic_1_[indexSet]   = spr_Nothing;			  
@@ -792,7 +805,7 @@ indexSet++;
 		  // override!
 			switch(person_Mood_){		  
 					  
-			  case  "Jez default": 			  
+			  case  "jez default": 			  
 				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
 				   sprIdle_        = spr_Dialog_Jez_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
@@ -953,7 +966,7 @@ indexSet++;
  
   text_Name_Player      = "[font_Cutscene_Name][scale, 0.7][#F9CE7B]Player[/c][/scale]";
  
-  text_Name_Jez         = "[font_Cutscene_Name][scale, 0.7][c_purple]Player[/c][/scale]"; 
+  text_Name_Jez         = "[font_Cutscene_Name][scale, 0.7][c_purple]Jezebelle[/c][/scale]"; 
   text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_purple]Wife[/c][/scale]"; 
   text_Name_Nerd        = "[font_Cutscene_Name][scale, 0.7][c_white]Nerd[/c][/scale]"; 
   text_Name_NerdSteve   = "[font_Cutscene_Name][scale, 0.7][c_white]Steve[/c][/scale]"; 
@@ -992,6 +1005,14 @@ indexSet++;
 			
 			switch(npc_){		  
 
+
+			  case  "random": 
+			       nameNpc_Player = text_Name_Ramdom;			  
+				   prefixTXT_     = textPrefix;	 break; 
+				   
+			 case  "unknown":				
+			       nameNpc_Player = text_Name_Unknown;		  
+				   prefixTXT_     = textPrefix; break; 
 			 
 			 case  "???": 				
 			       nameNpc_Player = text_Name_Unknown;		  
@@ -1076,12 +1097,13 @@ indexSet++;
 			       nameNpc_Player = text_Name_Wife;				  
 				   prefixTXT_     = textPrefix;	 break; 
 
-
-
-			  case  "random": 
-			       nameNpc_Player = text_Name_Ramdom;			  
-				   prefixTXT_     = textPrefix;	 break; 	
-			  
+			  case  "jez": 
+			       nameNpc_Player = text_Name_Jez;				  
+				   prefixTXT_     = textPrefix;	 break; 
+	
+              default:				
+			       nameNpc_Player = text_Name_Unknown;		  
+				   prefixTXT_     = textPrefix; break;
 			  		
 			} // end of switch
 		  
@@ -1090,7 +1112,7 @@ indexSet++;
          dialogBlock_Name[index_]              = nameNpc_Player;	  
 	     dialogBlock_Txt[index_]               = prefixTXT_ + txt_ + textSuffixDialog;  	  
 	     dialogBlock_Sound[index_]             = sound_;
-		 totalBlocks++;	// increment to see how big it gets	  
+		 //totalBlocks++;	// increment to see how big it gets	  
 	  }
 
 
@@ -1117,12 +1139,15 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		 
 	 dialog_I++;
    
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); ///-> orginal!
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
-	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
-	 
 	 dialog_I++;
+	 
+    // arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
+    // arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
+    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "My only tenant who can't pay rent starts a [#5893FF]side business[/c] inside my mall and he doesn't expect to see me first thing!?", snd_TextScroll_Default );	
@@ -1509,14 +1534,14 @@ var day_I = 0; // day 1
 	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Know what, never mind, you be you, it'll be the greatest front for under the table weapon sales I’ve ever seen.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Know what, never mind, you be you, it'll be the greatest front for under the table weapon sales I've ever seen.", snd_TextScroll_Default );	
 	 dialog_I++;	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Way better than the guy I had that pretended to be a clown.", snd_TextScroll_Default );	
 	 dialog_I++;	 
 	 
-	 
+	 // 78
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(And he says I'm weird? Wait, did he say clown...)", snd_TextScroll_Default );		
 	 dialog_I++;		 
@@ -1626,26 +1651,26 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
 	 
-     // tutorial begin
+     // tutorial begin 100
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Let's say I appear to be a garden variety thug and I say I want a light, powerful weapon that lets me keep a little distance, and I have 2000 to spend.", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Shadow_Day1_Tutorial;
 	 dialog_I++;
      
-	 
-	 // sale
+/////////////////////////////////////////////	 
+	 // sale 101
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Good job, you didn’t screw up! You’re a natural.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Good job, you didn't screw up! You're a natural.", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_150;	 
 	 dialog_I++;		 
 	 
-	 // refuse
+	 // refuse 102
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Well, I don't know why you did that, but that’s fine, it doesn’t hurt to practice saying no.", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Well, I don't know why you did that, but that's fine, it doesn't hurt to practice saying no.", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_150;
 	 dialog_I++;		 
 
-	 // fail
+	 // fail 103
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "You didn't listen at all. Hopefully you get the hang of this because I need to make a profit too.", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_150;
@@ -1656,7 +1681,7 @@ var day_I = 0; // day 1
 	 // replys, start at 150 , after sale/refuse/fail
 	 dialog_I = 150;
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Got it. I’ll do my best ", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Got it. I'll do my best ", snd_TextScroll_Default );		
 	 dialog_I++;		 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
@@ -1718,7 +1743,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "granny default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That it has. Now, I don’t want to hurt anyone, I just want to make a show of force if I have to so that nobody wants to hurt an old granny.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That it has. Now, I don't want to hurt anyone, I just want to make a show of force if I have to so that nobody wants to hurt an old granny.", snd_TextScroll_Default );	
 	 dialog_I++;
 
 	 
@@ -1727,7 +1752,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "granny default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That way it can’t really hurt anyone and I can feel safer, and I only have 1000 to spend, it's half my life savings...", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That way it can't really hurt anyone and I can feel safer, and I only have 1000 to spend, it's half my life savings...", snd_TextScroll_Default );	 
 	 dialog_I++;
 
      // begin granny sale
@@ -1780,7 +1805,7 @@ var day_I = 0; // day 1
     #endregion
 
 
-    #region random sale 1   220 to 
+#region random sale 1   220 to 
 	
 	
 	// begin random sale 1
@@ -1845,11 +1870,11 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey there sugar. Been a while since I got to see your sweet face.", snd_TextScroll_Default );  
 	 dialog_I++;	
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Oh good, maybe it will be a good day after all.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Uhm, eh... I. What can I do for you Jez?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -1858,54 +1883,54 @@ var day_I = 0; // day 1
 	 dialog_I++
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(If she's a tease AND a customer, let's hope my wife does not see her here)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(She always flips out over nothing.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You know what I want. Something long, hard, and ready for me to put my lips on it and blow.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Am I dreaming right now?)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Are my hands sweating?)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(The last time that happened I was a teenager.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(She knows how to get me all worked up.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Keep it cool, you can do this. Show her you aren't phased by it.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Yes.... I mean no, I mean yes.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Ok, knock it off buddy, you're married and if she finds out, you're dead.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -1915,13 +1940,13 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Oh dear, did I get you all worked up? I'm sorry sugar.", snd_TextScroll_Default );  
 	 dialog_I++
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "No, no, no, it's not that. I think I know exactly what you need...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      
 	 // jez sale
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Long, hard, and easy to blow... wait, she was referring to a weapon, right?)", snd_TextScroll_Default );		 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Jez_Day1;		 
 	 dialog_I++;
@@ -1932,7 +1957,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Oh sugar, you sure know how to please a woman.", snd_TextScroll_Default );  
 	 dialog_I++
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(I hope she can't see me blushing.)", snd_TextScroll_Default );		 
 	 dialog_I++;
     
@@ -1941,11 +1966,11 @@ var day_I = 0; // day 1
 	 dialog_I++
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Pie... Ugh, I mean bye...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Seriously, PIE, I'm such an idiot.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -1956,7 +1981,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "I can't believe you would turn me down. Now I don't know if I can ever show my face here again.", snd_TextScroll_Default );  
 	 dialog_I++
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm sorry, but I can't.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -1965,18 +1990,18 @@ var day_I = 0; // day 1
 	 dialog_I++
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(wow, she looked pissed.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
 
-     // refuse! 310
+     // fail! 310
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "And just why would I want to put my mouth on that?", snd_TextScroll_Default );  
 	 dialog_I++
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Dammit, she got me so worked up I totally screwed this sale.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -1985,7 +2010,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "You know, maybe I can forgive you this once, but I'll have to think about it.", snd_TextScroll_Default );  
 	 dialog_I++
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "jez default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Please do, I'm so sorry about that. Are you sure you don't want me to see what else I can do for you?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -1999,16 +2024,16 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(DAAAAMMMMMIIIIIITTTTTT.......)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Ok, calm down, gotta be ready for the next sale. Oh man, what if my wife finds out she was in here?)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "( It doesn't matter that nothing happened. Ugh, I can't even refuse a woman without getting in trouble.)", snd_TextScroll_Default );		 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2Start_Day1;	 
 	 dialog_I++;

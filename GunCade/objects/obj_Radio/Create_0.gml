@@ -4,7 +4,8 @@
 
 songNameCurrent = "Song 1"
 
-valumeTotal = ( (obj_Control_All.volume_Music)/100) *
+vol20 = 20;
+valumeTotal =   round( obj_Control_All.volume_Music * vol20); 
 volumeButtonStartX = x + 38;
 volumeButtonStartY = y + 64;
 volumeButtonNextX  = 13;
@@ -36,7 +37,6 @@ suffix_Misc   = obj_Control_All.textRadioMisc_Suffix;
 
 
 // debug click on areas
-debugX
 
 
 

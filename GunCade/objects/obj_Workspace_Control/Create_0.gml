@@ -58,7 +58,7 @@ blackBoxAlpha = 0.95;
 
 
 // typewriter
-typePerStep    = 0.5;
+typePerStep    = 0.9;
 typeSmoothness = 10;
 
 // text
@@ -126,6 +126,8 @@ alarm[10] = dialogSpr_State_Alarm10_BlinkTime; // constantly update!
 
 /// load in texts
 dialogIndex = 0;
+dialogIndex_DelayJump      = false;
+dialogIndex_DelayJumpIndex = 0;
 
 
 var oo = obj_Control_All;
@@ -157,7 +159,7 @@ array_Txt  = array_create(0);
 array_InstanceLoadIn  = array_create(0);
 
 var repeat_I = 0;
-repeat(600){
+repeat(900){
   array_Spr_Idle_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdleStatic_1_[repeat_I];
   array_Spr_Idle_1_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdle_1_[repeat_I];  
 

@@ -46,6 +46,7 @@ current_Costs               = 0; // total value
 
  // negatives!
  array_Negative           = array_create(0); // values that make it a bad sale -> fail!
+ negative_Ammo            = false; 
  negative_LaserPointer    = false;
  negative_Muzzle          = false;  
  negative_Optics          = false; 

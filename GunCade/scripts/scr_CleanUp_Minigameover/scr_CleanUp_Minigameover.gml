@@ -37,7 +37,7 @@ if ( instance_exists( obj_MiniGame_Button_Type_Pistol    )){ instance_destroy(ob
 if ( instance_exists( obj_MiniGame_Button_Type_Rifle     )){ instance_destroy(obj_MiniGame_Button_Type_Rifle);     }
 if ( instance_exists( obj_MiniGame_Button_Type_Shotgun   )){ instance_destroy(obj_MiniGame_Button_Type_Shotgun);   }
 if ( instance_exists( obj_MiniGame_Button_Type_Smg       )){ instance_destroy(obj_MiniGame_Button_Type_Smg); }
-
+if ( instance_exists( obj_MiniGame_Button_Type_Heavy     )){ instance_destroy(obj_MiniGame_Button_Type_Heavy); }
 
 
 // destroy other button, choise dependent

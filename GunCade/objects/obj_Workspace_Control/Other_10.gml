@@ -2,7 +2,7 @@
     var oo = obj_Control_All;   
 	var getBlocks = oo.arrayCutscenes[oo.currentCutscene].totalBlocks;
 	
-	if(dialogIndex < getBlocks-1){
+	//if(dialogIndex < getBlocks-1){
 	
 	// check if there is an instance loaded!
 	
@@ -10,8 +10,9 @@
 	typist.reset();
 	typist.in(typePerStep, typeSmoothness);
 	
-	dialogIndex++;
 	
+//dialogIndex_DelayJump      = false;
+//dialogIndex_DelayJumpIndex = 0;	
 	
 	  // override all the time to not have skip conflict
 	 introExtroX[1] = 0;
@@ -35,13 +36,25 @@
 		
 		// load in instance
 		instance_create_layer(x,y, "Instances", array_InstanceLoadIn[dialogIndex] );
+		
+		//if ( array_InstanceLoadIn[dialogIndex] == obj_Dialog_SkipIndex_to_150 ){  dialogIndex = 150; blockInput = false;  }
+		
+		
+		} 
+		// only go to next if there is no instance between!
+		else {
+		dialogIndex++;
 		}
 	
-	} 
+	//} 
+	
+	
 	
 	// if done all dialogs things, get out of here
-	else {
-		drawOnScreen = false;
+	//else {
+
+/*
+drawOnScreen = false;
 		
 		// destroy background
 		instance_destroy();
@@ -55,5 +68,5 @@
 	 //room_goto(room_Action_1);
 	
 	}
-	
+*/	
 	

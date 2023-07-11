@@ -1,19 +1,48 @@
 /// @description 
 
-
+if ( instance_exists(obj_MiniGame_Parent)){  exit; }
 draw_self();
 
 // draw buttons
 //draw_set_alpha(1)
-var iterateBtn = 0;
-repeat(20){
+var iterateBtn = 0; var getClickOnPostion = ""; var clickOnType = "";
+     var rectSizeX = 3;  var rectSizeY = 14; var colRec = c_red;
+repeat(vol20){
   var xx =  volumeButtonStartX + (volumeButtonNextX * iterateBtn);
   var yy =  volumeButtonStartY;
+  var colHover = c_white;
+  var hover = false;
+  if( mouse_x > xx-rectSizeX-1 and mouse_x < xx + rectSizeX ){
+     if(mouse_y > yy-rectSizeY and mouse_y < yy + rectSizeY ){   hover = true; colHover = c_red; getClickOnPostion = iterateBtn; clickOnType = "volume";
+  }}
 
-  draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, c_white, 0.95 );
+  draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, 0.4); // bgr ghost volume max
+  if( iterateBtn <= valumeTotal){  
+  draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, 0.95 );
+  } 
+  
+  
+  
+   if(obj_Control_All.debug == true){
+
+	 
+     //draw_rectangle_color(xx - rectSizeX-1, yy - rectSizeY,   xx + rectSizeX, yy + rectSizeY, colRec,colRec,colRec,colRec,  0 );
+  }
 
 iterateBtn++;
 }
+
+// functionality, click on!
+var mbLeft = mouse_check_button_released(mb_left);
+ if(mbLeft == true and getClickOnPostion != ""){
+ 
+   if(clickOnType == "volume"){  
+	   valumeTotal = getClickOnPostion;
+	   
+	    obj_Control_All.volume_Music = valumeTotal/vol20; 
+	   }
+ 
+ }
 
 // draw volume amount -> maybe not
 

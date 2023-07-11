@@ -13,11 +13,11 @@ var getMoney = obj_MiniGame_Parent.current_Costs;
 var getWeaponIndex = obj_MiniGame_Drop_Weapon.save_Index_Weapon;
 
 
-var getAttachment_LaserP = 0;
-var getAttachment_Muzzle = 0;  
-var getAttachment_Optics = 0; 
-var getAttachment_Scope  = 0; 
-var getAttachment_Stock  = 0;  
+var getAttachment_LaserP = -999;
+var getAttachment_Muzzle = -999;  
+var getAttachment_Optics = -999; 
+var getAttachment_Scope  = -999; 
+var getAttachment_Stock  = -999;  
 
 
 if (instance_exists(obj_MiniGame_Drop_Ammo)        ){ getAttachment_LaserP = obj_MiniGame_Drop_Ammo.save_Index_Weapon; }
@@ -32,6 +32,7 @@ var isPerfect = false;
 var isGood    = false;
 
 var perfect_Weapon = obj_MiniGame_Parent.possible_Weapon_Perfect; 
+
 var perfect_LaserP = obj_MiniGame_Parent.possible_LaserPointer_Perfect;
 var perfect_Muzzle = obj_MiniGame_Parent.possible_Muzzle_Perfect;  
 var perfect_Optics = obj_MiniGame_Parent.possible_Optics_Perfect;
