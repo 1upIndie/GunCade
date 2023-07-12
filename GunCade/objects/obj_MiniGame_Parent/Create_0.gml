@@ -188,22 +188,38 @@ button_NameSize = 0.3;
 
 
 
-var resultY_Start = 21;
-var resultY_YY = 67;
-button_ResultSelected_X    = camX + 500;
-button_ResultSelected_Y[0] = camY + resultY_Start + (resultY_YY * 0);
-button_ResultSelected_Y[1] = camY + resultY_Start + (resultY_YY * 1);
-button_ResultSelected_Y[2] = camY + resultY_Start + (resultY_YY * 2);
-button_ResultSelected_Y[3] = camY + resultY_Start + (resultY_YY * 3);
-button_ResultSelected_Y[4] = camY + resultY_Start + (resultY_YY * 4);
-button_ResultSelected_Y[5] = camY + resultY_Start + (resultY_YY * 5);
-button_ResultSelected_Y[6] = camY + resultY_Start + (resultY_YY * 6);
+var resultY_Start6 = 21;
+var resultY_YY6 = 67;
 
-button_ResultSelected_Size = 0.14;
+// results for 6!
+button_ResultSelected_X6     = camX + 500;
+button_ResultSelected_Y6[0] = camY + resultY_Start6 + (resultY_YY6 * 0);
+button_ResultSelected_Y6[1] = camY + resultY_Start6 + (resultY_YY6 * 1);
+button_ResultSelected_Y6[2] = camY + resultY_Start6 + (resultY_YY6 * 2);
+button_ResultSelected_Y6[3] = camY + resultY_Start6 + (resultY_YY6 * 3);
+button_ResultSelected_Y6[4] = camY + resultY_Start6 + (resultY_YY6 * 4);
+button_ResultSelected_Y6[5] = camY + resultY_Start6 + (resultY_YY6 * 5);
+button_ResultSelected_Y6[6] = camY + resultY_Start6 + (resultY_YY6 * 6);
+
+button_ResultSelected_Size6 = 0.14;
+
+var resultY_Start4 = 25;
+var resultY_YY4 = 95;
+// results for 4!
+button_ResultSelected_X4    = camX + 500;
+button_ResultSelected_Y4[0] = camY + resultY_Start4 + (resultY_YY4 * 0);
+button_ResultSelected_Y4[1] = camY + resultY_Start4 + (resultY_YY4 * 1);
+button_ResultSelected_Y4[2] = camY + resultY_Start4 + (resultY_YY4 * 2);
+button_ResultSelected_Y4[3] = camY + resultY_Start4 + (resultY_YY4 * 3);
+button_ResultSelected_Y4[4] = camY + resultY_Start4 + (resultY_YY4 * 4);
+button_ResultSelected_Y4[5] = camY + resultY_Start4 + (resultY_YY4 * 5);
+button_ResultSelected_Y4[6] = camY + resultY_Start4 + (resultY_YY4 * 6);
+
+button_ResultSelected_Size4 = 0.19;
 
 
 
-var sizeAttach = button_ResultSelected_Size;
+var sizeAttach = button_ResultSelected_Size4;
 
 
 
@@ -348,13 +364,13 @@ button_Right_Y     = camY + 415;
     dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 
 
-	if(oo.unlocked_WeaponType_Accessory[1] == 1){dropOffSpot_Ammo    = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Ammo );	         }
-	if(oo.unlocked_WeaponType_Accessory[2] == 1){dropOffSpot_LaserP  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	 }	
-	if(oo.unlocked_WeaponType_Accessory[3] == 1){dropOffSpot_Muzzle  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );        }
+	if(oo.unlocked_WeaponType_Accessory[1] == 1){ dropOffSpot_Ammo    = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Ammo );	         }
+	if(oo.unlocked_WeaponType_Accessory[2] == 1){ dropOffSpot_LaserP  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	 }	
+	if(oo.unlocked_WeaponType_Accessory[3] == 1){ dropOffSpot_Muzzle  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );        }
 
-	if(oo.unlocked_WeaponType_Accessory[4] == 1){dropOffSpot_Stock   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Stock );     }
-	if(oo.unlocked_WeaponType_Accessory[5] == 1){dropOffSpot_Optics  = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_Optics );	 }
-	if(oo.unlocked_WeaponType_Accessory[6] == 1){dropOffSpot_Scope   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Grip );	     }
+	if(oo.unlocked_WeaponType_Accessory[4] == 1){ dropOffSpot_Stock   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Stock );     }
+	if(oo.unlocked_WeaponType_Accessory[5] == 1){ dropOffSpot_Optics  = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_Optics );	 }
+	if(oo.unlocked_WeaponType_Accessory[6] == 1){ dropOffSpot_Scope   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Grip );	     }
 
 
 

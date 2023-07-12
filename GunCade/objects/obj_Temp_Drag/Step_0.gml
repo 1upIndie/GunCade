@@ -116,13 +116,24 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
 	  
 	  
 	  // unblock attachements if true
-  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Ammo          == 1 and instance_exists(obj_MiniGame_Drop_Ammo)         ){ obj_MiniGame_Drop_Ammo.state          = "blink"; obj_MiniGame_Drop_Ammo.isBlocked         = false; } else { obj_MiniGame_Drop_Ammo.isBlocked         = true; }	  
-  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_LaserPointer  == 1 and instance_exists(obj_MiniGame_Drop_LaserPointer) ){ obj_MiniGame_Drop_LaserPointer.state  = "blink"; obj_MiniGame_Drop_LaserPointer.isBlocked = false; } else { obj_MiniGame_Drop_LaserPointer.isBlocked = true; }	  
-  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Muzzle        == 1 and instance_exists(obj_MiniGame_Drop_Muzzle)       ){ obj_MiniGame_Drop_Muzzle.state        = "blink"; obj_MiniGame_Drop_Muzzle.isBlocked       = false; } else { obj_MiniGame_Drop_Muzzle.isBlocked       = true; }	  
+  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Ammo          == 1 and instance_exists(obj_MiniGame_Drop_Ammo)         ){ obj_MiniGame_Drop_Ammo.state          = "blink"; obj_MiniGame_Drop_Ammo.isBlocked         = false; } else { obj_MiniGame_Drop_Ammo.isBlocked         = true; }	
   
-  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Stock         == 1 and instance_exists(obj_MiniGame_Drop_Stock)        ){ obj_MiniGame_Drop_Stock.state         = "blink"; obj_MiniGame_Drop_Stock.isBlocked        = false; } else { obj_MiniGame_Drop_Stock.isBlocked        = true; }	  
-  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Optics        == 1 and instance_exists(obj_MiniGame_Drop_Optics)       ){ obj_MiniGame_Drop_Optics.state        = "blink"; obj_MiniGame_Drop_Optics.isBlocked       = false; } else { obj_MiniGame_Drop_Optics.isBlocked       = true; }	  
-  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Grip          == 1 and instance_exists(obj_MiniGame_Drop_Grip)         ){ obj_MiniGame_Drop_Grip.state          = "blink"; obj_MiniGame_Drop_Grip.isBlocked         = false; } else { obj_MiniGame_Drop_Grip.isBlocked         = true; }	  
+  if (instance_exists(obj_MiniGame_Drop_LaserPointer)){
+	 if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_LaserPointer  == 1 ){ obj_MiniGame_Drop_LaserPointer.state  = "blink"; obj_MiniGame_Drop_LaserPointer.isBlocked = false; } else { obj_MiniGame_Drop_LaserPointer.isBlocked = true; }	}  
+  
+  if (instance_exists(obj_MiniGame_Drop_Muzzle)){  
+	 if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Muzzle        == 1 ){ obj_MiniGame_Drop_Muzzle.state        = "blink"; obj_MiniGame_Drop_Muzzle.isBlocked       = false; } else { obj_MiniGame_Drop_Muzzle.isBlocked       = true; }	}
+  
+  
+  
+  if (instance_exists(obj_MiniGame_Drop_Stock)){    
+	  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Stock         == 1 ){ obj_MiniGame_Drop_Stock.state         = "blink"; obj_MiniGame_Drop_Stock.isBlocked        = false; } else { obj_MiniGame_Drop_Stock.isBlocked        = true; }	}	  
+  
+  if (instance_exists(obj_MiniGame_Drop_Optics)){    
+	  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Optics        == 1 ){ obj_MiniGame_Drop_Optics.state        = "blink"; obj_MiniGame_Drop_Optics.isBlocked       = false; } else { obj_MiniGame_Drop_Optics.isBlocked       = true; }	}	  
+  
+  if (instance_exists(obj_MiniGame_Drop_Grip)){    
+	  if (obj_Control_All.array_DetailWeaponText[indexGet].canHave_Grip          == 1 ){ obj_MiniGame_Drop_Grip.state          = "blink"; obj_MiniGame_Drop_Grip.isBlocked         = false; } else { obj_MiniGame_Drop_Grip.isBlocked         = true; }	}	  
 	  
 	  
 	  }// end of instance exists 

@@ -132,6 +132,8 @@ dialogIndex_DelayJumpIndex = 0;
 
 var oo = obj_Control_All;
 
+scr_SetWeaponUnlocks( oo.currentCutscene_DAY ); // unlock weapons/types!
+
 array_Spr_Idle_Static_1_     = array_create(0);
 array_Spr_Idle_1_            = array_create(0);
 array_Spr_Talk_Static_1_     = array_create(0);

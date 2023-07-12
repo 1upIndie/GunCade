@@ -1,11 +1,21 @@
 // Skriptelemente wurden für v2.3.0 geändert, weitere Informationen sind unter
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
-function scr_ButtonResult_Create(inst_, slot_){
+function scr_ButtonResult_Create(inst_, slot_, totalAmount_){
+ 
+ if(totalAmount_ == "six"){
+	 var xx = obj_MiniGame_Parent.button_ResultSelected_X6; 
+	 var yy = obj_MiniGame_Parent.button_ResultSelected_Y6[slot_];  
+	 var size = obj_MiniGame_Parent.button_ResultSelected_Size6;  
+ }
+ 
+ if(totalAmount_ == "four"){
+	 var xx = obj_MiniGame_Parent.button_ResultSelected_X4; 
+	 var yy = obj_MiniGame_Parent.button_ResultSelected_Y4[slot_];  
+	 var size = obj_MiniGame_Parent.button_ResultSelected_Size4;  
+ } 
  
  
- var xx = obj_MiniGame_Parent.button_ResultSelected_X; 
- var yy = obj_MiniGame_Parent.button_ResultSelected_Y[slot_];  
- var size = obj_MiniGame_Parent.button_ResultSelected_Size;
+
  var instSpr_ = spr_Nothing;
  var ooo = obj_Control_All;
 

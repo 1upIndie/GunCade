@@ -342,7 +342,7 @@ txtDetail_I = 50;   // military rifles
 txtDetail_I = 60;  // exotics -> swapped to heavy
 
       array_DetailWeaponText[txtDetail_I].fill_In("heavy 1", spr_MiniGame_Heavy_1, txtDetail_I);
-	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "blowdart gun"  + textDetail_HeadlineSuffix;
+	  array_DetailWeaponText[txtDetail_I].headLineText     = textDetail_HeadlinePrefix + "lmg"  + textDetail_HeadlineSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText1 = textDetail_DescPrefix     + "Very small pistol for use" + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 4000;	  	  
@@ -1146,8 +1146,8 @@ var day_I = 0; // day 1
 	 // test block!
      arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");

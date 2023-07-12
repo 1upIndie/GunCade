@@ -4,7 +4,7 @@ function scr_CreateTempWeapon(reset_, setSprite_){
 
 if (!instance_exists(obj_Temp_Drag) and obj_MiniGame_Parent.inputCoolDown == false){
 
-var size = obj_MiniGame_Parent.button_ResultSelected_Size;
+var size = obj_MiniGame_Parent.button_ResultSelected_Size4;
 var getSpr      = setSprite_;
 var setWhatIsIt = whatisIt;
 
