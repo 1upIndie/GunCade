@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c203282a-262f-44f8-9902-a3d854be861b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0a243e6-0aeb-4a1f-a8a3-3ae429d747ac",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 840,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2e6ea40d-9a33-4e44-8db4-57cc4eefde05","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"039730dd-1127-4ae0-a3d0-74d1f2f1cc0d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -47,14 +47,14 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 2.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c203282a-262f-44f8-9902-a3d854be861b","path":"sprites/spr_Dialog_Kyle_IdleStatic/spr_Dialog_Kyle_IdleStatic.yy",},},},"Disabled":false,"id":"7847b988-f6f2-4faa-acab-4dd92c0080e6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d0a243e6-0aeb-4a1f-a8a3-3ae429d747ac","path":"sprites/spr_Dialog_Kyle_IdleStatic/spr_Dialog_Kyle_IdleStatic.yy",},},},"Disabled":false,"id":"e03549de-9a23-4a2d-acee-69be809bd05b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

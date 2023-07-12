@@ -5,7 +5,7 @@ if(field_Type == 2){
 
 var yy = 20;
 var xx = 325;
-  spr_Part_X[1] = viewX + 35;
+  spr_Part_X[1] = viewX + 31;
   spr_Part_X[2] = spr_Part_X[1] + xx;
   spr_Part_Y    = viewY + yy;
 

@@ -35,7 +35,7 @@
 		typist.skip();
 		
 		// load in instance
-		instance_create_layer(x,y, "Instances", array_InstanceLoadIn[dialogIndex] );
+		instance_create_layer(x,y, "Instances_MiniGameAbove", array_InstanceLoadIn[dialogIndex] );
 		
 		//if ( array_InstanceLoadIn[dialogIndex] == obj_Dialog_SkipIndex_to_150 ){  dialogIndex = 150; blockInput = false;  }
 		

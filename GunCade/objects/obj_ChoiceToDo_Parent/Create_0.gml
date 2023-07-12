@@ -4,6 +4,11 @@ alarm [0] = 2;
 canInput = false; // blocker
 
 
+skipPoint[1] = 0;
+skipPoint[2] = 0;
+skipPoint[3] = 0;
+skipPoint[4] = 0;
+
 
 hoverOver = 0; // hover over field
 
@@ -20,20 +25,20 @@ spr_Part[2] = spr_Nothing;
 spr_Part[3] = spr_Nothing;
 spr_Part[4] = spr_Nothing;
 
-spr_Part_X[1] = viewX + 50;
+spr_Part_X[1] = viewX + 40;
 spr_Part_X[2] = viewX + 310;
 spr_Part_X[3] = viewX + 50;
 spr_Part_X[4] = viewX + 50;
 
 spr_Part_Y = 0;
 
-spr_Part_Width  = 1;
+spr_Part_Width  = 1.04;
 spr_Part_Height = 1;
 
 
 // effect blinking
 blink_Pos   = 0;
-blink_total = 180;
+blink_total = 240;
  _channel = animcurve_get_channel(aniCurve_Blink, 1);
 
 
@@ -48,7 +53,7 @@ spr_Backgr_X[2] = spr_Part_X[2];
 spr_Backgr_X[3] = spr_Part_X[3];
 spr_Backgr_X[4] = spr_Part_X[4];
 spr_Backgr_Y    =  spr_Part_Y;
-spr_Backgr_ScaleWidht   = 1;
+spr_Backgr_ScaleWidht   = 1.01;
 spr_Backgr_ScaleHeight  = 2;
 
 
