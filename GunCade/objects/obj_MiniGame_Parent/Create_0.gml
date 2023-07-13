@@ -12,7 +12,10 @@
  update = false;
    spawn = "";
  
- 
+ isRandomSale = false;
+ isRandomSale_Array       = 0;
+ isRandomSale_Array_Index = 0
+ alarm[0] = 5; // override and pass in values!
  // costs input values to be compared by
 
 current_Costs               = 0; // total value

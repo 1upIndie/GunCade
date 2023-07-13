@@ -1370,19 +1370,24 @@ var iteratePosI = 0;
 
 #region day 1    random fills!
 
-arrayRandomMinigameDay1 = array_create(0);
+// unique to be set and read from values for the random sales!
+randomSaleOverride_Day1_1 = 0;
+randomSaleOverride_Day1_2 = 0;
+
+
+arrayRandomMinigameDay1to3 = array_create(0);
 
 var randomDay1_I  = 0;
 
-arrayRandomMinigameDay1[randomDay1_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1[randomDay1_I].setIntro(  "Hey bud, I'm in a hurry. Need a regular shotty ASAP", "Pump - No attachments and no ammo.");
-   arrayRandomMinigameDay1[randomDay1_I].setSale(   "You're the man. See ya." );  
-   arrayRandomMinigameDay1[randomDay1_I].setRefuse( "Wow, what kind of idiot turns down money?");
-   arrayRandomMinigameDay1[randomDay1_I].setFail(   "The hell is this? Can't even get a simple request right. I don't have time for this crap."); 
+arrayRandomMinigameDay1to3[randomDay1_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay1to3[randomDay1_I].setIntro(  "Hey bud, I'm in a hurry. Need a regular shotty ASAP", "Pump - No attachments and no ammo.");
+   arrayRandomMinigameDay1to3[randomDay1_I].setSale(   "You're the man. See ya." );  
+   arrayRandomMinigameDay1to3[randomDay1_I].setRefuse( "Wow, what kind of idiot turns down money?");
+   arrayRandomMinigameDay1to3[randomDay1_I].setFail(   "The hell is this? Can't even get a simple request right. I don't have time for this crap."); 
 
-   arrayRandomMinigameDay1[randomDay1_I].setInst_Perfect(40, 1,0,0,0,0,0);
-   arrayRandomMinigameDay1[randomDay1_I].setInst_Positive(3,  40, 41, 42, 0,0,0,0,0,0,0,0,0);   
-   arrayRandomMinigameDay1[randomDay1_I].setInst_Negative(555, 81,82,83,84,85, 99999);
+   arrayRandomMinigameDay1to3[randomDay1_I].setInst_Perfect(40, 1,0,0,0,0,0);
+   arrayRandomMinigameDay1to3[randomDay1_I].setInst_Positive(3,  40, 41, 42, 0,0,0,0,0,0,0,0,0);   
+   arrayRandomMinigameDay1to3[randomDay1_I].setInst_Negative(555, 81,82,83,84,85, 99999);
 
 
 #endregion
@@ -1393,6 +1398,7 @@ arrayRandomMinigameDay6 = array_create(0);
 
 arrayRandomMinigameDay9 = array_create(0); // all unlocks possible!
 
+var randomExitText = "  ";
 #endregion  
 
 
@@ -2086,34 +2092,37 @@ var day_I = 0; // day 1
 	
 	
 	/////////////////////// auto set random sale  ///////////////////////////////////////
-	 var randomDay1_1_Spr = choose( 1,2,3,4,5,6,7,8,9 );
+	 var randomDay1_1_Spr = scr_SetRandomNpcSpr(); // pick one of 9, for now
 	   var randomDay1_1_Spr_Default = scr_SetRandomSpr(randomDay1_1_Spr, "default" );
 	   var randomDay1_1_Spr_Angry   = scr_SetRandomSpr(randomDay1_1_Spr, "angry" );
 
-    var getRandomMiniGameIndex  = irandom_range( 0, array_length(arrayRandomMinigameDay1)-1 );
-    arrayRandomMinigameDay1[getRandomMiniGameIndex].setInst_ApplyAll( obj_MiniGame_RandomSale_Day1,   230, 240, 250 );
+    var getRandomMiniGameIndexDay1_1  = irandom_range( 0, array_length(arrayRandomMinigameDay1to3)-1 );
+    //arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1].setInst_ApplyAll( obj_MiniGame_RandomSale_Day1,   230, 240, 250 );
+	
+	randomSaleOverride_Day1_1 = arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1]; // array for override once instance exist!
 	/////////////////////// end auto set random sale  ///////////////////////////////////////
 	
 	
 	 dialog_I = 220;	
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , "enter default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].introTextRandom[0], snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1].introTextRandom[0], snd_TextScroll_Default );	
 	 dialog_I++;    
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].introTextRandom[1], snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1].introTextRandom[1], snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale_Day1;		
 	 dialog_I++;
      
 	 
+	 
 	 dialog_I = 230;	 
 	 // sale!
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].saleTextRandom[0], snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1].saleTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].saleTextRandom[1], snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 
 	 dialog_I++;
 
@@ -2121,11 +2130,11 @@ var day_I = 0; // day 1
 	 dialog_I = 240;	 
 	 // refuse!
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].refuseTextRandom[0], snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1].refuseTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].refuseTextRandom[1], snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
 	 dialog_I++;
 
@@ -2133,11 +2142,11 @@ var day_I = 0; // day 1
 	 dialog_I = 250;	 
 	 // fail!
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].failTextRandom[0], snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_1].failTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].failTextRandom[1], snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );			 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
 	 dialog_I++;	
 	
@@ -2320,7 +2329,6 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "( It doesn't matter that nothing happened. Ugh, I can't even refuse a woman without getting in trouble.)", snd_TextScroll_Default );		 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2Start_Day1;	 
 	 dialog_I++;
 
 
@@ -2331,8 +2339,20 @@ var day_I = 0; // day 1
 
     #region random sale 2   350 to 
 
-      dialog_I = 350;
- 
+	/////////////////////// auto set random sale  ///////////////////////////////////////
+	 var randomDay1_2_Spr = scr_SetRandomNpcSpr(); // pick one of 9, for now
+	   var randomDay1_2_Spr_Default = scr_SetRandomSpr(randomDay1_2_Spr, "default" );
+	   var randomDay1_2_Spr_Angry   = scr_SetRandomSpr(randomDay1_2_Spr, "angry" );
+
+    var getRandomMiniGameIndexDay1_2  = irandom_range( 0, array_length(arrayRandomMinigameDay1to3)-1 );
+    //arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2].setInst_ApplyAll( obj_MiniGame_RandomSale_Day1,   230, 240, 250 );
+	
+	randomSaleOverride_Day1_2 = arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2]; // array for override once instance exist!	
+	/////////////////////// end auto set random sale  ///////////////////////////////////////
+
+
+
+      dialog_I = 350; 
      // random sale 2
      arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Oh good, another customer)", snd_TextScroll_Default );	
@@ -2344,11 +2364,11 @@ var day_I = 0; // day 1
 
 	// begin random sale 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "enter default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2].introTextRandom[0], snd_TextScroll_Default );	
 	 dialog_I++;    
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2].introTextRandom[1], snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day1; 		
 	 dialog_I++;
      
@@ -2356,11 +2376,11 @@ var day_I = 0; // day 1
 	 dialog_I = 360;	 
 	 // sale!
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2].saleTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "random", "?????????", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_380;	 
 	 dialog_I++;
 
@@ -2368,11 +2388,11 @@ var day_I = 0; // day 1
 	 dialog_I = 370;	 
 	 // refuse!
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2].refuseTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "random", "?????????", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_380;	 	 
 	 dialog_I++;
 
@@ -2380,11 +2400,11 @@ var day_I = 0; // day 1
 	 dialog_I = 380;	 
 	 // mess up/!
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay1_2].failTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "random", "?????????", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );			 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_380;	 	 
 	 dialog_I++;	
 	
@@ -9637,87 +9657,4 @@ var day_I = 0; // day 1
 #endregion end of day 7"
 
 
-#region setting up random encounters!
-
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "enter default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day2;
-
-
-
-	 dialog_I = 230;	 
-	 // sale!
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
-	 dialog_I++;
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 
-	 dialog_I++;
-
-
-	 dialog_I = 240;	 
-	 // refuse!
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
-	 dialog_I++;
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
-	 dialog_I++;
-
-
-	 dialog_I = 250;	 
-	 // refuse!
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
-	 dialog_I++;
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );			 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
-	 dialog_I++;	
-
-
-
-if ( isRandom == false){
-
-
- // all other combos -> good sale, no tip
- array_Positive_Weapons   = array_create(0); 
- 
- var stack_ = 0;
- array_Positive_Weapons[stack_]  = 40; stack_++;  // shotguns or pistols
- array_Positive_Weapons[stack_]  = 41; stack_++; 
- array_Positive_Weapons[stack_]  = 42; stack_++; 
- 
-  array_Positive_Weapons[stack_] = 10; stack_++;
-  array_Positive_Weapons[stack_] = 11; stack_++; 
-  array_Positive_Weapons[stack_] = 12; stack_++; 
- 
- // negatives!
- //array_Negative           = array_create(0); // values that make it a bad sale -> fail!
- negative_LaserPointer    = false;
- negative_Muzzle          = false;  
- negative_Optics          = false; 
- negative_Scope           = false; 
- negative_Stock           = false;   
-
- negative_Costs           = 3000; 
- 
- 
- // jump to points
-  result_Index_Sale      = 101;
-  result_Index_Messup    = 103; 
-  result_Index_Refuse    = 102;
-
-
-}
-#endregion
 // set 

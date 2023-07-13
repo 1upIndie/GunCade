@@ -526,6 +526,7 @@
     {"id":{"name":"scribble_font_bake_outline","path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},},
     {"id":{"name":"obj_Dialog_SkipIndex_to_150","path":"objects/obj_Dialog_SkipIndex_to_150/obj_Dialog_SkipIndex_to_150.yy",},},
     {"id":{"name":"spr_Dialog_Granny_TalkStatic2","path":"sprites/spr_Dialog_Granny_TalkStatic2/spr_Dialog_Granny_TalkStatic2.yy",},},
+    {"id":{"name":"Script122","path":"scripts/Script122/Script122.yy",},},
     {"id":{"name":"obj_Dialog_SkipIndex_to_300","path":"objects/obj_Dialog_SkipIndex_to_300/obj_Dialog_SkipIndex_to_300.yy",},},
     {"id":{"name":"spr_MiniGame_Attachment_Grip","path":"sprites/spr_MiniGame_Attachment_Grip/spr_MiniGame_Attachment_Grip.yy",},},
     {"id":{"name":"spr_Dialog_Random5_Talk","path":"sprites/spr_Dialog_Random5_Talk/spr_Dialog_Random5_Talk.yy",},},

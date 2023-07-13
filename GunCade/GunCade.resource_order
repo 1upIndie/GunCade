@@ -453,6 +453,7 @@
     {"name":"scribble_font_bake_outline","order":4,"path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},
     {"name":"obj_Dialog_SkipIndex_to_150","order":7,"path":"objects/obj_Dialog_SkipIndex_to_150/obj_Dialog_SkipIndex_to_150.yy",},
     {"name":"spr_Dialog_Granny_TalkStatic2","order":7,"path":"sprites/spr_Dialog_Granny_TalkStatic2/spr_Dialog_Granny_TalkStatic2.yy",},
+    {"name":"Script122","order":3,"path":"scripts/Script122/Script122.yy",},
     {"name":"obj_Dialog_SkipIndex_to_300","order":30,"path":"objects/obj_Dialog_SkipIndex_to_300/obj_Dialog_SkipIndex_to_300.yy",},
     {"name":"spr_MiniGame_Attachment_Grip","order":9,"path":"sprites/spr_MiniGame_Attachment_Grip/spr_MiniGame_Attachment_Grip.yy",},
     {"name":"spr_Dialog_Random5_Talk","order":2,"path":"sprites/spr_Dialog_Random5_Talk/spr_Dialog_Random5_Talk.yy",},
