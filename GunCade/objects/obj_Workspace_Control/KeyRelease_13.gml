@@ -3,4 +3,4 @@
 
 
 
-dialogIndex = 250;  
+dialogIndex = 220;  

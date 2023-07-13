@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 1,
   "parent": {
-    "name": "_Randoms",
-    "path": "folders/Sprites/Dialog/Characters/_Randoms.yy",
+    "name": "1",
+    "path": "folders/Sprites/Dialog/Characters/_Randoms/1.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -28,17 +28,24 @@ current_Costs               = 0; // total value
  player_Wish_Type   = "";
 */
  
+  // jump to points
+  result_Index_Sale      = 200;
+  result_Index_Refuse    = 201;
+  result_Index_Messup    = 204; 
+ 
+ 
  #region sale 2x, fail, refuse
 
  // possible variations!
  // perfect combo!
  possible_Weapon_Perfect          = -999;   // index numbers!
+ possible_Ammo_Perfect            = -999; 
  possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  possible_Muzzle_Perfect          = -999;  
  possible_Optics_Perfect          = -999; 
  possible_Scope_Perfect           = -999; 
  possible_Stock_Perfect           = -999; 
- 
+ possible_Grip_Perfect            = -999;  
  
  // all other combos -> good sale, no tip
  array_Positive_Weapons   = array_create(0); 
@@ -50,8 +57,9 @@ current_Costs               = 0; // total value
  negative_LaserPointer    = false;
  negative_Muzzle          = false;  
  negative_Optics          = false; 
- negative_Scope           = false; 
+ negative_Scope           = false;  // not used!
  negative_Stock           = false;   
+ negative_Grip            = false;  
 
  negative_Costs           = 9999999;  
 

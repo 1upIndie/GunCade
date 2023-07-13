@@ -11,7 +11,7 @@ event_inherited();
  
  
  // all other combos -> good sale, no tip
- array_Positive_Weapons   = array_create(0); 
+
  
  var stack_ = 0;
  array_Positive_Weapons[stack_]  = 10; stack_++;  //  pistols 
@@ -28,9 +28,9 @@ event_inherited();
  negative_LaserPointer    = false;
  negative_Muzzle          = false;  
  negative_Optics          = false; 
- negative_Scope           = false; 
+ //negative_Scope           = false; 
  negative_Stock           = false;   
-
+ negative_Grip            = false;
  negative_Costs           = 3000; 
  
  

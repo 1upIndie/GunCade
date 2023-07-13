@@ -12,7 +12,7 @@ var getMoney = obj_MiniGame_Parent.current_Costs;
 
 var getWeaponIndex = obj_MiniGame_Drop_Weapon.save_Index_Weapon;
 
-
+var getAttachment_Ammo   = -999;
 var getAttachment_LaserP = -999;
 var getAttachment_Muzzle = -999;  
 var getAttachment_Optics = -999; 
@@ -20,7 +20,7 @@ var getAttachment_Scope  = -999;
 var getAttachment_Stock  = -999;  
 
 
-if (instance_exists(obj_MiniGame_Drop_Ammo)        ){ getAttachment_LaserP = obj_MiniGame_Drop_Ammo.save_Index_Weapon; }
+if (instance_exists(obj_MiniGame_Drop_Ammo)        ){ getAttachment_Ammo   = obj_MiniGame_Drop_Ammo.save_Index_Weapon; }
 if (instance_exists(obj_MiniGame_Drop_LaserPointer)){ getAttachment_LaserP = obj_MiniGame_Drop_LaserPointer.save_Index_Weapon; }
 if (instance_exists(obj_MiniGame_Drop_Muzzle)      ){ getAttachment_Muzzle = obj_MiniGame_Drop_Muzzle.save_Index_Weapon;  }
 if (instance_exists(obj_MiniGame_Drop_Optics)      ){ getAttachment_Optics = obj_MiniGame_Drop_Optics.save_Index_Weapon; }
@@ -33,6 +33,7 @@ var isGood    = false;
 
 var perfect_Weapon = obj_MiniGame_Parent.possible_Weapon_Perfect; 
 
+var perfect_Ammo   = obj_MiniGame_Parent.possible_Ammo_Perfect;
 var perfect_LaserP = obj_MiniGame_Parent.possible_LaserPointer_Perfect;
 var perfect_Muzzle = obj_MiniGame_Parent.possible_Muzzle_Perfect;  
 var perfect_Optics = obj_MiniGame_Parent.possible_Optics_Perfect;
@@ -42,6 +43,7 @@ var perfect_Stock  = obj_MiniGame_Parent.possible_Stock_Perfect;
  
 
 if(getWeaponIndex       == perfect_Weapon and
+   getAttachment_Ammo   == perfect_Ammo   and
    getAttachment_LaserP == perfect_LaserP and
    getAttachment_Muzzle == perfect_Muzzle and
    getAttachment_Optics == perfect_Optics and   
@@ -88,6 +90,7 @@ var neg_I = 0;
 
 
 // also single check if attachment is excluded!
+ if(getAttachment_Ammo   == obj_MiniGame_Parent.negative_Ammo  ){ isGood = false; }
  if(getAttachment_LaserP == obj_MiniGame_Parent.negative_LaserPointer){ isGood = false; }
  if(getAttachment_Muzzle == obj_MiniGame_Parent.negative_Muzzle){ isGood = false; }  
  if(getAttachment_Optics == obj_MiniGame_Parent.negative_Optics){ isGood = false; } 

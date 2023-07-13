@@ -142,6 +142,17 @@ fill_I++;
 }
 
 
+// 0 pepper spray, 1 folding batt, 2 knife
+// 10 scaringer, 11 9Oclock, 12 beagle
+// 20 bolt, 21 lever, 22 250cal
+// 30 tammy, 31woozie, 32 shmup
+// 40 pump, 41 sawed off, 42 tripple
+// 50 m16, 51 french, 52 ak
+// 60 lmg, 61 grenadel, 62 mini, 63 bazooka
+// 70 blow, 71 canon, 72 ac, 73 dc
+// 80 ammo, 81 las, 82 muzzl, 83 stock. 84 optic, 85 grip
+
+
       // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, heavy 60-70, exotic 70-80, attachment 80-90	
 var txtDetail_I = 0;
       array_DetailWeaponText[txtDetail_I].fill_In("melee 1", spr_MiniGame_Melee_1, txtDetail_I);
@@ -891,13 +902,67 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
 
-
+                //////////// randoms!
+              #region randoms!
 
 			  case  "random1 default":  
 				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
 				   sprIdle_        = spr_Dialog_Random1_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;		
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;	
+
+			  case  "random2 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;	
+				   
+			  case  "random3 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;					   
+
+			  case  "random4 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;	
+
+			  case  "random5 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;	
+				   
+			  case  "random6 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;					   
+
+			  case  "random7 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;				   
+
+			  case  "random8 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;	
+				   
+			  case  "random9 default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;					   
+				   
+				   
+               #endregion				   
+				   
+				   
 			} // end of switch
 	
 		
@@ -1009,7 +1074,8 @@ indexSet++;
 			  case  "random": 
 			       nameNpc_Player = text_Name_Ramdom;			  
 				   prefixTXT_     = textPrefix;	 break; 
-				   
+
+
 			 case  "unknown":				
 			       nameNpc_Player = text_Name_Unknown;		  
 				   prefixTXT_     = textPrefix; break; 
@@ -1122,7 +1188,214 @@ indexSet++;
 
 arrayCutscenes = array_create(0); // 
 
+ #region random texts + minigame generation!
+ 
+  function CreateRandomMinigame() constructor {
+
+
+   #region text setup!
+
+   // first two lines	
+   introTextRandom[0] = "";
+   introTextRandom[1] = "";    // instruction text
+
+   // outcomes!
+   saleTextRandom[0]  = "";
+  // saleTextRandom[1]  = ""; 
+
+   refuseTextRandom[0] = "";
+  // refuseTextRandom[1] = ""; 
+
+   failTextRandom[0] = "";
+  // failTextRandom[1] = ""; 
    
+   function setIntro(txt1_, txt2_){
+      introTextRandom[0] = txt1_;
+      //introTextRandom[1] = txt2_;   
+   }
+
+
+   function setSale(txt1_){
+      saleTextRandom[0] = txt1_;
+     // saleTextRandom[1] = txt2_;   
+   } 
+
+   function setRefuse(txt1_){
+      refuseTextRandom[0] = txt1_;
+      //refuseTextRandom[1] = txt2_;   
+   } 
+
+
+   function setFail(txt1_){
+      failTextRandom[0] = txt1_;
+    //  failTextRandom[1] = txt2_;   
+   } 
+
+#endregion
+
+   #region instance to override!
+   
+   instanceResetSet = noone;
+
+   
+   var defaultSEt = -999;
+   temp_PerfectWeapon               = defaultSEt;
+   temp_Perect_Ammo                 = defaultSEt;    
+   temp_Perect_LaserPointer         = defaultSEt;
+   temp_Perect_Muzzle               = defaultSEt;
+   
+   temp_Perect_Optics               = defaultSEt;
+   temp_Perect_Stock                = defaultSEt;
+   temp_Perect_Grip                 = defaultSEt; 
+
+   
+
+var iteratePosI = 0;
+   posStackAmount = 0;
+  repeat(12){
+	  temp_PositiveWeapon[iteratePosI] = defaultSEt;	  
+       iteratePosI++;
+ }
+
+      temp_negative_Ammo            = defaultSEt;
+      temp_negative_LaserPointer    = defaultSEt;
+      temp_negative_Muzzle          = defaultSEt; 
+	  
+      temp_negative_Optics          = defaultSEt; 
+      temp_negative_Grip            = defaultSEt; 
+      temp_negative_Stock           = defaultSEt;   
+
+      temp_negative_Costs           = defaultSEt;  
+    
+	// temp pre build
+    function setInst_Perfect(  perfect_, ammo_, las_, muz_, optc_, stock_, grip_ ){
+      // set one perfect weapon!	  
+	  temp_PerfectWeapon               = perfect_;    
+
+      temp_Perect_Ammo                 = ammo_;    
+      temp_Perect_LaserPointer         = las_;
+      temp_Perect_Muzzle               = muz_;
+   
+      temp_Perect_Optics               = optc_;
+      temp_Perect_Stock                = stock_;
+      temp_Perect_Grip                 = grip_; 
+   }
+   
+    function setInst_Positive(  posStackAmount_,   posStack_1, posStack_2, posStack_3, posStack_4, posStack_5, posStack_6, posStack_7, posStack_8, posStack_9, posStack_10, posStack_11, posStack_12   ){
+      posStackAmount = posStackAmount_;
+	  	  
+	  if(posStackAmount_ >=  1){ temp_PositiveWeapon[0]   = posStack_1;   }	  
+	  if(posStackAmount_ >=  2){ temp_PositiveWeapon[1]   = posStack_2;   }		  
+	  if(posStackAmount_ >=  3){ temp_PositiveWeapon[2]   = posStack_3;   }	
+	  if(posStackAmount_ >=  4){ temp_PositiveWeapon[3]   = posStack_4;   }	  
+	  if(posStackAmount_ >=  5){ temp_PositiveWeapon[4]   = posStack_5;   }		  
+	  if(posStackAmount_ >=  6){ temp_PositiveWeapon[5]   = posStack_6;   }	  
+	  if(posStackAmount_ >=  7){ temp_PositiveWeapon[6]   = posStack_7;   }	  
+	  if(posStackAmount_ >=  8){ temp_PositiveWeapon[7]   = posStack_8;   }		  
+	  if(posStackAmount_ >=  9){ temp_PositiveWeapon[8]   = posStack_9;   }	  
+	  if(posStackAmount_ >= 10){ temp_PositiveWeapon[9]   = posStack_10;  }	  
+	  if(posStackAmount_ >= 11){ temp_PositiveWeapon[10]  = posStack_11;  }		  
+	  if(posStackAmount_ >= 12){ temp_PositiveWeapon[11]  = posStack_12;  }	  
+	  
+   }
+   
+    function setInst_Negative (neg_Ammo, neg_Las, neg_Muzzle, neg_Stock, neg_Opt, neg_Grip,  neg_Cost ){
+
+      temp_negative_Ammo            = neg_Ammo;
+      temp_negative_LaserPointer    = neg_Las;
+      temp_negative_Muzzle          = neg_Muzzle; 
+	  
+      temp_negative_Stock           = neg_Stock;   	  
+      temp_negative_Optics          = neg_Opt; 
+      temp_negative_Grip            = neg_Grip; 
+
+      temp_negative_Costs           = neg_Cost;   
+  }
+
+
+    // to be set later!!
+    function setInst_ApplyAll(inst_,  jump_Sale, jump_Refuse_, jump_Fail ){  
+		
+		instanceResetSet = inst_;
+	  
+        // apply jump points
+	    instanceResetSet.result_Index_Sale      = jump_Sale;
+        instanceResetSet.result_Index_Refuse    = jump_Refuse_;
+        instanceResetSet.result_Index_Messup    = jump_Fail; 
+	  
+	  
+	  // apply perfect
+	  instanceResetSet.possible_Weapon_Perfect          = temp_PerfectWeapon; 
+	  
+	  instanceResetSet.possible_Ammo_Perfect            = temp_Perect_Ammo
+	  instanceResetSet.possible_LaserPointer_Perfect    = temp_Perect_LaserPointer;  // attachments not set on default
+	  instanceResetSet.possible_Muzzle_Perfect          = temp_Perect_Muzzle;  
+	  
+	  instanceResetSet.possible_Optics_Perfect          = temp_Perect_Optics; 
+	  instanceResetSet.possible_Grip_Perfect            = temp_Perect_Grip; 
+	  instanceResetSet.possible_Stock_Perfect           = temp_Perect_Stock; 	  
+	  
+	  // apply positive
+	  if(posStackAmount >=  1){ instanceResetSet.array_Positive_Weapons[0]   = temp_PositiveWeapon[0];   }	  
+	  if(posStackAmount >=  2){ instanceResetSet.array_Positive_Weapons[1]   = temp_PositiveWeapon[1];   }		  
+	  if(posStackAmount >=  3){ instanceResetSet.array_Positive_Weapons[2]   = temp_PositiveWeapon[2];   }	
+	  if(posStackAmount >=  4){ instanceResetSet.array_Positive_Weapons[3]   = temp_PositiveWeapon[3];   }	  
+	  if(posStackAmount >=  5){ instanceResetSet.array_Positive_Weapons[4]   = temp_PositiveWeapon[4];   }		  
+	  if(posStackAmount >=  6){ instanceResetSet.array_Positive_Weapons[5]   = temp_PositiveWeapon[5];   }	  
+	  if(posStackAmount >=  7){ instanceResetSet.array_Positive_Weapons[6]   = temp_PositiveWeapon[6];   }	  
+	  if(posStackAmount >=  8){ instanceResetSet.array_Positive_Weapons[7]   = temp_PositiveWeapon[7];   }		  
+	  if(posStackAmount >=  9){ instanceResetSet.array_Positive_Weapons[8]   = temp_PositiveWeapon[8];   }	  
+	  if(posStackAmount >= 10){ instanceResetSet.array_Positive_Weapons[9]   = temp_PositiveWeapon[9];   }	  
+	  if(posStackAmount >= 11){ instanceResetSet.array_Positive_Weapons[10]  = temp_PositiveWeapon[10];  }		  
+	  if(posStackAmount >= 12){ instanceResetSet.array_Positive_Weapons[11]  = temp_PositiveWeapon[11];  }	 	  
+
+
+
+	  // apply negative
+      instanceResetSet.negative_Ammo            = temp_negative_Ammo;
+      instanceResetSet.negative_LaserPointer    = temp_negative_LaserPointer;
+      instanceResetSet.negative_Muzzle          = temp_negative_Muzzle; 
+	  
+      instanceResetSet.negative_Optics          = temp_negative_Optics; 
+      instanceResetSet.negative_Grip            = temp_negative_Grip; 
+      instanceResetSet.negative_Stock           = temp_negative_Stock;   
+
+      instanceResetSet.negative_Costs           = temp_negative_Costs; 	   
+   }
+   
+   
+   #endregion
+  }
+
+
+#region day 1    random fills!
+
+arrayRandomMinigameDay1 = array_create(0);
+
+var randomDay1_I  = 0;
+
+arrayRandomMinigameDay1[randomDay1_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay1[randomDay1_I].setIntro(  "Hey bud, I'm in a hurry. Need a regular shotty ASAP", "Pump - No attachments and no ammo.");
+   arrayRandomMinigameDay1[randomDay1_I].setSale(   "You're the man. See ya." );  
+   arrayRandomMinigameDay1[randomDay1_I].setRefuse( "Wow, what kind of idiot turns down money?");
+   arrayRandomMinigameDay1[randomDay1_I].setFail(   "The hell is this? Can't even get a simple request right. I don't have time for this crap."); 
+
+   arrayRandomMinigameDay1[randomDay1_I].setInst_Perfect(40, 1,0,0,0,0,0);
+   arrayRandomMinigameDay1[randomDay1_I].setInst_Positive(3,  40, 41, 42, 0,0,0,0,0,0,0,0,0);   
+   arrayRandomMinigameDay1[randomDay1_I].setInst_Negative(555, 81,82,83,84,85, 99999);
+
+
+#endregion
+
+
+arrayRandomMinigameDay4 = array_create(0);
+arrayRandomMinigameDay6 = array_create(0);
+
+arrayRandomMinigameDay9 = array_create(0); // all unlocks possible!
+
+#endregion  
+
+
 
 #region  day 1  111111111111111
 
@@ -1799,7 +2072,7 @@ var day_I = 0; // day 1
 	 dialog_I = 210;
      arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Did she say a clown? Surely she was just calling someone a name and it's not a real clown, but in this city, nothing would surprise me.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1Start_Day1;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_220;	 
 	 dialog_I++;    	 
 
 
@@ -1810,50 +2083,61 @@ var day_I = 0; // day 1
 	
 	
 	// begin random sale 1
-	 dialog_I = 220;
+	
+	
+	/////////////////////// auto set random sale  ///////////////////////////////////////
+	 var randomDay1_1_Spr = choose( 1,2,3,4,5,6,7,8,9 );
+	   var randomDay1_1_Spr_Default = scr_SetRandomSpr(randomDay1_1_Spr, "default" );
+	   var randomDay1_1_Spr_Angry   = scr_SetRandomSpr(randomDay1_1_Spr, "angry" );
 
-      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "enter default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
+    var getRandomMiniGameIndex  = irandom_range( 0, array_length(arrayRandomMinigameDay1)-1 );
+    arrayRandomMinigameDay1[getRandomMiniGameIndex].setInst_ApplyAll( obj_MiniGame_RandomSale_Day1,   230, 240, 250 );
+	/////////////////////// end auto set random sale  ///////////////////////////////////////
+	
+	
+	 dialog_I = 220;	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , "enter default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].introTextRandom[0], snd_TextScroll_Default );	
 	 dialog_I++;    
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day2;		
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].introTextRandom[1], snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale_Day1;		
 	 dialog_I++;
      
 	 
 	 dialog_I = 230;	 
 	 // sale!
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].saleTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].saleTextRandom[1], snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 
 	 dialog_I++;
 
 
 	 dialog_I = 240;	 
 	 // refuse!
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].refuseTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].refuseTextRandom[1], snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
 	 dialog_I++;
 
 
 	 dialog_I = 250;	 
-	 // refuse!
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+	 // fail!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].failTextRandom[0], snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", arrayRandomMinigameDay1[getRandomMiniGameIndex].failTextRandom[1], snd_TextScroll_Default );			 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
 	 dialog_I++;	
 	
@@ -2052,30 +2336,31 @@ var day_I = 0; // day 1
      // random sale 2
      arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Oh good, another customer)", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day1;		 
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day1;		 
 	 dialog_I++;
 	
 	
-	
+
+
 	// begin random sale 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "enter default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );	
 	 dialog_I++;    
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day2;		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day1; 		
 	 dialog_I++;
      
 	 
 	 dialog_I = 360;	 
 	 // sale!
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", "?????????", snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_380;	 
 	 dialog_I++;
 
@@ -2083,11 +2368,11 @@ var day_I = 0; // day 1
 	 dialog_I = 370;	 
 	 // refuse!
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", "?????????", snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_380;	 	 
 	 dialog_I++;
 
@@ -2095,11 +2380,11 @@ var day_I = 0; // day 1
 	 dialog_I = 380;	 
 	 // mess up/!
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "?????????", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "random", "?????????", snd_TextScroll_Default );			 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_380;	 	 
 	 dialog_I++;	
 	
@@ -9342,6 +9627,7 @@ var day_I = 0; // day 1
 	
 
 #endregion end of day 7"" , snd_TextScroll_Default );	
+	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day7;	 
 	 dialog_I++;
 
@@ -9349,3 +9635,89 @@ var day_I = 0; // day 1
 	
 
 #endregion end of day 7"
+
+
+#region setting up random encounters!
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "enter default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "?????????", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day2;
+
+
+
+	 dialog_I = 230;	 
+	 // sale!
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 
+	 dialog_I++;
+
+
+	 dialog_I = 240;	 
+	 // refuse!
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
+	 dialog_I++;
+
+
+	 dialog_I = 250;	 
+	 // refuse!
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "?????????", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "?????????", snd_TextScroll_Default );			 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
+	 dialog_I++;	
+
+
+
+if ( isRandom == false){
+
+
+ // all other combos -> good sale, no tip
+ array_Positive_Weapons   = array_create(0); 
+ 
+ var stack_ = 0;
+ array_Positive_Weapons[stack_]  = 40; stack_++;  // shotguns or pistols
+ array_Positive_Weapons[stack_]  = 41; stack_++; 
+ array_Positive_Weapons[stack_]  = 42; stack_++; 
+ 
+  array_Positive_Weapons[stack_] = 10; stack_++;
+  array_Positive_Weapons[stack_] = 11; stack_++; 
+  array_Positive_Weapons[stack_] = 12; stack_++; 
+ 
+ // negatives!
+ //array_Negative           = array_create(0); // values that make it a bad sale -> fail!
+ negative_LaserPointer    = false;
+ negative_Muzzle          = false;  
+ negative_Optics          = false; 
+ negative_Scope           = false; 
+ negative_Stock           = false;   
+
+ negative_Costs           = 3000; 
+ 
+ 
+ // jump to points
+  result_Index_Sale      = 101;
+  result_Index_Messup    = 103; 
+  result_Index_Refuse    = 102;
+
+
+}
+#endregion
+// set 
