@@ -1,9 +1,7 @@
-/// @description Hier Beschreibung einfügen
-// Sie können Ihren Code in diesem Editor schreiben
+/// @description override!
 
 // Inherit the parent event
 event_inherited();
 
-// sale 370
-// refuse 380
-// fail 390
+isRandomSale = true;
+ isRandomSale_Array       = "day7 1";

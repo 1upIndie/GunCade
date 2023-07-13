@@ -3,26 +3,38 @@
 if(isRandomSale == false){ exit; }
 var oo = obj_Control_All;
  
+ var jump_Sale   = 0;
+ var jump_Refuse = 0; 
+ var jump_Fail   = 0;  
+ 
  
  var get_Array = oo.randomSaleOverride_Day1_1;
  switch( isRandomSale_Array ){
  
- case "day1 1": get_Array = oo.randomSaleOverride_Day1_1; break;
- case "day1 2": get_Array = oo.randomSaleOverride_Day1_2; break;   
+ case "day1 1": get_Array = oo.randomSaleOverride_Day1_1; jump_Sale = 230; jump_Refuse = 240; jump_Fail = 250;   break;
+ case "day1 2": get_Array = oo.randomSaleOverride_Day1_2; jump_Sale = 360; jump_Refuse = 370; jump_Fail = 380;   break;
  
+ case "day2 1": get_Array = oo.randomSaleOverride_Day2_1; jump_Sale = 110; jump_Refuse = 120; jump_Fail = 130;   break;
+ case "day2 2": get_Array = oo.randomSaleOverride_Day2_2; jump_Sale = 260; jump_Refuse = 270; jump_Fail = 280;   break; 
  
+ case "day3 1": get_Array = oo.randomSaleOverride_Day3_1;  jump_Sale = 800; jump_Refuse = 810; jump_Fail = 820;   break; 
+ case "day3 2": get_Array = oo.randomSaleOverride_Day3_2;  jump_Sale = 840; jump_Refuse = 850; jump_Fail = 860;   break; 
  
+ case "day5 1": get_Array = oo.randomSaleOverride_Day5_1; jump_Sale = 100; jump_Refuse = 110; jump_Fail = 120;   break; 
+ case "day5 2": get_Array = oo.randomSaleOverride_Day5_2; jump_Sale = 800; jump_Refuse = 810; jump_Fail = 820;   break;   
+ 
+ case "day6 1": get_Array = oo.randomSaleOverride_Day6_1; jump_Sale = 340; jump_Refuse = 350; jump_Fail = 360;   break;  
 
- 
- 
+ case "day7 1": get_Array = oo.randomSaleOverride_Day7_1; jump_Sale = 370; jump_Refuse = 380; jump_Fail = 390;   break; 
+ case "day7 2": get_Array = oo.randomSaleOverride_Day7_2; jump_Sale = 420; jump_Refuse = 430; jump_Fail = 440;   break; 
  }
  
 
 	  
         // apply jump points
-result_Index_Sale      = get_Array.jump_Sale;
-result_Index_Refuse    = get_Array.jump_Refuse_;
-result_Index_Messup    = get_Array.jump_Fail; 
+result_Index_Sale      = jump_Sale;
+result_Index_Refuse    = jump_Refuse;
+result_Index_Messup    = jump_Fail; 
 	  
 	  
 	  // apply perfect

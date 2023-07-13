@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_MiniGame_RandomSale2Start_Day5",
+  "name": "obj_Dialog_SkipIndex_to_360",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "day_5",
-    "path": "folders/Objects/Cutscenes/MiniGame/Choises/day_5.yy",
+    "name": "Skip",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip.yy",
   },
   "parentObjectId": {
-    "name": "obj_MiniGame_Parent",
-    "path": "objects/obj_MiniGame_Parent/obj_MiniGame_Parent.yy",
+    "name": "obj_Dialog_SkipIndex_To_Parent",
+    "path": "objects/obj_Dialog_SkipIndex_To_Parent/obj_Dialog_SkipIndex_To_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
