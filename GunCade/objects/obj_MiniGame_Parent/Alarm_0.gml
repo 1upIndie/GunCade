@@ -7,7 +7,7 @@ var oo = obj_Control_All;
  var jump_Refuse = 0; 
  var jump_Fail   = 0;  
  
- 
+
  var get_Array = oo.randomSaleOverride_Day1_1;
  switch( isRandomSale_Array ){
  

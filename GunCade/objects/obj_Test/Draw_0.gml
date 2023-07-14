@@ -12,4 +12,5 @@ txt = "Yes";
 
 } else {  txt = "nope"; }
 
+txt = obj_Control_All.setSeed;
 draw_text(x,y, txt)

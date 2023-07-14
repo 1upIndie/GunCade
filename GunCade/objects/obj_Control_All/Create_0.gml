@@ -1,5 +1,9 @@
 /// @description Hier Beschreibung einfügen
 
+
+
+
+
 debug = true;
 
 roomToJump = Room_Workspace;
@@ -13,6 +17,30 @@ fontSpriteNum       = font_add_sprite_ext(spr_Sprite_font_Numbers, "0123456789$"
 fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "0123456789$", true, 0   );
 
 //draw_set_font(fontSpriteNum);
+
+
+#region seed, set once
+hasSeed = 0;
+setSeed = "";
+
+ini_open("data.bob");
+
+hasSeed  = ini_read_real("seed",   "HasSeed", 0);
+setSeed  = ini_read_string("seed", "seed",   "");
+ini_close();
+
+if(hasSeed == true){
+
+  random_set_seed(setSeed)
+} else{
+	
+ randomize();
+ setSeed = random_get_seed();
+ hasSeed = true;
+
+}
+#endregion
+
 
 #region text prefix/suffixes
 
@@ -902,6 +930,8 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
 
+
+
                 //////////// randoms!
               #region randoms!
 
@@ -960,6 +990,60 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;					   
 				   
 				   
+				   
+			  case  "random1 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;	
+
+			  case  "random2 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;	
+				   
+			  case  "random3 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;					   
+
+			  case  "random4 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;	
+
+			  case  "random5 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;		
+				   
+			  case  "random6 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;					   
+
+			  case  "random7 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;				   
+
+			  case  "random8 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;		
+				   
+			  case  "random9 angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;							   
                #endregion				   
 				   
 				   
@@ -1454,7 +1538,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_MiniGame_RandomSale_Day1; // testing random sale
+    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");
@@ -2151,7 +2236,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Default  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_260;	 
 	 dialog_I++;
 
 
@@ -2163,7 +2248,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_260;	 	 
 	 dialog_I++;
 
 
@@ -2175,7 +2260,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_1_Spr_Angry  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "random", randomExitText, snd_TextScroll_Default );			 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_250;	 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_260;	 	 
 	 dialog_I++;	
 	
 	
@@ -2184,10 +2269,10 @@ var day_I = 0; // day 1
 
 
 
-   #region jez 250
+   #region jez 260
 
 
-	 dialog_I = 250;	
+	 dialog_I = 260;	
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey there sugar. Been a while since I got to see your sweet face.", snd_TextScroll_Default );  
 	 dialog_I++;	
