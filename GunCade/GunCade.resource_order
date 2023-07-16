@@ -54,6 +54,7 @@
     {"name":"Characters","order":13,"path":"folders/Sprites/Dialog/Characters.yy",},
     {"name":"_Randoms","order":17,"path":"folders/Sprites/Dialog/Characters/_Randoms.yy",},
     {"name":"1","order":4,"path":"folders/Sprites/Dialog/Characters/_Randoms/1.yy",},
+    {"name":"Angry","order":4,"path":"folders/Sprites/Dialog/Characters/_Randoms/1/Angry.yy",},
     {"name":"2","order":5,"path":"folders/Sprites/Dialog/Characters/_Randoms/2.yy",},
     {"name":"3","order":6,"path":"folders/Sprites/Dialog/Characters/_Randoms/3.yy",},
     {"name":"4","order":7,"path":"folders/Sprites/Dialog/Characters/_Randoms/4.yy",},
@@ -100,7 +101,6 @@
     {"name":"Radio","order":9,"path":"folders/Sprites/UI/Radio.yy",},
     {"name":"Stats","order":5,"path":"folders/Sprites/UI/Stats.yy",},
     {"name":"TypeButtons","order":6,"path":"folders/Sprites/UI/TypeButtons.yy",},
-    {"name":"Angry","order":4,"path":"folders/Sprites/Dialog/Characters/_Randoms/1/Angry.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Dialog_Random1_IdleStatic","order":1,"path":"sprites/spr_Dialog_Random1_IdleStatic/spr_Dialog_Random1_IdleStatic.yy",},
@@ -282,6 +282,7 @@
     {"name":"__scribble_gen_10_set_padding_flags","order":1,"path":"scripts/__scribble_gen_10_set_padding_flags/__scribble_gen_10_set_padding_flags.yy",},
     {"name":"spr_MiniGame_Shotgun_3","order":5,"path":"sprites/spr_MiniGame_Shotgun_3/spr_MiniGame_Shotgun_3.yy",},
     {"name":"obj_Effect_Txt_PopUpGoUp_Fail","order":5,"path":"objects/obj_Effect_Txt_PopUpGoUp_Fail/obj_Effect_Txt_PopUpGoUp_Fail.yy",},
+    {"name":"spr_WorkStation_BackgroundNews","order":16,"path":"sprites/spr_WorkStation_BackgroundNews/spr_WorkStation_BackgroundNews.yy",},
     {"name":"spr_WeaponDetail_Ar_3","order":2,"path":"sprites/spr_WeaponDetail_Ar_3/spr_WeaponDetail_Ar_3.yy",},
     {"name":"scribble_refresh_everything","order":6,"path":"scripts/scribble_refresh_everything/scribble_refresh_everything.yy",},
     {"name":"obj_DayEnd_Day5","order":4,"path":"objects/obj_DayEnd_Day5/obj_DayEnd_Day5.yy",},

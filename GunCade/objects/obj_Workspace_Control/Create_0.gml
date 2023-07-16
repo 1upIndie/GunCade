@@ -202,6 +202,10 @@ repeat(900){
 repeat_I++;
 }
 
+// set background anew if new cast!
+if( oo.arrayCutscenes[oo.currentCutscene_DAY].isNews == true){  obj_Workspace_Bgr.sprite_index = spr_WorkStation_BackgroundNews;   }
+
+
 
 // set once values -> intro/extro
 setOnce_Enter[1] = false;
