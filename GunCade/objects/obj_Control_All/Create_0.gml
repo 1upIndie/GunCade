@@ -1196,6 +1196,21 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
 
+
+
+              // new -> unique
+			  case  "betty default":  
+				   sprIdleStatic   = spr_Dialog_Betty_IdleStatic;
+				   sprIdle_        = spr_Dialog_Betty_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
+				   
+			  case  "betty smiling":  
+				   sprIdleStatic   = spr_Dialog_BettySmiling_IdleStatic;
+				   sprIdle_        = spr_Dialog_BettySmiling_Idle; 
+				   sprTalkStatic_  = spr_Dialog_BettySmiling_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_BettySmiling_Talk; 		    break;					   
+				   
                 //////////// randoms!
               #region randoms!
 
@@ -1413,7 +1428,7 @@ indexSet++;
   text_Name_Ramdom      = "[font_Cutscene_Name][scale, 0.7][c_white]Random[/c][/scale]";
  
  
- 
+  text_Name_Betty      = "[font_Cutscene_Name][scale, 0.7][c_white]Betty Blabbermouth[/c][/scale]";   
 
 	  function setText( index_, talkActiveSlot,  npc_,  txt_, sound_ ){ 
 		    var prefixTXT_     = "";
@@ -1520,7 +1535,12 @@ indexSet++;
 			  case  "jez": 
 			       nameNpc_Player = text_Name_Jez;				  
 				   prefixTXT_     = textPrefix;	 break; 
-	
+
+
+			  case  "betty": 
+			       nameNpc_Player = text_Name_Betty;				  
+				   prefixTXT_     = textPrefix;	 break; 
+
               default:				
 			       nameNpc_Player = text_Name_Unknown;		  
 				   prefixTXT_     = textPrefix; break;
@@ -10181,11 +10201,27 @@ var day_I = 0; // day 1
  
   arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
   
-#region weather girl
+#region news day 1
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Damn heater seems to be broken. It's freezing in here today.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "betty smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "betty", "Thanks for that report Gail. Now, over to our newest member of the team for the weather.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_Default; // transition from betty to weather girl
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Thanks Betty.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "It looks like another hot one today with near record temperatures.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "I hear we don’t have any young folks around anymore but the elderly should certainly take caution out there and definitely stay hydrated. Back over to you Betty.", snd_TextScroll_Default );		 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day1_Start;
 	 dialog_I++;
 
 #endregion

@@ -5,7 +5,10 @@
  camHeight   = camera_get_view_height( view_camera[0] );
 
 
-
+if(override == true){
+event_user(1);
+exit;
+}
 
 // check for current state
 var typeWriterPosition = typist.get_state();

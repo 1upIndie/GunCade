@@ -4,7 +4,7 @@ alarm[0] = 35; // start typing
 
 
 
-
+override = false; // when jumping from news to regular day
 #region daily temp values
 
 dayTemp_Cash     = 0;
