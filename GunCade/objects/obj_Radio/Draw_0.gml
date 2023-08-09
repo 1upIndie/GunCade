@@ -63,8 +63,12 @@ scribble(timerTxt).draw( timerDigitX, timerDigitY );
 
 
 // draw song name + length
-var songTxt = prefix_Song + songNameCurrent + " " + songLengthCurrent + suffix_Song;
-scribble( songTxt ).draw( songNameX, songNameY );
+var songTxt_Owner  = prefix_SongOwner + songNameCurrentOwner + " " + songLengthCurrent + suffix_SongOwner;
+scribble( songTxt_Owner ).draw( songNameX, songNameY );
+
+var songTxt_Name  = prefix_SongName + songNameCurrentName + suffix_SongName;
+scribble( songTxt_Name ).draw( songNameX, songOwnerY );
+
 
 
 //draw_set_alpha(1)
@@ -73,7 +77,7 @@ scribble( songTxt ).draw( songNameX, songNameY );
 
 // hover over to change volume
 
-
+if(isPaused == true){
 
 #region dummy timer 
 
@@ -108,7 +112,7 @@ timerDigit_Sec = timeSeconds;
 
 
 
-
+} // end of if paused
 
 
 #endregion

@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_Dialog_Betty_IdleStatic",
   "bbox_bottom": 839,
-  "bbox_left": 137,
-  "bbox_right": 795,
-  "bbox_top": 81,
+  "bbox_left": 222,
+  "bbox_right": 852,
+  "bbox_top": 66,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7eab0136-82aa-4661-a581-7fc570cf08fe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a99c84e2-3c03-499b-b69a-50a56e51a14c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 840,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b7dc6eef-7927-4517-be35-a1a336be9c99","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bb00cf69-5e45-4237-a27b-068666371c1b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7eab0136-82aa-4661-a581-7fc570cf08fe","path":"sprites/spr_Dialog_Betty_IdleStatic/spr_Dialog_Betty_IdleStatic.yy",},},},"Disabled":false,"id":"15a5034b-4ffd-438c-8436-a6aa1e0bf504","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a99c84e2-3c03-499b-b69a-50a56e51a14c","path":"sprites/spr_Dialog_Betty_IdleStatic/spr_Dialog_Betty_IdleStatic.yy",},},},"Disabled":false,"id":"011f6ca2-96ee-4a57-94a7-df6137580e7f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

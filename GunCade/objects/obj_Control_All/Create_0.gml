@@ -80,8 +80,11 @@ if(hasSeed == true){
   textDetail_DescSuffix = "[/scale]";
 
 
-  textRadioSong_Prefix = "[fnt_RadioDigitalThin][scale, 0.35][#22E1FB]";
-  textRadioSong_Suffix = "[/c][/scale]";
+  textRadioSongOwner_Prefix = "[fnt_RadioDigital][scale, 0.32][#22E1FB]";
+  textRadioSongOwner_Suffix = "[/c][/scale]";
+
+  textRadioSongName_Prefix = "[fnt_RadioDigital][scale, 0.28][#22E1FB]";
+  textRadioSongName_Suffix = "[/c][/scale]";
 
   textRadioTimer_Prefix = "[fnt_RadioDigital][scale, 0.7][#22E1FB]";
   textRadioTimer_Suffix = "[/c][/scale]";
@@ -676,6 +679,34 @@ tvIndexI++;
 
 #endregion
 
+#region songs
+
+function createSong( id_, isUnique_,   song_, nameOwner_, nameSong_, length_, isUnlocked_ ) constructor{
+
+  songId       = id_;
+  songIsUnique = isUnique_; // if part of auto play or not!
+  
+  
+  songSnd    = song_;
+  songOwner  = nameOwner_;
+  songName   = nameSong_;  
+  songLength = length_;  
+  
+  // if unlocked and is set on auto play!
+  songAutoPlayEnabled = true;
+  songIsUnlocked      = isUnlocked_; 
+}
+
+arraySongs = array_create(0);
+var songI = 0;
+
+ arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Darkest_Before_Dawn , "TeknoAXE", "Darkest Before Dawn" , "(4:11)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Skyrise_for_Tomorrow, "TeknoAXE", "Skyrise for Tomorrow", "(4:09)", 1 ); songI++;
+
+
+
+
+#endregion
 
 #region unlocked
 
@@ -1003,10 +1034,10 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Twin2_Talk; 		  break;			
 				   
 			  case  "victor angry":  
-				   sprIdleStatic   = spr_Dialog_Victor_IdleStatic;
-				   sprIdle_        = spr_Dialog_Victor_Idle; 
+				   sprIdleStatic   = spr_Dialog_VictorAngry_Idle;
+				   sprIdle_        = spr_Dialog_VictorAngry_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;		
+				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;		
 				   
 			  case  "duke angry":  
 				   sprIdleStatic   = spr_Dialog_Duke_IdleStatic;
@@ -1022,7 +1053,7 @@ indexSet++;
 				   
 				   
 				   
-              ////// smiling
+              ////// smiling/happy
 			  case  "jez smiling": 			  
 				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
 				   sprIdle_        = spr_Dialog_Jez_Idle; 
@@ -1092,10 +1123,10 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Twin2_Talk; 		  break;			
 				   
 			  case  "victor smiling":  
-				   sprIdleStatic   = spr_Dialog_Victor_IdleStatic;
-				   sprIdle_        = spr_Dialog_Victor_Idle; 
+				   sprIdleStatic   = spr_Dialog_VictorSmiling_Idle;
+				   sprIdle_        = spr_Dialog_VictorSmiling_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;		
+				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;		
 				   
 			  case  "duke smiling":  
 				   sprIdleStatic   = spr_Dialog_Duke_IdleStatic;
@@ -1179,8 +1210,8 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Twin2_Talk; 		  break;			
 				   
 			  case  "victor dismissive":  
-				   sprIdleStatic   = spr_Dialog_Victor_IdleStatic;
-				   sprIdle_        = spr_Dialog_Victor_Idle; 
+				   sprIdleStatic   = spr_Dialog_VictorDismissive_Idle;
+				   sprIdle_        = spr_Dialog_VictorDismissive_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;		
 				   
@@ -1195,6 +1226,15 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Wife_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
+
+
+              // grumpy 
+			  case  "victor gumpy":  
+				   sprIdleStatic   = spr_Dialog_VictorGrumpy_Idle;
+				   sprIdle_        = spr_Dialog_VictorGrumpy_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;	
+
 
 
 
