@@ -963,6 +963,18 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
 
+			  case  "weather default":  
+				   sprIdleStatic   = spr_Dialog_Weather_IdleStatic;
+				   sprIdle_        = spr_Dialog_Weather_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+
+			  case  "betty default":  
+				   sprIdleStatic   = spr_Dialog_Betty_IdleStatic;
+				   sprIdle_        = spr_Dialog_Betty_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Betty_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Betty_Talk; 		    break;	
+
 
               // angry
 			  case  "jez angry": 			  
@@ -990,10 +1002,10 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_AngryDad_Talk; 		break;			  
 			  
 			  case  "granny angry":		  
-				   sprIdleStatic   = spr_Dialog_Granny_IdleStatic;
-				   sprIdle_        = spr_Dialog_Granny_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Granny_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Granny_Talk; 		break;			  
+				   sprIdleStatic   = spr_Dialog_GrannyAngry_IdleStatic;
+				   sprIdle_        = spr_Dialog_GrannyAngry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_GrannyAngry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_GrannyAngry_Talk; 		break;			  
 	
 			  case  "kyle angry":		  
 				   sprIdleStatic   = spr_Dialog_Kyle_IdleStatic;
@@ -1015,8 +1027,8 @@ indexSet++;
 		  
 				   
 			  case  "shadow angry":  
-				   sprIdleStatic   = spr_Dialog_Shadow_IdleStatic;
-				   sprIdle_        = spr_Dialog_Shadow_Idle; 
+				   sprIdleStatic   = spr_Dialog_ShadowAngry_Idle;
+				   sprIdle_        = spr_Dialog_ShadowAngry_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;				   
 				   
@@ -1079,8 +1091,8 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_AngryDad_Talk; 		break;			  
 			  
 			  case  "granny smiling":		  
-				   sprIdleStatic   = spr_Dialog_Granny_IdleStatic;
-				   sprIdle_        = spr_Dialog_Granny_Idle; 
+				   sprIdleStatic   = spr_Dialog_GrannyHappy_IdleStatic;
+				   sprIdle_        = spr_Dialog_GrannyHappy_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Granny_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Granny_Talk; 		break;			  
 	
@@ -1104,8 +1116,8 @@ indexSet++;
 		  
 				   
 			  case  "shadow smiling":  
-				   sprIdleStatic   = spr_Dialog_Shadow_IdleStatic;
-				   sprIdle_        = spr_Dialog_Shadow_Idle; 
+				   sprIdleStatic   = spr_Dialog_ShadowHappy_Idle;
+				   sprIdle_        = spr_Dialog_ShadowHappy_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;				   
 				   
@@ -1140,6 +1152,13 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
 
+			  case  "betty smiling":  
+				   sprIdleStatic   = spr_Dialog_BettySmiling_IdleStatic;
+				   sprIdle_        = spr_Dialog_BettySmiling_Idle; 
+				   sprTalkStatic_  = spr_Dialog_BettySmiling_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_BettySmiling_Talk; 		    break;	
+
+
                // dismissive
 			  case  "jez dismissive": 			  
 				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
@@ -1166,14 +1185,14 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_AngryDad_Talk; 		break;			  
 			  
 			  case  "granny dismissive":		  
-				   sprIdleStatic   = spr_Dialog_Granny_IdleStatic;
-				   sprIdle_        = spr_Dialog_Granny_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Granny_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Granny_Talk; 		break;			  
+				   sprIdleStatic   = spr_Dialog_GrannyDismissive_IdleStatic;
+				   sprIdle_        = spr_Dialog_GrannyDismissive_Idle; 
+				   sprTalkStatic_  = spr_Dialog_GrannyDismissive_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_GrannyDismissive_Talk; 		break;			  
 	
 			  case  "kyle dismissive":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_IdleStatic;
-				   sprIdle_        = spr_Dialog_Kyle_Idle; 
+				   sprIdleStatic   = spr_Dialog_KyleDumb_IdleStatic;
+				   sprIdle_        = spr_Dialog_KyleDumb_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
 
@@ -1191,8 +1210,8 @@ indexSet++;
 		  
 				   
 			  case  "shadow dismissive":  
-				   sprIdleStatic   = spr_Dialog_Shadow_IdleStatic;
-				   sprIdle_        = spr_Dialog_Shadow_Idle; 
+				   sprIdleStatic   = spr_Dialog_ShadowDismissive_Idle;
+				   sprIdle_        = spr_Dialog_ShadowDismissive_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;				   
 				   
@@ -1228,29 +1247,40 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
 
 
+
+
               // grumpy 
-			  case  "victor gumpy":  
+			  case  "victor grumpy":  
 				   sprIdleStatic   = spr_Dialog_VictorGrumpy_Idle;
 				   sprIdle_        = spr_Dialog_VictorGrumpy_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;	
 
+			  case  "shadow grumpy":  
+				   sprIdleStatic   = spr_Dialog_ShadowUnHappy_Idle;
+				   sprIdle_        = spr_Dialog_ShadowUnHappy_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;	
+
+
+
+              // shocked  
+			  case  "shadow shocked":  
+				   sprIdleStatic   = spr_Dialog_ShadowShocked_Idle;
+				   sprIdle_        = spr_Dialog_ShadowShocked_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;	
+
 
 
 
               // new -> unique
-			  case  "betty default":  
-				   sprIdleStatic   = spr_Dialog_Betty_IdleStatic;
-				   sprIdle_        = spr_Dialog_Betty_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
-				   
-			  case  "betty smiling":  
-				   sprIdleStatic   = spr_Dialog_BettySmiling_IdleStatic;
-				   sprIdle_        = spr_Dialog_BettySmiling_Idle; 
-				   sprTalkStatic_  = spr_Dialog_BettySmiling_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_BettySmiling_Talk; 		    break;					   
-				   
+
+				 				   
+
+
+
+
                 //////////// randoms!
               #region randoms!
 

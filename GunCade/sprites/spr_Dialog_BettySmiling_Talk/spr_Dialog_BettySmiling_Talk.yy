@@ -26,7 +26,7 @@
   "origin": 1,
   "parent": {
     "name": "Smiling",
-    "path": "folders/Sprites/Dialog/Characters/Betty/Smiling.yy",
+    "path": "folders/Sprites/Dialog/Characters/Betty_News/Smiling.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

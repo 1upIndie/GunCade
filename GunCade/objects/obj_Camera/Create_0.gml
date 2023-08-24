@@ -132,6 +132,9 @@ if (display_Width == 2560 and display_Height == 2048 )  { Aspect_Ratio_Width = 1
 display_Width  = 1440;
 display_Height =  1080;
 
+display_Width  = 65*16; // 1040
+display_Height =  65*9; // 585
+
 // full display size set window and application surface  
 window_set_size(display_Width, display_Height );  
 surface_resize(application_surface, display_Width, display_Height ); 

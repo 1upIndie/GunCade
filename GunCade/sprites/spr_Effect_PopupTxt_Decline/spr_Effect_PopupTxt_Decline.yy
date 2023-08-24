@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Effect",
-    "path": "folders/Sprites/Effect.yy",
+    "name": "PopUp",
+    "path": "folders/Sprites/Effect/PopUp.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

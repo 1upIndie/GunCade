@@ -2,15 +2,10 @@
 var txt = "nope";
 var count = 0;
 
+var calc1 = camera_get_view_width(view_camera[0] );
+var calc2 = camera_get_view_height(view_camera[0] );
+
+txt = string(calc1 ) + " : " + string(calc2 );
 
 
-
-if instance_exists(obj_Selected_WeaponDetailTxt){
-
-txt = "Yes";
-
-
-} else {  txt = "nope"; }
-
-txt = obj_Control_All.setSeed;
 draw_text(x,y, txt)
