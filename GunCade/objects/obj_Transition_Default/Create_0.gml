@@ -16,3 +16,6 @@ stickAroundTimer = 15;
 
 alphaSet = 0; 
 fadeColor = c_black;
+
+
+// end command?

@@ -8,6 +8,8 @@ debug = true;
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
+roomToJump = room_StartScreen;
+
 
 alarm[0] = 4;
 //room_goto(roomToJump);

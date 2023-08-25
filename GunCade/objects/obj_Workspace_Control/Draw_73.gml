@@ -1,6 +1,6 @@
 /// @description 
 
-
+if(blockDraw == true){ exit; }
 // black background for text!
 draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, c_black,  blackBoxAlpha );
 

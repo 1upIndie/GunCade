@@ -1,17 +1,17 @@
 /// @description 
-
+obj_Workspace_Control.blockDraw = true;
 // timers
 state = "wait";  // wait, character, wait2 name, descritpion
 
- stateTimer_Wait          = round(2*60);
+ stateTimer_Wait          = round(1.2*60);
 
  stateTimer_Character     = 12;
- stateTimer_Wait2         = round(1.5*60); 
+ stateTimer_Wait2         = round(0.8*60); 
  
- stateTimer_Name          = 30;
- stateTimer_Wait3         = round(1.2*60); 
+ stateTimer_Name          = 25;
+ stateTimer_Wait3         = round(0.8*60); 
 
- stateTimer_Description   = 30;
+ stateTimer_Description   = 25;
  stateTimer_Wait4         = round(6*60); 
 
 
@@ -28,7 +28,7 @@ character_Spr = spr_Nothing;
 
 character_Spr = spr_Dialog_Betty_Idle;
  character_Spr_X  = 270;
- character_Spr_Y  = 70;
+ character_Spr_Y  = 50;
  character_SprScale = 0.75;
 
 
@@ -50,7 +50,7 @@ name_AniCurve_I = 0;
 
 
 name_Spr = spr_Nothing;
- name_Spr_X  = 450;
+ name_Spr_X  = 480;
  name_Spr_Y  = 100;
  name_SprScale = 1;
 
@@ -89,6 +89,6 @@ description_Spr = spr_Nothing;
   blackBgr_BottomY = 70;
   
   
-  blackBgr_Timer = 8;
+  blackBgr_Timer = 4;
   alarm[0] = blackBgr_Timer;
   #endregion

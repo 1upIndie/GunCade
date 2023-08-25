@@ -8,7 +8,7 @@ var mb = mouse_check_button_released(mb_right);
 
 if(mb == true){
 	
-var bgr  = instance_create_layer(0,0, "Instances_Effects" ,      obj_PopUp_NewCharacterBgr);
+var bgr  = instance_create_layer(0,0, "Instances_CharacterReveal_Bgr" ,      obj_PopUp_NewCharacterBgr);
 var char = instance_create_layer(0,0, "Instances_OverlayPopUp" , obj_PopUp_NewCharacter);
 
 char.character_Spr   = spr_Dialog_Betty_Idle;

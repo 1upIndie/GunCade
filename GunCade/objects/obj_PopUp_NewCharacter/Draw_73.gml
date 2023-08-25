@@ -11,12 +11,12 @@ var col = c_white;
 // draw character
 
 
-// draw bottom and top black bars
+// draw top black bar
 
 draw_sprite_ext(spr_Character_Reveal_BgrScroll, blackBgr_Index, camX + (camWidth/2) ,camY+blackBgr_TopY, blackBgr_XScale,blackBgr_YScaleTop, blackBgr_AngleTop , c_white, 1 );
 
 
-draw_sprite_ext(spr_Character_Reveal_BgrScroll, blackBgr_Index, camX + (camWidth/2) ,camY+camHeight - blackBgr_BottomY, blackBgr_XScale, blackBgr_YScaleBottom, blackBgr_AngleBottom , c_white, 1 );
+
 
 #region draw character
 
@@ -38,6 +38,8 @@ draw_sprite_ext(spr_Character_Reveal_BgrScroll, blackBgr_Index, camX + (camWidth
   
 #endregion
 
+// draw bottom black bar
+draw_sprite_ext(spr_Character_Reveal_BgrScroll, blackBgr_Index, camX + (camWidth/2) ,camY+camHeight - blackBgr_BottomY, blackBgr_XScale, blackBgr_YScaleBottom, blackBgr_AngleBottom , c_white, 1 );
 
 #region draw name
 

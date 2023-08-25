@@ -105,7 +105,12 @@ if(state == "wait 4" ){
 // end all
 if(state == "end" ){
 
-instance_destroy(obj_PopUp_NewCharacterBgr);
-instance_destroy();
+
+// after effect fade in and out
+var fadeInOut = instance_create_layer(x,y, "Instances_OverlayPopUp", obj_Transition_FadeInOut);
+    fadeInOut.command_Inblack = "end reveal";
+
+state = "limbo";
+
 }	
 #endregion
