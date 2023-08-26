@@ -11,7 +11,7 @@ demo  = true;
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
 roomToJump = room_StartScreen;
-
+roomToJump = room_DemoEnd;
 
 alarm[0] = 4;
 //room_goto(roomToJump);
@@ -708,8 +708,8 @@ function createSong( id_, isUnique_,   song_, nameOwner_, nameSong_, length_, is
 arraySongs = array_create(0);
 var songI = 0;
 
- arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Darkest_Before_Dawn , "ncalib", "Darkest Before Dawn" , "(4:11)", 1 ); songI++;
- arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Skyrise_for_Tomorrow, "ncalib", "Skyrise for Tomorrow", "(4:09)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Darkest_Before_Dawn , "ncalib", "Spicy Cream" , "(4:11)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_Music_ncalib_Mokka_EarlyMorning, "ncalib", "Early Mornin", "(4:09)", 1 ); songI++;
 
 
 

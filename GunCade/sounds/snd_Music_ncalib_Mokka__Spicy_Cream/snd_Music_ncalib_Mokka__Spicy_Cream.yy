@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_Music_ncalib_Mokka__Spicy_Cream_Ogg",
+  "name": "snd_Music_ncalib_Mokka__Spicy_Cream",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_Music_ncalib_Mokka__Spicy_Cream_Ogg.ogg",
+  "soundFile": "snd_Music_ncalib_Mokka__Spicy_Cream.ogg",
   "type": 0,
   "volume": 1.0,
 }
