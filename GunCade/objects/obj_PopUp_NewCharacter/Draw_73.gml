@@ -62,9 +62,9 @@ draw_sprite_ext(spr_Character_Reveal_BgrScroll, blackBgr_Index, camX + (camWidth
 
 #endregion
 
-
-draw_text( camX+50, camY+50, name_Spr_XMove);
-draw_text( camX+50, camY+90, name_AniCurve_I);
-
+if(obj_Control_All.debug == true){
+	draw_text( camX+50, camY+50, name_Spr_XMove);
+	draw_text( camX+50, camY+90, name_AniCurve_I);
+}
 
 

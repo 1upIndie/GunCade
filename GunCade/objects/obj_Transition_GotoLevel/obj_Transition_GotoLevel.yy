@@ -1,19 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Button_Start",
+  "name": "obj_Transition_GotoLevel",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,},
   ],
-  "managed": false,
+  "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Start",
-    "path": "folders/Objects/Startscreen/Start.yy",
+    "name": "Transition",
+    "path": "folders/Objects/Effects/Transition.yy",
   },
   "parentObjectId": {
-    "name": "obj_Button_Parent",
-    "path": "objects/obj_Button_Parent/obj_Button_Parent.yy",
+    "name": "obj_Transition_Parent",
+    "path": "objects/obj_Transition_Parent/obj_Transition_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_Ui_Button_Start",
-    "path": "sprites/spr_Ui_Button_Start/spr_Ui_Button_Start.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -785,7 +785,7 @@ unlocked_WeaponType_Accessory[6] = true;
 
 
 currentCutscene_DAY = 0;
-
+currentCutscene     = 0;
 
 #region choises and saved values through the game
 
@@ -793,7 +793,7 @@ volume_Master = 1;
 volume_Sfx    = 1;
 volume_Music  = 1;
 
-screenScale  = 2; // default value!
+screenScale  = 1; // default value!
 fullscreen = false;
 
 

@@ -4,10 +4,10 @@ if ( settings_SprI >= 1){  settings_SprI--;  };
 
 var multiFactor = 40;
 switch(settings_SprI){
-  case 0: multiFactor = 40 * 1; obj_Control_All.screenScale = 1;   break;
-  case 1: multiFactor = 40 * 2; obj_Control_All.screenScale = 2;   break;
-  case 2: multiFactor = 40 * 3; obj_Control_All.screenScale = 3;   break;
-  case 3: multiFactor = 40 * 4; obj_Control_All.screenScale = 4;   break;
+  case 0: multiFactor = factorCam * 1; obj_Control_All.screenScale = 1;   break;
+  case 1: multiFactor = factorCam * 2; obj_Control_All.screenScale = 2;   break;
+  case 2: multiFactor = factorCam * 3; obj_Control_All.screenScale = 3;   break;
+  case 3: multiFactor = factorCam * 4; obj_Control_All.screenScale = 4;   break;
 }
 
 // 640 360       * 40  #1

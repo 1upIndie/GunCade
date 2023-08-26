@@ -8,7 +8,7 @@
 buttonX = 110;
 
 var startY      = 50;
-var startYStack = 50; 
+var startYStack = 58; 
 buttonY[1] = startY + (0 * startYStack);
 buttonY[2] = startY + (1 * startYStack);
 buttonY[3] = startY + (2 * startYStack);

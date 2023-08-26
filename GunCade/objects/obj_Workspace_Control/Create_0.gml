@@ -14,7 +14,7 @@ dayTemp_Cash_Tip = 0;
 
 var sumCash = 0;
 var cashI = 1;
-repeat( obj_Control_All.currentCutscene-1){
+repeat( obj_Control_All.currentCutscene - 1){
 
   sumCash += obj_Control_All.cashCollectedDay[cashI]; 
 
