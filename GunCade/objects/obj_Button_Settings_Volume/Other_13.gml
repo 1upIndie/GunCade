@@ -6,6 +6,8 @@ if(obj_Control_All.volume_Master >= 0.05){ obj_Control_All.volume_Master -= 0.05
 // apply
 audio_master_gain(obj_Control_All.volume_Master);
 
+
+
 // translate into i
 switch(obj_Control_All.volume_Master){
 	

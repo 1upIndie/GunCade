@@ -704,8 +704,8 @@ function createSong( id_, isUnique_,   song_, nameOwner_, nameSong_, length_, is
 arraySongs = array_create(0);
 var songI = 0;
 
- arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Darkest_Before_Dawn , "TeknoAXE", "Darkest Before Dawn" , "(4:11)", 1 ); songI++;
- arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Skyrise_for_Tomorrow, "TeknoAXE", "Skyrise for Tomorrow", "(4:09)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Darkest_Before_Dawn , "ncalib", "Darkest Before Dawn" , "(4:11)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Skyrise_for_Tomorrow, "ncalib", "Skyrise for Tomorrow", "(4:09)", 1 ); songI++;
 
 
 
@@ -3048,11 +3048,10 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1,"kyle", "Right on boss man. I got this.", snd_TextScroll_Default );	
 	 
 	 if(demo  == true){
-		 var jumpToRoomEnd = instance_create_layer(x,y, "Instances_Effects", obj_Transition_GotoLevel );
-             jumpToRoomEnd.levelJumpTo = room_DemoEnd;
+		arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_DemoEnd; 
+	 
 		 
-		 
-		 } else {  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;	}	 
+		 } else {   arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;	}	 
 
 #endregion
 
@@ -10338,5 +10337,8 @@ ini_close();
 
 /// apply if needed
 if(fullscreen == 1){ window_set_fullscreen(1);  }
+
+// apply
+audio_master_gain(obj_Control_All.volume_Master);
 
 #endregion
