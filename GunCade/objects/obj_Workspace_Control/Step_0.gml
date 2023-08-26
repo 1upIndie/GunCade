@@ -17,7 +17,7 @@ var typeWriterPosition = typist.get_state();
 // button to skip
 var buttonSkip = 0;
 if(blockInput == false){
-	buttonSkip = keyboard_check_released(vk_space);  
+	buttonSkip = scr_InputCheck( "any key" );  
 
 
 // next ->
