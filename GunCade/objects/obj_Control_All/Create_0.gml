@@ -4,18 +4,18 @@
 
 
 
-debug = true;
+debug = false;
 demo  = true;
 
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
 roomToJump = room_StartScreen;
-roomToJump = room_DemoEnd;
+//roomToJump = room_DemoEnd;
 
 alarm[0] = 4;
 //room_goto(roomToJump);
-audio_master_gain(0.05);
+
 
 fontSpriteNum       = font_add_sprite_ext(spr_Sprite_font_Numbers, "0123456789$", true, 0   );
 fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "0123456789$", true, 0   );
@@ -10335,7 +10335,7 @@ var day_I = 0; // day 1
 
 
 ini_open("data.bob");
- volume_Master =  ini_read_real("settings", "master volume", 0.7);
+ volume_Master =  ini_read_real("settings", "master volume", 0.5);
  volume_Sfx    =  ini_read_real("settings", "volume sfx",    1);  
  volume_Music  =  ini_read_real("settings", "volume music",  1);  
 

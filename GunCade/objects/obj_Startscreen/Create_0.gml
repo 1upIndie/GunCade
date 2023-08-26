@@ -22,7 +22,7 @@ alarm[0] = 2;
   spr_LogoY = 235;
  
   spr_Scale = 0.32;
-  
+  spr_ScaleLogo = 0.28;  
    spr_CharAlpha[1] = 0;
    spr_CharAlpha[2] = 0;   
    spr_CharAlpha[3] = 0; 
