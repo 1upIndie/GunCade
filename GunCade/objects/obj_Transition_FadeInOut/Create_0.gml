@@ -19,6 +19,6 @@ fadeColor = c_black;
 
 
 // end command?
-command = "";     // do on destruction
+command = "unblock";     // do on destruction
 command_Inblack = ""; // do sneak in between
 command_InblackOnce = false;

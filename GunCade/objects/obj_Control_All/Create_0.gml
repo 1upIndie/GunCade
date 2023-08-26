@@ -5,6 +5,8 @@
 
 
 debug = true;
+demo  = true;
+
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
@@ -1897,14 +1899,18 @@ var day_I = 0; // day 1
    
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); ///-> orginal!
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Victor;	 
 	 dialog_I++;
-	 
+
+
+/*
 	 // test block!
      arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
 	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_MiniGame_RandomSale_Day1; // testing random sale
     // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+*/
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor default"  , "");
@@ -2158,6 +2164,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  2, "unknown", "Hello... ", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Shadow;		 
 	 dialog_I++;		 
 	 
 	 
@@ -2465,7 +2472,8 @@ var day_I = 0; // day 1
 #region Granny
 
      arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh, here comes someone already.)", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh, here comes someone already.)", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Granny;		 
 	 dialog_I++;	
 
 
@@ -2647,7 +2655,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Uhm, eh... I. What can I do for you Jez?", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Uhm, eh... I. What can I do for you Jez?", snd_TextScroll_Default );
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Jez;		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  , "");	
@@ -2905,6 +2914,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1,"wife", "Hello, dear...", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Jez;	 
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  , "");	
@@ -3020,7 +3030,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3,"player", "Kyle, where are you?", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3,"player", "Kyle, where are you?", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Kyle;	 
 	 dialog_I++;
 
 
@@ -3035,7 +3046,13 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1,"kyle", "Right on boss man. I got this.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;		 
+	 
+	 if(demo  == true){
+		 var jumpToRoomEnd = instance_create_layer(x,y, "Instances_Effects", obj_Transition_GotoLevel );
+             jumpToRoomEnd.levelJumpTo = room_DemoEnd;
+		 
+		 
+		 } else {  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;	}	 
 
 #endregion
 

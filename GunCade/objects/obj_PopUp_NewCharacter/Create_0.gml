@@ -92,3 +92,11 @@ description_Spr = spr_Nothing;
   blackBgr_Timer = 4;
   alarm[0] = blackBgr_Timer;
   #endregion
+  
+  
+  #region skip
+  
+  instantSkip = false;
+  
+  
+  #endregion

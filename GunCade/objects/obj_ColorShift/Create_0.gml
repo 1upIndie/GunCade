@@ -7,7 +7,7 @@ hue = 0;
 sat = 180;
 lum = 240;
 
-alphaSet = 0.1;
+alphaSet = 0.07;
 
 
 depth = 590;

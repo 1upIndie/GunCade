@@ -103,14 +103,27 @@ if(state == "wait 4" ){
 	
 
 // end all
-if(state == "end" ){
+if(state == "end" ){  instantSkip = true; // disable
 
 
 // after effect fade in and out
 var fadeInOut = instance_create_layer(x,y, "Instances_OverlayPopUp", obj_Transition_FadeInOut);
     fadeInOut.command_Inblack = "end reveal";
-
+    fadeInOut.command = "unblock disable layer visible";
 state = "limbo";
 
 }	
 #endregion
+
+
+  // instant skip
+  var checkInput = scr_InputCheck("any key");
+   
+  if(checkInput == 1 and instantSkip == false){  
+	  
+	  scr_PlaySound(snd_MenueSfx_Skip);
+	  state = "end";
+	  description_Spr_XMove = 0;
+	  name_Spr_XMove        = 0;
+	  character_Spr_YMove   = 0;
+	  }
