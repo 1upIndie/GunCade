@@ -30,3 +30,8 @@ settings_SprX = x + 120;
 settings_SprY = y;
 
 
+// sound
+sound_Left  = snd_MenueSfx_Click;
+sound_Right = snd_MenueSfx_Reduce;
+
+

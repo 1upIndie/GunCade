@@ -2,6 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
 function scr_PlaySound(sound_){
 	
-	audio_play_sound(sound_,1, 0 );
+	audio_play_sound(sound_, 1, 0 );
 
 }

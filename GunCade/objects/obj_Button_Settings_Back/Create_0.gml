@@ -6,9 +6,5 @@
 // Inherit the parent event
 event_inherited();
 
-isSetting = true;
-settings_Spr  = spr_Ui_Button_OffOn;
-settings_SprI = 0;
-
-sound_Left  = snd_MenueSfx_Click;
-sound_Right = snd_MenueSfx_Click;
+sound_Left  = snd_MenueSfx_Back;
+sound_Right = snd_MenueSfx_Back;
