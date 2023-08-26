@@ -71,6 +71,6 @@ moveRightAmount = 80;
  #endregion
 
 // create buttons!
-buttonX = 110;
-buttonY[1] = 150;
-buttonY[2] = 210;
+skipToButtons = false;
+
+

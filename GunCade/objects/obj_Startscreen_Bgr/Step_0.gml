@@ -112,19 +112,34 @@ var _val = animcurve_channel_evaluate(  moveRight_AniCurve, moveRight_AniCurve_I
 // buttons spawn!	
 if( state == "buttons popup"){
 
-var camX  = camera_get_view_x(view_camera[0] );
-var camY  = camera_get_view_y(view_camera[0] );
 
-	instance_create_layer( camX + buttonX, camY + buttonY[1],  "Instances_Buttons", obj_Button_Start );
-	instance_create_layer( camX + buttonX, camY + buttonY[2],  "Instances_Buttons", obj_Button_Back );	
-	
+ instance_create_layer(-2000, -2000, layer, obj_Pause_SpawnButtons_Start);
+ 	
 }
 
 
-scr_C
+if(skipToButtons == false){
+  var checkInput = scr_InputCheck("any key");
+  
+  if(checkInput == 1){  skipToButtons = true;
+	  
+	// set values to full!
+	state = "buttons popup";
+	   spr_CharAlpha[1] = 1;
+	   spr_CharAlpha[2] = 1;   
+	   spr_CharAlpha[3] = 1; 
+	   spr_CharAlpha[4] = 1; 	
+	   sprMoveX = moveRightAmount;
+	  
+    // instant skip!
+	instance_create_layer( camX , camY,  "Instances_Buttons", obj_Effect_Txt_PopUpGoUp_Slip );	  
+	  
+	  
+	  
+	  }
+}
 
-// instant skip!
-	instance_create_layer( camX , camY,  "Instances_Buttons", obj_Effect_Txt_PopUpGoUp_Slip );
+
 
 	
 	

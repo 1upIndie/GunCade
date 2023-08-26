@@ -1,13 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Button_Back",
-  "eventList": [],
+  "name": "obj_Button_Settings_Fullscreen",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":13,"eventType":7,"isDnD":false,},
+  ],
   "managed": false,
   "overriddenProperties": [],
   "parent": {
-    "name": "Startscreen",
-    "path": "folders/Objects/Startscreen.yy",
+    "name": "Settings",
+    "path": "folders/Objects/Startscreen/Settings.yy",
   },
   "parentObjectId": {
     "name": "obj_Button_Parent",
@@ -29,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Ui_Button_Back",
-    "path": "sprites/spr_Ui_Button_Back/spr_Ui_Button_Back.yy",
+    "name": "spr_Ui_Button_Fullscreen",
+    "path": "sprites/spr_Ui_Button_Fullscreen/spr_Ui_Button_Fullscreen.yy",
   },
   "spriteMaskId": null,
   "visible": true,

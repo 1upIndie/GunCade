@@ -6,8 +6,8 @@
   "managed": false,
   "overriddenProperties": [],
   "parent": {
-    "name": "Startscreen",
-    "path": "folders/Objects/Startscreen.yy",
+    "name": "Start",
+    "path": "folders/Objects/Startscreen/Start.yy",
   },
   "parentObjectId": {
     "name": "obj_Button_Parent",

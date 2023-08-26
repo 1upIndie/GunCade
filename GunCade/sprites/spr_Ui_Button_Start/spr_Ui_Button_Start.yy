@@ -48,8 +48,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "Stats",
-    "path": "folders/Sprites/UI/Stats.yy",
+    "name": "Menue_Default",
+    "path": "folders/Sprites/UI/Menue_Default.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

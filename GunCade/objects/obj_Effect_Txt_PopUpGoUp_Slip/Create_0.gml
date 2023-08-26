@@ -6,7 +6,7 @@
 // Inherit the parent event
 event_inherited();
 
-var size = 0.1;
+var size = 0.3;
 
 image_xscale = size;
 image_yscale = size;

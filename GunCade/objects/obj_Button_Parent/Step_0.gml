@@ -13,12 +13,22 @@ state = "hover";
 }} 
 
 
-// clicking on!
+// check mouse click only in hover over!
+
+
 if(state == "hover" and canClick == true){
-	canClick = false;
-    event_user(2);
+	
+	var mouseL = mouse_check_button_released(mb_left);
+	var mouseR = mouse_check_button_released(mb_right);	
+	
+	if(mouseL == 1 and mouseR == 0){   event_user(2);  } // left
+	if(mouseL == 0 and mouseR == 1){   event_user(3);  } // right
+
 
 }
+
+
+
 
 
 

@@ -789,9 +789,9 @@ currentCutscene_DAY = 0;
 
 #region choises and saved values through the game
 
-
-volume_Sfx   = 1;
-volume_Music = 1;
+volume_Master = 1;
+volume_Sfx    = 1;
+volume_Music  = 1;
 
 
 // cash saved
