@@ -2,7 +2,7 @@
 event_inherited();
 
 
- possible_Weapon_Perfect             = 70;   // index numbers! pistol 1
+ possible_Weapon_Perfect             = 70;   // index numbers! blowdart gun
  // possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  // possible_Muzzle_Perfect          = -999;  
  // possible_Optics_Perfect          = -999; 

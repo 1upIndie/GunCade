@@ -1,6 +1,7 @@
 /// @description sound control!
 
 
+alarm[1] = 5*60; // clean up all songs
 
 if(room == room_StartScreen){
 	

@@ -20,8 +20,9 @@ if (state == "fade in"){
 
 	channelTimer  += (1/channelTimeFadeIn);
 	if(channelTimer >= 1){  instance_destroy();  }
-alphaSet = animcurve_channel_evaluate(_channel, channelTimer );	
-
+	
+	var get = animcurve_channel_evaluate(_channel, channelTimer );	
+alphaSet = 1 - get;
 
 }
 

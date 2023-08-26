@@ -33,7 +33,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Icons_parent_Full",
+    "path": "sprites/spr_Icons_parent_Full/spr_Icons_parent_Full.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

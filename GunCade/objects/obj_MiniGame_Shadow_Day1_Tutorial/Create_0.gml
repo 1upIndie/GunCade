@@ -34,9 +34,9 @@ event_inherited();
  
  
  // jump to points
-  result_Index_Sale      = 101;
-  result_Index_Messup    = 103; 
-  result_Index_Refuse    = 102;
+  result_Index_Sale      = 110;
+  result_Index_Messup    = 120; 
+  result_Index_Refuse    = 130;
  
  /*
  0,1,2 melee

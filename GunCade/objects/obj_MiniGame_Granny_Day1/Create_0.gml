@@ -36,8 +36,8 @@ event_inherited();
  
  // jump to points
   result_Index_Sale      = 200;
-  result_Index_Refuse    = 201;
-  result_Index_Messup    = 204;  
+  result_Index_Refuse    = 204;
+  result_Index_Messup    = 208;  
  /*
  0,1,2 melee
 10,11,12 pistol

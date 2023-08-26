@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Pause_SpawnButtons_Settings",
+  "name": "obj_Dialog_SkipIndex_to_390",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons_and_Spawning",
-    "path": "folders/Objects/Buttons_and_Spawning.yy",
+    "name": "Skip",
+    "path": "folders/Objects/Cutscenes/MiniGame/Skip.yy",
   },
   "parentObjectId": {
-    "name": "obj_Pause_SpawnButtons_Parent",
-    "path": "objects/obj_Pause_SpawnButtons_Parent/obj_Pause_SpawnButtons_Parent.yy",
+    "name": "obj_Dialog_SkipIndex_To_Parent",
+    "path": "objects/obj_Dialog_SkipIndex_To_Parent/obj_Dialog_SkipIndex_To_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

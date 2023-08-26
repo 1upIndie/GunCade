@@ -61,7 +61,7 @@ fade2ndRow_AniCurve_Time = fadeDefault;
 
 fadeLogo_AniCurve   = animcurve_get_channel( aniCurve_CharPopIn_Bounce, 0 );
 fadeLogo_AniCurve_I = 0;
-fadeLogo_AniCurve_Time = 115;
+fadeLogo_AniCurve_Time = 150;
 fadeLogo_PlayOnce = false;
 
 
