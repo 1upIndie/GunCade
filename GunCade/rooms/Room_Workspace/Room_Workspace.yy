@@ -32,7 +32,7 @@
         {"name":"g_GlowIntensity","type":0,"value":"0.3",},
         {"name":"g_GlowGamma","type":0,"value":"0",},
         {"name":"g_GlowAlpha","type":0,"value":"0.8",},
-      ],"userdefinedDepth":false,"visible":true,},
+      ],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_Underwater","depth":300,"effectEnabled":true,"effectType":"_filter_underwater","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
         {"name":"g_Distort2Speed","type":0,"value":"0.025",},

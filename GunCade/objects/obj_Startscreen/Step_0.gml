@@ -85,6 +85,9 @@ var _val = animcurve_channel_evaluate(  fadeLogo_AniCurve, fadeLogo_AniCurve_I  
 
    spr_CharAlpha[4] = _val;
    
+if( fadeLogo_AniCurve_I >= 0.5 and fadeLogo_PlayOnce == false ){ fadeLogo_PlayOnce = true;
+   scr_PlaySound(snd_StartScreen_LogoPopup); }
+   
    if( fadeLogo_AniCurve_I >= 1 ){ state = "wait5";  }
 }
 	
@@ -117,6 +120,16 @@ if( state == "buttons popup"){  skipToButtons = true; // nullify chance
  
  state = "limbo";
 }
+
+
+if( state == "limbo"){
+		timerWaitLimbo--;
+		if(timerWaitLimbo <= 0){ spr_Char[1] = spr_Ui_Startscreen_Vic2;
+		 state = "limbo endless";
+		}
+}
+
+
 
 
 if(skipToButtons == false){

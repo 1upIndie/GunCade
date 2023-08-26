@@ -683,7 +683,11 @@ tvIndexI++;
 
 #endregion
 
-#region songs
+#region sound fixed + songs
+
+audioFixed_FadeOut = 500;
+audioFixed_FadeIn  = 500;
+
 
 function createSong( id_, isUnique_,   song_, nameOwner_, nameSong_, length_, isUnlocked_ ) constructor{
 

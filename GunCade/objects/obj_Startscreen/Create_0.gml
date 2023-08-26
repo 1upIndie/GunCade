@@ -1,6 +1,6 @@
 /// @description 
 
-	audio_play_sound(snd_Music_ncalib_Mokka__Spicy_Cream_Ogg, 1, 1 );
+
 
 
  camX  = camera_get_view_x(view_camera[0] );
@@ -41,7 +41,9 @@ alarm[0] = 2;
 	   timerWait[3] = round( timesDefault  * 60);   
 	   timerWait[4] = round( timesDefault4 * 60);   
 	   timerWait[5] = round( timesDefault2 * 60); 
-	   
+
+	   timerWaitLimbo = round(2*60*60);
+	   //timerWaitLimbo = 60*2
 	   
        var fadeDefault = 55;
 fadeVic_AniCurve   = animcurve_get_channel( aniCurve_FadeExpo, 0 );
@@ -60,7 +62,7 @@ fade2ndRow_AniCurve_Time = fadeDefault;
 fadeLogo_AniCurve   = animcurve_get_channel( aniCurve_CharPopIn_Bounce, 0 );
 fadeLogo_AniCurve_I = 0;
 fadeLogo_AniCurve_Time = 115;
-
+fadeLogo_PlayOnce = false;
 
 
 moveRight_AniCurve   = animcurve_get_channel( aniCurve_CharPopIn_Bounce, 0 );
