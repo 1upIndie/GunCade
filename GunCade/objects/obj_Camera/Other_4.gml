@@ -6,7 +6,12 @@ view_visible[0] = true;
 
 var factor = 65;
 
-
+switch( obj_Control_All.screenScale){
+   case 1: factor = 40 * 1; break; 
+   case 2: factor = 40 * 2; break; 
+   case 3: factor = 40 * 3; break; 
+   case 4: factor = 40 * 4; break; 
+}
 
 
 switch(room){

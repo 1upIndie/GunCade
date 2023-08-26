@@ -110,11 +110,12 @@ var _val = animcurve_channel_evaluate(  moveRight_AniCurve, moveRight_AniCurve_I
 	
 	
 // buttons spawn!	
-if( state == "buttons popup"){
+if( state == "buttons popup"){  skipToButtons = true; // nullify chance
 
 
  instance_create_layer(-2000, -2000, layer, obj_Pause_SpawnButtons_Start);
- 	
+ 
+ state = "limbo";
 }
 
 

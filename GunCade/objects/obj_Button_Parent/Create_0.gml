@@ -3,7 +3,10 @@
 
 state = ""; // idle, hover
 
-canClick = true;
+alarm[0] = round( 1.5 * 60);
+canClick = false;
+
+disable = true;
 
 size_Default   = 1;
 

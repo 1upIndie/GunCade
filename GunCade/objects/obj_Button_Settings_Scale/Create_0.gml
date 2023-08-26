@@ -10,6 +10,14 @@ isSetting = true;
 settings_Spr  = spr_Ui_Button_ScaleX;
 settings_SprI = 0;
 
+switch( obj_Control_All.screenScale){
+ case 1: settings_SprI = 0; break;
+ case 2: settings_SprI = 1; break; 
+ case 3: settings_SprI = 2; break;  
+ case 4: settings_SprI = 3; break;  
+} 
+
+
 
 /*
 // get volume to set correct start index

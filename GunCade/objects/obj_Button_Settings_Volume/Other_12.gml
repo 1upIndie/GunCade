@@ -1,7 +1,7 @@
-/// @description go down
+/// @description go up
 
 
-if(obj_Control_All.volume_Master > 0.05){ obj_Control_All.volume_Master -= 0.05;  }
+if(obj_Control_All.volume_Master <= 0.95){ obj_Control_All.volume_Master += 0.05;  }
 
 // apply
 audio_master_gain(obj_Control_All.volume_Master);

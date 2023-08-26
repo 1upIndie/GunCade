@@ -135,6 +135,18 @@ display_Height =  1080;
 display_Width  = 65*16; // 1040
 display_Height =  65*9; // 585
 
+
+var factor = 40;
+switch( obj_Control_All.screenScale){
+   case 1: factor = 40 * 1; break; 
+   case 2: factor = 40 * 2; break; 
+   case 3: factor = 40 * 3; break; 
+   case 4: factor = 40 * 4; break; 
+}
+
+display_Width  = factor*16; // 1040
+display_Height =  factor*9; // 585
+
 // full display size set window and application surface  
 window_set_size(display_Width, display_Height );  
 surface_resize(application_surface, display_Width, display_Height ); 

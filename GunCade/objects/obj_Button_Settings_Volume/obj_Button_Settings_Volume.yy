@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Ui_Button_Back",
-    "path": "sprites/spr_Ui_Button_Back/spr_Ui_Button_Back.yy",
+    "name": "spr_Ui_Button_Volume",
+    "path": "sprites/spr_Ui_Button_Volume/spr_Ui_Button_Volume.yy",
   },
   "spriteMaskId": null,
   "visible": true,

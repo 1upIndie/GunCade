@@ -793,6 +793,9 @@ volume_Master = 1;
 volume_Sfx    = 1;
 volume_Music  = 1;
 
+screenScale  = 2; // default value!
+fullscreen = false;
+
 
 // cash saved
 var cashI = 1;
@@ -10299,3 +10302,24 @@ var day_I = 0; // day 1
 #endregion
 
 // set 
+
+
+
+
+#region override values -> saved stuff
+
+
+ini_open("data.bob");
+ volume_Master =  ini_read_real("settings", "master volume", 0.7);
+ volume_Sfx    =  ini_read_real("settings", "volume sfx",    1);  
+ volume_Music  =  ini_read_real("settings", "volume music",  1);  
+
+ screenScale   =  ini_read_real("settings", "scale",      2);
+ fullscreen    =  ini_read_real("settings", "fullscreen", 0);
+ini_close();
+
+
+/// apply if needed
+if(fullscreen == 1){ window_set_fullscreen(1);  }
+
+#endregion

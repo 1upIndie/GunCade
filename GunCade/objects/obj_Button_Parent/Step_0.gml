@@ -1,5 +1,7 @@
 /// @description 
 
+if(disable == true){  exit; }
+
 
 if(state == "hover"){  event_user(0); }
 
