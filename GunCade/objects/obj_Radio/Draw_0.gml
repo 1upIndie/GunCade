@@ -39,7 +39,10 @@ var mbLeft = mouse_check_button_released(mb_left);
    if(clickOnType == "volume"){  
 	   valumeTotal = getClickOnPostion;
 	   
-	    obj_Control_All.volume_Music = valumeTotal/vol20; 
+	    obj_Control_All.volume_Music  = valumeTotal/vol20; 
+		
+		obj_Control_All.volume_Master = valumeTotal/vol20;
+		audio_master_gain(obj_Control_All.volume_Master);
 	   }
  
  }

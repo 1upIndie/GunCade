@@ -32,6 +32,11 @@ hoverAlpha = 1;
  hoverAlphaTime    = 100;
  hoverAlphaTimeSET = 0;
 
+
+hoverOverDialogBox = false;
+hoverOverDialogBoxBlink = false; // real hover over
+hoverOverDialogBoxBlinkAlpha = 0.1;
+hoverOverDialogBoxBlinkColor = c_orange;
 #endregion
 
 //instance_create_layer(x,y, "Instances_bgr", obj_Workspace_Bgr );

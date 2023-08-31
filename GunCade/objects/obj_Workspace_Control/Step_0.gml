@@ -17,17 +17,30 @@ var typeWriterPosition = typist.get_state();
 // button to skip
 var buttonSkip = 0;
 if(blockInput == false){
-	buttonSkip = scr_InputCheck( "any key released" );  
+	buttonSkip = scr_InputCheck( "dialog almost any key" );  
 
+
+// 2nd check if in dialog box!
+ hoverOverDialogBox      = false;
+ hoverOverDialogBoxBlink = false; // only blink when really hovering over!
+if(mouse_x > camX and mouse_x < camX+camWidth){
+   if(mouse_y > camY + camHeight + blackBoxY - (32*blackBoxScaleY) and mouse_y < camX+camWidth){	
+	 hoverOverDialogBox      = true;  
+	 hoverOverDialogBoxBlink = true;
+   }}
+
+// exceptions! right mouse button and arrow keys!
+var buttonExeption = scr_InputCheck( "dialog expetion keys" );  
+if( buttonExeption == true ){ hoverOverDialogBox = true; buttonSkip = true; }
 
 // next ->
-if(buttonSkip == 1 and typeWriterPosition == 1 ){ 
+if(buttonSkip == 1 and typeWriterPosition == 1 and hoverOverDialogBox == true ){ 
   event_user(0);
 	}
 
 
 // skip to full text
-if(buttonSkip == 1 and typeWriterPosition < 1 ){ 
+if(buttonSkip == 1 and typeWriterPosition < 1 and hoverOverDialogBox == true ){ 
 	typist.skip();
 	}
 }

@@ -4,7 +4,7 @@
 
 
 
-debug = false;
+debug = true;
 demo  = true;
 
 
@@ -1944,7 +1944,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Hey, I wonder if I can get some slot machines in here, might bring in some business…)", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "victor", "Hey, I wonder if I can get some slot machines in here, might bring in some business...", snd_TextScroll_Default );		
 	 dialog_I++;
 
 
@@ -1965,7 +1965,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "He doesn't call, he doesn't write, he just travels the country getting into mischief. ", snd_TextScroll_Default );	
 	 dialog_I++;
-
+   
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Maybe you should call him sometime?", snd_TextScroll_Default );		
@@ -2326,7 +2326,7 @@ var day_I = 0; // day 1
 	 
 	 
 	 // kyle interrupts
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "enter default");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey boss man, I saw Viktor coming and wanted to let you know he was on his way down here.", snd_TextScroll_Default );	
 	 dialog_I++;	 
@@ -2342,7 +2342,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "exit right"); 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Oh yea, sorry about that. I'll chat with you later bossman.", snd_TextScroll_Default );	
 	 dialog_I++;	 
