@@ -31,7 +31,7 @@ backGr_Mask  = spr_Ui_Button_Effect_Mask;
 
 
  backGr_Spr_Alpha   = 1;
- backGr_Pulse_Alpha = 1;
+ backGr_Pulse_Alpha = 0;
  backGr_Mask_Alpha  = 1;
 
 timer_Pulse   = 3*60;
@@ -41,6 +41,13 @@ timer_Pulse   = 3*60;
 timer_Mask   = 3*60;
  bgr_AniCurve_Mask     = animcurve_get_channel( aniCurve_Btn_Mask, 0 );
  bgr_AniCurve_Mask_I = 0;
+
+
+// blinkers
+ blinkers_Time = 10;
+ blinkers_Timer = blinkers_Time;
+ blinkers_Alpha = 1;
+
 
 // for settings only
 isSetting = false;

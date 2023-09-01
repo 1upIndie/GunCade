@@ -5,7 +5,7 @@ draw_sprite_ext(backGr_Spr,   1, settings_SprX,settings_SprY, image_xscale, imag
 draw_sprite_ext(backGr_Pulse, 1, settings_SprX,settings_SprY, image_xscale, image_yscale, image_angle,  image_blend, backGr_Pulse_Alpha);
 draw_sprite_ext(backGr_Mask,  1, settings_SprX,settings_SprY, image_xscale, image_yscale, image_angle,  image_blend, backGr_Mask_Alpha);
 
-draw_sprite_ext(settings_Spr,  0, settings_SprX,settings_SprY, size_Default, size_Default, image_angle,  c_white, settings_SprAlpha);
+draw_sprite_ext(settings_Spr,  settings_SprI, settings_SprX,settings_SprY, size_Default, size_Default, image_angle,  c_white, settings_SprAlpha);
 
 
 // additional blinkers to indicate you can change
@@ -14,3 +14,12 @@ if(state == "hover"){
 
   }
 }
+var xxx = x+ 170;
+var yyy = y + 5;
+var yyy2 = yyy + 15;
+
+var txt = "I: " + string(settings_SprI) + " max: " + string(disScaleMax);
+draw_text(xxx, yyy,  txt );
+
+var txt2 = "W: " + string( window_get_width()) +   "H: " + string(window_get_height());
+draw_text(xxx, yyy2,  txt2 );

@@ -1,8 +1,18 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
+ disWidth = display_get_width();
+ disScaleMax = 0;
+/*
+if( disWidth >= 1920){ disScaleMax = 1; }
+ if( disWidth >= 2560){ disScaleMax = 2; }
+ if( disWidth >= 5120){ disScaleMax = 3; }
+*/
 
-
+ if( disWidth >= 1920){ disScaleMax = 0; }
+ if( disWidth >= 2560){ disScaleMax = 1; }
+ if( disWidth >= 5120){ disScaleMax = 2; }
+ 
 // Inherit the parent event
 event_inherited();
 
@@ -10,7 +20,7 @@ isSetting = true;
 settings_Spr  = spr_Ui_Button_ScaleX;
 settings_SprI = 0;
 
-factorCam = obj_Camera.factorScale;
+
 
 sound_Left  = snd_MenueSfx_ToggleLR;
 sound_Right = snd_MenueSfx_ToggleLR;

@@ -46,6 +46,17 @@ var _val_Mask  = animcurve_channel_evaluate(  bgr_AniCurve_Mask,  bgr_AniCurve_M
  backGr_Mask_Alpha  = _val_Mask;
  
  
+ // blinkers
+ blinkers_Timer--;
+ if( blinkers_Timer <= 0){
+    blinkers_Timer = blinkers_Time;
+	
+	if(blinkers_Alpha == 0){ blinkers_Alpha = 1; } 
+	 else { blinkers_Alpha = 0; } 
+ 
+ }
+ 
+ 
 #endregion
 
 

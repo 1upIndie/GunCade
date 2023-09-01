@@ -455,6 +455,7 @@
     {"id":{"name":"Script119","path":"scripts/Script119/Script119.yy",},},
     {"id":{"name":"scribble_font_force_bilinear_filtering","path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},},
     {"id":{"name":"spr_Tv_RhamenMain","path":"sprites/spr_Tv_RhamenMain/spr_Tv_RhamenMain.yy",},},
+    {"id":{"name":"spr_Ui_Button_Effect_Blinkers","path":"sprites/spr_Ui_Button_Effect_Blinkers/spr_Ui_Button_Effect_Blinkers.yy",},},
     {"id":{"name":"spr_Ui_Button_Start","path":"sprites/spr_Ui_Button_Start/spr_Ui_Button_Start.yy",},},
     {"id":{"name":"scr_SetWeaponUnlocks","path":"scripts/scr_SetWeaponUnlocks/scr_SetWeaponUnlocks.yy",},},
     {"id":{"name":"scribble_typewriter_add_character_delay","path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},},

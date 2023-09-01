@@ -1,7 +1,7 @@
 /// @description go down
 
 var playSfx = false;
-if ( settings_SprI >= 1){  settings_SprI--; playSfx = true;  };
+if ( settings_SprI > 0){  settings_SprI--; playSfx = true;  };
 
 if( playSfx == true){ scr_PlaySound(sound_Left);  }
  else { scr_PlaySound(snd_MenueSfx_CantAlarm); }
@@ -10,10 +10,10 @@ if( playSfx == true){ scr_PlaySound(sound_Left);  }
 
 var multiFactor = 40;
 switch(settings_SprI){
-  case 0: multiFactor = factorCam * 1; obj_Control_All.screenScale = 1;   break;
-  case 1: multiFactor = factorCam * 2; obj_Control_All.screenScale = 2;   break;
-  case 2: multiFactor = factorCam * 3; obj_Control_All.screenScale = 3;   break;
-  case 3: multiFactor = factorCam * 4; obj_Control_All.screenScale = 4;   break;
+  case 0: multiFactor = obj_Camera.factorScale * 1; obj_Control_All.screenScale = 1;   break;
+  case 1: multiFactor = obj_Camera.factorScale * 2; obj_Control_All.screenScale = 2;   break;
+  case 2: multiFactor = obj_Camera.factorScale * 3; obj_Control_All.screenScale = 3;   break;
+  case 3: multiFactor = obj_Camera.factorScale * 4; obj_Control_All.screenScale = 4;   break;
 }
 
 // 640 360       * 40  #1

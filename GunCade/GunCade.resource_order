@@ -392,6 +392,7 @@
     {"name":"Script119","order":22,"path":"scripts/Script119/Script119.yy",},
     {"name":"scribble_font_force_bilinear_filtering","order":8,"path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},
     {"name":"spr_Tv_RhamenMain","order":1,"path":"sprites/spr_Tv_RhamenMain/spr_Tv_RhamenMain.yy",},
+    {"name":"spr_Ui_Button_Effect_Blinkers","order":3,"path":"sprites/spr_Ui_Button_Effect_Blinkers/spr_Ui_Button_Effect_Blinkers.yy",},
     {"name":"spr_Ui_Button_Start","order":1,"path":"sprites/spr_Ui_Button_Start/spr_Ui_Button_Start.yy",},
     {"name":"scr_SetWeaponUnlocks","order":1,"path":"scripts/scr_SetWeaponUnlocks/scr_SetWeaponUnlocks.yy",},
     {"name":"scribble_typewriter_add_character_delay","order":6,"path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},
