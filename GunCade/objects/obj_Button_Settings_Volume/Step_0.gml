@@ -21,8 +21,8 @@ if(state == "hover" and canClick == true){
 	var inputL = mouse_check_button_released(mb_left)  or keyboard_check_released( vk_left)  or keyboard_check_released( ord("A"))
 	var inputR = mouse_check_button_released(mb_right) or keyboard_check_released( vk_right) or keyboard_check_released( ord("D"));	
 
-	if(inputL == 1 and inputR == 0){   event_user(2);  } // left
-	if(inputL == 0 and inputR == 1){   event_user(3);  } // right
+	if(inputL == 1 and inputR == 0){   event_user(3);  } // left
+	if(inputL == 0 and inputR == 1){   event_user(2);  } // right
 
 
 }

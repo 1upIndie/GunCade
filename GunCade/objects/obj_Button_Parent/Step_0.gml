@@ -28,6 +28,25 @@ if(state == "hover" and canClick == true){
 
 
 }
+	
+#region animate
+
+
+ bgr_AniCurve_Pulse_I += 1/timer_Pulse;
+ bgr_AniCurve_Mask_I  += 1/timer_Mask;
+ 
+ if(bgr_AniCurve_Pulse_I >= 1){ bgr_AniCurve_Pulse_I = 0; }
+ if(bgr_AniCurve_Mask_I  >= 1){ bgr_AniCurve_Mask_I = 0;  }
+ 
+var _val_Pulse = animcurve_channel_evaluate(  bgr_AniCurve_Pulse, bgr_AniCurve_Pulse_I  );
+var _val_Mask  = animcurve_channel_evaluate(  bgr_AniCurve_Mask,  bgr_AniCurve_Mask_I  );
+
+
+ backGr_Pulse_Alpha = _val_Pulse;
+ backGr_Mask_Alpha  = _val_Mask;
+ 
+ 
+#endregion
 
 
 

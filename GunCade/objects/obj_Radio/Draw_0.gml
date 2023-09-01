@@ -45,6 +45,7 @@ var mbLeft = mouse_check_button_released(mb_left);
 		audio_master_gain(obj_Control_All.volume_Master);
 	   }
  
+ scr_PlaySound(snd_MenueSfx_ToggleLR);
  }
 
 // draw volume amount -> maybe not

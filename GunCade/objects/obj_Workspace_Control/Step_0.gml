@@ -35,6 +35,7 @@ if( buttonExeption == true ){ hoverOverDialogBox = true; buttonSkip = true; }
 
 // next ->
 if(buttonSkip == 1 and typeWriterPosition == 1 and hoverOverDialogBox == true ){ 
+  	 scr_PlaySound(snd_MenueSfx_Dialog_Click);
   event_user(0);
 	}
 
@@ -42,6 +43,7 @@ if(buttonSkip == 1 and typeWriterPosition == 1 and hoverOverDialogBox == true ){
 // skip to full text
 if(buttonSkip == 1 and typeWriterPosition < 1 and hoverOverDialogBox == true ){ 
 	typist.skip();
+	 scr_PlaySound(snd_MenueSfx_Dialog_Skip);
 	}
 }
 

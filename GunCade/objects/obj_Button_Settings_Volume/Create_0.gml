@@ -10,6 +10,9 @@ isSetting = true;
 settings_Spr  = spr_Ui_Button_0_100;
 settings_SprI = 0;
 
+sound_Left  = snd_MenueSfx_ToggleLR;
+sound_Right = snd_MenueSfx_ToggleLR;
+
 // get volume to set correct start index
 switch(obj_Control_All.volume_Master){
 	

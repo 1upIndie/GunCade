@@ -1,6 +1,12 @@
 /// @description go down
-if ( settings_SprI >= 1){  settings_SprI--;  };
 
+var playSfx = false;
+if ( settings_SprI >= 1){  settings_SprI--; playSfx = true;  };
+
+if( playSfx == true){ scr_PlaySound(sound_Left);  }
+ else { scr_PlaySound(snd_MenueSfx_CantAlarm); }
+ 
+ 
 
 var multiFactor = 40;
 switch(settings_SprI){

@@ -121,7 +121,7 @@ state = "limbo";
    
   if(checkInput == 1 and instantSkip == false){  
 	  
-	  scr_PlaySound(snd_MenueSfx_Skip);
+	  scr_PlaySound(snd_MenueSfx_Dialog_Skip);
 	  state = "end";
 	  description_Spr_XMove = 0;
 	  name_Spr_XMove        = 0;

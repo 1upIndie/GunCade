@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.917188,
+  "duration": 1.333333,
   "parent": {
     "name": "Sfx_Menue",
     "path": "folders/Sounds/Sfx_Menue.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_MenueSfx_Back.ogg",
+  "soundFile": "snd_MenueSfx_Back.wav",
   "type": 0,
   "volume": 1.0,
 }
