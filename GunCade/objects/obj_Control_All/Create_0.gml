@@ -10,7 +10,7 @@ demo  = true;
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
-roomToJump = room_StartScreen;
+//roomToJump = room_StartScreen;
 //roomToJump = room_DemoEnd;
 
 alarm[0] = 4;
@@ -555,6 +555,7 @@ garbageCollect_Particles       = array_create(0);
 
 
 #region tv programm
+
 
 array_programmDay_1  = array_create(0);
 array_programmDay_2  = array_create(0);
@@ -1884,6 +1885,9 @@ var randomExitText = "  ";
 
 #endregion  
 
+
+/////////////////////// days txts
+#region Regular days 1 - 12
 
 
 #region  day 1  111111111111111
@@ -10212,10 +10216,10 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day7;	 
 	 dialog_I++;
 
-	#endregion
+//	#endregion
 	
 
-#endregion end of day 7"
+//#endregion end of day 7"
 
 
 #region day 8   888888888888888888888888
@@ -10290,23 +10294,35 @@ var day_I = 0; // day 1
 
 #endregion  // end of day 8
 
+#endregion // end of regular days
 
 
 
-#region news day 1
+#region NEWS days 1-12
 
 
- day_I    = 100; // day 100 -> news day 1!
+ day_I    = 101; // day 101 -> news day 1!
  dialog_I = 0; // zeiger
- 
+
+
   arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
   
 #region news day 1
 
+     arrayCutscenes[day_I].setSprite(dialog_I, 1, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   1,  "betty", "Bla blah", snd_TextScroll_Default );			 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 1, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   1,  "betty", "Bla blah 2", snd_TextScroll_Default );	
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_StartDayFadeIn; // transition from betty to weather girl	 	 
+	 dialog_I++;	 
+	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "betty smiling"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  2, "betty", "Thanks for that report Gail. Now, over to our newest member of the team for the weather.", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_Default; // transition from betty to weather girl
+
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_Default; // transition from betty to weather girl
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
@@ -10328,7 +10344,7 @@ var day_I = 0; // day 1
 
 // set 
 
-
+#endregion // end of NEWS days
 
 
 #region override values -> saved stuff

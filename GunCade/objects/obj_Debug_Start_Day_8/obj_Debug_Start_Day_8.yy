@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Debug",
-    "path": "folders/Debug.yy",
+    "name": "Regular_Days",
+    "path": "folders/Debug/Regular_Days.yy",
   },
   "parentObjectId": {
     "name": "obj_Debug_Start_Day_Parent",

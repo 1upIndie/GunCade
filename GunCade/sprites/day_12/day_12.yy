@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "sprites",
-    "path": "folders/Debug/sprites.yy",
+    "name": "Regular_Days",
+    "path": "folders/Debug/sprites/Regular_Days.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -47,8 +47,8 @@ var txtDebug = "Dialog Index: " + string(dialogIndex) + "   ctrl -> 10+, alt -> 
 draw_text( camX+15, camY+15,  txtDebug);
 
 
-var txt2 = "Day " + string(obj_Control_All.currentCutscene + 1) +  " TotalBlocks: "+ string( obj_Control_All.arrayCutscenes[ obj_Control_All.currentCutscene ].totalBlocks);
-draw_text( camX+15, camY+45,  txt2);
+//var txt2 = "Day " + string(obj_Control_All.currentCutscene + 1) +  " TotalBlocks: "+ string( obj_Control_All.arrayCutscenes[ obj_Control_All.currentCutscene ].totalBlocks);
+//draw_text( camX+15, camY+45,  txt2);
 
 
 var txt3 = "Regular dialog: " + string(dialogSprAlpha[2]);

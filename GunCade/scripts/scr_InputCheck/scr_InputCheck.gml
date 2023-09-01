@@ -21,15 +21,15 @@ var mouseR2 = mouse_check_button_released(mb_right);
 
 
 // almost other keys for dialog! -> exeption!
-var dialogKeyOther_A = keyboard_check( ord("A"));
-var dialogKeyOther_W = keyboard_check( ord("W"));
-var dialogKeyOther_S = keyboard_check( ord("S"));
-var dialogKeyOther_D = keyboard_check( ord("D"));
+var dialogKeyOther_A = keyboard_check_released( ord("A"));
+var dialogKeyOther_W = keyboard_check_released( ord("W"));
+var dialogKeyOther_S = keyboard_check_released( ord("S"));
+var dialogKeyOther_D = keyboard_check_released( ord("D"));
 
-var dialogKeyOther_Up    = keyboard_check( vk_up);
-var dialogKeyOther_Down  = keyboard_check( vk_down);
-var dialogKeyOther_Right = keyboard_check( vk_right);
-var dialogKeyOther_Left  = keyboard_check( vk_left);
+var dialogKeyOther_Up    = keyboard_check_released( vk_up);
+var dialogKeyOther_Down  = keyboard_check_released( vk_down);
+var dialogKeyOther_Right = keyboard_check_released( vk_right);
+var dialogKeyOther_Left  = keyboard_check_released( vk_left);
 
 
 if(whatInput == "dialog expetion keys"){
