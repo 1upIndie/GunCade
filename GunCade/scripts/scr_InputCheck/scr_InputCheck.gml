@@ -3,11 +3,11 @@ function scr_InputCheck( whatInput){
 
 var returnValue = false;
 
-var any =  keyboard_check( vk_anykey);
+var any =  keyboard_check_released( vk_anykey);
 
 // mouse
-var mouseL = mouse_check_button(mb_left);
-var mouseR = mouse_check_button(mb_right);
+var mouseL = mouse_check_button_released(mb_left);
+var mouseR = mouse_check_button_released(mb_right);
 
 
 

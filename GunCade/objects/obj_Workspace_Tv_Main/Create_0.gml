@@ -4,6 +4,8 @@ event_inherited();
 isMain = true;
 	event_user(0);
 
+
+alarm[10] = 2;
 /*
     programmID = instance_create_layer(x,y, "Instances", obj_TvProgramm_News);
     programmID.image_xscale = image_xscale;

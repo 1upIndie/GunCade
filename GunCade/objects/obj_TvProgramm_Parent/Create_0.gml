@@ -1,6 +1,7 @@
 /// @description 
 isMain = 1;
 
+depth = 1200;
 
 totalFrames  = 0; // 
 currentFrame = 0;

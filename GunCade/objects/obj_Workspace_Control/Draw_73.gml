@@ -10,6 +10,12 @@ if(hoverOverDialogBoxBlink == true){
    draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, hoverOverDialogBoxBlinkColor,  hoverOverDialogBoxBlinkAlpha );
 }
 
+ // bottom line black boxes
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY +ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, ui_trennerToTextCol, 1  );
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY +ui_trennerToTextY, 5000, 8, 0, ui_trennerToTextCol, 1  );
+
+
+
 
 //draw_sprite_ext(spr_button_Xbox_Y,0, camX+camWidth+belowTxt_X2, camY+camHeight+belowTxt_Y2, belowButtonScale,belowButtonScale, 0, c_white, 1 );
 
@@ -56,3 +62,16 @@ draw_text( camX+15, camY+65,  txt3);
     }
 	
 }
+
+
+// ui elements stretched
+/*
+ camX        = camera_get_view_x( view_camera[0] );
+ camY        = camera_get_view_y( view_camera[0] );
+ camWidth    = camera_get_view_width( view_camera[0] );
+ camHeight   = camera_get_view_height( view_camera[0] );
+ */
+ 
+ // bottom line 
+var txtDEbug_ = "trenner: " + string(ui_BlackBoxVerticalRightX);
+draw_text(camX+200, camY+250, txtDEbug_)

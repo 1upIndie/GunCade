@@ -16,7 +16,7 @@ var instTvProgramm = programmArray[currentProgrammIndex];
 if(showSecurityCamAtStart == true){  instTvProgramm = obj_TvProgramm_SecurityCam; showSecurityCamAtStart = false; }
 
 
-    programmID = instance_create_layer(x,y, "Instances", instTvProgramm);
+    programmID = instance_create_layer(x+programmX,y, "Instances", instTvProgramm);
     programmID.image_xscale = image_xscale;
     programmID.image_yscale = image_yscale;  
 

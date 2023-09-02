@@ -2,7 +2,7 @@
 // Sie können Ihren Code in diesem Editor schreiben
 
 isPaused = false;
-
+alarm[0] = 2;
 
 vol20 = 20;
 valumeTotal =   round( obj_Control_All.volume_Music * vol20); 

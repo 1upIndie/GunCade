@@ -235,3 +235,22 @@ setOnce_Enter[3] = false;
  camHeight   = camera_get_view_height( view_camera[0] );
 
 //obj_Control_All.arrayCutscenes[obj_Control_All.currentCutscene].sprBgr;
+
+// ui elements
+var colUi = c_black;
+ //colUi = c_aqua;
+// black boxes for dialog text
+ui_trennerToTextY   = 438; // trennlinie
+ui_trennerToTextCol = colUi;
+
+var blackBoxNameY = 24;
+ui_BlackBoxY = ui_trennerToTextY - blackBoxNameY;
+ui_BlackBoxLength = 320;
+ui_BlackBoxHeight = blackBoxNameY;
+ui_trennerToTextCol = colUi;
+
+// black boxes for right side vertical
+ui_BlackBoxVerticalRightX     = 678+15;
+ui_BlackBoxVerticalRightWidth = 4;
+ui_BlackBoxVerticalRightWidth = 500;
+ui_BlackBoxVerticalRightCol   = colUi;

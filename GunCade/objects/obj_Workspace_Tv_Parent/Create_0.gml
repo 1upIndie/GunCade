@@ -29,7 +29,7 @@ getDay = obj_Control_All.currentCutscene;
 // store all programms available, so to toggle through them
 
 programmArray = array_create(0);
-
+programmX = 7;
 getArray = obj_Control_All.array_programmDay_1;
 getArrayLength = 0;
 

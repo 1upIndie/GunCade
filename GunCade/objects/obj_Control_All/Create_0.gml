@@ -23,7 +23,7 @@ fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "012345
 //draw_set_font(fontSpriteNum);
 
 
-#region seed, set once
+#region seed, set once/fixed values
 hasSeed = 0;
 setSeed = "";
 
@@ -43,6 +43,11 @@ if(hasSeed == true){
  hasSeed = true;
 
 }
+
+
+// timers
+timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 12
+
 #endregion
 
 

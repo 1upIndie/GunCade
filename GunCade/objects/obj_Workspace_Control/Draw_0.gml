@@ -25,6 +25,9 @@ if(dialogShow_Spr_3_ != spr_Nothing){
 
 
 
+// vertical right black box
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX + ui_BlackBoxVerticalRightX, camY -50, ui_BlackBoxVerticalRightWidth, 5000, 0, ui_BlackBoxVerticalRightCol, 1  );
+
 
 
 // debug
