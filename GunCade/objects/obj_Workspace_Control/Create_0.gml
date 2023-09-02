@@ -254,3 +254,16 @@ ui_BlackBoxVerticalRightX     = 678+15;
 ui_BlackBoxVerticalRightWidth = 4;
 ui_BlackBoxVerticalRightWidth = 500;
 ui_BlackBoxVerticalRightCol   = colUi;
+
+
+
+isNews = false;
+
+/// background apply! if news or regular!
+//obj_Control_All.currentCutscene = day;
+//bj_Control_All.currentCutscene_DAY = day;
+
+// NEWS!
+/// set background, set right side
+alarm[11] = 8;
+

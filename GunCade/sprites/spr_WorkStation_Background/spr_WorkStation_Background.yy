@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Dialog",
-    "path": "folders/Sprites/Dialog.yy",
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Dialog/Backgrounds.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

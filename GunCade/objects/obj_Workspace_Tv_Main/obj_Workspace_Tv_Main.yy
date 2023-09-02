@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Tv_RhamenMain",
-    "path": "sprites/spr_Tv_RhamenMain/spr_Tv_RhamenMain.yy",
+    "name": "spr_Tv_RhamenDialog",
+    "path": "sprites/spr_Tv_RhamenDialog/spr_Tv_RhamenDialog.yy",
   },
   "spriteMaskId": null,
   "visible": true,

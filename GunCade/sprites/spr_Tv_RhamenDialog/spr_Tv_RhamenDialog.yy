@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_WorkStation_BackgroundNews",
-  "bbox_bottom": 767,
+  "name": "spr_Tv_RhamenDialog",
+  "bbox_bottom": 550,
   "bbox_left": 0,
-  "bbox_right": 767,
+  "bbox_right": 852,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f92d8f8e-7189-4abf-b75d-f0e8d8e22d1d",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 768,
+  "height": 551,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"03412164-5a8b-410b-bafc-b95075a69707","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4caa4900-5284-4520-9e85-26d022b99095","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Backgrounds",
-    "path": "folders/Sprites/Dialog/Backgrounds.yy",
+    "name": "Tv",
+    "path": "folders/Sprites/Dialog/Tv.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_WorkStation_BackgroundNews",
+    "name": "spr_Tv_RhamenDialog",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46","path":"sprites/spr_WorkStation_BackgroundNews/spr_WorkStation_BackgroundNews.yy",},},},"Disabled":false,"id":"5852a54f-e879-40fd-ab19-58b8e9dbb9c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f92d8f8e-7189-4abf-b75d-f0e8d8e22d1d","path":"sprites/spr_Tv_RhamenDialog/spr_Tv_RhamenDialog.yy",},},},"Disabled":false,"id":"c77fb652-dab5-42fd-82af-6872c87bd776","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 768,
+  "width": 853,
 }

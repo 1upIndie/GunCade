@@ -26,10 +26,11 @@ if(dialogShow_Spr_3_ != spr_Nothing){
 
 
 // vertical right black box
+if(isNews == false){
 draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX + ui_BlackBoxVerticalRightX, camY -50, ui_BlackBoxVerticalRightWidth, 5000, 0, ui_BlackBoxVerticalRightCol, 1  );
-
+}
 
 
 // debug
-//var debugTxt = string(dialogSpr_State_Timer) + "  :" + dialogSpr_State;
-//draw_text(camX+50,camY+50, debugTxt)
+var debugTxt = "Height: " + string(obj_Workspace_Bgr.tvHeight);
+draw_text(camX+140,camY+90, debugTxt)

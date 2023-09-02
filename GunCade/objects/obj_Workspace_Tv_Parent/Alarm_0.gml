@@ -1,7 +1,7 @@
 /// @description 
 
 sprite_index = programm_image;
-if (isMain == true){ rahmen_image = spr_Tv_RhamenMain;   }
+if (isMain == true){ rahmen_image = spr_Tv_RhamenDialog;   }
 
 canDraw = true;
 

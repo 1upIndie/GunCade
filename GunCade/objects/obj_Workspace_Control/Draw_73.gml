@@ -32,7 +32,7 @@ scribble(array_Txt[dialogIndex]).wrap(textNeuesZeile, -1,false).draw(camX+textX,
 
 
 // draw cash in gold if no minigame is there 
- if( !instance_exists(obj_MiniGame_Parent)){
+ if( !instance_exists(obj_MiniGame_Parent) and isNews == false ){
     var prefixCash_ =  obj_Control_All.textDetail_CashPrefix;
     var suffixCash_ =  obj_Control_All.textDetail_CashSuffix; 
 
