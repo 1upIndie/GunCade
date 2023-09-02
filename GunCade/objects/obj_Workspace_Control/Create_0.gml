@@ -35,7 +35,7 @@ hoverAlpha = 1;
 
 hoverOverDialogBox = false;
 hoverOverDialogBoxBlink = false; // real hover over
-hoverOverDialogBoxBlinkAlpha = 0.1;
+hoverOverDialogBoxBlinkAlpha = 0.035;
 hoverOverDialogBoxBlinkColor = c_orange;
 #endregion
 

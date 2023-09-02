@@ -6,14 +6,19 @@ if(blockDraw == true){ exit; }
 
 draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, c_black,  blackBoxAlpha );
 //Blink if hover over!
-if(hoverOverDialogBoxBlink == true){
-   draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, hoverOverDialogBoxBlinkColor,  hoverOverDialogBoxBlinkAlpha );
-}
+
 
  // bottom line black boxes
-draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY +ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, ui_trennerToTextCol, 1  );
-draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY +ui_trennerToTextY, 5000, 8, 0, ui_trennerToTextCol, 1  );
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, ui_trennerToTextCol, 1  );
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_trennerToTextY, 5000, 900, 0, ui_trennerToTextCol, 1  );
 
+
+if(hoverOverDialogBoxBlink == true){
+	
+	draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, hoverOverDialogBoxBlinkColor, hoverOverDialogBoxBlinkAlpha  );
+    draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_trennerToTextY, 5000, 900, 0,                       hoverOverDialogBoxBlinkColor, hoverOverDialogBoxBlinkAlpha  );
+
+}
 
 
 
