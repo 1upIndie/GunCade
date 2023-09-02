@@ -929,7 +929,7 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Victor_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;	
-				   
+
 			  case  "victor angry":  
 				   sprIdleStatic   = spr_Dialog_VictorAngry_Idle;
 				   sprIdle_        = spr_Dialog_VictorAngry_Idle; 
@@ -979,11 +979,16 @@ indexSet++;
 
 	
 			  case  "kyle dismissive":		  
+				   sprIdleStatic   = spr_Dialog_KyleDismissive_IdleStatic;
+				   sprIdle_        = spr_Dialog_KyleDismissive_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
+
+			  case  "kyle dumb":		  
 				   sprIdleStatic   = spr_Dialog_KyleDumb_IdleStatic;
 				   sprIdle_        = spr_Dialog_KyleDumb_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
-
 
 
 
@@ -1067,6 +1072,28 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
 
+			  case  "weather angry":  
+				   sprIdleStatic   = spr_Dialog_Weather_AngryStatic;
+				   sprIdle_        = spr_Dialog_Weather_Angry; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+
+
+			  case  "weather dismissive":  
+				   sprIdleStatic   = spr_Dialog_Weather_DismissiveStatic;
+				   sprIdle_        = spr_Dialog_Weather_Dismissive; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+				   
+
+			  case  "weather cocky":  
+				   sprIdleStatic   = spr_Dialog_Weather_CockyStatic;
+				   sprIdle_        = spr_Dialog_Weather_Cocky; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;					   
+
+
+
 
 			 /////// Wife
 			  case  "wife default":  
@@ -1106,8 +1133,8 @@ indexSet++;
 			  case  "betty smiling":  
 				   sprIdleStatic   = spr_Dialog_BettySmiling_IdleStatic;
 				   sprIdle_        = spr_Dialog_BettySmiling_Idle; 
-				   sprTalkStatic_  = spr_Dialog_BettySmiling_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_BettySmiling_Talk; 		    break;
+				   sprTalkStatic_  = spr_Dialog_Betty_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Betty_Talk; 		    break;
 
 
 
@@ -10352,9 +10379,14 @@ var day_I = 0; // day 1
 #region news day 1 NEWS
 
      arrayCutscenes[day_I].setSprite(dialog_I, 10, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   10,  "betty", "Bla blah", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setText(dialog_I,   10,  "betty", "Bla blah Bla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blah Bla blah Bla blahBla blah", snd_TextScroll_Default );			 
 	 dialog_I++;
-	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 10, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   10,  "betty", "Bla blah Bla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blah Bla blah Bla blahBla blah", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+
      arrayCutscenes[day_I].setSprite(dialog_I, 10, "betty default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,   10,  "betty", "Thanks for that report Gail. Now, over to our newest member of the team for the weather.", snd_TextScroll_Default );	
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_StartDayFadeIn; // transition from betty to weather girl	 	 
