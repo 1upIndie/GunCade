@@ -274,9 +274,9 @@ isNews = false;
 parallax_X = 50;
 parallax_Y = 160;
 
-  parallaxXLerp  = 0.2;
+  parallaxXLerp  = 0.8;
   parallaxLerped = 0; // value to be constantly set  
- parallaxXMax = 10;
+ parallaxXMax = 5;
  
 
  

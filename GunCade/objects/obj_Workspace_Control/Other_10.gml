@@ -18,7 +18,14 @@
 	 introExtroX[1] = 0;
 	 introExtroX[2] = 0; 
 	 introExtroX[3] = 0; 
-	
+
+	setOnce_Enter[1] = false;
+	setOnce_Enter[2] = false;
+	setOnce_Enter[3] = false;
+
+    dialogSprAlpha[1] = 1;
+    dialogSprAlpha[2] = 1;	
+    dialogSprAlpha[3] = 1;
 	// check if old spr is the same as new!
 	var popInSpr = true;
 	//if( array_Spr[dialogIndex] == array_Spr[dialogIndex-1] ){  popInSpr = false; }

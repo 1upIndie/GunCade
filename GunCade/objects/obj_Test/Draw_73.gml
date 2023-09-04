@@ -22,15 +22,15 @@ draw_text(x,y, txt)
   
    var result = point_distance(wid, mouse_y, mouse_x, mouse_y );
    
-  draw_rectangle(wid,0, wid+4, 5000,0 );
+ // draw_rectangle(wid,0, wid+4, 5000,0 );
   
  var xTrue = mouse_x-camX;
 
   if(  mouse_x <  wid  ){ perc = ( result/ widH) * 100  ;  }
   if(  mouse_x >  wid  ){ perc = ( result/ widH) * 100  ;  }  
   
-
-  draw_text( mouse_x, mouse_y+40, perc );
+var bb = obj_Workspace_Control;
+  draw_text( mouse_x, mouse_y+40, bb.array_Spr_Talk_1_IntroExtro[bb.dialogIndex] );
   
 
   

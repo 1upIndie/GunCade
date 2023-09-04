@@ -626,6 +626,7 @@
     {"name":"scribble_anim_rainbow","order":4,"path":"scripts/scribble_anim_rainbow/scribble_anim_rainbow.yy",},
     {"name":"spr_Ui_Startscreen_Vic","order":3,"path":"sprites/spr_Ui_Startscreen_Vic/spr_Ui_Startscreen_Vic.yy",},
     {"name":"scribble_super_glyph_copy_all","order":3,"path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},
+    {"name":"obj_Transition_FadeToNextCharacter","order":6,"path":"objects/obj_Transition_FadeToNextCharacter/obj_Transition_FadeToNextCharacter.yy",},
     {"name":"snd_PopUp__PerfectSale","order":1,"path":"sounds/snd_PopUp__PerfectSale/snd_PopUp__PerfectSale.yy",},
     {"name":"__scribble_font_add_all_from_project","order":6,"path":"scripts/__scribble_font_add_all_from_project/__scribble_font_add_all_from_project.yy",},
     {"name":"scribble_font_has_character","order":11,"path":"scripts/scribble_font_has_character/scribble_font_has_character.yy",},

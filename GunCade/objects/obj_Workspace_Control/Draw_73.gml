@@ -51,7 +51,11 @@ if ( obj_Control_All.debug == true){
 
  camX        = camera_get_view_x( view_camera[0] );
  camY        = camera_get_view_y( view_camera[0] );
- 
+
+
+var txtDEbug_ = "parralxOn " + string(   parallaxOn);
+draw_text(camX+200, camY+250, txtDEbug_);
+
  if( !instance_exists(obj_MiniGame_Parent)){
  
 var txtDebug = "Dialog Index: " + string(dialogIndex) + "   ctrl -> 10+, alt -> 50+";
@@ -78,8 +82,6 @@ draw_text( camX+15, camY+65,  txt3);
  */
  
  // bottom line 
-var txtDEbug_ = "parralxOn " + string(   parallaxOn);
-draw_text(camX+200, camY+250, txtDEbug_);
 
 /*
 draw_set_alpha(0.4);

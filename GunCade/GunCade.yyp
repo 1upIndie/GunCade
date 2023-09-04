@@ -739,6 +739,7 @@
     {"id":{"name":"spr_Ui_Startscreen_Vic","path":"sprites/spr_Ui_Startscreen_Vic/spr_Ui_Startscreen_Vic.yy",},},
     {"id":{"name":"font_Cutscene","path":"fonts/font_Cutscene/font_Cutscene.yy",},},
     {"id":{"name":"scribble_super_glyph_copy_all","path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},},
+    {"id":{"name":"obj_Transition_FadeToNextCharacter","path":"objects/obj_Transition_FadeToNextCharacter/obj_Transition_FadeToNextCharacter.yy",},},
     {"id":{"name":"snd_PopUp__PerfectSale","path":"sounds/snd_PopUp__PerfectSale/snd_PopUp__PerfectSale.yy",},},
     {"id":{"name":"__scribble_font_add_all_from_project","path":"scripts/__scribble_font_add_all_from_project/__scribble_font_add_all_from_project.yy",},},
     {"id":{"name":"spr_Dialog_Weather_Cocky","path":"sprites/spr_Dialog_Weather_Cocky/spr_Dialog_Weather_Cocky.yy",},},
