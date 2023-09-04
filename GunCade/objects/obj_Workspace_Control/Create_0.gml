@@ -24,7 +24,7 @@ dayTemp_Cash = sumCash;
 
 #endregion
 
-#region hover over
+#region hover over 
 
 hoverAlphachannel = animcurve_get_channel(aniCurve_HoverOver, 0);
 
@@ -37,6 +37,7 @@ hoverOverDialogBox = false;
 hoverOverDialogBoxBlink = false; // real hover over
 hoverOverDialogBoxBlinkAlpha = 0.035;
 hoverOverDialogBoxBlinkColor = c_orange;
+
 #endregion
 
 //instance_create_layer(x,y, "Instances_bgr", obj_Workspace_Bgr );
@@ -265,5 +266,21 @@ isNews = false;
 
 // NEWS!
 /// set background, set right side
+
+
+#region parallax
+
+// parallax
+parallax_X = 50;
+parallax_Y = 160;
+
+  parallaxXLerp  = 0.2;
+  parallaxLerped = 0; // value to be constantly set  
+ parallaxXMax = 10;
+ 
+
+ 
+#endregion
+
 alarm[11] = 8;
 

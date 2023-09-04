@@ -78,5 +78,12 @@ draw_text( camX+15, camY+65,  txt3);
  */
  
  // bottom line 
-var txtDEbug_ = "trenner: " + string(ui_BlackBoxVerticalRightX);
-draw_text(camX+200, camY+250, txtDEbug_)
+var txtDEbug_ = "parralxOn " + string(   parallaxOn);
+draw_text(camX+200, camY+250, txtDEbug_);
+
+/*
+draw_set_alpha(0.4);
+
+draw_rectangle(camX, camY,  camX + camWidth + parallax_X, camY + camHeight - parallax_Y, 0  );
+draw_set_alpha(1);
+*/

@@ -9,7 +9,7 @@ if ( isNews == false ){ draw_self(); }
 if ( isNews == true ){ 
 	 
 	 draw_self();
-	 
+/*	 
 	var camX        = camera_get_view_x( view_camera[0] );
 	var camY        = camera_get_view_y( view_camera[0] );
 	var camWidth    = camera_get_view_width( view_camera[0] );
@@ -19,7 +19,7 @@ if ( isNews == true ){
 	 
 	 //draw_sprite_stretched_ext(spr_Tv_RhamenMain, 0, camX,camY, camWidth, camHeight-tvHeight, c_white, 1  );
 	 //draw_sprite_stretched(spr_Tv_RhamenMain, 0,     camX,camY, camWidth, camHeight-tvHeight);
-
+*/
 }
 
 
