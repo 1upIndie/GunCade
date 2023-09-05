@@ -1,16 +1,19 @@
 // Skriptelemente wurden für v2.3.0 geändert, weitere Informationen sind unter
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
    function scr_CleanResetAttachments(){
-	
-	if (instance_exists(obj_MiniGame_Drop_Ammo)          ){ obj_MiniGame_Drop_Ammo.isBlocked         = true;  }       
-	if (instance_exists(obj_MiniGame_Drop_LaserPointer)  ){ obj_MiniGame_Drop_LaserPointer.isBlocked = true;  }  
-	if (instance_exists(obj_MiniGame_Drop_Muzzle)        ){ obj_MiniGame_Drop_Muzzle.isBlocked       = true;  }        
+	var update_Addition = false;
+	if (instance_exists(obj_MiniGame_Drop_Ammo)          ){ obj_MiniGame_Drop_Ammo.isBlocked         = true; update_Addition = true;  }       
+	if (instance_exists(obj_MiniGame_Drop_LaserPointer)  ){ obj_MiniGame_Drop_LaserPointer.isBlocked = true; update_Addition = true;  }  
+	if (instance_exists(obj_MiniGame_Drop_Muzzle)        ){ obj_MiniGame_Drop_Muzzle.isBlocked       = true; update_Addition = true; }        
   
-	if (instance_exists(obj_MiniGame_Drop_Stock)         ){ obj_MiniGame_Drop_Stock.isBlocked        = true;  }         
-	if (instance_exists(obj_MiniGame_Drop_Optics)        ){ obj_MiniGame_Drop_Optics.isBlocked       = true;  }       
-	if (instance_exists(obj_MiniGame_Drop_Grip)          ){ obj_MiniGame_Drop_Grip.isBlocked         = true;  }          
- 
- 
+	if (instance_exists(obj_MiniGame_Drop_Stock)         ){ obj_MiniGame_Drop_Stock.isBlocked        = true; update_Addition = true; }          
+	if (instance_exists(obj_MiniGame_Drop_Optics)        ){ obj_MiniGame_Drop_Optics.isBlocked       = true; update_Addition = true; }       
+	if (instance_exists(obj_MiniGame_Drop_Grip)          ){ obj_MiniGame_Drop_Grip.isBlocked         = true; update_Addition = true; }          
+
+if(update_Addition == true){
+obj_MiniGame_Parent.AdditionalTxt_Update = true;
+}
+
 // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotics 60-70
 /*
 var indexAttach = save_Index_Weapon;

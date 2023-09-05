@@ -26,6 +26,8 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
 	  
 	  var indexGet = -999;
 	  var overrideInst = noone;
+	  
+	  var updateAttachments = false;
       // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotic 60-70, attachment 70-80	 
 	  switch(whatisIt){
 		  
@@ -143,18 +145,22 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
    if(indexGet >= 80  and  obj_MiniGame_Drop_Weapon.save_Index_Weapon != -999){
 	   var savedIndex = obj_MiniGame_Drop_Weapon.save_Index_Weapon;
 	   var stackCosts = false;
+	   
 	// check if not set already	
-  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Ammo          == 1 and indexGet == 80 and instance_exists(obj_MiniGame_Drop_Ammo)         and obj_MiniGame_Drop_Ammo.state         == "blink" ){ obj_MiniGame_Drop_Ammo.state = "";         stackCosts = true;  } 	  
-  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_LaserPointer  == 1 and indexGet == 81 and instance_exists(obj_MiniGame_Drop_LaserPointer) and obj_MiniGame_Drop_LaserPointer.state == "blink" ){ obj_MiniGame_Drop_LaserPointer.state = ""; stackCosts = true;  } 
-  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Muzzle        == 1 and indexGet == 82 and instance_exists(obj_MiniGame_Drop_Muzzle)       and obj_MiniGame_Drop_Muzzle.state       == "blink" ){ obj_MiniGame_Drop_Muzzle.state = "";       stackCosts = true;  } 
+  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Ammo          == 1 and indexGet == 80 and instance_exists(obj_MiniGame_Drop_Ammo)         and obj_MiniGame_Drop_Ammo.state         == "blink" ){ obj_MiniGame_Drop_Ammo.state = "";         stackCosts = true; updateAttachments = true; } 	  
+  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_LaserPointer  == 1 and indexGet == 81 and instance_exists(obj_MiniGame_Drop_LaserPointer) and obj_MiniGame_Drop_LaserPointer.state == "blink" ){ obj_MiniGame_Drop_LaserPointer.state = ""; stackCosts = true; updateAttachments = true; } 
+  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Muzzle        == 1 and indexGet == 82 and instance_exists(obj_MiniGame_Drop_Muzzle)       and obj_MiniGame_Drop_Muzzle.state       == "blink" ){ obj_MiniGame_Drop_Muzzle.state = "";       stackCosts = true; updateAttachments = true;  } 
   
-  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Stock         == 1 and indexGet == 83 and instance_exists(obj_MiniGame_Drop_Stock)        and obj_MiniGame_Drop_Stock.state        == "blink" ){ obj_MiniGame_Drop_Stock.state = "";        stackCosts = true;  } 
-  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Optics        == 1 and indexGet == 84 and instance_exists(obj_MiniGame_Drop_Optics)       and obj_MiniGame_Drop_Optics.state       == "blink" ){ obj_MiniGame_Drop_Optics.state = "";       stackCosts = true;  } 
-  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Grip          == 1 and indexGet == 85 and instance_exists(obj_MiniGame_Drop_Grip)         and obj_MiniGame_Drop_Grip.state         == "blink" ){ obj_MiniGame_Drop_Grip.state = "";         stackCosts = true;  } 
+  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Stock         == 1 and indexGet == 83 and instance_exists(obj_MiniGame_Drop_Stock)        and obj_MiniGame_Drop_Stock.state        == "blink" ){ obj_MiniGame_Drop_Stock.state = "";        stackCosts = true; updateAttachments = true; } 
+  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Optics        == 1 and indexGet == 84 and instance_exists(obj_MiniGame_Drop_Optics)       and obj_MiniGame_Drop_Optics.state       == "blink" ){ obj_MiniGame_Drop_Optics.state = "";       stackCosts = true; updateAttachments = true; } 
+  if (obj_Control_All.array_DetailWeaponText[savedIndex].canHave_Grip          == 1 and indexGet == 85 and instance_exists(obj_MiniGame_Drop_Grip)         and obj_MiniGame_Drop_Grip.state         == "blink" ){ obj_MiniGame_Drop_Grip.state = "";         stackCosts = true; updateAttachments = true; } 
  
   
   /// if true, add to costs
   if( stackCosts == true ){	obj_MiniGame_Parent.current_Costs += obj_Control_All.array_DetailWeaponText[indexGet].cost; }	
+ 
+  // only for attachments!
+  if( updateAttachments == true){ obj_MiniGame_Parent.AdditionalTxt_Update = true; }
  
    } // end of special case attachments
 

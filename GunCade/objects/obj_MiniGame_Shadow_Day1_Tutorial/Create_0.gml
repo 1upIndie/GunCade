@@ -1,6 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
+ isTutorial = true;
 
  possible_Weapon_Perfect             = 40;   // index numbers! pistol 1
  // possible_LaserPointer_Perfect    = -999;  // attachments not set on default
@@ -37,7 +38,11 @@ event_inherited();
   result_Index_Sale      = 110;
   result_Index_Messup    = 120; 
   result_Index_Refuse    = 130;
- 
+
+
+
+// v
+
  /*
  0,1,2 melee
 11,12,13 pistol

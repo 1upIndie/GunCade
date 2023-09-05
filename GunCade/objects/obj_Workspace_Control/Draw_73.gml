@@ -39,7 +39,7 @@ scribble(array_Txt[dialogIndex]).wrap(textNeuesZeile, -1,false).draw(camX+textX,
     var cashTxt = prefixCash_ + string(dayTemp_Cash + dayTemp_Cash_Tip) + "$" + suffixCash_; 
 
 var moneyX = obj_Control_All.moneyTxtX;
-var moneyY = obj_Control_All.moneyTxtY[0];
+var moneyY = obj_Control_All.moneyTxtY;
 
 
     scribble(cashTxt).draw( camX+moneyX, camY+moneyY );

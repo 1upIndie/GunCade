@@ -82,8 +82,8 @@ if (display_Width == 2560 and display_Height == 2048 )  { Aspect_Ratio_Width = 1
 
 // 16 : 9 Ratio  // 40times, 16*40 = 640 and 16*9 = 360 as an example
  if (Aspect_Ratio_Width == 16 and Aspect_Ratio_Height == 9) { 
-	 camera_Show_Width  = 640;  // EDIT ONLY HERE 
-     camera_Show_Height = 360;  // EDIT ONLY HERE   
+	 camera_Show_Width  = 640 * 2;  // EDIT ONLY HERE 
+     camera_Show_Height = 360 * 2;  // EDIT ONLY HERE   
 	 }
 
 // 16 : 10 Ratio 
@@ -144,12 +144,15 @@ switch( obj_Control_All.screenScale){
    case 4: factor = factorScale * 4; break; 
 }
 
-display_Width  = factor*16; // 1040
-display_Height =  factor*9; // 585
+display_Width  = factor*16*2; // 1040
+display_Height =  factor*9*2; // 585
+
+var WW  = 1280;
+var HH  = 720;
 
 // full display size set window and application surface  
-window_set_size(display_Width, display_Height );  
-surface_resize(application_surface, display_Width, display_Height ); 
+window_set_size(WW, HH );  
+surface_resize(application_surface, WW, HH ); 
 
 
 

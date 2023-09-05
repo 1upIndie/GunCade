@@ -101,10 +101,13 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
   textRadioMisc_Prefix = "[fnt_RadioDigitalThin][scale, 0.2][#22E1FB]";
   textRadioMisc_Suffix = "[/c][/scale]";
 
+// for displaying additional text as bill!
+  textBill_DescPrefix   = "[font_Cutscene][scale, 0.6][#ADACA6]"; // light gray
+  textBill_DescSuffix   = "[/c][/scale]";
+
  // positions
- moneyTxtX     = 720;
- moneyTxtY[0]  = 375; // money 
- moneyTxtY[1]  = 194; // minigame costs
+ moneyTxtX  = 718; // money 
+ moneyTxtY  = 375; // money 
 #endregion
 
 #region weapon texts + costs
@@ -116,6 +119,7 @@ function weaponCreate()constructor {
   weaponIndex       = 0;
   nameWeapon        = "";
   weaponSpr         = spr_Nothing;
+  txt_Bill          = ""; // displayed!
   
   headLineText      = "";
   descriptionText1  = "";  
@@ -491,7 +495,9 @@ txtDetail_I = 80;  // from 70 to 80, added ammo
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 20;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Ammo;	 	  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Ammo;	
+	  
+	  array_DetailWeaponText[txtDetail_I].txt_Bill         = textBill_DescPrefix + "+" + string(array_DetailWeaponText[txtDetail_I].cost) + "$  Ammunition" + textBill_DescSuffix;
 	  txtDetail_I++;
 	  
 
@@ -501,7 +507,9 @@ txtDetail_I = 80;  // from 70 to 80, added ammo
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 75;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Laser;	    
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Laser;	   
+	  
+	  array_DetailWeaponText[txtDetail_I].txt_Bill         = textBill_DescPrefix + "+" + string(array_DetailWeaponText[txtDetail_I].cost) + "$  Laser pointer" + textBill_DescSuffix;	  
 	  txtDetail_I++;	  
 
       // 82
@@ -512,6 +520,8 @@ txtDetail_I = 80;  // from 70 to 80, added ammo
 	  array_DetailWeaponText[txtDetail_I].cost             = 50;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
 	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Muzzle;		  
+	  
+	  array_DetailWeaponText[txtDetail_I].txt_Bill         = textBill_DescPrefix + "+" + string(array_DetailWeaponText[txtDetail_I].cost) + "$  Muzzle" + textBill_DescSuffix;		  
 	  txtDetail_I++;	  
 
 
@@ -523,7 +533,9 @@ txtDetail_I = 80;  // from 70 to 80, added ammo
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 75;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Stock;		  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Stock;		 
+	  
+	  array_DetailWeaponText[txtDetail_I].txt_Bill         = textBill_DescPrefix + "+" + string(array_DetailWeaponText[txtDetail_I].cost) + "$  Stock" + textBill_DescSuffix;		  
 	  txtDetail_I++;	  
 
       // 84
@@ -533,7 +545,9 @@ txtDetail_I = 80;  // from 70 to 80, added ammo
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 125;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Optics;	  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Optics;	 
+	  
+	  array_DetailWeaponText[txtDetail_I].txt_Bill         = textBill_DescPrefix + "+" + string(array_DetailWeaponText[txtDetail_I].cost) + "$  Optics" + textBill_DescSuffix;	  
 	  txtDetail_I++;	  
 
 
@@ -543,7 +557,9 @@ txtDetail_I = 80;  // from 70 to 80, added ammo
 	  array_DetailWeaponText[txtDetail_I].descriptionText2 = textDetail_DescPrefix     + "second optional text"      + textDetail_DescSuffix;
 	  array_DetailWeaponText[txtDetail_I].cost             = 50;	  	  
 	  array_DetailWeaponText[txtDetail_I].costText         = textDetail_CostPrefix     + string(array_DetailWeaponText[txtDetail_I].cost) + "$"  + textDetail_CostSuffix;
-	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Grip;	 	  
+	  array_DetailWeaponText[txtDetail_I].detail_Spr       = spr_WeaponDetail_Attachment_Grip;	 	
+	  
+	  array_DetailWeaponText[txtDetail_I].txt_Bill         = textBill_DescPrefix + "+" + string(array_DetailWeaponText[txtDetail_I].cost) + "$  Grip" + textBill_DescSuffix;		  
 	  txtDetail_I++;  
 	  
 	  
@@ -1557,6 +1573,7 @@ indexSet++;
   textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
   textDetail_DescSuffix = "[/scale]"; 
  
+  
   // sorting by name
    textSortNamePrefix = "[font_Cutscene][scale, 2]";
    textSortNameSuffix = "[/scale]"; 
@@ -1993,11 +2010,20 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
+      ////
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor smiling"  , "enter default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial;	 	 
+	 dialog_I++;
+////
+
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); ///-> orginal!
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
      arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Victor;	 
 	 dialog_I++;
+
+
 
 
 /*

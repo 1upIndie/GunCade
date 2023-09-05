@@ -22,15 +22,12 @@ draw_text(x,y, txt)
   
    var result = point_distance(wid, mouse_y, mouse_x, mouse_y );
    
- // draw_rectangle(wid,0, wid+4, 5000,0 );
+  if ( instance_exists(obj_MiniGame_Parent) ){
+  if( obj_MiniGame_Parent.AdditionalTxt_Update == 1){  wasTrue = 1; }
   
- var xTrue = mouse_x-camX;
-
-  if(  mouse_x <  wid  ){ perc = ( result/ widH) * 100  ;  }
-  if(  mouse_x >  wid  ){ perc = ( result/ widH) * 100  ;  }  
-  
-var bb = obj_Workspace_Control;
-  draw_text( mouse_x, mouse_y+40, bb.array_Spr_Talk_1_IntroExtro[bb.dialogIndex] );
+//var bb = obj_MiniGame_Parent.AdditionalTxt_Update
+  draw_text( mouse_x, mouse_y+40, wasTrue );
+  }
   
 
   

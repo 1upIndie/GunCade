@@ -11,7 +11,11 @@
  // button clicked, spawn things and destroy others
  update = false;
    spawn = "";
- 
+
+obj_Workspace_Control.blockInput = true; // block dialog input from progressing!
+
+
+
  isRandomSale = false;
  isRandomSale_Array       = 0;
  isRandomSale_Array_Index = 0
@@ -87,11 +91,12 @@ current_Costs               = 0; // total value
  var tabStart = 46;
  var tabXX = 158;
 
-bgrX = camX + 32;
-bgrY = camY + 20;
- bgrXscale = 650;
- bgrYscale = 420; 
-
+bgrX = camX + 0;
+bgrY = camY + 0;
+ bgrXscale = 695;
+ bgrYscale = 440; 
+ 
+ 
 costsTotal_X = camX + 700;
 costsTotal_Y = camY + 600;
 
@@ -108,7 +113,7 @@ detailTxt_Cost_y           = camY + 120;
 detailTxt_Description_y[0] = camY + 210;
 detailTxt_Description_y[1] = camY + 250;
 
-// stat poiunts
+// stat points
 detail_Stats_Size[0] = 0.10;
 detail_Stats_Size[1] = 0.10;
 
@@ -237,7 +242,7 @@ var sizeAttach = button_ResultSelected_Size4;
 // right buttons -> refuse/sale
 button_Right_X[0]  = camX + 765;
 button_Right_X[1]  = camX + 920;
-button_Right_Y     = camY + 415;
+button_Right_Y     = camY + 50;
 
 
 
@@ -361,12 +366,16 @@ button_Right_Y     = camY + 415;
 
 
 // background
+
     gbr = instance_create_layer( bgrX, bgrY, "Instances_MiniGame_Bgr", obj_MiniGame_Bgr_Left );
     gbr.image_xscale = bgrXscale;
     gbr.image_yscale = bgrYscale;
 	gbr.image_blend  = #0B0914;
 	//gbr.image_blend  = c_red;	
+	
 // drop of area!
+
+
     dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame_Bgr", obj_MiniGame_DropSpot );
  
  
@@ -404,9 +413,27 @@ button_Right_Y     = camY + 415;
 
 
 
+#region additonal array/stack + money
+moneyTxtY = 70;
+moneyTxtX = 718;
 
+AdditionalTxt_Update = false;
+array_AdditionalTxt = array_create(0); 
+ additionalTxt_X      = 725;
+ additionalTxt_StartY = 130;
+ additionalTxt_AddY   = 23; 
+ 
+ 
+#endregion
 
 
 // spawn types
 event_user(0);
 
+#region Tutorial, spawn things
+ isTutorial = false;
+ 
+ spawn_tutorial_Txt_Decide_X = 50;
+ spawn_tutorial_Txt_Decide_Y = 50; 
+
+#endregion

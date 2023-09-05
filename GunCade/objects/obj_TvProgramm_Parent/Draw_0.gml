@@ -3,7 +3,7 @@
 
 
 // last sprite
-
+if ( instance_exists(obj_MiniGame_Parent)){ exit; }
 
 draw_sprite_ext(tvProgramm_Sprite, currentFrame, x+ moveX,y+moveY, tvScaleX+ zoomTotal, tvScaleY+ zoomTotal, 0, c_white, 1 );
 

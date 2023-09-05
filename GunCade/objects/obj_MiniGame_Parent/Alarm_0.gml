@@ -75,4 +75,11 @@ possible_Stock_Perfect           = get_Array.temp_Perect_Stock;
       negative_Grip            = get_Array.temp_negative_Grip; 
       negative_Stock           = get_Array.temp_negative_Stock;   
 
-      negative_Costs           = get_Array.temp_negative_Costs; 	
+      negative_Costs           = get_Array.temp_negative_Costs; 
+	  
+	  
+	  // unique case of tutorial?
+	  if( isTutorial == true ){
+	  
+	  
+	  }
