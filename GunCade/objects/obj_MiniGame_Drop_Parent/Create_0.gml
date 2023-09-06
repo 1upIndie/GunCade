@@ -7,3 +7,7 @@ cost = 0; // additional money!
 isBlocked = true;
 
  _channel = animcurve_get_channel(aniCurve_Blink, 0);
+ 
+ 
+ // attachment specific!
+ attachment_Active = false;

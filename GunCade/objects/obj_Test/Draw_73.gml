@@ -23,10 +23,12 @@ draw_text(x,y, txt)
    var result = point_distance(wid, mouse_y, mouse_x, mouse_y );
    
   if ( instance_exists(obj_MiniGame_Parent) ){
-  if( obj_MiniGame_Parent.AdditionalTxt_Update == 1){  wasTrue = 1; }
+     if( obj_MiniGame_Parent.AdditionalTxt_Update == 1){  wasTrue = 1; }
   
 //var bb = obj_MiniGame_Parent.AdditionalTxt_Update
-  draw_text( mouse_x, mouse_y+40, wasTrue );
+
+
+  draw_text( mouse_x, mouse_y+40, obj_MiniGame_Drop_Ammo.isBlocked );
   }
   
 
