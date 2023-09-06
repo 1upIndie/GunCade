@@ -1,17 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Tutorial_Txt_DropHere",
-  "eventList": [],
+  "name": "obj_Tutorial_Arrow_Side_Right",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Txt",
-    "path": "folders/Objects/Cutscenes/MiniGame/Tutorial/Txt.yy",
+    "name": "Arrow",
+    "path": "folders/Objects/Cutscenes/MiniGame/Tutorial/Arrow.yy",
   },
   "parentObjectId": {
-    "name": "obj_Tutorial_Txt_Parent",
-    "path": "objects/obj_Tutorial_Txt_Parent/obj_Tutorial_Txt_Parent.yy",
+    "name": "obj_Tutorial_Arrow_Parent",
+    "path": "objects/obj_Tutorial_Arrow_Parent/obj_Tutorial_Arrow_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Tutorial_txt_DropHere",
-    "path": "sprites/spr_Tutorial_txt_DropHere/spr_Tutorial_txt_DropHere.yy",
+    "name": "spr_Tutorial_Arrow_Down",
+    "path": "sprites/spr_Tutorial_Arrow_Down/spr_Tutorial_Arrow_Down.yy",
   },
   "spriteMaskId": null,
   "visible": true,

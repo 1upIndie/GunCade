@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Tutorial_Arrow_Side",
+  "name": "obj_Tutorial_Arrow_Side_Left",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Arrow",
-    "path": "folders/Objects/Cutscenes/Tutorial/Arrow.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Tutorial/Arrow.yy",
   },
   "parentObjectId": {
     "name": "obj_Tutorial_Arrow_Parent",

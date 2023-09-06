@@ -9,8 +9,34 @@
 	
 var setXYDir = setYX * lenghtXY;
 
-	if ( dir == "down" ){ y = start_Y + setXYDir; }
-	if ( dir == "side" ){ x = start_X + setXYDir; }
+// move the text with the arrow as well
+	if ( dir == "down"  ){ y = start_Y + setXYDir; Sprite_Text_SprY = -Sprite_Text_SprYUpDown;   }
+	if ( dir == "left"  ){ x = start_X + setXYDir; Sprite_Text_SprX =   Sprite_Text_SprXSide;   }
+	if ( dir == "right" ){ x = start_X + setXYDir; Sprite_Text_SprX =  -Sprite_Text_SprXSide;   }	
+
+
+	
+#region state machine
+
+if ( state == "idle"){
+
+  timer_Idle--;
+  if( timer_Idle < 0){ state = "fade";  }
+
+}
+
+
+if ( state == "fade"){
+  image_alpha -= alphaSub;
+
+  if( image_alpha < 0){ 
+	  
+
+	  instance_destroy();  }
+}
+
+
+#endregion	
 	
 	
 	

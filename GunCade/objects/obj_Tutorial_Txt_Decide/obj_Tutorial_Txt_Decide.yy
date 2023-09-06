@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Txt",
-    "path": "folders/Objects/Cutscenes/Tutorial/Txt.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Tutorial/Txt.yy",
   },
   "parentObjectId": {
     "name": "obj_Tutorial_Txt_Parent",

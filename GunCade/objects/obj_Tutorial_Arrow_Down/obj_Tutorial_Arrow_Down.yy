@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Arrow",
-    "path": "folders/Objects/Cutscenes/Tutorial/Arrow.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Tutorial/Arrow.yy",
   },
   "parentObjectId": {
     "name": "obj_Tutorial_Arrow_Parent",

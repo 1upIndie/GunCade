@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tutorial",
-    "path": "folders/Objects/Cutscenes/Tutorial.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/Tutorial.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -111,6 +111,10 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
 			 // enable sale
 			 obj_MiniGame_Button_Sale.enableSale = true;
 			 
+			 // is it a tutorial case? spawn last arrow
+			  if( obj_MiniGame_Parent.isTutorial == true ){  scr_Tutorial_SetArrowsTxt( "can sell" ); }
+
+			 
 	  if ( resetAttachments == true){ overrideInst.update = true;  }
 
       // add to costs in any case

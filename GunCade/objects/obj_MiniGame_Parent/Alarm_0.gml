@@ -1,5 +1,18 @@
 /// @description 
 
+
+
+	  // unique case of tutorial?
+ if( isTutorial == true ){
+	
+	
+	//instance_create_layer()
+	scr_Tutorial_SetArrowsTxt( "pick one category" );
+
+ }
+
+
+
 if(isRandomSale == false){ exit; }
 var oo = obj_Control_All;
  
@@ -7,6 +20,8 @@ var oo = obj_Control_All;
  var jump_Refuse = 0; 
  var jump_Fail   = 0;  
  
+
+#region random values!
 
  var get_Array = oo.randomSaleOverride_Day1_1;
  switch( isRandomSale_Array ){
@@ -76,10 +91,7 @@ possible_Stock_Perfect           = get_Array.temp_Perect_Stock;
       negative_Stock           = get_Array.temp_negative_Stock;   
 
       negative_Costs           = get_Array.temp_negative_Costs; 
+#endregion
+
+
 	  
-	  
-	  // unique case of tutorial?
-	  if( isTutorial == true ){
-	  
-	  
-	  }
