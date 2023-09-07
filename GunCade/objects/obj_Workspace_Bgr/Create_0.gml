@@ -11,7 +11,7 @@ tvHeight = 20;
 
 // if is news spawn on button!
 alarm[0] = 10;
-buttonX = 600;
+buttonX = -120;
 buttonY = 40;
 
 

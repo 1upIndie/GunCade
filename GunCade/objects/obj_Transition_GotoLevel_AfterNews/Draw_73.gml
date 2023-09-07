@@ -10,7 +10,7 @@ event_inherited();
 if ( state == "stick around"){
 	alphaSet = 1;
 	stickAroundTimer--;
-	if(stickAroundTimer <= 0){ state = "fade out";  }
+	if(stickAroundTimer <= 0){ if(levelJumpTo != noone){ room_goto(levelJumpTo); }  }
     
 		// do sneak in between
 	//if( command_Inblack != "" and command_InblackOnce == false){  event_user(0); }
@@ -19,6 +19,7 @@ if ( state == "stick around"){
 }
 
 // get lighter
+/*
 if (state == "fade out"){
 
 	channelTimer  -= (1/channelTimeFadeOut);
@@ -27,6 +28,8 @@ if (state == "fade out"){
 	
 	if(channelTimer <= 0){  if(levelJumpTo != noone){ room_goto(levelJumpTo); } }
 }
+*/
+
 
 // get darker
 if (state == "fade in"){
