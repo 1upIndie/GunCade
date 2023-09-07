@@ -77,7 +77,7 @@ textCashY = -135;
 
 textNeuesZeile = 900;
 
-nameY = -170;
+nameY = -170; 
 
 regularDialog = false;
 
@@ -208,8 +208,16 @@ repeat(900){
 repeat_I++;
 }
 
-// set background anew if new cast!
-if( oo.arrayCutscenes[oo.currentCutscene_DAY].isNews == true){  obj_Workspace_Bgr.sprite_index = spr_WorkStation_BackgroundNews;   }
+// set background anew if new cast! also postions
+if( oo.arrayCutscenes[oo.currentCutscene_DAY].isNews == true){ 
+	obj_Workspace_Bgr.sprite_index = spr_WorkStation_BackgroundNews; 
+	
+	dialogSpr_NpcX_1_    = 250;
+    dialogSpr_NpcX_2_    = 450;
+    dialogSpr_NpcX_3_    = 650;
+	
+	
+	}
 
 
 

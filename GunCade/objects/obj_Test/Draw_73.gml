@@ -1,7 +1,7 @@
 /// @description 
 var txt = "nope";
 var count = 0;
-
+var oo = obj_Control_All;
 	var camX        = camera_get_view_x( view_camera[0] );
 	var camY        = camera_get_view_y( view_camera[0] );
 	var camWidth    = camera_get_view_width( view_camera[0] );
@@ -23,12 +23,12 @@ draw_text(x,y, txt)
    var result = point_distance(wid, mouse_y, mouse_x, mouse_y );
    
 if instance_exists(obj_MiniGame_Parent){
-var bb = string(mouse_x-camX) +  " : " + string(mouse_y-camY)  
+var bb = "day: " +  string(oo.currentCutscene_DAY)  
    //bb = instance_exists(obj_Tutorial_Arrow_Parent)
    draw_text( mouse_x, mouse_y+40, bb );
 }
-   
-   
+   var bb = "day: " +  string(oo.currentCutscene_DAY)  
+    draw_text( mouse_x, mouse_y+40, bb );  
    
   
 

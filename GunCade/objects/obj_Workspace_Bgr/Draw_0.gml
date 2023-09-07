@@ -20,6 +20,9 @@ if ( isNews == true ){
 	 //draw_sprite_stretched_ext(spr_Tv_RhamenMain, 0, camX,camY, camWidth, camHeight-tvHeight, c_white, 1  );
 	 //draw_sprite_stretched(spr_Tv_RhamenMain, 0,     camX,camY, camWidth, camHeight-tvHeight);
 */
+
+// draw scan lines
+
 }
 
 
