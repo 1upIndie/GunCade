@@ -3,8 +3,8 @@
 var playSfx = false;
 if ( settings_SprI > 0){  settings_SprI--; playSfx = true;  };
 
-if( playSfx == true){ scr_PlaySound(sound_Left);  }
- else { scr_PlaySound(snd_MenueSfx_CantAlarm); }
+if( playSfx == true){ scr_PlaySound(sound_Left ,0);  }
+ else { scr_PlaySound(snd_MenueSfx_CantAlarm ,0); }
  
  
 

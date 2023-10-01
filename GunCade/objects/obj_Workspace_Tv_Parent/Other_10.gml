@@ -4,7 +4,7 @@
 // failsave
 if (instance_exists(programmID) ){  instance_destroy(programmID); programmID = noone; }
 
-scr_PlaySound(snd_TvSwitchProgramm);
+scr_PlaySound(snd_TvSwitchProgramm ,0);
 
 // get id of new programm to load in
 if(currentProgrammIndex < getArrayLength-1){ currentProgrammIndex++;  }

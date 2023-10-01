@@ -40,6 +40,14 @@ hoverOverDialogBoxBlinkColor = c_orange;
 
 #endregion
 
+
+#region audio control!
+
+audioState = "play";
+if(obj_Control_All.currentCutscene_DAY >= 100){ audioState = ""; scr_PlaySound(snd_Solo_Tv, 1); }
+
+#endregion
+
 //instance_create_layer(x,y, "Instances_bgr", obj_Workspace_Bgr );
 // apply camera
 var factor = 65;

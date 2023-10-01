@@ -35,7 +35,7 @@ if( buttonExeption == true ){ hoverOverDialogBox = true; buttonSkip = true; }
 
 // next ->
 if(buttonSkip == 1 and typeWriterPosition == 1 and hoverOverDialogBox == true ){ 
-  	 scr_PlaySound(snd_MenueSfx_Dialog_Click);
+  	 scr_PlaySound(snd_MenueSfx_Dialog_Click,0);
   event_user(0);
 	}
 
@@ -43,7 +43,7 @@ if(buttonSkip == 1 and typeWriterPosition == 1 and hoverOverDialogBox == true ){
 // skip to full text
 if(buttonSkip == 1 and typeWriterPosition < 1 and hoverOverDialogBox == true ){ 
 	typist.skip();
-	 scr_PlaySound(snd_MenueSfx_Dialog_Skip);
+	 scr_PlaySound(snd_MenueSfx_Dialog_Skip ,0);
 	}
 }
 
@@ -367,7 +367,35 @@ if(isNews == false){
 
 
 #endregion	
+
+
+#region audio song control! Audio auto play
+
+  if( audioState == "play"){ 
+	  /*
+	  // audio has played till end? reset value!
+	  if ( audio_is_playing( obj_Control_All.arraySongsPlaylist[ obj_Control_All.current_SongIndex ]) == false){
+	     // check index!
+   		 if( obj_Control_All.current_SongIndex < array_length(obj_Control_All.arraySongsPlaylist)-1){
+		     obj_Control_All.current_SongIndex++;
+		   }  else {  obj_Control_All.current_SongIndex = 0;  }
+		 
+		 // reset timer
+		 obj_Radio.timeSteps    = 0;
+         obj_Radio.timeSeconds  = 0;
+         obj_Radio.timeMinutes  = 0;
+		 
+		 // play correct song!
+		 scr_PlaySound( obj_Control_All.arraySongsPlaylist[ obj_Control_All.current_SongIndex ] ,0);
+	  } 
+*/
+  }	
+  
+  
+  
+  
 	
+#endregion
 	
 // spr fade in!
 /*

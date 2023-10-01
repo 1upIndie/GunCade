@@ -1,6 +1,6 @@
 /// @description 
 
-scr_PlaySound(sound_Left);
+scr_PlaySound(sound_Left ,0);
 
 obj_Button_Parent.canClick = false; // disable!
 instance_destroy(obj_Button_Parent);

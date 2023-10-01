@@ -23,8 +23,8 @@ if(state == "hover" and canClick == true){
 	var mouseL = mouse_check_button_released(mb_left);
 	var mouseR = mouse_check_button_released(mb_right);	
 	
-	if(mouseL == 1 and mouseR == 0){   event_user(2); scr_PlaySound(sound_Left);  } // left
-	if(mouseL == 0 and mouseR == 1){   event_user(3); scr_PlaySound(sound_Right); } // right
+	if(mouseL == 1 and mouseR == 0){   event_user(2); scr_PlaySound(sound_Left  ,0);  } // left
+	if(mouseL == 0 and mouseR == 1){   event_user(3); scr_PlaySound(sound_Right ,0); } // right
 
 
 }

@@ -7,6 +7,7 @@
 debug = true;
 demo  = true;
 
+sound_Debug = true;
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
@@ -89,13 +90,13 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
   textDetail_DescSuffix = "[/scale]";
 
 
-  textRadioSongOwner_Prefix = "[fnt_RadioDigital][scale, 0.32][#22E1FB]";
+  textRadioSongOwner_Prefix = "[fnt_Radio_Owner][scale, 0.7][#94ABAE][fa_center]";
   textRadioSongOwner_Suffix = "[/c][/scale]";
 
-  textRadioSongName_Prefix = "[fnt_RadioDigital][scale, 0.28][#22E1FB]";
+  textRadioSongName_Prefix = "[fnt_Radio_Name][scale, 0.9][#94ABAE][fa_center]";
   textRadioSongName_Suffix = "[/c][/scale]";
 
-  textRadioTimer_Prefix = "[fnt_RadioDigital][scale, 0.7][#22E1FB]";
+  textRadioTimer_Prefix = "[fnt_RadioDigital][scale, 0.7][#94ABAE]";
   textRadioTimer_Suffix = "[/c][/scale]";
 
   textRadioMisc_Prefix = "[fnt_RadioDigitalThin][scale, 0.2][#22E1FB]";
@@ -705,7 +706,13 @@ tvIndexI++;
 
 #endregion
 
-#region sound fixed + songs
+#region sound fixed + songs + auto audio clean up
+
+// cleaning up in interval!
+audio_cleanupArray = array_create(0);
+audioCleanup = round(10 *60);
+alarm[2] = audioCleanup;
+
 
 audioFixed_FadeOut = 500;
 audioFixed_FadeIn  = 500;
@@ -730,15 +737,29 @@ function createSong( id_, isUnique_,   song_, nameOwner_, nameSong_, length_, is
 arraySongs = array_create(0);
 var songI = 0;
 
- arraySongs[songI] = new createSong(songI, 0, snd_Music_auto_Darkest_Before_Dawn , "ncalib", "Spicy Cream" , "(4:11)", 1 ); songI++;
- arraySongs[songI] = new createSong(songI, 0, snd_Music_ncalib_Mokka_EarlyMorning, "ncalib", "Early Mornin", "(4:09)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_1_Mokka__Retrogate , "Mokka", "Retrogate" , "(3:17)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_2_Mokka__Home, "Mokka", "Home", "(2:43)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_3_Ncalib__Galaxy_420, "NCALIB", "Galaxy 420", "(3:45)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_4_Mokka__Abstract_Feeling, "Mokka", "Abstract Feeling", "(2:08)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_5_Mokka__You_and_Me, "Mokka", "You and Me", "(2:30)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_6_Mokka_Early_Morning, "Mokka", "Early Morning", "(2:35)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_7_Mokka__Pandas_Dream, "Mokka", "Pandas Dream", "(3:08)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_8_Mokka__Pray_for_Us, "Mokka", "Pray for Us", "(2:02)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_9_Mokka__Synthetic_pleasures, "Mokka", "Synthetic Pleasures", "(2:08)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_10_DavidKBD__The_Hidden_One, "DavidKBD", "The Hidden One", "(2:02)", 1 ); songI++;
+ arraySongs[songI] = new createSong(songI, 0, snd_11_Phat_Phrog_Studios__Adventure_Game_Music_Collection, "Phat Phrong Stuidos", "Adventure game music", "(3:28)", 1 ); songI++;  // 10
 
+
+
+
+arraySongsPlaylist = array_create(0);
 
 
 
 #endregion
 
 #region unlocked
+
 
 unlocked_WeaponType_Melee_       = true;
 unlocked_WeaponType_Pistol_      = true;
@@ -815,6 +836,8 @@ unlocked_WeaponType_Accessory[6] = true;
 currentCutscene_DAY = 0;
 currentCutscene     = 0;
 
+current_SongIndex = 0; // important for playback!
+
 #region choises and saved values through the game
 
 volume_Master = 1;
@@ -824,7 +847,7 @@ volume_Music  = 1;
 screenScale  = 1; // default value!
 fullscreen = false;
 
-
+firstTimeAllSet = false;
 // cash saved
 var cashI = 1;
 repeat(12){
@@ -857,6 +880,11 @@ eatMacaronGranny2_Day_6  = false;   //
 giveKyle_Gun2_Day_7           = false; // giving kyle weapon (when rescuded before)
 payKyleRansomeThisTime_Day_7  = false; // paying randsome next time (second chance)
 autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is the same
+
+
+
+// playlist value -> not really bools, but index of song or -999 as not set!
+playListSongActiveBools = array_create(10, -999); // saved and set the song array auto!
 
 
 #endregion
@@ -2011,10 +2039,10 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
       ////
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor smiling"  , "enter default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial;	 	 
-	 dialog_I++;
+   ///  arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor smiling"  , "enter default");	 
+    // arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		
+    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial;	 	 
+	// dialog_I++;
 ////
 
 
@@ -10487,7 +10515,7 @@ var day_I = 0; // day 1
 
 #region override values -> saved stuff
 
-
+ var arrayPlayListBoolL = array_length(playListSongActiveBools);
 ini_open("data.bob");
  volume_Master =  ini_read_real("settings", "master volume", 0.5);
  volume_Sfx    =  ini_read_real("settings", "volume sfx",    1);  
@@ -10495,7 +10523,51 @@ ini_open("data.bob");
 
  screenScale   =  ini_read_real("settings", "scale",      2);
  fullscreen    =  ini_read_real("settings", "fullscreen", 0);
+ 
+  firstTimeAllSet  =  ini_read_real("settings", "first time set",      0);
+
+
+
+ if( firstTimeAllSet == 0){
+	 var defaultSetPlaylist = 0;
+	 	 repeat(30){
+			 playListSongActiveBools[defaultSetPlaylist] = defaultSetPlaylist;
+			 defaultSetPlaylist++;
+		 }
+ }
+ 
+ 
+ // if already set, take over!
+ if( firstTimeAllSet == 1){
+ // playlist!
+ var defaultPlaylist = 0; // default no song!
+ 
+ var playlistBool_I = 0;
+	 repeat(arrayPlayListL){
+	 playListSongActiveBools[playlistBool_I] = ini_read_real("playlist", playlistBool_I, defaultPlaylist); 		
+	 playlistBool_I++;
+	 }
+ } 
+ 
+ 
+
+ 
 ini_close();
+
+
+// fill up actual playlist!
+
+ var playlistSET_I = 0;
+ var togglethroughAll_I = 0;
+	repeat( arrayPlayListBoolL ){
+
+		if( playListSongActiveBools[togglethroughAll_I] != -999){
+		    arraySongsPlaylist[playlistSET_I] =  arraySongs[ playListSongActiveBools[togglethroughAll_I] ].songSnd;
+			playlistSET_I++; }
+		
+			togglethroughAll_I++;
+	}
+
 
 
 /// apply if needed

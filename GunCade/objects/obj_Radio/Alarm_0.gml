@@ -9,11 +9,62 @@
 
 
 volumeButtonStartX = x + 38;
-volumeButtonStartY = y + 64;
+volumeButtonStartY = y + 210;
 
-timerDigitX = x + 32;
-timerDigitY = y + 21;
+timerDigitX = x + 125;
+timerDigitY = y + 98;
  
-songNameX = x + 141;
-songNameY  = y + 20;
-songOwnerY = y + 35;
+songNameX  = x + (sprite_width/2);
+songNameY  = y + 49;
+songOwnerX = x + (sprite_width/2);
+songOwnerY = y + 16;
+
+
+cog_X = x + 78;
+cog_Y = y + 123;
+
+// input positions for control
+var rectBuffX = 35;
+var rectL = 30;
+
+var rectBuffY = 95;
+var rectH = 30;
+
+rectangleX1[1] = x + rectBuffX;
+rectangleX2[1] = x + rectBuffX + rectL;
+rectangleY1 = y + rectBuffY;
+rectangleY2 = y + rectBuffY + rectH;
+
+rectangleX1[2] = x + sprite_width - rectBuffX;
+rectangleX2[2] = x + sprite_width - rectBuffX - rectL;
+
+
+
+sprButtonToggle_X[1] = x + (sprite_width/2) - (btnXXDif*1) + btnXXX; // triangle L
+sprButtonToggle_X[2] = x + (sprite_width/2)                + btnXXX; // Pause
+sprButtonToggle_X[3] = x + (sprite_width/2) + (btnXXDif*1) + btnXXX; // triangle R
+sprButtonToggle_Y    = y + sprite_height - 90; 
+
+var rectAjustX = 15;
+var rectAjustY = 13;
+rectangleX1[1] = sprButtonToggle_X[1] - rectAjustX;
+rectangleX2[1] = sprButtonToggle_X[1] + rectAjustX;
+
+rectangleX1[2] = sprButtonToggle_X[2] - rectAjustX;
+rectangleX2[2] = sprButtonToggle_X[2] + rectAjustX;
+
+rectangleX1[3] = sprButtonToggle_X[3] - rectAjustX;
+rectangleX2[3] = sprButtonToggle_X[3] + rectAjustX;
+
+rectangleY1 = sprButtonToggle_Y - rectAjustY;
+rectangleY2 = sprButtonToggle_Y + rectAjustY;
+
+
+// auto set first song!
+	var songAuthor     = obj_Control_All.arraySongs[ obj_Control_All.playListSongActiveBools[ obj_Control_All.current_SongIndex] ].songOwner;
+	var songSongLength = obj_Control_All.arraySongs[ obj_Control_All.playListSongActiveBools[ obj_Control_All.current_SongIndex] ].songLength;	
+	var songName       = obj_Control_All.arraySongs[ obj_Control_All.playListSongActiveBools[ obj_Control_All.current_SongIndex] ].songName;		
+	   
+	   songNameCurrentOwnerTime = prefix_SongOwner + songAuthor + " " +  songSongLength + suffix_SongOwner;
+	   songNameCurrentName      = prefix_SongName  + songName   + suffix_SongName;
+

@@ -86,7 +86,7 @@ var _val = animcurve_channel_evaluate(  fadeLogo_AniCurve, fadeLogo_AniCurve_I  
    spr_CharAlpha[4] = _val;
    
 if( fadeLogo_AniCurve_I >= 0.5 and fadeLogo_PlayOnce == false ){ fadeLogo_PlayOnce = true;
-   scr_PlaySound(snd_StartScreen_LogoPopup); }
+   scr_PlaySound(snd_StartScreen_LogoPopup,0); }
    
    if( fadeLogo_AniCurve_I >= 1 ){ state = "wait5";  }
 }

@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Tv_Rhamen",
-  "bbox_bottom": 744,
+  "bbox_bottom": 739,
   "bbox_left": 0,
   "bbox_right": 979,
   "bbox_top": 0,
@@ -13,15 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2f6e6e3-2566-41fd-8033-13d11e23ebf7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"673b51cd-47f0-4cfe-af96-3ebb75fc0f19",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 745,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bf932d49-f03f-45c0-b00b-1907bb54dabc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6090837f-76c7-40a7-8214-0332ddf3f188","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dcbb610c-72ca-4c3c-b78f-3f082d59df4f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d2f6e6e3-2566-41fd-8033-13d11e23ebf7","path":"sprites/spr_Tv_Rhamen/spr_Tv_Rhamen.yy",},},},"Disabled":false,"id":"b94110e9-a136-44c4-af2e-f2de1ceaace4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"673b51cd-47f0-4cfe-af96-3ebb75fc0f19","path":"sprites/spr_Tv_Rhamen/spr_Tv_Rhamen.yy",},},},"Disabled":false,"id":"e3e16555-141e-41a2-b013-89fd84db83f0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

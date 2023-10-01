@@ -13,7 +13,7 @@
   "duration": 0.917188,
   "parent": {
     "name": "Sale_Voice",
-    "path": "folders/Sounds/Sale_Voice.yy",
+    "path": "folders/Sounds/Sfx/Sale_Voice.yy",
   },
   "preload": false,
   "sampleRate": 44100,

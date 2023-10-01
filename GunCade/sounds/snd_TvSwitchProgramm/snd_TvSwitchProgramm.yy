@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.917188,
+  "duration": 0.5,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Sfx",
+    "path": "folders/Sounds/Sfx.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_TvSwitchProgramm.ogg",
+  "soundFile": "snd_TvSwitchProgramm.wav",
   "type": 0,
   "volume": 1.0,
 }

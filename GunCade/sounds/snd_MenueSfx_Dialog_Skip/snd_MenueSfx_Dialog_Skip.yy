@@ -13,7 +13,7 @@
   "duration": 1.333333,
   "parent": {
     "name": "SkipClick_Dialog",
-    "path": "folders/Sounds/Sfx_Menue/SkipClick_Dialog.yy",
+    "path": "folders/Sounds/Sfx/Sfx_Menue/SkipClick_Dialog.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.917188,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Dialog_blah",
+    "path": "folders/Sounds/Sfx/Dialog_blah.yy",
   },
   "preload": false,
   "sampleRate": 44100,

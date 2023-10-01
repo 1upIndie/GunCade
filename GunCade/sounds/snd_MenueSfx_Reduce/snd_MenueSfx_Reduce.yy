@@ -13,7 +13,7 @@
   "duration": 0.917188,
   "parent": {
     "name": "Sfx_Menue",
-    "path": "folders/Sounds/Sfx_Menue.yy",
+    "path": "folders/Sounds/Sfx/Sfx_Menue.yy",
   },
   "preload": false,
   "sampleRate": 44100,

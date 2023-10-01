@@ -1,6 +1,9 @@
 /// @description 
 obj_Workspace_Control.blockDraw = true;
 // timers
+
+scr_PlaySound(snd_Reveal_Character ,0);
+
 state = "wait";  // wait, character, wait2 name, descritpion
 
  stateTimer_Wait          = round(1.2*60);

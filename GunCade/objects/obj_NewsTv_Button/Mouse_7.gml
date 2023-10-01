@@ -4,6 +4,7 @@ var oo = obj_Control_All;
 // block!
 obj_Workspace_Control.blockInput = true;
 
+scr_PlaySound( snd_TvSwitchProgramm ,0);
 
 var jump = instance_create_depth(x,y, -15000, obj_Transition_GotoLevel_AfterNews );
     jump.levelJumpTo = Room_Workspace;

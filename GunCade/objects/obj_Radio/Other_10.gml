@@ -5,6 +5,11 @@ var oo = obj_Control_All;
 var songIndex = 0;
 var arraySongL = array_length(oo.arraySongs);
 
+var arrayPlaylist = oo.arraySongsPlaylist;
+    arraySongL = array_length(oo.arraySongsPlaylist);
+	
+
+	
 var indexSet = 0;
 repeat(arraySongL){
 

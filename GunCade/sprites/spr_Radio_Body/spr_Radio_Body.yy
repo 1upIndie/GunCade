@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Radio_Body",
-  "bbox_bottom": 316,
+  "bbox_bottom": 411,
   "bbox_left": 0,
-  "bbox_right": 415,
+  "bbox_right": 572,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"709e1588-542a-444d-aa0b-1097d52b67de",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d05e475-1637-4fcf-b193-6b48f172ecb3",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 317,
+  "height": 412,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2ca92f11-3620-4fcb-9993-d6ae5550d33d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fee14163-9831-4165-851b-1a528d341a1f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"709e1588-542a-444d-aa0b-1097d52b67de","path":"sprites/spr_Radio_Body/spr_Radio_Body.yy",},},},"Disabled":false,"id":"eacdb428-64b0-428c-a0ff-32c7d9909be3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5d05e475-1637-4fcf-b193-6b48f172ecb3","path":"sprites/spr_Radio_Body/spr_Radio_Body.yy",},},},"Disabled":false,"id":"368d9010-210b-4611-add5-6be78821e02c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 416,
+  "width": 573,
 }

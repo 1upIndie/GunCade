@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.917188,
+  "duration": 2.568481,
   "parent": {
     "name": "Sale_Voice",
-    "path": "folders/Sounds/Sale_Voice.yy",
+    "path": "folders/Sounds/Sfx/Sale_Voice.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_PopUp__PerfectSale.ogg",
+  "soundFile": "snd_PopUp__PerfectSale.wav",
   "type": 0,
   "volume": 1.0,
 }
