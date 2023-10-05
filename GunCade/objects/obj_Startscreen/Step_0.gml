@@ -146,7 +146,7 @@ if(skipToButtons == false){
 	   sprMoveX = moveRightAmount;
 	  
     // instant skip!
-	instance_create_layer( camX , camY,  "Instances_Buttons", obj_Effect_Txt_PopUpGoUp_Slip );	  
+	//instance_create_layer( camX , camY,  "Instances_Buttons", obj_Effect_Txt_PopUpGoUp_Slip );	  
 	  
 	  
 	  

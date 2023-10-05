@@ -7,12 +7,12 @@ if(obj_Control_All.volume_Master >= 0.05){ obj_Control_All.volume_Master -= 0.05
 // apply
 audio_master_gain(obj_Control_All.volume_Master);
 
-if( playSfx == true){ scr_PlaySound(sound_Left,0);  }
+if( playSfx == true){ scr_PlaySound(sound_Left, 0);  }
  else { scr_PlaySound(snd_MenueSfx_CantAlarm ,0); }
 
 
 // translate into i
-switch(obj_Control_All.volume_Master){
+switch( obj_Control_All.volume_Master ){
 	
 	case 0   : settings_SprI = 0; break;
 	
