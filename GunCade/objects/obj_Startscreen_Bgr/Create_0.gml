@@ -9,7 +9,9 @@
 x = camX + (camWidth/2);
 y = camY -10;
 
-var scaleSet = 0.6;
+
+
+var scaleSet = 1.9;
 image_xscale = scaleSet;
 image_yscale = scaleSet;
 alarm[0] = 2;

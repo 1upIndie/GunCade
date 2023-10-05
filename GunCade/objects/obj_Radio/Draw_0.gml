@@ -33,7 +33,7 @@ repeat(vol20){
   }}
 
   draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, 0.4); // bgr ghost volume max
-  if( iterateBtn <= valumeTotal){  
+  if( iterateBtn <= volumeTotal){  
   draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, allBtnAlpha );
   } 
   
@@ -53,12 +53,16 @@ var mbLeft = mouse_check_button_released(mb_left);
  if(mbLeft == true and getClickOnPostion != ""){
  
    if(clickOnType == "volume"){  
-	   valumeTotal = getClickOnPostion;
+	   volumeTotal = getClickOnPostion;
 	   
 	    obj_Control_All.volume_Music  = valumeTotal/vol20; 
 		
-		obj_Control_All.volume_Master = valumeTotal/vol20;
-		audio_master_gain(obj_Control_All.volume_Master);
+		///obj_Control_All.volume_Master = valumeTotal/vol20;
+		///audio_master_gain(obj_Control_All.volume_Master);
+		
+       // apply
+      audio_group_set_gain( audiogroup_Music,  obj_Control_All.volume_Music, 0 );
+		
 	   }
  
  scr_PlaySound(snd_MenueSfx_ToggleLR, 0);

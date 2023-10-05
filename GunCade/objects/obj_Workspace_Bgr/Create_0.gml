@@ -1,6 +1,8 @@
 /// @description 
 
 image_alpha = 0.8;
+image_alpha = 1;
+
 
 isNews = false;
 
@@ -14,7 +16,11 @@ alarm[0] = 10;
 buttonX = -120;
 buttonY = 40;
 
+var size = 0.85;
+image_xscale = size;
+image_yscale = size;
 
+image_blend = c_gray;
 // scanlines
 scanLineY = 0;
 scanLineYAdd = 0.2;

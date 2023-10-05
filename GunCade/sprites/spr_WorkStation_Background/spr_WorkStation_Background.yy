@@ -4,7 +4,7 @@
   "name": "spr_WorkStation_Background",
   "bbox_bottom": 767,
   "bbox_left": 0,
-  "bbox_right": 767,
+  "bbox_right": 1499,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"641ea38e-b550-4b2d-aa40-428a75c185be",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"03412164-5a8b-410b-bafc-b95075a69707","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3b2660e6-50b2-43af-aa94-fac0216b16c0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -54,12 +54,12 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46","path":"sprites/spr_WorkStation_Background/spr_WorkStation_Background.yy",},},},"Disabled":false,"id":"342693bf-12a1-46ef-9804-9b24db88f9b7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"641ea38e-b550-4b2d-aa40-428a75c185be","path":"sprites/spr_WorkStation_Background/spr_WorkStation_Background.yy",},},},"Disabled":false,"id":"c7e225d0-f5ed-4e19-ae29-2ea38405b759","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 384,
+    "xorigin": 750,
     "yorigin": 0,
   },
   "swatchColours": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 768,
+  "width": 1500,
 }

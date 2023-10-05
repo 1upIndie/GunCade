@@ -35,7 +35,7 @@
 	//	dialogSpr_X2   = -15;
 	//	}
 	
-	
+
 	// check if there is an instance loaded! -> if yes block input!	 
 	if ( array_InstanceLoadIn[ dialogIndex ] != noone ){ 
 		blockInput = true;

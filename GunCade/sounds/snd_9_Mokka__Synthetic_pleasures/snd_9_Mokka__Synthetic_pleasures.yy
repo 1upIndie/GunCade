@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "snd_9_Mokka__Synthetic_pleasures",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audiogroup_Music",
+    "path": "audiogroups/audiogroup_Music",
   },
   "bitDepth": 1,
   "bitRate": 128,

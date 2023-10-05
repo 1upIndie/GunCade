@@ -10,6 +10,7 @@ canClick = false;
 disable = true;
 
 size_Default   = 0.4;
+ size_Default   = 1.2;
  image_xscale = size_Default;
  image_yscale = size_Default; 
 
@@ -55,7 +56,7 @@ settings_Spr      = spr_Nothing;
 settings_SprI     = 0;
 settings_SprAlpha = 0.95;
 
-settings_SprX = x + 120;
+settings_SprX = x + 320;
 settings_SprY = y;
 
 

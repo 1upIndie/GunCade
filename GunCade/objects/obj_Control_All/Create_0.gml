@@ -1,7 +1,8 @@
-/// @description Hier Beschreibung einfügen
+ /// @description Hier Beschreibung einfügen
 
 
-
+audio_group_load( audiogroup_Music );
+audio_group_load( audiogroup_SFX );
 
 
 debug = true;
@@ -107,8 +108,11 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
   textBill_DescSuffix   = "[/c][/scale]";
 
  // positions
- moneyTxtX  = 718; // money 
- moneyTxtY  = 375; // money 
+ //moneyTxtX  = 718; // money old right side value
+ //moneyTxtY  = 375; // money 
+  moneyTxtX  = 35; // money 
+  moneyTxtY  = 15; // money 
+ 
 #endregion
 
 #region weapon texts + costs
@@ -938,46 +942,48 @@ indexSet++;
 		  // override!
 			switch(person_Mood_){		  
 					  
-					  
+
+#region Jez
+
 			 /////// JEZ		  
-			  case  "jez default": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
-				   sprIdle_        = spr_Dialog_Jez_Idle; 
+			  case  "jez default":    
+				   sprIdleStatic   = spr_Dialog_Jez_Idle;
+				   sprIdle_        = spr_Dialog_Jez_IdleStatic; 
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;    
 
-			  case  "jez angry": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_AngryStatic;
-				   sprIdle_        = spr_Dialog_Jez_Angry; 
+			  case  "jez angry": 			    
+				   sprIdleStatic   = spr_Dialog_Jez_Angry;
+				   sprIdle_        = spr_Dialog_Jez_AngryStatic; 
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;  
 
 			  case  "jez disgusted": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_DisgustedStatic;
-				   sprIdle_        = spr_Dialog_Jez_Disgusted; 
+				   sprIdleStatic   = spr_Dialog_Jez_Disgusted;
+				   sprIdle_        = spr_Dialog_Jez_DisgustedStatic; 
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;  
 
-			  case  "jez smiling": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
-				   sprIdle_        = spr_Dialog_Jez_Idle; 
+			  case  "jez smiling": 	 		  
+				   sprIdleStatic   = spr_Dialog_Jez_Idle;
+				   sprIdle_        = spr_Dialog_Jez_IdleStatic; 
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;    
 
 			  case  "jez flirting": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_FlirtingStatic;
-				   sprIdle_        = spr_Dialog_Jez_Flirting; 
+				   sprIdleStatic   = spr_Dialog_Jez_Flirting;
+				   sprIdle_        = spr_Dialog_Jez_FlirtingStatic; 
 				   sprTalkStatic_  = spr_Dialog_Jez_FlirtStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_FlirtingTalk; 		break;    
 
 			  case  "jez dismissive": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_DismissiveStatic;
-				   sprIdle_        = spr_Dialog_Jez_Dismissive; 
+				   sprIdleStatic   = spr_Dialog_Jez_Dismissive;
+				   sprIdle_        = spr_Dialog_Jez_DismissiveStatic; 
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;  				   
+#endregion
 
-
-
+#region Victor
 
 			 /////// Victor	
 			  case  "victor default":  
@@ -1010,43 +1016,44 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_VictorDismissive_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;
+#endregion
 
-
-
+#region Kyle
 
 			 /////// Kyle	
 			  case  "kyle default":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_IdleStatic;
-				   sprIdle_        = spr_Dialog_Kyle_Idle; 
+				   sprIdleStatic   = spr_Dialog_Kyle_Idle;
+				   sprIdle_        = spr_Dialog_Kyle_IdleStatic; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
 	
 			  case  "kyle angry":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_AngryStatic;
-				   sprIdle_        = spr_Dialog_Kyle_Angry; 
+				   sprIdleStatic   = spr_Dialog_Kyle_Angry;
+				   sprIdle_        = spr_Dialog_Kyle_AngryStatic; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
 	
 			  case  "kyle smiling":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_IdleStatic;
-				   sprIdle_        = spr_Dialog_Kyle_Idle; 
+				   sprIdleStatic   = spr_Dialog_Kyle_Idle;
+				   sprIdle_        = spr_Dialog_Kyle_IdleStatic; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
 
 	
 			  case  "kyle dismissive":		  
-				   sprIdleStatic   = spr_Dialog_KyleDismissive_IdleStatic;
-				   sprIdle_        = spr_Dialog_KyleDismissive_Idle; 
+				   sprIdleStatic   = spr_Dialog_KyleDismissive_Idle;
+				   sprIdle_        = spr_Dialog_KyleDismissive_IdleStatic; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
 
-			  case  "kyle dumb":		  
-				   sprIdleStatic   = spr_Dialog_KyleDumb_IdleStatic;
-				   sprIdle_        = spr_Dialog_KyleDumb_Idle; 
+			  case  "kyle dumb":		   
+				   sprIdleStatic   = spr_Dialog_KyleDumb_Idle;  // wrong here
+				   sprIdle_        = spr_Dialog_KyleDumb_IdleStatic; 
 				   sprTalkStatic_  = spr_Dialog_Kyle_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Kyle_Talk; 		 break;
+#endregion
 
-
+#region Shadow
 
 			 /////// Shadow					   
 			  case  "shadow default":  
@@ -1084,8 +1091,9 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_ShadowDismissive_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;	
+#endregion
 
-
+#region Granny	
 
 
 			 /////// Granny		
@@ -1113,7 +1121,9 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_GrannyDismissive_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_GrannyDismissive_Talk; 		break;
 
+#endregion
 
+#region Weather
 
 			 /////// Weather	
 			  case  "weather default":  
@@ -1147,9 +1157,9 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Weather_Cocky; 
 				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;					   
+#endregion
 
-
-
+#region  Wife
 
 			 /////// Wife
 			  case  "wife default":  
@@ -1182,9 +1192,9 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Wife_Annoyed; 
 				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;
+#endregion
 
-
-
+#region Betty
 
 			 /////// Betty
 			  case  "betty default":  
@@ -1198,8 +1208,9 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_BettySmiling_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Betty_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Betty_Talk; 		    break;
+#endregion
 
-
+#region Clown
 
 			 /////// clown
 			  case  "clown default":			  
@@ -1226,7 +1237,9 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Jez_Talk; 		 break; 	
 
+#endregion
 
+#region Cop
 
 			 /////// Cop
 			  case  "cop default":			  
@@ -1252,9 +1265,10 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Cop_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Cop_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Cop_Talk; 		 break;	
+#endregion
 
 
-
+#region Dad
 
 			 /////// Dad
 			  case  "dad default":			  
@@ -1280,8 +1294,9 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_AngryDad_Idle; 
 				   sprTalkStatic_  = spr_Dialog_AngryDad_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_AngryDad_Talk; 		break;	
+#endregion
 
-
+#region Nerd
 
 			 /////// Nerd
 			  case  "nerd default":		  
@@ -1307,8 +1322,9 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Nerd_Idle; 
 				   sprTalkStatic_  = spr_Dialog_Nerd_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Nerd_Talk; 		 break;
-
+#endregion
 			   
+#region Nun
 
 			 /////// Nun
 			  case  "nun default":		  
@@ -1335,8 +1351,9 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Nun_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Nun_Talk; 		 break;
 
+#endregion
 
-
+#region Twins
 
 			 /////// Twin 1 + 2
 			  case  "twin1 default":  
@@ -1390,9 +1407,10 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Twin2_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Twin2_Talk; 		  break;		   
 				   
+#endregion				   
 				   
-				   
-				   
+#region Duke
+			   
 			 /////// Duke				   
 			  case  "duke default":  
 				   sprIdleStatic   = spr_Dialog_Duke_IdleStatic;
@@ -1418,7 +1436,7 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Duke_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Duke_Talk; 		    break;	
 				   
-  
+#endregion	  
 			   
 					   
 
@@ -2038,13 +2056,6 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-      ////
-   ///  arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor smiling"  , "enter default");	 
-    // arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Hey hey, my boy, how are you doing on this glorious day?", snd_TextScroll_Default );		
-    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial;	 	 
-	// dialog_I++;
-////
-
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , ""); ///-> orginal!
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
@@ -2328,7 +2339,6 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "V, mind if I take care of business here and then I'll stop by your office?", snd_TextScroll_Default );	
 	 dialog_I++;	 
-
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor grumpy"  , "");
@@ -10483,7 +10493,8 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I, 2, "betty default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,   2,  "betty", "Thanks for that report Gail. Now, over to our newest member of the team for the weather.", snd_TextScroll_Default );	
-	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_StartDayFadeIn; // transition from betty to weather girl	 	 
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_StartDayFadeIn; // transition from betty to weather girl	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_NewsBgrSwap; // 
 	 dialog_I++;	 
 	 
 
@@ -10574,6 +10585,10 @@ ini_close();
 if(fullscreen == 1){ window_set_fullscreen(1);  }
 
 // apply
-audio_master_gain(obj_Control_All.volume_Master);
+audio_master_gain( volume_Master );
+audio_group_set_gain( audiogroup_SFX,    volume_Sfx, 0 );
+audio_group_set_gain( audiogroup_Music,  volume_Music, 0 );
+
+
 
 #endregion

@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons_and_Spawning",
-    "path": "folders/Objects/Buttons_and_Spawning.yy",
+    "name": "StartScreen",
+    "path": "folders/Objects/Buttons_and_Spawning/StartScreen.yy",
   },
   "parentObjectId": {
     "name": "obj_Pause_SpawnButtons_Parent",

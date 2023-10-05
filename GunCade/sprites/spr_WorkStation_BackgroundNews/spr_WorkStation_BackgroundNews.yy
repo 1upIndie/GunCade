@@ -4,7 +4,7 @@
   "name": "spr_WorkStation_BackgroundNews",
   "bbox_bottom": 767,
   "bbox_left": 0,
-  "bbox_right": 767,
+  "bbox_right": 1499,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b6c1fcc-3bc8-4746-9316-aefd86d40ad7",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"03412164-5a8b-410b-bafc-b95075a69707","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"80a69a48-7eea-47c8-b97f-7699eb684e4b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -54,12 +54,12 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bdf68674-92c0-4b15-a9ef-a0b587b7fc46","path":"sprites/spr_WorkStation_BackgroundNews/spr_WorkStation_BackgroundNews.yy",},},},"Disabled":false,"id":"5852a54f-e879-40fd-ab19-58b8e9dbb9c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4b6c1fcc-3bc8-4746-9316-aefd86d40ad7","path":"sprites/spr_WorkStation_BackgroundNews/spr_WorkStation_BackgroundNews.yy",},},},"Disabled":false,"id":"60b56d8b-cacc-4eba-9434-02b1857f81e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 384,
+    "xorigin": 750,
     "yorigin": 0,
   },
   "swatchColours": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 768,
+  "width": 1500,
 }

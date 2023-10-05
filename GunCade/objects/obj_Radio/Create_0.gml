@@ -17,7 +17,7 @@ allBtnAlpha = 0.9;
 allBtnHover = c_red;
 
 vol20 = 20;
-valumeTotal =   round( obj_Control_All.volume_Music * vol20); 
+volumeTotal =   round( obj_Control_All.volume_Music * vol20); 
 volumeButtonStartX = x + 38;
 volumeButtonStartY = y + 64;
 volumeButtonNextX  = 13;

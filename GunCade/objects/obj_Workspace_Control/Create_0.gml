@@ -240,8 +240,8 @@ setOnce_Enter[3] = false;
  introExtroX[2] = 0; 
  introExtroX[3] = 0; 
  
- intro_XStart        = -500; // default for all customers
- intro_XStartRight   = 500;  // for kyle/wife 
+ intro_XStart        = -800; // default for all customers
+ intro_XStartRight   = 800;  // for kyle/wife 
  intro_XAdd     = 10;
  intro_AlphaAdd = 0.006;
 

@@ -1,9 +1,12 @@
 
-function scr_Unblock_CashIn( jumpToDialogIndex_, money_, tip_){
-
+function scr_Unblock_CashIn( jumpToDialogIndex_, money_, tip_, tutorial_){
+       
+	   
+  if( tutorial_ == false){
+	   
 	   obj_Workspace_Control.dayTemp_Cash      += money_; 
 	   obj_Workspace_Control.dayTemp_Cash_Tip  += tip_;
-       
+  }       
    
 	   // unblock + ump to correct point
        obj_Workspace_Control.blockInput   = false;
