@@ -6,11 +6,11 @@
  camY  = camera_get_view_y(view_camera[0] );
    camHeight  = camera_get_view_height(view_camera[0] );
 
-buttonX = 200;
+buttonX = 160;
 
-var startY      = camY + (camHeight/2) - 150;
-var startYStack = 58; 
-  startYStack = 120; 
+var startY      = camY + (camHeight/2) - 40;
+var startYStack = 45; 
+  startYStack = 80; 
 
 buttonY[1] = startY + (-2 * startYStack);
 buttonY[2] = startY + (-1 * startYStack);

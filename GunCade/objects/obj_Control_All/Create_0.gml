@@ -55,7 +55,7 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
 
 #region text prefix/suffixes
 
-  textPrefix    = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
+  textPrefix    = "[font_Cutscene][scale, 0.9][c_white]"; // default for all 
  //textSuffixDialog    = "[/scale][/c]"; 
   textSuffix_Tab = "[/c][/scale]"; 
  
@@ -1592,13 +1592,13 @@ indexSet++;
  
  
  /// set here, the fk is this
-  textPrefix          = "[font_Cutscene][scale, 0.8][c_white]"; // default for all 
+  textPrefix          = "[font_Cutscene][scale, 1][c_white]"; // default for all 
   textSuffixDialog    = "[/scale][/c]"; 
 
  
  
-  textPrefixPlayer  = "[font_Cutscene][scale, 0.8][#F9CE7B]";
-  textPrefixPlayerT = "[font_Cutscene][scale, 0.8][#FBA90A]";  // thoughts!
+  textPrefixPlayer  = "[font_Cutscene][scale, 1][#F9CE7B]";
+  textPrefixPlayerT = "[font_Cutscene][scale, 1][#FBA90A]";  // thoughts!
   
   textSuffixDialogDialog = "[/scale][/c]";  
  
@@ -1624,11 +1624,11 @@ indexSet++;
    textSortNamePrefix = "[font_Cutscene][scale, 2]";
    textSortNameSuffix = "[/scale]"; 
 
-  text_Name_Unknown     = "[font_Cutscene_Name][scale, 0.7][c_white]???[/c][/scale]";
-  text_Name_Nobody      = "[font_Cutscene_Name][scale, 0.7][c_white][/c][/scale]";
+  text_Name_Unknown     = "[font_Cutscene_Name][scale, 1.4][c_white]???[/c][/scale]";
+  text_Name_Nobody      = "[font_Cutscene_Name][scale, 1.4][c_white][/c][/scale]";
  
-  text_Name_Player      = "[font_Cutscene_Name][scale, 0.7][#F9CE7B]Player[/c][/scale]";
-  text_Name_PlayerT     = "[font_Cutscene_Name][scale, 0.7][#F9CE7B]Player[/c][/scale]";  // thoughts!!!
+  text_Name_Player      = "[font_Cutscene_Name][scale, 1.4][#F9CE7B]Player[/c][/scale]";
+  text_Name_PlayerT     = "[font_Cutscene_Name][scale, 1.4][#F9CE7B]Player[/c][/scale]";  // thoughts!!!
   
   
   text_Name_Jez         = "[font_Cutscene_Name][scale, 0.7][c_purple]Jezebelle[/c][/scale]"; 
@@ -1649,7 +1649,7 @@ indexSet++;
   text_Name_Clown       = "[font_Cutscene_Name][scale, 0.7][c_white]Bam Bam[/c][/scale]";   
 
   text_Name_Shadow      = "[font_Cutscene_Name][scale, 0.7][c_white]Shadow[/c][/scale]";   
-  text_Name_Victor      = "[font_Cutscene_Name][scale, 0.7][c_white]Victor[/c][/scale]";   
+  text_Name_Victor      = "[font_Cutscene_Name][scale, 1.4][c_white]Victor[/c][/scale]";   
  
   text_Name_Nun         = "[font_Cutscene_Name][scale, 0.7][c_white]Nun[/c][/scale]";  
   text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_white]Wife[/c][/scale]";  

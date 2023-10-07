@@ -1,14 +1,14 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
-image_xscale = 0.57;
-image_yscale = 0.57;
+//image_xscale = 0.57;
+//image_yscale = 0.57;
 
 totalBlock = false;
 
 isPaused = false;
 if( obj_Control_All.currentCutscene_DAY >= 100){ totalBlock = true; } // when news!
-alarm[0] = 2; // set
+ alarm[0] = 2; // set
 
   alarm[1] = 60; // next song play if
 
@@ -18,7 +18,7 @@ allBtnHover = c_red;
 
 vol20 = 20;
 volumeTotal =   round( obj_Control_All.volume_Music * vol20); 
-volumeButtonStartX = x + 38;
+volumeButtonStartX = x + 40;
 volumeButtonStartY = y + 64;
 volumeButtonNextX  = 13;
 volumeButtonScaleX = 0.5;
@@ -80,7 +80,7 @@ var rectBuffY = 15;
 
 
 // spr of buttons
-btnXXX = 26;// push in ... pixels to right
+btnXXX = 24;// push in ... pixels to right
 
  btnXXDif   = 47;
  btnYY      = 40; 

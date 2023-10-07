@@ -13,8 +13,6 @@ var scaleGet = obj_Control_All.screenScale;
 var setWindow_W = factorScale * 16 * scaleGet;
 var setWindow_H = factorScale * 9  * scaleGet;
 
-
-
 // once set!
 window_set_size( setWindow_W, setWindow_H );  
 surface_resize(application_surface, setWindow_W, setWindow_H ); 

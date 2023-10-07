@@ -7,11 +7,11 @@
  var camWidth    = camera_get_view_width( view_camera[0] );
  var camHeight   = camera_get_view_height( view_camera[0] );
 
- image_xscale = 0.275;
- image_yscale = 0.27; 
+ // image_xscale = 0.275;
+ // image_yscale = 0.27; 
 
- x = camX + camWidth - sprite_width + rightPadding - 2;
- y = camY + topyPadding;
+// x = camX + camWidth - sprite_width + rightPadding - 2;
+// y = camY + topyPadding;
  
 
  
@@ -19,7 +19,7 @@
 var scale = 0.1;
 
  
-
+/*
  var getW = sprite_get_width( spr_Tv_Rhamen  );
  var getH = sprite_get_height( spr_Tv_Rhamen );
 
@@ -42,7 +42,7 @@ var scale = 0.1;
 	  image_xscale : 0.57,
 	  image_yscale : 0.58  
  });
+*/ 
  
- 
-   // soawn programm
+   // spawn programm
  	event_user(0);

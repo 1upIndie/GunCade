@@ -129,7 +129,7 @@ if (display_Width == 2560 and display_Height == 2048 )  { Aspect_Ratio_Width = 1
 	 
 #endregion
 
-display_Width  = 40;
+display_Width  = 1440;
 display_Height =  1080;
 
 display_Width  = 65*16; // 1040
@@ -144,8 +144,8 @@ switch( obj_Control_All.screenScale){
    case 4: factor = factorScale * 4; break; 
 }
 
-display_Width  =  factorScale  * 16 *2;  // 1280
-display_Height =  factorScale  * 9  *2;  // 720
+display_Width  = factor  *16*2; // 1040
+display_Height =  factor *9*2;  // 585
 
 
 

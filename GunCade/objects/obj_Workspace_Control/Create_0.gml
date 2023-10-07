@@ -1,5 +1,5 @@
 /// @description
-
+alarm[1] = 6; // reset values once!
 alarm[0] = 35; // start typing
 
 blockDraw = false; // blocks draw end to not interfere!
@@ -54,11 +54,11 @@ var factor = 65;
 
 blockInput = false;
 
-
+/*
 saveCameraFactor = obj_Camera.camera_Show_Width/obj_Camera.Aspect_Ratio_Width;
 	 		obj_Camera.camera_Show_Width   = obj_Camera.Aspect_Ratio_Width *factor;
             obj_Camera.camera_Show_Height  = obj_Camera.Aspect_Ratio_Height *factor ;	
-
+*/
 
 typist = scribble_typist();
 drawOnScreen = false;
@@ -77,15 +77,15 @@ typeSmoothness = 10;
 
 // text
 textX = 50;
-textY = -135;
+textY = -170;
 
 textCashX = 50;
 textCashY = -135;
 
 
-textNeuesZeile = 900;
+textNeueZeile = 1170;
 
-nameY = -170; 
+nameY = -250; 
 
 regularDialog = false;
 
@@ -251,6 +251,8 @@ setOnce_Enter[3] = false;
  camWidth    = camera_get_view_width( view_camera[0] );
  camHeight   = camera_get_view_height( view_camera[0] );
 
+ camWidth_Half = camWidth/2;
+
 //obj_Control_All.arrayCutscenes[obj_Control_All.currentCutscene].sprBgr;
 
 // ui elements
@@ -273,6 +275,21 @@ ui_BlackBoxVerticalRightWidth = 500;
 ui_BlackBoxVerticalRightCol   = colUi;
 
 
+/// ++++++++ NEW +++++++++++++++++++ ///
+// new for black boxes, relative setup
+ui_BlackBox_DialogText_Y       = -200;
+ui_BlackBox_DialogText_ScaleX  =  5000;
+ui_BlackBox_DialogText_ScaleY  =  420;
+
+ui_BlackBox_DialogName_Y       = -250;
+ui_BlackBox_DialogName_ScaleX  =  320;
+ui_BlackBox_DialogName_ScaleY  =  60;
+
+
+
+// vertical right side
+ui_BlackBox_TV_Radio_X     = -380;
+ui_BlackBox_TV_Radio_Scale =  390;
 
 isNews = false;
 
@@ -282,6 +299,32 @@ isNews = false;
 
 // NEWS!
 /// set background, set right side
+
+
+// spawing if not news -> tv main, tv sub, radio
+var sprTVW    = sprite_get_width( spr_Tv_RhamenDialog );
+var sprTVSubW = sprite_get_width( spr_Tv_RhamenSubNew );
+
+
+tv_Main_ScaleX = 0.27;
+tv_Main_ScaleY = 0.29; 
+tv_Main_X      = -(sprTVW * tv_Main_ScaleX) + 47;
+tv_Main_Y      =  208;
+
+tv_Sub_ScaleX    = 0.145;
+tv_Sub_ScaleY    = 0.145; 
+tv_Sub_X         = tv_Main_X - (sprTVSubW * tv_Sub_ScaleX) + 14;
+tv_Sub_Y[1]      = tv_Main_Y;
+tv_Sub_Y[2]      = tv_Main_Y + 80;
+
+var sprRadioW = sprite_get_width( spr_Radio_Body );
+radio_ScaleX =  0.625; // 0.57
+radio_ScaleY =  0.625; 
+radio_X      = -(sprRadioW * radio_ScaleX) + 47;
+radio_Y      =  380;
+
+ //x = camX + camWidth - sprite_width + rightPadding - 2;
+ //y = camY + topyPadding;
 
 
 #region parallax

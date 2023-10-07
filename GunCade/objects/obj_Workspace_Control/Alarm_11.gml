@@ -1,5 +1,6 @@
 /// @description set bgr
 
+/*
 if( obj_Control_All.currentCutscene_DAY >= 100 ){
 	isNews = true;
 	obj_Workspace_Bgr.isNews       = true;
@@ -9,3 +10,5 @@ if( obj_Control_All.currentCutscene_DAY >= 100 ){
 	instance_destroy(obj_Radio);
 	instance_destroy(obj_Workspace_Tv_Parent);	
 }
+
+*/

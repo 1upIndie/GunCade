@@ -4,13 +4,20 @@ if(blockDraw == true){ exit; }
 // black background for text!
 
 
-draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, c_black,  blackBoxAlpha );
+//draw_sprite_ext(spr_BlackBox, 0, camX + (camWidth/2),  camY + camHeight + blackBoxY,  blackBoxScaleX, blackBoxScaleY, 0, c_black,  blackBoxAlpha );
 //Blink if hover over!
 
 
+
+#region black boxes and dialog
+
  // bottom line black boxes
-draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, ui_trennerToTextCol, 1  );
-draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_trennerToTextY, 5000, 900, 0, ui_trennerToTextCol, 1  );
+ // name black box
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX -20 , camY + camHeight + ui_BlackBox_DialogName_Y, ui_BlackBox_DialogName_ScaleX, ui_BlackBox_DialogName_ScaleY, 0, ui_trennerToTextCol, 1  );
+
+
+// text black box
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX - 20, camY + camHeight + ui_BlackBox_DialogText_Y, ui_BlackBox_DialogText_ScaleX, ui_BlackBox_DialogText_ScaleY, 0, ui_trennerToTextCol, 1  );
 
 
 if(hoverOverDialogBoxBlink == true){
@@ -28,8 +35,9 @@ if(hoverOverDialogBoxBlink == true){
 scribble(array_Name[dialogIndex]).draw(camX+textX, camY+camHeight+nameY );
 
 
-scribble(array_Txt[dialogIndex]).wrap(textNeuesZeile, -1,false).draw(camX+textX, camY+camHeight+textY, typist );
+scribble(array_Txt[dialogIndex]).wrap(textNeueZeile, -1,false).draw(camX+textX, camY+camHeight+textY, typist );
 
+#endregion
 
 // draw cash in gold if no minigame is there 
  if( !instance_exists(obj_MiniGame_Parent) and isNews == false ){

@@ -1,7 +1,7 @@
-image_alpha = 0.5;
+
 
 programm_image = spr_Tv_Programm;
-rahmen_image   = spr_Tv_Rhamen;
+rahmen_image   = spr_Tv_RhamenDialog;
 alarm[0] = 2;
 
 canSwitchProgramm = true;

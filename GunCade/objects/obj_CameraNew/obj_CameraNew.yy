@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Camera",
+  "name": "obj_CameraNew",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Icons_Camera",
-    "path": "sprites/spr_Icons_Camera/spr_Icons_Camera.yy",
+    "name": "spr_Icons_CameraNew",
+    "path": "sprites/spr_Icons_CameraNew/spr_Icons_CameraNew.yy",
   },
   "spriteMaskId": null,
   "visible": true,

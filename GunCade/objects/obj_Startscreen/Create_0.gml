@@ -19,13 +19,13 @@ alarm[0] = 2;
  spr_Char[3] = spr_Ui_Startscreen_2ndRow;
    spr_CharY = -10; 
  spr_Logo    = spr_Ui_Startscreen_Logo; 
-  spr_LogoY = 235;
+  spr_LogoY = 365;
  
   spr_Scale = 0.32;
   spr_ScaleLogo = 0.28;  
 
-  spr_Scale = 1;
-  spr_ScaleLogo = 1;  
+  spr_Scale     = 0.65;
+  spr_ScaleLogo = 0.6;
   
    spr_CharAlpha[1] = 0;
    spr_CharAlpha[2] = 0;   

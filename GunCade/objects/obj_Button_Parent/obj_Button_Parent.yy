@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Startscreen",
-    "path": "folders/Objects/Startscreen.yy",
+    "name": "Buttons_and_Spawning",
+    "path": "folders/Objects/Buttons_and_Spawning.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -9,9 +9,9 @@ if( disWidth >= 1920){ disScaleMax = 1; }
  if( disWidth >= 5120){ disScaleMax = 3; }
 */
 
- if( disWidth >= 1920){ disScaleMax = 0; }
- if( disWidth >= 2560){ disScaleMax = 1; }
- if( disWidth >= 5120){ disScaleMax = 2; }
+ if( disWidth >= 1920){ disScaleMax = 1; }
+ if( disWidth >= 2560){ disScaleMax = 2; }
+ if( disWidth >= 5120){ disScaleMax = 3; }
  
 // Inherit the parent event
 event_inherited();

@@ -27,7 +27,8 @@ if(dialogShow_Spr_3_ != spr_Nothing){
 
 // vertical right black box
 if(isNews == false){
-draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX + ui_BlackBoxVerticalRightX, camY -50, ui_BlackBoxVerticalRightWidth, 5000, 0, ui_BlackBoxVerticalRightCol, 1  );
+	
+draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX + camWidth +  ui_BlackBox_TV_Radio_X, camY -50, ui_BlackBox_TV_Radio_Scale, 5000, 0, ui_BlackBoxVerticalRightCol, 1  );
 }
 
 

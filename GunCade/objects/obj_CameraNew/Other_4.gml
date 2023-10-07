@@ -1,9 +1,9 @@
 /// @description create cam
 
 
-view_enabled    = 1;
-view_visible[0] = true;
-view_camera[0] = camera_create();
+// view_enabled    = 1;
+// view_visible[0] = true;
+
 /// new approach
 var camStartX = 0;
 var camStartY = 0;
@@ -13,7 +13,7 @@ if( instance_exists( obj_CameraDummy )){
  camStartY = obj_CameraDummy.y;
 }
 
-
+view_camera[0] = camera_create_view(camStartX, camStartY, 640, 360 );
 
 
 var factor = 65;

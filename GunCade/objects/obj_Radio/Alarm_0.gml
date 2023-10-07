@@ -5,23 +5,26 @@
  var camWidth    = camera_get_view_width( view_camera[0] );
  var camHeight   = camera_get_view_height( view_camera[0] );
  var padding =  5;
- x = camX + camWidth - sprite_width - padding;
+ //x = camX + camWidth - sprite_width - padding;
 
+//image_alpha = 0.5;
+image_xscale =  0.625; // 0.57
+image_yscale =  0.625; 
 
-volumeButtonStartX = x + 38;
-volumeButtonStartY = y + 210;
+volumeButtonStartX = x + 48;
+volumeButtonStartY = y + 230;
 
-timerDigitX = x + 125;
-timerDigitY = y + 98;
+timerDigitX = x + 140;
+timerDigitY = y + 108;
  
 songNameX  = x + (sprite_width/2);
-songNameY  = y + 49;
+songNameY  = y + 56;
 songOwnerX = x + (sprite_width/2);
-songOwnerY = y + 16;
+songOwnerY = y + 19;
 
 
-cog_X = x + 78;
-cog_Y = y + 123;
+cog_X = x + 86;
+cog_Y = y + 135;
 
 // input positions for control
 var rectBuffX = 35;
@@ -43,7 +46,7 @@ rectangleX2[2] = x + sprite_width - rectBuffX - rectL;
 sprButtonToggle_X[1] = x + (sprite_width/2) - (btnXXDif*1) + btnXXX; // triangle L
 sprButtonToggle_X[2] = x + (sprite_width/2)                + btnXXX; // Pause
 sprButtonToggle_X[3] = x + (sprite_width/2) + (btnXXDif*1) + btnXXX; // triangle R
-sprButtonToggle_Y    = y + sprite_height - 90; 
+sprButtonToggle_Y    = y + sprite_height - 102; 
 
 var rectAjustX = 15;
 var rectAjustY = 13;

@@ -21,7 +21,7 @@ char.descritpion_Spr = spr_Character_Reveal_txt_Jez;
 var mb = mouse_check_button_released(mb_right);
 
 if(mb == true){
-	instance_create_layer( mouse_x, mouse_y, "Instances" , obj_Tutorial_Arrow_Side_Left);
+	// instance_create_layer( mouse_x, mouse_y, "Instances" , obj_Tutorial_Arrow_Side_Left);
 }
 
 

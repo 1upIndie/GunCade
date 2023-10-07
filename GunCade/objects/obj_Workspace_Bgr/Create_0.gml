@@ -39,4 +39,14 @@ scrollingAlphaSet[0] = 0.1;
 scrollingAlphaSet[1] = 0.13;
 scanLineAlpha = random_range( scrollingAlphaSet[0], scrollingAlphaSet[1] );
 
+// news
+newsScroll_Txt =  "+++ breaking news +++ red vegatarian crocodile is not longer there +++ eat more chicken +++ breaking news +++ red vegatarian crocodile is not longer there +++ eat more chicken +++ breaking news +++ red vegatarian crocodile is not longer there +++ eat more chicken +++ breaking news +++ red vegatarian crocodile is not longer there +++ eat more chicken"; 
+ newsScroll_TxtSize = 0.5;
+ 
+newsScrollXStart = 200;
+newsScrollXAdd   = -0.5;
+newsScrollEnd    = string_length( newsScroll_Txt ) * 3;
+
+newsScrollX    = newsScrollXStart;
+
 

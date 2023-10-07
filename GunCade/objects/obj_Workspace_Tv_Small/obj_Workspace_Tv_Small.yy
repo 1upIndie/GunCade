@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Tv_Rhamen",
-    "path": "sprites/spr_Tv_Rhamen/spr_Tv_Rhamen.yy",
+    "name": "spr_Tv_RhamenSubNew",
+    "path": "sprites/spr_Tv_RhamenSubNew/spr_Tv_RhamenSubNew.yy",
   },
   "spriteMaskId": null,
   "visible": true,
