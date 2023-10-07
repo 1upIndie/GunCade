@@ -9,7 +9,7 @@
  
  
  
-// spawn tv  +  radio
+// spawn tv  +  radio + arcade programs!
 if(isNews == false){ 
 	
 	// main tb

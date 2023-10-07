@@ -16,7 +16,7 @@ alarm[0] = 10;
 buttonX = -120;
 buttonY = 40;
 
-var size = 0.85;
+var size = 0.9;
 image_xscale = size;
 image_yscale = size;
 
@@ -29,6 +29,18 @@ scanLineYAdd = 0.2;
 scrollingTime[0] = 15;
 scrollingTime[1] = 50;
 scrollingTimer = irandom_range( scrollingTime[0], scrollingTime[1] );
+
+
+// monitor flickering
+flickerColor = c_purple;
+flickerAlpha = 0;
+ flickerMin = 0.05;
+ flickerMax = 0.2; 
+flickerTimer_Min = 8;
+flickerTimer_Max = 15;
+alarm[1] = random_range(flickerTimer_Min, flickerTimer_Max );
+
+
 
 scrollingPushUp[0] = 0.5;
 scrollingPushUp[1] = 1;

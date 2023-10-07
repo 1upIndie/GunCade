@@ -358,7 +358,7 @@ if(isNews == false){
  
  // move background for parallax effect horiontally
  parallaxLerped = lerp( percParallax, parallaxLerped, parallaxXLerp)
-  obj_Workspace_Bgr.x =  wid + ( parallaxXMax * parallaxPosNeg * parallaxLerped ); 
+//  obj_Workspace_Bgr.x =  wid + ( parallaxXMax * parallaxPosNeg * parallaxLerped ); 
  
    }
 }

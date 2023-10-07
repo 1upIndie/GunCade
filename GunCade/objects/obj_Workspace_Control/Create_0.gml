@@ -94,18 +94,19 @@ dialogShow_Spr_1_ = spr_Nothing;
 dialogShow_Spr_2_ = spr_Nothing;
 dialogShow_Spr_3_ = spr_Nothing;
 
-dialogSpr_NpcX_1_    = 250;
-dialogSpr_NpcX_2_    = 450;
-dialogSpr_NpcX_3_    = 650;
+dialogSpr_NpcX_1_    = 280;
+dialogSpr_NpcX_2_    = 480;
+dialogSpr_NpcX_3_    = 680;
 
   dialogSpr_X2    = -15;
   dialogSpr_X2Add = 1;
-dialogSpr_Y    = -530;
-dialogScale[1]    = 0.5;
-dialogScale[2]    = 0.5;
-dialogScale[3]    = 0.5;
-  dialogScale_Passive = 0.5;
-  dialogScale_Active  = 0.52;  
+dialogSpr_Y    = -700;
+ var defaultScaleDialog = 0.60;
+dialogScale[1]    = defaultScaleDialog;
+dialogScale[2]    = defaultScaleDialog;
+dialogScale[3]    = defaultScaleDialog;
+  dialogScale_Passive = defaultScaleDialog;
+  dialogScale_Active  = defaultScaleDialog + 0.02;  
   dialogScale_AddSub  = 0.001;
   
   
