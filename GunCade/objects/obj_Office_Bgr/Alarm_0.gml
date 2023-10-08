@@ -30,6 +30,44 @@ var scale_YSet = image_yscale;
 var centerX = x - ( (sprite_width)/2);
 
 
+// auto spawn all office things
+var arrayOffice_L = array_length( obj_Control_All.array_OfficeProp);
+var arrayOffice_I = 0;
+
+	repeat(arrayOffice_L){
+ var spawn = false;
+   
+   // bigger or equal current day/ current day bigger -> not spawn
+   if( obj_Control_All.currentCutscene_DAY >= obj_Control_All.array_OfficeProp[arrayOffice_I].prop_UnlockedByDay  ){ spawn = true; }
+   if( obj_Control_All.currentCutscene_DAY >  obj_Control_All.array_OfficeProp[arrayOffice_I].prop_EndsByDay      ){ spawn = false; } 
+   
+   
+   // can it be spawned?
+   if( spawn == true){
+   	var prop_Office_X  = centerX + (obj_Control_All.array_OfficeProp[arrayOffice_I].prop_X  *  image_xscale);
+	var prop_Office_Y  = y       + (obj_Control_All.array_OfficeProp[arrayOffice_I].prop_Y  *  image_yscale);	
+	var sprSet =   obj_Control_All.array_OfficeProp[arrayOffice_I].prop_Spr;
+	 
+	 var propOffice = instance_create_layer( prop_Office_X, prop_Office_Y, layerSet, obj_Office_Props_Parent, {
+	     image_xscale : scale_XSet,
+	     image_yscale : scale_YSet,
+		 sprite_index : sprSet
+	  }  );    
+      propOffice.office_Index     =  arrayOffice_I;
+	  propOffice.hoverOver_Price  =  obj_Control_All.array_OfficeProp[arrayOffice_I].prop_Cost;
+	  propOffice.isBaught         =  obj_Control_All.array_OfficeProp[arrayOffice_I].prop_isUnlocked;
+	  
+	  propOffice.hoverOver_Spr    = obj_Control_All.array_OfficeProp[arrayOffice_I].prop_Pop_Spr;
+	  propOffice.hoverOver_X      = obj_Control_All.array_OfficeProp[arrayOffice_I].prop_Pop_X;
+	  propOffice.hoverOver_Y      = obj_Control_All.array_OfficeProp[arrayOffice_I].prop_Pop_Y;	  
+   }
+
+  // loop!
+  arrayOffice_I++;
+	} // repeat end
+
+
+/*
  if(spawn_Hawaii == true){
 	var prop_Hawaii_X  = centerX + (1177 * image_xscale);
 	var prop_Hawaii_Y  = y       + (122  * image_yscale);	 
@@ -79,3 +117,4 @@ var centerX = x - ( (sprite_width)/2);
 	     image_yscale : scale_YSet     
 	  }  );  
 }
+*/

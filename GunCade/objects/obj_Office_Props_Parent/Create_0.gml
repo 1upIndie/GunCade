@@ -1,5 +1,8 @@
 /// @description 
 
+
+office_Index = 0; // important!
+
 canDraw = false;
 isBaught = false;
 
@@ -22,6 +25,11 @@ alphaSet_ITimeMax = 160;
 // hover over
 hoverOver     = false;
 hoverOver_Spr = spr_Nothing;
+hoverOver_Line_Alpha  =  0.8;
+hoverOver_Line_Width  =  3;
+
+hoverOver_Center_X = 0;
+hoverOver_Center_Y = 0;
 
 hoverOver_X = 0;
 hoverOver_Y = 0;

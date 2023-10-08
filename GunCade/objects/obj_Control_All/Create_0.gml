@@ -839,6 +839,51 @@ unlocked_WeaponType_Accessory[4] = true;
 unlocked_WeaponType_Accessory[5] = true;
 unlocked_WeaponType_Accessory[6] = true;
 
+//// office unlocked!
+function createOffice_Prop( id_, name_, cost_, unlockedByday_, endsByDay_ , isUnlocked_,  spr_, x_, y_  ) constructor {
+   
+   prop_Name           = name_;
+   prop_Cost           = cost_;
+   prop_UnlockedByDay  = unlockedByday_;
+   prop_EndsByDay      = endsByDay_;   
+   prop_isUnlocked     = isUnlocked_;   
+   
+   prop_Spr            = spr_;
+   prop_X              = x_;   
+   prop_Y              = y_;  
+   
+   
+	   prop_Pop_Spr = spr_Nothing;
+	   prop_Pop_X   = 0;
+	   prop_Pop_Y   = 0;   
+   
+	   function setOffice_PopUp( pop_Spr_, pop_X, pop_Y ) {
+		   prop_Pop_Spr =  pop_Spr_;
+		   prop_Pop_X   =  pop_X;
+		   prop_Pop_Y   =  pop_Y;    
+	   }
+   
+   
+}
+
+var officeProp_I = 0;
+array_OfficeProp = array_create(0);
+
+
+array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Hawaii", 30000, 0, 999, 0, spr_Office_Hawaii, 1177,122 )
+  array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Hawaii_pop, 756, 100 ); officeProp_I++;
+  
+array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Car", 500, 0, 999, 0, spr_Office_Car, 572,513 )
+  array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Car_pop, 825, 255 ); officeProp_I++;  // same
+  
+array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Coffee", 8000, 0, 999, 0, spr_Office_CoffeeMachine, 1258,548 )
+  array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Coffee_pop, 825, 255 ); officeProp_I++; // same
+
+array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Flowers", 120, 2, 3, 0, spr_Office_Flowers, 741, 418 )
+  array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Flowers_pop, 276, 402 ); officeProp_I++; 
+
+array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Mono", 350, 2, 3, 0, spr_Office_Flowers, 792, 353 )
+  array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Mono_pop, 369, 226 ); officeProp_I++;  
 
 
 #endregion

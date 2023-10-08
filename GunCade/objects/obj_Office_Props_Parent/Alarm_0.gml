@@ -7,6 +7,7 @@
 canDraw = true;
 
 
+
 if(isBaught == false){   
 	image_alpha = alphaBaught_False;
 
@@ -19,3 +20,8 @@ if(isBaught == false){
  hoverOver_Price_X = (sprite_width/2);
  var getPrice    = prefixCash_ + string( hoverOver_Price ) + "$" + suffixCash_; 
  hoverOver_PriceTXT = getPrice;  
+ 
+ 
+ // for the linking line
+ hoverOver_Center_X =  ( sprite_get_width(  obj_Control_All.array_OfficeProp[office_Index].prop_Pop_Spr )  * image_xscale ) /2;
+ hoverOver_Center_Y =  ( sprite_get_height( obj_Control_All.array_OfficeProp[office_Index].prop_Pop_Spr )  * image_yscale ) /2;
