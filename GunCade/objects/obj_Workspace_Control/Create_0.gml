@@ -328,19 +328,7 @@ radio_Y      =  380;
  //y = camY + topyPadding;
 
 
-#region parallax
 
-// parallax
-parallax_X = 50;
-parallax_Y = 160;
-
-  parallaxXLerp  = 0.8;
-  parallaxLerped = 0; // value to be constantly set  
- parallaxXMax = 5;
- 
-
- 
-#endregion
 
 alarm[11] = 8;
 

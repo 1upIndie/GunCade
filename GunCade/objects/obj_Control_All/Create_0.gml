@@ -14,6 +14,8 @@ roomToJump = Room_Workspace;
 roomToJump = room_Debug;
 //roomToJump = room_StartScreen;
 //roomToJump = room_DemoEnd;
+roomToJump = room_Office;
+
 
 alarm[0] = 4;
 //room_goto(roomToJump);
@@ -76,6 +78,12 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
 
   textMoneyTotal_Prefix = "[spr_Sprite_font_NumbersSilver][scale, 0.5]";  // only used in minigame!
   textMoneyTotal_Suffix = "[/scale]";
+
+
+// office only
+  textDetail_CostOfficePrefix = "[spr_Sprite_font_Numbers][scale, 0.5][fa_center]";
+  textDetail_CostOfficeSuffix = "[/c][/scale]"; 
+
 
 /// for weapons detail text box
   textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
@@ -859,6 +867,9 @@ repeat(12){
 cashI++;
 }
 
+cashTotalInSave_Office = 15000; // the total amount of money available!
+
+
 
 wifePresentGivenDay2      = false;
 nunChoise_Day3            = false; // if trying to refuse to give money to nun
@@ -1618,7 +1629,7 @@ indexSet++;
 
   textDetail_DescPrefix = "[font_Cutscene][scale, 1]";
   textDetail_DescSuffix = "[/scale]"; 
- 
+
   
   // sorting by name
    textSortNamePrefix = "[font_Cutscene][scale, 2]";
