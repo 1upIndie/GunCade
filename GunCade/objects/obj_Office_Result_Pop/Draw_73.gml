@@ -1,6 +1,6 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-
+/*
 
 if(canDraw == false){ exit; }
  
@@ -167,9 +167,8 @@ if( state == "draw value all" ){
 
 }
 
-/*
 draw_text(x,y+180, result_Sold)
 draw_text(x,y+220, result_Tips)
 draw_text(x,y+260, result_Total)
-*/
+
 ///draw_text(x,y+150, state)

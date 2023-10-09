@@ -85,11 +85,17 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
   textDetail_CostOfficeSuffix = "[/c][/scale]"; 
 
     // value texts
-   textResultDefault_OfficePrefix = "[font_Cutscene][scale, 0.9]";
-   textResultDefault_OfficeSuffix = "[/scale]"; 
+   textResultDefault_OfficePrefix  = "[font_Cutscene][scale, 0.9][#E4E4E4]";
+  // textResultDefault_OfficePrefixR = "[font_Cutscene][scale, 0.9][#E4E4E4][fa_right]";   
+   textResultDefault_OfficePrefixR = "[font_Cutscene][scale, 0.9][#F4CF58][fa_right]";     
+   textResultDefault_OfficeSuffix = "[/c][/scale]"; 
 
-   textResultTotalDefault_OfficePrefix = "[font_Cutscene][scale, 1.2]";
-   textResultTotalDefault_OfficeSuffix = "[/scale]"; 
+  // textResultTotalDefault_OfficePrefix = "[font_Cutscene][scale, 1.2][#F4F4F4]";
+   textResultTotalDefault_OfficePrefix  = "[font_Cutscene][scale, 1.2][#F4CF58]";   
+   textResultTotalDefault_OfficePrefixR = "[font_Cutscene][scale, 1.2][#F4CF58][fa_right]";      
+   textResultTotalDefault_OfficeSuffix = "[/c][/scale]"; 
+
+
 
 /// for weapons detail text box
   textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
@@ -724,7 +730,7 @@ tvIndexI++;
 
 #endregion
 
-#region sound fixed + songs + auto audio clean up
+#region sound fixed + songs + auto audio clean up + screen shake
 
 // cleaning up in interval!
 audio_cleanupArray = array_create(0);
@@ -773,6 +779,26 @@ var songI = 0;
 arraySongsPlaylist = array_create(0);
 
 
+// screenshake
+  screenShakeTime_PressButton    = 8;
+  screenShakeTime_OfficeResult1  = 5;
+  screenShakeTime_OfficeResult2  = 8;
+
+  screenShakeAmount_PressButton    = 2;
+  screenShakeAmount_OfficeResult1  = 2;
+  screenShakeAmount_OfficeResult2  = 6;
+
+
+
+ screenShakeTime_Hard   = 20;
+ screenShakeTime_Soft   = 10; 
+ screenShakeTime_Super  = 15;
+ screenShakeTime_GUI    = 15;
+
+ screenShakeAmount_Hard  = 6;
+ screenShakeAmount_Soft  = 4; 
+ screenShakeAmount_Super = 8; 
+ screenShakeAmount_Gui   = 3;  
 
 #endregion
 

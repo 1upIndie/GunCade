@@ -23,7 +23,9 @@ var _val = animcurve_channel_evaluate(  alpha_AniCurve, alphaSet_I  );
   // hover over
    hoverOver = false;
    
-   if( instance_exists(obj_Office_Result_Pop) == false ){
+if (instance_exists(obj_Office_Result_Pop) == true){
+   
+   if( obj_Office_Result_Pop.canDraw == false){ 
      if (mouse_x > bbox_left and mouse_x <= bbox_right){
        if (mouse_y > bbox_top and mouse_y <= bbox_bottom){  
         
@@ -41,3 +43,4 @@ var _val = animcurve_channel_evaluate(  alpha_AniCurve, alphaSet_I  );
 		  }}
    }
 
+}

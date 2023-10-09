@@ -1,4 +1,4 @@
-/// @description pos set once + spawn in props!
+/// @description pos set once + spawn in props! + spanw in result btn
 
 
 var camX  = camera_get_view_x(view_camera[0] );
@@ -65,6 +65,21 @@ var arrayOffice_I = 0;
   // loop!
   arrayOffice_I++;
 	} // repeat end
+
+
+
+
+// spawn in result button for safe! + popup for result
+   	var result_X  = centerX + (491  *  image_xscale);
+	var result_Y  = y       + (332  *  image_yscale);	
+
+	 var result_Btn   = instance_create_layer( result_X, result_Y, layerSet, obj_Office_Result_Btn, {
+	     image_xscale : scale_XSet,
+	     image_yscale : scale_YSet,
+	  }  );
+
+alarm[1] = alarm1_TimeSpawnResult;
+
 
 
 /*

@@ -27,3 +27,5 @@ var scaleSet = 0.9;
 image_xscale = scaleSet;
 image_yscale = scaleSet;
 alarm[0] = 3;
+
+alarm1_TimeSpawnResult = 50;
