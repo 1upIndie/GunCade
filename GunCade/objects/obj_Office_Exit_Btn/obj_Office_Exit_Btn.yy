@@ -1,16 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Office_Control",
+  "name": "obj_Office_Exit_Btn",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Office",
-    "path": "folders/Objects/Office.yy",
+    "name": "Result",
+    "path": "folders/Objects/Office/Result.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Icons_control_Office",
-    "path": "sprites/spr_Icons_control_Office/spr_Icons_control_Office.yy",
+    "name": "spr_Office_Exit_Btn",
+    "path": "sprites/spr_Office_Exit_Btn/spr_Office_Exit_Btn.yy",
   },
   "spriteMaskId": null,
   "visible": true,

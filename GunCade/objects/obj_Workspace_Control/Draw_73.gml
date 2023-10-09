@@ -61,8 +61,8 @@ if ( obj_Control_All.debug == true){
  camY        = camera_get_view_y( view_camera[0] );
 
 
-var txtDEbug_ = "parralxOn " + string(   parallaxOn);
-draw_text(camX+200, camY+250, txtDEbug_);
+//var txtDEbug_ = "parralxOn " + string(   parallaxOn);
+//draw_text(camX+200, camY+250, txtDEbug_);
 
  if( !instance_exists(obj_MiniGame_Parent)){
  
