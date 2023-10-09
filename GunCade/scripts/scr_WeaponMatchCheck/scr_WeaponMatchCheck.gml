@@ -54,7 +54,7 @@ if(getWeaponIndex       == perfect_Weapon and
 	  indexJumpTo = getIndex_Sale;
       resultMoney = getMoney;
       resultTip   = obj_Control_All.static_Money_Tip;
-	  
+	  resultScore = "perfect";
 	  // spawn popup
 	  instance_create_layer(0,0, "Instances_Effects", obj_Effect_Txt_PopUpGoUp_PerfectSale);
 	   }
@@ -102,14 +102,14 @@ var neg_I = 0;
 
 
 ///////////// result!  /////////////////
-if( isGood == true ){  
+if( isGood == true ){   resultScore = "good";
 	resultMoney = getMoney;
 	resultTip = 0; 
 	indexJumpTo = getIndex_Sale;
 	// spawn popup
 	  instance_create_layer(0,0, "Instances_Effects", obj_Effect_Txt_PopUpGoUp_Sale);   }
 	  
-if( isGood == false){ 
+if( isGood == false){  resultScore = "failed";
 	resultMoney = 0;       
 	resultTip = 0; 
 	indexJumpTo = getIndex_Fail;

@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "Coffee",
-    "path": "folders/Sprites/Office/Coffee.yy",
+    "path": "folders/Sprites/Office/Props/Coffee.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

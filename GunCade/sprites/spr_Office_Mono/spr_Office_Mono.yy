@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "Mono",
-    "path": "folders/Sprites/Office/Mono.yy",
+    "path": "folders/Sprites/Office/Props/Mono.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

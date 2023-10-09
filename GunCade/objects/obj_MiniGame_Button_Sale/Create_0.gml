@@ -16,9 +16,10 @@ alarm[0] = delay;
 
 
 // finish
-  resultMoney = 0;
-  resultTip   = 0;
-  indexJumpTo = 0;
+  resultMoney   = 0;
+  resultTip     = 0;
+  resultService = ""; // for array and endscore for office!  
+  indexJumpTo   = 0;
 
 
 // scale

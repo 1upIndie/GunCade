@@ -15,7 +15,7 @@ scr_WeaponMatchCheck();
 
 // unblock dialog + pass in daily temp money
 scr_CleanUp_Minigameover("sale");
-scr_Unblock_CashIn(indexJumpTo, resultMoney, resultTip, isTutorial  );
+scr_Unblock_CashIn(indexJumpTo, resultMoney, resultTip, resultService,  isTutorial  );
 
 // after clean up -> destroy self
 

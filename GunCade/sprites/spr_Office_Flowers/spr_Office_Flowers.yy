@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "Flowers",
-    "path": "folders/Sprites/Office/Flowers.yy",
+    "path": "folders/Sprites/Office/Props/Flowers.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

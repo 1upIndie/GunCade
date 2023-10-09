@@ -21,7 +21,11 @@ char.descritpion_Spr = spr_Character_Reveal_txt_Jez;
 var mb = mouse_check_button_released(mb_right);
 
 if(mb == true){
-	// instance_create_layer( mouse_x, mouse_y, "Instances" , obj_Tutorial_Arrow_Side_Left);
+	 if (instance_exists(obj_Office_Result_Pop) == false){
+	
+	 instance_create_layer( mouse_x, mouse_y, "Instances_Top" , obj_Office_Result_Pop);
+	 } else { instance_destroy(obj_Office_Result_Pop); }
+	//scr_particle_create( particleSys_OfficeBuy,  mouse_x, mouse_y )
 }
 
 

@@ -15,6 +15,7 @@ txt = string(calc1 ) + " : " + string(calc2 );
 
 draw_text(x,y, txt)
 */
+
   var widH = (camWidth/2)
   var wid = camX  + (camWidth/2); 
   var hei = camY  + (camHeight/2);  

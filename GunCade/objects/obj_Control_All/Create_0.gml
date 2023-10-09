@@ -84,6 +84,12 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
   textDetail_CostOfficePrefix = "[spr_Sprite_font_Numbers][scale, 0.5][fa_center]";
   textDetail_CostOfficeSuffix = "[/c][/scale]"; 
 
+    // value texts
+   textResultDefault_OfficePrefix = "[font_Cutscene][scale, 0.9]";
+   textResultDefault_OfficeSuffix = "[/scale]"; 
+
+   textResultTotalDefault_OfficePrefix = "[font_Cutscene][scale, 1.2]";
+   textResultTotalDefault_OfficeSuffix = "[/scale]"; 
 
 /// for weapons detail text box
   textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
@@ -907,12 +913,33 @@ fullscreen = false;
 firstTimeAllSet = false;
 // cash saved
 var cashI = 1;
-repeat(12){
- cashCollectedDay[cashI] = 0;
-cashI++;
-}
 
-cashTotalInSave_Office = 15000; // the total amount of money available!
+
+// bill system for office! extra expenses not counted in!
+tempDay_Sold               = array_create(0);
+tempDay_Tips               = array_create(0);
+tempDay_Service            = array_create(0); // perfect, good, average, no service
+ 
+ // test debug!
+ tempDay_Sold[0] = 200;
+ tempDay_Sold[1] = 100; 
+ tempDay_Sold[2] = 50; 
+ 
+ tempDay_Tips[0] = 0;
+ tempDay_Tips[1] = 75; 
+ tempDay_Tips[2] = 0; 
+ 
+ tempDay_Service[0] = "perfect";
+ tempDay_Service[1] = "good"; 
+ tempDay_Service[2] = "good";   
+ 
+tempDay_Costs_NewWeapons   = 0; // credit!
+tempDay_Costs_Wife         = 0;
+tempDay_Costs_Kyle         = 0;
+
+
+// total value only shown in office!
+cashTotalInSave_Office = 15000; // the total amount of money available!  Important!!
 
 
 

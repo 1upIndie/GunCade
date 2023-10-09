@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Office_Flowers_pop",
-  "bbox_bottom": 178,
-  "bbox_left": 1,
-  "bbox_right": 375,
+  "name": "spr_Icons_control_Office",
+  "bbox_bottom": 31,
+  "bbox_left": 0,
+  "bbox_right": 31,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"09cc350b-6483-42e1-acdc-cc5672fe0023",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aabac7bf-6e38-441e-a4a1-7d62d8e6fb2b",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 179,
+  "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4eccbf6e-8667-49c0-977e-fc304b92a468","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9e2a4ec6-bdb9-471e-bb77-522fcaecdfc8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Flowers",
-    "path": "folders/Sprites/Office/Props/Flowers.yy",
+    "name": "Icons",
+    "path": "folders/Sprites/Icons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Office_Flowers_pop",
+    "name": "spr_Icons_control_Office",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"09cc350b-6483-42e1-acdc-cc5672fe0023","path":"sprites/spr_Office_Flowers_pop/spr_Office_Flowers_pop.yy",},},},"Disabled":false,"id":"7409b0f2-211d-4ee0-b289-7ea658d818c1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aabac7bf-6e38-441e-a4a1-7d62d8e6fb2b","path":"sprites/spr_Icons_control_Office/spr_Icons_control_Office.yy",},},},"Disabled":false,"id":"b63283a7-515d-4a00-ad2a-109d3af24adc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 378,
+  "width": 32,
 }

@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "Hawaii",
-    "path": "folders/Sprites/Office/Hawaii.yy",
+    "path": "folders/Sprites/Office/Props/Hawaii.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

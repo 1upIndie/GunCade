@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "Car",
-    "path": "folders/Sprites/Office/Car.yy",
+    "path": "folders/Sprites/Office/Props/Car.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
