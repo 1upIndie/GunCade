@@ -95,14 +95,16 @@ bgrX = camX + 0;
 bgrY = camY + 0;
  bgrXscale = 695;
  bgrYscale = 440; 
- 
+
+ bgrXscale = camWidth;
+ bgrYscale = camHeight; 
  
 costsTotal_X = camX + 700;
 costsTotal_Y = camY + 600;
 
 detailSpr_X    = camX + 45;
 detailSpr_Y    = camY + 90;
-detailSpr_Size = 0.7;
+detailSpr_Size = 0.92;
 
 detailTxt_Headline_x    = camX + 230;
 detailTxt_Cost_x        = camX + 230;
@@ -130,32 +132,32 @@ detail_Stats_Y[3]   =  camY + statsStart + (statsYY * 3);
 detail_Stats_Y[4]   =  camY + statsStart + (statsYY * 4);
 
 
-dropOffSpot_X = camX + 690;
+dropOffSpot_X = camX + camWidth -370;
 dropOffSpot_Y = camY + 280;
-  dropOffSpot_Weapon_X = dropOffSpot_X + 155;
-  dropOffSpot_Weapon_Y = dropOffSpot_Y + 60;
+  dropOffSpot_Weapon_X = dropOffSpot_X + 165;
+  dropOffSpot_Weapon_Y = dropOffSpot_Y + 80;
 
 // attachements ammo spots
-var AttachAmmoXX = 105; var AttachAmmoStartX = 745;
-  dropOffSpot_AttachAmmo_X[0] = camX + AttachAmmoStartX + (AttachAmmoXX * 0);
+var AttachAmmoXX = 238; var AttachAmmoStartX = 960;
+  dropOffSpot_AttachAmmo_X[0] = camX + AttachAmmoStartX + (AttachAmmoXX * 0); // this one only used!
   dropOffSpot_AttachAmmo_X[1] = camX + AttachAmmoStartX + (AttachAmmoXX * 1);
-  dropOffSpot_AttachAmmo_X[2] = camX + AttachAmmoStartX + (AttachAmmoXX * 2);  
+  dropOffSpot_AttachAmmo_X[2] = camX + AttachAmmoStartX + (AttachAmmoXX * 1);  
   
   dropOffSpot_AttachAmmo_Y[0] = camY + 305; // Ammo, laser, muzzle
   dropOffSpot_AttachAmmo_Y[1] = camY + 330; // stock, optics, scope 
 
 
   // 3 rows -> new override
-  dropOffSpot_AttachAmmo_X[0] = camX + AttachAmmoStartX + (AttachAmmoXX * 0);
-  dropOffSpot_AttachAmmo_X[1] = camX + AttachAmmoStartX + (AttachAmmoXX * 2);
+  dropOffSpot_AttachAmmo_X[0] = camX + AttachAmmoStartX ;
+  dropOffSpot_AttachAmmo_X[2] = camX + AttachAmmoStartX + AttachAmmoXX;
 
-var AttachAmmoYY = 35; var AttachAmmoStartY = 305;  
+var AttachAmmoYY = 44; var AttachAmmoStartY = 315;  
   dropOffSpot_AttachAmmo_Y[0] = camY + AttachAmmoStartY + (AttachAmmoYY * 0); // Ammo, laser, muzzle
   dropOffSpot_AttachAmmo_Y[1] = camY + AttachAmmoStartY + (AttachAmmoYY * 1); // stock, optics, scope 
   dropOffSpot_AttachAmmo_Y[2] = camY + AttachAmmoStartY + (AttachAmmoYY * 2); // stock, optics, scope 
 
  button_ResultSelectedAttach_XSize = 0.09;
- button_ResultSelectedAttach_YSize = 0.055;
+ button_ResultSelectedAttach_YSize = 0.07;
 
 
 
@@ -165,10 +167,10 @@ button_Tab_x[2] = camX + tabStart + (tabXX  * 2);
 button_Tab_y    = camY + 30;
 
  var typeStartX = 45;
- var typeStartY = 90; 
+ var typeStartY = 100; 
  
- var typeXX    = 125;
- var typeYY    = 100; 
+ var typeXX    = 180;
+ var typeYY    = 135; 
  
 button_Type_x[0] = camX + typeStartX + typeXX * 0;
 button_Type_x[1] = camX + typeStartX + typeXX * 1;
@@ -178,7 +180,7 @@ button_Type_x[3] = camX + typeStartX + typeXX * 3;
 button_Type_Y[0] = camY + typeStartY + typeYY * 0;
 button_Type_Y[1] = camY + typeStartY + typeYY * 1;
 button_Type_Y[2] = camY + typeStartY + typeYY * 2;
-button_TypeSize = 0.15;
+button_TypeSize = 0.22;
 
 
  var nameStartX = 45;
@@ -204,11 +206,11 @@ button_NameSize = 0.3;
 
 
 
-var resultY_Start6 = 21;
-var resultY_YY6 = 67;
+var resultY_Start6 = 45;
+var resultY_YY6    = 75;
 
 // results for 6!
-button_ResultSelected_X6     = camX + 500;
+button_ResultSelected_X6     = camX + 650;
 button_ResultSelected_Y6[0] = camY + resultY_Start6 + (resultY_YY6 * 0);
 button_ResultSelected_Y6[1] = camY + resultY_Start6 + (resultY_YY6 * 1);
 button_ResultSelected_Y6[2] = camY + resultY_Start6 + (resultY_YY6 * 2);
@@ -217,12 +219,12 @@ button_ResultSelected_Y6[4] = camY + resultY_Start6 + (resultY_YY6 * 4);
 button_ResultSelected_Y6[5] = camY + resultY_Start6 + (resultY_YY6 * 5);
 button_ResultSelected_Y6[6] = camY + resultY_Start6 + (resultY_YY6 * 6);
 
-button_ResultSelected_Size6 = 0.14;
+button_ResultSelected_Size6 = 0.15;
 
-var resultY_Start4 = 25;
-var resultY_YY4 = 95;
+var resultY_Start4 = 45;
+var resultY_YY4 = 110;
 // results for 4!
-button_ResultSelected_X4    = camX + 500;
+button_ResultSelected_X4    = camX + 650;
 button_ResultSelected_Y4[0] = camY + resultY_Start4 + (resultY_YY4 * 0);
 button_ResultSelected_Y4[1] = camY + resultY_Start4 + (resultY_YY4 * 1);
 button_ResultSelected_Y4[2] = camY + resultY_Start4 + (resultY_YY4 * 2);
@@ -231,7 +233,7 @@ button_ResultSelected_Y4[4] = camY + resultY_Start4 + (resultY_YY4 * 4);
 button_ResultSelected_Y4[5] = camY + resultY_Start4 + (resultY_YY4 * 5);
 button_ResultSelected_Y4[6] = camY + resultY_Start4 + (resultY_YY4 * 6);
 
-button_ResultSelected_Size4 = 0.19;
+button_ResultSelected_Size4 = 0.2;
 
 
 
@@ -240,9 +242,9 @@ var sizeAttach = button_ResultSelected_Size4;
 
 
 // right buttons -> refuse/sale
-button_Right_X[0]  = camX + 765;
-button_Right_X[1]  = camX + 920;
-button_Right_Y     = camY + 50;
+button_Right_X[0]  = camX + camWidth - 280;
+button_Right_X[1]  = camX + camWidth - 120;
+button_Right_Y     = camY + 480;
 
 
 
@@ -373,24 +375,23 @@ button_Right_Y     = camY + 50;
 	gbr.image_blend  = #0B0914;
 	//gbr.image_blend  = c_red;	
 	
-// drop of area!
-
-
-    dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame_Bgr", obj_MiniGame_DropSpot );
+	
+	
+    // drop of area! important
+    dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame", obj_MiniGame_DropSpot );
  
  
-    // drop off area firt weapons "slot" -> right bottom side
+    // drop off area first weapons "slot" -> right bottom side
+    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGameAbove", obj_MiniGame_Drop_Weapon );	
 
-    dropOffSpot_Weapon = instance_create_layer( dropOffSpot_Weapon_X, dropOffSpot_Weapon_Y, "Instances_MiniGame", obj_MiniGame_Drop_Weapon );	
 
+	if(oo.unlocked_WeaponType_Accessory[1] == 1){ dropOffSpot_Ammo    = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGameAbove", obj_MiniGame_Drop_Ammo );	         }
+	if(oo.unlocked_WeaponType_Accessory[2] == 1){ dropOffSpot_LaserP  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGameAbove", obj_MiniGame_Drop_LaserPointer );	 }	
+	if(oo.unlocked_WeaponType_Accessory[3] == 1){ dropOffSpot_Muzzle  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGameAbove", obj_MiniGame_Drop_Muzzle );        }
 
-	if(oo.unlocked_WeaponType_Accessory[1] == 1){ dropOffSpot_Ammo    = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Ammo );	         }
-	if(oo.unlocked_WeaponType_Accessory[2] == 1){ dropOffSpot_LaserP  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_LaserPointer );	 }	
-	if(oo.unlocked_WeaponType_Accessory[3] == 1){ dropOffSpot_Muzzle  = instance_create_layer( dropOffSpot_AttachAmmo_X[0], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Muzzle );        }
-
-	if(oo.unlocked_WeaponType_Accessory[4] == 1){ dropOffSpot_Stock   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGame", obj_MiniGame_Drop_Stock );     }
-	if(oo.unlocked_WeaponType_Accessory[5] == 1){ dropOffSpot_Optics  = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGame", obj_MiniGame_Drop_Optics );	 }
-	if(oo.unlocked_WeaponType_Accessory[6] == 1){ dropOffSpot_Scope   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGame", obj_MiniGame_Drop_Grip );	     }
+	if(oo.unlocked_WeaponType_Accessory[4] == 1){ dropOffSpot_Stock   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[0], "Instances_MiniGameAbove", obj_MiniGame_Drop_Stock );     }
+	if(oo.unlocked_WeaponType_Accessory[5] == 1){ dropOffSpot_Optics  = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[1], "Instances_MiniGameAbove", obj_MiniGame_Drop_Optics );	 }
+	if(oo.unlocked_WeaponType_Accessory[6] == 1){ dropOffSpot_Scope   = instance_create_layer( dropOffSpot_AttachAmmo_X[2], dropOffSpot_AttachAmmo_Y[2], "Instances_MiniGameAbove", obj_MiniGame_Drop_Grip );	     }
 
 
 
@@ -424,6 +425,22 @@ array_AdditionalTxt = array_create(0);
  additionalTxt_AddY   = 23; 
  
  
+#endregion
+
+
+#region right side -> bgr + money
+
+// right side bgr
+bgrRight_X = -200;
+bgrRight_Y = (camHeight/2) + 100;
+ bgrRight_ScaleX = 1.1;
+ bgrRight_ScaleY = 2; 
+
+bgrRightHeaderResult_Y = bgrRight_Y - 281;
+ bgrRightHeaderResultScale = 1;
+// money draw right side
+money_X = -270;
+money_Y =  210;
 #endregion
 
 

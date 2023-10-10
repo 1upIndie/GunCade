@@ -6,8 +6,14 @@ cost = 0; // additional money!
 //
 isBlocked = true;
 
- _channel = animcurve_get_channel(aniCurve_Blink, 0);
+ _channel = animcurve_get_channel(aniCurve_Blink, 3);
  
  
  // attachment specific!
  attachment_Active = false;
+ 
+ 
+ 
+  // for all attachements
+  image_alpha_Set = 0.3;
+  blink_total     = 240;

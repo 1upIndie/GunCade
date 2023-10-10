@@ -13,7 +13,7 @@ if(blockDraw == true){ exit; }
 
  // bottom line black boxes
  // name black box
- 	 if( isNews == false ){
+ 	 if( isNews == false and !instance_exists(obj_MiniGame_Parent) ){
 draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX -20 , camY + camHeight + ui_BlackBox_DialogName_Y, ui_BlackBox_DialogName_ScaleX, ui_BlackBox_DialogName_ScaleY, 0, ui_trennerToTextCol, 1  );
 	 }
 
@@ -33,8 +33,8 @@ if(hoverOverDialogBoxBlink == true){
 //draw_sprite_ext(spr_button_Xbox_Y,0, camX+camWidth+belowTxt_X2, camY+camHeight+belowTxt_Y2, belowButtonScale,belowButtonScale, 0, c_white, 1 );
 
 // draw dialog text in any case! 
- 	 if( isNews == false ){
-scribble(array_Name[dialogIndex]).draw(camX+textX, camY+camHeight+nameY );
+ 	 if( isNews == false and !instance_exists(obj_MiniGame_Parent) ){
+       scribble(array_Name[dialogIndex]).draw(camX+textX, camY+camHeight+nameY );
 	 }
 
 scribble(array_Txt[dialogIndex]).wrap(textNeueZeile, -1,false).draw(camX+textX, camY+camHeight+textY, typist );

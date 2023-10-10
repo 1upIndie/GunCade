@@ -20,7 +20,7 @@ weaponSpr = spr_Nothing;
 reset = false;
 
 blink_Pos   = 0;
-blink_total = 180;
+
 
 
   sizeX = obj_MiniGame_Parent.button_ResultSelectedAttach_XSize;
@@ -31,7 +31,7 @@ image_yscale = sizeY;
 
 image_speed = 0;
  image_index = 1;
- image_alpha_Set = 0.6;
+
  image_alpha     = image_alpha_Set;
  
  

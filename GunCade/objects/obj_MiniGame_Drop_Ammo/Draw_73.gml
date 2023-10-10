@@ -1,6 +1,7 @@
 /// @description 
-/*
+
 event_inherited();
+
 
 if(isBlocked == false){
 
@@ -12,19 +13,23 @@ var val = animcurve_channel_evaluate(_channel, blink_Pos);
 
 //draw_self();
 
-draw_sprite_ext(sprite_index, 1, x,y,sizeX, sizeY, 0, c_white, val  );
+draw_sprite_ext(sprite_index, 1, x,y, sizeX, sizeY, 0, c_white, val  );
 
 
     } else {
 	
 	// if not blinking, then it is locked
 //image_alpha = 1;
-draw_sprite_ext(sprite_index, 0, x,y,sizeX, sizeY, 0, c_white, 1  );
+draw_sprite_ext(sprite_index, 0, x,y, sizeX, sizeY, 0, c_white, 1  );
     }
 
 } // is blocked false end
 
 
+
+
+
+// not available total
 if(isBlocked == true){
 	
 draw_sprite_ext(spr_MiniGame_Blocked, 0, x,y,sizeX, sizeY, 0, c_white, 1  );

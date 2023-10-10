@@ -23,7 +23,7 @@ alarm[0] = delay;
 
 
 // scale
-var scale = 0.7;
+var scale = 0.9;
 
 image_xscale = scale;
 image_yscale = scale;

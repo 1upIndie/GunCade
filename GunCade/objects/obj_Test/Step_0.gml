@@ -19,7 +19,7 @@ char.descritpion_Spr = spr_Character_Reveal_txt_Jez;
 */
 
 var mb = mouse_check_button_released(mb_right);
-
+mb = 0;
 if(mb == true){
 	 if (instance_exists(obj_Office_Result_Pop) == false){
 	

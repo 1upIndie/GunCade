@@ -9,7 +9,7 @@ textX = 5;
 textY = 1;
 
 
-var scale = 0.7;
+var scale = 0.9;
 
 image_xscale = scale;
 image_yscale = scale;

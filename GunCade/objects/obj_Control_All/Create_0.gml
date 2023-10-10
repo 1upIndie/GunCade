@@ -5,7 +5,7 @@ audio_group_load( audiogroup_Music );
 audio_group_load( audiogroup_SFX );
 
 
-debug = true;
+debug = false;
 demo  = true;
 
 sound_Debug = true;
@@ -2197,18 +2197,6 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hi Viktor, didn't expect to see you so early.", snd_TextScroll_Default );	
      arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Victor;	 
 	 dialog_I++;
-
-
-
-
-/*
-	 // test block!
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
-	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_MiniGame_RandomSale_Day1; // testing random sale
-    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
-*/
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "victor grumpy"  , "");
@@ -9411,7 +9399,7 @@ var day_I = 0; // day 1
 
 #endregion  // end of day 6
 
-
+// test minisystem!
 #region day 7   777777777777777
 
  day_I    = 6; // day 7
@@ -9422,12 +9410,27 @@ var day_I = 0; // day 1
 
 
     #region kyle
-	
+/*
+	 // test block!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
+	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_MiniGame_RandomSale_Day1; // testing random sale
+    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	 dialog_I++;
+*/	 
+	 
+
+
      //
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "...", snd_TextScroll_Default );
      arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle_Day7;	
 	 dialog_I++; 
-	 
+
+
+
+
+
 	 // if not payed randsome day 5
 	 dialog_I = 10;
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Still no Kyle? Now I'm actually starting to worry about him.)", snd_TextScroll_Default );
@@ -10676,7 +10679,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "In recent weeks, several cases of police misconduct have come to light, involving officers who have betrayed the trust placed in them..", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "In recent weeks, several cases of police misconduct have come to light, involving officers who have betrayed the trust placed in them...", snd_TextScroll_Default );	
 	 dialog_I++;	 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
@@ -10769,7 +10772,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "GUNCADE, a popular arcade in our city, was discovered to be involved in the sale of weapons., snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "GUNCADE, a popular arcade in our city, was discovered to be involved in the sale of weapons.", snd_TextScroll_Default );	
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 

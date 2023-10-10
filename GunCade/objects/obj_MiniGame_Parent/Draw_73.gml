@@ -1,12 +1,17 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
+// draw right area spr
+//draw_sprite_ext( spr_Office_Result_Bgr, 0, camX + camWidth + bgrRight_X, camY + bgrRight_Y, bgrRight_ScaleX, bgrRight_ScaleY, 0, c_white, 1 );
+
+
+
 
 var costsText =  obj_Control_All.textCostsMiniGame_Prefix  + string(current_Costs) + "$" +  obj_Control_All.textCostsMiniGame_Suffix;
 var moneyX = obj_Control_All.moneyTxtX;
 var moneyY = moneyTxtY;
 
-scribble(costsText).draw( camX+moneyX, camY+moneyY);
+scribble(costsText).draw( camX+ camWidth + money_X, camY+money_Y);
 
 
 var prefix = "[font_Cutscene][scale, 0.6[#F9CE7B]";

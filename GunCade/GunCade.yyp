@@ -530,6 +530,7 @@
     {"id":{"name":"spr_MiniGame_Shotgun_3","path":"sprites/spr_MiniGame_Shotgun_3/spr_MiniGame_Shotgun_3.yy",},},
     {"id":{"name":"obj_Effect_Txt_PopUpGoUp_Fail","path":"objects/obj_Effect_Txt_PopUpGoUp_Fail/obj_Effect_Txt_PopUpGoUp_Fail.yy",},},
     {"id":{"name":"spr_Dialog_Kyle_Angry","path":"sprites/spr_Dialog_Kyle_Angry/spr_Dialog_Kyle_Angry.yy",},},
+    {"id":{"name":"aniCurve_MiniGame_DopOffSpot_Glow","path":"animcurves/aniCurve_MiniGame_DopOffSpot_Glow/aniCurve_MiniGame_DopOffSpot_Glow.yy",},},
     {"id":{"name":"spr_WeaponDetail_Heavy_3","path":"sprites/spr_WeaponDetail_Heavy_3/spr_WeaponDetail_Heavy_3.yy",},},
     {"id":{"name":"obj_Pause_SpawnButtons_Settings","path":"objects/obj_Pause_SpawnButtons_Settings/obj_Pause_SpawnButtons_Settings.yy",},},
     {"id":{"name":"spr_WorkStation_BackgroundNews","path":"sprites/spr_WorkStation_BackgroundNews/spr_WorkStation_BackgroundNews.yy",},},

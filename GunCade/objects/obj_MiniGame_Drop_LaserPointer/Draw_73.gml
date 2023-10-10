@@ -1,5 +1,4 @@
 /// @description 
-/*
 event_inherited();
 
 if(isBlocked == false){

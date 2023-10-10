@@ -458,6 +458,7 @@
     {"name":"fnt_Radio_Owner","order":2,"path":"fonts/fnt_Radio_Owner/fnt_Radio_Owner.yy",},
     {"name":"spr_MiniGame_Shotgun_3","order":5,"path":"sprites/spr_MiniGame_Shotgun_3/spr_MiniGame_Shotgun_3.yy",},
     {"name":"obj_Effect_Txt_PopUpGoUp_Fail","order":5,"path":"objects/obj_Effect_Txt_PopUpGoUp_Fail/obj_Effect_Txt_PopUpGoUp_Fail.yy",},
+    {"name":"aniCurve_MiniGame_DopOffSpot_Glow","order":12,"path":"animcurves/aniCurve_MiniGame_DopOffSpot_Glow/aniCurve_MiniGame_DopOffSpot_Glow.yy",},
     {"name":"obj_Pause_SpawnButtons_Settings","order":1,"path":"objects/obj_Pause_SpawnButtons_Settings/obj_Pause_SpawnButtons_Settings.yy",},
     {"name":"spr_WorkStation_BackgroundNews","order":1,"path":"sprites/spr_WorkStation_BackgroundNews/spr_WorkStation_BackgroundNews.yy",},
     {"name":"spr_WeaponDetail_Ar_3","order":2,"path":"sprites/spr_WeaponDetail_Ar_3/spr_WeaponDetail_Ar_3.yy",},
