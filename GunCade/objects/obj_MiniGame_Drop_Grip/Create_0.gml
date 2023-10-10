@@ -2,7 +2,7 @@
 event_inherited();
 
 save_Index_Weapon = 85;
-cost = obj_Control_All.array_DetailWeaponText[save_Index_Weapon].cost;
+cost = obj_Control_All.array_DetailWeaponText[ save_Index_Weapon ].cost;
 
 state = "blink";
 

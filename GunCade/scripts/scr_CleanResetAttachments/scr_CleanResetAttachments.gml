@@ -3,20 +3,23 @@
 
    function scr_CleanResetAttachments(){
 	var update_Addition = false;
-	if (instance_exists(obj_MiniGame_Drop_Ammo)          ){ obj_MiniGame_Drop_Ammo.isBlocked         = true; update_Addition = true;  obj_MiniGame_Drop_Ammo.attachment_Active         = false;  }       
-	if (instance_exists(obj_MiniGame_Drop_LaserPointer)  ){ obj_MiniGame_Drop_LaserPointer.isBlocked = true; update_Addition = true;  obj_MiniGame_Drop_LaserPointer.attachment_Active = false;  } 
-	if (instance_exists(obj_MiniGame_Drop_Muzzle)        ){ obj_MiniGame_Drop_Muzzle.isBlocked       = true; update_Addition = true;  obj_MiniGame_Drop_Muzzle.attachment_Active       = false;  } 
+	if (instance_exists(obj_MiniGame_Drop_Ammo)          ){ obj_MiniGame_Drop_Ammo.isBlocked         = true; update_Addition = true; } // obj_MiniGame_Drop_Ammo.attachment_Active         = false;  }       
+	if (instance_exists(obj_MiniGame_Drop_LaserPointer)  ){ obj_MiniGame_Drop_LaserPointer.isBlocked = true; update_Addition = true; } // obj_MiniGame_Drop_LaserPointer.attachment_Active = false;  } 
+	if (instance_exists(obj_MiniGame_Drop_Muzzle)        ){ obj_MiniGame_Drop_Muzzle.isBlocked       = true; update_Addition = true; } // obj_MiniGame_Drop_Muzzle.attachment_Active       = false;  } 
   
-	if (instance_exists(obj_MiniGame_Drop_Stock)         ){ obj_MiniGame_Drop_Stock.isBlocked        = true; update_Addition = true;  obj_MiniGame_Drop_Stock.attachment_Active        = false;  } 
-	if (instance_exists(obj_MiniGame_Drop_Optics)        ){ obj_MiniGame_Drop_Optics.isBlocked       = true; update_Addition = true;  obj_MiniGame_Drop_Optics.attachment_Active       = false;  } 
-	if (instance_exists(obj_MiniGame_Drop_Grip)          ){ obj_MiniGame_Drop_Grip.isBlocked         = true; update_Addition = true;  obj_MiniGame_Drop_Grip.attachment_Active         = false;  } 
+	if (instance_exists(obj_MiniGame_Drop_Stock)         ){ obj_MiniGame_Drop_Stock.isBlocked        = true; update_Addition = true; } // obj_MiniGame_Drop_Stock.attachment_Active        = false;  } 
+	if (instance_exists(obj_MiniGame_Drop_Optics)        ){ obj_MiniGame_Drop_Optics.isBlocked       = true; update_Addition = true; } // obj_MiniGame_Drop_Optics.attachment_Active       = false;  } 
+	if (instance_exists(obj_MiniGame_Drop_Grip)          ){ obj_MiniGame_Drop_Grip.isBlocked         = true; update_Addition = true; } // obj_MiniGame_Drop_Grip.attachment_Active         = false;  } 
 
+/*
    // update!
    obj_MiniGame_Parent.AdditionalTxt_Update = true;
    
 if(update_Addition == true){
 obj_MiniGame_Parent.AdditionalTxt_Update = true;
 }
+*
+
 
 // melee 0-10 pistols 10-20, rifles 20-30,  smg 30-40, shotgun 40-50, ar, 50-60, exotics 60-70
 /*

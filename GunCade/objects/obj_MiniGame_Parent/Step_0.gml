@@ -1,6 +1,6 @@
 /// @description 
 
-if (update == true){  }
+if (updateCosts == true){ event_user(10); updateCosts = false; }
 
 // update only for addons/attachments
 if ( AdditionalTxt_Update == true ){ AdditionalTxt_Update = false; event_user(3); }
@@ -15,5 +15,7 @@ if (inputCoolDown == true){
 	   inputCoolDown = false;
   } 
 }
+
+
 
 

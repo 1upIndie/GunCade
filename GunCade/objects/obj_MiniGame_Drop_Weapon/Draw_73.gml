@@ -1,5 +1,5 @@
 /// @description 
-
+event_inherited();
 
 if(state == "blink"){
 blink_Pos    += 1/blink_total;
@@ -24,3 +24,5 @@ draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_purple,c_pu
 
 draw_text(x,y-40, save_Index_Weapon );
 }
+
+

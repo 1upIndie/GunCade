@@ -12,9 +12,10 @@ if (!instance_exists(obj_Temp_Drag) and obj_MiniGame_Parent.inputCoolDown == fal
    
    // refund!
    //obj_MiniGame_Parent.current_Costs  -= obj_Control_All.array_DetailWeaponText[save_Index_Weapon].cost;
-   obj_MiniGame_Parent.current_Costs    = 0; // zero it! 
+   //obj_MiniGame_Parent.current_Costs    = 0; // zero it! 
    save_Index_Weapon = -999; // null!
-   
+      
+	  obj_MiniGame_Parent.updateCosts = true;
    event_user(1); /// clean up attachments
    
    // check what is assigned, if nothing is there disable sell button

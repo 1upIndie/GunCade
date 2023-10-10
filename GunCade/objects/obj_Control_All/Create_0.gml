@@ -8,6 +8,8 @@ audio_group_load( audiogroup_SFX );
 debug = false;
 demo  = true;
 
+debugMiniGame = true; 
+
 sound_Debug = true;
 
 roomToJump = Room_Workspace;
@@ -9410,7 +9412,7 @@ var day_I = 0; // day 1
 
 
     #region kyle
-/*
+
 	 // test block!
      arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
@@ -9418,7 +9420,7 @@ var day_I = 0; // day 1
 	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_MiniGame_RandomSale_Day1; // testing random sale
     // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 	 dialog_I++;
-*/	 
+	 
 	 
 
 

@@ -23,6 +23,16 @@ obj_Workspace_Control.blockInput = true; // block dialog input from progressing!
  // costs input values to be compared by
 
 current_Costs               = 0; // total value
+ updateCosts = false;
+ 
+ cost_Gun = 0;
+  cost_ammo  = 0;  
+  cost_laser = 0; 
+  cost_muzzl = 0; 
+  cost_stock = 0; 
+  cost_optic = 0;
+  cost_grip  = 0;
+ 
 /* current_Type                = ""; 
  current_Weapon              = ""; 
  current_Attachment__LaserP  = 0;
