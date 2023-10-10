@@ -17,3 +17,4 @@ obj_Control_All.currentCutscene_DAY = obj_Control_All.currentCutscene_DAY + 100 
    
 
 }  
+

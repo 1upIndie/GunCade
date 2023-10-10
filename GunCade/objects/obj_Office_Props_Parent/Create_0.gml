@@ -42,6 +42,17 @@ hoverOver_Price = 1;
  prefixCash_ =  obj_Control_All.textDetail_CostOfficePrefix;
  suffixCash_ =  obj_Control_All.textDetail_CostOfficeSuffix; 
  
+ 
+ 
+ // animate with bounce
+ animate = false;
+  
+ save_Xscale = image_xscale;
+ save_Yscale = image_yscale;
+
+ bounce_AniCurve  = animcurve_get_channel( aniCurve_CharPopIn_Bounce, 0 );
+ bounceSet_I      = 0;
+ bounceSet_ITime  = 110; 
 
 
 

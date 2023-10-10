@@ -1,6 +1,6 @@
 /// @description 
 if ( canDraw == false ){ exit; }
-
+  
    draw_self();
    
   #region not baught -> animate golden
@@ -44,3 +44,21 @@ if (instance_exists(obj_Office_Result_Pop) == true){
    }
 
 }
+	
+#region animate
+
+
+
+
+  if( animate == true){
+
+ bounceSet_I      += 1/bounceSet_ITime;
+   if( bounceSet_I >= 1 ){ bounceSet_I = 1; animate = false;  }	  
+  
+  var _val = animcurve_channel_evaluate( bounce_AniCurve, bounceSet_I  );
+
+   image_xscale = save_Xscale * _val;
+   image_yscale = save_Yscale * _val;
+  }
+  
+  #endregion	

@@ -1,9 +1,6 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-	 camX        = camera_get_view_x( view_camera[0] );
-	 camY        = camera_get_view_y( view_camera[0] );
-	 camWidth    = camera_get_view_width( view_camera[0] );
-	 camHeight   = camera_get_view_height( view_camera[0] );	
+
      
 
 

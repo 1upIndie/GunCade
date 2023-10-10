@@ -3,8 +3,8 @@
 image_alpha = 0.8;
 image_alpha = 1;
 
-
-isNews = false;
+var oo = obj_Control_All;
+isNews = oo.arrayCutscenes[oo.currentCutscene_DAY].isNews;
 
 tvHeight = -146;
 tvStartY = -60;

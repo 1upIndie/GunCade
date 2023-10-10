@@ -1,5 +1,8 @@
 
 
+
+  firstTimeSet = false; /// avoid clicking sound at start!
+
 programm_image = spr_Tv_Programm;
 rahmen_image   = spr_Tv_RhamenDialog;
 alarm[0] = 2;

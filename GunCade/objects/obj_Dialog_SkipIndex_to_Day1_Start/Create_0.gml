@@ -2,6 +2,6 @@
 // Inherit the parent event
 event_inherited();
 
-toSkipTo_Index = 100;
+toSkipTo_Index = 0;  // 0,1,...
 
-alarm[0] = obj_Control_All.timeToSkipToOtherDay;
+

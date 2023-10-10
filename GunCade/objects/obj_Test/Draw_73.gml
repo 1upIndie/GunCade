@@ -25,12 +25,17 @@ draw_text(x,y, txt)
    
    
    var txt = string(obj_Camera.camera_Show_Width) + " " + string(camWidth) ;
-   var txt2 = string( window_get_width()) + " Scale:" + string(  obj_Control_All.screenScale);
+    if ( instance_exists(obj_Workspace_Control) ){
+   var txt2 = "isNews:  " + string(  obj_Workspace_Control.isNews );
+      draw_text_transformed( mouse_x, mouse_y+120, txt2 , 3,3,0  );
+   }
+
+
 
   // draw_text_transformed( mouse_x, mouse_y+80, txt, 3,3,0  );
   // draw_text_transformed( mouse_x, mouse_y+120, txt2 , 3,3,0  );
    
-   
+   /*
    
    if (instance_exists(obj_Workspace_Control)){
 	   

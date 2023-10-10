@@ -66,7 +66,7 @@ if( state == "draw value 3" ){
   // draw left txt
   scribble( draw_Txt_Left_Value[1] ).draw( xx + draw_Txt_Left_X, yy + draw_Txt_Y[1] );
   scribble( draw_Txt_Left_Value[2] ).draw( xx + draw_Txt_Left_X, yy + draw_Txt_Y[2] );
-
+ 
   scribble( draw_Txt_Left_Value[4] ).draw( xx + draw_Txt_Left_X, yy + draw_Txt_Y[4] );
   
   
@@ -128,7 +128,16 @@ if( state == "draw value 5" ){
   if ( draw_valueTimer[5] >= draw_valueTime[5] ){ 
 	  scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult2, obj_Control_All.screenShakeAmount_OfficeResult2 );		  
 	  draw_valueTimer[5] = 0; state = "draw value all";
-	  spawned_Already = true; // set "unlocked"	  
+	  spawned_Already = true; // set "unlocked"	 
+	  
+	  // tranfer animation
+	var transfer = instance_create_layer(-900,-900, layer, obj_MoneyTransfer);
+	    transfer.TranferWhere       =  "office";
+	    transfer.save_CurrentMoney  =  obj_Control_All.cashTotalInSave_Office;                // what is the current pool of money
+	    transfer.save_ToAddMoney    =  result_Total;                                          // what is the sum to be added/substracted
+	    transfer.save_TotalMoney    =  obj_Control_All.cashTotalInSave_Office + result_Total; // what is the outcome!
+		
+		
 	  }
 }
 

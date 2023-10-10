@@ -13,8 +13,8 @@ sound_Debug = true;
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
 //roomToJump = room_StartScreen;
-//roomToJump = room_DemoEnd;
-roomToJump = room_Office;
+// roomToJump = room_DemoEnd;
+// roomToJump = room_Office;
 
 
 alarm[0] = 4;
@@ -927,7 +927,7 @@ currentCutscene     = 0;
 
 current_SongIndex = 0; // important for playback!
 
-#region choises and saved values through the game
+#region choises and saved values through the game 
 
 volume_Master = 1;
 volume_Sfx    = 1;
@@ -966,7 +966,7 @@ tempDay_Costs_Kyle         = 0;
 
 // total value only shown in office!
 cashTotalInSave_Office = 15000; // the total amount of money available!  Important!!
-
+cashSumOnDay           = 0;     // money earned during day!
 
 
 wifePresentGivenDay2      = false;
@@ -999,6 +999,33 @@ autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is t
 // playlist value -> not really bools, but index of song or -999 as not set!
 playListSongActiveBools = array_create(10, -999); // saved and set the song array auto!
 
+
+// daily value costs of wife and kyle
+function createCosts_WifeKyle( day_ , cost_Kyle_, cost_Wife_, newWeapons_ ) constructor {
+	 cost_Kyle   =   cost_Kyle_; 
+	 cost_Wife   =   cost_Wife_; 
+	 newWeapons  =   newWeapons_;
+}
+
+
+var costs_KyleWife_I = 0;
+array_Costs_KyleWife = array_create(0);
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
 
 #endregion
 
@@ -10583,52 +10610,580 @@ var day_I = 0; // day 1
 #region NEWS days 1-12
 
 
- day_I    = 101; // day 101 -> news day 1!
- dialog_I = 0; // zeiger
-
-
-  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
   
 #region news day 1 NEWS
 
-     arrayCutscenes[day_I].setSprite(dialog_I, 2, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   2,  "betty", "Bla blah Bla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blah Bla blah Bla blahBla blah", snd_TextScroll_Default );			 
-	 dialog_I++;
-
-     arrayCutscenes[day_I].setSprite(dialog_I, 2, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   2,  "betty", "Bla blah Bla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blahBla blah Bla blah Bla blahBla blah", snd_TextScroll_Default );			 
-	 dialog_I++;
+ day_I    = 101; // day 101 -> news day 1!
+ dialog_I = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I, 2, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   2,  "betty", "Thanks for that report Gail. Now, over to our newest member of the team for the weather.", snd_TextScroll_Default );	
-	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_StartDayFadeIn; // transition from betty to weather girl	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_NewsBgrSwap; // 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Thanks for that report Gail. Now, over to our newest member of the team for the weather.", snd_TextScroll_Default );	
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_Transition_StartDayFadeIn; // transition from betty to weather girl	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_NewsBgrSwap; // 
 	 dialog_I++;	 
 	 
 
-
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Thanks Betty.", snd_TextScroll_Default );		 
+     // 3
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3, "weather", "Thanks Betty.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "It looks like another hot one today with near record temperatures.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3, "weather", "It looks like another hot one today with near record temperatures.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather smiling"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "I hear we don’t have any young folks around anymore but the elderly should certainly take caution out there and definitely stay hydrated. Back over to you Betty.", snd_TextScroll_Default );		 	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3, "weather", "I hear we don't have any young folks around anymore but the elderly should certainly take caution out there and definitely stay hydrated.", snd_TextScroll_Default );		 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3, "weather", "Back over to you Betty.", snd_TextScroll_Default );		 	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day1_Start;
 	 dialog_I++;
 
 #endregion
 
+#region news day 2 NEWS
+
+ day_I     = 102; // day 102 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
 
 
-// set 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Good morning, I'm Betty Blabbermouth.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Tonight, we will bring you a sobering report on the concerning rise in crime and the alarming presence of rogue cops within our city's police force.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Over the past few months, our city has witnessed a steady increase in criminal activities.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Robberies, burglaries, and violent incidents have become far too common, leaving citizens feeling vulnerable and concerned for their safety.", snd_TextScroll_Default );	
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Law enforcement agencies are grappling with the challenge of curbing this crime wave, but there is another troubling aspect that demands our attention.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "In recent weeks, several cases of police misconduct have come to light, involving officers who have betrayed the trust placed in them..", snd_TextScroll_Default );	
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "These rogue cops have been caught engaging in corrupt practices, abuse of power, and even criminal behavior.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Such actions erode the faith that communities have in their local police force, making it all the more challenging to build bridges between law enforcement and the public.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+	 	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "We'll bring you the full story tonight at 9.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day2_Start;	 
+	 dialog_I++;
+
+
+
+
+#endregion
+
+#region news day 3 NEWS
+
+ day_I     = 103; // day 103 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Hello, I am Betty Blabbermouth.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Later today, we will bring you a gripping report on a mysterious and elusive female crime syndicate that has been making waves in our city.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Let's delve into the details of this intriguing story.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Over the past few months, our city has been buzzing with rumors and whispers about a secretive crime syndicate led entirely by women.", snd_TextScroll_Default );	
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Operating in the shadows, this group has managed to evade law enforcement while carrying out a series of audacious and meticulously planned criminal activities.", snd_TextScroll_Default );	
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Known for their expertise in various illegal enterprises, these women have exhibited remarkable cunning, leaving law enforcement authorities scratching their heads.", snd_TextScroll_Default );	
+	 dialog_I++;		 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "From high-profile heists to sophisticated fraud schemes, their criminal repertoire knows no bounds.", snd_TextScroll_Default );	
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "One of the most intriguing aspects of this syndicate is its tight-knit nature and the loyalty of its members.", snd_TextScroll_Default );	
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Sources suggest that the women involved in this criminal organization have forged strong bonds, operating with precision and trust.", snd_TextScroll_Default );	
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Their ability to remain undetected and their willingness to protect their secrets has proven to be a significant challenge for law enforcement agencies.", snd_TextScroll_Default );	
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "More on this tonight at 9.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day3_Start;	 	 
+	 dialog_I++;
+	 
+
+
+#endregion
+
+#region news day 4 NEWS
+
+ day_I     = 104; // day 104 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Good morning, I’m Betty Blabbermouth.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "It has come to light that an arcade in our city recently began operating under a unique premise, selling weapons alongside its usual array of games and entertainment.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "GUNCADE, a popular arcade in our city, was discovered to be involved in the sale of weapons., snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "What was once considered a family-friendly establishment has now been exposed as a hub for quasi-legal activities, where dangerous, albeit seemingly poorly constructed, weapons are exchanged for prices that most cannot afford.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The question remains whether law enforcement will act on the distribution of firearms, knives, and other potentially lethal weapons, since the recent overthrow of the cities government and the loss of most judicial processes.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "This discovery has sent shockwaves through the community and raised serious questions about the safety and integrity of such establishments.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Tonight, our newest anchor will dive into the details of this alarming situation.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day4_Start;	 	 
+	 dialog_I++;
+
+
+
+#endregion
+
+#region news day 5 NEWS
+
+ day_I     = 105; // day 105 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Betty Blabbermouth here to tell you about some disturbing news.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The community is gripped with growing concern as the number of missing persons cases sees a troubling increase.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Local authorities are facing a challenging task as they strive to locate and ensure the safe return of those who have gone missing.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "According to the latest data, there has been a significant surge in reported missing persons cases.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Families and friends are anxiously awaiting news about their loved ones, and the community as a whole is rallying together to support those affected.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Law enforcement agencies are actively investigating the root causes behind this distressing trend.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Community organizations and concerned citizens have joined forces to raise awareness about the issue and provide support to affected families.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Vigils, awareness campaigns, and volunteer search parties are being organized to bolster efforts in finding the missing persons and offer comfort to their loved ones during this trying time.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day5_Start;		 
+	 dialog_I++;
+
+
+#endregion
+
+#region news day 6 NEWS
+
+ day_I     = 106; // day 106 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Good morning, I'm Better Blabbermouth.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Today's top story, the city is abuzz with anticipation as production for a thrilling new action movie kicks off, promising adrenaline-pumping scenes and gripping storylines.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Film enthusiasts and locals alike are eagerly awaiting the release of this highly anticipated cinematic experience.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The yet-to-be-titled action film is said to boast a potential all-star for future movies that apparently has out of this world muscles.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Who is this mysterious actor, and what does he look like? Ladies like me are dying to know!", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The project is set to showcase cutting-edge stunts, explosive action sequences, and heart-pounding thrills that are sure to captivate audiences worldwide.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "With filming officially underway, the city has transformed into a bustling backdrop for the production.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Iconic landmarks and local neighborhoods have become the stage for high-octane chase scenes, daring stunts, and intense combat sequences.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The film's production team stated they have collaborated closely with local authorities to ensure minimal safety standards and maximum disruption to residents during the filming process so as to make the movie as real as possible.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Special effects crews, stunt coordinators, and a dedicated crew of semi-professionals have converged on the city, working tirelessly to bring this action-packed vision to life.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "As news of the movie spreads, fans and onlookers have flocked to shooting locations, hoping to catch a glimpse of the mysterious new actor.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day6_Start;		 
+	 dialog_I++;
+
+	 
+
+#endregion
+
+#region news day 7 NEWS
+
+ day_I     = 107; // day 107 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Betty Blabbermouth here to tell you of an interesting find by one of our reporters.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Frustration is mounting among a significant number of housewives in the local area who feel their vital contributions to their families and society often go unnoticed and unappreciated.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "These women, who take on the multifaceted role of managing households and supporting their partners, are seeking recognition and support for the valuable work they do.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Many housewives express a sense of being taken for granted and undervalued, despite shouldering numerous responsibilities and dedicating their time and energy to maintaining the well-being of their household.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The constant juggling act of domestic chores and managing household finances can often leave them feeling overwhelmed and emotionally drained.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Several housewives have spoken out about the need for society to acknowledge and respect their role, emphasizing that their contributions are crucial to the smooth functioning of households and the overall fabric of society.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "They highlight the immense mental and emotional labor involved in their daily routines, which often goes unnoticed or undervalued.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "In addition to managing the household, many housewives also face challenges in pursuing personal growth, career aspirations, or financial independence.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Some feel a lack of support from their partners or society in striking a balance between their domestic responsibilities and their individual goals and ambitions.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Tonight, a full report on the story and information on how housewives' partners can do more to acknowledge and support their better half.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day7_Start;		 
+	 dialog_I++;	
+
+
+
+	 
+
+#endregion
+
+#region news day 8 NEWS
+
+ day_I     = 108; // day 108 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "A sudden and unimaginable cold front has descended upon our city, catching residents off guard and causing a dramatic drop in temperatures.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "For a city that has never been cooler than 60 degrees this time of year, the unusual weather event has brought a wintry chill to the region, leaving locals bundled up and searching for their winter attire.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Meteorologists had not forecasted the arrival of this unexpected cold front, which swiftly swept across the area overnight.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Temperatures plummeted by 30  degrees, plunging the city into an unseasonably frosty state.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The sudden change in weather has left many perplexed and seeking ways to stay warm.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Residents woke up to a scene reminiscent of winter, with frost-covered surfaces, cold wind gusts, and even reports of light snowfall in some parts of the city.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Commuters navigated slippery roads and sidewalks, while schools and local authorities issued warnings and advisories regarding the chilly conditions.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The good news is that our weather staff was unable to make it in due to the road conditions.", snd_TextScroll_Default );	
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Fortunately for everyone watching me right now, I sleep with the... I mean sleep in the studio to ensure I am always ready to present the news, so you will get even more of me today!", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day8_Start;			 
+	 dialog_I++;	
+	 
+
+#endregion
+
+#region news day 9 NEWS
+
+ day_I     = 109; // day 109 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Betty Blabbermouth here to report today’s top news.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "A sharp increase in crime rates continues to send shockwaves through the community, raising concerns about public safety and urging authorities to take immediate action.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Local law enforcement agencies are grappling with the alarming spike, as citizens demand stronger measures to combat the growing menace.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Statistics released by the Police Department reveal a disturbing upward trend in criminal activities across various categories.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Violent crimes, including assaults and robberies, have witnessed a significant surge of approximately 400% over the past week.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Additionally, property crimes, such as burglaries and thefts, have also seen a worrisome rise.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The reasons behind this surge in criminal activities remain under investigation.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "But preliminary analysis points to several contributing factors, namely a sharp increase in weapons finding their way into the city.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day9_Start;		 
+	 dialog_I++;
+  
+
+#endregion
+
+#region news day 10 NEWS
+
+ day_I     = 110; // day 110 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Betty Blabbermouth here to bring you today’s top news.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Apparently the powers that be in the news industry don’t know good reporting from their own asses.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Things are definitely looking bleak in the news world if current trends continue.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "One can only hope that the true professional reports in this world are saved from the lustful and ignorant desires of foolish men.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "I mean, what other reason could there be to consider changing reporters when the current cast is both amazing at their jobs and stunningly gorgeous?", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Now, it appears I am being told we need to rush over to a less important topic.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Here with the weather is Harlot Horseface…", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day10_Start;		 
+	 dialog_I++;	 
+
+#endregion
+
+#region news day 11 NEWS
+
+ day_I     = 111; // day 110 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "harry default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "harry", "Good morning, I’m Harry Hasbeen, our long time morning reporter, Betty Blabbermouth, was reported missing last night.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "harry default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "harry", "I was told we must ask anyone in the community with information on her disappearance or possible whereabouts to please contact local authorities.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "harry default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "harry", "Now, onto important matters of the day, our news station is considering tryouts for new reporters.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "harry default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "harry", "While some strong candidates exist, the station needs to make sure there aren’t any more well endowed candidates in the community.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "harry default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "harry", "Oh wait, I’m being told we are looking for well experienced candidates. I’m not sure how that’s better, but what do I know...", snd_TextScroll_Default );
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day11_Start;			 
+	 dialog_I++;
+
+#endregion
+
+#region news day 12 NEWS
+
+ day_I     = 112; // day 112 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Good morning to my loyal fans, Betty Blabbermouth here.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "I want to apologize to everyone for my brief disappearance.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "I know the station received thousands of calls while I was away, and who can blame the community for being so concerned when a beautiful woman like me goes missing.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Now, onto the morning’s top story, a gorgeous local news reporter survived the night in the clutches of a female convent.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "You guessed it, the top story is about me! Tonight I will interview myself and give you all the gory details.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The second story of the day, our weather girl had to take the day off for some bogus family business.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "I will give you a full report and provide my adoring audience the information on what could possibly be wrong with her.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day12_Start;		 
+	 dialog_I++;	 
+
+#endregion
+
+#region news day 13 NEWS
+
+ day_I     = 113; // day 113 -> news day 1!
+ dialog_I  = 0; // zeiger
+  arrayCutscenes[day_I] = new Createcutscene(day_I  , true);  // 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Betty Blabbermouth here.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "It appears the entire news industry has gone to shit.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "I will now only be a morning reporter, so all of the good news will only come once a day.", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   1,  "???", "For the last time, report the damn news or you’re fired!", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Go to hell Ron, I’m the one people want to see, not that WHORE you’re in love with!", snd_TextScroll_Default );	
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   1,  "???", "That’s it, cut to the feed...", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_Day13_Start;			 
+	 dialog_I++;	 
+
+ 
+
+ 
+
+#endregion
+
+
 
 #endregion // end of NEWS days
 

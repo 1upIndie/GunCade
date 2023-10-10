@@ -96,11 +96,13 @@ dialogShow_Spr_3_ = spr_Nothing;
 
 dialogSpr_NpcX_1_    = 280;
 dialogSpr_NpcX_2_    = 480;
-dialogSpr_NpcX_3_    = 680;
+dialogSpr_NpcX_3_    = 480;
 
   dialogSpr_X2    = -15;
   dialogSpr_X2Add = 1;
 dialogSpr_Y    = -700;
+dialogSprTV_Y  = -660;
+
  var defaultScaleDialog = 0.60;
 dialogScale[1]    = defaultScaleDialog;
 dialogScale[2]    = defaultScaleDialog;
@@ -217,15 +219,19 @@ repeat(900){
 repeat_I++;
 }
 
+
+
+isNews = false;
+
 // set background anew if new cast! also postions
 if( oo.arrayCutscenes[oo.currentCutscene_DAY].isNews == true){ 
 	obj_Workspace_Bgr.sprite_index = spr_WorkStation_BackgroundNews; 
 	
 	dialogSpr_NpcX_1_    = 250;
     dialogSpr_NpcX_2_    = 450;
-    dialogSpr_NpcX_3_    = 650;
+    dialogSpr_NpcX_3_    = 580;
 	
-	
+	isNews = true;
 	}
 
 
@@ -292,7 +298,7 @@ ui_BlackBox_DialogName_ScaleY  =  60;
 ui_BlackBox_TV_Radio_X     = -380;
 ui_BlackBox_TV_Radio_Scale =  390;
 
-isNews = false;
+
 
 /// background apply! if news or regular!
 //obj_Control_All.currentCutscene = day;

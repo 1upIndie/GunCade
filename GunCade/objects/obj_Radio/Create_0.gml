@@ -7,9 +7,10 @@
 totalBlock = false;
 
 isPaused = false;
-if( obj_Control_All.currentCutscene_DAY >= 100){ totalBlock = true; } // when news!
+//if( obj_Control_All.currentCutscene_DAY >= 100){ totalBlock = true; } // when news!
  alarm[0] = 2; // set
 
+  firstTimeSet = false; /// avoid clicking sound at start!
   alarm[1] = 60; // next song play if
 
 

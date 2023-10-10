@@ -19,9 +19,11 @@ if(dialogShow_Spr_2_ != spr_Nothing){
 
  draw_sprite_ext(dialogShow_Spr_2_, dialogSprIndex_2_, camX + dialogSpr_NpcX_2_ + dialogSpr_X2 + introExtroX[2],  camY + camHeight + dialogSpr_Y,  dialogScale[2], dialogScale[2], 0, c_white,  dialogSprAlpha[2] ); }
 
+
+// tv only!!
 if(dialogShow_Spr_3_ != spr_Nothing){ 
 
- draw_sprite_ext(dialogShow_Spr_3_, dialogSprIndex_3_, camX + dialogSpr_NpcX_3_ + dialogSpr_X2 + introExtroX[3],  camY + camHeight + dialogSpr_Y,  dialogScale[3], dialogScale[3], 0, c_white,  dialogSprAlpha[3] ); }
+ draw_sprite_ext(dialogShow_Spr_3_, dialogSprIndex_3_, camX + dialogSpr_NpcX_3_ + dialogSpr_X2 + introExtroX[3],  camY + camHeight + dialogSprTV_Y,  dialogScale[3], dialogScale[3], 0, c_white,  dialogSprAlpha[3] ); }
 
 
 

@@ -6,7 +6,8 @@
 
 canDraw = true;
 
-
+save_Xscale = image_xscale;
+save_Yscale = image_yscale;
 
 if(isBaught == false){   
 	image_alpha = alphaBaught_False;

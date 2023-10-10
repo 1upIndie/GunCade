@@ -13,8 +13,9 @@ if(blockDraw == true){ exit; }
 
  // bottom line black boxes
  // name black box
+ 	 if( isNews == false ){
 draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX -20 , camY + camHeight + ui_BlackBox_DialogName_Y, ui_BlackBox_DialogName_ScaleX, ui_BlackBox_DialogName_ScaleY, 0, ui_trennerToTextCol, 1  );
-
+	 }
 
 // text black box
 draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX - 20, camY + camHeight + ui_BlackBox_DialogText_Y, ui_BlackBox_DialogText_ScaleX, ui_BlackBox_DialogText_ScaleY, 0, ui_trennerToTextCol, 1  );
@@ -32,26 +33,29 @@ if(hoverOverDialogBoxBlink == true){
 //draw_sprite_ext(spr_button_Xbox_Y,0, camX+camWidth+belowTxt_X2, camY+camHeight+belowTxt_Y2, belowButtonScale,belowButtonScale, 0, c_white, 1 );
 
 // draw dialog text in any case! 
+ 	 if( isNews == false ){
 scribble(array_Name[dialogIndex]).draw(camX+textX, camY+camHeight+nameY );
-
+	 }
 
 scribble(array_Txt[dialogIndex]).wrap(textNeueZeile, -1,false).draw(camX+textX, camY+camHeight+textY, typist );
 
 #endregion
 
-// draw cash in gold if no minigame is there 
- if( !instance_exists(obj_MiniGame_Parent) and isNews == false ){
+// draw cash in gold if no minigame is there or is news!
+ if( !instance_exists(obj_MiniGame_Parent) ){
+	 if( isNews == false ){
+	 
     var prefixCash_ =  obj_Control_All.textDetail_CashPrefix;
     var suffixCash_ =  obj_Control_All.textDetail_CashSuffix; 
 
-    var cashTxt = prefixCash_ + string(dayTemp_Cash + dayTemp_Cash_Tip) + "$" + suffixCash_; 
+    var cashTxt = prefixCash_ + string( obj_Control_All.cashSumOnDay ) + "$" + suffixCash_; 
 
-var moneyX = obj_Control_All.moneyTxtX;
-var moneyY = obj_Control_All.moneyTxtY;
+	var moneyX = obj_Control_All.moneyTxtX;
+	var moneyY = obj_Control_All.moneyTxtY;
 
 
     scribble(cashTxt).draw( camX+moneyX, camY+moneyY );
-
+	 }
  }
  
  

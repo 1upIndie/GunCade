@@ -7,10 +7,10 @@
 
  camWidth_Half = camWidth/2;
  
- 
+var oo = obj_Control_All; 
  
 // spawn tv  +  radio + arcade programs!
-if(isNews == false){ 
+if( oo.arrayCutscenes[oo.currentCutscene_DAY].isNews == false){ 
 	
 	// main tb
 	var layerSet = "Instances_TV";
