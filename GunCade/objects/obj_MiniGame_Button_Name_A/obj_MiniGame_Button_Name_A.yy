@@ -4,18 +4,17 @@
   "name": "obj_MiniGame_Button_Name_A",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Names",
-    "path": "folders/Objects/Cutscenes/MiniGame/Names.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/SortBy_Buttons/Names.yy",
   },
   "parentObjectId": {
-    "name": "obj_MiniGame_Button_Parent",
-    "path": "objects/obj_MiniGame_Button_Parent/obj_MiniGame_Button_Parent.yy",
+    "name": "obj_MiniGame_Sub_Btn_SortByName",
+    "path": "objects/obj_MiniGame_Sub_Btn_SortByName/obj_MiniGame_Sub_Btn_SortByName.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_MiniGame_Name",
-    "path": "sprites/spr_MiniGame_Name/spr_MiniGame_Name.yy",
+    "name": "spr_MiniGame_Name_A",
+    "path": "sprites/spr_MiniGame_Name_A/spr_MiniGame_Name_A.yy",
   },
   "spriteMaskId": null,
   "visible": true,

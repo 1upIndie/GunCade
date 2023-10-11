@@ -7,7 +7,9 @@ if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selec
 if ( instance_exists( obj_Temp_Drag )){ instance_destroy(obj_Temp_Drag); }
 
 
-// spawn in type buttons
-scr_SpawnTypeButtons();
 
-scr_SpawnNameButtons();
+// get rid of by type inst if there
+scr_MiniGame_DeleteAll( "by type" );
+
+// spawn in name buttons
+scr_Spawn_TypeOrName_Buttons( "abc" );

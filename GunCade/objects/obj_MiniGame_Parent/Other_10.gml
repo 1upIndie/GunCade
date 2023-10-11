@@ -6,4 +6,4 @@
 scr_MiniGame_pressTypeName();
 
 // spawn in type buttons
-scr_SpawnTypeButtons();
+scr_Spawn_TypeOrName_Buttons( "type" );

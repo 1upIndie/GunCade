@@ -9,11 +9,11 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Types",
-    "path": "folders/Objects/Cutscenes/MiniGame/Types.yy",
+    "path": "folders/Objects/Cutscenes/MiniGame/SortBy_Buttons/Types.yy",
   },
   "parentObjectId": {
-    "name": "obj_MiniGame_Button_Parent",
-    "path": "objects/obj_MiniGame_Button_Parent/obj_MiniGame_Button_Parent.yy",
+    "name": "obj_MiniGame_Sub_Btn_SortByType",
+    "path": "objects/obj_MiniGame_Sub_Btn_SortByType/obj_MiniGame_Sub_Btn_SortByType.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

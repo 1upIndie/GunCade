@@ -99,6 +99,10 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
 
 
 
+  // sorting by name
+   textSortNamePrefix = "[font_Cutscene][scale, 0.5]";
+   textSortNameSuffix = "[/scale]"; 
+
 /// for weapons detail text box
   textDetail_HeadlinePrefix = "[font_Cutscene][scale, 1.5][c_gray]";
   textDetail_HeadlineSuffix = "[/c][/scale]"; 

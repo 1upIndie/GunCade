@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "TypeButtons",
-    "path": "folders/Sprites/UI/TypeButtons.yy",
+    "path": "folders/Sprites/UI/SortBy/TypeButtons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

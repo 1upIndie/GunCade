@@ -2,7 +2,8 @@
 
 // check if result is sufficient!
 
-
+// get rid of by type/name inst if there
+scr_MiniGame_DeleteAll( "both" );
   // check what it is !
 
 var jumpPoint = obj_MiniGame_Parent.result_Index_Refuse;

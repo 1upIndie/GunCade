@@ -90,5 +90,34 @@ function scr_ButtonResult_Create(inst_, slot_, totalAmount_){
 
 
 
+// 0 pepper spray, 1 folding batt, 2 knife
+// 10 scaringer, 11 9Oclock, 12 beagle
+// 20 bolt, 21 lever, 22 250cal
+// 30 tammy, 31woozie, 32 shmup
+// 40 pump, 41 sawed off, 42 tripple
+// 50 m16, 51 french, 52 ak
+// 60 lmg, 61 grenadel, 62 mini, 63 bazooka
+// 70 blow, 71 canon, 72 ac, 73 dc
+// 80 ammo, 81 las, 82 muzzl, 83 stock. 84 optic, 85 grip
+
+/// for alphabetical
+// 0: 11, 22,
+// a: 72, 80
+// b: 12, 20, 63, 70
+// c: 71,
+// d: 73
+// g: 61, 85 
+// j: 52,
+// f: 1, 51, 
+// k: 2
+// l: 21,60, 81,
+// m: 50, 62, 82,
+// o: 84
+// p: 0, 40, 
+// s: 10, 32, 41, 83 
+// t: 30, 42
+// w: 31
+
+
 //////////////////
 } // end of script

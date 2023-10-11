@@ -196,8 +196,8 @@ button_TypeSize = 0.22;
  var nameStartX = 45;
  var nameStartY = 90; 
  
- var nameXX    = 125;
- var nameYY    = 100; 
+ var nameXX    = 136;
+ var nameYY    = 135; 
 button_Name_x[0] = camX + nameStartX + nameXX * 0;
 button_Name_x[1] = camX + nameStartX + nameXX * 1;
 button_Name_x[2] = camX + nameStartX + nameXX * 2;
@@ -211,7 +211,7 @@ button_Name_Y[1] = camY + nameStartY + nameYY * 1;
 button_Name_Y[2] = camY + nameStartY + nameYY * 2;
 button_Name_Y[3] = camY + nameStartY + nameYY * 2;
 button_Name_Y[4] = camY + nameStartY + nameYY * 2;
-button_NameSize = 0.3;
+button_NameSize = 0.21;
 
 
 
