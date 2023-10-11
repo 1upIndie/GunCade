@@ -22,37 +22,64 @@ draw_self();
 // draw buttons
 //draw_set_alpha(1)
 var iterateBtn = 0; var getClickOnPostion = ""; var clickOnType = "";
-     var rectSizeX = 3;  var rectSizeY = 14; var colRec = c_red;
+     var rectSizeX = 5;  var rectSizeY = 14; var colRec = c_red;
+	 
+	 
 repeat(vol20){
   var xx =  volumeButtonStartX + (volumeButtonNextX * iterateBtn);
   var yy =  volumeButtonStartY;
   var colHover = c_white;
   var hover = false;
   if( mouse_x > xx-rectSizeX-1 and mouse_x < xx + rectSizeX ){
-     if(mouse_y > yy-rectSizeY and mouse_y < yy + rectSizeY ){   hover = true; colHover = allBtnHover; getClickOnPostion = iterateBtn; clickOnType = "volume";
+     if( mouse_y > yy-rectSizeY and mouse_y < yy + rectSizeY ){   hover = true; colHover = allBtnHover; getClickOnPostion = iterateBtn; 
   }}
-
-  draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, 0.4); // bgr ghost volume max
+  
+  //draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX, volumeButtonScaleY , 0, colHover, 0.4); // bgr ghost volume max
+  
   if( iterateBtn <= volumeTotal){  
-  draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, allBtnAlpha );
+    draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, allBtnAlpha );
   } 
   
   
   
    if(obj_Control_All.debug == true){
-
-	 
-     //draw_rectangle_color(xx - rectSizeX-1, yy - rectSizeY,   xx + rectSizeX, yy + rectSizeY, colRec,colRec,colRec,colRec,  0 );
+	  draw_set_alpha(0.3);
+     draw_rectangle_color(xx - rectSizeX-1, yy - rectSizeY,   xx + rectSizeX, yy + rectSizeY, colRec,colRec,colRec,colRec,  0 );
+	  draw_set_alpha(1);	 
+	  
+	 draw_text(x-150,y, getClickOnPostion);
   }
 
+
 iterateBtn++;
-}
+} // end of repeat
+
+
+#region special cases override 0 or 100% music volume, why y no work dam it...
+
+  // special case 100% instant!
+    var specialCaseX = 30;
+    var xxx =  volumeButtonStartX + (volumeButtonNextX * 20);
+    var yyy =  volumeButtonStartY;	
+  if( mouse_x > xxx-rectSizeX-1 and mouse_x < xxx + rectSizeX + specialCaseX ){
+     if( mouse_y > yyy-rectSizeY and mouse_y < yyy + rectSizeY ){  getClickOnPostion = 20; 
+  }}  
+
+  // special case 0% instant!
+    var xxx2 =  volumeButtonStartX-8;
+
+  if( mouse_x > xxx2-rectSizeX-specialCaseX and mouse_x < xxx2 + rectSizeX ){
+     if( mouse_y > yyy-rectSizeY and mouse_y < yyy + rectSizeY ){  getClickOnPostion = 0; 
+  }}  
+#endregion
+
+
 
 // functionality, click on!
 var mbLeft = mouse_check_button_released(mb_left);
  if(mbLeft == true and getClickOnPostion != ""){
  
-   if(clickOnType == "volume"){  
+ 
 	   volumeTotal = getClickOnPostion;
 	   
 	    obj_Control_All.volume_Music  = volumeTotal/vol20; 
@@ -63,7 +90,7 @@ var mbLeft = mouse_check_button_released(mb_left);
        // apply
       audio_group_set_gain( audiogroup_Music,  obj_Control_All.volume_Music, 0 );
 		
-	   }
+
  
  scr_PlaySound(snd_MenueSfx_ToggleLR, 0);
  }

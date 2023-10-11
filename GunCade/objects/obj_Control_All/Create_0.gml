@@ -5,7 +5,7 @@ audio_group_load( audiogroup_Music );
 audio_group_load( audiogroup_SFX );
 
 
-debug = false;
+debug = true;
 demo  = true;
 
 debugMiniGame = false; 
