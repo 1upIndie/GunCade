@@ -1,6 +1,7 @@
 
 
 
+
   firstTimeSet = false; /// avoid clicking sound at start!
 
 programm_image = spr_Tv_Programm;
@@ -20,7 +21,7 @@ canDraw = false;
 // programms to load in
 
 tvRahmen = "normal";
-
+tvRahmenAlpha = 1;
 
 programmID = noone; // store in id to delete and load in new one!
 
@@ -30,9 +31,21 @@ currentProgrammIndex = 0;
 getDay = obj_Control_All.currentCutscene;
 
 // store all programms available, so to toggle through them
+programmSize_Small = 0.85;
+programmSize_Main  = 0.82;
+
+programm_Main_X = 15;
+programm_Main_Y = 15;
+programm_Small_X = 9;
+programm_Small_Y = 9;
+
+
+
 
 programmArray = array_create(0);
-programmX = 7;
+
+
+
 getArray = obj_Control_All.array_programmDay_1;
 getArrayLength = 0;
 

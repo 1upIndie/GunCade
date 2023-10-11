@@ -9,7 +9,10 @@
 	
 if ( isNews == true ){
     
-	instance_create_depth(camX+ camWidth + buttonX, camY + buttonY, -16000, obj_NewsTv_Button );
+	instance_create_depth(camX+ camWidth + buttonX, camY + buttonY, -16000, obj_NewsTv_Button, {
+	
+	
+	} );
 }
 
 // is arcade? -> spawn in arcade programms!

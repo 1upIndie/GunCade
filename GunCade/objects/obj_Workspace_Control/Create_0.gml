@@ -266,7 +266,7 @@ setOnce_Enter[3] = false;
 var colUi = c_black;
  //colUi = c_aqua;
 // black boxes for dialog text
-ui_trennerToTextY   = 438; // trennlinie
+ui_trennerToTextY   = 520; // trennlinie
 ui_trennerToTextCol = colUi;
 
 var blackBoxNameY = 24;

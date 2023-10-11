@@ -6,6 +6,13 @@ var oo = obj_Control_All;
 	var camY        = camera_get_view_y( view_camera[0] );
 	var camWidth    = camera_get_view_width( view_camera[0] );
 	var camHeight   = camera_get_view_height( view_camera[0] );
+	
+	
+	if instance_exists(obj_NewsTv_Button) {
+	draw_line(mouse_x, mouse_y, obj_NewsTv_Button.x, obj_NewsTv_Button.y )
+	}
+	
+	
 /*
 var calc1 = camera_get_view_width(view_camera[0] );
 var calc2 = camera_get_view_height(view_camera[0] );
@@ -15,7 +22,7 @@ txt = string(calc1 ) + " : " + string(calc2 );
 
 draw_text(x,y, txt)
 */
-
+/*
   var widH = (camWidth/2)
   var wid = camX  + (camWidth/2); 
   var hei = camY  + (camHeight/2);  

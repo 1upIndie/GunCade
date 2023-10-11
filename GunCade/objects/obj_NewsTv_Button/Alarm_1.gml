@@ -2,4 +2,6 @@
 // Sie können Ihren Code in diesem Editor schreiben
 
 
-canPress = true;
+
+
+canDraw = true;

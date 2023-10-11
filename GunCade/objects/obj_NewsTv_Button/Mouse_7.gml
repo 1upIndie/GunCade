@@ -1,5 +1,11 @@
 /// @description 
 if( canPress == false){ exit; }
+
+
+canPress = false;
+image_alpha = 0;
+
+
 var oo = obj_Control_All;
 // block!
 obj_Workspace_Control.blockInput = true;

@@ -30,8 +30,8 @@ if ( lastFrame_Alpha > 0){
 
 // if has news
 if(hasNews == true){
-	if(isMain == 1 ){ scribble(hasNewsTxt ).draw( x+newsX,  y+newsY  ); }
-	if(isMain == 0 ){ scribble(hasNewsTxtS).draw( x+newsXs, y+newsYs ); }
+	//if(isMain == 1 ){ scribble(hasNewsTxt ).draw( x+newsX,  y+newsY  ); }
+	//if(isMain == 0 ){ scribble(hasNewsTxtS).draw( x+newsXs, y+newsYs ); }
 }
 
 //draw_text(x+80,y+50, currentFrame);

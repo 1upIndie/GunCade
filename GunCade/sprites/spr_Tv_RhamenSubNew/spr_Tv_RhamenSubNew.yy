@@ -13,6 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fa92eaf-a299-480e-8600-1e0f06431f9a",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"673b51cd-47f0-4cfe-af96-3ebb75fc0f19",},
   ],
   "gridX": 0,
@@ -43,7 +44,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -54,7 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"673b51cd-47f0-4cfe-af96-3ebb75fc0f19","path":"sprites/spr_Tv_RhamenSubNew/spr_Tv_RhamenSubNew.yy",},},},"Disabled":false,"id":"716199d6-e66b-4cc3-8f7b-e6482d70aef2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1fa92eaf-a299-480e-8600-1e0f06431f9a","path":"sprites/spr_Tv_RhamenSubNew/spr_Tv_RhamenSubNew.yy",},},},"Disabled":false,"id":"e2218dec-eb07-443d-8244-6298fb58161f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"673b51cd-47f0-4cfe-af96-3ebb75fc0f19","path":"sprites/spr_Tv_RhamenSubNew/spr_Tv_RhamenSubNew.yy",},},},"Disabled":false,"id":"716199d6-e66b-4cc3-8f7b-e6482d70aef2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

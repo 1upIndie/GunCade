@@ -1,7 +1,9 @@
 /// @description 
 
+if ( canDraw == false ){ exit; }
+if( canPress  == false){ exit; }
 
- 
+
  _channelGlowTimer   += 1/ _channelGlowTimerMax;
  _channelWobbleTimer += 1/ _channelWobbleTimerMax; 
  

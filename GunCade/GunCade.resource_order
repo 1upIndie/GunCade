@@ -79,6 +79,7 @@
     {"name":"Sfx","order":9,"path":"folders/Sounds/Sfx.yy",},
     {"name":"Dialog_blah","order":9,"path":"folders/Sounds/Sfx/Dialog_blah.yy",},
     {"name":"Sfx_Menue","order":1,"path":"folders/Sounds/Sfx/Sfx_Menue.yy",},
+    {"name":"MiniGame","order":8,"path":"folders/Sounds/Sfx/Sfx_Menue/MiniGame.yy",},
     {"name":"SkipClick_Dialog","order":6,"path":"folders/Sounds/Sfx/Sfx_Menue/SkipClick_Dialog.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Dialog","order":2,"path":"folders/Sprites/Dialog.yy",},
@@ -184,7 +185,6 @@
     {"name":"Radio","order":9,"path":"folders/Sprites/UI/Radio.yy",},
     {"name":"Stats","order":5,"path":"folders/Sprites/UI/Stats.yy",},
     {"name":"TypeButtons","order":6,"path":"folders/Sprites/UI/TypeButtons.yy",},
-    {"name":"MiniGame","order":8,"path":"folders/Sounds/Sfx/Sfx_Menue/MiniGame.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Tutorial_txt_Decide","order":1,"path":"sprites/spr_Tutorial_txt_Decide/spr_Tutorial_txt_Decide.yy",},

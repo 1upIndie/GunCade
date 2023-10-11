@@ -23,9 +23,12 @@ draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX - 20, camY + camHeight + ui_BlackB
 
 if(hoverOverDialogBoxBlink == true){
 	
-	draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, hoverOverDialogBoxBlinkColor, hoverOverDialogBoxBlinkAlpha  );
+	//draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, hoverOverDialogBoxBlinkColor, hoverOverDialogBoxBlinkAlpha  );
     draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_trennerToTextY, 5000, 900, 0,                       hoverOverDialogBoxBlinkColor, hoverOverDialogBoxBlinkAlpha  );
 
+     // only for debugging
+	//draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_BlackBoxY, ui_BlackBoxLength, ui_BlackBoxHeight, 0, hoverOverDialogBoxBlinkColor, 1  );
+    ///draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX-10, camY + ui_trennerToTextY, 5000, 900, 0,                       hoverOverDialogBoxBlinkColor, 1  );
 }
 
 
