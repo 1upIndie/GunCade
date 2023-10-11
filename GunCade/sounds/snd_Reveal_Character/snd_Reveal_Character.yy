@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 3.291429,
+  "duration": 6.030204,
   "parent": {
     "name": "Sfx",
     "path": "folders/Sounds/Sfx.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_Reveal_Character.mp3",
+  "soundFile": "snd_Reveal_Character.ogg",
   "type": 0,
   "volume": 1.0,
 }

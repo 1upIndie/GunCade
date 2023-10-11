@@ -1,4 +1,9 @@
 
+// only used for here sfx 
+getSfxPitchMin_Thump  =  obj_Control_All.sfxPitchMin_Thump;
+getSfxPitchMax_Thump  =  obj_Control_All.sfxPitchMax_Thump;
+
+
 
 canDraw       = false;
 

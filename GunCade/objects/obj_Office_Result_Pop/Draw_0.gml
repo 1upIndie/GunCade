@@ -17,7 +17,11 @@ if( state == "pop in" ){
 	scale_AniCurve_I	+= 1/scale_AniCurve_Time;
 	if(scale_AniCurve_I >= 1){  scale_AniCurve_I = 1;
 		
-		if( spawned_Already == false){ state = "draw value 1";  scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult1, obj_Control_All.screenShakeAmount_OfficeResult1 );	   }
+		if( spawned_Already == false){ 
+			state = "draw value 1";  
+			scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult1, obj_Control_All.screenShakeAmount_OfficeResult1 );	
+			scr_PlaySound_Sfx(snd_Sfx_Office_Result_Thump, 0, getSfxPitchMin_Thump, getSfxPitchMax_Thump );   }
+			
 		if( spawned_Already == true ){ state = "draw value all";  } 
 		
 		}
@@ -55,7 +59,7 @@ if( state == "draw value 2" ){
 
   draw_valueTimer[2]++;
   if ( draw_valueTimer[2] >= draw_valueTime[2] ){ 
-
+        scr_PlaySound_Sfx(snd_Sfx_Office_Result_Thump, 0, getSfxPitchMin_Thump, getSfxPitchMax_Thump );
 		scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult1, obj_Control_All.screenShakeAmount_OfficeResult1 );
 	    draw_valueTimer[2] = 0; state = "draw value 3";   }
 }
@@ -78,6 +82,7 @@ if( state == "draw value 3" ){
 
   draw_valueTimer[3]++;
   if ( draw_valueTimer[3] >= draw_valueTime[3] ){ 
+	  scr_PlaySound_Sfx(snd_Sfx_Office_Result_Thump, 0, getSfxPitchMin_Thump, getSfxPitchMax_Thump );
 	  scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult1, obj_Control_All.screenShakeAmount_OfficeResult1 );	  
 	  draw_valueTimer[3] = 0; state = "draw value 4";   }
 }
@@ -101,6 +106,7 @@ if( state == "draw value 4" ){
 
   draw_valueTimer[4]++;
   if ( draw_valueTimer[4] >= draw_valueTime[4] ){ 
+	  scr_PlaySound_Sfx(snd_Sfx_Office_Result_Thump, 0, getSfxPitchMin_Thump, getSfxPitchMax_Thump );
 	  scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult1, obj_Control_All.screenShakeAmount_OfficeResult1 );	  
 	  draw_valueTimer[4] = 0; state = "draw value 5";   }
 }
@@ -126,6 +132,7 @@ if( state == "draw value 5" ){
 
   draw_valueTimer[5]++;
   if ( draw_valueTimer[5] >= draw_valueTime[5] ){ 
+	  scr_PlaySound_Sfx(snd_Sfx_Office_Result_Thump, 0, getSfxPitchMin_Thump, getSfxPitchMax_Thump );
 	  scr_ShakeIt( obj_Control_All.screenShakeTime_OfficeResult2, obj_Control_All.screenShakeAmount_OfficeResult2 );		  
 	  draw_valueTimer[5] = 0; state = "draw value all";
 	  spawned_Already = true; // set "unlocked"	 

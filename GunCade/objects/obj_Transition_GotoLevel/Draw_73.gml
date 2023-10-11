@@ -6,23 +6,29 @@
 // Inherit the parent event
 event_inherited();
 
+if ( state == "fade in"){
+	alphaSet = 1;
+	stickAroundTimer--;
+	
+	channel_I += 1/channelTimeFadeIn;
+
+   var _val = animcurve_channel_evaluate(  _channel, channel_I  );	
+   alphaSet = _val;
+	
+	
+	if(channel_I >= 1){ state = "stick around";  }
+
+}
+
+
 
 if ( state == "stick around"){
 	alphaSet = 1;
 	stickAroundTimer--;
-	if(stickAroundTimer <= 0){ state = "fade out";  }
+	if(stickAroundTimer <= 0){ state = "";  room_goto(levelJumpTo);  }
 
 }
 
-// get lighter
-if (state == "fade out"){
-
-	channelTimer  -= (1/channelTimeFadeOut);
-	if(channelTimer <= 0){  
-		
-		if (levelJumpTo != noone){  room_goto(levelJumpTo); }
-		}
-}
 
 
 

@@ -1,5 +1,7 @@
 /// @description 
 
+  scr_ShakeIt( obj_Control_All.screenShakeTime_PressButtonToggle, obj_Control_All.screenShakeAmount_PressButtonToggle );  
+   
 scr_PlaySound(sound_Left ,0);
 
 obj_Button_Parent.canClick = false; // disable!

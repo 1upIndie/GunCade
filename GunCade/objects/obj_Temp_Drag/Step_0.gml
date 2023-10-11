@@ -170,21 +170,24 @@ var onDropSpot = collision_rectangle(bbox_left,bbox_top, bbox_right, bbox_bottom
    } // end of special case attachments
 
    obj_MiniGame_Parent.updateCosts = true;
-
-	
+   	scr_ShakeIt( obj_Control_All.screenShakeTime_PressButtonSoft, obj_Control_All.screenShakeAmount_PressButtonSoft );
+	  	scr_PlaySound( snd_MenueSfx_MiniGame_Set, 0);
 	  instance_destroy();	
 	} // end of pressed
 	
 	
 	
-	
+
 	
 	
 	
 ////////////////////////////////////////////////////////////////////////////////////	
 // right mouse button destroy if not on a drop off spot!
 var mbRight = mouse_check_button_released( mb_right );
-if(onDropSpot == noone and mbRight == 1 ){ instance_destroy(); }
+if(onDropSpot == noone and mbRight == 1 ){ 
+	
+	  	scr_PlaySound( snd_MenueSfx_MiniGame_Cancel, 0);	
+	instance_destroy(); }
 	
 	
 	

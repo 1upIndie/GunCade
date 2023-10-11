@@ -9,7 +9,7 @@ debug = true;
 demo  = true;
 
 debugMiniGame = false; 
-sound_Debug = true;
+sound_Debug = false;
 
 
 roomToJump = Room_Workspace;
@@ -742,7 +742,12 @@ alarm[2] = audioCleanup;
 
 audioFixed_FadeOut = 500;
 audioFixed_FadeIn  = 500;
+ 
+ sfxPitchMin_Thump = 0.95;
+ sfxPitchMax_Thump = 1.05; 
 
+ sfxCoinsMin_Thump = 0.95;
+ sfxCoinsMax_Thump = 1.05; 
 
 function createSong( id_, isUnique_,   song_, nameOwner_, nameSong_, length_, isUnlocked_ ) constructor{
 
@@ -789,6 +794,12 @@ arraySongsPlaylist = array_create(0);
   screenShakeAmount_PressButton    = 2;
   screenShakeAmount_OfficeResult1  = 2;
   screenShakeAmount_OfficeResult2  = 6;
+
+  screenShakeTime_PressButtonSoft    = 4;
+  screenShakeAmount_PressButtonSoft  = 2;
+
+  screenShakeTime_PressButtonToggle    = 2; // for left right subtle toggle
+  screenShakeAmount_PressButtonToggle  = 1;
 
 
 

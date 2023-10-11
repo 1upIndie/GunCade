@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 2.08,
+  "duration": 4.141746,
   "parent": {
     "name": "Sale_Voice",
     "path": "folders/Sounds/Sfx/Sale_Voice.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_PopUp__Fail.wav",
+  "soundFile": "snd_PopUp__Fail.ogg",
   "type": 0,
   "volume": 1.0,
 }

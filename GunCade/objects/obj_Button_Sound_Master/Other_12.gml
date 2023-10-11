@@ -2,7 +2,10 @@
 
 var playSfx = false;
 
-if(obj_Control_All.volume_Master <= 0.95){ obj_Control_All.volume_Master += 0.05; playSfx = true;  }
+if(obj_Control_All.volume_Master <= 0.95){
+	
+  scr_ShakeIt( obj_Control_All.screenShakeTime_PressButtonToggle, obj_Control_All.screenShakeAmount_PressButtonToggle );  	
+	obj_Control_All.volume_Master += 0.05; playSfx = true;  }
 
 // apply
 audio_master_gain( obj_Control_All.volume_Master );

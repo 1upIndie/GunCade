@@ -2,3 +2,4 @@
 
 
 canPress = true;
+image_alpha = image_alphaCan;

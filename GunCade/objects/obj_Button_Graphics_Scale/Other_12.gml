@@ -4,7 +4,9 @@
 var playSfx = false;
 
 
-if ( settings_SprI < disScaleMax){  settings_SprI++; playSfx = true;  };
+if ( settings_SprI < disScaleMax){  
+	  scr_ShakeIt( obj_Control_All.screenShakeTime_PressButtonToggle, obj_Control_All.screenShakeAmount_PressButtonToggle );  
+	settings_SprI++; playSfx = true;  };
 
 if( playSfx == true){ scr_PlaySound(sound_Left ,0);  }
  else { scr_PlaySound(snd_MenueSfx_CantAlarm ,0); }

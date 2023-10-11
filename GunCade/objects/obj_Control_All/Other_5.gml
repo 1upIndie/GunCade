@@ -16,6 +16,9 @@ garbageCollect_Particles_Index = 0;
 array_resize(garbageCollect_Particles, 0);
 
 
+// stop all sounds, meh
+audio_stop_all();
+
 
 
 /*

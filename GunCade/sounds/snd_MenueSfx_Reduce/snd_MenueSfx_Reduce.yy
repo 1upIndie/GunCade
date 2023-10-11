@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.917188,
+  "duration": 0.851837,
   "parent": {
     "name": "Sfx_Menue",
     "path": "folders/Sounds/Sfx/Sfx_Menue.yy",

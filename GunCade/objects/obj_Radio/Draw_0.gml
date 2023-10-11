@@ -34,7 +34,7 @@ repeat(vol20){
      if( mouse_y > yy-rectSizeY and mouse_y < yy + rectSizeY ){   hover = true; colHover = allBtnHover; getClickOnPostion = iterateBtn; 
   }}
   
-  //draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX, volumeButtonScaleY , 0, colHover, 0.4); // bgr ghost volume max
+  draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX, volumeButtonScaleY , 0, colHover, 0.4); // bgr ghost volume max
   
   if( iterateBtn <= volumeTotal){  
     draw_sprite_ext(spr_Radio_volumeButton,0, xx,yy, volumeButtonScaleX,volumeButtonScaleY , 0, colHover, allBtnAlpha );
@@ -43,11 +43,11 @@ repeat(vol20){
   
   
    if(obj_Control_All.debug == true){
-	  draw_set_alpha(0.3);
-     draw_rectangle_color(xx - rectSizeX-1, yy - rectSizeY,   xx + rectSizeX, yy + rectSizeY, colRec,colRec,colRec,colRec,  0 );
-	  draw_set_alpha(1);	 
+	//  draw_set_alpha(0.3);
+    // draw_rectangle_color(xx - rectSizeX-1, yy - rectSizeY,   xx + rectSizeX, yy + rectSizeY, colRec,colRec,colRec,colRec,  0 );
+	//  draw_set_alpha(1);	 
 	  
-	 draw_text(x-150,y, getClickOnPostion);
+	// draw_text(x-150,y, getClickOnPostion);
   }
 
 
@@ -81,7 +81,7 @@ var mbLeft = mouse_check_button_released(mb_left);
  
  
 	   volumeTotal = getClickOnPostion;
-	   
+	     scr_ShakeIt( obj_Control_All.screenShakeTime_PressButtonToggle, obj_Control_All.screenShakeAmount_PressButtonToggle );  
 	    obj_Control_All.volume_Music  = volumeTotal/vol20; 
 		
 		///obj_Control_All.volume_Master = valumeTotal/vol20;

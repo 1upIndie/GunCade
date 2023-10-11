@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "DemoEndScreen",
-    "path": "folders/Objects/DemoEndScreen.yy",
+    "path": "folders/Objects/Effects/DemoEndScreen.yy",
   },
   "parentObjectId": null,
   "persistent": false,

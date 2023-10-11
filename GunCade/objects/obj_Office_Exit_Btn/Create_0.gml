@@ -16,4 +16,10 @@ X_Set_ITimeMax = 160;
 
 
 canPress = false;
-alarm[0] = 60;
+alarm[0] = 80;
+
+image_alphaCannot = 0.7;
+image_alphaCan    = 1;
+
+image_alpha = image_alphaCannot;
+

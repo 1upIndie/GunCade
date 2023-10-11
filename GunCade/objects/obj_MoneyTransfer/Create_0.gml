@@ -21,3 +21,11 @@ temp_MoneyShown = lerp(save_CurrentMoney, save_TotalMoney, lerpAmount );
 
 alarm[0] = 60; // short delay!
 TranferWhere = "office";
+
+coinLoopTimer = 30;
+alarm[1] = coinLoopTimer + 80;
+
+
+// coin sounds!
+getSfxPitchMin_Thump  =  obj_Control_All.sfxCoinsMin_Thump;
+getSfxPitchMax_Thump  =  obj_Control_All.sfxCoinsMax_Thump;

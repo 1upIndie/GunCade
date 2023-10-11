@@ -13,8 +13,8 @@ if(room == room_StartScreen){
 
 }
 
-if(room == Room_Workspace){
-	var sound = audio_play_sound(snd_Music_ncalib_Mokka_EarlyMorning, 1, 1 );
+if(room == room_Office){
+	var sound = audio_play_sound(snd_StartTheme_Mokka__Spicy_Cream, 1, 1 );
 
 	
 }

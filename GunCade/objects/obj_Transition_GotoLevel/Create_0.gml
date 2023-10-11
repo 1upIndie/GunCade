@@ -6,9 +6,10 @@
 // Inherit the parent event
 event_inherited();
 
-state = "fade out";
+state = "fade in";
 _channel = animcurve_get_channel(aniCurve_Transition, 0);
-channelTimeFadeIn  = 30;
+channel_I = 0;
+channelTimeFadeIn  = 60;
 channelTimeFadeOut = 30;
 channelTimer = 0;
 
