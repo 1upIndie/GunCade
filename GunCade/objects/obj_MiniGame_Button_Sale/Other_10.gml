@@ -28,6 +28,9 @@ scr_Unblock_CashIn(indexJumpTo, resultMoney, resultTip, resultService,  isTutori
 	    transfer.save_TotalMoney    =  obj_Control_All.cashSumOnDay + resultMoney + resultTip; // what is the outcome!
 
 
+scr_PlaySound( snd_MenueSfx_Start, 0);
+scr_ShakeIt( obj_Control_All.screenShakeTime_PressButton, obj_Control_All.screenShakeAmount_PressButton );
+
 // after clean up -> destroy self
 instance_destroy();
 } 

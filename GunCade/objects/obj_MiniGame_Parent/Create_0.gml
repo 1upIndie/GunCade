@@ -466,22 +466,22 @@ event_user(0);
  // start values -> pick sort method
  
  // pick one category or alphabet/numbaa
- spawn_tutorial_Txt_CategoryAlp_X = 440;  // arrow
- spawn_tutorial_Txt_CategoryAlp_Y = 232;  
+ spawn_tutorial_Txt_CategoryAlp_X = 400;  // arrow
+ spawn_tutorial_Txt_CategoryAlp_Y = 50;  
  
  
 
  
  // pick one of selectables from picked category
- spawn_tutorial_Txt_Selectable_X = 670;
- spawn_tutorial_Txt_Selectable_Y = 160;  
+ spawn_tutorial_Txt_Selectable_X = 800;
+ spawn_tutorial_Txt_Selectable_Y = 195;  
 
- spawn_tutorial_Txt_Dropable_X = 838;
+ spawn_tutorial_Txt_Dropable_X = 1070;
  spawn_tutorial_Txt_Dropable_Y = 255;   
  
  // final part -> can sell, mess up or refuse!
- spawn_tutorial_Txt_EndIt_X = 675;
- spawn_tutorial_Txt_EndIt_Y = 48;   
+ spawn_tutorial_Txt_EndIt_X = 875;
+ spawn_tutorial_Txt_EndIt_Y = 475;   
  
 
 #endregion

@@ -1780,37 +1780,37 @@ indexSet++;
   text_Name_PlayerT     = "[font_Cutscene_Name][scale, 1.4][#F9CE7B]Player[/c][/scale]";  // thoughts!!!
   
   
-  text_Name_Jez         = "[font_Cutscene_Name][scale, 0.7][c_purple]Jezebelle[/c][/scale]"; 
-  text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_purple]Wife[/c][/scale]"; 
-  text_Name_Nerd        = "[font_Cutscene_Name][scale, 0.7][c_white]Nerd[/c][/scale]"; 
-  text_Name_NerdSteve   = "[font_Cutscene_Name][scale, 0.7][c_white]Steve[/c][/scale]"; 
+  text_Name_Jez         = "[font_Cutscene_Name][scale, 1.4][c_purple]Jezebelle[/c][/scale]"; 
+  text_Name_Wife        = "[font_Cutscene_Name][scale, 1.4][c_purple]Wife[/c][/scale]"; 
+  text_Name_Nerd        = "[font_Cutscene_Name][scale, 1.4[c_white]Nerd[/c][/scale]"; 
+  text_Name_NerdSteve   = "[font_Cutscene_Name][scale, 1.4][c_white]Steve[/c][/scale]"; 
 
 
-  text_Name_Kyle        = "[font_Cutscene_Name][scale, 0.7][c_white]Kyle[/c][/scale]";  
-  text_Name_Granny      = "[font_Cutscene_Name][scale, 0.7][c_white]Granny[/c][/scale]";   
+  text_Name_Kyle        = "[font_Cutscene_Name][scale, 1.4][c_white]Kyle[/c][/scale]";  
+  text_Name_Granny      = "[font_Cutscene_Name][scale, 1.4][c_white]Granny[/c][/scale]";   
  
-  text_Name_AngryDad    = "[font_Cutscene_Name][scale, 0.7][c_white]Angry dad[/c][/scale]";   
-  text_Name_Weather     = "[font_Cutscene_Name][scale, 0.7][c_white]Weather woman[/c][/scale]";   
-  text_Name_Duke        = "[font_Cutscene_Name][scale, 0.7][c_white]Duke[/c][/scale]";   
+  text_Name_AngryDad    = "[font_Cutscene_Name][scale, 1.4][c_white]Angry dad[/c][/scale]";   
+  text_Name_Weather     = "[font_Cutscene_Name][scale, 1.4][c_white]Weather woman[/c][/scale]";   
+  text_Name_Duke        = "[font_Cutscene_Name][scale, 1.4][c_white]Duke[/c][/scale]";   
 
 
-  text_Name_Cop         = "[font_Cutscene_Name][scale, 0.7][c_white]Cop[/c][/scale]"; 
-  text_Name_Clown       = "[font_Cutscene_Name][scale, 0.7][c_white]Bam Bam[/c][/scale]";   
+  text_Name_Cop         = "[font_Cutscene_Name][scale, 1.4][c_white]Cop[/c][/scale]"; 
+  text_Name_Clown       = "[font_Cutscene_Name][scale, 1.4][c_white]Bam Bam[/c][/scale]";   
 
-  text_Name_Shadow      = "[font_Cutscene_Name][scale, 0.7][c_white]Shadow[/c][/scale]";   
+  text_Name_Shadow      = "[font_Cutscene_Name][scale, 1.4][c_white]Shadow[/c][/scale]";   
   text_Name_Victor      = "[font_Cutscene_Name][scale, 1.4][c_white]Victor[/c][/scale]";   
  
-  text_Name_Nun         = "[font_Cutscene_Name][scale, 0.7][c_white]Nun[/c][/scale]";  
-  text_Name_Wife        = "[font_Cutscene_Name][scale, 0.7][c_white]Wife[/c][/scale]";  
+  text_Name_Nun         = "[font_Cutscene_Name][scale, 1.4][c_white]Nun[/c][/scale]";  
+  text_Name_Wife        = "[font_Cutscene_Name][scale, 1.4][c_white]Wife[/c][/scale]";  
 
 
-  text_Name_Twin1       = "[font_Cutscene_Name][scale, 0.7][c_white]Twin 1[/c][/scale]";  
-  text_Name_Twin2       = "[font_Cutscene_Name][scale, 0.7][c_white]Twin 2[/c][/scale]";  
+  text_Name_Twin1       = "[font_Cutscene_Name][scale, 1.4][c_white]Twin 1[/c][/scale]";  
+  text_Name_Twin2       = "[font_Cutscene_Name][scale, 1.4][c_white]Twin 2[/c][/scale]";  
  
-  text_Name_Ramdom      = "[font_Cutscene_Name][scale, 0.7][c_white]Random[/c][/scale]";
+  text_Name_Ramdom      = "[font_Cutscene_Name][scale, 1.4][c_white]Random[/c][/scale]";
  
  
-  text_Name_Betty      = "[font_Cutscene_Name][scale, 0.7][c_white]Betty Blabbermouth[/c][/scale]";   
+  text_Name_Betty      = "[font_Cutscene_Name][scale, 1.4][c_white]Betty Blabbermouth[/c][/scale]";   
 
 	  function setText( index_, talkActiveSlot,  npc_,  txt_, sound_ ){ 
 		    var prefixTXT_     = "";
@@ -9428,8 +9428,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]    =	obj_MiniGame_Jez_Day1; // testing random sale
-    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+	//  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]    =	obj_MiniGame_Jez_Day1; // testing random sale
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 	 dialog_I++;
 	 
 	 
