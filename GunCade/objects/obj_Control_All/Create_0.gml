@@ -8,9 +8,9 @@ audio_group_load( audiogroup_SFX );
 debug = false;
 demo  = true;
 
-debugMiniGame = true; 
-
+debugMiniGame = false; 
 sound_Debug = true;
+
 
 roomToJump = Room_Workspace;
 roomToJump = room_Debug;
@@ -9417,7 +9417,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  =	obj_MiniGame_RandomSale_Day1; // testing random sale
+	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]    =	obj_MiniGame_Jez_Day1; // testing random sale
     // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
 	 dialog_I++;
 	 

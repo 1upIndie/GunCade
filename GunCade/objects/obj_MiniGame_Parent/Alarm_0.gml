@@ -55,13 +55,15 @@ result_Index_Messup    = jump_Fail;
 	  // apply perfect
 possible_Weapon_Perfect          = get_Array.temp_PerfectWeapon; 
 	  
+	  
 possible_Ammo_Perfect            = get_Array.temp_Perect_Ammo
 possible_LaserPointer_Perfect    = get_Array.temp_Perect_LaserPointer;  // attachments not set on default
 possible_Muzzle_Perfect          = get_Array.temp_Perect_Muzzle;  
-	  
+	
+possible_Stock_Perfect           = get_Array.temp_Perect_Stock; 
 possible_Optics_Perfect          = get_Array.temp_Perect_Optics; 
 possible_Grip_Perfect            = get_Array.temp_Perect_Grip; 
-possible_Stock_Perfect           = get_Array.temp_Perect_Stock; 	  
+  
 	
 	
 	

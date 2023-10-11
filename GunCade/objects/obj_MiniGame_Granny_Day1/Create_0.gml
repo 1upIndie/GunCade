@@ -8,7 +8,7 @@ event_inherited();
  // possible_Optics_Perfect          = -999; 
  // possible_Scope_Perfect           = -999; 
  // possible_Stock_Perfect           = -999; 
- 
+
  
  // all other combos -> good sale, no tip
 
