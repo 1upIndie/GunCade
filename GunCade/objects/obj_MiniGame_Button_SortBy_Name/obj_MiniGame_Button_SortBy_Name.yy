@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Objects/Cutscenes/MiniGame.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Cutscenes/MiniGame/Buttons.yy",
   },
   "parentObjectId": {
     "name": "obj_MiniGame_Button_Parent",

@@ -1,19 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_MiniGame_Nerd_Day2",
+  "name": "obj_Debug_Show_DayMoney",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Day_2",
-    "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_2.yy",
+    "name": "Debug",
+    "path": "folders/Debug.yy",
   },
   "parentObjectId": {
-    "name": "obj_MiniGame_Parent",
-    "path": "objects/obj_MiniGame_Parent/obj_MiniGame_Parent.yy",
+    "name": "obj_Debug_Start_Day_Parent",
+    "path": "objects/obj_Debug_Start_Day_Parent/obj_Debug_Start_Day_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_debug_ShowDayNMoney",
+    "path": "sprites/spr_debug_ShowDayNMoney/spr_debug_ShowDayNMoney.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

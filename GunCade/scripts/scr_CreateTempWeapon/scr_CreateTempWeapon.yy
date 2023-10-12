@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "MiniGame",
-    "path": "folders/Objects/Cutscenes/MiniGame.yy",
+    "name": "Scripts",
+    "path": "folders/Objects/Cutscenes/MiniGame/Scripts.yy",
   },
 }

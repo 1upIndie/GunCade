@@ -8,6 +8,8 @@ var bbb = obj_MiniGame_Parent;
 #region sorted by type
 
 if(sortBy_ == "type"){
+	
+	
 // create instantly all types of weapons, first choise?
 	if(ooo.unlocked_WeaponType_Melee_  == true ){
 		var type_Melee  = instance_create_layer( bbb.button_Type_x[0], bbb.button_Type_Y[0],  bbb.layer_ , obj_MiniGame_Button_Type_Melee   );

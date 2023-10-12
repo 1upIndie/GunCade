@@ -10,7 +10,7 @@ function scr_SetWeaponUnlocks(day_){
  // default start settings!
  var typeMelee      = 1;
  var typePistol     = 1; 
- var typeRifle      = false; 
+ var typeRifle      = 1; 
  
  var typeSmg        = 1;  
  var typeShotgun    = 1;   
