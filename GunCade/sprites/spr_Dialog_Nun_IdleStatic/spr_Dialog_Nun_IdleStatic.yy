@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_Dialog_Nun_IdleStatic",
   "bbox_bottom": 839,
-  "bbox_left": 241,
-  "bbox_right": 759,
-  "bbox_top": 276,
+  "bbox_left": 169,
+  "bbox_right": 758,
+  "bbox_top": 127,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ca77e1f-a7eb-48af-a405-17cb7fb4ff7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8a4fcf33-e6a9-4c4c-891e-ecb1068a94b6",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 840,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"136e9e3a-5a12-401f-8675-86d4624f0bb1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"790f4185-516c-44ac-86b8-4b753fe44b15","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 1,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5ca77e1f-a7eb-48af-a405-17cb7fb4ff7d","path":"sprites/spr_Dialog_Nun_IdleStatic/spr_Dialog_Nun_IdleStatic.yy",},},},"Disabled":false,"id":"2143065e-021b-4930-85ea-836b9451e5aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8a4fcf33-e6a9-4c4c-891e-ecb1068a94b6","path":"sprites/spr_Dialog_Nun_IdleStatic/spr_Dialog_Nun_IdleStatic.yy",},},},"Disabled":false,"id":"23efd1ce-6211-4c21-accf-0ae4087f140e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

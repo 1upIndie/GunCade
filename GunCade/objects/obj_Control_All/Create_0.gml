@@ -987,7 +987,7 @@ cashSumOnDay           = 0;     // money earned during day!
 
 
 acceptClownBatton_Day_2         = false; // this time clown offers a batton
-acceptCopRebuyBatton_Day_2      = false; // this time clown offers a batton
+//acceptCopRebuyBatton_Day_2      = false; // this time clown offers a batton
 
 
 wifePresentGivenDay2      = false;
@@ -1371,28 +1371,29 @@ indexSet++;
 
 			 /////// clown
 			  case  "clown default":			  
-				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
-				   sprIdle_        = spr_Dialog_Jez_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		 break; 
+				   sprIdleStatic   = spr_Dialog_Clown_Idle;
+				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
 
-			  case  "clown angry":			  
-				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
-				   sprIdle_        = spr_Dialog_Jez_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		 break; 
+			  case  "clown angry":		
+				   sprIdleStatic   = spr_Dialog_Clown_Angry; 
+				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
 
-              case  "clown smiling":			  
-				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
-				   sprIdle_        = spr_Dialog_Jez_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		 break; 
+              case  "clown smiling":	
+				   sprIdleStatic   = spr_Dialog_Clown_Happy;
+				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
 
 			  case  "clown dismissive":			  
-				   sprIdleStatic   = spr_Dialog_Jez_IdleStatic;
-				   sprIdle_        = spr_Dialog_Jez_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		 break; 	
+				   sprIdleStatic   = spr_Dialog_Clown_Angry;
+				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
+
 
 #endregion
 
@@ -1400,27 +1401,27 @@ indexSet++;
 
 			 /////// Cop
 			  case  "cop default":			  
-				   sprIdleStatic   = spr_Dialog_Cop_IdleStatic;
+				   sprIdleStatic   = spr_Dialog_Cop_Idle;
 				   sprIdle_        = spr_Dialog_Cop_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Cop_TalkStatic; 		  
+				   sprTalkStatic_  = spr_Dialog_Cop_Talk; 		  
 				   sprTalk_        = spr_Dialog_Cop_Talk; 		 break;	
 
 			  case  "cop angry":			  
-				   sprIdleStatic   = spr_Dialog_Cop_IdleStatic;
+				   sprIdleStatic   = spr_Dialog_Cop_Angry;
 				   sprIdle_        = spr_Dialog_Cop_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Cop_TalkStatic; 		  
+				   sprTalkStatic_  = spr_Dialog_Cop_Talk; 		  
 				   sprTalk_        = spr_Dialog_Cop_Talk; 		 break;	
 
 			  case  "cop smiling":			  
-				   sprIdleStatic   = spr_Dialog_Cop_IdleStatic;
+				   sprIdleStatic   = spr_Dialog_Cop_Happy;
 				   sprIdle_        = spr_Dialog_Cop_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Cop_TalkStatic; 		  
+				   sprTalkStatic_  = spr_Dialog_Cop_Talk; 		  
 				   sprTalk_        = spr_Dialog_Cop_Talk; 		 break;	
 			  
 			  case  "cop dismissive":			  
-				   sprIdleStatic   = spr_Dialog_Cop_IdleStatic;
+				   sprIdleStatic   = spr_Dialog_Cop_Dismissive;
 				   sprIdle_        = spr_Dialog_Cop_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Cop_TalkStatic; 		  
+				   sprTalkStatic_  = spr_Dialog_Cop_Talk; 		  
 				   sprTalk_        = spr_Dialog_Cop_Talk; 		 break;	
 #endregion
 
@@ -1463,20 +1464,20 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Nerd_Talk; 		 break;
 
 			  case  "nerd angry":		  
-				   sprIdleStatic   = spr_Dialog_Nerd_IdleStatic;
-				   sprIdle_        = spr_Dialog_Nerd_Idle; 
+				   sprIdleStatic   = spr_Dialog_Nerd_AngryStatic;
+				   sprIdle_        = spr_Dialog_Nerd_Angry; 
 				   sprTalkStatic_  = spr_Dialog_Nerd_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Nerd_Talk; 		 break;
 
 			  case  "nerd smiling":		  
-				   sprIdleStatic   = spr_Dialog_Nerd_IdleStatic;
-				   sprIdle_        = spr_Dialog_Nerd_Idle; 
+				   sprIdleStatic   = spr_Dialog_Nerd_HappyStatic;
+				   sprIdle_        = spr_Dialog_Nerd_Happy; 
 				   sprTalkStatic_  = spr_Dialog_Nerd_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Nerd_Talk; 		 break;			  
 
 			  case  "nerd dismissive":		  
-				   sprIdleStatic   = spr_Dialog_Nerd_IdleStatic;
-				   sprIdle_        = spr_Dialog_Nerd_Idle; 
+				   sprIdleStatic   = spr_Dialog_Nerd_DismissiveStatic;
+				   sprIdle_        = spr_Dialog_Nerd_Dismissive; 
 				   sprTalkStatic_  = spr_Dialog_Nerd_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Nerd_Talk; 		 break;
 #endregion
@@ -1505,6 +1506,12 @@ indexSet++;
 			  case  "nun dismissive":		  
 				   sprIdleStatic   = spr_Dialog_Nun_IdleStatic;
 				   sprIdle_        = spr_Dialog_Nun_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Nun_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Nun_Talk; 		 break;
+
+			  case  "nun gun":		  
+				   sprIdleStatic   = spr_Dialog_Nun_Gunstatic;
+				   sprIdle_        = spr_Dialog_Nun_Gun; 
 				   sprTalkStatic_  = spr_Dialog_Nun_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Nun_Talk; 		 break;
 
@@ -3703,7 +3710,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You're wel.... (And he's gone.)", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You're wel.... (Aaaaaaand he's gone.)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
