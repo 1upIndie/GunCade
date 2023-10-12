@@ -21,6 +21,7 @@ ini_open("data.bob");
 
 
   ini_write_real("progress", "day to jump to",      currentCutscene_DAY);
+  ini_write_real("progress", "income office",       cashTotalInSave_Office);
 
 
 // playlist saved

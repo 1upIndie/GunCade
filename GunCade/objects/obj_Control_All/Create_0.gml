@@ -944,7 +944,7 @@ currentCutscene     = 0;
 
 current_SongIndex = 0; // important for playback!
 
-#region choises and saved values through the game 
+#region choises and saved values through the game // temp, passive costs (kyle, wife, inventory)
 
 volume_Master = 1;
 volume_Sfx    = 1;
@@ -982,7 +982,7 @@ tempDay_Costs_Kyle         = 0;
 
 
 // total value only shown in office!
-cashTotalInSave_Office = 15000; // the total amount of money available!  Important!!
+cashTotalInSave_Office = 0; // the total amount of money available!  Important!!
 cashSumOnDay           = 0;     // money earned during day!
 
 
@@ -3566,7 +3566,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"kyle smiling"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3,"player", " Kyle, run the store. I'm gonna take a look at the books for today. I'll be in my [#5893FF]office[/c][#FBA90A] if you need me.[/c]", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3,"player", " Kyle, run the store. I'm gonna take a look at the books for today. I'll be in my [#5893FF]office[/c][#F9CE7B] if you need me.[/c]", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");	
@@ -11419,9 +11419,17 @@ ini_open("data.bob");
  
   firstTimeAllSet  =  ini_read_real("settings", "first time set",      0);
 
-// get day to jump to -> important!
-currentCutscene_DAY =  ini_read_real("progress", "day to jump to",      101); // default jump to news day 1!
+ // income
 
+ //cashSumOnDay           = ini_read_real("income", "day",         0);
+
+
+// get day to jump to -> important! progress values
+currentCutscene_DAY     =  ini_read_real("progress", "day to jump to",      101); // default jump to news day 1!
+cashTotalInSave_Office  = ini_read_real("progress", "income office",      0);
+ //cashSumOnDay           = ini_read_real("income", "day",         0);
+
+// end of progress values
 
  if( firstTimeAllSet == 0){
 	 var defaultSetPlaylist = 0;
