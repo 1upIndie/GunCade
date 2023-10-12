@@ -1,6 +1,7 @@
 
 
 event_inherited();
-// take into account if saved kyle or not!
-if( payKyleRansome_Day_5 == true ){ toSkipTo_Index = 750;  }
-if( payKyleRansome_Day_5 == false){ toSkipTo_Index = 760;  }
+
+
+		var jumpToRoomEnd = instance_create_layer(x,y, "Instances_Effects", obj_Transition_GotoLevel );
+             jumpToRoomEnd.levelJumpTo = room_Office;

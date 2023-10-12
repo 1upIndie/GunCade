@@ -6,7 +6,7 @@ totalTime = 4 *60;
 lerpAmount    = 0; // add up
 lerpAmountMax = 0.3;
 lerpAmountAdd = 0.003;
-
+ lerpAmountAdd = 0.01;
 
 // save for quick override!
 save_CurrentMoney = 0;  // what is the current pool of money

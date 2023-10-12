@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Result",
-    "path": "folders/Objects/Office/Result.yy",
+    "name": "Office",
+    "path": "folders/Objects/Office.yy",
   },
   "parentObjectId": null,
   "persistent": false,

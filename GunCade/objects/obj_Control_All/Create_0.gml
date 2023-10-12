@@ -2403,7 +2403,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor grumpy"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "If you can't [#5893FF]pay $20,000[#5893FF] in the [#5893FF]next 14 days[#5893FF], I have to kick you out.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "If you can't [#5893FF]pay $20,000[#5893FF] in the [#5893FF]next 14 days[/c], I have to kick you out.", snd_TextScroll_Default );	
 	 dialog_I++;
 	 
 
@@ -3254,12 +3254,12 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Now you're starting to sound desperate. Not a good look. ", snd_TextScroll_Default );  
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  , "exit default");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "We'll see if I want to forgive you and I'll give you another shot in a few days. Maybe by then you'll be cooled off.", snd_TextScroll_Default );  
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(DAAAAMMMMMIIIIIITTTTTT.......)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -3338,9 +3338,26 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,randomDay1_2_Spr_Default  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_390;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		 
 	 dialog_I++;
+
+
+	 // fake transition	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	 
+	 dialog_I++;
+
+	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_390;		 
+	 dialog_I++;
+
+
+
 
 
 	 dialog_I = 370;	 
@@ -3350,9 +3367,25 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_2_Spr_Angry  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_390;	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		 	 
 	 dialog_I++;
+
+
+	 // fake transition	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	 
+	 dialog_I++;
+
+	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_390;		 
+	 dialog_I++;
+
+
 
 
 	 dialog_I = 380;	 
@@ -3362,10 +3395,26 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay1_2_Spr_Angry  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );			 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_390;	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );			 	 
 	 dialog_I++;	
-	
+
+
+	 // fake transition	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	 
+	 dialog_I++;
+
+	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_390;		 
+	 dialog_I++;
+
+
+
 	
 	
 #endregion // end of random sale 2	
@@ -3486,15 +3535,19 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  , "exit default");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1,"wife", "You better get your priorities straight or you'll regret it. DAMMIT, now I'm going to be late for my hair appointment. Thanks for taking up so much of my time.", snd_TextScroll_Default );	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  , "exit default");	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "", snd_TextScroll_Default );	 
 	 dialog_I++;
 
 
 #endregion
 
 
-#region kyle end
+#region kyle 417
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I think that's got to be enough for one day.", snd_TextScroll_Default );		 
@@ -3512,17 +3565,17 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"kyle smiling"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3,"player", " Kyle, run the store. I'm gonna take a look at the books for today. I'll be in my office if you need me.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3,"player", " Kyle, run the store. I'm gonna take a look at the books for today. I'll be in my [#5893FF]office[/c] if you need me.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  1,"kyle", "Right on boss man. I got this.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;
 	 
-	 if(demo  == true){
-		arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_DemoEnd; 
 	 
-		 
-		 } else {   arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;	}	 
+	// if(demo  == true){
+	//	arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_DemoEnd; 		 
+	//	 } else {   arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day1;	}	 
 
 #endregion
 
