@@ -5,7 +5,7 @@
 var txt = string(obj_Control_All.volume_Master ) + " : " + string(obj_Control_All.volume_Music ) + " : " + string(obj_Control_All.volume_Sfx );
 
 
-//draw_text(x,y+30, txt)
+draw_text(x,y+30, txt)
 /*
 var txt = "nope";
 var count = 0;

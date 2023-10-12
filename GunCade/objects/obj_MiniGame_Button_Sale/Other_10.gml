@@ -23,7 +23,7 @@ scr_Unblock_CashIn(indexJumpTo, resultMoney, resultTip, resultService,  isTutori
 
 
 	  // tranfer animation
-	  if(resultMoney > 0){
+	  if( resultMoney > 0 ){
 	var transfer = instance_create_layer(-900,-900, layer, obj_MoneyTransfer);
 	    transfer.TranferWhere       =  "dialog";
 	    transfer.save_CurrentMoney  =  obj_Control_All.cashSumOnDay;                // what is the current pool of money
