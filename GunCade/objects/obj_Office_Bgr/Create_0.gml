@@ -25,7 +25,7 @@ parallax_Y = 160;
 
 var scaleSet = 0.9;
 image_xscale = scaleSet;
-image_yscale = scaleSet;
+image_yscale = scaleSet + 0.05;
 alarm[0] = 3;
 
 alarm1_TimeSpawnResult = 50;

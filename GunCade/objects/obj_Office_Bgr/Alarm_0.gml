@@ -81,14 +81,22 @@ var arrayOffice_I = 0;
 alarm[1] = alarm1_TimeSpawnResult;
 
 
-// exit btn
-var exit_Btn_Scale = 0.4; 
+// next day btn
+var nextDay_Btn_Scale = 0.4; 
 
-	 var exit_Btn   = instance_create_layer( camX + 280, camY + camHeight/2 , layerSet, obj_Office_Exit_Btn, {
+	 var exit_Btn   = instance_create_layer( camX + 280, camY + camHeight/2 , layerSet, obj_Office_NextDay_Btn, {
+	     image_xscale : nextDay_Btn_Scale,
+	     image_yscale : nextDay_Btn_Scale
+	  }  );		 
+
+
+// exit btn
+var exit_Btn_Scale = 0.3; 
+
+	 var exit_Btn   = instance_create_layer( camX + 300, camY + camHeight - 70 , layerSet, obj_Office_ExitGame, {
 	     image_xscale : exit_Btn_Scale,
 	     image_yscale : exit_Btn_Scale
-	  }  );		 
-		 
+	  }  );	
 
 /*
  if(spawn_Hawaii == true){

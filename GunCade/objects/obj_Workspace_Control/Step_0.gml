@@ -24,7 +24,9 @@ if(blockInput == false){
  hoverOverDialogBox      = false;
  hoverOverDialogBoxBlink = false; // only blink when really hovering over!
 if(mouse_x > camX and mouse_x < camX+camWidth){
-   if(mouse_y > camY + camHeight + blackBoxY - (32*blackBoxScaleY) and mouse_y < camX+camWidth){	
+   //if(mouse_y > camY + camHeight + blackBoxY - (32*blackBoxScaleY) and mouse_y < camX+camWidth){	
+   if(mouse_y > camY + ui_trennerToTextY and mouse_y < camY+  camHeight){		   
+	   
 	 hoverOverDialogBox      = true;  
 	 hoverOverDialogBoxBlink = true;
    }}

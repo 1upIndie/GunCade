@@ -20,6 +20,9 @@ ini_open("data.bob");
   ini_write_real("settings", "fullscreen", fullscreen);
 
 
+  ini_write_real("progress", "day to jump to",      currentCutscene_DAY);
+
+
 // playlist saved
  // playlist!
  var arrayPlayListL = array_length(playListSongActiveBools);

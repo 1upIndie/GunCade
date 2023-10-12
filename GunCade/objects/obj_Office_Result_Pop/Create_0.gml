@@ -41,11 +41,12 @@ repeat( array_length(obj_Control_All.tempDay_Tips)){
   tips_I++;
 }
   
-  // add up also minus values!
+  // add up also minus values! -> ignore if testing because it is news day set!
+  if(obj_Control_All.currentCutscene_DAY <= 100){
   result_Total += obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].newWeapons; 
   result_Total += obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Wife;
   result_Total += obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Kyle;
-
+  }
 
 var service_Is_PerfectTotal = true;
 var service_Is_GoodTotal_Collect     = 0;
@@ -160,10 +161,17 @@ draw_Txt_Left_Value[8] = prefixTotal + "Today's total" + suffixTotal;
 draw_Txt_Right_Value[1] =  prefixR + string(result_Sold) + "$";
 draw_Txt_Right_Value[2] =  prefixR + string(result_Tips) + "$";
 
+  if(obj_Control_All.currentCutscene_DAY <= 100){
 draw_Txt_Right_Value[4] = prefixR + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].newWeapons ) + "$" + suffix;
 draw_Txt_Right_Value[5] = prefixR + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Wife  ) + "$" +  suffix;
 draw_Txt_Right_Value[6] = prefixR + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Kyle  ) + "$" +  suffix;
+  } else {
 
+draw_Txt_Right_Value[4] = prefixR + string( 0  ) + "$" + suffix;
+draw_Txt_Right_Value[5] = prefixR + string( 0  ) + "$" +  suffix;
+draw_Txt_Right_Value[6] = prefixR + string( 0  ) + "$" +  suffix;
+  } 
+  
 draw_Txt_Right_Value[8] =  prefixTotalR + string(result_Total) + "$" +  suffixTotal;
 //draw_Txt_Right_Value[9] = result_Service;
 

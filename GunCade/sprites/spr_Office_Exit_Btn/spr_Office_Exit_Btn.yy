@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Office_Exit_Btn",
-  "bbox_bottom": 145,
+  "bbox_bottom": 133,
   "bbox_left": 2,
-  "bbox_right": 366,
+  "bbox_right": 521,
   "bbox_top": 2,
   "bboxMode": 2,
   "collisionKind": 1,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"95b6c029-435b-4bac-b640-772f4d065fb8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7817b1be-37d0-44da-bd49-01bd400decdc",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 151,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3aa88b8d-bc2b-410e-b3b2-7f81ed973a48","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"97b0f5e8-d055-4aca-b010-371d543e9326","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Results",
-    "path": "folders/Sprites/Office/Results.yy",
+    "name": "Office",
+    "path": "folders/Sprites/Office.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"95b6c029-435b-4bac-b640-772f4d065fb8","path":"sprites/spr_Office_Exit_Btn/spr_Office_Exit_Btn.yy",},},},"Disabled":false,"id":"c2dab5a8-c259-413d-ac66-2c6e58182ebc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7817b1be-37d0-44da-bd49-01bd400decdc","path":"sprites/spr_Office_Exit_Btn/spr_Office_Exit_Btn.yy",},},},"Disabled":false,"id":"40ec9459-97c6-4999-b9dc-5e3a69ee0b82","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 370,
+  "width": 619,
 }

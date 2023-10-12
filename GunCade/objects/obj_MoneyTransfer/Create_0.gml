@@ -5,8 +5,10 @@ totalTime = 4 *60;
 
 lerpAmount    = 0; // add up
 lerpAmountMax = 0.3;
-lerpAmountAdd = 0.003;
- lerpAmountAdd = 0.01;
+
+lerpAmountAdd  = 0.003;
+ lerpAmountAdd = 0.006;
+
 
 // save for quick override!
 save_CurrentMoney = 0;  // what is the current pool of money
@@ -22,7 +24,7 @@ temp_MoneyShown = lerp(save_CurrentMoney, save_TotalMoney, lerpAmount );
 alarm[0] = 60; // short delay!
 TranferWhere = "office";
 
-coinLoopTimer = 30;
+coinLoopTimer = 20;
 alarm[1] = coinLoopTimer + 80;
 
 

@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "day_1_News",
-    "path": "sprites/day_1_News/day_1_News.yy",
+    "name": "day_4_News",
+    "path": "sprites/day_4_News/day_4_News.yy",
   },
   "spriteMaskId": null,
   "visible": true,

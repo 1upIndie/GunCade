@@ -23,8 +23,8 @@ alarm[0] = 4;
 //room_goto(roomToJump);
 
 
-fontSpriteNum       = font_add_sprite_ext(spr_Sprite_font_Numbers, "0123456789$", true, 0   );
-fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "0123456789$", true, 0   );
+fontSpriteNum       = font_add_sprite_ext(spr_Sprite_font_Numbers, "-0123456789$", true, 0   );
+fontSpriteNumSilver = font_add_sprite_ext(spr_Sprite_font_NumbersSilver, "-0123456789$", true, 0   );
 
 //draw_set_font(fontSpriteNum);
 
@@ -1027,7 +1027,7 @@ function createCosts_WifeKyle( day_ , cost_Kyle_, cost_Wife_, newWeapons_ ) cons
 
 var costs_KyleWife_I = 0;
 array_Costs_KyleWife = array_create(0);
-  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
+  array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, -2000 ); costs_KyleWife_I++;
   array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
   array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
   array_Costs_KyleWife[costs_KyleWife_I] = new createCosts_WifeKyle(costs_KyleWife_I,  -150, -200, 0 ); costs_KyleWife_I++;
@@ -2742,15 +2742,16 @@ var day_I = 0; // day 1
 	 // replys, start at 150 , after sale/refuse/fail
 	 dialog_I = 150;
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Got it. I'll do my best ", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Got it. I'll do my best.", snd_TextScroll_Default );		
 	 dialog_I++;		 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Oh and remember, these are all on consignment so I'll collect my portion later.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Oh and remember, these are all on consignment so [#5893FF]I'll collect my portion later.[/c]", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ShadowPay_Inventory_Day1;	 
 	 dialog_I++;	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Don't spend what you owe me before I come back..", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Don't spend what you owe me before I come back...", snd_TextScroll_Default );	
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow angry"  , "");		 
@@ -3565,7 +3566,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"kyle smiling"  , "");	
-     arrayCutscenes[day_I].setText(dialog_I,  3,"player", " Kyle, run the store. I'm gonna take a look at the books for today. I'll be in my [#5893FF]office[/c] if you need me.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3,"player", " Kyle, run the store. I'm gonna take a look at the books for today. I'll be in my [#5893FF]office[/c][#FBA90A] if you need me.[/c]", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");	
@@ -11404,7 +11405,7 @@ var day_I = 0; // day 1
 
 #endregion // end of NEWS days
 
-
+//////////////////////////////////////////////
 #region override values -> saved stuff
 
  var arrayPlayListBoolL = array_length(playListSongActiveBools);
@@ -11418,6 +11419,8 @@ ini_open("data.bob");
  
   firstTimeAllSet  =  ini_read_real("settings", "first time set",      0);
 
+// get day to jump to -> important!
+currentCutscene_DAY =  ini_read_real("progress", "day to jump to",      101); // default jump to news day 1!
 
 
  if( firstTimeAllSet == 0){
