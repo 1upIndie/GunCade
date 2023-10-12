@@ -94,8 +94,9 @@ dialogShow_Spr_1_ = spr_Nothing;
 dialogShow_Spr_2_ = spr_Nothing;
 dialogShow_Spr_3_ = spr_Nothing;
 
-dialogSpr_NpcX_1_    = 280;
-dialogSpr_NpcX_2_    = 480;
+var pushInNpX = 60;
+dialogSpr_NpcX_1_    = 280 + pushInNpX;
+dialogSpr_NpcX_2_    = 500 + pushInNpX;
 dialogSpr_NpcX_3_    = 480;
 
   dialogSpr_X2    = -15;

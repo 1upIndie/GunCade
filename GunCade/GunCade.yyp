@@ -329,6 +329,7 @@
     {"id":{"name":"aniCurve_CharPopIn_Bounce","path":"animcurves/aniCurve_CharPopIn_Bounce/aniCurve_CharPopIn_Bounce.yy",},},
     {"id":{"name":"spr_WhiteBox","path":"sprites/spr_WhiteBox/spr_WhiteBox.yy",},},
     {"id":{"name":"spr_MiniGame_Name_K","path":"sprites/spr_MiniGame_Name_K/spr_MiniGame_Name_K.yy",},},
+    {"id":{"name":"scr_Fadeout","path":"scripts/scr_Fadeout/scr_Fadeout.yy",},},
     {"id":{"name":"scr_CreateTempWeapon","path":"scripts/scr_CreateTempWeapon/scr_CreateTempWeapon.yy",},},
     {"id":{"name":"spr_Icons_parent_SubSub","path":"sprites/spr_Icons_parent_SubSub/spr_Icons_parent_SubSub.yy",},},
     {"id":{"name":"obj_MiniGame_RandomSale2_Day1","path":"objects/obj_MiniGame_RandomSale2_Day1/obj_MiniGame_RandomSale2_Day1.yy",},},

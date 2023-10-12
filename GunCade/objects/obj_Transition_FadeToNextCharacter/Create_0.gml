@@ -1,7 +1,7 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
-depth = - 15000;
+depth = -15000;
 
 // Inherit the parent event
 event_inherited();

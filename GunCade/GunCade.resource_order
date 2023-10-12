@@ -285,6 +285,7 @@
     {"name":"aniCurve_CharPopIn_Bounce","order":4,"path":"animcurves/aniCurve_CharPopIn_Bounce/aniCurve_CharPopIn_Bounce.yy",},
     {"name":"spr_WhiteBox","order":7,"path":"sprites/spr_WhiteBox/spr_WhiteBox.yy",},
     {"name":"spr_MiniGame_Name_K","order":8,"path":"sprites/spr_MiniGame_Name_K/spr_MiniGame_Name_K.yy",},
+    {"name":"scr_Fadeout","order":8,"path":"scripts/scr_Fadeout/scr_Fadeout.yy",},
     {"name":"scr_CreateTempWeapon","order":10,"path":"scripts/scr_CreateTempWeapon/scr_CreateTempWeapon.yy",},
     {"name":"spr_Icons_parent_SubSub","order":10,"path":"sprites/spr_Icons_parent_SubSub/spr_Icons_parent_SubSub.yy",},
     {"name":"obj_MiniGame_RandomSale2_Day1","order":4,"path":"objects/obj_MiniGame_RandomSale2_Day1/obj_MiniGame_RandomSale2_Day1.yy",},
