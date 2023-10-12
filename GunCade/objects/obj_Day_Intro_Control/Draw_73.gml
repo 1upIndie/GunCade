@@ -6,17 +6,15 @@ var camY        = camera_get_view_y( view_camera[0] );
 var camWidth    = camera_get_view_width( view_camera[0] );
 var camHeight   = camera_get_view_height( view_camera[0] );
 
-spr_DayHeader_X = camX + (camWidth/2);
+var xx = camX + (camWidth/2);
 
-spr_DayHeader_Y    = camY + 300;
-spr_DayHeaderSub_Y = camY + 380;
-
-
-
-draw_sprite_ext( spr_DayHeader, 0, spr_DayHeader_X, spr_DayHeader_Y   , spr_DayHeader_ScaleX,spr_DayHeader_ScaleY,       0, c_white, spr_DayHeader_Alpha  );
+var yHeader  = camY + spr_DayHeader_Y;
+var ySubText = camY + spr_DayHeaderSub_Y;
 
 
-draw_sprite_ext( spr_DaySub,    0, spr_DayHeader_X, spr_DayHeaderSub_Y, spr_DayHeaderSub_ScaleX,spr_DayHeaderSub_ScaleY, 0, c_white, spr_DayHeaderSub_Alpha  );
+draw_sprite_ext( spr_DayHeader, indexSet , xx, yHeader   , spr_DayHeader_ScaleX,spr_DayHeader_ScaleY,       0, c_white, spr_DayHeader_Alpha  );
+
+draw_sprite_ext( spr_DaySub,    indexSet , xx, ySubText, spr_DayHeaderSub_ScaleX,spr_DayHeaderSub_ScaleY, 0, c_white, spr_DayHeaderSub_Alpha  );
 
 
 

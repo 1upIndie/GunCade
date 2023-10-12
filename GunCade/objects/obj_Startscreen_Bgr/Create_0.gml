@@ -11,7 +11,7 @@ y = camY -10;
 
 
 
-var scaleSet = 1.9;
+var scaleSet = 1.3;
 image_xscale = scaleSet;
 image_yscale = scaleSet;
 alarm[0] = 2;

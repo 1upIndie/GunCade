@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_WorkStation_BackgroundNewsWeather",
-    "path": "sprites/spr_WorkStation_BackgroundNewsWeather/spr_WorkStation_BackgroundNewsWeather.yy",
+    "name": "spr_DayIntro_Bgr",
+    "path": "sprites/spr_DayIntro_Bgr/spr_DayIntro_Bgr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

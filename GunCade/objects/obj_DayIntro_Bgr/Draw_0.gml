@@ -8,5 +8,5 @@ var buffer = 15;
 
 //draw_self();
 
-draw_sprite_stretched(sprite_index, 0, camX-buffer, camY-buffer, camWidth + (2*buffer), camHeight + (2*buffer)  );
+draw_sprite_stretched_ext(sprite_index, 0, camX-buffer, camY-buffer, camWidth + (2*buffer), camHeight + (2*buffer) , c_white, image_alpha );
 
