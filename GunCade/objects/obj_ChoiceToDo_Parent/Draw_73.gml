@@ -1,5 +1,10 @@
 /// @description draw
-
+ viewX = camera_get_view_x(view_camera[0]);
+ viewY = camera_get_view_y(view_camera[0]);
+ 
+ 
+draw_text(viewX + 50, viewY + 50 , hoverOver[1] )
+draw_text(viewX + 80, viewY + 50  ,hoverOver[2] )
 /*
 if (field_Type == 2){
 

@@ -55,8 +55,9 @@ if (field_Type == 2){
 // check for imput
 var mbLeft = mouse_check_button_released(mb_left);
   
-  if(mbLeft == 1 and hoverOver[1] == 1 and  canInput == true){  event_user(1);   }
-  if(mbLeft == 2 and hoverOver[2] == 1 and  canInput == true){  event_user(2);   }  
+  if( mbLeft == 1 and hoverOver[1] == 1 and  canInput == true){  event_user( 1 );   }
+  if( mbLeft == 1 and hoverOver[2] == 1 and  canInput == true){  event_user( 2 );   } 
+  
 }
 
 
@@ -78,7 +79,7 @@ if (field_Type == 4){
 
 
 
-// auot blink
+// auto blink
 blink_Pos    += 1/blink_total;
 if(blink_Pos >= 1) { blink_Pos = 0; }
 alphaBlink = animcurve_channel_evaluate(_channel, blink_Pos);
