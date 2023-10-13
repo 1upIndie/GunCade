@@ -992,7 +992,7 @@ cashSumOnDay           = 0;     // money earned during day!
 
 
 acceptClownBatton_Day_2         = false; // this time clown offers a batton
-//acceptCopRebuyBatton_Day_2      = false; // this time clown offers a batton
+acceptCopRebuyBatton_Day_2      = false; // if rebuys same button, you got a permit
 
 
 wifePresentGivenDay2      = false;
@@ -5161,7 +5161,7 @@ var day_I = 0; // day 1
 	 dialog_I++;  
  
     
-	// permit choise jump!
+	// permit choise jump! if sold to cop batton -> auto got permit!
 	 dialog_I = 100;
 	 
 	 // got the permit
@@ -5179,6 +5179,7 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_110;		 
 	 dialog_I++; 
  
+
 
      // continue
 	 dialog_I = 110;
@@ -5214,22 +5215,22 @@ var day_I = 0; // day 1
 	 dialog_I++; 		
 	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , ""); 	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather angry"  , ""); 	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Is that any of your business Mr. Arms dealer?", snd_TextScroll_Default );		 	 
 	 dialog_I++;  	
 	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather angry"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "No, no I suppose it isn't. I didn't mean any offense.", snd_TextScroll_Default );		 
 	 dialog_I++; 	
 	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , ""); 	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather dismissive"  , ""); 	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "None taken.", snd_TextScroll_Default );		 	 
 	 dialog_I++;  		
 	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , ""); 	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather dismissive"  , ""); 	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Anyways, let's get down to business.", snd_TextScroll_Default );		 	 
 	 dialog_I++;  	
 	 
@@ -5293,10 +5294,24 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default" , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Take care.. Oh, and make sure you bring an umbrella with you tomorrow too.", snd_TextScroll_Default );		 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Take care.. Oh, and make sure you bring an umbrella with you tomorrow too.", snd_TextScroll_Default );		 	 
 	 dialog_I++;	 
-	 
+
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+	 dialog_I++;
+	 //////////////////////////////////
+
+
+
 
 
 	 dialog_I = 160;	 
@@ -5319,9 +5334,26 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default" , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "I'll be back, and I'll be more convincing.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;			 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "I'll be back, and I'll be more convincing.", snd_TextScroll_Default );			 
 	 dialog_I++;
+
+
+
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+	 dialog_I++;
+	 //////////////////////////////////
+	 
+	 
+
 
 
 
@@ -5336,10 +5368,22 @@ var day_I = 0; // day 1
 	 dialog_I++
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Dangit, I tried too hard to make extra cash on that one.)", snd_TextScroll_Default );			 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Dangit, I tried too hard to make extra cash on that one.)", snd_TextScroll_Default );			 	 
 	 dialog_I++;
-	
+
+
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+	 dialog_I++;
+	 //////////////////////////////////
 	
 	 
     #endregion 
@@ -5541,6 +5585,9 @@ var day_I = 0; // day 1
 
 
 
+
+
+    /// end of monologue
 	dialog_I = 700;
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Oh will you look at the time, I don't want to be late for Grandmother's bath.", snd_TextScroll_Default );		
@@ -5574,7 +5621,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Hey boss, what is with that guy?", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You got me, my ears start bleeding when he starts talking.", snd_TextScroll_Default );			 	 
 	 dialog_I++; 
 
@@ -5585,7 +5632,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
  
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I never think things are going to be ok anymore Kyle. At least I'm never disappointed that way.", snd_TextScroll_Default );			 	 
 	 dialog_I++;  
  
