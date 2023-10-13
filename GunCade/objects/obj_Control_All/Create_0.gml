@@ -3617,7 +3617,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , ""); 
@@ -3625,7 +3625,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
@@ -3634,7 +3634,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , ""); 
@@ -3642,12 +3642,13 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "Daughter...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Daughter...", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "Daughter... dating...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Daughter... dating...", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_AngryDad;		 
 	 dialog_I++;
 
 
@@ -3657,7 +3658,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "BAAAAD...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "BAAAAD...", snd_TextScroll_Default );	
+	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "dad default"  , ""); 
@@ -3947,7 +3949,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "No time for small talk, I have an offer that you cannot refuse.", snd_TextScroll_Default );		  	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "No time for small talk, Bam Bam have an offer that you cannot refuse.", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Clown;			 
 	 dialog_I++;
 
 
@@ -4248,7 +4251,8 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "I was informed of your um, establishment by a colleague of mine.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "I was informed of your um, establishment by a colleague of mine.", snd_TextScroll_Default );
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Nerd;		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");
@@ -4935,7 +4939,8 @@ var day_I = 0; // day 1
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "kyle default"  , ""); 	  
-     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "Hey, I know you! You're that hot weather lady that just joined channel 8.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "Hey, I know you! You're that hot weather lady that just joined channel 8.", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Weather;		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , ""); 
@@ -5823,6 +5828,7 @@ var day_I = 0; // day 1
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , "enter default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Good day my child.", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Reveal_Nun;	 
 	 dialog_I++; 
 
 
