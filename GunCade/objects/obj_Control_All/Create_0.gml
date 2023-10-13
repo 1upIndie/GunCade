@@ -1181,6 +1181,8 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_VictorDismissive_SingleImage; 
 				   sprTalkStatic_  = spr_Dialog_Victor_Talk; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;
+				   
+				   
 #endregion
 
 #region Kyle
@@ -1226,40 +1228,41 @@ indexSet++;
 
 			 /////// Shadow					   
 			  case  "shadow default":  
-				   sprIdleStatic   = spr_Dialog_Shadow_IdleStatic;
-				   sprIdle_        = spr_Dialog_Shadow_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;
+				   sprIdleStatic   = spr_Dialog_Shadow_SingleImage;            // single image, static
+				   sprIdle_        = spr_Dialog_Shadow_SingleImage;                  // just blink 
+				   sprTalkStatic_  = spr_Dialog_Shadow_Talk_Blink; 		      // talking, no blinking
+				   sprTalk_        = spr_Dialog_Shadow_Talk_Blink; 		  break;  // talking, + blink
+
 
 			  case  "shadow angry":  
-				   sprIdleStatic   = spr_Dialog_ShadowAngry_Idle;
-				   sprIdle_        = spr_Dialog_ShadowAngry_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;
+				   sprIdleStatic   = spr_Dialog_ShadowAngry_SingleImage;
+				   sprIdle_        = spr_Dialog_ShadowAngry_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_Talk_Blink; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk_Blink; 		  break;
 				   
 			  case  "shadow smiling":  
-				   sprIdleStatic   = spr_Dialog_ShadowHappy_Idle;
-				   sprIdle_        = spr_Dialog_ShadowHappy_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;
+				   sprIdleStatic   = spr_Dialog_ShadowHappy_SingleImage;
+				   sprIdle_        = spr_Dialog_ShadowHappy_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_Talk_Blink; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk_Blink; 		  break;
 
 			  case  "shadow grumpy":  
-				   sprIdleStatic   = spr_Dialog_ShadowUnHappy_Idle;
-				   sprIdle_        = spr_Dialog_ShadowUnHappy_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;	
+				   sprIdleStatic   = spr_Dialog_ShadowUnHappy_SingleImage;
+				   sprIdle_        = spr_Dialog_ShadowUnHappy_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_Talk_Blink; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk_Blink; 		  break;	
 
 			  case  "shadow shocked":  
-				   sprIdleStatic   = spr_Dialog_ShadowShocked_Idle;
-				   sprIdle_        = spr_Dialog_ShadowShocked_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;	
+				   sprIdleStatic   = spr_Dialog_ShadowShocked_SingleImage;
+				   sprIdle_        = spr_Dialog_ShadowShocked_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_Talk_Blink; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk_Blink; 		  break;	
 				   
 			  case  "shadow dismissive":  
-				   sprIdleStatic   = spr_Dialog_ShadowDismissive_Idle;
-				   sprIdle_        = spr_Dialog_ShadowDismissive_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Shadow_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Shadow_Talk; 		  break;	
+				   sprIdleStatic   = spr_Dialog_ShadowDismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_ShadowDismissive_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Shadow_Talk_Blink; 		  
+				   sprTalk_        = spr_Dialog_Shadow_Talk_Blink; 		  break;	
 #endregion
 
 #region Granny	
@@ -1267,28 +1270,29 @@ indexSet++;
 
 			 /////// Granny		
 			  case  "granny default":		  
-				   sprIdleStatic   = spr_Dialog_Granny_IdleStatic;
-				   sprIdle_        = spr_Dialog_Granny_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Granny_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Granny_Talk; 		break;	
+				   sprIdleStatic   = spr_Dialog_Granny_SingleImage;                // single image, static
+				   sprIdle_        = spr_Dialog_Granny_JustBlink;                   // just blink
+				   sprTalkStatic_  = spr_Dialog_Granny_TalkNoBlink; 		       // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Granny_Talk_Blink; 		break;	   // talking, + blink 
+
 
 			  case  "granny angry":		  
-				   sprIdleStatic   = spr_Dialog_GrannyAngry_IdleStatic;
-				   sprIdle_        = spr_Dialog_GrannyAngry_Idle; 
-				   sprTalkStatic_  = spr_Dialog_GrannyAngry_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_GrannyAngry_Talk; 		break;	
+				   sprIdleStatic   = spr_Dialog_GrannyAngry_SingleImage;
+				   sprIdle_        = spr_Dialog_GrannyAngry_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_GrannyAngry_Talk_Blink; 		  
+				   sprTalk_        = spr_Dialog_GrannyAngry_TalkNoBlink; 		break;	
 
               case  "granny smiling":		  
-				   sprIdleStatic   = spr_Dialog_GrannyHappy_IdleStatic;
-				   sprIdle_        = spr_Dialog_GrannyHappy_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Granny_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Granny_Talk; 		break;	
+				   sprIdleStatic   = spr_Dialog_GrannyHappy_SingleImage;
+				   sprIdle_        = spr_Dialog_GrannyHappy_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Granny_TalkNoBlink; 		       // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Granny_Talk_Blink; 		break;	   // talking, + blink 
 
 			  case  "granny dismissive":		  
-				   sprIdleStatic   = spr_Dialog_GrannyDismissive_IdleStatic;
-				   sprIdle_        = spr_Dialog_GrannyDismissive_Idle; 
-				   sprTalkStatic_  = spr_Dialog_GrannyDismissive_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_GrannyDismissive_Talk; 		break;
+				   sprIdleStatic   = spr_Dialog_GrannyDismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_GrannyDismissive_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_GrannyDismissive_TalkNoBlink; 		  
+				   sprTalk_        = spr_Dialog_GrannyDismissive_Talk_Blink; 		break;
 
 #endregion
 
@@ -1296,115 +1300,121 @@ indexSet++;
 
 			 /////// Weather	
 			  case  "weather default":  
-				   sprIdleStatic   = spr_Dialog_Weather_IdleStatic;
-				   sprIdle_        = spr_Dialog_Weather_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Weather_SingleImage;                     // single image, static
+				   sprIdle_        = spr_Dialog_Weather_JustBlink;                       // just blink
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkNoBlink; 		             // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Weather_Talk_Blink; 		    break;	 // talking, + blink 
+
 
 			  case  "weather smiling":  
-				   sprIdleStatic   = spr_Dialog_Weather_HappyStatic;
-				   sprIdle_        = spr_Dialog_Weather_Happy; 
-				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Weather_Happy_SingleImage;
+				   sprIdle_        = spr_Dialog_Weather_Happy_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkNoBlink; 		             // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Weather_Talk_Blink; 		    break;	 // talking, + blink 
 
 			  case  "weather angry":  
-				   sprIdleStatic   = spr_Dialog_Weather_AngryStatic;
-				   sprIdle_        = spr_Dialog_Weather_Angry; 
-				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Weather_Angry_SingleImage;
+				   sprIdle_        = spr_Dialog_Weather_Angry_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkNoBlink; 		             // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Weather_Talk_Blink; 		    break;	 // talking, + blink 
 
 
 			  case  "weather dismissive":  
-				   sprIdleStatic   = spr_Dialog_Weather_DismissiveStatic;
-				   sprIdle_        = spr_Dialog_Weather_Dismissive; 
-				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Weather_Dismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_Weather_Dismissive_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkNoBlink; 		             // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Weather_Talk_Blink; 		    break;	 // talking, + blink 
 				   
 
 			  case  "weather cocky":  
-				   sprIdleStatic   = spr_Dialog_Weather_CockyStatic;
-				   sprIdle_        = spr_Dialog_Weather_Cocky; 
-				   sprTalkStatic_  = spr_Dialog_Weather_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Weather_Talk; 		    break;					   
+				   sprIdleStatic   = spr_Dialog_Weather_Cocky_SingleImage;
+				   sprIdle_        = spr_Dialog_Weather_Cocky_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Weather_TalkNoBlink; 		             // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Weather_Talk_Blink; 		    break;	 // talking, + blink 	
+				   
 #endregion
 
 #region  Wife
 
 			 /////// Wife
 			  case  "wife default":  
-				   sprIdleStatic   = spr_Dialog_Wife_IdleStatic;
-				   sprIdle_        = spr_Dialog_Wife_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Wife_Idle_SingleImage;                // single image, static
+				   sprIdle_        = spr_Dialog_Wife_JustBlink;                      // just blink
+				   sprTalkStatic_  = spr_Dialog_Wife_TalkNoBlink; 		        // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Wife_Talk_Blink; 		    break;	    // talking, + blink 
+
 
 			  case  "wife angry":  
-				   sprIdleStatic   = spr_Dialog_Wife_AngryStatic;
-				   sprIdle_        = spr_Dialog_Wife_Angry; 
-				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;
+				   sprIdleStatic   = spr_Dialog_Wife_Angry_SingleImage;
+				   sprIdle_        = spr_Dialog_Wife_Angry_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Wife_TalkNoBlink; 		        // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Wife_Talk_Blink; 		    break;	    // talking, + blink 
 
 
 			  case  "wife smiling":  
-				   sprIdleStatic   = spr_Dialog_Wife_HappyStatic;
-				   sprIdle_        = spr_Dialog_Wife_Happy; 
-				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Wife_Happy_SingleImage;
+				   sprIdle_        = spr_Dialog_Wife_Happy_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Wife_TalkNoBlink; 		        // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Wife_Talk_Blink; 		    break;	    // talking, + blink 
 
 			  case  "wife dismissive":  
-				   sprIdleStatic   = spr_Dialog_Wife_DismissiveStatic;
-				   sprIdle_        = spr_Dialog_Wife_Dismissive; 
-				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;
+				   sprIdleStatic   = spr_Dialog_Wife_Dismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_Wife_Dismissive_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Wife_TalkNoBlink; 		        // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Wife_Talk_Blink; 		    break;	    // talking, + blink 
 
 			  case  "wife annoyed":  
-				   sprIdleStatic   = spr_Dialog_Wife_AnnoyedStatic;
-				   sprIdle_        = spr_Dialog_Wife_Annoyed; 
-				   sprTalkStatic_  = spr_Dialog_Wife_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Wife_Talk; 		    break;
+				   sprIdleStatic   = spr_Dialog_Wife_Annoyed_SingleImage;
+				   sprIdle_        = spr_Dialog_Wife_Annoyed_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Wife_TalkNoBlink; 		        // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Wife_Talk_Blink; 		    break;	    // talking, + blink 
+				   
 #endregion
 
 #region Betty
 
 			 /////// Betty
 			  case  "betty default":  
-				   sprIdleStatic   = spr_Dialog_Betty_IdleStatic;
-				   sprIdle_        = spr_Dialog_Betty_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Betty_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Betty_Talk; 		    break;	
+				   sprIdleStatic   = spr_Dialog_Betty_Idle_SingleImage;
+				   sprIdle_        = spr_Dialog_Betty_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Betty_TalkNoBlink; 		  
+				   sprTalk_        = spr_Dialog_Betty_Talk_Blink; 		    break;	
 
 			  case  "betty smiling":  
-				   sprIdleStatic   = spr_Dialog_BettySmiling_IdleStatic;
-				   sprIdle_        = spr_Dialog_BettySmiling_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Betty_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Betty_Talk; 		    break;
+				   sprIdleStatic   = spr_Dialog_BettySmiling_JustBlink;
+				   sprIdle_        = spr_Dialog_BettySmiling_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Betty_TalkNoBlink; 		  
+				   sprTalk_        = spr_Dialog_Betty_Talk_Blink; 		    break;
 #endregion
 
 #region Clown
 
 			 /////// clown
 			  case  "clown default":			  
-				   sprIdleStatic   = spr_Dialog_Clown_Idle;
-				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
-				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
+				   sprIdleStatic   = spr_Dialog_Clown_SingleImage;                      // single image, static
+				   sprIdle_        = spr_Dialog_Clown_JustBlink;                 // just blink
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkNoBlink; 		         // talking, no blinking	
+				   sprTalk_        = spr_Dialog_Clown_Talk_Blink; 		 break;      // talking, + blink 
+
+
 
 			  case  "clown angry":		
-				   sprIdleStatic   = spr_Dialog_Clown_Angry; 
-				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
-				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
+				   sprIdleStatic   = spr_Dialog_Clown_Angry_SingleImage; 
+				   sprIdle_        = spr_Dialog_Clown_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkNoBlink; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk_Blink; 		 break; 
 
               case  "clown smiling":	
-				   sprIdleStatic   = spr_Dialog_Clown_Happy;
-				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
-				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
+				   sprIdleStatic   = spr_Dialog_Clown_Happy_SingleImage;
+				   sprIdle_        = spr_Dialog_Clown_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkNoBlink; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk_Blink; 		 break; 
 
 			  case  "clown dismissive":			  
-				   sprIdleStatic   = spr_Dialog_Clown_Angry;
-				   sprIdle_        = spr_Dialog_Clown_IdleBlink; 
-				   sprTalkStatic_  = spr_Dialog_Clown_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Clown_Talk; 		 break; 
+				   sprIdleStatic   = spr_Dialog_Clown_Angry_SingleImage;
+				   sprIdle_        = spr_Dialog_Clown_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Clown_TalkNoBlink; 		  
+				   sprTalk_        = spr_Dialog_Clown_Talk_Blink; 		 break; 
 
 
 #endregion

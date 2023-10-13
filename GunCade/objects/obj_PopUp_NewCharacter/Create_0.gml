@@ -29,7 +29,7 @@ character_AniCurve_I = 0;
 
 character_Spr = spr_Nothing;
 
-character_Spr = spr_Dialog_Betty_Idle;
+character_Spr = spr_Dialog_Betty_JustBlink;
  character_Spr_X  = 270;
  character_Spr_Y  = 50;
  character_SprScale = 0.75;
