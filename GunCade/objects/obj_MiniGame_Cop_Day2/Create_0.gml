@@ -30,6 +30,9 @@ event_inherited();
  
  // jump to points
   result_Index_Sale      = 500;
+   if(obj_Control_All.acceptClownBatton_Day_2 == true ){ result_Index_Sale  = 500;   }
+   if(obj_Control_All.acceptClownBatton_Day_2 == false){ result_Index_Sale  = 501;   }
+   
   result_Index_Refuse    = 510;
   result_Index_Messup    = 530;  
   

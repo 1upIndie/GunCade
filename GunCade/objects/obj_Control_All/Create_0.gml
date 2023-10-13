@@ -1426,27 +1426,27 @@ indexSet++;
 				   sprIdleStatic   = spr_Dialog_Cop_SingleImage;       // single image, static
 				   sprIdle_        = spr_Dialog_Cop_SingleImage;       // just blink
 				   sprTalkStatic_  = spr_Dialog_Cop_TalkNoBlink; 	   // talking, no blinking
-				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;       // talking, + blink 
-				   break;	
+				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;  break;      // talking, + blink 
+
 
 
 			  case  "cop angry":			  
 				   sprIdleStatic   = spr_Dialog_Cop_Angry_SingleImage;
 				   sprIdle_        = spr_Dialog_Cop_Angry_SingleImage; 
 				   sprTalkStatic_  = spr_Dialog_Cop_TalkNoBlink; 	   // talking, no blinking
-				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;       // talking, + blink 
+				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;  break;      // talking, + blink 
 
 			  case  "cop smiling":			  
 				   sprIdleStatic   = spr_Dialog_Cop_Happy_SingleImage;
 				   sprIdle_        = spr_Dialog_Cop_Happy_SingleImage; 
 				   sprTalkStatic_  = spr_Dialog_Cop_TalkNoBlink; 	   // talking, no blinking
-				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;       // talking, + blink 	
+				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;  break;      // talking, + blink 	
 			  
 			  case  "cop dismissive":			  
 				   sprIdleStatic   = spr_Dialog_Cop_Dismissive_SingleImage;
 				   sprIdle_        = spr_Dialog_Cop_Dismissive_SingleImage; 
 				   sprTalkStatic_  = spr_Dialog_Cop_TalkNoBlink; 	   // talking, no blinking
-				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink;       // talking, + blink 
+				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink; break;       // talking, + blink 
 #endregion
 
 
@@ -3999,13 +3999,12 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Why are so many weird people coming in here? Starting to really question how smart of an idea this was.)", snd_TextScroll_Default );			  	 
-	 dialog_I++;
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "How noble of you...", snd_TextScroll_Default );			  	 
 	 dialog_I++;
-
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Why are so many weird people coming in here? Starting to really question how smart of an idea this was.)", snd_TextScroll_Default );			  	 
+	 dialog_I++;
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , ""); 
@@ -4100,7 +4099,7 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_220;			 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "exit default");  
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");  
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "", snd_TextScroll_Default );			  	 
 	 dialog_I++;	
 
@@ -4108,7 +4107,7 @@ var day_I = 0; // day 1
 	// choice declined!
     dialog_I = 210;	 	
      arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Guess you took the arcade comment a little too seriously. Well, maybe I'll try again next time I pinch something buddy.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown", "Guess you took the arcade comment a little too seriously. Well, maybe I'll try again next time I pinch something buddy.", snd_TextScroll_Default );	
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , "");
@@ -4116,11 +4115,12 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "clown", "Oh, it's Bam Bam the Clown. Bye buddy.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_220;		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown", "Oh, it's Bam Bam the Clown. Bye buddy.", snd_TextScroll_Default );		 
 	 dialog_I++;	 
 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "", snd_TextScroll_Default );			  	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_220;		 
 	 dialog_I++;	 
 	 
 	 
@@ -4710,7 +4710,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "cop default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Either you got one in stock and you're going to sell it to me, or you don't have one in stock, in which case I may have to see if you got all your papers in order for everything you sell here. So which is it?", snd_TextScroll_Default );		 	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Either you got one in stock and you're going to sell it to me, or you don't have one in stock, in which case I may have to see if you got all your papers in order for everything you sell here.", snd_TextScroll_Default );		 	 	 
 	 dialog_I++;
 
 
@@ -4718,17 +4718,18 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "So which is it?", snd_TextScroll_Default );		 	 	 
 	 dialog_I++;
 	 
-	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"cop default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "He wants a replacement baton", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(He wants a replacement baton.)", snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Cop_Day2;	 	 
 	 dialog_I++;	 
 	 
 	 
 	 //// sale
 	 dialog_I = 500;
-		 
+		            
+					
+	 // chice text!!!	  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "cop smiling"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Man, this looks just like the one I lost...", snd_TextScroll_Default );		 
 	 dialog_I++;
@@ -4765,6 +4766,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "player", "", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_560;		 
 	 dialog_I++;
+
 
 
 	 dialog_I = 510;	 
@@ -4942,7 +4944,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "See ya tomorrow bossman.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day5;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day2;		 
 	 dialog_I++;
 
 
