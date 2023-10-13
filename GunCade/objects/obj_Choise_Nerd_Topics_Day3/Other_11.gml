@@ -1,7 +1,12 @@
 
-toSkipTo_Index = 9999;
-obj_Control_All.nerdChoise_4Topics_Day3 = 1; 
+
+toSkipTo_Index = 300;
+// obj_Control_All.acceptClownBatton_Day_2 = true; 
 	
 // jump to plus unblock
 obj_Workspace_Control.dialogIndex = toSkipTo_Index;
 obj_Workspace_Control.blockInput = false;
+
+scr_PlaySound( snd_MenueSfx_Start, 0);
+
+instance_destroy();

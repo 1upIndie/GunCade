@@ -15,7 +15,8 @@ hover_XscaleSpr      = 1.1;
 nohover_XscaleReduce = 0.01;
 xscaleSprCurrent[1] = 1;
 xscaleSprCurrent[2] = 1;
-
+xscaleSprCurrent[3] = 1;
+xscaleSprCurrent[4] = 1;
 
 hover_Xscale = 440;
 hover_Yscale = 500;

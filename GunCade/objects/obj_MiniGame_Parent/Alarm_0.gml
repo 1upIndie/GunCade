@@ -22,7 +22,7 @@ var oo = obj_Control_All;
  
 
 #region random values!
-
+isRandomSale_Array
  var get_Array = oo.randomSaleOverride_Day1_1;
  switch( isRandomSale_Array ){
  

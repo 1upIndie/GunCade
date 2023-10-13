@@ -49,14 +49,16 @@ if(field_Type == 4){
 var yy = 20;
 var xx = 325;
 
-var padding = 10;
+var padding = 5;
 
 
 var leftX   = padding;
-var rightX = 440;
+var rightX = 440/2;
 
 spr_Backgr_X[1] = viewX + padding;
 spr_Backgr_X[2] = spr_Backgr_X[1] + hover_Xscale+ padding;
+spr_Backgr_X[3] = spr_Backgr_X[2] + hover_Xscale+ padding;
+spr_Backgr_X[4] = spr_Backgr_X[3] + hover_Xscale+ padding;
 
  // spr_Backgr_X[1] = viewX + 35;  
  // spr_Backgr_X[2] = spr_Backgr_X[1] + xx;  
