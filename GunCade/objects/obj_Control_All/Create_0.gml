@@ -5770,7 +5770,7 @@ var day_I = 0; // day 1
 	 dialog_I++; 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "wife default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Always pinching my cheek and calling me her “schwuler hund”. I don't even know what that means. Maybe I should learn some German...)", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Always pinching my cheek and calling me her 'schwuler hund'. I don't even know what that means. Maybe I should learn some German...)", snd_TextScroll_Default );			 	 
 	 dialog_I++; 
 
 
@@ -5804,7 +5804,7 @@ var day_I = 0; // day 1
 	 dialog_I++; 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "wife default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, ""  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Snookums!?)", snd_TextScroll_Default );		
 	 dialog_I++; 
 
@@ -5873,8 +5873,8 @@ var day_I = 0; // day 1
 	   var randomDay3_1_Spr_Angry   = scr_SetRandomSpr(randomDay3_1_Spr, "angry" );
     
     var getRandomMiniGameIndexDay3_1  = scr_SetRandomMiniGameIndex( arrayRandomMinigameDay1to3 );
-	
-	randomSaleOverride_Day2_2 = arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay2_2]; // array for override once instance exist!
+
+	randomSaleOverride_Day3_1 = arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay3_1]; // array for override once instance exist!
 	/////////////////////// end auto set random sale  ///////////////////////////////////////
 
 	 dialog_I = 790;	   
@@ -5976,7 +5976,7 @@ var day_I = 0; // day 1
     
     var getRandomMiniGameIndexDay3_2  = scr_SetRandomMiniGameIndex( arrayRandomMinigameDay1to3 );
 	
-	randomSaleOverride_Day2_2 = arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay3_2]; // array for override once instance exist!
+	randomSaleOverride_Day3_2 = arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay3_2]; // array for override once instance exist!
 	/////////////////////// end auto set random sale  ///////////////////////////////////////
 
 
@@ -5984,8 +5984,7 @@ var day_I = 0; // day 1
 	dialog_I = 830;
  
      arrayCutscenes[day_I].setSprite(dialog_I,2,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Next!", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day3;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Next!", snd_TextScroll_Default );		 
 	 dialog_I++; 
 
      
@@ -5998,7 +5997,7 @@ var day_I = 0; // day 1
 		 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay3_2_Spr_Default , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay1to3[getRandomMiniGameIndexDay3_2].introTextRandom[1], snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day3;		// overide and setup  
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day3;		// overide and setup  
 	 dialog_I++;		
 	
 	
@@ -6115,7 +6114,7 @@ var day_I = 0; // day 1
 
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Yes. Many wonderful customers I see you have.", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "Yes. Many wonderful customers I see you have.", snd_TextScroll_Default );		
 	 dialog_I++; 
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
@@ -6156,7 +6155,7 @@ var day_I = 0; // day 1
 
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "My child, “incline your ear, and hear the words of the wise...", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "My child, incline your ear, and hear the words of the wise...", snd_TextScroll_Default );		
 	 dialog_I++; 
 
 
@@ -6171,21 +6170,25 @@ var day_I = 0; // day 1
      
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "It is more blessed to give than to receive.” Now, get with the giving.", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "It is more blessed to give than to receive. Now, get with the giving.", snd_TextScroll_Default );		
 	 dialog_I++; 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(AHHHHHHH.)", snd_TextScroll_Default );			 
 	 dialog_I++; 
 
  
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "The lord demands your penitence... and $500 should be just fine.", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "The lord demands your penitence... and $500 should be just fine.", snd_TextScroll_Default );
+	 
+		 if(demo == true){
+		 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_DemoEnd;	 
+		 }
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I can't believe this, I'm being robbed by a nun.)", snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseNun_Day3;	 
 	 dialog_I++; 
