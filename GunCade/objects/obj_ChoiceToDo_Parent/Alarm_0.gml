@@ -30,7 +30,7 @@ spr_Backgr_X[2] = spr_Backgr_X[1] + hover_Xscale+ padding;
 
 
 
-  
+ 
  
  spr_Blink_X[1] = viewX + 35; 
  spr_Blink_X[2] = spr_Blink_X[1] + xx;  
@@ -43,6 +43,44 @@ spr_Backgr_X[2] = spr_Backgr_X[1] + hover_Xscale+ padding;
  spr_PartText_Y    = spr_Blink_Y + 350;
 }
 
+
+if(field_Type == 4){
+
+var yy = 20;
+var xx = 325;
+
+var padding = 10;
+
+
+var leftX   = padding;
+var rightX = 440;
+
+spr_Backgr_X[1] = viewX + padding;
+spr_Backgr_X[2] = spr_Backgr_X[1] + hover_Xscale+ padding;
+
+ // spr_Backgr_X[1] = viewX + 35;  
+ // spr_Backgr_X[2] = spr_Backgr_X[1] + xx;  
+  spr_Backgr_Y    = viewY+padding;
+
+
+  spr_Part_X[1] = viewX + leftX;
+  spr_Part_X[2] = spr_Part_X[1]  + padding + rightX; 
+  spr_Part_Y    = viewY + yy;
+
+
+
+ 
+ 
+ spr_Blink_X[1] = viewX + 35; 
+ spr_Blink_X[2] = spr_Blink_X[1] + xx;  
+ spr_Blink_Y    = viewY + yy;
+ 
+ 
+ spr_PartText_X[1] = spr_Blink_X[1] + round(xx/2);
+ spr_PartText_X[2] = spr_Blink_X[2] + round(xx/2);
+ 
+ spr_PartText_Y    = spr_Blink_Y + 350;
+}
 // text set
 var txt1 = text[1];
 var txt2 = text[2];

@@ -24,6 +24,20 @@ ini_open("data.bob");
   ini_write_real("progress", "income office",       cashTotalInSave_Office);
 
 
+
+// props baught!
+var arrayPropsL = array_length( obj_Control_All.array_OfficeProp);
+var arrayProps_I = 0;
+repeat( arrayPropsL ) {
+	  ini_write_real("props office baught", obj_Control_All.array_OfficeProp[arrayProps_I].prop_Name,  obj_Control_All.array_OfficeProp[arrayProps_I].prop_isUnlocked );
+	  arrayProps_I++;
+}
+
+  
+  
+
+
+
 // playlist saved
  // playlist!
  var arrayPlayListL = array_length(playListSongActiveBools);

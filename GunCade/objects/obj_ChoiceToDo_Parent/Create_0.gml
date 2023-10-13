@@ -24,6 +24,8 @@ hover_Yscale = 500;
 hover_AniCurve   = animcurve_get_channel( aniCurve_ChoiceBounce, 0 );
 hover_Scale_I[1]  = 0;
 hover_Scale_I[2]  = 0;
+hover_Scale_I[3]  = 0;
+hover_Scale_I[4]  = 0;
 hover_Scale_IMax  = 30;
 
 // end of new

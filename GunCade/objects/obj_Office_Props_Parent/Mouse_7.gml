@@ -7,6 +7,8 @@ if( obj_Office_Control.blockAll == true ){ exit; }
 if ( obj_Control_All.cashTotalInSave_Office >= hoverOver_Price){
      obj_Control_All.cashTotalInSave_Office -= hoverOver_Price;
 	 isBaught = true;
+	 obj_Control_All.array_OfficeProp[office_Index].prop_isUnlocked = true; // unlocked!
+	 
      image_alpha = alphaBaught_True;
 	 scr_PlaySound(snd_Sfx_PayUnlock, 0);
 	 
