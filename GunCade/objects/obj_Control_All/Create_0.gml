@@ -1107,76 +1107,79 @@ indexSet++;
 
 #region Jez
 
+
 			 /////// JEZ		  
 			  case  "jez default":    
-				   sprIdleStatic   = spr_Dialog_Jez_Idle;
-				   sprIdle_        = spr_Dialog_Jez_IdleStatic; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;    
+				   sprIdleStatic   = spr_Dialog_Jez_SingleImage;                // single image, static
+				   sprIdle_        = spr_Dialog_Jez_JustBlink;                  // just blink
+				   sprTalkStatic_  = spr_Dialog_Jez_TalkNoBlink; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Jez_Talk_Blink; 		break;  // talking, + blink 
 
 			  case  "jez angry": 			    
-				   sprIdleStatic   = spr_Dialog_Jez_Angry;
-				   sprIdle_        = spr_Dialog_Jez_AngryStatic; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;  
+				   sprIdleStatic   = spr_Dialog_Jez_Angry_SingleImage;
+				   sprIdle_        = spr_Dialog_Jez_Angry_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Jez_TalkNoBlink; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Jez_Talk_Blink; 		break;  // talking, + blink  
 
 			  case  "jez disgusted": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_Disgusted;
-				   sprIdle_        = spr_Dialog_Jez_DisgustedStatic; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;  
+				   sprIdleStatic   = spr_Dialog_Jez_Disgusted_SingleImage;
+				   sprIdle_        = spr_Dialog_Jez_Disgusted_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Jez_TalkNoBlink; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Jez_Talk_Blink; 		break;  // talking, + blink 
 
 			  case  "jez smiling": 	 		  
-				   sprIdleStatic   = spr_Dialog_Jez_Idle;
-				   sprIdle_        = spr_Dialog_Jez_IdleStatic; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;    
+				   sprIdleStatic   = spr_Dialog_Jez_SingleImage;
+				   sprIdle_        = spr_Dialog_Jez_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Jez_TalkNoBlink; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Jez_Talk_Blink; 		break;  // talking, + blink    
 
 			  case  "jez flirting": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_Flirting;
-				   sprIdle_        = spr_Dialog_Jez_FlirtingStatic; 
-				   sprTalkStatic_  = spr_Dialog_Jez_FlirtStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_FlirtingTalk; 		break;    
+				   sprIdleStatic   = spr_Dialog_Jez_Flirting_SingleImage;
+				   sprIdle_        = spr_Dialog_Jez_Flirting_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Jez_Flirting_TalkNoBlink; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Jez_Flirting_Talk_Blink; 		break;  // talking, + blink    
 
 			  case  "jez dismissive": 			  
-				   sprIdleStatic   = spr_Dialog_Jez_Dismissive;
-				   sprIdle_        = spr_Dialog_Jez_DismissiveStatic; 
-				   sprTalkStatic_  = spr_Dialog_Jez_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Jez_Talk; 		break;  				   
+				   sprIdleStatic   = spr_Dialog_Jez_Dismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_Jez_Dismissive_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Jez_TalkNoBlink; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Jez_Talk_Blink; 		break;  // talking, + blink  	
+				   
 #endregion
 
 #region Victor
 
 			 /////// Victor	
 			  case  "victor default":  
-				   sprIdleStatic   = spr_Dialog_Victor_IdleStatic;
-				   sprIdle_        = spr_Dialog_Victor_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
-				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;	
+				   sprIdleStatic   = spr_Dialog_Victor_SingleImage;              // single image, static
+				   sprIdle_        = spr_Dialog_Victor_SingleImage;             // just blink
+				   sprTalkStatic_  = spr_Dialog_Victor_Talk; 		        // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;	// talking, + blink 
+
 
 			  case  "victor angry":  
-				   sprIdleStatic   = spr_Dialog_VictorAngry_Idle;
-				   sprIdle_        = spr_Dialog_VictorAngry_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
+				   sprIdleStatic   = spr_Dialog_VictorAngry_SingleImage;
+				   sprIdle_        = spr_Dialog_VictorAngry_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Victor_Talk; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;
 				   
 			  case  "victor smiling":  
-				   sprIdleStatic   = spr_Dialog_VictorSmiling_Idle;
-				   sprIdle_        = spr_Dialog_VictorSmiling_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
+				   sprIdleStatic   = spr_Dialog_VictorSmiling_SingleImage;
+				   sprIdle_        = spr_Dialog_VictorSmiling_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Victor_Talk; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;	
 
 			  case  "victor grumpy":  
-				   sprIdleStatic   = spr_Dialog_VictorGrumpy_Idle;
-				   sprIdle_        = spr_Dialog_VictorGrumpy_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
+				   sprIdleStatic   = spr_Dialog_VictorGrumpy_SingleImage;
+				   sprIdle_        = spr_Dialog_VictorGrumpy_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Victor_Talk; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		    break;	
 
 				   
 			  case  "victor dismissive":  
-				   sprIdleStatic   = spr_Dialog_VictorDismissive_Idle;
-				   sprIdle_        = spr_Dialog_VictorDismissive_Idle; 
-				   sprTalkStatic_  = spr_Dialog_Victor_TalkStatic; 		  
+				   sprIdleStatic   = spr_Dialog_VictorDismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_VictorDismissive_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Victor_Talk; 		  
 				   sprTalk_        = spr_Dialog_Victor_Talk; 		  break;
 #endregion
 
@@ -1184,39 +1187,39 @@ indexSet++;
 
 			 /////// Kyle	
 			  case  "kyle default":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_SingleImage;   // single image, static
-				   sprIdle_        = spr_Dialog_Kyle_JustBlink;     // just blink
-				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 	// talking, no blinking	  
-				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; 	// talking, no blink	
-				   break;
-
-
+				   sprIdleStatic   = spr_Dialog_Kyle_SingleImage;         // single image, static
+				   sprIdle_        = spr_Dialog_Kyle_JustBlink;           // just blink
+				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 	      // talking, no blinking	  
+				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; break;   // talking, + blink
 
 
 			  case  "kyle angry":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_Angry_JustBlink;
-				   sprIdle_        = spr_Dialog_Kyle_Angry_SingleImage; 
-				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 		  
-				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; 		 break;
+				   sprIdleStatic   = spr_Dialog_Kyle_Angry_JustBlink;     // single image, static
+				   sprIdle_        = spr_Dialog_Kyle_Angry_SingleImage;   // just blink
+				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 	      // talking, no blinking	  
+				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; break;   // talking, + blink
+	
 	
 			  case  "kyle smiling":		  
-				   sprIdleStatic   = spr_Dialog_Kyle_JustBlink;
-				   sprIdle_        = spr_Dialog_Kyle_SingleImage; 
-				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 		  
-				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; 		 break;
+				   sprIdleStatic   = spr_Dialog_KyleHappy_JustBlink;
+				   sprIdle_        = spr_Dialog_KyleHappy_SingleImage; 
+				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 	      // talking, no blinking	  
+				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; break;   // talking, + blink
 
 	
 			  case  "kyle dismissive":		  
-				   sprIdleStatic   = spr_Dialog_KyleDismissive_Idle;
-				   sprIdle_        = spr_Dialog_KyleDismissive_IdleStatic; 
-				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 		  
-				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; 		 break;
+				   sprIdleStatic   = spr_Dialog_KyleDismissive_SingleImage;
+				   sprIdle_        = spr_Dialog_KyleDismissive_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 	      // talking, no blinking	  
+				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; break;   // talking, + blink
 
 			  case  "kyle dumb":		   
-				   sprIdleStatic   = spr_Dialog_KyleDumb_Idle;  // wrong here
-				   sprIdle_        = spr_Dialog_KyleDumb_IdleStatic; 
-				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 		  
-				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; 		 break;
+				   sprIdleStatic   = spr_Dialog_KyleDumb_SingleImage;    
+				   sprIdle_        = spr_Dialog_KyleDumb_JustBlink; 
+				   sprTalkStatic_  = spr_Dialog_Kyle_TalkNoBlink; 	      // talking, no blinking	  
+				   sprTalk_        = spr_Dialog_Kyle_Talk_Blink; break;   // talking, + blink
+				   
+				   
 #endregion
 
 #region Shadow
