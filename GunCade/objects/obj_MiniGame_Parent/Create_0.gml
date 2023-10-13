@@ -382,10 +382,10 @@ button_Right_Y     = camY + 480;
     gbr = instance_create_layer( bgrX, bgrY, "Instances_MiniGame_Bgr", obj_MiniGame_Bgr_Left );
     gbr.image_xscale = bgrXscale;
     gbr.image_yscale = bgrYscale;
-	gbr.image_blend  = #0B0914;
+	gbr.image_blend  = obj_Control_All.backgr_Dark_color;	;
 	//gbr.image_blend  = c_red;	
 	
-	
+
 	
     // drop of area! important
     dropOffSpot = instance_create_layer( dropOffSpot_X, dropOffSpot_Y, "Instances_MiniGame", obj_MiniGame_DropSpot );

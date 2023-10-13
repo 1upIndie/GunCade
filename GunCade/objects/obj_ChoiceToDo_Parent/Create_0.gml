@@ -4,14 +4,38 @@ alarm [0] = 2;
 canInput = false; // blocker
 
 
+// new!
+ padding = 10;
+
+
+sprWidth   =  (sprite_get_width(  spr_Choise_Day2_Clown_TakeBaton_No) / 2 );
+sprHeight  =  (sprite_get_height( spr_Choise_Day2_Clown_TakeBaton_No) / 2 );
+
+hover_XscaleSpr      = 1.1;
+nohover_XscaleReduce = 0.01;
+xscaleSprCurrent[1] = 1;
+xscaleSprCurrent[2] = 1;
+
+
+hover_Xscale = 440;
+hover_Yscale = 500;
+
+
+hover_AniCurve   = animcurve_get_channel( aniCurve_ChoiceBounce, 0 );
+hover_Scale_I[1]  = 0;
+hover_Scale_I[2]  = 0;
+hover_Scale_IMax  = 30;
+
+// end of new
+
 skipPoint[1] = 0;
 skipPoint[2] = 0;
 skipPoint[3] = 0;
 skipPoint[4] = 0;
 
 
-hoverOver = 0; // hover over field
-
+hoverOver[1] = 0; // hover over field
+hoverOver[2] = 0; // hover over field
  viewX = camera_get_view_x(view_camera[0]);
  viewY = camera_get_view_y(view_camera[0]);
 
@@ -19,6 +43,9 @@ hoverOver = 0; // hover over field
 alarm[0] = 4; // set!
 field_Type = 2; // how many parts!
 
+
+debug_Xscale = 450;
+debug_Yscale = 550;
 
 spr_Part[1] = spr_Nothing;
 spr_Part[2] = spr_Nothing;

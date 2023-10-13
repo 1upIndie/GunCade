@@ -1,17 +1,35 @@
 /// @description set
 
 alarm[1] = 50; // one second delay
+
+ viewX = camera_get_view_x(view_camera[0]);
+ viewY = camera_get_view_y(view_camera[0]);
+
 if(field_Type == 2){
 
 var yy = 20;
 var xx = 325;
-  spr_Part_X[1] = viewX + 31;
-  spr_Part_X[2] = spr_Part_X[1] + xx;
+
+var padding = 10;
+
+
+var leftX   = padding;
+var rightX = 440;
+
+spr_Backgr_X[1] = viewX + padding;
+spr_Backgr_X[2] = spr_Backgr_X[1] + hover_Xscale+ padding;
+
+ // spr_Backgr_X[1] = viewX + 35;  
+ // spr_Backgr_X[2] = spr_Backgr_X[1] + xx;  
+  spr_Backgr_Y    = viewY+padding;
+
+
+  spr_Part_X[1] = viewX + leftX;
+  spr_Part_X[2] = spr_Part_X[1]  + padding + rightX; 
   spr_Part_Y    = viewY + yy;
 
-  spr_Backgr_X[1] = viewX + 35;  
-  spr_Backgr_X[2] = spr_Backgr_X[1] + xx;  
-  spr_Backgr_Y    = viewY + yy;
+
+
   
  
  spr_Blink_X[1] = viewX + 35; 

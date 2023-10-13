@@ -57,7 +57,7 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
 #endregion
 
 
-#region text prefix/suffixes
+#region text prefix/suffixes / colors
 
   textPrefix    = "[font_Cutscene][scale, 0.9][c_white]"; // default for all 
  //textSuffixDialog    = "[/scale][/c]"; 
@@ -138,6 +138,11 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
  //moneyTxtY  = 375; // money 
   moneyTxtX  = 35; // money 
   moneyTxtY  = 15; // money 
+ 
+ 
+ // colors
+ backgr_Dark_color = #0B0914;	
+ 
  
 #endregion
 
@@ -1602,12 +1607,7 @@ indexSet++;
 				   
 #endregion	  
 			   
-					   
-
-
-
-
-                //////////// randoms!
+		      //////////// randoms!
               #region randoms!
 
 			  case  "random1 default":  
@@ -1754,7 +1754,8 @@ indexSet++;
 			 }					 
 	  } // end of function
  
- 
+ #region prefix suffix set
+
  /// set here, the fk is this
   textPrefix          = "[font_Cutscene][scale, 1][c_white]"; // default for all 
   textSuffixDialog    = "[/scale][/c]"; 
@@ -1826,6 +1827,8 @@ indexSet++;
  
  
   text_Name_Betty      = "[font_Cutscene_Name][scale, 1.4][c_white]Betty Blabbermouth[/c][/scale]";   
+
+
 
 	  function setText( index_, talkActiveSlot,  npc_,  txt_, sound_ ){ 
 		    var prefixTXT_     = "";
@@ -1952,7 +1955,7 @@ indexSet++;
 		 //totalBlocks++;	// increment to see how big it gets	  
 	  }
 
-
+ #endregion
 
 
 } // end of constructor
@@ -9836,7 +9839,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
 	//  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]    =	obj_MiniGame_Jez_Day1; // testing random sale
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Choise_Clown_Day2; // testing	 
 	 dialog_I++;
 	 
 	 
