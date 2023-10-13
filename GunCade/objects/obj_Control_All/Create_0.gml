@@ -6181,13 +6181,24 @@ var day_I = 0; // day 1
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "The lord demands your penitence... and $500 should be just fine.", snd_TextScroll_Default );
-	 
+		 if(demo == true){
+		 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_NunShoots_RedFade;	 
+		 }
+
+	 dialog_I++;
+
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "", snd_TextScroll_Default );
+
 		 if(demo == true){
 		 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_DemoEnd;	 
 		 }
 	 dialog_I++;
-
-
+	 
+	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I can't believe this, I'm being robbed by a nun.)", snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseNun_Day3;	 
@@ -11900,9 +11911,9 @@ var day_I = 0; // day 1
 
  var arrayPlayListBoolL = array_length(playListSongActiveBools);
 ini_open("data.bob");
- volume_Master =  ini_read_real("settings", "master volume", 0.5);
- volume_Sfx    =  ini_read_real("settings", "volume sfx",    1);  
- volume_Music  =  ini_read_real("settings", "volume music",  1);  
+ volume_Master =  ini_read_real("settings", "master volume", 0.6);
+ volume_Sfx    =  ini_read_real("settings", "volume sfx",    0.85);  
+ volume_Music  =  ini_read_real("settings", "volume music",  0.3);  
 
  screenScale   =  ini_read_real("settings", "scale",      2);
  fullscreen    =  ini_read_real("settings", "fullscreen", 0);
