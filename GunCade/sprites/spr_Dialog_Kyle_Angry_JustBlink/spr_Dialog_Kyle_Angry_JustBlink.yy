@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Dialog_Kyle_Angry",
+  "name": "spr_Dialog_Kyle_Angry_JustBlink",
   "bbox_bottom": 839,
   "bbox_left": 244,
   "bbox_right": 743,
@@ -16,6 +16,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23bf2983-5f3d-419f-8da7-501a95be3ab8",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"17e19d38-e110-4ca9-a46e-4010545295a2",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd8ced60-fd19-4f62-adb2-e7d7091ee0c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9af8732-5873-491b-bd15-b7b8fcde0379",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -34,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Dialog_Kyle_Angry",
+    "name": "spr_Dialog_Kyle_Angry_JustBlink",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -45,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 3.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -56,9 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"23bf2983-5f3d-419f-8da7-501a95be3ab8","path":"sprites/spr_Dialog_Kyle_Angry/spr_Dialog_Kyle_Angry.yy",},},},"Disabled":false,"id":"4560fa0b-031b-4f65-8880-a31ac370ab67","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17e19d38-e110-4ca9-a46e-4010545295a2","path":"sprites/spr_Dialog_Kyle_Angry/spr_Dialog_Kyle_Angry.yy",},},},"Disabled":false,"id":"29626297-eb70-47d8-919c-5383b63769b2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd8ced60-fd19-4f62-adb2-e7d7091ee0c4","path":"sprites/spr_Dialog_Kyle_Angry/spr_Dialog_Kyle_Angry.yy",},},},"Disabled":false,"id":"8572d374-dc81-4667-81d5-219798f98563","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"23bf2983-5f3d-419f-8da7-501a95be3ab8","path":"sprites/spr_Dialog_Kyle_Angry_JustBlink/spr_Dialog_Kyle_Angry_JustBlink.yy",},},},"Disabled":false,"id":"4560fa0b-031b-4f65-8880-a31ac370ab67","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17e19d38-e110-4ca9-a46e-4010545295a2","path":"sprites/spr_Dialog_Kyle_Angry_JustBlink/spr_Dialog_Kyle_Angry_JustBlink.yy",},},},"Disabled":false,"id":"29626297-eb70-47d8-919c-5383b63769b2","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fd8ced60-fd19-4f62-adb2-e7d7091ee0c4","path":"sprites/spr_Dialog_Kyle_Angry_JustBlink/spr_Dialog_Kyle_Angry_JustBlink.yy",},},},"Disabled":false,"id":"8572d374-dc81-4667-81d5-219798f98563","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b9af8732-5873-491b-bd15-b7b8fcde0379","path":"sprites/spr_Dialog_Kyle_Angry_JustBlink/spr_Dialog_Kyle_Angry_JustBlink.yy",},},},"Disabled":false,"id":"ab3276f0-b37f-40a4-8f76-e43fe1ba544d","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
