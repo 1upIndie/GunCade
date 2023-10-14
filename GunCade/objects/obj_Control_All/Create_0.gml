@@ -5,8 +5,13 @@ audio_group_load( audiogroup_Music );
 audio_group_load( audiogroup_SFX );
 
 
+// fail save
+clearSaveFile = true; // clears every time to default
+
 debug = true;
 demo  = true;
+randomize();
+
 
 debugMiniGame = false; 
 sound_Debug = false;

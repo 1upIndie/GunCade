@@ -52,3 +52,24 @@ repeat( arrayPropsL ) {
 
 
 ini_close();
+
+
+
+if ( clearSaveFile == true){ 
+ini_open("data.bob");
+
+  ini_write_real("settings", "master volume", 0.6);
+  ini_write_real("settings", "volume sfx",    0.85);  
+  ini_write_real("settings", "volume music",  0.3);  
+
+  ini_write_real("settings", "scale",      2);
+  ini_write_real("settings", "fullscreen", 0);
+
+
+  ini_write_real("progress", "day to jump to",      0);
+  ini_write_real("progress", "income office",       0);
+
+
+ini_close();
+	}
+ 	
