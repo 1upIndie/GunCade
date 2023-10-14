@@ -6,7 +6,7 @@ audio_group_load( audiogroup_SFX );
 
 
 // fail save
-clearSaveFile = true; // clears every time to default
+clearSaveFile = false; // clears every time game is closed to default, no "real" saving then possible!
 
 debug = true;
 demo  = true;
