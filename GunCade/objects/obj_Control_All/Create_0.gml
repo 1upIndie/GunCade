@@ -6256,12 +6256,12 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "wife default"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(That was weird, she never runs off that fast. Wait, $500 for what!?!?!?)", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_780;	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(That was weird, she never runs off that fast. Wait, $500 for what!?!?!?)", snd_TextScroll_Default );		 
 	 dialog_I++; 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "...", snd_TextScroll_Default );				 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "...", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_780;	 	 
 	 dialog_I++; 
 
 

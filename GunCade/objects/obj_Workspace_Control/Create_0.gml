@@ -336,8 +336,23 @@ radio_Y      =  380;
  //x = camX + camWidth - sprite_width + rightPadding - 2;
  //y = camY + topyPadding;
 
+#region triangleBlink
+    triangleCanDraw = false;
+  
+  triangleSpr    =  spr_TriangleBlink;
+  triangleAngle  =  -90;
+  triangleScale  =  0.8;
+  triangle_Alpha =  0;
+    triangle_AlphaSet = 0.8;
+  triangleSpr_X  =  -33;
+  triangleSpr_Y  =  -25;  
+  
+  triangleRefresh = 30;
+  
+  
+	alarm[3] =   triangleRefresh;
 
-
+#endregion
 
 alarm[11] = 8;
 

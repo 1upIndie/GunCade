@@ -63,7 +63,20 @@ scribble(array_Txt[dialogIndex]).wrap(textNeueZeile, -1,false).draw(camX+textX, 
 	 }
  }
  
- 
+
+#region triangle blink
+
+  if (triangleCanDraw == true){
+     draw_sprite_ext(triangleSpr,0,  camX + camWidth + triangleSpr_X, camY + camHeight + triangleSpr_Y, triangleScale, triangleScale, triangleAngle, c_white, triangle_Alpha );
+  }
+
+ draw_line(mouse_x, mouse_y, camX + camWidth + triangleSpr_X, camY + camHeight + triangleSpr_Y);
+
+
+#endregion
+
+
+
 if ( obj_Control_All.debug == true){
 
  camX        = camera_get_view_x( view_camera[0] );

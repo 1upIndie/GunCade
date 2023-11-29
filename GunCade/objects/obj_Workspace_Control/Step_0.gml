@@ -35,6 +35,7 @@ if(mouse_x > camX and mouse_x < camX+camWidth){
 var buttonExeption = scr_InputCheck( "dialog expetion keys" );  
 if( buttonExeption == true ){ hoverOverDialogBox = true; buttonSkip = true; }
 
+
 // next ->
 if(buttonSkip == 1 and typeWriterPosition == 1 and hoverOverDialogBox == true ){ 
   	 scr_PlaySound(snd_MenueSfx_Dialog_Click,0);
@@ -49,6 +50,9 @@ if(buttonSkip == 1 and typeWriterPosition < 1 and hoverOverDialogBox == true ){
 	}
 }
 
+// show tringle for "next"
+if(typeWriterPosition == 1){ triangleCanDraw = true;  }
+ else {  triangleCanDraw = false; }
 
 // 
 // set the drawing of the dialog image

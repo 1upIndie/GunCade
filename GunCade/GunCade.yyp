@@ -1208,6 +1208,7 @@
     {"id":{"name":"spr_Dialog_Nerd_Talk_Blink","path":"sprites/spr_Dialog_Nerd_Talk_Blink/spr_Dialog_Nerd_Talk_Blink.yy",},},
     {"id":{"name":"spr_WeaponDetail_Smg_1","path":"sprites/spr_WeaponDetail_Smg_1/spr_WeaponDetail_Smg_1.yy",},},
     {"id":{"name":"spr_Ui_Balken","path":"sprites/spr_Ui_Balken/spr_Ui_Balken.yy",},},
+    {"id":{"name":"spr_TriangleBlink","path":"sprites/spr_TriangleBlink/spr_TriangleBlink.yy",},},
     {"id":{"name":"spr_Dialog_Nun_Gun_SingleImage","path":"sprites/spr_Dialog_Nun_Gun_SingleImage/spr_Dialog_Nun_Gun_SingleImage.yy",},},
     {"id":{"name":"spr_MiniGame_Attachment_Ammo","path":"sprites/spr_MiniGame_Attachment_Ammo/spr_MiniGame_Attachment_Ammo.yy",},},
     {"id":{"name":"font_Cutscene_Name","path":"fonts/font_Cutscene_Name/font_Cutscene_Name.yy",},},
