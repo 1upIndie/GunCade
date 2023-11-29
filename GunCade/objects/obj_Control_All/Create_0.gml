@@ -6128,7 +6128,7 @@ var day_I = 0; // day 1
  
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "enter right"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Hey boss, what is with that guy?", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Hey boss, what is with that guy?", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
@@ -6138,7 +6138,7 @@ var day_I = 0; // day 1
 
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Ha, you're funny! Hey, I meant to ask how things are going by the way. You doing ok?", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Ha, you're funny! Hey, I meant to ask how things are going by the way. You doing ok?", snd_TextScroll_Default );			 	 
 	 dialog_I++;
  
 
@@ -6148,7 +6148,7 @@ var day_I = 0; // day 1
  
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Wow, that's depressing.", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Wow, that's depressing.", snd_TextScroll_Default );			 	 
 	 dialog_I++; 
  
  

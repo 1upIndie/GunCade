@@ -23,12 +23,12 @@
         {"name":"g_VignetteTexture","type":2,"value":"_filter_vignette_texture",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_Glow","depth":200,"effectEnabled":true,"effectType":"_effect_glow","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_GlowRadius","type":0,"value":"60",},
-        {"name":"g_GlowQuality","type":0,"value":"3",},
-        {"name":"g_GlowIntensity","type":0,"value":"0.3",},
+        {"name":"g_GlowRadius","type":0,"value":"133",},
+        {"name":"g_GlowQuality","type":0,"value":"4.65",},
+        {"name":"g_GlowIntensity","type":0,"value":"0.2",},
         {"name":"g_GlowGamma","type":0,"value":"0",},
-        {"name":"g_GlowAlpha","type":0,"value":"0.8",},
-      ],"userdefinedDepth":false,"visible":false,},
+        {"name":"g_GlowAlpha","type":0,"value":"0.4",},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_Underwater","depth":300,"effectEnabled":true,"effectType":"_filter_underwater","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
         {"name":"g_Distort2Speed","type":0,"value":"0.025",},
