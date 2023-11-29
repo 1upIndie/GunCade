@@ -4,6 +4,8 @@ alarm[0] = 35; // start typing
 
 blockDraw = false; // blocks draw end to not interfere!
 
+
+drawNameBox = true;
 override = false; // when jumping from news to regular day
 #region daily temp values
 

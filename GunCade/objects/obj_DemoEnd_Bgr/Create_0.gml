@@ -15,3 +15,8 @@ var scaleSet = 1.5;
 image_xscale = scaleSet;
 image_yscale = scaleSet;
 alarm[0] = 2;
+
+fpsDraw = 0;
+fpsDrawTime = 60;
+alarm[1]    = fpsDrawTime;
+

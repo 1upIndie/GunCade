@@ -3,6 +3,8 @@
 alarm [0] = 2;
 canInput = false; // blocker
 
+// disable radio and tv
+scr_RadioTv_Show( false, false );
 
 // new!
  padding = 10;
@@ -17,6 +19,8 @@ xscaleSprCurrent[1] = 1;
 xscaleSprCurrent[2] = 1;
 xscaleSprCurrent[3] = 1;
 xscaleSprCurrent[4] = 1;
+
+sprHover = spr_Choise_2Parts_HoverOver;
 
 hover_Xscale = 440;
 hover_Yscale = 500;
@@ -39,6 +43,8 @@ skipPoint[4] = 0;
 
 hoverOver[1] = 0; // hover over field
 hoverOver[2] = 0; // hover over field
+hoverOver[3] = 0; // hover over field
+hoverOver[4] = 0; // hover over field
  viewX = camera_get_view_x(view_camera[0]);
  viewY = camera_get_view_y(view_camera[0]);
 

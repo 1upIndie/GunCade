@@ -1,7 +1,7 @@
 /// @description draw
 
 
-if (field_Type == 2){
+
 
 // draw regular background image!
 //draw_sprite_ext( spr_Backgr, 0, spr_Backgr_X[1], spr_Backgr_Y,  spr_Backgr_ScaleWidht, spr_Backgr_ScaleHeight, 0, c_white, 1);
@@ -26,28 +26,28 @@ if (field_Type == 2){
 
 // draw the same but blink it!
 var colBlend = c_orange;
-  if(hoverOver[1] == 1){  draw_sprite_ext( spr_Choise_Day2_HoverOver, 0, spr_Part_X[1] + sprWidth, spr_Part_Y,  xscaleSprCurrent[1], xscaleSprCurrent[1], 0, colBlend, alphaBlink); }
-  if(hoverOver[2] == 1){  draw_sprite_ext( spr_Choise_Day2_HoverOver, 0, spr_Part_X[2] + sprWidth, spr_Part_Y,  xscaleSprCurrent[2], xscaleSprCurrent[2], 0, colBlend, alphaBlink); }
+  if(hoverOver[1] == 1){  draw_sprite_ext( sprHover, 0, spr_Part_X[1] + sprWidth, spr_Part_Y,  xscaleSprCurrent[1], xscaleSprCurrent[1], 0, colBlend, alphaBlink); }
+  if(hoverOver[2] == 1){  draw_sprite_ext( sprHover, 0, spr_Part_X[2] + sprWidth, spr_Part_Y,  xscaleSprCurrent[2], xscaleSprCurrent[2], 0, colBlend, alphaBlink); }
 }
 
 
 
 if (field_Type == 4){
- draw_sprite_ext( spr_Part[1], 0, spr_Part_X[1] + sprWidth, spr_Part_Y,  xscaleSprCurrent[1], xscaleSprCurrent[1], 0, c_white, 1);  
- draw_sprite_ext( spr_Part[2], 0, spr_Part_X[2] + sprWidth, spr_Part_Y,  xscaleSprCurrent[2], xscaleSprCurrent[2], 0, c_white, 1);  
- draw_sprite_ext( spr_Part[3], 0, spr_Part_X[3] + sprWidth, spr_Part_Y,  xscaleSprCurrent[3], xscaleSprCurrent[3], 0, c_white, 1);  
- draw_sprite_ext( spr_Part[4], 0, spr_Part_X[4] + sprWidth, spr_Part_Y,  xscaleSprCurrent[4], xscaleSprCurrent[4], 0, c_white, 1);   
+ draw_sprite_ext( spr_Part[1], 0, spr_Part_X[1] , spr_Part_Y,  xscaleSprCurrent[1], xscaleSprCurrent[1], 0, c_white, 1);  
+ draw_sprite_ext( spr_Part[2], 0, spr_Part_X[2] , spr_Part_Y,  xscaleSprCurrent[2], xscaleSprCurrent[2], 0, c_white, 1);  
+ draw_sprite_ext( spr_Part[3], 0, spr_Part_X[3] , spr_Part_Y,  xscaleSprCurrent[3], xscaleSprCurrent[3], 0, c_white, 1);  
+ draw_sprite_ext( spr_Part[4], 0, spr_Part_X[4] , spr_Part_Y,  xscaleSprCurrent[4], xscaleSprCurrent[4], 0, c_white, 1);   
 // draw the same but blink it!
 var colBlend = c_orange;
-  if(hoverOver[1] == 1){  draw_sprite_ext( spr_Choise_Day2_HoverOver, 0, spr_Part_X[1] + sprWidth, spr_Part_Y,  xscaleSprCurrent[1], xscaleSprCurrent[1], 0, colBlend, alphaBlink); }
-  if(hoverOver[2] == 1){  draw_sprite_ext( spr_Choise_Day2_HoverOver, 0, spr_Part_X[2] + sprWidth, spr_Part_Y,  xscaleSprCurrent[2], xscaleSprCurrent[2], 0, colBlend, alphaBlink); }
-  if(hoverOver[3] == 1){  draw_sprite_ext( spr_Choise_Day2_HoverOver, 0, spr_Part_X[3] + sprWidth, spr_Part_Y,  xscaleSprCurrent[3], xscaleSprCurrent[3], 0, colBlend, alphaBlink); }
-  if(hoverOver[4] == 1){  draw_sprite_ext( spr_Choise_Day2_HoverOver, 0, spr_Part_X[4] + sprWidth, spr_Part_Y,  xscaleSprCurrent[4], xscaleSprCurrent[4], 0, colBlend, alphaBlink); }  
+  if(hoverOver[1] == 1){  draw_sprite_ext( sprHover, 0, spr_Part_X[1], spr_Part_Y,  xscaleSprCurrent[1], xscaleSprCurrent[1], 0, colBlend, alphaBlink); }
+  if(hoverOver[2] == 1){  draw_sprite_ext( sprHover, 0, spr_Part_X[2], spr_Part_Y,  xscaleSprCurrent[2], xscaleSprCurrent[2], 0, colBlend, alphaBlink); }
+  if(hoverOver[3] == 1){  draw_sprite_ext( sprHover, 0, spr_Part_X[3], spr_Part_Y,  xscaleSprCurrent[3], xscaleSprCurrent[3], 0, colBlend, alphaBlink); }
+  if(hoverOver[4] == 1){  draw_sprite_ext( sprHover, 0, spr_Part_X[4], spr_Part_Y,  xscaleSprCurrent[4], xscaleSprCurrent[4], 0, colBlend, alphaBlink); }  
 }
 
 
 
-}
+
 
 
 if(obj_Control_All.debug == true){

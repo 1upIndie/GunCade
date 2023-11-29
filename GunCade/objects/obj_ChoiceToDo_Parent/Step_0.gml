@@ -62,18 +62,24 @@ var mbLeft = mouse_check_button_released(mb_left);
 
 
 if (field_Type == 4){
+	var halfScale = hover_Xscale/2;
 	var negBuffer = 10; 
 	var reset_1 = true; 	var reset_2 = true;  var reset_3 = true; var reset_4 = true; // anicurve pop
-	if ( mouse_x >= spr_Part_X[1] + negBuffer and  mouse_x <= spr_Part_X[1] + hover_Xscale - negBuffer - 10 ){
+	
+	var index = 1;
+	if ( mouse_x >= spr_Part_X[index] + negBuffer - halfScale and  mouse_x <= spr_Part_X[index] + halfScale - negBuffer - 10 ){
 	 	if ( mouse_y >= spr_Blink_Y and  mouse_y <= spr_Blink_Y + hover_Yscale ){ hoverOver[1] = 1; reset_1 = false; }}
-		
-	if ( mouse_x >= spr_Part_X[2] + negBuffer and  mouse_x <= spr_Part_X[2] + hover_Xscale - negBuffer ){
+	
+	index = 2;
+	if ( mouse_x >= spr_Part_X[index] + negBuffer - halfScale and  mouse_x <= spr_Part_X[index] + halfScale - negBuffer - 10 ){
 	 	if ( mouse_y >= spr_Blink_Y and  mouse_y <= spr_Blink_Y + hover_Yscale ){ hoverOver[2] = 1; reset_2 = false; }}		
 
-	if ( mouse_x >= spr_Part_X[3] + negBuffer and  mouse_x <= spr_Part_X[3] + hover_Xscale - negBuffer ){
+    index = 3;
+	if ( mouse_x >= spr_Part_X[index] + negBuffer - halfScale and  mouse_x <= spr_Part_X[index] + halfScale - negBuffer - 10 ){
 	 	if ( mouse_y >= spr_Blink_Y and  mouse_y <= spr_Blink_Y + hover_Yscale ){ hoverOver[3] = 1; reset_3 = false; }}	
 
-	if ( mouse_x >= spr_Part_X[4] + negBuffer and  mouse_x <= spr_Part_X[4] + hover_Xscale - negBuffer ){
+    index = 4;
+	if ( mouse_x >= spr_Part_X[index] + negBuffer - halfScale and  mouse_x <= spr_Part_X[index] + halfScale - negBuffer - 10 ){
 	 	if ( mouse_y >= spr_Blink_Y and  mouse_y <= spr_Blink_Y + hover_Yscale ){ hoverOver[4] = 1; reset_4 = false; }}	
 
 

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Ui_Startscreen_Bgr",
-    "path": "sprites/spr_Ui_Startscreen_Bgr/spr_Ui_Startscreen_Bgr.yy",
+    "name": "Bgr_960x310",
+    "path": "sprites/Bgr_960x310/Bgr_960x310.yy",
   },
   "spriteMaskId": null,
   "visible": true,

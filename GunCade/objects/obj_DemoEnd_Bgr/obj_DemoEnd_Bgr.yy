@@ -6,6 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
   ],
   "managed": false,
   "overriddenProperties": [],
@@ -30,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Ui_Startscreen_Bgr",
-    "path": "sprites/spr_Ui_Startscreen_Bgr/spr_Ui_Startscreen_Bgr.yy",
+    "name": "Bgr1920x620",
+    "path": "sprites/Bgr1920x620/Bgr1920x620.yy",
   },
   "spriteMaskId": null,
   "visible": true,

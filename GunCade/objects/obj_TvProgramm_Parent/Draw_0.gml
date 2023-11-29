@@ -1,6 +1,6 @@
 /// @description draw_self + move
 
-
+if(canDraw == false){ exit; }
 
 // last sprite
 if ( instance_exists(obj_MiniGame_Parent)){ exit; }

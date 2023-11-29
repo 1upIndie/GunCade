@@ -1,6 +1,9 @@
 /// @description 
 isMain = 1;
 
+canDraw = true;
+
+
 depth = 1200;
 
 totalFrames  = 0; // 

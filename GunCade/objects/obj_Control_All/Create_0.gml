@@ -23,7 +23,7 @@ roomToJump = room_Debug;
 //roomToJump = room_StartScreen;
 // roomToJump = room_DemoEnd;
 // roomToJump = room_Office;
-
+// roomToJump = room_DemoEnd;
 
 alarm[0] = 4;
 //room_goto(roomToJump);
@@ -4503,7 +4503,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "My budget is limited, so anything scary under 2500 will do.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "My budget is limited, so anything scary under 2500$ will do.", snd_TextScroll_Default );		 
 	 dialog_I++;	
 
 
@@ -5383,8 +5383,12 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Thanks, I'll be sure to watch.", snd_TextScroll_Default );		
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default" , "exit default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default" , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Take care.. Oh, and make sure you bring an umbrella with you tomorrow too.", snd_TextScroll_Default );		 	 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default" , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "", snd_TextScroll_Default );		 	 
 	 dialog_I++;	 
 
 
@@ -5624,13 +5628,157 @@ var day_I = 0; // day 1
 	
 	//  Choise 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The history of guns is a long and fascinating one, dating back centuries.", snd_TextScroll_Default );		
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;	 
-	 dialog_I++;		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It all started in China, around the 9th century, with the invention of gunpowder.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The first recorded use of gunpowder in warfare was in China in the 9th century,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "where they used bamboo tubes filled with gunpowder and a projectile to create what was called a 'fire lance'.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the book, 'The Art of War,' written by Sun Tzu, ", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "mentions the use of a device called a 'fire lancer,'", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "which was essentially a tube filled with gunpowder and a projectile.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It was the first recorded use of gunpowder in warfare.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "From there, gunpowder weapons spread to the Middle East and Europe.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the 14th century, the first handguns were developed in Italy.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "This was when they discovered that a handheld firearm could be created by adding a barrel and a trigger mechanism to the 'fire lance.'", snd_TextScroll_Default );		
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It is written in 'De Re Militari,' written by Italian engineer Roberto Valturio,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "describes a handheld firearm that used gunpowder to shoot projectiles.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But it wasn't until the 16th century that guns really became widespread.", snd_TextScroll_Default );		
+	 dialog_I++;
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "That's when the arquebus was developed,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "which was a long gun that used a matchlock to ignite the gunpowder.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The arquebus was a game-changer in warfare because soldiers could now shoot from a distance,", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "which was much safer than getting up close with a sword or spear.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Our local museum has a replica of an arquebus.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It's heavy and unwieldy, but it was a significant advancement in the evolution of guns.", snd_TextScroll_Default );		
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The matchlock mechanism was soon replaced by flintlocks,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "which were more reliable, and then came muskets, which were lighter and more accurate.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "From there, guns continued to evolve, with rifles and other types of firearms being developed.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The Industrial Revolution led to the mass production of firearms,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "and they became a standard part of military equipment.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "However, the invention of guns also had significant impacts on society.", snd_TextScroll_Default );		
+	 dialog_I++;	
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "They led to changes in warfare tactics and ultimately played a role in shaping the world as we know it today.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The development of guns and the resulting changes in warfare", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "also influenced other aspects of society, such as the rise of nationalism and the development of modern science and technology.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In conclusion, the history of guns is a complex and multifaceted one.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It began with a simple invention in China, and over the centuries,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "it evolved into the sophisticated firearms we have today.", snd_TextScroll_Default );		
+	 dialog_I++;
+	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But it's important to remember that with every technological advancement comes both benefits and drawbacks, and guns are no exception.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+     // end of 1
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "And that, my friends, is the history of guns in a nutshell.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;		
+	 dialog_I++;
+
+
 
 
 
@@ -5639,40 +5787,310 @@ var day_I = 0; // day 1
 	
 	//  Choise 2
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 dialog_I++;	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The history of video games is a fascinating one.", snd_TextScroll_Default );		
+	 dialog_I++;
+
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It all began in the early 1950s when computer scientists started experimenting with ways to use computers for entertainment.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the book, 'Computer Lib/Dream Machines,' written by Ted Nelson in 1974,", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "describes the earliest examples of computer games.", snd_TextScroll_Default );		
 	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "They were simple text-based games that ran on mainframe computers and were played using punch cards.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But it wasn't until the late 1960s and early 1970s that video games really took off.", snd_TextScroll_Default );		
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In 1967, a group of engineers at MIT created a game called 'Spacewar!'", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It was the first video game to be played on a computer, and it paved the way for the industry we know today.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The Magnavox Odyssey was the first true home video game console.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It was released in 1972 and came with several games,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "including a tennis game that could be played on a TV set.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "From there, video games continued to evolve.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the late 1970s, the Atari 2600 was released, which allowed gamers to play a variety of games on their home TVs.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "This was the beginning of home consoles, as you well know to be a dubious cause of the downfall of the modern arcades.", snd_TextScroll_Default );		
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Of course we all know about 'Censored for Copyright so We Don't Get Sued' one of the most popular and influential video games of all time.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It was released in 1985 and helped establish a certain famous console developer as a dominant player in the industry.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But video games didn't just revolutionize entertainment.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "They are still having an impact on technology, as the need for faster and more powerful computers leads to advances in computing hardware and software.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In conclusion, the history of video games is a long and varied one, with many different players and innovations along the way.", snd_TextScroll_Default );		
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "From the early days of punch cards to the modern era, video games have always been at the forefront of technological advancement.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+    /// end of 2
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "And that, my friend, is the history of video games in a nutshell.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;		
+	 dialog_I++;
+
+
+
 
 
 	dialog_I = 500;
 	
 	//  Choise 3
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 dialog_I++;	
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It all began in the 1920s, when the city was in its heyday as the epicenter of the automotive industry.", snd_TextScroll_Default );		
 	 dialog_I++;
 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The city was thriving with manufacturing plants, but as the decades progressed, social and economic disparities began to take hold, giving way to an inexorable decline.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "By the 1960s, the city was plagued by urban decay and was fraught with unbridled corruption.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Political malfeasance and avarice had penetrated deep into the bureaucratic fabric, stifling any hopes of substantive reform.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "This left the city's populace mired in dire straits, with a marked paucity of educational and employment opportunities.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But this was only the beginning.", snd_TextScroll_Default );		
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In the 1970s, the candle industry, our great city's lifeblood, was severely impacted by a confluence of factors,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "including subpar management, foreign competition, and the skyrocketing cost of raw materials.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The city's economy suffered a devastating blow, and its social ills were amplified.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Then, in the summer of 1983, the city was wracked by a series of riots, sparked by mounting frustrations stemming from poverty, crime, and police brutality.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The protests quickly devolved into anarchic chaos, and the city was plunged into a state of profound disarray.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The city's infrastructure crumbled, and basic necessities such as clean water and medical care were all but inaccessible.", snd_TextScroll_Default );		
+	 dialog_I++;	
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The economy had reached a point of no return, and the city's social fabric was frayed beyond repair.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     // end of 3!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The once-great city had fallen into a bleak and intractable morass, serving as a cautionary tale of the pitfalls of institutional corruption and economic neglect.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;		
+	 dialog_I++;
+
+	 
+	 
 
 	dialog_I = 600;
 	
 	//  Choise 4
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "What would you like to hear about?", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "I stand before you today with an exciting breakthrough in the field of medical research.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Through countless hours of experimentation,", snd_TextScroll_Default );		
 	 dialog_I++;
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "I have discovered that certain exotic mushrooms possess potent anti-inflammatory and anti-microbial properties", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "that can be used to treat a rare and debilitating medical condition that affects the feet.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The condition I speak of is known as Pedal Malanoidosis, a complex and enigmatic disorder that causes severe discoloration", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "and inflammation of the feet, a disease that my grandmother has unfortunately suffered from for years.", snd_TextScroll_Default );		
+	 dialog_I++;	
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "It is a disorder that has confounded medical professionals for years,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "with little progress made in understanding its causes or developing effective treatments.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But through careful study and experimentation, I have uncovered a potential cure for this troubling disorder.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The key lies in the spores of two particular types of mushrooms - Cordyceps Sinensis and Grifola Frondosa.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "These mushrooms, with their unique properties and potent anti-inflammatory and anti-microbial agents, have shown remarkable promise in treating Pedal Malanoidosis.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The process by which these mushrooms are used is simple but effective.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "First, the affected area is thoroughly cleaned and dried.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Then, a paste is created by grinding the mushrooms into a fine powder and adding water.", snd_TextScroll_Default );		
+	 dialog_I++;	
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The paste is then applied to the affected area and left to dry for several hours. This process is repeated twice a day for seven days.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The results have been nothing short of remarkable.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In all of my trials, the application of the mushroom paste has led to significant reductions in inflammation and pain associated with Pedal Malanoidosis.", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The patient who received this treatment - my grandmother of course - has experienced a marked improvement", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "in their ability to move and walk, and many have reported a complete recovery from the disorder.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But while these results are certainly encouraging, I must not become complacent.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "Further studies are needed to fully understand the mechanisms", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "by which these mushrooms work and to ensure their safety and efficacy.", snd_TextScroll_Default );		
+	 dialog_I++;	
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "I must also continue to explore the medicinal properties of other exotic mushrooms,", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "which may hold the key to curing other debilitating disorders that currently elude medical science.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "In conclusion, the discovery of the potential cure for Pedal Malanoidosis is an exciting development", snd_TextScroll_Default );		
+	 dialog_I++;	 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "that holds enormous promise for the medical community and my grandmother in particular.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "The study of exotic mushrooms and their medicinal properties is an ongoing process, one that requires continued dedication", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "and research to unlock its full potential.", snd_TextScroll_Default );		
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "But with trial and commitment, I am confident that I can continue to make groundbreaking discoveries", snd_TextScroll_Default );		
+	 dialog_I++;
+
+      // end if 4
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "that improve the health and well-being of people around the world, but mostly my grandmother.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_700;	 	 
+	 dialog_I++;		 	
 
 
 

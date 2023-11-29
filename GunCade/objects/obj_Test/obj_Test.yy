@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "GunCade",
-    "path": "GunCade.yyp",
+    "name": "DemoEnd",
+    "path": "folders/Objects/DemoEnd.yy",
   },
   "parentObjectId": null,
   "persistent": true,
