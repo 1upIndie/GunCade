@@ -31,7 +31,7 @@ event_inherited();
  //negative_Scope           = false; 
  negative_Stock           = false;   
  negative_Grip            = false;
- negative_Costs           = 3000; 
+ negative_Costs           = 1000; 
  
  
  // jump to points

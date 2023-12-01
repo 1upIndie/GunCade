@@ -67,10 +67,11 @@ scribble(array_Txt[dialogIndex]).wrap(textNeueZeile, -1,false).draw(camX+textX, 
 #region triangle blink
 
   if (triangleCanDraw == true){
+	   if (!instance_exists(obj_MiniGame_Parent)){
      draw_sprite_ext(triangleSpr,0,  camX + camWidth + triangleSpr_X, camY + camHeight + triangleSpr_Y, triangleScale, triangleScale, triangleAngle, c_white, triangle_Alpha );
-  }
+  }}
 
- draw_line(mouse_x, mouse_y, camX + camWidth + triangleSpr_X, camY + camHeight + triangleSpr_Y);
+
 
 
 #endregion

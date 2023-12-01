@@ -33,9 +33,10 @@ if ( isNews == true ){
 
 }
 
-
+if (obj_Control_All.debug == true){
 var txt = "is News: " + string(isNews);
 draw_text(camX+300,camY+100,txt );
+}
 	
 	
 	

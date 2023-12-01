@@ -36,4 +36,4 @@ draw_sprite_ext(spr_Ui_BalkenNew_1px, 0, camX + camWidth +  ui_BlackBox_TV_Radio
 
 // debug
 var debugTxt = "Height: " + string(obj_Workspace_Bgr.tvHeight);
-draw_text(camX+140,camY+90, debugTxt)
+//draw_text(camX+140,camY+90, debugTxt)

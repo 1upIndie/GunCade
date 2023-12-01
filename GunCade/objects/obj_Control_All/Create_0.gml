@@ -8,7 +8,7 @@ audio_group_load( audiogroup_SFX );
 // fail save
 clearSaveFile = false; // clears every time game is closed to default, no "real" saving then possible!
 
-debug = true;
+debug = false;
 demo  = true;
 
 randomize();
@@ -952,7 +952,7 @@ array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Permit", 9
 
 
 
-currentCutscene_DAY = 0;
+currentCutscene_DAY = 101; // start with tv!
 currentCutscene     = 0;
 
 current_SongIndex = 0; // important for playback!
@@ -1849,8 +1849,6 @@ indexSet++;
   text_Name_Victor      = "[font_Cutscene_Name][scale, 1.4][c_white]Victor[/c][/scale]";   
  
   text_Name_Nun         = "[font_Cutscene_Name][scale, 1.4][c_white]Nun[/c][/scale]";  
-  text_Name_Wife        = "[font_Cutscene_Name][scale, 1.4][c_white]Wife[/c][/scale]";  
-
 
   text_Name_Twin1       = "[font_Cutscene_Name][scale, 1.4][c_white]Twin 1[/c][/scale]";  
   text_Name_Twin2       = "[font_Cutscene_Name][scale, 1.4][c_white]Twin 2[/c][/scale]";  
@@ -2460,7 +2458,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Wait, I'm selling [#5893FF]low quality goods[/c]?", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Wait, I'm selling [#5893FF]low quality goods[/c][#F9CE7B]?[/c]", snd_TextScroll_Default );		
 	 dialog_I++;
 
 
@@ -2956,7 +2954,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "granny dismissive"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That way it can't really hurt anyone and I can feel safer, and I only have [#5893FF]1000[/c] to spend, it's half my life savings...", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That way it can't really hurt anyone and I can feel safer, and I only have [#5893FF]1000$[/c] to spend, it's half my life savings...", snd_TextScroll_Default );	 
 	 dialog_I++;
 
      // begin granny sale
@@ -12351,7 +12349,7 @@ ini_open("data.bob");
 
 // get day to jump to -> important! progress values
 currentCutscene_DAY     =  ini_read_real("progress", "day to jump to",      101); // default jump to news day 1!
-cashTotalInSave_Office  = ini_read_real("progress", "income office",      0);
+cashTotalInSave_Office  =  ini_read_real("progress", "income office",      0);
  //cashSumOnDay           = ini_read_real("income", "day",         0);
 
 

@@ -39,4 +39,5 @@ if ( state == "fade"){
 #endregion	
 	
 	
-	
+	// destroy when minigame is over!
+	if ( !instance_exists(obj_MiniGame_Parent) ){ instance_destroy(); }

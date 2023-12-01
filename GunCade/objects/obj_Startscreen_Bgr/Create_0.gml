@@ -9,7 +9,7 @@
 x = camX + (camWidth/2);
 y = camY -10;
 
-
+buffer = 10;
 
 var scaleSet = 1.3;
 image_xscale = scaleSet;

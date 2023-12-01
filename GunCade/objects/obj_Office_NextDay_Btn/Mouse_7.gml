@@ -13,7 +13,7 @@ if ( canPress == true){
      obj_Control_All.currentCutscene_DAY = obj_Control_All.currentCutscene_DAY + 100 + 2;
 	
 		var jumpToRoomEnd = instance_create_layer(x,y, "Instances_Effects", obj_Transition_GotoLevel );
-             jumpToRoomEnd.levelJumpTo = Room_Workspace;
+             jumpToRoomEnd.levelJumpTo = room_DAY_Intro;
    
 
  }  
