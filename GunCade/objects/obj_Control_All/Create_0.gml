@@ -11679,7 +11679,7 @@ var day_I = 0; // day 1
  
   arrayCutscenes[day_I] = new Createcutscene(day_I  , false);  // 
   
-#region weather girl
+	#region weather girl
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
@@ -11687,7 +11687,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "weather default"  , "enter default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "weather smiling"  , "enter default");	 
      arrayCutscenes[day_I].setText(dialog_I,  1,  "weather", "You look cold. Don't tell me you missed the forecast, or did you just forget to wear a sweater today?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -11730,16 +11730,200 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That's a shame, but I have confidence that you'll be a local media star before long.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	// 11 
      arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "That's just why I'm here", snd_TextScroll_Default );		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Weather_GunSold_Day8;		 
 	 dialog_I++;
 
 
 
+     // if sold previously to weather a gun ->
+     dialog_I = 30;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "We wouldn't want that I suppose.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "What exactly do you want to do a story on this time?", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_50;	 
+	 dialog_I++;
+
+     // if NOT sold previously to weather a gun ->
+     dialog_I = 40;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "If you really want your business to grow, you've got to let me do a story on you.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "What exactly do you want to do a story on?", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_50;	 	 
+	 dialog_I++;
+
+
+     // jump point ->
+     dialog_I = 50;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "My boyfriend is working on a movie and he's got big plans to hit the big time.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "He is not the brightest bulb in the box, but good looks and the accent do have some magical charm.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Is his name Duke, by chance?", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "How do you know that? Oh, wait, he mentioned that he has been here on my recommendation.", snd_TextScroll_Default );		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Duke_GunSold_Day8;		 
+	 dialog_I++;
+
+
+     // if  sold previously to duke a gun ->
+     dialog_I = 70;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "He said you helped him out and that his movie is going vetter, I mean better.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Picking up on his mannerisms too. You must really spend a lot of time together.", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Hehe, yeah. My dad absolutely HATES when I talk like him.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather smiling"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Gotta agree with her dad on that one.)", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Down to business, I have to do a story on the movie being filmed here.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "And I'd love to have a really nice weapon to include in the story since a local business is helping provide props.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Wait, your boyfriend knows these aren't just props, right?", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Of course... Actually, he can be a bit careless. Maybe I should check on that, but for now I want to get this story rolling.", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Gotcha. Well, then, what do you need?", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Something foreign would be great. I'd like something that matches his personality. Add any bells and whistles you want.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_130;	 
+	 dialog_I++;
+	 
+	 
+
+
+     // if NOT sold previously to duke a gun ->
+     dialog_I = 90;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Yeah, I don't think I was able to help him though.", snd_TextScroll_Default );			 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "So he said. I'm a little worried how the movie is going to turn out now. The scene he needed a gun for, well, he used his finger as a gun.", snd_TextScroll_Default );		 
+	 dialog_I++;
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "It looked so stupid.", snd_TextScroll_Default );		 
+	 dialog_I++;	
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh, that doesn't sound good. They don't have a props department?", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "He insists on using real guns, or nothing at all. Don't ask me why, I couldn't tell you.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Sounds like Duke.)", snd_TextScroll_Default );			 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "So what is it you'd like me to do?", snd_TextScroll_Default );			 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "If you'd help me out, I could definitely talk him into coming in again, so that would be two sales you could make.", snd_TextScroll_Default );		 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Plus, when I run the story, I bet you anything you get a boost in sales.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Hmm, sounds like good money that I could really use.)", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm usually pretty careful to stay under the radar. How do I know this won't backfire?", snd_TextScroll_Default );			 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Backfire... You're an arms dealer and you're worried about making sales?", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Maybe I run a story on that. I guess either way, I've got something to show when I get to the station.", snd_TextScroll_Default );		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Geeze, when you put it that way.... What are you even looking for?", snd_TextScroll_Default );			 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Something foreign would be great. I'd like something that matches Duke's personality. Add any bells and whistles you want.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_130;	 
+	 dialog_I++;	 
+	 
+  
+    // jump point from sold or not sold to duke! 
+     dialog_I = 130;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "Oh, it just hit me, I forgot my wallet in the van. I'll be right back. You think about it and I'll be ready to purchase soon as I get back.", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(No risk, no reward I suppose.)", snd_TextScroll_Default );			 
+	 dialog_I++;  
 
 #endregion	
 
 
+	#region victor
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "", snd_TextScroll_Default );		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );			 
+	 dialog_I++;  
+
+#endregion
 
 
 #endregion  // end of day 8
@@ -11752,7 +11936,7 @@ var day_I = 0; // day 1
 
 
   
-#region news day 1 NEWS
+	#region news day 1 NEWS
 
  day_I    = 101; // day 101 -> news day 1!
  dialog_I = 0; // zeiger
@@ -11789,7 +11973,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 2 NEWS
+	#region news day 2 NEWS
 
  day_I     = 102; // day 102 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -11838,7 +12022,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 3 NEWS
+	#region news day 3 NEWS
 
  day_I     = 103; // day 103 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -11894,7 +12078,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 4 NEWS
+	#region news day 4 NEWS
 
  day_I     = 104; // day 104 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -11934,7 +12118,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 5 NEWS
+	#region news day 5 NEWS
 
  day_I     = 105; // day 105 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -11977,7 +12161,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 6 NEWS
+	#region news day 6 NEWS
 
  day_I     = 106; // day 106 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12033,7 +12217,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 7 NEWS
+	#region news day 7 NEWS
 
  day_I     = 107; // day 107 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12087,7 +12271,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 8 NEWS
+	#region news day 8 NEWS
 
  day_I     = 108; // day 108 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12134,7 +12318,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 9 NEWS
+	#region news day 9 NEWS
 
  day_I     = 109; // day 109 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12178,7 +12362,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 10 NEWS
+	#region news day 10 NEWS
 
  day_I     = 110; // day 110 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12216,7 +12400,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 11 NEWS
+	#region news day 11 NEWS
 
  day_I     = 111; // day 110 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12248,7 +12432,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 12 NEWS
+	#region news day 12 NEWS
 
  day_I     = 112; // day 112 -> news day 1!
  dialog_I  = 0; // zeiger
@@ -12286,7 +12470,7 @@ var day_I = 0; // day 1
 
 #endregion
 
-#region news day 13 NEWS
+	#region news day 13 NEWS
 
  day_I     = 113; // day 113 -> news day 1!
  dialog_I  = 0; // zeiger

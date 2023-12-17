@@ -207,6 +207,7 @@
     {"name":"SortBy","order":11,"path":"folders/Sprites/UI/SortBy.yy",},
     {"name":"NameButtons","order":1,"path":"folders/Sprites/UI/SortBy/NameButtons.yy",},
     {"name":"Stats","order":5,"path":"folders/Sprites/UI/Stats.yy",},
+    {"name":"Day_8","order":10,"path":"folders/Objects/Cutscenes/MiniGame/Choises/Day_8.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Tutorial_txt_Decide","order":1,"path":"sprites/spr_Tutorial_txt_Decide/spr_Tutorial_txt_Decide.yy",},
@@ -495,6 +496,7 @@
     {"name":"obj_MiniGame_Button_Type_Rifle","order":5,"path":"objects/obj_MiniGame_Button_Type_Rifle/obj_MiniGame_Button_Type_Rifle.yy",},
     {"name":"obj_Workspace_Tv_Main","order":1,"path":"objects/obj_Workspace_Tv_Main/obj_Workspace_Tv_Main.yy",},
     {"name":"obj_Reveal_Shadow","order":1,"path":"objects/obj_Reveal_Shadow/obj_Reveal_Shadow.yy",},
+    {"name":"obj_Choise_Duke_GunSold_Day8","order":1,"path":"objects/obj_Choise_Duke_GunSold_Day8/obj_Choise_Duke_GunSold_Day8.yy",},
     {"name":"spr_WorkStation_Background_Save","order":4,"path":"sprites/spr_WorkStation_Background_Save/spr_WorkStation_Background_Save.yy",},
     {"name":"spr_MiniGame_Exotic_1","order":4,"path":"sprites/spr_MiniGame_Exotic_1/spr_MiniGame_Exotic_1.yy",},
     {"name":"spr_Arcade_MulletHell2_Start","order":7,"path":"sprites/spr_Arcade_MulletHell2_Start/spr_Arcade_MulletHell2_Start.yy",},
@@ -757,6 +759,7 @@
     {"name":"scribble_is_text_element","order":2,"path":"scripts/scribble_is_text_element/scribble_is_text_element.yy",},
     {"name":"spr_Dialog_Jez_HappyStatic","order":1,"path":"sprites/spr_Dialog_Jez_HappyStatic/spr_Dialog_Jez_HappyStatic.yy",},
     {"name":"spr_MiniGame_Attachment_Dummy","order":6,"path":"sprites/spr_MiniGame_Attachment_Dummy/spr_MiniGame_Attachment_Dummy.yy",},
+    {"name":"obj_ChoiceDonePreviously_Parent","order":11,"path":"objects/obj_ChoiceDonePreviously_Parent/obj_ChoiceDonePreviously_Parent.yy",},
     {"name":"spr_MiniGame_Type_Heavy","order":8,"path":"sprites/spr_MiniGame_Type_Heavy/spr_MiniGame_Type_Heavy.yy",},
     {"name":"obj_MiniGame_Button_Refuse","order":1,"path":"objects/obj_MiniGame_Button_Refuse/obj_MiniGame_Button_Refuse.yy",},
     {"name":"spr_Ui_Button_Sound_Sfx","order":16,"path":"sprites/spr_Ui_Button_Sound_Sfx/spr_Ui_Button_Sound_Sfx.yy",},
