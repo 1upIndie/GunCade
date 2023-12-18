@@ -4,9 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-// sale    300
-// refuse  310 
-// mess up 320 
+// sale    530
+// refuse  550 
+// mess up 570 
 
 
-// continue 350
+// continue 600
