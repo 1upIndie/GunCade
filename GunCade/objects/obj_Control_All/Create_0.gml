@@ -13457,24 +13457,344 @@ var day_I = 0; // day 1
 	 // after stories are over tie in here 500
 	 dialog_I = 500;
 	 
-	 
-
-
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
- 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "", snd_TextScroll_Default );		 
-	 dialog_I++;
-
-	
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "", snd_TextScroll_Default );	
-	 
-	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd shocked"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "nerd", "Yikes!", snd_TextScroll_Nerd );	 		 
 	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "nerd", "I just remembered I have a meeting in 30 minutes with my fellow FAP'ers. See you next time!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT",  "(No matter what I do, this place attracts the oddest of the odd.)", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "nothing"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT",  "(I've got the nerd, Jez, a wacky foreign actor, those god awful twins...)", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	
+
+
     #endregion
 
+	#region clown 503
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "HONK HONK", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Hiyaa buck'o!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "enter default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT",  "(And this fucking clown...)", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "If it isn't Boom Boom the clown.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "It's BAM BAM and you know it!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Aren't you supposed to have a sense of humor?", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Ha, good one I suppose...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Should I just ask what you yoinked this time?", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Down to business today I see.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "I've heard enough talking already today. Not your fault, but I think we both know the deal at this point.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Alright then. If you would please, take this Triple Barrel off my hands and keep it out of... you know who's hands.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Oh my. You got this from that officer?", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Yes. He had just finished being part of a raid. For some reason, they put this in his squad car.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Let me guess. You witnessed the whole thing and had to be the hero that kept the city safe.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "You're catching on!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Tell you what, if you make me laugh, I'll take that off your hands.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Deal!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Ok, let's hear a joke. I'll even give you three chances.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Two peanuts walk into a bar. One was a salted!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Get it!? Assaulted...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Ok, I know you're laughing on the inside, so here's another good one...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "A pirate walks into a bar with a steering wheel in his pants. The bartender looks over and says: hey buddy, you know you got a steering wheel in your pants?", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "The pirate says aye, it's drivin' me nuts!”", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;		 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Ok, ok... One more try! What do you call a cow that's also a knight?", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "???", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Sirloin!!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Tell me one of those made you laugh?", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "....", snd_TextScroll_Nerd );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Clown_TakeGun_Day9;		 	 
+	 dialog_I++;	 
+
+
+     // if you take the gun, jokes were good or you dont care
+	 dialog_I = 550;
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Haha! I knew it! It had to be the peanut joke. ", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "That one's my favorite.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Sure...", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Here's your weapon. As always, please do the city a favor and keep it out of the wrong hands.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player",  "Of course.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Toodles!", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT",  "(Ugh...) Toodles.", snd_TextScroll_Nerd );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_580;		 
+	 dialog_I++;
+	 
+     // if NOT you take the gun, jokes were good or you dont care
+	 dialog_I = 560;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown angry"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Dammit. Off to the river I suppose.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown angry"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown",  "Maybe I'll drown my sorrow too after that miserable performance.", snd_TextScroll_Nerd );	 		 
+	 dialog_I++;
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown angry"  ,  "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT",  "(Oh wow. Maybe I should have at least pretended to laugh.)", snd_TextScroll_Nerd );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_580;	 
+	 dialog_I++;
+
+
+
+
+	#endregion
+
+	#region shadow delivering final stock
+	 dialog_I = 580;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT",  "(Now that that's over, I feel like a snack.)", snd_TextScroll_Nerd );		 
+	 dialog_I++;	
+	 
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_600;		 
+	 dialog_I++;
+	 //////////////////////////////////
+
+
+	 dialog_I = 600; 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "enter shadow");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "You ready for the final stock?", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "DAMMIT MAN!", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Try just walking up and saying 'hello' for once.", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "No.", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ugh, yes, please let's get this place filled to the brim.", snd_TextScroll_Default );	 
+	 dialog_I++; 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Your brother decided to basically rob me of a lot of money yesterday and it feels like I'm starting all over.", snd_TextScroll_Default );	 
+	 dialog_I++; 	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Did he really?", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Yep. All because he got himself in trouble in Vegas.", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "That idiot. Let's get you some goods then.", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Sweet. What is it this time?", snd_TextScroll_Default );	 
+	 dialog_I++; 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "These are all toys for big boys. No messing around now.", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "At this point, I guess if I have any chance of making ends meat I can't really worry about the safety of anyone else, can I?", snd_TextScroll_Default );	 
+	 dialog_I++; 	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Did you to begin with?", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Of course...", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Sure you did.", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Look. I've got some big plans in the works so just make the sales and get me my cut.", snd_TextScroll_Default );	 
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Some days I can't tell him from his brother.)", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "exit shadow");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Will do. Hey, are these two supposed to be one gun, or two?", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Shadow?", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(This guy...)", snd_TextScroll_Default );	 
+	 dialog_I++; 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(And how the hell did he get all of this stuff in here so fast. There's even a CANNON sitting on the floor.)", snd_TextScroll_Default );	 	 
+	 dialog_I++; 
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Granny_BaughtGun_Day9;		 
+	 dialog_I++;
+	 //////////////////////////////////
+
+	 
+	 #endregion
+
+	#region granny want to buy a canon if you didn't refuse or botched it
+     dialog_I = 640;
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "enter default");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "granny", "Hello child.", snd_TextScroll_Default );	 
+	 dialog_I++; 	
+	
+
+
+
+
+	#endregion
 
   #endregion // end of DAY 9
 
