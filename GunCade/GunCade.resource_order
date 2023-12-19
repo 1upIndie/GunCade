@@ -456,6 +456,7 @@
     {"name":"obj_Dialog_SkipIndex_to_Day6_Start","order":6,"path":"objects/obj_Dialog_SkipIndex_to_Day6_Start/obj_Dialog_SkipIndex_to_Day6_Start.yy",},
     {"name":"__scribble_class_typist","order":6,"path":"scripts/__scribble_class_typist/__scribble_class_typist.yy",},
     {"name":"obj_MiniGame_Button_Name_O","order":10,"path":"objects/obj_MiniGame_Button_Name_O/obj_MiniGame_Button_Name_O.yy",},
+    {"name":"obj_Choise_NerdStory_Day9","order":2,"path":"objects/obj_Choise_NerdStory_Day9/obj_Choise_NerdStory_Day9.yy",},
     {"name":"obj_Debug_Start_Day_4_NEWS","order":5,"path":"objects/obj_Debug_Start_Day_4_NEWS/obj_Debug_Start_Day_4_NEWS.yy",},
     {"name":"obj_ChoiseDone_JezOrNerd_Wife_Day5","order":8,"path":"objects/obj_ChoiseDone_JezOrNerd_Wife_Day5/obj_ChoiseDone_JezOrNerd_Wife_Day5.yy",},
     {"name":"spr_WeaponDetail_Smg_2","order":1,"path":"sprites/spr_WeaponDetail_Smg_2/spr_WeaponDetail_Smg_2.yy",},
