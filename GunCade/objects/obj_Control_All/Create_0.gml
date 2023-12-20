@@ -14817,7 +14817,8 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "(Buck'o? That sounds familiar)", snd_TextScroll_Default );		  
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "(Buck'o? That sounds familiar)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_260;		 
 	 dialog_I++;	 
 	 
 	 
@@ -14938,25 +14939,214 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(Something really strange is going on here and I want nothing to do with it.)", snd_TextScroll_Default );		  
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(Something really strange is going on here and I want nothing to do with it.)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_260;		 
 	 dialog_I++;
 
 
-
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "", snd_TextScroll_Default );		  
-	 dialog_I++;
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "", snd_TextScroll_Default );		  
-	 dialog_I++;
 
 
 	
 	#endregion
 
+	#region 260 seemingly random sale but is not (not dependend if twins are locked in bank or coming in)
+	
+	 dialog_I = 260; // 
+	 
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_40;		 
+	 dialog_I++;
+	 //////////////////////////////////		
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "not random default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh, hello sir, I didn't see you come in. How can I help you?", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     #region "Not" random sale 2   
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_280;		 
+	 dialog_I++;
+	 //////////////////////////////////
+
+
+		/////////////////////// auto set random sale  ///////////////////////////////////////
+	 var randomDay10_2_Spr = scr_SetRandomNpcSpr(); // pick one of 9, for now
+	   var randomDay10_2_Spr_Default = scr_SetRandomSpr(randomDay10_2_Spr, "default" ); // maybe set a unique random
+	   var randomDay10_2_Spr_Angry   = scr_SetRandomSpr(randomDay10_2_Spr, "angry" );
+    
+    var getRandomMiniGameIndexDay10_2  = scr_SetRandomMiniGameIndex( arrayRandomMinigameDay9Plus );
+	
+	randomSaleOverride_Day10_2 = arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_1]; // array for override once instance exist!
+	/////////////////////// end auto set random sale  ///////////////////////////////////////
+
+	// begin random sale 1
+	 dialog_I = 280;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Default  , "enter default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_2].introTextRandom[0], snd_TextScroll_Default );	
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Default  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_2].introTextRandom[1], snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale2_Day10;		
+	 dialog_I++;
+     
+	 
+	 dialog_I = 290;	 
+	 // sale!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Default  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_2].saleTextRandom[0], snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Default  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", randomExitText, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_330;	
+	 dialog_I++;
+
+
+	 dialog_I = 300;	 
+	 // refuse!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Angry  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_2].refuseTextRandom[0], snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Angry  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", randomExitText, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_330;	 	 
+	 dialog_I++;
+
+
+	 dialog_I = 310;	 
+	 // botch!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Angry  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_2].failTextRandom[0], snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_2_Spr_Angry  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "not random", randomExitText, snd_TextScroll_Default );			 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_330;		 	 
+	 dialog_I++;	
+	
+	
+	
+    #endregion // end of random sale 2	
+	
+	
+	 dialog_I = 330;		 
+	 
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_DukeWeather_BothSold_Day10;		 
+	 dialog_I++;
+	 //////////////////////////////////	 
+
+
+     #region random sale 3   if not sold to both duke and weather or none
+
+
+		/////////////////////// auto set random sale  ///////////////////////////////////////
+	 var randomDay10_3_Spr = scr_SetRandomNpcSpr(); // pick one of 9, for now
+	   var randomDay10_3_Spr_Default = scr_SetRandomSpr(randomDay10_3_Spr, "default" );
+	   var randomDay10_3_Spr_Angry   = scr_SetRandomSpr(randomDay10_3_Spr, "angry" );
+    
+    var getRandomMiniGameIndexDay10_3  = scr_SetRandomMiniGameIndex( arrayRandomMinigameDay9Plus );
+	
+	randomSaleOverride_Day10_3 = arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_3]; // array for override once instance exist!
+	/////////////////////// end auto set random sale  ///////////////////////////////////////
+
+	// begin random sale 3
+	 dialog_I = 340;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Default  , "enter default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_3].introTextRandom[0], snd_TextScroll_Default );	
+	 dialog_I++;    
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Default  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_3].introTextRandom[1], snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale3_Day10;		
+	 dialog_I++;
+     
+	 
+	 dialog_I = 350;	 
+	 // sale!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Default  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_3].saleTextRandom[0], snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Default  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_3;	
+	 dialog_I++;
+
+
+	 dialog_I = 360;	 
+	 // refuse!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Angry  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random  ", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_3].refuseTextRandom[0], snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Angry  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_3;	 	 
+	 dialog_I++;
+
+
+	 dialog_I = 370;	 
+	 // botch!
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Angry  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay10_3].failTextRandom[0], snd_TextScroll_Default );		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Angry  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );			 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_3;		 	 
+	 dialog_I++;	
+	
+	
+	
+    #endregion // end of random sale 3	
+
+
+
+     #region if sold to both duke and weather last time, then they appear
+	 
+	 
+	 #endregion
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "not random default"  , "enter default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "not random default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+	
+	
+	#endregion
 
     #endregion
 	
