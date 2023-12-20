@@ -14537,7 +14537,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_1_Spr_Default  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_450;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_150;	
 	 dialog_I++;
 
 
@@ -14549,7 +14549,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_1_Spr_Angry  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_450;	 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_150;	 	 
 	 dialog_I++;
 
 
@@ -14561,7 +14561,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_1_Spr_Angry  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );			 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_450;	 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_150;		 	 
 	 dialog_I++;	
 	
 	
@@ -14606,29 +14606,355 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Besides, how do I know if I sold you a weapon that you wouldn't have hurt yourselves instead of the robber?", snd_TextScroll_Default );			 	 
 	 dialog_I++;	
 
-
-
-
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "If'n you thank we'ze that dumb...", snd_TextScroll_Default );			 	 
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Oh, I do...)", snd_TextScroll_Default );			 	 
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Shut the hell up an' let me talk to the man.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Fine, but youze better be righ' bout dis.", snd_TextScroll_Default );			 	 
 	 dialog_I++;	
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Look. We don't need a gun, yet. What we need is for you not to sell a gun.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok, no, I won't sell you a gun.", snd_TextScroll_Default );			 	 
+	 dialog_I++;		 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Not to us, I mean to someone else.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok, but I didn't sell to you.", snd_TextScroll_Default );			 	 
+	 dialog_I++;		 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Dammit why'z you gotta make thangs so difficult.", snd_TextScroll_Default );			 	 
+	 dialog_I++;		 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "A guy is gonna come in here in a few minutes, so we don't have long. ", snd_TextScroll_Default );			 	 
+	 dialog_I++;		 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "All's I'm asking is that you don't sell anything to him. Got it?", snd_TextScroll_Default );			 	 
+	 dialog_I++;		 
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Uhhh, ok... How will I know who it is?", snd_TextScroll_Default );			 	 
+	 dialog_I++;		 	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Oh you'll know.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Just do us a favor and please don't sell to him.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Sis weeze gotta go!", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "exit default");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "A'ight, let's scram. Remember our deal pal.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "exit default");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I didn't agree to this deal. Who the hell is coming in and what kind of trouble are they in?)", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Oh well. A sale is a sale and those two don't decide my business.)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_150;		 
+	 dialog_I++;	 
+	 
 	#endregion
 
 
+	#region cop comes in but half half, tie together again
+	 dialog_I = 150;	
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_40;		 
+	 dialog_I++;
+	 //////////////////////////////////	
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hey long time no see. Don't tell me you lost something again?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "enter default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(What the hell is on his face?)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Yeah I guess so. When there was an audit on a case's evidence, they said a weapon went missing.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "That's not good. Maybe I have the kind you're looking for.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "That's what I'm hoping for. It just doesn't make any sense.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "There were probably a dozen of us on the scene and one of the fellas said he put it in my trunk.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I went straight to the station and, well ok I took a nap in the parking lot.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "But when I woke up, I did my usual vehicle inspection and didn't find anything extra in it.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "That sure is a mystery.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Aint it!? I thought someone must have put it in the wrong car, but nobody else found any extra weapons either.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "So the only thing I can figure is that we got a crooked cop in our department.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Surely not.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I sure hope not mister, but crazier things have happened.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "You're telling me.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "All I'm needing is to know if you have seen anyone come in here trying to pawn off weapons that aren't coming through what I assume is a completely legitimate supply chain. Correct?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Oh yes, very legitimate. We just got a new shipment yesterday. Everything came straight from the manufacturers.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(Oh great, I've never once asked where these things really come from and now I'm sweating bullets.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I see. Well, what about anyone trying to pawn weapons?", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_HalfCop_Day10;		 
+	 dialog_I++;	 
+	 
+     
+	 // tell no to cop (lie)
+	 dialog_I = 190;
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Unfortunately not officer. I wish I could help.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I see. Well, in that case, if you have any run-ins with someone trying to pawn off weapons, you call the station and report it immediately. Understood?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Oh yes, I wouldn't put my business in jeopardy like that.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I thought so. Well, gotta be off. Got plenty of work to do. They're issuing us assault rifles today and I don't want to miss out.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(That cannot be good.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Later, buck'o.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "(Buck'o? That sounds familiar)", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+	 
+	 
+	 // tell yes to cop (tell truth)
+	 dialog_I = 200;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "You're not going to believe this, but there was a clown in here trying to sell me a Triple Barrel a few days ago.", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Now don't go pulling my leg.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "No, I'm serious. A real clown...", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "If you think I'm going to believe that a clown snuck around a crime scene, accessed the trunk of my car with all those officers around, and made off with a weapon like that.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Then you're out of your damn mind.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(Why won't he believe me?)", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "However, the weapon you're describing is the same kind as the one that went missing. ", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I just didn't want to say it to see if you'd mention it on your own. So that tells me someone was in here trying to sell it to you, but you just don't want to admit who it was.", snd_TextScroll_Default );		  
+	 dialog_I++;
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "I'm not lying officer.", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Do you have the weapon?", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Cop_BaughtGun_Day10;		 
+	 dialog_I++;
+
+
+	 dialog_I = 220; // accepted tripple barrel from clown
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Absolutely, it's right here.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Good, glad you're cooperating.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I'll take that off your hands and we'll do a thorough investigation. One of the detectives will be out soon to get a statement.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Understood, I've got nothing to hide.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_240;	 
+	 dialog_I++;
+
+
+	 dialog_I = 230; // NOT accepted tripple barrel from clown
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "No, I wouldn't take it. If I remember right, he did say he was going to go toss it in the river somewhere.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(SHIT! I just realized, he's going to find all those other guns out there too!)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Interesting. For your sake, I hope you're telling the truth. We'll have to investigate and see what turns up.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Understood, I've got nothing to hide.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_240;	 	 
+	 dialog_I++;
+	 
+
+     // jump point tie in with cop, told truth!
+	 dialog_I = 240; // 	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Now that we've settled that matter, you better think about this whole clown story you're making up.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "If it turns out you're the one stealing weapons, you're gonna be in a world of hurt.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(This is absolutely bonkers, and why the hell does he have some of that clown's makeup on his face?)", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(If he's sleeping in his car I bet that clown is messing with him now. I hope he never comes back in here again.)", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Nothing to hide at all sir, I'm a law abiding citizen.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "I sure do hope so. Well, I'm off to get my new tactical weapon. Should be a lot of fun.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "Enjoy. Bye officer.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(Something really strange is going on here and I want nothing to do with it.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "half cop default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "player", "", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+
+	
+	#endregion
 
 
 
