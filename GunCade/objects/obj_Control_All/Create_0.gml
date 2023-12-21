@@ -15417,26 +15417,122 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 //////////////////////////////////	 	
 
-    // twins come again
-	dialog_I = 480;
-
-
-
+     // twins come again
+	 dialog_I = 480;
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "enter default");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Hey dare mister. You didn' sell to day guy did you?", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  2, "twin1", "", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I still don't know “which guy” you're talking about.", snd_TextScroll_Default );			 	 
 	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "He's after my sister. I don' know what'er she done, but he been following her ‘round since yesterday.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "There was a guy in here earlier that I've never seen before, but I see new faces a lot so it's not unusual.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "If'n you sold to him, we could be in BIG trouble.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Random_SoldGun_Day10;		 
+	 dialog_I++;	 
+	 
+	 
+	 // if sold to "not" random 
+     dialog_I = 490
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "There was only the one new face and yes, I did sell to him.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "exit default");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "exit default");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Shit! That's it, we gotta get outta this town. Thanks for nothin partner.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+	 
+	 // if NOT sold to "not" random 
+     dialog_I = 500	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "There was only the one new face, but I didn't sell anything to him.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "You're the best. I'm so thankful I could kiss ya!", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(PLEASE NO!)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "But I aint got no time for that. Gotta go get my sis outta the coy pond in the middle of the mall and sneak us outta here.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(That sounds about right.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Later partner. I think this gonna be the last time we see each other, so take care a yourself.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I can only hope it's the last time!)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "exit default");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "exit default");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Say it isn't so. You take care of yourself too.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I think my life just got a lot better.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+	 
+	 
+	 
+	 
 
 
 
 
 	#endregion	
-	
+
+
+  #region 	
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Twins_SoldWeapon2_Day10;		 
+	 dialog_I++;
+	 //////////////////////////////////	 
+  #endregion
+
+
 
 #endregion end of day 10
 

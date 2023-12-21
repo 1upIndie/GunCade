@@ -408,6 +408,7 @@
     {"name":"spr_MiniGame_Name_J","order":7,"path":"sprites/spr_MiniGame_Name_J/spr_MiniGame_Name_J.yy",},
     {"name":"snd_TextScroll_Duke","order":1,"path":"sounds/snd_TextScroll_Duke/snd_TextScroll_Duke.yy",},
     {"name":"spr_FractNoice_Square","order":18,"path":"sprites/spr_FractNoice_Square/spr_FractNoice_Square.yy",},
+    {"name":"obj_Choise_Random_SoldGun_Day10","order":9,"path":"objects/obj_Choise_Random_SoldGun_Day10/obj_Choise_Random_SoldGun_Day10.yy",},
     {"name":"spr_Dialog_Wife_TalkNoBlink","order":3,"path":"sprites/spr_Dialog_Wife_TalkNoBlink/spr_Dialog_Wife_TalkNoBlink.yy",},
     {"name":"spr_WeaponDetail_Heavy_2","order":2,"path":"sprites/spr_WeaponDetail_Heavy_2/spr_WeaponDetail_Heavy_2.yy",},
     {"name":"__scribble_gen_2_parser","order":2,"path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},
