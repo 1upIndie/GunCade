@@ -14578,7 +14578,7 @@ var day_I = 0; // day 1
 	
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "enter default");
-     arrayCutscenes[day_I].setText(dialog_I,  2, "twin1", "Hey pal, we need a favor and you owes us one.", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Hey pal, we need a favor and you owes us one.", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
@@ -15130,26 +15130,312 @@ var day_I = 0; // day 1
 
 
 
-     #region if sold to both duke and weather last time, then they appear
+	
+	#endregion // 
+
+
+	#region if sold to duke and weather
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "enter default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "enter default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Welcome you two.", snd_TextScroll_Default );		  
+	 dialog_I++;
 	 
 	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "'ow are you doing?", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Good, I guess. Umm, no offense, but you smell like a cigar lounge today.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Yeah, he picked up smoking stogies...", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm guessing you're not thrilled by that?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Well...", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", " Duke, you're lady doesn't seem to be a fan.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Look, vhat iz she going to say? I can smoke stogies whenever and wherever I want, because I'm a stud.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke flex"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "I don't have to find a hidey place to have fun because I'm not a whimp like you, hahahahaha.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke flex"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I'm not sure I've ever hated anyone more.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke flex"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Don't worry about him, he's gotten a big head because his movie is doing so well.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh, are my, uh, props working out for you?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Yas! Now I just need something shocking for the next scene.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Anything for the movie star I suppose.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Oh yes, and for the newest prime time reporter!", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Does that mean you got your promotion?", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Yes! I'm so excited and it's all thanks to you. Your stories were huge!", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That's good to know. Are you doing another story on the movie?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Yes, tonight I am covering the current scene being filmed.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That's wonderful. So what is it I can provide for the big scene?", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "I vant you to zuprize me. I vant to be shocked.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That's not much to go on.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "The script is really open here. I'm not allowed to know too much, but what I know is there will be a large animal and a lot of danger.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I hope not any real danger, especially if you'll be there reporting.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Don't be a whoosy. I'll keep dat lady safe.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Of course. Well, let's see what I've got for you.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_DukeWeather_Day10;	 
+	 dialog_I++;
+	 
+
+	 // sale! 440
+	 dialog_I = 440;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Haha, now dis is a veppon.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I hope that thing doesn't actually work.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Ohhh, this is going to make the story this evening even better. Now, I've got to hurry and go get ready!", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "exit default");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Hey pal, come clos'a, I've got a secret to tell you.", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "There's nobody else around though...", snd_TextScroll_Default );		  
+	 dialog_I++;
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "After my big scene, I'm going to propose to her!", snd_TextScroll_Default );		  
+	 dialog_I++;	
+	
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That's wonderful Duke, may you two have a long and happy marriage.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", " (Speaking of marriage, my wife hasn't been in here for a few days. The quiet is almost eerie.)", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Thanks for all your help pal. Pazta rezeezta!", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "What's that supposed to mean?", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "It means I'll be zee'ing you again, dummy. Hahahaha!", snd_TextScroll_Default );		  
+	 dialog_I++;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Thank goodness that's over.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+	
+
+
+
+
+
+
+
+	// refuse!
+	 dialog_I = 460;	
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I don't know if I have what you need to be honest.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", " Vhat!? You vant to revuze da Duke!", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Calm down hunny. I guess business isn't our friends strong suit. Strange considering all the help he's given us before.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Ahhh... My movie is going to be ruined.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "Let's go, before you get any more upset.", snd_TextScroll_Default );		  
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Go ahead. I have zomezing to tell Mr. Gunzling'a.", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "weather", "", snd_TextScroll_Default );		  
+	 dialog_I++;	 
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "weather default"  , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Great, just me and Duke...)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "YOU MAROON!", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(There it is.)", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I vas going to propose tonight. Now, it von't be special.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	  
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Duke, I'm really sorry I didn't mean to cause something like that to be an issue.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Screw u man. I von't be zeeing you anymore.", snd_TextScroll_Default );		  
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I hated doing that, but if he wanted what I think he wanted, he could kill someone even if these things barely work to begin with. I did what had to be done.)", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_480;		
+	 dialog_I++;
+
 	 #endregion
 
-
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "not random default"  , "enter default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "random", "", snd_TextScroll_Default );		  
+	#region if twins are not locked, visit again
+	dialog_I = 480;
+	
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "not random default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );		  
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Twins_SoldWeapon2_Day10;		 
+	 dialog_I++;
+	 //////////////////////////////////	 	
+
+    // twins come again
+	dialog_I = 480;
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
-	
-	
-	#endregion
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
+     arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin1", "", snd_TextScroll_Default );			 	 
+	 dialog_I++;
 
-    #endregion
-	
+
+
+
+	#endregion	
 	
 
 #endregion end of day 10
