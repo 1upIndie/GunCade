@@ -1035,7 +1035,7 @@ giveKyle_Gun2_Day_7           = false; // giving kyle weapon (when rescuded befo
 payKyleRansomeThisTime_Day_7  = false; // paying randsome next time (second chance)
 autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is the same
 
-soldToDuke_Day8 = false; /// maybe remove
+soldToDuke_Day8               = false; /// maybe remove
 soldToWeather_Day8            = false;
 
 takeGunClown_Day9             = false;
@@ -9923,7 +9923,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(on...)", snd_TextScroll_Default );	 
 	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Effect_Blackout; /// jump to 190
-	/ arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_190; /// jump to 190	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_190; /// jump to 190	
 	 dialog_I++;
      
 	 /// fix 9999999 blackout effect does nothing
@@ -15112,7 +15112,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Default  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_3;	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_480;	
 	 dialog_I++;
 
 
@@ -15124,7 +15124,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Angry  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_3;	 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_480;	 	 
 	 dialog_I++;
 
 
@@ -15136,7 +15136,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay10_3_Spr_Angry  , "exit default"); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", randomExitText, snd_TextScroll_Default );			 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_3;		 	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_480;		 	 
 	 dialog_I++;	
 	
 	
