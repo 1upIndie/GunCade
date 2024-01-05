@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Choise_Granny_BaughtGun_Day9",
+  "name": "obj_ChoiseDone_DukeSoldGunNo_Day8",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Day_9",
-    "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_9.yy",
+    "name": "Day_8",
+    "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_8.yy",
   },
   "parentObjectId": {
-    "name": "obj_ChoiceDonePreviously_Parent",
-    "path": "objects/obj_ChoiceDonePreviously_Parent/obj_ChoiceDonePreviously_Parent.yy",
+    "name": "obj_ChoiceToDo_Parent",
+    "path": "objects/obj_ChoiceToDo_Parent/obj_ChoiceToDo_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

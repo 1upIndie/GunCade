@@ -1006,6 +1006,8 @@ acceptCopRebuyBatton_Day_2      = false; // if rebuys same button, you got a per
 wifePresentGivenDay2      = false;
 nunChoise_Day3            = false; // if trying to refuse to give money to nun
 nerdChoise_4Topics_Day3   = false; // 1-4
+soldToWeather_Day3        = false;
+
 
 grannyChoise_Day4         = false;    // eat a macaron first try
 grannyChoise2_Day4        = false; // eat a macaron second attempts try
@@ -1019,15 +1021,24 @@ copGivePistol_Day_5       = false; // retake gun
 giveJezMoney_Day_5        = false; // give jez for concert
 jezOrNerd_Day_5           = ""; //"jez"  "nerd"
 soldTwins_Day_4           = false;  // sold to twins
+payKyleRansome_Day_5      = false;
+
 
 payKyleRansome_Day_5      = false;  // paying randsome day 5
-eatMacaronGranny1_Day_6  = false;   //
-eatMacaronGranny2_Day_6  = false;   // 
+eatMacaronGranny1_Day_6   = false;   //
+eatMacaronGranny2_Day_6   = false;   // 
+soldToDuke_Day6           = false;
+grannyAutoBuy_Day6        = false;
 
 giveKyle_Gun2_Day_7           = false; // giving kyle weapon (when rescuded before)
 payKyleRansomeThisTime_Day_7  = false; // paying randsome next time (second chance)
 autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is the same
 
+soldToDuke_Day8 = false; /// maybe remove
+soldToWeather_Day8            = false;
+
+takeGunClown_Day9             = false;
+sellGiveKyleWeapon_Day9       = false;
 
 
 // playlist value -> not really bools, but index of song or -999 as not set!
@@ -2289,7 +2300,8 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
    arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Negative(555, 81,82,83,84,85, 1000);
    randomDay1to3_I++;
 
-#endregion
+
+
 
 var randomDay4to5_I  = 0;
 arrayRandomMinigameDay4to5  = array_create(0);
@@ -2305,6 +2317,9 @@ arrayRandomMinigameDay6to8[randomDay6to8_I] = new CreateRandomMinigame(); random
 var randomDayPlus_I  = 0;
 arrayRandomMinigameDay9Plus = array_create(0); // all unlocks possible!
 arrayRandomMinigameDay9Plus[randomDayPlus_I] = new CreateRandomMinigame(); randomDayPlus_I++;
+
+
+#endregion
 
 
 
@@ -5364,7 +5379,8 @@ var day_I = 0; // day 1
 	 
 	 // sale!
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather smiling"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "This will have to do I suppose. Hopefully we both get something out of this.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "This will have to do I suppose. Hopefully we both get something out of this.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_WeatherSoldGunYes_Day3;		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "weather smiling" , ""); 
@@ -5386,7 +5402,8 @@ var day_I = 0; // day 1
 	 dialog_I++;	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather default" , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "", snd_TextScroll_Default );		 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "", snd_TextScroll_Default );		 	
+ 
 	 dialog_I++;	 
 
 
@@ -5440,7 +5457,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_WeatherSoldGunNo_Day3;		 
 	 dialog_I++;
 	 //////////////////////////////////
 	 
@@ -5473,7 +5490,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_WeatherSoldGunNo_Day3;			 
 	 dialog_I++;
 	 //////////////////////////////////
 	
@@ -9709,7 +9726,7 @@ var day_I = 0; // day 1
      #endregion // end of angry dad
  
  
-    #region granny 130
+    #region granny 130 and duke
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "Hello young man.", snd_TextScroll_Default );	 
@@ -9768,7 +9785,8 @@ var day_I = 0; // day 1
 	 dialog_I++;  
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "exit default");		 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Please do. I'm so sorry.", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Please do. I'm so sorry.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Granny_BaughtGunNo_Day6;		 
 	 dialog_I++;
  
  
@@ -9851,9 +9869,10 @@ var day_I = 0; // day 1
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok that makes sense, well, let me help you out then.", snd_TextScroll_Default );
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGameAuto_Granny_Day6;
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGameAuto_Granny_Day6;
 	 dialog_I++;
-
+     
+	 // check not used??? 999999999
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
@@ -9898,12 +9917,16 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(on...)", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Effect_Blackout;
+	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Effect_Blackout; /// jump to 190
+	/ arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_190; /// jump to 190	
 	 dialog_I++;
+     
+	 /// fix 9999999 blackout effect does nothing
 
 
 
 
+     dialog_I = 190;    
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Ello. Are u alive? Come on. Get Up. Came on, do it nau. Don't make mi slap you awake.", snd_TextScroll_Duke );	  
 	 dialog_I++;
@@ -10076,7 +10099,8 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default" , "exit default");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_300;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_DukeSoldGunYes_Day8;		 
+ 
 	 dialog_I++;
 
 
@@ -10118,7 +10142,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "exit default");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_300;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_DukeSoldGunNo_Day8;	
 	 dialog_I++;
 
 
@@ -10135,7 +10159,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "exit default");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_300;	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_DukeSoldGunNo_Day8;	
 	 dialog_I++;	 
 
     
@@ -10154,6 +10178,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "(But neither has Kyle for that matter.)", snd_TextScroll_Default );	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle2_Day6;		 
 	 dialog_I++;	 
+
      
     #endregion
 
@@ -10526,7 +10551,8 @@ var day_I = 0; // day 1
 	// extro
 	 dialog_I = 480;	 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Ok, time to close shop. Can't believe I took that long of a nap earlier.)", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Ok, time to close shop. Can't believe I took that long of a nap earlier.)", snd_TextScroll_Default );	
+	  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day6;
 	 dialog_I++;
 
 
@@ -10544,31 +10570,6 @@ var day_I = 0; // day 1
 
     #region kyle
      
-	 // test animation block
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
-	 arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "some larg test to s some larg test to ssome larg test to ssome larg test to ssome larg test to ssome larg test to ssome larg test to s", snd_TextScroll_Default );
-	 dialog_I++;	
-
-	 // test block!
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "shadow", "I want the [#5893FF]cheapest shotgun[/c] or [#5893FF]any pistol[/c].", snd_TextScroll_Default );	
-	// arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Choise_GiveKyle_Gun2_Day7; // testing
-	//  arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]    =	obj_MiniGame_Jez_Day1; // testing random sale
-    // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_MiniGame_Shadow_Day1_Tutorial; // testing	 
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]   =	 obj_Choise_Clown_Day2; // testing	 
-	 dialog_I++;
-	 
-	 
-
-
-     //
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "...", snd_TextScroll_Default );
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle_Day7;	
-	 dialog_I++; 
-
-
-
-
 
 	 // if not payed randsome day 5
 	 dialog_I = 10;
@@ -11729,7 +11730,7 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Weather_GunSold_Day8;		 
 	 dialog_I++;
 
-
+     
 
      // if sold previously to weather a gun ->
      dialog_I = 30;	 
@@ -11772,7 +11773,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "How do you know that? Oh, wait, he mentioned that he has been here on my recommendation.", snd_TextScroll_Default );		 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Duke_GunSold_Day8;		 
 	 dialog_I++;
-
+        
 
      // if  sold previously to duke a gun ->
      dialog_I = 70;	 
@@ -12018,7 +12019,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
-
+        
      // if you have enough money ->
      dialog_I = 200;
 	 
@@ -12256,8 +12257,7 @@ var day_I = 0; // day 1
 
 
 
-
-	 
+   
 	 
 	 /// news toggle!
 	 dialog_I = 350;		 
@@ -12549,7 +12549,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Know what, maybe I should just drag the damn gun out here and let him see for himself.)", snd_TextScroll_Default );		
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Duke_Day8;		 
 	 dialog_I++; 
-
+     
+	 // check 999999999 -> if sold to duke and if should save here
 
 	// sale!
 	 dialog_I = 530;	 
@@ -12732,7 +12733,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Guess it's decision time).", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Victor_Bank8k3_Day8;	 
 	 dialog_I++;
-
+     
+	 
 
      // have enough money, choice for refuse or pay up
 	 dialog_I = 600;
@@ -12785,7 +12787,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "et the hell out of my mall.", snd_TextScroll_Default );	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_DayEndRepeat_Day8;			 
 	 dialog_I++;	 
-
+     
+	 // check 999999 obj_DayEndRepeat_Day8 not defined
 
 
 
@@ -12817,6 +12820,7 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_PacifistRun_Day8
 	 dialog_I++;
 
+	 // check 999999 obj_PacifistRun_Day8 not defined
 
 
 	#endregion
@@ -13007,7 +13011,9 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Doesn't that cost a lot?", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Jez_GaveMoney_Day9;	 
 	 dialog_I++;
-
+      
+	   
+	  
      // you gave her money previously
      dialog_I = 80;
 
@@ -13075,7 +13081,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "jez angry"  , "exit default");	 	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "Oh wonderful. Now, where were we?", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_NerdPickStory_Day9;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_NerdStory_Day9;	 
 	 dialog_I++;	 
 
 
@@ -13768,10 +13774,11 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Granny_BaughtGun_Day9;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_640;		 
 	 dialog_I++;
 	 //////////////////////////////////
-
+     
+	 
 	 
 	 #endregion
 
@@ -14077,7 +14084,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay9_1_Spr_Default  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay9Plus[getRandomMiniGameIndexDay9_1].introTextRandom[1], snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day8;		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day9;		
 	 dialog_I++;
      
 	 
@@ -14244,7 +14251,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Thanks bossman. So what do you say?", snd_TextScroll_Default );		 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Kyle_LetBuyGrenadeL_Day9;	 	 
 	 dialog_I++;
- 
+     
+	 // check add costs in if you give it for free to kyle!   99999999999
  
      // if you SELL it to him, lose no money	 
 	 dialog_I = 930;
