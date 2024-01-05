@@ -2219,7 +2219,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Got an order for my boss to pick something up. Need a SMG, a real heavy one too with ammo.");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Got an order for my boss to pick something up", "Need a SMG, a real heavy one too with ammo.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Much appreciated, my boss will be happy." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Man I'm gonna be in trouble thanks to you.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "I'll let my boss know you're no good, don't count on any return business."); 
@@ -2231,7 +2231,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Howdy there partner. I need to get all the crows outta my field. You got one of them triple barrels?");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Howdy there partner. I need to get all the crows outta my field.", "You got one of them triple barrels?");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Thanks partner." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "I guess you don't got what I need.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Partner, your ears must be soft. Guess I'll go elsewhere."); 
@@ -2243,7 +2243,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "I need to season a lot of steaks, got anything for that?");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "I need to season a lot of steaks.", "Got anything for that?");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Thanks." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Piss off, jerk.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "I guess I can't afford anything here."); 
@@ -2255,7 +2255,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Gimme the most powerful thing you got in stock. No attachments!");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Gimme the most powerful thing you got in stock.", "No attachments!");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "This is gonna do some damage!" );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "You're an idiot.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Too weak, I'm sure I can find something better elsewhere."); 
@@ -2267,7 +2267,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Hi there, can you sell me a real fancy pistol? I need something flashy and fully loaded to show off for my girlfriend, she's a gun nut.");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Hi there, can you sell me a real fancy pistol?", "I need something flashy and fully loaded to show off for my girlfriend, she's a gun nut.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Oh man, thanks so much. I'll spread the word about you!" );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "That sucks, I guess I'll be single again...");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Damn dude I can't use that. Thanks for nothing."); 
@@ -2279,7 +2279,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Can I get one of those things the British cops use? I need to teach someone a lesson...");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Can I get one of those things the British cops use?", "I need to teach someone a lesson...");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Appreciate it." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Maybe someone needs to teach you a lesson.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Maybe someone needs to teach you a lesson."); 
