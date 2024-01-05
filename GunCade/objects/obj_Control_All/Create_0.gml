@@ -15322,7 +15322,8 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"     , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Thank goodness that's over.)", snd_TextScroll_Default );		  
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Thank goodness that's over.)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_480;		 
 	 dialog_I++;
 	
 
@@ -15413,12 +15414,12 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Twins_SoldWeapon2_Day10;		 
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Twins_SoldWeapon2_Day10;		 
 	 dialog_I++;
 	 //////////////////////////////////	 	
 
      // twins come again
-	 dialog_I = 480;
+	 //dialog_I = 480;
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "enter default");
      arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "Hey dare mister. You didn' sell to day guy did you?", snd_TextScroll_Default );			 	 
@@ -15509,7 +15510,217 @@ var day_I = 0; // day 1
 	 dialog_I++;	 
 	 
 	 
+	#region phone call, kyel got caught again
+	
+	dialog_I = 520;
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Twins_SoldWeapon2_Day10;		 
+	 dialog_I++;
+	 //////////////////////////////////	
+
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hello.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Bossman...", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Kyle, how's it going? You take care of your business?", snd_TextScroll_Default );			 	 
+	 dialog_I++;
 	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "They got me again...", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "OH NO!", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "They said they'll let me go if you come speak with them.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "How much do they want this time?", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Nothing. They just want to meet the guy responsible.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh damn, that sounds pretty risky.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "HELP ME! PLEASE!", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "They have you at the same place as last time? Maybe I could swing by real quick.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "No, they have me across the border. I'm at the Camel of the Infant Convent.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Holy shit, that's a 14 hour drive one way.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "I guess this is their HQ. They said if you get here by this time tomorrow, they'll meet with us both then let me go.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "What about me!?", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "They just want to talk.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Yeah, I had a friend that went to meet someone that just wanted to talk to him about a car he jacked when we were kids.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Turns out, talking meant a crow-bar through his teeth.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "I don't think they're gonna hurt you, but I know they're gonna hurt me if you don't come.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Why wouldn't they just turn around and let you go like last time? I can probably wire them some money.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "I'm looking at them and they are shaking their heads. I don't think money is going to work this time.", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "Son of a...");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Ok, calm down, think this through. They let him go last time so maybe it's a tactic just to get me to come to them.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;	 
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Then again, they know where I work and I'm sure by now they would just come paint the walls with my innards right here.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(If they were going to do that, so just maybe I'm safe either way here. The question is, will Kyle be safe?)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(What to do, what to do...)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Kyle_SavedPreviously_Day10;		 
+	 dialog_I++;
+
+
+     // if saved Kyle before
+	 dialog_I = 550;	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Bossman, what time should I tell them you're gonna be here?", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_KyleSave_Day10;		 
+	 dialog_I++;
+
+
+     // if NOT saved Kyle before
+	 dialog_I = 555;	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "What's it gonna be? Are you coming to save me, or did our friendship truly mean nothing?", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_KyleSave_Day10;		 
+	 dialog_I++;
+
+
+     
+	 
+	 
+	 // choice -> save kyle (again)
+	 dialog_I = 560;	
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm on my way as soon as I lock up everything here.", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Kyle_SavedPreviously2_Day10;		 
+	 dialog_I++;
+
+
+     // if  saved before (grumpy)
+	 dialog_I = 570;
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Good...", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_590; 
+	 dialog_I++;
+
+
+     // if not saved before (grumpy)
+	 dialog_I = 580;
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Thanks bossman...", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Dialog_SkipIndex_to_590; 
+	 dialog_I++;
+
+
+
+      // tie back together
+	 dialog_I = 590;	  
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Click", snd_TextScroll_Default );	
+	 dialog_I++;
+	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(I sure hope I'm right about this. Better look things over and call the wife to let her know I won't be home.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+	
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Although, I bet she won't even notice I'm gone.)", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_DayEnd_Day10;  
+	 dialog_I++;		
+	
+	
+	
+	/// if dont want to save Kyle
+	 dialog_I = 600;	
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "You're gonna be fine Kyle. Call me when they let you go.", snd_TextScroll_Default );			 	 
+	 dialog_I++;	
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "...", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "kyle", "Click", snd_TextScroll_Default );	
+	 dialog_I++;
+
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(I sure hope I'm right about this.)", snd_TextScroll_Default );			 	 
+	 dialog_I++;
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "(Better call it a day in case one of those nuns decides she wants to come pay me a visit before I can get out of here.)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_DayEnd_Day10;  
+	 dialog_I++;
+
+	#endregion 
 	 
 
 
@@ -15535,6 +15746,23 @@ var day_I = 0; // day 1
 
 
 #endregion end of day 10
+
+
+#region day 11  1111111111
+
+
+	 day_I    = 9; // day 10
+	 dialog_I = 0; // zeiger
+ 
+	  arrayCutscenes[day_I] = new Createcutscene(day_I  , false);  // 
+
+     // split
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "Hu?", snd_TextScroll_Default );		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_SoldWeapon_Day10;	 
+	 dialog_I++;
+
+#endregion
 
 
 #endregion // end of regular days
