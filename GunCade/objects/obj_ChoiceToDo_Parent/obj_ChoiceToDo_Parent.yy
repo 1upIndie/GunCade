@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Choises",
-    "path": "folders/Objects/Cutscenes/MiniGame/Choises.yy",
+    "name": "_Parents",
+    "path": "folders/Objects/Cutscenes/MiniGame/Choises/_Parents.yy",
   },
   "parentObjectId": null,
   "persistent": false,

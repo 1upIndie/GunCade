@@ -234,6 +234,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NameButtons","folderPath":"folders/Sprites/UI/SortBy/NameButtons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TypeButtons","folderPath":"folders/Sprites/UI/SortBy/TypeButtons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stats","folderPath":"folders/Sprites/UI/Stats.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"_Parents","folderPath":"folders/Objects/Cutscenes/MiniGame/Choises/_Parents.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

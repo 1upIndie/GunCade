@@ -8,7 +8,7 @@ audio_group_load( audiogroup_SFX );
 // fail save
 clearSaveFile = false; // clears every time game is closed to default, no "real" saving then possible!
 
-debug = false;
+debug = true;
 demo  = true;
 
 randomize();
@@ -5378,14 +5378,13 @@ var day_I = 0; // day 1
 	 dialog_I++; 	
 	
 
-
+     //  777777777
 
       dialog_I = 150;
 	 
 	 // sale!
      arrayCutscenes[day_I].setSprite(dialog_I,1, "weather smiling"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "This will have to do I suppose. Hopefully we both get something out of this.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_WeatherSoldGunYes_Day3;		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "weather", "This will have to do I suppose. Hopefully we both get something out of this.", snd_TextScroll_Default );		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "weather smiling" , ""); 
@@ -5420,7 +5419,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_180;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_WeatherSoldGunYes_Day3;			 
 	 dialog_I++;
 	 //////////////////////////////////
 

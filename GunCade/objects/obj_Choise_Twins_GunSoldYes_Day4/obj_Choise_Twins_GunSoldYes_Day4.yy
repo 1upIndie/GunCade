@@ -12,8 +12,8 @@
     "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_4.yy",
   },
   "parentObjectId": {
-    "name": "obj_ChoiceDonePreviously_Parent",
-    "path": "objects/obj_ChoiceDonePreviously_Parent/obj_ChoiceDonePreviously_Parent.yy",
+    "name": "obj_Dialog_SkipIndex_To_Parent",
+    "path": "objects/obj_Dialog_SkipIndex_To_Parent/obj_Dialog_SkipIndex_To_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
