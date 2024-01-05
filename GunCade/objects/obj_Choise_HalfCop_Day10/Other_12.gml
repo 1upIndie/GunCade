@@ -1,8 +1,8 @@
 /// @description choise 2
 
 // set variable
-toSkipTo_Index = 110;
-obj_Control_All.nunChoise_Day3 = false 
+toSkipTo_Index = 200;
+obj_Control_All.tellHalfCopTruth_Day10 = false; 
 	
 // jump to plus unblock
 obj_Workspace_Control.dialogIndex = toSkipTo_Index;

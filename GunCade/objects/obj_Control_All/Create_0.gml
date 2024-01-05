@@ -1030,6 +1030,7 @@ eatMacaronGranny2_Day_6   = false;   //
 soldToDuke_Day6           = false;
 grannyAutoBuy_Day6        = false;
 
+soldToTwinds_Day7             = false;
 giveKyle_Gun2_Day_7           = false; // giving kyle weapon (when rescuded before)
 payKyleRansomeThisTime_Day_7  = false; // paying randsome next time (second chance)
 autoSale_kyleWeapon_Day_7     =  false; // check if not giveKyle_Gun2_Day_7 is the same
@@ -1039,6 +1040,10 @@ soldToWeather_Day8            = false;
 
 takeGunClown_Day9             = false;
 sellGiveKyleWeapon_Day9       = false;
+
+tellHalfCopTruth_Day10        = false;
+soldToNotRandom_Day10         = false;
+payKyleRansome_Day_10        = false;
 
 
 // playlist value -> not really bools, but index of song or -999 as not set!
@@ -7476,7 +7481,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 			 
      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Yeehaw... BOOM BOOM! ", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290; // extra variable if sold to them!		  
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4; // extra variable if sold to them!		  
 	 dialog_I++;
 
 
@@ -7537,7 +7542,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Let's go then...", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
 	 dialog_I++;	 
 
 
@@ -7557,7 +7562,7 @@ var day_I = 0; // day 1
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "C'mon sis, let's go find us a real man-fat-yer.", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
 	 dialog_I++;
 
       #endregion
@@ -10884,6 +10889,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Twins_Day7; // skip to sale		 
 	 dialog_I++; 		 
 	
+	 /// check minigame not set!  999999
 	
 	
 	/// sale
@@ -10904,7 +10910,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "exit default");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "exit default");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Oh lord, what have I done? They're going to shoot up the parking lot.)", snd_TextScroll_Default );	 
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_230; // skip to sale		 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day7; // skip to sale		 
 	 dialog_I++; 	
 	
 	
@@ -10930,7 +10936,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "exit default");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "exit default");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Oh man, I hope these two don't work at Viktor's club.)", snd_TextScroll_Default );	 	
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_230; // skip to sale		 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldNo_Day7; // skip to sale		 
 	 dialog_I++; 	
 	
 	
@@ -10962,7 +10968,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "exit default");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "exit default");			 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Oh man, I hope these two don't work at Viktor's club.)", snd_TextScroll_Default );	 	 
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_230; // skip to sale		 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldNo_Day7; // skip to sale		 
 	 dialog_I++; 
 
 
@@ -14873,6 +14879,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "cop", "Do you have the weapon?", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Cop_BaughtGun_Day10;		 
 	 dialog_I++;
+     
 
 
 	 dialog_I = 220; // accepted tripple barrel from clown
@@ -15277,6 +15284,7 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_DukeWeather_Day10;	 
 	 dialog_I++;
 	 
+	 //// check minisale not set 99999999
 
 	 // sale! 440
 	 dialog_I = 440;	 
@@ -15640,7 +15648,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(What to do, what to do...)", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I]  = obj_Choise_Kyle_SavedPreviously_Day10;		 
 	 dialog_I++;
-
+     
+	 
 
      // if saved Kyle before
 	 dialog_I = 550;	 
