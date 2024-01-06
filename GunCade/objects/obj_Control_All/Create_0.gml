@@ -12,7 +12,7 @@ debug = true;
 demo  = true;
 
 randomize();
-
+randomize();
 
 debugMiniGame = false; 
 sound_Debug = false;
@@ -942,7 +942,7 @@ array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Coffee", 8
 array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Flowers", 120, 0, 3, 0, spr_Office_Flowers, 741, 418 );  // 3
   array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Flowers_pop, 276, 402 ); officeProp_I++; 
 
-array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Mono", 350, 2, 3, 0, spr_Office_Flowers, 792, 353 );  // 4
+array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Mono", 350, 2, 3, 0, spr_Office_Mono, 792, 353 );  // 4
   array_OfficeProp[officeProp_I].setOffice_PopUp( spr_Office_Mono_pop, 369, 226 ); officeProp_I++;  
 
 array_OfficeProp[officeProp_I] = new createOffice_Prop(officeProp_I, "Permit", 9999, 99, 99, 0, spr_Office_Flowers, 999, 999 ); // 5
@@ -9420,7 +9420,7 @@ var day_I = 0; // day 1
     
     var getRandomMiniGameIndexDay5_2  = scr_SetRandomMiniGameIndex( arrayRandomMinigameDay4to5 );
 	
-	randomSaleOverride_Day5_2 = arrayRandomMinigameDay4to5[getRandomMiniGameIndexDay3_2]; // array for override once instance exist!
+	randomSaleOverride_Day5_2 = arrayRandomMinigameDay4to5[getRandomMiniGameIndexDay5_2]; // array for override once instance exist!
 	/////////////////////// end auto set random sale  ///////////////////////////////////////
 
 	 dialog_I = 780;	   

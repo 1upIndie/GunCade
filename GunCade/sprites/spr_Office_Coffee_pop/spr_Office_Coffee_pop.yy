@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Office_Coffee_pop",
-  "bbox_bottom": 181,
-  "bbox_left": 3,
-  "bbox_right": 377,
-  "bbox_top": 3,
+  "bbox_bottom": 183,
+  "bbox_left": 4,
+  "bbox_right": 378,
+  "bbox_top": 5,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1df7cc58-33d4-4114-a61f-b9a17b4651b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2fe6864-b98c-45e2-9500-4f999cb15d91",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 186,
+  "height": 189,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"19a42b48-8200-46aa-8b5a-41b42146c467","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bf350175-deac-4054-baaa-4d359863fd9c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1df7cc58-33d4-4114-a61f-b9a17b4651b2","path":"sprites/spr_Office_Coffee_pop/spr_Office_Coffee_pop.yy",},},},"Disabled":false,"id":"15c68d8b-36f3-4a51-b4fc-207a79699419","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f2fe6864-b98c-45e2-9500-4f999cb15d91","path":"sprites/spr_Office_Coffee_pop/spr_Office_Coffee_pop.yy",},},},"Disabled":false,"id":"a8029677-5088-4c3e-b914-fcaf573ca915","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 385,
+  "width": 386,
 }
