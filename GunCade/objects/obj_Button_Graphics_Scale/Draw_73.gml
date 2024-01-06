@@ -14,6 +14,9 @@ if(state == "hover"){
 
   }
 }
+
+if (obj_Control_All.debug == true){
+
 var xxx = x+ 170;
 var yyy = y + 5;
 var yyy2 = yyy + 15;
@@ -23,3 +26,4 @@ draw_text(xxx, yyy,  txt );
 
 var txt2 = "W: " + string( window_get_width()) +   "H: " + string(window_get_height());
 draw_text(xxx, yyy2,  txt2 );
+}

@@ -2,7 +2,8 @@
 
 
 
-var txt = string(obj_Control_All.volume_Master ) + " : " + string(obj_Control_All.volume_Music ) + " : " + string(obj_Control_All.volume_Sfx );
+var txt ="No";
+if ( instance_exists(obj_FakeMouse) ){ txt = "yes"; }
 
 
 draw_text(x,y+30, txt)
