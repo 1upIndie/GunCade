@@ -19,7 +19,7 @@ if(isBaught == false){
 	
 // set not baught price x,y
  hoverOver_Price_X = (sprite_width/2);
- var getPrice    = prefixCash_ + string( hoverOver_Price ) + "$" + suffixCash_; 
+ var getPrice    = prefixCash_ + "$" + string( hoverOver_Price ) + suffixCash_; 
  hoverOver_PriceTXT = getPrice;  
  
  

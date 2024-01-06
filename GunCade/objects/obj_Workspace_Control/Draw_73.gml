@@ -53,11 +53,16 @@ scribble(array_Txt[dialogIndex]).wrap(textNeueZeile, -1,false).draw(camX+textX, 
     var prefixCash_ =  obj_Control_All.textDetail_CashPrefix;
     var suffixCash_ =  obj_Control_All.textDetail_CashSuffix; 
 
-    var cashTxt = prefixCash_ + string( obj_Control_All.cashSumOnDay ) + "$" + suffixCash_; 
+    var cashTxt = prefixCash_ + "$" + string( obj_Control_All.cashSumOnDay ) + suffixCash_; 
+
+    if(obj_Control_All.cashSumOnDay < 0 ){
+	    cashTxt = prefixCash_ + "-$" + string( abs(obj_Control_All.cashSumOnDay) ) + suffixCash_; 
+	}
+
 
 	var moneyX = obj_Control_All.moneyTxtX;
 	var moneyY = obj_Control_All.moneyTxtY;
-
+    
 
     scribble(cashTxt).draw( camX+moneyX, camY+moneyY );
 	 }

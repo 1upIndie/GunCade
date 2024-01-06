@@ -158,21 +158,54 @@ draw_Txt_Left_Value[6] = prefix + "Kyle expenses" + suffix;
 draw_Txt_Left_Value[8] = prefixTotal + "Today's total" + suffixTotal;
 
 
-draw_Txt_Right_Value[1] =  prefixR + string(result_Sold) + "$";
-draw_Txt_Right_Value[2] =  prefixR + string(result_Tips) + "$";
+draw_Txt_Right_Value[1] =  prefixR + "$" + string(result_Sold);
+draw_Txt_Right_Value[2] =  prefixR + "$" + string(result_Tips);
+
+    if( result_Sold < 0 ){
+       draw_Txt_Right_Value[1] = prefixR +  "-$" + string( abs(result_Sold) )  + suffix;	
+	}
+
+    if( result_Tips < 0 ){
+       draw_Txt_Right_Value[2] = prefixR +  "-$" + string( abs(result_Tips) )  + suffix;	
+	}
+
+
 
   if(obj_Control_All.currentCutscene_DAY <= 100){
-draw_Txt_Right_Value[4] = prefixR + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].newWeapons ) + "$" + suffix;
-draw_Txt_Right_Value[5] = prefixR + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Wife  ) + "$" +  suffix;
-draw_Txt_Right_Value[6] = prefixR + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Kyle  ) + "$" +  suffix;
-  } else {
+draw_Txt_Right_Value[4] = prefixR +  "$" + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].newWeapons )  + suffix;
+draw_Txt_Right_Value[5] = prefixR +  "$" + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Wife  )  + suffix;
+draw_Txt_Right_Value[6] = prefixR +  "$" + string( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Kyle  )  + suffix;
 
-draw_Txt_Right_Value[4] = prefixR + string( 0  ) + "$" + suffix;
-draw_Txt_Right_Value[5] = prefixR + string( 0  ) + "$" +  suffix;
-draw_Txt_Right_Value[6] = prefixR + string( 0  ) + "$" +  suffix;
+
+
+    if( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].newWeapons < 0 ){
+       draw_Txt_Right_Value[4] = prefixR +  "-$" + string( abs(obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].newWeapons) )  + suffix;	
+	}
+
+    if( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Wife < 0 ){
+       draw_Txt_Right_Value[5] = prefixR +  "-$" + string( abs(obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Wife) )  + suffix;	
+	}
+
+    if( obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Kyle < 0 ){
+       draw_Txt_Right_Value[6] = prefixR +  "-$" + string( abs(obj_Control_All.array_Costs_KyleWife[ obj_Control_All.currentCutscene_DAY ].cost_Kyle) )  + suffix;	
+	}
+
+
+
+} else {
+
+draw_Txt_Right_Value[4] = prefixR + "$" + string( 0  ) +  suffix;
+draw_Txt_Right_Value[5] = prefixR + "$" + string( 0  ) +  suffix;
+draw_Txt_Right_Value[6] = prefixR + "$" + string( 0  ) +  suffix;
   } 
   
-draw_Txt_Right_Value[8] =  prefixTotalR + string(result_Total) + "$" +  suffixTotal;
+draw_Txt_Right_Value[8] =  prefixTotalR +  "$" +  string(result_Total) + suffixTotal;
+
+    if( result_Total < 0 ){
+       draw_Txt_Right_Value[8] = prefixR +  "-$" + string( abs(result_Total) )  + suffixTotal;	
+	}
+
+
 //draw_Txt_Right_Value[9] = result_Service;
 
 draw_Txt_Left_X  =  40;

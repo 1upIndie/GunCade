@@ -7,9 +7,16 @@
 
 
 
-var costsText =  obj_Control_All.textCostsMiniGame_Prefix  + string(current_Costs) + "$" +  obj_Control_All.textCostsMiniGame_Suffix;
+var costsText =  obj_Control_All.textCostsMiniGame_Prefix  + "$" + string(current_Costs) + obj_Control_All.textCostsMiniGame_Suffix;
 var moneyX = obj_Control_All.moneyTxtX;
 var moneyY = moneyTxtY;
+
+
+    if(current_Costs < 0 ){
+	costsText = obj_Control_All.textCostsMiniGame_Prefix  +"-$" +  string(abs(current_Costs)) +  obj_Control_All.textCostsMiniGame_Suffix;
+		
+	}
+
 
 scribble(costsText).draw( camX+ camWidth + money_X, camY+money_Y);
 
