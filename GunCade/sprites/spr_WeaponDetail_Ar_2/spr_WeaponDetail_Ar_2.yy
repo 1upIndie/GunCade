@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8fa5045e-7b86-4806-80bf-f1a939c5aab1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"603e32f5-bd04-48d9-8b5e-c520ca9a0cc2",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f3f6268b-73fa-4315-be56-4d1015193579","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e0946420-f117-407f-a33a-be7877891137","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8fa5045e-7b86-4806-80bf-f1a939c5aab1","path":"sprites/spr_WeaponDetail_Ar_2/spr_WeaponDetail_Ar_2.yy",},},},"Disabled":false,"id":"2d36d0fb-852c-4090-ab42-f93e68411f49","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"603e32f5-bd04-48d9-8b5e-c520ca9a0cc2","path":"sprites/spr_WeaponDetail_Ar_2/spr_WeaponDetail_Ar_2.yy",},},},"Disabled":false,"id":"9ba33a73-5ec0-434c-9f78-2952ead70682","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

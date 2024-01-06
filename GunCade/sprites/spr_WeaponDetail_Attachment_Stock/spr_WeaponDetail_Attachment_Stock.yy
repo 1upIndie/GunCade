@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"75cb8758-0680-4278-b5c9-e4a844b3aed4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77329182-b706-40f8-a4bc-53349abe033f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5af52c78-f9b0-4715-80ed-1ed4917f578a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c937a8bc-0e81-49d7-8638-ab6005c3dbf0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"75cb8758-0680-4278-b5c9-e4a844b3aed4","path":"sprites/spr_WeaponDetail_Attachment_Stock/spr_WeaponDetail_Attachment_Stock.yy",},},},"Disabled":false,"id":"d7237074-3b81-47f0-a711-126cadf7828c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"77329182-b706-40f8-a4bc-53349abe033f","path":"sprites/spr_WeaponDetail_Attachment_Stock/spr_WeaponDetail_Attachment_Stock.yy",},},},"Disabled":false,"id":"49287ccb-dba3-497b-bda5-61c2bf385f83","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
