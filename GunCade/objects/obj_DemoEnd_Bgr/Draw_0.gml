@@ -13,7 +13,11 @@ y = camY -10;
 
 draw_sprite_stretched(sprite_index, 0, camX-buffer, camY-buffer, camWidth + (2*buffer), camHeight + (2*buffer)  );
 
+/*
+if (obj_Control_All.debug == true){
 var vv = 50;
 var txt = fpsDraw;
 draw_text_ext_transformed(camX+vv, camY+vv, txt, 0, 500, 2,2, 0 );
+}
+*/
 

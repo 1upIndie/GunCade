@@ -2,7 +2,7 @@
 // Sie können Ihren Code in diesem Editor schreiben
 
 
-
+/*
  if (obj_Control_All.debug == true){
 	var  camX        = camera_get_view_x( view_camera[0] );
 	var  camY        = camera_get_view_y( view_camera[0] );
@@ -22,5 +22,5 @@
 	draw_text_transformed( xx,yy1, txtOutcome, 2.5,3, 0);
 	
  }
-	
+	*/
 	

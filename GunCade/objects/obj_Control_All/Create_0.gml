@@ -2259,15 +2259,17 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "I need to season a lot of steaks.", "Got anything for that?");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "My boss sent me here to pick up an order.", "He said you got a gun that uses lots of rounds");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Thanks." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Piss off, jerk.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "I guess I can't afford anything here."); 
 
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Perfect(0, 0,0,0,0,0,0);
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Positive(3,  41, 0, 0, 0,0,0,0,0,0,0,0,0);   
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Perfect(31, 0,0,0,0,0,0);
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Positive(30,  32, 0, 0, 0,0,0,0,0,0,0,0,0);   
    arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Negative(555, 81,82,83,84,85, 2000);
    randomDay1to3_I++;
+
+
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
@@ -4521,7 +4523,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "My budget is limited, so anything scary under 2500$ will do.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "My budget is limited, so anything scary under 500$ will do.", snd_TextScroll_Default );		 
 	 dialog_I++;	
 
 
@@ -4535,7 +4537,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(What did he say again? Below 4000 or 2000?)", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(What did he say again? Below 100 or 200?)", snd_TextScroll_Default );		
 		 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Nerd_Day2;	
 	 dialog_I++;
 
@@ -5377,8 +5379,6 @@ var day_I = 0; // day 1
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Weather_Day3;		 
 	 dialog_I++; 	
 	
-
-     //  777777777
 
       dialog_I = 150;
 	 

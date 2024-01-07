@@ -10,3 +10,6 @@ var txt2 = "Money: " + string(obj_Control_All.cashTotalInSave_Office);
 
 draw_text(x+15,y+15, txt1 );
 draw_text(x+15,y+40, txt2 );
+var txtDebug = "Debug: " + string(obj_Control_All.debug);
+draw_text(x+15,y+60, txtDebug  );
+

@@ -16,9 +16,8 @@ event_inherited();
  var stack_ = 0;
  array_Positive_Weapons[stack_]  = 0; stack_++;  //  melee all 
  array_Positive_Weapons[stack_]  = 1; stack_++;  //  pistols
- array_Positive_Weapons[stack_]  = 2; stack_++;  //  pistol
+ array_Positive_Weapons[stack_]  = 10; stack_++;  //  pistol
 
- array_Positive_Weapons[stack_]  = 21; stack_++;  //  woozie
  
  // negatives!
  //array_Negative           = array_create(0); // values that make it a bad sale -> fail!
@@ -28,7 +27,7 @@ event_inherited();
  //negative_Scope           = false; 
  negative_Stock           = false;   
  negative_Grip            = false;
- negative_Costs           = 2500; 
+ negative_Costs           = 500; 
  
  
  // jump to points
