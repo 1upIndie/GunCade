@@ -6863,7 +6863,7 @@ var day_I = 0; // day 1
  
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "I made extra for the ladies in the Big Hat Bitty club. I was on my way to meet them, but I can spare one for you.", snd_TextScroll_Default );		 
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseGrannyMacaron_Day4; 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseGranny_MacaronDay4; 
 	 dialog_I++;   
  
      // if accepted macaron
@@ -6871,7 +6871,7 @@ var day_I = 0; // day 1
        
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "Well, what do you think?", snd_TextScroll_Default );		
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_Screen_Drugged;
+     // arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_Screen_Drugged;   77777 fix it
 	 dialog_I++;  
  
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
@@ -6909,50 +6909,49 @@ var day_I = 0; // day 1
      // she tries again 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "I've never had someone turn down my macaroon before. You really should try it.", snd_TextScroll_Default );
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseGrannyMacaron2_Day4; 	 
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseGranny_Macaron2Day4; 	 
 	 dialog_I++;  
      
 	 
      // if denied 2nd time macaron, she goes away
 	 dialog_I = 40;	 
       
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny angry"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "Oh young man, I really wish you wouldn't have said that. I suppose I don't need much anyways.", snd_TextScroll_Default );	 
 	 dialog_I++;       
 	 
       
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny angry"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "I was just stopping in to say hello and to say thanks for helping me out the other day. You are... were such a gentleman.", snd_TextScroll_Default );	 
 	 dialog_I++;  	
 	 
  
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny angry"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I didn't mean any offense, really...", snd_TextScroll_Default );		 
 	 dialog_I++; 	 
       
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "exit default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "It's ok, I really must be off.", snd_TextScroll_Default );	 	 
 	 dialog_I++;  	
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "exit default");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Maybe I should have just eaten the stupid cookie.)", snd_TextScroll_Default );		 
 	 dialog_I++; 	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I'm still so upset from last night I can't stand the thought of eating and now I upset a poor old lady.)", snd_TextScroll_Default );		 
-	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_120;		 
 	 dialog_I++;	 
 	 
 	 
 	 // if accepted first or second time, she tells a mafia story + sale possible
 	dialog_I = 50;	  
 	      
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny smiling"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "Last night I was watching an old movie and the main character was this sweet young lady.", snd_TextScroll_Default );	 
 	 dialog_I++;  	
       
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny smiling"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "She winds up falling in love with a gentleman who turns out to be in a criminal organization called the family.", snd_TextScroll_Default );	 
 	 dialog_I++; 	
       
@@ -6960,12 +6959,12 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "So she winds up being a part of his unscrupulous business.", snd_TextScroll_Default );	 
 	 dialog_I++; 	
       
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny smiling"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "However, over time and with lots of love, she manages to turn his heart soft and they eventually run away together to live happily ever after.", snd_TextScroll_Default );	 
 	 dialog_I++; 
 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny smiling"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Sounds wonderful.", snd_TextScroll_Default );		 
 	 dialog_I++;
 	 
@@ -6992,7 +6991,7 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 
       
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny smiling"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "Oh my boy, I can't spoil the ending for you. You should really watch the movie yourself. I can't remember the name, but it had that handsome actor, Mumphrey Yogart.", snd_TextScroll_Default );	 
 	 dialog_I++; 
 	 
@@ -7054,8 +7053,8 @@ var day_I = 0; // day 1
 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ganster movie small machine gun, got it).", snd_TextScroll_Default );	
-     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Granny_Day4; 		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Ganster movie small machine gun, got it).", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Granny_Day4; 	 /// 7777 fix it, add option that you cannot refuse!	 
 	 dialog_I++;
 
      
@@ -7077,20 +7076,27 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "exit default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I would love that, you can stop by anytime.", snd_TextScroll_Default );
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", ".", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_120;	 
 	 dialog_I++;
-	 
+
 	 
 
 	 // Fail! 110
 	  
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "exit default");		
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Sorry about that, I was thinking about that delicious macaroon and my mind must have slipped.", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Sorry about that, I was thinking about that delicious macaroon and my mind must have slipped.", snd_TextScroll_Default );	 	 
+	 dialog_I++;
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", ".", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_120;	 
 	 dialog_I++;
-
 
 
      #endregion  
@@ -7293,7 +7299,7 @@ var day_I = 0; // day 1
 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "shadow default"  , "");	 
+	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(What the hell? How did he do that?)", snd_TextScroll_Default );		 
 	 dialog_I++;
 	 
@@ -7328,7 +7334,7 @@ var day_I = 0; // day 1
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	  
-      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Weeze was in the mall an' heard ‘bout your lil ar-cay-duh, an weeze was wondren if we could play around.", snd_TextScroll_Default );		 
+      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Weeze was in the mall an' heard 'bout your lil ar-cay-duh, an weeze was wondren if we could play around.", snd_TextScroll_Default );		 
 	  dialog_I++;
 
 
@@ -7530,7 +7536,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ladies, please...", snd_TextScroll_Default );	
-
+	 dialog_I++;
 
       arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
       arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	
@@ -7551,12 +7557,16 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  2,  "twin2", "I'm gonna stomp the rest of your teeth out...", snd_TextScroll_Default );	 
 	 dialog_I++;	 
 	  
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Let's go then...", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Let's go then...", snd_TextScroll_Default );		 
 	 dialog_I++;	 
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
+	 dialog_I++;
 
 
 
@@ -7571,8 +7581,8 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "I said anything that goes boom ya idiot!", snd_TextScroll_Default );	 
 	 dialog_I++;	 
 	  
-      arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
-      arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "C'mon sis, let's go find us a real man-fat-yer.", snd_TextScroll_Default );	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
 	 dialog_I++;

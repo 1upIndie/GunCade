@@ -1,19 +1,9 @@
-/// @description Hier Beschreibung einfügen
-// Sie können Ihren Code in diesem Editor schreiben
-
-// Inherit the parent event
-event_inherited();
-
-//+ set variable
-//soldTwins_Day_4 = true;
-// refuse button disappears!, can only botch or sale
-
 
 // Inherit the parent event
 event_inherited();
 
 
- possible_Weapon_Perfect             = 12;   // bolt action
+ possible_Weapon_Perfect             = 12;   //  tammy gun
  // possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  // possible_Muzzle_Perfect          = -999;  
  // possible_Optics_Perfect          = -999; 
@@ -23,7 +13,7 @@ event_inherited();
  
  // all other combos -> good sale, no tip
 
- /// All values not set!!! only jump points good
+ 
  var stack_ = 0;
  array_Positive_Weapons[stack_]  = 10; stack_++;  //  pistols 
  array_Positive_Weapons[stack_]  = 11; stack_++;  //  pistols
@@ -46,16 +36,19 @@ event_inherited();
  negative_Costs           = 9999; 
  
  
- 
- // sale 250
-// refuse 260
-// botch 280
-
-// jumper to 290
  // jump to points
   result_Index_Sale      = 250;
   result_Index_Refuse    = 260;
   result_Index_Messup    = 280;  
+  
+  
+ // sale 100
+// refuse 110
+// botch 120
+
+// jumper to 130
+ 
+  
  /*
  0,1,2 melee
 10,11,12 pistol
