@@ -2,6 +2,8 @@
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":6,"path":"folders/Animation Curves.yy",},
     {"name":"Debug","order":9,"path":"folders/Debug.yy",},
+    {"name":"Choices","order":11,"path":"folders/Debug/Choices.yy",},
+    {"name":"Day_1","order":3,"path":"folders/Debug/Choices/Day_1.yy",},
     {"name":"Regular_Days","order":3,"path":"folders/Debug/Regular_Days.yy",},
     {"name":"ResetValues","order":8,"path":"folders/Debug/ResetValues.yy",},
     {"name":"sprites","order":1,"path":"folders/Debug/sprites.yy",},
@@ -175,6 +177,7 @@
     {"name":"Granny","order":4,"path":"folders/Sprites/Dialog/Choice/Granny.yy",},
     {"name":"Kyle","order":3,"path":"folders/Sprites/Dialog/Choice/Kyle.yy",},
     {"name":"Nerd","order":6,"path":"folders/Sprites/Dialog/Choice/Nerd.yy",},
+    {"name":"Nun","order":7,"path":"folders/Sprites/Dialog/Choice/Nun.yy",},
     {"name":"MiniGame","order":8,"path":"folders/Sprites/Dialog/MiniGame.yy",},
     {"name":"Attachments","order":18,"path":"folders/Sprites/Dialog/MiniGame/Attachments.yy",},
     {"name":"Tutorial","order":15,"path":"folders/Sprites/Dialog/Tutorial.yy",},
@@ -213,9 +216,6 @@
     {"name":"SortBy","order":11,"path":"folders/Sprites/UI/SortBy.yy",},
     {"name":"NameButtons","order":1,"path":"folders/Sprites/UI/SortBy/NameButtons.yy",},
     {"name":"Stats","order":5,"path":"folders/Sprites/UI/Stats.yy",},
-    {"name":"Choices","order":11,"path":"folders/Debug/Choices.yy",},
-    {"name":"Day_1","order":3,"path":"folders/Debug/Choices/Day_1.yy",},
-    {"name":"Nun","order":7,"path":"folders/Sprites/Dialog/Choice/Nun.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Tutorial_txt_Decide","order":1,"path":"sprites/spr_Tutorial_txt_Decide/spr_Tutorial_txt_Decide.yy",},

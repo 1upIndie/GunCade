@@ -4,6 +4,7 @@ scr_PlaySound( snd_DayIntro_HeartBeat, 1);
 
 canDraw = false;
 alarm[0] = 3;
+
 spr_DayHeader = spr_Effect_DayIntro_Day;
 spr_DaySub    = spr_Effect_DayIntro_DaySub;
 
@@ -41,5 +42,5 @@ indexSet = obj_Control_All.currentCutscene_DAY - 101;
 
 
 // failsave! for now!
-if( indexSet > 2){ indexSet = 2;}
+//if( indexSet > 2){ indexSet = 2;}
 
