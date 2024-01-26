@@ -18,7 +18,7 @@ image_xscale = startScale + _valWobble;
 image_yscale = startScale + _valWobble;
 
 // apply
-var glowAlpha = _valGlow;
+var glowAlpha = _valGlow-0.2;
 
 draw_self();
 draw_sprite_ext(sprite_index,1, x,y, image_xscale, image_yscale, 0, c_white, glowAlpha);

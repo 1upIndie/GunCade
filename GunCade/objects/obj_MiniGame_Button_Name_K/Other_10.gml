@@ -6,4 +6,4 @@ if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selec
 	if (obj_MiniGame_Parent.isTutorial == true) { scr_Tutorial_SetArrowsTxt( "pick one of selection" ); }
 
 
-scr_ButtonResult_Create( "melee 3", 0, "four");
+//scr_ButtonResult_Create( "melee 3", 0, "four");

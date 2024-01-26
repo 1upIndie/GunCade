@@ -81,85 +81,84 @@ if(sortBy_ == "type"){
 
 
 
-#region sorted by type
+#region sorted by name
 
 if(sortBy_ == "abc"){
 // create instantly all types of weapons, first choise?
-
+  var nameSizeX = bbb.button_NameSizeX;
+  var nameSizeY = bbb.button_NameSizeY;  
+  
 		var sortBy_Numb  = instance_create_layer( bbb.button_Name_x[0], bbb.button_Name_Y[0],  bbb.layer_ , obj_MiniGame_Button_Name_0   );
-		    sortBy_Numb.image_xscale = bbb.button_NameSize;
-		    sortBy_Numb.image_yscale = bbb.button_NameSize;
+		    sortBy_Numb.image_xscale = nameSizeX;
+		    sortBy_Numb.image_yscale = nameSizeY;
 
 		var sortBy_A  = instance_create_layer( bbb.button_Name_x[1], bbb.button_Name_Y[0],  bbb.layer_ , obj_MiniGame_Button_Name_A   );
-		    sortBy_A.image_xscale = bbb.button_NameSize;
-		    sortBy_A.image_yscale = bbb.button_NameSize;
+		    sortBy_A.image_xscale = nameSizeX;
+		    sortBy_A.image_yscale = nameSizeY;
 
 		var sortBy_B  = instance_create_layer( bbb.button_Name_x[2], bbb.button_Name_Y[0],  bbb.layer_ , obj_MiniGame_Button_Name_B   );
-		    sortBy_B.image_xscale = bbb.button_NameSize;
-		    sortBy_B.image_yscale = bbb.button_NameSize;
+		    sortBy_B.image_xscale = nameSizeX;
+		    sortBy_B.image_yscale = nameSizeY;
 			
 		var sortBy_C  = instance_create_layer( bbb.button_Name_x[3], bbb.button_Name_Y[0],  bbb.layer_ , obj_MiniGame_Button_Name_C   );
-		    sortBy_C.image_xscale = bbb.button_NameSize;
-		    sortBy_C.image_yscale = bbb.button_NameSize;
+		    sortBy_C.image_xscale = nameSizeX;
+		    sortBy_C.image_yscale = nameSizeY;
 
 
-			
+
 		var sortBy_D  = instance_create_layer( bbb.button_Name_x[0], bbb.button_Name_Y[1],  bbb.layer_ , obj_MiniGame_Button_Name_D   );
-		    sortBy_D.image_xscale = bbb.button_NameSize;
-		    sortBy_D.image_yscale = bbb.button_NameSize;
-			
+		    sortBy_D.image_xscale = nameSizeX;
+		    sortBy_D.image_yscale = nameSizeY;
+
 		var sortBy_F  = instance_create_layer( bbb.button_Name_x[1], bbb.button_Name_Y[1],  bbb.layer_ , obj_MiniGame_Button_Name_F   );
-		    sortBy_F.image_xscale = bbb.button_NameSize;
-		    sortBy_F.image_yscale = bbb.button_NameSize;			
+		    sortBy_F.image_xscale = nameSizeX;
+		    sortBy_F.image_yscale = nameSizeY;			
 						
 		var sortBy_G  = instance_create_layer( bbb.button_Name_x[2], bbb.button_Name_Y[1],  bbb.layer_ , obj_MiniGame_Button_Name_G   );
-		    sortBy_G.image_xscale = bbb.button_NameSize;
-		    sortBy_G.image_yscale = bbb.button_NameSize;
+		    sortBy_G.image_xscale = nameSizeX;
+		    sortBy_G.image_yscale = nameSizeY;
 						
 		var sortBy_J  = instance_create_layer( bbb.button_Name_x[3], bbb.button_Name_Y[1],  bbb.layer_ , obj_MiniGame_Button_Name_J   );
-		    sortBy_J.image_xscale = bbb.button_NameSize;
-		    sortBy_J.image_yscale = bbb.button_NameSize;			
-			
+		    sortBy_J.image_xscale = nameSizeX;
+		    sortBy_J.image_yscale = nameSizeY;			
 
-			
+
+
 		var sortBy_K  = instance_create_layer( bbb.button_Name_x[0], bbb.button_Name_Y[2],  bbb.layer_ , obj_MiniGame_Button_Name_K   );
-		    sortBy_K.image_xscale = bbb.button_NameSize;
-		    sortBy_K.image_yscale = bbb.button_NameSize;
-			
+		    sortBy_K.image_xscale = nameSizeX;
+		    sortBy_K.image_yscale = nameSizeY;
+
 		var sortBy_L  = instance_create_layer( bbb.button_Name_x[1], bbb.button_Name_Y[2],  bbb.layer_ , obj_MiniGame_Button_Name_L   );
-		    sortBy_L.image_xscale = bbb.button_NameSize;
-		    sortBy_L.image_yscale = bbb.button_NameSize;
+		    sortBy_L.image_xscale = nameSizeX;
+		    sortBy_L.image_yscale = nameSizeY;
 			
 		var sortBy_M  = instance_create_layer( bbb.button_Name_x[2], bbb.button_Name_Y[2],  bbb.layer_ , obj_MiniGame_Button_Name_M   );
-		    sortBy_M.image_xscale = bbb.button_NameSize
-		    sortBy_M.image_yscale = bbb.button_NameSize;
-			
-			
+		    sortBy_M.image_xscale = nameSizeX;
+		    sortBy_M.image_yscale = nameSizeY;
+					
 		var sortBy_O  = instance_create_layer( bbb.button_Name_x[3], bbb.button_Name_Y[2],  bbb.layer_ , obj_MiniGame_Button_Name_O   );
-		    sortBy_O.image_xscale = bbb.button_NameSize;
-		    sortBy_O.image_yscale = bbb.button_NameSize;			
-			
-
-
-			
+		    sortBy_O.image_xscale = nameSizeX;
+		    sortBy_O.image_yscale = nameSizeY;			
+						
+						
+						
 		var sortBy_P  = instance_create_layer( bbb.button_Name_x[0], bbb.button_Name_Y[3],  bbb.layer_ , obj_MiniGame_Button_Name_P   );
-		    sortBy_P.image_xscale = bbb.button_NameSize;
-		    sortBy_P.image_yscale = bbb.button_NameSize;
-
-			
+		    sortBy_P.image_xscale = nameSizeX;
+		    sortBy_P.image_yscale = nameSizeY;
+	
 		var sortBy_S  = instance_create_layer( bbb.button_Name_x[1], bbb.button_Name_Y[3],  bbb.layer_ , obj_MiniGame_Button_Name_S   );
-		    sortBy_S.image_xscale = bbb.button_NameSize;
-		    sortBy_S.image_yscale = bbb.button_NameSize;
+		    sortBy_S.image_xscale = nameSizeX;
+		    sortBy_S.image_yscale = nameSizeY;
 			
 			
 		var sortBy_T  = instance_create_layer( bbb.button_Name_x[2], bbb.button_Name_Y[3],  bbb.layer_ , obj_MiniGame_Button_Name_T   );
-		    sortBy_T.image_xscale = bbb.button_NameSize;
-		    sortBy_T.image_yscale = bbb.button_NameSize;
+		    sortBy_T.image_xscale = nameSizeX;
+		    sortBy_T.image_yscale = nameSizeY;
 			
 			
 		var sortBy_W  = instance_create_layer( bbb.button_Name_x[3], bbb.button_Name_Y[3],  bbb.layer_ , obj_MiniGame_Button_Name_W   );
-		    sortBy_W.image_xscale = bbb.button_NameSize;
-		    sortBy_W.image_yscale = bbb.button_NameSize;			
+		    sortBy_W.image_xscale = nameSizeX;
+		    sortBy_W.image_yscale = nameSizeY;			
 
 }	
 #endregion

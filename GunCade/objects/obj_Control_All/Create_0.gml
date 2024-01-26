@@ -9,10 +9,10 @@ audio_group_load( audiogroup_SFX );
 clearSaveFile = false; // clears every time game is closed to default, no "real" saving then possible!
 
 debug = true;
-demo  = true;
+demo  = false;
 
 randomize();
-randomize();
+
 
 debugMiniGame = false; 
 sound_Debug = false;
@@ -957,7 +957,7 @@ currentCutscene     = 0;
 
 current_SongIndex = 0; // important for playback!
 
-#region choises and saved values through the game // temp, passive costs (kyle, wife, inventory)
+#region choices and saved values through the game // temp, passive costs (kyle, wife, inventory)
 
 volume_Master = 1;
 volume_Sfx    = 1;
@@ -2223,7 +2223,7 @@ arrayRandomMinigameDay1to3 = array_create(0);
 var randomDay1to3_I  = 0;
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Hey bud, I'm in a hurry. Need a regular shotty ASAP", "Pump - No attachments and no ammo.");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Hey bud, I'm in a hurry. Need a regular shotty ASAP. Pump - No attachments and no ammo.", "Pump - No attachments and no ammo.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "You're the man. See ya." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Wow, what kind of idiot turns down money?");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "The hell is this? Can't even get a simple request right. I don't have time for this crap."); 
@@ -2235,7 +2235,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Got an order for my boss to pick something up", "Need a SMG, a real heavy one too with ammo.");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Got an order for my boss to pick something up. Need a SMG, a real heavy one too with ammo.", "Need a SMG, a real heavy one too with ammo.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Much appreciated, my boss will be happy." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Man I'm gonna be in trouble thanks to you.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "I'll let my boss know you're no good, don't count on any return business."); 
@@ -2247,7 +2247,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Howdy there partner. I need to get all the crows outta my field.", "You got one of them triple barrels?");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Howdy there partner. I need to get all the crows outta my field. You got one of them triple barrels?", "You got one of them triple barrels?");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Thanks partner." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "I guess you don't got what I need.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Partner, your ears must be soft. Guess I'll go elsewhere."); 
@@ -2259,7 +2259,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "My boss sent me here to pick up an order.", "He said you got a gun that uses lots of rounds");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "My boss sent me here to pick up an order. He said you got a gun that uses lots of rounds.", "He said you got a gun that uses lots of rounds");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Thanks." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Piss off, jerk.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "I guess I can't afford anything here."); 
@@ -2273,7 +2273,7 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Gimme the most powerful thing you got in stock.", "No attachments!");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Gimme the most powerful thing you got in stock. No attachments!", "No attachments!");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "This is gonna do some damage!" );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "You're an idiot.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Too weak, I'm sure I can find something better elsewhere."); 
@@ -2292,12 +2292,12 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
    arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Perfect(11, 0,0,0,0,0,0);
    arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Positive(3,  10, 11, 12, 0,0,0,0,0,0,0,0,0);   
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Negative(555, 81,82,83,84,85, 400);
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setInst_Negative(555, 81,82,83,84,85, 1000);
    randomDay1to3_I++;
 
 
 arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Can I get one of those things the British cops use?", "I need to teach someone a lesson...");
+   arrayRandomMinigameDay1to3[randomDay1to3_I].setIntro(  "Can I get one of those things the British cops use? I need to teach someone a lesson...", "I need to teach someone a lesson...");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setSale(   "Appreciate it." );  
    arrayRandomMinigameDay1to3[randomDay1to3_I].setRefuse( "Maybe someone needs to teach you a lesson.");
    arrayRandomMinigameDay1to3[randomDay1to3_I].setFail(   "Maybe someone needs to teach you a lesson."); 
@@ -2604,7 +2604,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "victor grumpy"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "enter shadow");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "MY BROTHER! HAHAHAHA!", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "victor", "MY BROTHER! HAHAHAHA!", snd_TextScroll_Default );	 
 	 dialog_I++;	 
 	 
 	 
@@ -2856,7 +2856,7 @@ var day_I = 0; // day 1
 	 
      // tutorial begin 100
      arrayCutscenes[day_I].setSprite(dialog_I,2, "shadow default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Let's say I appear to be a garden variety thug and I say I want a [#5893FF]light, powerful weapon[/c] that lets me keep a little distance, and I have [#5893FF]2000[/c] to spend.", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  2, "shadow", "Let's say I appear to be a garden variety thug and I say I want a [#5893FF]light, powerful weapon[/c] that lets me keep a little distance, and I have [#5893FF]$2000[/c] to spend.", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_Shadow_Day1_Tutorial;
 	 dialog_I++;
      
@@ -2976,7 +2976,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "granny dismissive"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That way it can't really hurt anyone and I can feel safer, and I only have [#5893FF]1000$[/c] to spend, it's half my life savings...", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "granny", "That way it can't really hurt anyone and I can feel safer, and I only have [#5893FF]$1000[/c] to spend, it's half my life savings...", snd_TextScroll_Default );	 
 	 dialog_I++;
 
      // begin granny sale
@@ -3395,7 +3395,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , "exit default");	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"jez default"  , "exit default");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(DAAAAMMMMMIIIIIITTTTTT.......)", snd_TextScroll_Default );		 
 	 dialog_I++;
 
@@ -4523,7 +4523,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nerd default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "My budget is limited, so anything scary under 500$ will do.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nerd", "My budget is limited, so anything scary under [#5893FF]$500[#5893FF] will do.", snd_TextScroll_Default );		 
 	 dialog_I++;	
 
 
@@ -5071,7 +5071,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  "kyle default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "No kidding, someone should really teach those weathermen how to do their job.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "No kidding, someone should really teach those weather men how to do their job.", snd_TextScroll_Default );		 
 	 dialog_I++; 
  
 
@@ -16428,6 +16428,49 @@ repeat( arrayPropsL ) {
 
 
 
+// choices saved
+
+acceptClownBatton_Day_2        = ini_read_real("choice day 2", "clown take weapon", 0);
+acceptCopRebuyBatton_Day_2     = ini_read_real("choice day 2", "cop rebuy weapon" , 0 );
+wifePresentGivenDay2           = ini_read_real("choice day 2", "wife buy flowers" , 0 );
+
+
+ nunChoise_Day3                = ini_read_real("choice day 3", "nun give ransom", 0);
+ nerdChoise_4Topics_Day3       = ini_read_real("choice day 3", "nerd pick topic", 0);
+ soldToWeather_Day3            = ini_read_real("choice day 3", "weather sold weapon", 0 );
+
+ grannyChoise_Day4             = ini_read_real("choice day 4", "eat macaron first try", 0);
+ grannyChoise2_Day4            = ini_read_real("choice day 4", "eat macaron second try", 0);
+ kyleChoise_Day4               = ini_read_real("choice day 4", "kyle sell first weapon", 0 );  
+ wifeGivenPresentD4_day5       = ini_read_real("choice day 4", "wife baught flowers", 0 ); // auto
+ soldToTwins_Day4              = ini_read_real("choice day 4", "twins sell weapons", 0);  
+
+ acceptClownGun_Day_5          = ini_read_real("choice day 5", "clown take weapon", 0 );
+ copGivePistol_Day_5           = ini_read_real("choice day 5", "cop rebuy weapon" , 0 );
+ giveJezMoney_Day_5            = ini_read_real("choice day 5", "jez give money"   , 0  );
+ jezOrNerd_Day_5               = ini_read_string("choice day 5", "jez or nerd ditch", "jez"  );  
+ soldTwins_Day_4               = ini_read_real("choice day 5", "twins sold weapons", 0 ); // auto 
+ payKyleRansome_Day_5          = ini_read_real("choice day 5", "kyle pay ransome", 0 );  
+  
+ eatMacaronGranny1_Day_6       = ini_read_real("choice day 6", "eat macaron"  , 0);  
+ eatMacaronGranny2_Day_6       = ini_read_real("choice day 6", "eat macaron 2", 0);    
+ soldToDuke_Day6               = ini_read_real("choice day 6", "duke sold gun" , 0);  
+ grannyAutoBuy_Day6            = ini_read_real("choice day 6", "granny auto buy" , 0 );   
+ 
+ soldToTwinds_Day7             = ini_read_real("choice day 7", "twins sold gun"  , 0);  
+ giveKyle_Gun2_Day_7           = ini_read_real("choice day 7", "klye sell gun"  , 0); 
+ payKyleRansomeThisTime_Day_7  = ini_read_real("choice day 7", "klye pay ransom second chance"  , 0); 
+ autoSale_kyleWeapon_Day_7     = ini_read_real("choice day 7", "klye auto sale gun"  , 0); 
+
+ soldToDuke_Day8               = ini_read_real("choice day 8", "duke sold gun"     , 0); 
+ soldToWeather_Day8            = ini_read_real("choice day 8", "weather sold gun"  , 0); 
+
+ takeGunClown_Day9             = ini_read_real("choice day 9", "clown take gun"  , 0); 
+ sellGiveKyleWeapon_Day9       = ini_read_real("choice day 9", "kyle sell or give gun"  , 0); 
+
+ tellHalfCopTruth_Day10        = ini_read_real("choice day 10", "cop tell truth with dealing with clown"  , 0); 
+ soldToNotRandom_Day10         = ini_read_real("choice day 10", "not random sold gun"  , 0); 
+ payKyleRansome_Day_10         = ini_read_real("choice day 10", "kyle pay 2nd ransom"  , 0); 
 
  
 

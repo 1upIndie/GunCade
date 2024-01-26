@@ -12,4 +12,4 @@ spr_Gameplay     = spr_Nothing;
 
 alarm[0] = random_range( timerStartScreen_Min, timerStartScreen_Max );
 
-alarm[1] = 2;
+alarm[1] = 4;

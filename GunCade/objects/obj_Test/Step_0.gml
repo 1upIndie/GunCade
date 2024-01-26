@@ -30,7 +30,7 @@ if(mb == true){
 	var camHeight   = camera_get_view_height( view_camera[0] );
 	
 	
-	 instance_create_layer( camX + (camWidth/2), mouse_y, "Instances_Effects" , obj_Effect_Txt_PopUpGoUp_Accept);
+	 instance_create_layer( mouse_x, mouse_y, "Instances_BgrAraceProgs" , obj_Arcade_MulletHell);
 
 }
 

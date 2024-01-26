@@ -13,8 +13,8 @@ tvHeight = 20;
 
 // if is news spawn on button!
 alarm[0] = 10;
-buttonX = -174;
-buttonY = 195;
+buttonX = -184;
+buttonY = 193;
 
 var size = 0.9;
 image_xscale = size;

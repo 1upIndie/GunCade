@@ -8,7 +8,7 @@ if ( isNews == false ){
 	 //draw_rectangle_color(bbox_left,bbox_top, bbox_right, bbox_bottom, c_black, c_black, c_black, c_black, 0);	
 	 draw_self();
 	 
-	 draw_sprite_ext(spr_WorkStation_Background_Flicker,0, x,y, image_xscale, image_yscale, 0, flickerColor, flickerAlpha );
+	 //draw_sprite_ext(spr_WorkStation_Background_Flicker,0, x,y, image_xscale, image_yscale, 0, flickerColor, flickerAlpha );
 	 
 	 }
 
@@ -32,6 +32,8 @@ if ( isNews == true ){
 // draw scan lines
 
 }
+
+
 
 if (obj_Control_All.debug == true){
 var txt = "is News: " + string(isNews);

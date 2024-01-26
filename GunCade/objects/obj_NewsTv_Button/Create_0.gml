@@ -20,5 +20,7 @@ image_speed = 0;
 //
 channelScale = 0.1;
 startScale = 1;
-image_xscale = 0.9;
-image_yscale = startScale;
+image_xscale = 0.75;
+image_yscale = 1.1;
+
+image_alpha = 0.3;

@@ -8,4 +8,4 @@ if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selec
 
 scr_ButtonResult_Create( "exotic 3"       , 0, "four");
 scr_ButtonResult_Create( "attachment ammo", 1, "four");
-
+scr_ButtonResult_Create( "ar 1"           , 2, "four");

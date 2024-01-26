@@ -5,9 +5,10 @@ if ( instance_exists(obj_Selected_WeaponDetailTxt) ){ instance_destroy(obj_Selec
 
 	if (obj_MiniGame_Parent.isTutorial == true) { scr_Tutorial_SetArrowsTxt( "pick one of selection" ); }
 
-
-scr_ButtonResult_Create( "pistol 1", 10, "four");
-scr_ButtonResult_Create( "smg 3", 32, "four");
-scr_ButtonResult_Create( "shotgun 2", 41, "four");
-scr_ButtonResult_Create( "attachment stock", 83, "four");
+  
+scr_ButtonResult_Create( "melee 3",          0, "six");
+scr_ButtonResult_Create( "pistol 1",         1, "six");
+scr_ButtonResult_Create( "smg 3",            2, "six");
+scr_ButtonResult_Create( "shotgun 2",        3, "six");
+scr_ButtonResult_Create( "attachment stock", 4, "six");
 

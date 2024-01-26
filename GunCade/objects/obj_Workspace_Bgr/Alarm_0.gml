@@ -50,5 +50,3 @@ if ( isNews == false ){
 
 	 
 }
-
-	// instance_create_depth(camX+ buttonX, camY + buttonY, -17000, obj_NewsTv_Button );

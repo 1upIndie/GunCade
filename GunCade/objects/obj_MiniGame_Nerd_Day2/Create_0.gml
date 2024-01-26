@@ -16,6 +16,8 @@ event_inherited();
  var stack_ = 0;
  array_Positive_Weapons[stack_]  = 0; stack_++;  //  melee all 
  array_Positive_Weapons[stack_]  = 1; stack_++;  //  pistols
+  array_Positive_Weapons[stack_] = 2; stack_++;  //  pistols
+ 
  array_Positive_Weapons[stack_]  = 10; stack_++;  //  pistol
 
  
