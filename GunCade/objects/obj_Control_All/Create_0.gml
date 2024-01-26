@@ -7503,6 +7503,12 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "...", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;	
+	 dialog_I++;
+
 
 	 // Refuse! 260
 	 dialog_I = 260;	 
@@ -7559,13 +7565,14 @@ var day_I = 0; // day 1
 	  
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
      arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Let's go then...", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Let's go then...", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
 	 dialog_I++;	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;	
 	 dialog_I++;
 
 
@@ -7581,11 +7588,18 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "I said anything that goes boom ya idiot!", snd_TextScroll_Default );	 
 	 dialog_I++;	 
 	  
-     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
-     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 	
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , ""); 	
      arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "C'mon sis, let's go find us a real man-fat-yer.", snd_TextScroll_Default );	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Twins_GunSoldYes_Day4;	 
 	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1,  "twin1 default"  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,2,  "twin2 default"  , "exit default"); 			 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_290;	
+	 dialog_I++;
+
 
       #endregion
 
@@ -7656,7 +7670,7 @@ var day_I = 0; // day 1
 	 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That doesn't make any sense.?", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "That doesn't make any sense?", snd_TextScroll_Default );		 
 	 dialog_I++; 
 
 
@@ -7691,9 +7705,11 @@ var day_I = 0; // day 1
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Well, why not, he's always been harmless when it comes down to it, and this thing will probably fall apart before anything happens.)", snd_TextScroll_Default );		 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_ChoiseKyleA16_Day4;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Kyle_SellWeaponDay4;	 
 	 dialog_I++; 	 
-    
+  
+  
+  
 	// binary choice
 	// if sold a16
 	dialog_I = 350;
@@ -7801,7 +7817,7 @@ var day_I = 0; // day 1
 	 
  
      arrayCutscenes[day_I].setSprite(dialog_I,2, "victor default" , "");	 	 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "victor", "So, no more business today. Take care of what you need to and close up shop. I'll let you come back in the morning:", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "victor", "So, no more business today. Take care of what you need to and close up shop. I'll let you come back in the morning.", snd_TextScroll_Default );		 
 	 dialog_I++; 	 
 
 

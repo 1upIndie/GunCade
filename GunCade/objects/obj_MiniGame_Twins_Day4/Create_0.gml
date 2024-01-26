@@ -3,7 +3,7 @@
 event_inherited();
 
 
- possible_Weapon_Perfect             = 12;   //  tammy gun
+ possible_Weapon_Perfect             = 42;   //  tammy gun
  // possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  // possible_Muzzle_Perfect          = -999;  
  // possible_Optics_Perfect          = -999; 
@@ -18,11 +18,19 @@ event_inherited();
  array_Positive_Weapons[stack_]  = 10; stack_++;  //  pistols 
  array_Positive_Weapons[stack_]  = 11; stack_++;  //  pistols
  array_Positive_Weapons[stack_]  = 12; stack_++;  //  pistol
- array_Positive_Weapons[stack_]  = 13; stack_++; 
+
  
- array_Positive_Weapons[stack_]  = 30; stack_++; //  smg, she has no clue about weapons
- array_Positive_Weapons[stack_]  = 31; stack_++; 
- array_Positive_Weapons[stack_]  = 32; stack_++; 
+ array_Positive_Weapons[stack_]  = 20; stack_++;  //  rifles 
+ array_Positive_Weapons[stack_]  = 21; stack_++;  // 
+ array_Positive_Weapons[stack_]  = 22; stack_++;  // 
+ 
+ array_Positive_Weapons[stack_]  = 30; stack_++;  // smg
+ array_Positive_Weapons[stack_]  = 31; stack_++;  //  
+ array_Positive_Weapons[stack_]  = 32; stack_++;  //  
+ 
+ array_Positive_Weapons[stack_]  = 40; stack_++;  // shotgun
+ array_Positive_Weapons[stack_]  = 41; stack_++;  //  
+
  
  
  // negatives!
