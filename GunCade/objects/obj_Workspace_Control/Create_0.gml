@@ -181,7 +181,7 @@ array_Txt  = array_create(0);
 array_InstanceLoadIn  = array_create(0);
 
 var repeat_I = 0;
-repeat(900){
+repeat(1000){
   array_Spr_Idle_Static_1_[repeat_I]  = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdleStatic_1_[repeat_I];
   array_Spr_Idle_1_[repeat_I]         = oo.arrayCutscenes[oo.currentCutscene_DAY].dialogBlock_SprIdle_1_[repeat_I];  
 

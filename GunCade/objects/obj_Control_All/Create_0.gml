@@ -6648,26 +6648,39 @@ var day_I = 0; // day 1
 	 dialog_I++; 
 
 
+
+
     // if played up!
 	dialog_I = 900;
     
 	// pay up
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , "exit default"); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "Thank you my child. May mercy, peace, and love be multiplied to you.", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_Txt_PopUp_NunTakes500;	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_NunPayRansom_500_Day3;	 
 	 dialog_I++;	
 
-
-	dialog_I = 910;
-    
-	// not pay up
-
-     // point gun toward player and shoot
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "           ", snd_TextScroll_Default );		
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Nun_FadeBlack;	
+	// pay up
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , "exit default"); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_920;	 
 	 dialog_I++;
 
+
+
+	// not pay up
+	dialog_I = 910;
+    
+
+     // point gun toward player and shoot
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun gun"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "           ", snd_TextScroll_Default );		
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_NunShoots_RedFade2;	
+	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "....", snd_TextScroll_Default );			 
+	 dialog_I++; 
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
@@ -6677,7 +6690,7 @@ var day_I = 0; // day 1
 
  
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "            ", snd_TextScroll_Default );		
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "", snd_TextScroll_Default );		
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
@@ -6691,17 +6704,20 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
  
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "I meant everything you got in the register. Try to refuse me again and payment for your sins will be much more severe.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_Txt_PopUp_NunTakesAll;	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "I meant everything you got in the register. Try to refuse me again and payment for your sins will be much more severe.", snd_TextScroll_Default );		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_NunPayRansom_All_Day3;	 
 	 dialog_I++;
 
 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "Thank you my child of light. May mercy, peace, and love be multiplied to you.", snd_TextScroll_Default );	 
+	 dialog_I++;
+
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nun default"  , "exit default"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "Thank you my child of light. May mercy, peace, and love be multiplied to you.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,  1, "nun", "", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_920;	 
 	 dialog_I++;
-
 
     #endregion
 
@@ -6709,13 +6725,10 @@ var day_I = 0; // day 1
 
 	dialog_I = 920;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Dammit, still getting robbed.)", snd_TextScroll_Default );			 
-	 dialog_I++; 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "kyle default"  , "enter right"); 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "Bossman what happened? I was in the bathroom and heard a shot but I came running as soon as I could. Did a gun misfire?", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setSprite(dialog_I, 1, "kyle default"  , "enter right"); 
+     arrayCutscenes[day_I].setText(dialog_I,   1, "kyle", "Bossman what happened? I was in the bathroom and heard a shot but I came running as soon as I could. Did a gun misfire?", snd_TextScroll_Default );			 
 	 dialog_I++; 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 	 
@@ -6724,8 +6737,8 @@ var day_I = 0; // day 1
 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "kyle default"  , "enter right"); 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "No way man. By who?", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "No way man. By who?", snd_TextScroll_Default );			 
 	 dialog_I++; 
 	 
 	 
@@ -6734,8 +6747,8 @@ var day_I = 0; // day 1
 	 dialog_I++; 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "kyle default"  , "enter right"); 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "Are you kidding bossman?", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Are you kidding bossman?", snd_TextScroll_Default );			 
 	 dialog_I++; 
 
 	 
@@ -6744,8 +6757,8 @@ var day_I = 0; // day 1
 	 dialog_I++; 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "kyle default"  , "enter right"); 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "Damn bossman I'm sorry. I can chase her down if you want.", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "Damn bossman I'm sorry. I can chase her down if you want.", snd_TextScroll_Default );			 
 	 dialog_I++; 
 
 
@@ -6759,8 +6772,8 @@ var day_I = 0; // day 1
 	 dialog_I++; 
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,2, "kyle default"  , "enter right"); 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "kyle", "What do you say we call it a day then bossman?", snd_TextScroll_Default );			 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "kyle default"  , ""); 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "kyle", "What do you say we call it a day then bossman?", snd_TextScroll_Default );			 
 	 dialog_I++; 
 
 
@@ -6823,7 +6836,7 @@ var day_I = 0; // day 1
  
      // granny enter     
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "enter default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Well you're here early, I haven't even finished setting up shop for today.)", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Well you're here early, I haven't even finished setting up shop for today.", snd_TextScroll_Default );		 
 	 dialog_I++; 
       
      arrayCutscenes[day_I].setSprite(dialog_I,1,  "granny default"  , "");	 
@@ -15951,12 +15964,25 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "What was once considered a family-friendly establishment has now been exposed as a hub for quasi-legal activities, where dangerous, albeit seemingly poorly constructed, weapons are exchanged for prices that most cannot afford.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "What was once considered a family-friendly establishment has now been exposed as a hub for quasi-legal activities.", snd_TextScroll_Default );	
 	 dialog_I++;
 
+
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The question remains whether law enforcement will act on the distribution of firearms, knives, and other potentially lethal weapons, since the recent overthrow of the cities government and the loss of most judicial processes.", snd_TextScroll_Default );	
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Where dangerous, albeit seemingly poorly constructed, weapons are exchanged for prices that most cannot afford.", snd_TextScroll_Default );	
 	 dialog_I++;
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "The question remains whether law enforcement will act on the distribution of firearms, knives, and other potentially lethal weapons.", snd_TextScroll_Default );	
+	 dialog_I++;
+
+
+
+     arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "Since the recent overthrow of the cities government and the loss of most judicial processes.", snd_TextScroll_Default );	
+	 dialog_I++;
+
 
      arrayCutscenes[day_I].setSprite(dialog_I, 3, "betty default"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,   3,  "betty", "This discovery has sent shockwaves through the community and raised serious questions about the safety and integrity of such establishments.", snd_TextScroll_Default );	
