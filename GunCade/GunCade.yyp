@@ -660,6 +660,7 @@
     {"id":{"name":"obj_Effect_Txt_PopUpGoUp_Parent","path":"objects/obj_Effect_Txt_PopUpGoUp_Parent/obj_Effect_Txt_PopUpGoUp_Parent.yy",},},
     {"id":{"name":"scribble_font_add_all","path":"scripts/scribble_font_add_all/scribble_font_add_all.yy",},},
     {"id":{"name":"string_height_scribble_ext","path":"scripts/string_height_scribble_ext/string_height_scribble_ext.yy",},},
+    {"id":{"name":"spr_Choise_Day2_Clown_TakeGun_Yes","path":"sprites/spr_Choise_Day2_Clown_TakeGun_Yes/spr_Choise_Day2_Clown_TakeGun_Yes.yy",},},
     {"id":{"name":"shd_Bloom","path":"shaders/shd_Bloom/shd_Bloom.yy",},},
     {"id":{"name":"spr_Dialog_Duke_SingleImage","path":"sprites/spr_Dialog_Duke_SingleImage/spr_Dialog_Duke_SingleImage.yy",},},
     {"id":{"name":"spr_Dialog_Betty_Talk_Blink","path":"sprites/spr_Dialog_Betty_Talk_Blink/spr_Dialog_Betty_Talk_Blink.yy",},},

@@ -2310,21 +2310,145 @@ arrayRandomMinigameDay1to3[randomDay1to3_I] = new CreateRandomMinigame();
 
 
 
+
 var randomDay4to5_I  = 0;
 arrayRandomMinigameDay4to5  = array_create(0);
-arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame(); randomDay4to5_I++
+arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame(); 
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setIntro(  "Do you have something that can shoot maximum distance, but for minimum cost?", "I need to teach someone a lesson...");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setSale(   "That's just what I needed." );  
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setRefuse( "Thanks for trying");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setFail(   "That won't do, but thanks for trying."); 
+
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Perfect(21, 0,0,0,0,0,0);
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Positive(20,  22, 30, 0, 0,0,0,0,0,0,0,0,0);   
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Negative(555, 81,82,83,84,85, 5000);
+   randomDay4to5_I++;
+
+arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame(); 
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setIntro(  "Can I get that french thing I saw on television earlier?");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setSale(   "Come to papa!" );  
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setRefuse( "What kind of dipshit refuses money?");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setFail(   "I guess I came to the wrong store."); 
+
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Perfect(51, 0,0,0,0,0,0);
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Positive(50,  52, 22, 0, 0,0,0,0,0,0,0,0,0);   
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Negative(555, 81,82,83,84,85, 5000);
+   randomDay4to5_I++;
+
+arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setIntro(  "I've got grand burning a hole in my pocket. Whatcha got that is concealable, powerful pistol, and very easy to see where I'm aiming?");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setSale(   "This is perfect." );  
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setRefuse( "Really, nothing? Maybe you should stick to your day job.");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setFail(   "That aint it. Maybe you should stick to your day job."); 
+
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Perfect(12, 0,0,0,1,0,0);
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Positive(10,  11, 22, 0, 0,0,0,0,0,0,0,0,0);   
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Negative(555, 81,82,83,84,85, 5000);
+   randomDay4to5_I++;   
+   
+arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setIntro(  "Hello. I am in need of your services. I will pay for anything that can be... discreet.");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setSale(   "Ah yes, the silencer, one of my favorites. Thank you, I know just what to do with this." );  
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setRefuse( "How unfortunate. I suppose I will have to take care of things by hand.");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setFail(   "I suppose discretion is lost on some people."); 
+
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Perfect(12, 0,0,1,0,0,0);
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Positive(10,  11, 22, 30,31,32, 50,51,52, 20,0,0,0);   
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setInst_Negative(555, 81,999,83,84,85, 5000);
+   randomDay4to5_I++;  
+
+
 
 
 
 var randomDay6to8_I  = 0;
 arrayRandomMinigameDay6to8  = array_create(0);
-arrayRandomMinigameDay6to8[randomDay6to8_I] = new CreateRandomMinigame(); randomDay6to8_I++;
+arrayRandomMinigameDay6to8[randomDay6to8_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setIntro(  "Hey there, you got anything that can put a vegetable in space?");
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setSale(   "SWEET!" );  
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setRefuse( "Well shit.");
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setFail(   "That's not what I meant."); 
+
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Perfect(12, 0,0,0,0,0,0);
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Positive(71,  72, 60, 61,63, 22, 42,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDay6to8_I++; 
+
+
+arrayRandomMinigameDay6to8[randomDay6to8_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setIntro(  "Howdy. I need something to celebrate the next Independence Day with.");
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setSale(   "You know your stuff." );  
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setRefuse( "Must have been too much to ask.");
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setFail(   "You don't know your stuff at all."); 
+
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Perfect(50, 0,0,0,0,0,0);
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Positive(60, 62, 63, 12,0, 0, 0,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDay6to8_I++; 
+
+arrayRandomMinigameDay6to8[randomDay6to8_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setIntro(  "Howdy. I need something to celebrate the next Independence Day with. Something that shouts freedom when it fires.");
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setSale(   "You know your stuff." );  
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setRefuse( "Must have been too much to ask.");
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setFail(   "You don't know your stuff at all."); 
+
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Perfect(50, 0,0,0,0,0,0);
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Positive(60, 62, 63, 12,0, 0, 0,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay6to8[randomDay6to8_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDay6to8_I++; 
+
+
 
 
 var randomDayPlus_I  = 0;
 arrayRandomMinigameDay9Plus = array_create(0); // all unlocks possible!
-arrayRandomMinigameDay9Plus[randomDayPlus_I] = new CreateRandomMinigame(); randomDayPlus_I++;
 
+arrayRandomMinigameDay9Plus[randomDayPlus_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setIntro(  "Hey mister, I work on the movie set with Duke and need another electric gun.");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setSale(   "That must be it, thank you so much." );  
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setRefuse( "Damn, I hope this movie doesn't flop...");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setFail(   "I guess whatever we need we're gonna have to make ourselves."); 
+
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Perfect(72, 0,0,0,0,0,0);
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Positive(73, 0, 0, 0, 0, 0, 0,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDayPlus_I++; 
+
+
+arrayRandomMinigameDay9Plus[randomDayPlus_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setIntro(  "Hello, what do you have in store for home defense that has a ton of power but is light?");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setSale(   "That must be it, thank you so much." );  
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setRefuse( "What kind of dumbass are you?");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setFail(   "Not gonna work for me."); 
+
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Perfect(41, 0,0,0,0,0,0);
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Positive(10, 11, 40, 42, 31, 0, 0,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDayPlus_I++; 
+
+
+arrayRandomMinigameDay9Plus[randomDayPlus_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setIntro(  "Hi there, I think my cousin came in here about a week ago and asked you about something long and hard. You got that?");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setSale(   "That's it, I'll tell her she was right about you." );  
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setRefuse( "Ok, well, it was worth a try.");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setFail(   "That can't be it. I'll tell her she was wrong about you."); 
+
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Perfect(70, 0,0,0,0,0,0);
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Positive(0, 0, 0, 0, 0, 0, 0,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDayPlus_I++; 
+
+
+arrayRandomMinigameDay9Plus[randomDayPlus_I] = new CreateRandomMinigame();
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setIntro(  "Hi, do you have anything really heavy but without a high fire rate?");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setSale(   "I think this will do perfectly." );  
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setRefuse( "I guess you care more about the animal trying to eat me than you care about my safety.");
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setFail(   "That won't do at all."); 
+
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Perfect(71, 0,0,0,0,0,0);
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Positive(42, 61, 71, 73, 0, 0, 0,0,0, 0,0,0,0);   
+   arrayRandomMinigameDay9Plus[randomDayPlus_I].setInst_Negative(555, 81,81,83,84,85, 5000);
+   randomDayPlus_I++;
 
 #endregion
 
@@ -8064,9 +8188,14 @@ var day_I = 0; // day 1
 	 
 	 arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"    , "exit default");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "clown", "Oh you will buck'o! See ya later.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_90; 
 	 dialog_I++;		 
-	 
+
+
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"    , "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "Player", "Okay...", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_90; 
+	 dialog_I++;
+
 	 
     dialog_I = 80;
     // if denied gift
@@ -8079,15 +8208,15 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Guess so...", snd_TextScroll_Default );		 
 	 dialog_I++;	 
 	 
-	 arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"    , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "clown", "No time to waste then, I'll see ya ‘round.", snd_TextScroll_Default );			 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"    , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "clown", "No time to waste then, I'll see ya 'round.", snd_TextScroll_Default );			 
 	 dialog_I++;		 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "exit default");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", " (I hope not.)", snd_TextScroll_Default );		 
 	 dialog_I++;	 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "clown default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Ugghhhhh...)", snd_TextScroll_Default );		 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_90; 	 	 
 	 dialog_I++;		 
@@ -8176,7 +8305,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Helldy... I mean, How'llo... I mean... Nevermind", snd_TextScroll_Default );		 
 	 dialog_I++; 
 	 
-	 arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"    , "");	 
+	 arrayCutscenes[day_I].setSprite(dialog_I,1, "jez smiling"    , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Oh my, I didn't mean to get you all tongue tied there handsome.", snd_TextScroll_Default );		 
 	 dialog_I++;	 
 
@@ -8219,7 +8348,7 @@ var day_I = 0; // day 1
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,   ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Why is “Steve” here? Is there a nerd convention or something?", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Why is 'Steve' here? Is there a nerd convention or something?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
@@ -10791,7 +10920,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 smiling"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Dis ain ‘bout no fence. Dis ‘bout settin things righ'.", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Dis ain 'bout no fence. Dis 'bout settin things righ'.", snd_TextScroll_Default );	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
@@ -10806,7 +10935,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 angry"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "How ‘bout something that works AND goes BOOM BOOM BOOM! Tree times, jus like that.", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "How 'bout something that works AND goes BOOM BOOM BOOM! Tree times, jus like that.", snd_TextScroll_Default );	 
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 smiling"  , "");
@@ -10911,7 +11040,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "How ‘bout something that works AND goes BOOM BOOM BOOM! Tree times, jus like that.", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  2, "twin2", "How 'bout something that works AND goes BOOM BOOM BOOM! Tree times, jus like that.", snd_TextScroll_Default );	 
 	 dialog_I++;
 
 
@@ -10962,7 +11091,7 @@ var day_I = 0; // day 1
 	
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 smiling"  , "");
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 smiling"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Oh ho ho, youz care ‘bout us dat much?", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "Oh ho ho, youz care 'bout us dat much?", snd_TextScroll_Default );	 
 	 dialog_I++;	
 	
 	
@@ -15486,7 +15615,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
      arrayCutscenes[day_I].setSprite(dialog_I,2, "twin2 default"  , "");
-     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "He's after my sister. I don' know what'er she done, but he been following her ‘round since yesterday.", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "twin1", "He's after my sister. I don' know what'er she done, but he been following her 'round since yesterday.", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "twin1 default"  , "");	
