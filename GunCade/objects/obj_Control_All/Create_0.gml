@@ -2336,7 +2336,7 @@ arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame();
    randomDay4to5_I++;
 
 arrayRandomMinigameDay4to5[randomDay4to5_I] = new CreateRandomMinigame();
-   arrayRandomMinigameDay4to5[randomDay4to5_I].setIntro(  "I've got grand burning a hole in my pocket. Whatcha got that is concealable, powerful pistol, and very easy to see where I'm aiming?");
+   arrayRandomMinigameDay4to5[randomDay4to5_I].setIntro(  "I've got grand burning a hole in my pocket. Whatcha got that powerful pistol, and very easy to see where I'm aiming?");
    arrayRandomMinigameDay4to5[randomDay4to5_I].setSale(   "This is perfect." );  
    arrayRandomMinigameDay4to5[randomDay4to5_I].setRefuse( "Really, nothing? Maybe you should stick to your day job.");
    arrayRandomMinigameDay4to5[randomDay4to5_I].setFail(   "That aint it. Maybe you should stick to your day job."); 
@@ -8322,37 +8322,37 @@ var day_I = 0; // day 1
 	 dialog_I++;	 
 	 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(And it just got worse...)", snd_TextScroll_Default );		 
 	 dialog_I++; 	 
 	 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,   "");
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Uhhh... Who is this?", snd_TextScroll_Default );		 
 	 dialog_I++;	 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Jez, meet, uhh... Wait, I don't know your name.", snd_TextScroll_Default );		 
 	 dialog_I++; 		 
 	 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 	 
      arrayCutscenes[day_I].setText(dialog_I,  2, "nerd2", "It's Steve.", snd_TextScroll_Default );		 
 	 dialog_I++;		 
 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,   ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Why is 'Steve' here? Is there a nerd convention or something?", snd_TextScroll_Default );		 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez disgusted"  ,  "");	 
      arrayCutscenes[day_I].setSprite(dialog_I,2, "nerd default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Good question actually.)", snd_TextScroll_Default );		 
 	 dialog_I++; 
@@ -8517,17 +8517,24 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(God I hope so.)", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(God I hope so.)", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Jez_GiveMoney_Day5;	 
 	 dialog_I++;	 
 	 
 	
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "I don't have time to stay and chat. Gotta go get ready!!!", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "I don't have time to stay and chat.", snd_TextScroll_Default );		 
 	 dialog_I++;
-	 
-	 
+
      arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "exit default");	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "jez", "Gotta go get ready!!!", snd_TextScroll_Default );		 
+	 dialog_I++;
+
+
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "jez default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I'm so screwed.)", snd_TextScroll_Default );		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_550;	 
 	 dialog_I++;	 
 
 
@@ -9033,7 +9040,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Hey you know I hate when you say that.", snd_TextScroll_Default );	 	
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "enter default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "wife", "I saw her walking out of here!", snd_TextScroll_Default );	 	
 	 dialog_I++;
 
@@ -9041,7 +9048,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(DAMMIT. That woman is going to cost me.)", snd_TextScroll_Default );	 	
 	 dialog_I++;
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "enter default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  1, "wife", "I came to the mall today to get that new Brazillian Wax thing done, and here you are talking to other women!", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_JezOrNerd_Wife_Day5;		 	 
 	 dialog_I++;
@@ -9142,7 +9149,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
 	 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "exit default");	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "wife default"  ,  "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Sheesh, I can't catch a break. And now here comes that cop again, surprise surprise he's here.)", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_650;	 
 	 dialog_I++;
@@ -9534,7 +9541,13 @@ var day_I = 0; // day 1
     // if yes
      dialog_I = 750;
      arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing" ,  "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Of course Kyle, why would I say no! I'll be there soon.", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Of course Kyle, why would I say no!", snd_TextScroll_Default );
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Kyle_TransferRansome_Day5;	 
+	 dialog_I++;
+	 
+	 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"nothing" ,  "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'll be there soon.", snd_TextScroll_Default );
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_DayEnd_Day5;	 
 	 dialog_I++;
 

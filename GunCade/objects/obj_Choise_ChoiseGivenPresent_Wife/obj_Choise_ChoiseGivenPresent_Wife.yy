@@ -12,8 +12,8 @@
     "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_3.yy",
   },
   "parentObjectId": {
-    "name": "obj_ChoiceToDo_Parent",
-    "path": "objects/obj_ChoiceToDo_Parent/obj_ChoiceToDo_Parent.yy",
+    "name": "obj_Choise_GivenPresentD4_Wife_Day5",
+    "path": "objects/obj_Choise_GivenPresentD4_Wife_Day5/obj_Choise_GivenPresentD4_Wife_Day5.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
