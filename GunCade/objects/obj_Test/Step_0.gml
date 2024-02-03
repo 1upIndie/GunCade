@@ -28,11 +28,13 @@ if(mb == true){
 	var camY        = camera_get_view_y( view_camera[0] );
 	var camWidth    = camera_get_view_width( view_camera[0] );
 	var camHeight   = camera_get_view_height( view_camera[0] );
-	var sizeSet = 1;
+	var sizeSet     = 1;
+	var setAlpha    = 0.8;
 	
 	 instance_create_layer( mouse_x, mouse_y, "Instances_OverlayPopUp" , obj_Effect_Emote_Angry, {
 	 	 image_xscale : sizeSet,
-	     image_yscale : sizeSet
+	     image_yscale : sizeSet,
+		 image_alpha  : setAlpha
 	 } );
 
 }
