@@ -1,8 +1,8 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
+event_inherited();
 
-alarm[0] = 3;
 
-toSkipTo_Index = -999;
+playVoiceFile = snd_Sfx_Voice_Jez_Happy;
 
 

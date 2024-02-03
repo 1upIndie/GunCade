@@ -3,6 +3,7 @@
 
 alarm[0] = 3;
 
-playVoiceFile = 
+playVoiceFile = snd__Nothing;
+instEffect    = noone;
 
 
