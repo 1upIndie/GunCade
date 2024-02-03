@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ChoiseDone_Kyle2_Day6",
+  "name": "obj_Choise_ChoiseGranny_MacaronDay6",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
@@ -12,8 +14,8 @@
     "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_6.yy",
   },
   "parentObjectId": {
-    "name": "obj_ChoiceDonePreviously_Parent",
-    "path": "objects/obj_ChoiceDonePreviously_Parent/obj_ChoiceDonePreviously_Parent.yy",
+    "name": "obj_ChoiceToDo_Parent",
+    "path": "objects/obj_ChoiceToDo_Parent/obj_ChoiceToDo_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

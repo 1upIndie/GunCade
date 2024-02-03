@@ -9822,17 +9822,17 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "dad default" , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "Just some ammo. ", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "Just some half working bolt action rifle . ", snd_TextScroll_Default );
 	 dialog_I++; 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "dad default" , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Just ammo? That's all?", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Just this rifle? That's all?", snd_TextScroll_Default );
 	 dialog_I++; 
 
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "dad default" , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "Yes. That's all. After I realized what kind of junk you sell, I went and found my fathers old rifle. Only problem is, I don't have any ammo for it.", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "Yes. That's all. After I realized what kind of junk you sell, I went and found my fathers old rifle. Only problem is, I don't have any spare parts for it.", snd_TextScroll_Default );
 	 dialog_I++; 
 
 
@@ -9846,7 +9846,7 @@ var day_I = 0; // day 1
 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "dad default" , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok, I suppose ammo isn't a tall order, but I'm a bit concerned about what you plan to do with it given our previous encounter.", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok, I suppose such a rifle isn't a tall order, but I'm a bit concerned about what you plan to do with it given our previous encounter.", snd_TextScroll_Default );
 	 dialog_I++;
 
 
@@ -9917,7 +9917,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "dad default" , "");	 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "So are you going to sell me the ammo or not?", snd_TextScroll_Default );
+     arrayCutscenes[day_I].setText(dialog_I,  1, "dad", "So are you going to sell me the rifle or not?", snd_TextScroll_Default );
 	 dialog_I++;
 
 
@@ -9982,6 +9982,19 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(He's got to be my least favorite customer, and I've got some weirdos.)", snd_TextScroll_Default );	 
 	 dialog_I++;	 
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );		 
+	 dialog_I++;
+	 //////////////////////////////////
+
+
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"granny default"  , "enter default");	

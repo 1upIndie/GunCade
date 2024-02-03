@@ -1,19 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ChoiseDone_Kyle2_Day6",
+  "name": "obj_Effect_Voice_Jez_Angry",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Day_6",
-    "path": "folders/Objects/Cutscenes/MiniGame/Choises/Day_6.yy",
+    "name": "Jez",
+    "path": "folders/Objects/Cutscenes/MiniGame/InBetweenEffects/Jez.yy",
   },
   "parentObjectId": {
-    "name": "obj_ChoiceDonePreviously_Parent",
-    "path": "objects/obj_ChoiceDonePreviously_Parent/obj_ChoiceDonePreviously_Parent.yy",
+    "name": "obj_Effect_VoiceClip_Parent",
+    "path": "objects/obj_Effect_VoiceClip_Parent/obj_Effect_VoiceClip_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
