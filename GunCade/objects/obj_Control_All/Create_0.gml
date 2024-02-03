@@ -150,6 +150,13 @@ timeToSkipToOtherDay = 2*60; // after news show, skip then to same day but 1 to 
  backgr_Dark_color = #0B0914;	
  
  
+ // emotes and voice modulation
+ var fixedPitch = 0.05
+ fixed_Voice_PitchMin  = 1 - fixedPitch;
+ fixed_Voice_PitchMax  = 1 + fixedPitch;
+ 
+ fixed_EffectEmote_Size = 1;
+ 
 #endregion
 
 #region weapon texts + costs

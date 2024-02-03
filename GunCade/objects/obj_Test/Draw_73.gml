@@ -7,11 +7,8 @@ var oo = obj_Control_All;
 	var camWidth    = camera_get_view_width( view_camera[0] );
 	var camHeight   = camera_get_view_height( view_camera[0] );
 	
-	
-	if instance_exists(obj_NewsTv_Button) {
-	draw_line(mouse_x, mouse_y, obj_NewsTv_Button.x, obj_NewsTv_Button.y )
-	}
-	
+var txt = string(mouse_x) + "  "  + string(mouse_y);
+draw_text(mouse_x, mouse_y -50, txt);
 	
 /*
 var calc1 = camera_get_view_width(view_camera[0] );

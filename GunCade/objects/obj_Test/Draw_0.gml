@@ -8,13 +8,7 @@ var txt ="No";
 var oo = obj_Control_All;
 //txt = oo.arrayCutscenes[oo.currentCutscene_DAY].isNews;
 
-if (instance_exists(obj_Arcade_MulletHellCenter)){
-	
-	draw_line(mouse_x, mouse_y, obj_Arcade_MulletHellCenter.x, obj_Arcade_MulletHellCenter.y)
-	
-	txt = "yes"}
 
-draw_text(x,y+30, txt)
 /*
 var txt = "nope";
 var count = 0;
