@@ -22,7 +22,7 @@
         {"name":"g_GlowIntensity","type":0,"value":"0.2",},
         {"name":"g_GlowGamma","type":0,"value":"0",},
         {"name":"g_GlowAlpha","type":0,"value":"0.4",},
-      ],"userdefinedDepth":false,"visible":true,},
+      ],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_Vignette","depth":200,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_VignetteEdges","type":0,"value":"0.25",},
         {"name":"g_VignetteEdges","type":0,"value":"1.4",},
@@ -41,7 +41,7 @@
         {"name":"g_ChromaSpreadAmount","type":0,"value":"1",},
         {"name":"g_CamOffsetScale","type":0,"value":"1",},
         {"name":"g_GlintCol","type":1,"value":"#FF191919",},
-        {"name":"g_TintCol","type":1,"value":"#FFFFCC7F",},
+        {"name":"g_TintCol","type":1,"value":"#FFFFF4E5",},
         {"name":"g_AddCol","type":1,"value":"#FF331900",},
         {"name":"g_DistortTexture","type":2,"value":"_filter_underwater_noise_sprite",},
       ],"userdefinedDepth":false,"visible":false,},
