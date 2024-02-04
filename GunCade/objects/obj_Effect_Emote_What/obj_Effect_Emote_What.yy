@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Emotes",
-    "path": "folders/Objects/Cutscenes/MiniGame/InBetweenEffects/Emotes.yy",
+    "name": "_Emotes",
+    "path": "folders/Objects/Cutscenes/MiniGame/InBetweenEffects/_Emotes.yy",
   },
   "parentObjectId": {
     "name": "obj_Effect_Emote_Parent",
