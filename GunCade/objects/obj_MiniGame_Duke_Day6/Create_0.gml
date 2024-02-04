@@ -15,10 +15,18 @@ event_inherited();
 
  
  var stack_ = 0;
- array_Positive_Weapons[stack_]  = 21; stack_++;  //  smgs 
+ array_Positive_Weapons[stack_]  = 40; stack_++;  //  shotguns
+ array_Positive_Weapons[stack_]  = 42; stack_++;  //  
+
+ array_Positive_Weapons[stack_]  = 20; stack_++;  //  rifles
+ array_Positive_Weapons[stack_]  = 21; stack_++;  //  
  array_Positive_Weapons[stack_]  = 22; stack_++;  //  
 
-
+ array_Positive_Weapons[stack_]  = 60; stack_++;  //  heavy
+ array_Positive_Weapons[stack_]  = 61; stack_++;  //
+ array_Positive_Weapons[stack_]  = 62; stack_++;  //
+ 
+ 
  // negatives!
  //array_Negative           = array_create(0); // values that make it a bad sale -> fail!
  negative_LaserPointer    = false;

@@ -10214,6 +10214,12 @@ var day_I = 0; // day 1
 
 
 
+     
+    #endregion
+
+
+#region Duke 
+
      dialog_I = 190;    
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "........", snd_TextScroll_Duke );	   
@@ -10472,9 +10478,7 @@ var day_I = 0; // day 1
      arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "(But neither has Kyle for that matter.)", snd_TextScroll_Default );	 
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle2_Day6;		 
 	 dialog_I++;	 
-
-     
-    #endregion
+#endregion
 
 
     #region kyle
