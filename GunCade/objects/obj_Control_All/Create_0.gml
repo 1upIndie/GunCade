@@ -9986,6 +9986,7 @@ var day_I = 0; // day 1
      
 	 
 	 // jump to 130
+	 dialog_I = 130;	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(He's got to be my least favorite customer, and I've got some weirdos.)", snd_TextScroll_Default );	 
 	 dialog_I++;	 
@@ -10233,8 +10234,7 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "");		
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Who is that?)", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Effect_BlackoutEnd;	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Who is that?)", snd_TextScroll_Default );	  	 
 	 dialog_I++;
 
 
@@ -10385,18 +10385,18 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", " I'll be... returning soon, ja!", snd_TextScroll_Default );	 	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", " I'll be... returning soon, ja!", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Duke_SoldWeaponYes_Day6;		 
 	 dialog_I++;
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default" , "exit default");	 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_DukeSoldGunYes_Day8;		 
- 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_300;
 	 dialog_I++;
 
 
-	 // refuse combo
+	 // refuse 
 	 dialog_I = 270;	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke angry"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "Ze hell are you zinking!?", snd_TextScroll_Default );	 
@@ -10429,12 +10429,13 @@ var day_I = 0; // day 1
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "I'll be... returning soon, ja!", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Duke_SoldWeaponNo_Day6;		 
 	 dialog_I++;
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "exit default");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_DukeSoldGunNo_Day8;	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_300;	
 	 dialog_I++;
 
 
@@ -10446,12 +10447,13 @@ var day_I = 0; // day 1
 	 dialog_I++;	
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "I'll be... returning soon, ja!", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "I'll be... returning soon, ja!", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Duke_SoldWeaponNo_Day6;		 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "duke default"  , "exit default");	
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok big guy.", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_DukeSoldGunNo_Day8;	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_300;
 	 dialog_I++;	 
 
     
