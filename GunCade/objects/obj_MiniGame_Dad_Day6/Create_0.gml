@@ -3,7 +3,7 @@
 event_inherited();
 
 
- possible_Weapon_Perfect             = 20;   //  tammy gun
+ possible_Weapon_Perfect             = 20;   //  bolt action rifle
  // possible_LaserPointer_Perfect    = -999;  // attachments not set on default
  // possible_Muzzle_Perfect          = -999;  
  // possible_Optics_Perfect          = -999; 

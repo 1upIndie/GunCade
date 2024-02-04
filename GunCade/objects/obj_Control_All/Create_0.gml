@@ -9785,7 +9785,7 @@ var day_I = 0; // day 1
 
 
      // continue here 30
-     dialog_I = 30; // did  pay ransom
+     dialog_I = 30;
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(And there's a customer already waiting outside. Oh no, it's Mr. Dog Gun guy... Better get things going and get him out of here.)", snd_TextScroll_Default );
 	 dialog_I++; 		 
@@ -10071,7 +10071,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "exit default");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Please do. I'm so sorry.", snd_TextScroll_Default );	
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Choise_Granny_BaughtGunNo_Day6;		 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Dialog_SkipIndex_to_190; /// jump to 190			 
 	 dialog_I++;
  
  
@@ -10080,7 +10080,6 @@ var day_I = 0; // day 1
 	 dialog_I = 160; 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "OH MY GOD! THESE ARE AMAZING!!!", snd_TextScroll_Default );	 	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_Screen_Drugged
 	 dialog_I++;
 	 
 
@@ -10090,6 +10089,7 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "granny", "They have a lot of extra love packed in.", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_Start_Drugged;	 
 	 dialog_I++;	 
 	 
 	 
@@ -10154,7 +10154,7 @@ var day_I = 0; // day 1
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "granny default"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Ok that makes sense, well, let me help you out then.", snd_TextScroll_Default );
-	 //arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGameAuto_Granny_Day6;
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_GrannyBuyAuto_TammyGun_Day6;  //// 3333333
 	 dialog_I++;
      
 	 // check not used??? 999999999
@@ -10198,6 +10198,8 @@ var day_I = 0; // day 1
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(going...)", snd_TextScroll_Default );	 
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] =	 obj_Transition_FadeToBlackout; /// jump to 190		 
+	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
@@ -10212,6 +10214,11 @@ var day_I = 0; // day 1
 
 
      dialog_I = 190;    
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "........", snd_TextScroll_Duke );	   
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Effect_End_Drugged;	 
+	 dialog_I++;
+	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
      arrayCutscenes[day_I].setText(dialog_I,  1, "unknown", "Ello. Are u alive? Come on. Get Up. Came on, do it nau. Don't make mi slap you awake.", snd_TextScroll_Duke );	  
 	 dialog_I++;
