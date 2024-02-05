@@ -1480,7 +1480,6 @@ indexSet++;
 				   sprTalk_        = spr_Dialog_Cop_TalkNoBlink; break;       // talking, + blink 
 #endregion
 
-
 #region Dad
 
 
@@ -1659,7 +1658,14 @@ indexSet++;
 				   sprIdle_        = spr_Dialog_Duke_SingleImage;            // just blink
 				   sprTalkStatic_  = spr_Dialog_Duke_SingleImage; 		     // talking, no blinking   
 				   sprTalk_        = spr_Dialog_Duke_SingleImage; 	 break;	 // talking, + blink	
-				   
+
+			  case  "duke flexing":  
+				   sprIdleStatic   = spr_Dialog_Duke_SingleImage;            // single image, static
+				   sprIdle_        = spr_Dialog_Duke_SingleImage;            // just blink
+				   sprTalkStatic_  = spr_Dialog_Duke_SingleImage; 		     // talking, no blinking   
+				   sprTalk_        = spr_Dialog_Duke_SingleImage; 	 break;	 // talking, + blink	
+
+
 #endregion	  
 			   
 		      //////////// randoms!
@@ -1775,7 +1781,24 @@ indexSet++;
 				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
 				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;							   
                #endregion				   
-				   
+
+#region fixed not random!
+
+			  case  "randomFixed default":  
+				   sprIdleStatic   = spr_Dialog_Random1_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1_Talk; 		    break;	
+
+			  case  "randomFixed angry":  
+				   sprIdleStatic   = spr_Dialog_Random1Angry_IdleStatic;
+				   sprIdle_        = spr_Dialog_Random1Angry_Idle; 
+				   sprTalkStatic_  = spr_Dialog_Random1Angry_TalkStatic; 		  
+				   sprTalk_        = spr_Dialog_Random1Angry_Talk; 		    break;	
+
+
+
+#endregion
 				   
 			} // end of switch
 	
@@ -10710,7 +10733,8 @@ var day_I = 0; // day 1
 
      /// re enter
      arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "enter shadow"); 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Back.", snd_TextScroll_Default );		 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "shadow", "Back.", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Shadow_Add_HeavyWeapons_Day6;	 
 	 dialog_I++;	
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , ""); 
@@ -10761,13 +10785,24 @@ var day_I = 0; // day 1
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1,"shadow default"  , "exit shadow"); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Damn. That guy is something else.", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Damn. That guy is something else.)", snd_TextScroll_Default );			 	 
 	 dialog_I++;
  
      // shadow exit
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Oh well, I should get familiar with the new stock soon before...", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Oh well, I should get familiar with the new stock soon before...)", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
+
+	 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );		 
+	 dialog_I++;
+	 //////////////////////////////////
 
  
     #endregion
@@ -10778,13 +10813,9 @@ var day_I = 0; // day 1
 	 dialog_I++;
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Hey bud, my guy tells me you got something big.", snd_TextScroll_Default );			 	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Hey bud, my guy told me you got something big.", snd_TextScroll_Default );			 	 
 	 dialog_I++;	 
 	
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(Someone comes in...)", snd_TextScroll_Default );			 	 
-	 dialog_I++;
-
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Something that can put a hole in the side of a bank... I mean tank.", snd_TextScroll_Default );			 	 
@@ -10825,16 +10856,16 @@ var day_I = 0; // day 1
 	
      // refuse  460
 	 dialog_I = 460;		
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed angry"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm sorry, I don't think we have anything that powerful.", snd_TextScroll_Default );			 	 
 	 dialog_I++;
 
 
-     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "randomFixed angry"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "randomFixed", "Damn. My guy was wrong then. Guess I shouldn't be surprised. Thanks anyways pal.", snd_TextScroll_Default );		 
 	 dialog_I++;	
 	
-     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed default"  , ""); 
+     arrayCutscenes[day_I].setSprite(dialog_I,1,"randomFixed angry"  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  3, "player", "Good luck.", snd_TextScroll_Default );	
 	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Dialog_SkipIndex_to_480;			 
 	 dialog_I++;	

@@ -412,6 +412,7 @@
     {"name":"spr_Choise_Day5_Kyle_Save","order":4,"path":"sprites/spr_Choise_Day5_Kyle_Save/spr_Choise_Day5_Kyle_Save.yy",},
     {"name":"aniCurve_FadeIn","order":5,"path":"animcurves/aniCurve_FadeIn/aniCurve_FadeIn.yy",},
     {"name":"obj_Debug_TestSound_SFX","order":1,"path":"objects/obj_Debug_TestSound_SFX/obj_Debug_TestSound_SFX.yy",},
+    {"name":"obj_Shadow_Add_HeavyWeapons_Day6","order":13,"path":"objects/obj_Shadow_Add_HeavyWeapons_Day6/obj_Shadow_Add_HeavyWeapons_Day6.yy",},
     {"name":"obj_Dialog_SkipIndex_to_Day10_Start","order":10,"path":"objects/obj_Dialog_SkipIndex_to_Day10_Start/obj_Dialog_SkipIndex_to_Day10_Start.yy",},
     {"name":"spr_WeaponDetail_Attachment_Stock","order":6,"path":"sprites/spr_WeaponDetail_Attachment_Stock/spr_WeaponDetail_Attachment_Stock.yy",},
     {"name":"spr_Character_Reveal_txt_Nun","order":7,"path":"sprites/spr_Character_Reveal_txt_Nun/spr_Character_Reveal_txt_Nun.yy",},

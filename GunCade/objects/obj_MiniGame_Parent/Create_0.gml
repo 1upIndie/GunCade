@@ -18,7 +18,9 @@ obj_Workspace_Control.blockInput = true; // block dialog input from progressing!
 
  isRandomSale = false;
  isRandomSale_Array       = 0;
- isRandomSale_Array_Index = 0
+ isRandomSale_Array_Index = 0;
+ 
+ 
  alarm[0] = 5; // override and pass in values!
  // costs input values to be compared by
 

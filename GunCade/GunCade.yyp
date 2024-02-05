@@ -469,6 +469,7 @@
     {"id":{"name":"spr_Choise_Day5_Kyle_Save","path":"sprites/spr_Choise_Day5_Kyle_Save/spr_Choise_Day5_Kyle_Save.yy",},},
     {"id":{"name":"aniCurve_FadeIn","path":"animcurves/aniCurve_FadeIn/aniCurve_FadeIn.yy",},},
     {"id":{"name":"obj_Debug_TestSound_SFX","path":"objects/obj_Debug_TestSound_SFX/obj_Debug_TestSound_SFX.yy",},},
+    {"id":{"name":"obj_Shadow_Add_HeavyWeapons_Day6","path":"objects/obj_Shadow_Add_HeavyWeapons_Day6/obj_Shadow_Add_HeavyWeapons_Day6.yy",},},
     {"id":{"name":"obj_Dialog_SkipIndex_to_Day10_Start","path":"objects/obj_Dialog_SkipIndex_to_Day10_Start/obj_Dialog_SkipIndex_to_Day10_Start.yy",},},
     {"id":{"name":"spr_WeaponDetail_Attachment_Stock","path":"sprites/spr_WeaponDetail_Attachment_Stock/spr_WeaponDetail_Attachment_Stock.yy",},},
     {"id":{"name":"spr_Character_Reveal_txt_Nun","path":"sprites/spr_Character_Reveal_txt_Nun/spr_Character_Reveal_txt_Nun.yy",},},

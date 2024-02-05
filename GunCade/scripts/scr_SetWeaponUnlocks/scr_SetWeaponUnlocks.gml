@@ -4,6 +4,7 @@ function scr_SetWeaponUnlocks(day_){
 
  var oo = obj_Control_All;
  
+
  
  #region vars
  
@@ -87,11 +88,11 @@ function scr_SetWeaponUnlocks(day_){
    accessory5 = 1;  
    accessory6 = 1;  
    
-     typeArifle = 1
+     typeArifle = 1;
      arifle1    = 1;
  }
 
- if (day_>= 6){
+ if (day_> 6){
   
   rifle2 = 1;
   rifle3 = 1; 
@@ -99,7 +100,7 @@ function scr_SetWeaponUnlocks(day_){
   
   heavy1 = 1; // lmg
   heavy3 = 1;  // minigun
- 
+  typeHeavy = 1; // enable heavy
  }
  
  
