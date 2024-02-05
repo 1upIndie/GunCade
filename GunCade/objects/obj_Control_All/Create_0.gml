@@ -10189,7 +10189,7 @@ var day_I = 0; // day 1
 
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "I'm tingling all over.)", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "playerT", "(I'm tingling all over.)", snd_TextScroll_Default );	 
 	 dialog_I++;
 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
@@ -10464,20 +10464,34 @@ var day_I = 0; // day 1
 
     
 	 // continue
-	 dialog_I = 300;		 
-	 
+	 dialog_I = 300;		 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "(There sure are some characters here.)", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(There sure are some characters here.)", snd_TextScroll_Default );	 
 	 dialog_I++;
      
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "(Oh man, almost time to go home, thankfully nobody has come in today.)", snd_TextScroll_Default );	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(Oh man, almost time to go home, thankfully nobody has come in today.)", snd_TextScroll_Default );	 
 	 dialog_I++;	 
 	 
      arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");		 
-     arrayCutscenes[day_I].setText(dialog_I,  1, "duke", "(But neither has Kyle for that matter.)", snd_TextScroll_Default );	 
-	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle2_Day6;		 
-	 dialog_I++;	 
+     arrayCutscenes[day_I].setText(dialog_I,  1, "playerT", "(But neither has Kyle for that matter.)", snd_TextScroll_Default );	 	 
+	 dialog_I++;
+	 
+		 // fake transition	/////////////////
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");	 
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_Transition_FadeToNextCharacter;		 
+	 dialog_I++;
+
+     arrayCutscenes[day_I].setSprite(dialog_I,1, "nothing"  , "");
+     arrayCutscenes[day_I].setText(dialog_I,  3, "player", "", snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_ChoiseDone_Kyle2_Day6;	 
+	 dialog_I++;
+	 ////////////////////////////////// 
+	 
+	 
+	 
+	 
 #endregion
 
 
@@ -10584,6 +10598,7 @@ var day_I = 0; // day 1
 		 
      arrayCutscenes[day_I].setSprite(dialog_I,1, randomDay6_1_Spr_Default  , ""); 
      arrayCutscenes[day_I].setText(dialog_I,  1, "random", arrayRandomMinigameDay6to8[getRandomMiniGameIndexDay6_1].introTextRandom[1], snd_TextScroll_Default );	
+	 arrayCutscenes[day_I].dialogBlock_LoadIn[dialog_I] = obj_MiniGame_RandomSale1_Day6;		 
 	 dialog_I++;		
 	
 	

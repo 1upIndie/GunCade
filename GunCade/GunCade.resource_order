@@ -38,6 +38,7 @@
     {"name":"EndOdDay","order":6,"path":"folders/Objects/Cutscenes/MiniGame/EndOdDay.yy",},
     {"name":"InBetweenEffects","order":14,"path":"folders/Objects/Cutscenes/MiniGame/InBetweenEffects.yy",},
     {"name":"_Emotes","order":6,"path":"folders/Objects/Cutscenes/MiniGame/InBetweenEffects/_Emotes.yy",},
+    {"name":"Global_Effects","order":8,"path":"folders/Objects/Cutscenes/MiniGame/InBetweenEffects/Global_Effects.yy",},
     {"name":"Jez","order":3,"path":"folders/Objects/Cutscenes/MiniGame/InBetweenEffects/Jez.yy",},
     {"name":"Kyle","order":7,"path":"folders/Objects/Cutscenes/MiniGame/InBetweenEffects/Kyle.yy",},
     {"name":"Scripts","order":11,"path":"folders/Objects/Cutscenes/MiniGame/Scripts.yy",},
@@ -234,7 +235,6 @@
     {"name":"SortBy","order":11,"path":"folders/Sprites/UI/SortBy.yy",},
     {"name":"NameButtons","order":1,"path":"folders/Sprites/UI/SortBy/NameButtons.yy",},
     {"name":"Stats","order":5,"path":"folders/Sprites/UI/Stats.yy",},
-    {"name":"Global_Effects","order":8,"path":"folders/Objects/Cutscenes/MiniGame/InBetweenEffects/Global_Effects.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Tutorial_txt_Decide","order":1,"path":"sprites/spr_Tutorial_txt_Decide/spr_Tutorial_txt_Decide.yy",},
